@@ -1,7 +1,12 @@
-cltk[stanza]
+cltk
+spacy>=3.8.0
 google-generativeai
+google-genai
 weasyprint
 pillow
 pydantic
 streamlit
 python-dotenv
+
+# LatinCy model (install separately after pip install -r requirements.txt):
+# pip install https://huggingface.co/latincy/la_core_web_lg/resolve/main/la_core_web_lg-any-py3-none-any.whl
