@@ -293,7 +293,7 @@ python cli.py coverage
 
 Your Gemini API key is stored in `.env`:
 ```bash
-GEMINI_API_KEY=AIzaSyBkwu31WE-vc5YduNSXH8pueI7UhW2W_-k
+GEMINI_API_KEY=your_api_key_here
 ```
 
 The `.gitignore` file protects this from being committed.

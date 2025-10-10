@@ -537,58 +537,85 @@ def step_2_get_ai_story():
     # ========== STAGE 5: Vocabulary Extraction ==========
     elif stage == 5:
         st.header("📚 Stage 5: Vocabulary List")
-        st.write("Extract all unique vocabulary with proper dictionary forms.")
+        st.write("Automatically extract vocabulary using LatinCy (94.66% lemmatization accuracy).")
 
-        prompt = generate_stage_5_prompt(st.session_state.paginated_data)
+        # Check if vocabulary has already been extracted
+        if st.session_state.vocabulary_data:
+            vocab_data = json.loads(st.session_state.vocabulary_data)
+            st.success(f"✅ Vocabulary extracted: {len(vocab_data['vocabulary'])} words")
 
-        st.subheader("1️⃣ Copy this prompt to your AI chat")
-        st.code(prompt, language="markdown")
+            with st.expander("📖 View Vocabulary", expanded=False):
+                for entry in vocab_data['vocabulary'][:10]:  # Show first 10
+                    st.write(f"**{entry['latin']}** - {entry['english']} ({entry['part_of_speech']})")
+                if len(vocab_data['vocabulary']) > 10:
+                    st.write(f"... and {len(vocab_data['vocabulary']) - 10} more")
+        else:
+            st.info("👉 Click 'Extract Vocabulary' to automatically parse all Latin words from your book.")
 
-        st.markdown("---")
-        st.subheader("2️⃣ Paste the vocabulary JSON below")
-
-        vocabulary_input = st.text_area(
-            "Vocabulary JSON",
-            value=st.session_state.vocabulary_data or "",
-            height=300,
-            placeholder='{\n  "vocabulary": [\n    {\n      "latin": "puer",\n      "english": "boy",\n      "part_of_speech": "noun",\n      "dictionary_form": "puer, puerī, m."\n    }\n  ]\n}'
-        )
-
-        col1, col2 = st.columns([1, 1])
+        col1, col2, col3 = st.columns([1, 1, 1])
         with col1:
             if st.button("← Back: Edit Pages"):
                 st.session_state.workflow_stage = 4
                 st.rerun()
+
         with col2:
-            if st.button("Complete & Generate Book →", type="primary"):
-                valid, error, vocab_data = validate_stage_5_input(vocabulary_input)
-                if not valid:
-                    st.error(f"❌ {error}")
-                else:
-                    # Validate pagination data again
-                    page_valid, page_error, page_data = validate_stage_4_input(st.session_state.paginated_data)
-                    if not page_valid or not page_data:
-                        st.error(f"❌ Error in pagination data: {page_error}")
-                        return
+            if st.button("🔍 Extract Vocabulary", type="secondary"):
+                # Get all Latin text from pages
+                page_valid, page_error, page_data = validate_stage_4_input(st.session_state.paginated_data)
+                if not page_valid or not page_data:
+                    st.error(f"❌ Error in pagination data: {page_error}")
+                    return
 
-                    if not vocab_data:
-                        st.error("❌ Invalid vocabulary data")
-                        return
+                # Combine all Latin text
+                all_latin_text = "\n".join([page['latin_text'] for page in page_data['pages']])
 
-                    # Combine all data into final JSON structure
-                    combined_json = {
-                        "title_latin": page_data.get('title_latin', project.title_english),
-                        "cover_image_prompt": page_data.get('cover_image_prompt', ''),
-                        "pages": page_data['pages'],
-                        "vocabulary": vocab_data['vocabulary']
-                    }
+                with st.spinner("Parsing Latin vocabulary with LatinCy..."):
+                    try:
+                        from scripts.vocabulary_parser import LatinVocabularyParser
+                        import os
 
-                    st.session_state.vocabulary_data = vocabulary_input
-                    st.session_state.json_data = combined_json
-                    st.session_state.current_step = 3
-                    st.session_state.workflow_stage = 0  # Reset for next project
-                    st.success(f"✅ Complete! {len(vocab_data['vocabulary'])} vocabulary entries extracted.")
-                    st.rerun()
+                        api_key = os.getenv('GEMINI_API_KEY')
+                        if not api_key:
+                            st.error("❌ GEMINI_API_KEY not found in environment")
+                            return
+
+                        parser = LatinVocabularyParser()
+                        vocab_list = parser.parse_book_vocabulary(all_latin_text, api_key)
+
+                        vocab_data = {"vocabulary": vocab_list}
+                        st.session_state.vocabulary_data = json.dumps(vocab_data, indent=2)
+
+                        st.success(f"✅ Extracted {len(vocab_list)} vocabulary words!")
+                        st.rerun()
+
+                    except Exception as e:
+                        st.error(f"❌ Error extracting vocabulary: {e}")
+                        import traceback
+                        st.code(traceback.format_exc())
+
+        with col3:
+            if st.button("Complete & Generate Book →", type="primary", disabled=not st.session_state.vocabulary_data):
+                # Validate pagination data
+                page_valid, page_error, page_data = validate_stage_4_input(st.session_state.paginated_data)
+                if not page_valid or not page_data:
+                    st.error(f"❌ Error in pagination data: {page_error}")
+                    return
+
+                vocab_data = json.loads(st.session_state.vocabulary_data)
+
+                # Combine all data into final JSON structure
+                combined_json = {
+                    "title_latin": page_data.get('title_latin', project.title_english),
+                    "cover_image_prompt": page_data.get('cover_image_prompt', ''),
+                    "pages": page_data['pages'],
+                    "vocabulary": vocab_data['vocabulary']
+                }
+
+                st.session_state.json_data = combined_json
+                st.session_state.current_step = 3
+                st.session_state.workflow_stage = 0  # Reset for next project
+                st.success(f"✅ Complete! {len(vocab_data['vocabulary'])} vocabulary entries extracted.")
+                st.rerun()
 
 
 def step_3_generate_book():

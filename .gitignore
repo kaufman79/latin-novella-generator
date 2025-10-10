@@ -1,6 +1,13 @@
 # Environment variables
 .env
 
+# Documentation with sensitive info
+BOOK_SYSTEM_COMPLETE.md
+BOOK_WORKFLOW_DESIGN.md
+SUMMARY.md
+TODO.md
+VOCABULARY_REDESIGN.md
+
 # Python
 __pycache__/
 *.pyc
