@@ -1,0 +1,23 @@
+{
+  "project_id": "lion_witch_wardrobe",
+  "title_english": "Lion Witch Wardrobe",
+  "title_latin": null,
+  "source_text": "",
+  "source_type": "original",
+  "translation": null,
+  "image_config": {
+    "reference_image_path": null,
+    "art_style": "PROJECT: Latin Reader Series\n\nART STYLE:\nSimple storybook art with clean shapes, light shading, and bright flat colors; gentle and consistent visual tone\n\nCHARACTER DESIGN:\n- Peter: A cartoon-style boy, age 12, with short brown hair and blue eyes, wearing a green sweater and brown pants. Vibrant colors, bold outlines, consistent cartoon style.\n- Susan: A cartoon-style girl, age 11, with long black hair in a braid and green eyes, wearing a blue dress with a yellow scarf. Vibrant colors, bold outlines, consistent cartoon style.\n- Edmund: A cartoon-style boy, age 10, with messy blond hair and brown eyes, wearing a red jacket and gray pants. Vibrant colors, bold outlines, consistent cartoon style.\n- Lucy: A cartoon-style girl, age 8, with short curly red hair and green eyes, wearing a pink coat and a white hat. Vibrant colors, bold outlines, consistent cartoon style.\n- Mr. Tumnus: A cartoon-style faun, half-human half-goat, with curly brown hair, small horns, and furry goat legs, wearing a red scarf. Vibrant colors, bold outlines, consistent cartoon style.\n- White Witch: A cartoon-style tall woman with pale skin, long white hair, and icy blue eyes, wearing a silver crown and a flowing white fur coat, holding a glowing wand. Vibrant colors, bold outlines, consistent cartoon style.\n- Aslan: A cartoon-style large lion with golden fur, a thick mane, and amber eyes, glowing softly, with no accessories. Vibrant colors, bold outlines, consistent cartoon style.\n- Mr. Beaver: A cartoon-style beaver with brown fur, big front teeth, and black eyes, wearing a tiny green vest. Vibrant colors, bold outlines, consistent cartoon style.\n- Mrs. Beaver: A cartoon-style beaver with light brown fur, round black eyes, wearing a small apron with a flower pattern. Vibrant colors, bold outlines, consistent cartoon style.\n\nENVIRONMENT:\n- Narnia\n\nCOMPOSITION:\n- Layout: center or slightly lower center framing\n- Camera angle: mostly eye-level or slightly above; keep perspective simple\n- Focus: clear storytelling pose or action per scene, easy for a child to interpret\n\nTECHNICAL:\n- Aspect ratio: square (1:1) or 4:3 portrait — keep consistent within book\n- Resolution: 512x512 or 640x480 for compact files (low detail, small size)\n- Style consistency: maintain same colors, proportions, and visual tone across all images\n- Output format: PNG or WebP for quality at small file sizes\n\nLAYOUT NOTES:\n- Page flow: each image corresponds to one or two sentences of Latin; keep visual action easy to map to text\n\nAI INSTRUCTIONS:\nKeep visuals simple, warm, and readable for children. Avoid text, labels, or complex shadows. Focus on consistent characters and simple emotions. Each image should clearly illustrate the moment described in the Latin text.\n",
+    "seed": null,
+    "provider": "nano_banana",
+    "consistency_mode": "reference_image"
+  },
+  "theme": "Fantasy",
+  "target_age": "2-5",
+  "target_pages": 20,
+  "level": 1,
+  "status": "initialized",
+  "date_created": "2025-10-10T15:19:13.125906",
+  "date_modified": "2025-10-10T15:19:13.126831",
+  "project_folder": "projects/lion_witch_wardrobe"
+}

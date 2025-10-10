@@ -1,0 +1,7 @@
+cltk[stanza]
+google-generativeai
+weasyprint
+pillow
+pydantic
+streamlit
+python-dotenv

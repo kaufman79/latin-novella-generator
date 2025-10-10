@@ -1,0 +1,916 @@
+{
+  "project_id": "locusts_and_dragon",
+  "title_english": "locusts and dragon",
+  "title_latin": "Cicādae et Dracō",
+  "source_text": "",
+  "source_type": "original",
+  "translation": {
+    "title_latin": "Cicādae et Dracō",
+    "title_english": "By Rowan & Ryan Kaufman",
+    "pages": [
+      {
+        "page_number": 1,
+        "latin_text": "Multae cicādae ūnō diē taedēbant. Nihil novum erat.",
+        "english_text": "Many cicadas were bored one day. Nothing was new.",
+        "image_prompt": "A sunny field with several small brown cicadas resting on grass stalks, looking bored. Warm sunlight, soft yellow tones, simple background of green hills and sky. Center composition, gentle mood.",
+        "image_path": "projects/locusts_and_dragon/images/page_01.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 2,
+        "latin_text": "Itaque omnēs ad oppidum proximum volāvērunt.",
+        "english_text": "So they all flew to the nearby town.",
+        "image_prompt": "Group of cicadas flying together toward a small brown-and-yellow town in the distance. Eye-level angle, bright blue sky, motion lines showing flight, cheerful tone.",
+        "image_path": "projects/locusts_and_dragon/images/page_02.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 3,
+        "latin_text": "Ibī hominēs timidi et trīstēs erant.",
+        "english_text": "There, the people were afraid and sad.",
+        "image_prompt": "Simple town square with a few villagers looking frightened and frowning. Soft colors, houses with red roofs, gentle afternoon light.",
+        "image_path": "projects/locusts_and_dragon/images/page_03.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 4,
+        "latin_text": "Dracō eōs terrēbat. Habitābat in monte prope oppidum. Caverna erat magna et obscūra.",
+        "english_text": "A dragon scared them. It lived in a mountain near the town. The cave was large and dark.",
+        "image_prompt": "Red dragon peeking out from a dark cave in a rocky mountain above a small town. The cave mouth is shadowy; dragon eyes glowing faintly. Warm light on the town below, cooler tones for the cave.",
+        "image_path": "projects/locusts_and_dragon/images/page_04.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 5,
+        "latin_text": "Cicādae inter sē dīxērunt: “Eāmus! Dracōnem vincāmus!”",
+        "english_text": "The cicadas said to each other: 'Let’s go! Let’s defeat the dragon!'",
+        "image_prompt": "Cicadas gathered together in a small circle, wings raised in determination. Simple grassy ground, bright sunlight, expressions of courage.",
+        "image_path": "projects/locusts_and_dragon/images/page_05.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 6,
+        "latin_text": "Itaque omnēs ad montem volāvērunt. Ventus fortis erat, sed nōn timuērunt.",
+        "english_text": "So they all flew to the mountain. The wind was strong, but they were not afraid.",
+        "image_prompt": "Cicadas flying upward toward a rocky mountain in gusty wind. Grass and leaves bending, bright sky with motion. Slight diagonal composition for action.",
+        "image_path": "projects/locusts_and_dragon/images/page_06.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 7,
+        "latin_text": "Cicādae intrāvērunt cavernam. Tenebrās vīdērunt et nihil aliud.",
+        "english_text": "The cicadas entered the cave. They saw darkness and nothing else.",
+        "image_prompt": "Inside a dark cave with the small glow of light behind the entering cicadas. Cave walls simple and rocky; mood quiet and dim with gentle shadows.",
+        "image_path": "projects/locusts_and_dragon/images/page_07.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 8,
+        "latin_text": "Per obscūra forāmina et longa itinera ambulāvērunt.",
+        "english_text": "They walked through dark tunnels and long paths.",
+        "image_prompt": "Cicadas moving carefully through winding cave tunnels. Dim warm torchlight or glowing stones guiding the way. Narrow perspective to show depth.",
+        "image_path": "projects/locusts_and_dragon/images/page_08.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 9,
+        "latin_text": "Tandem invēnērunt cubīle dracōnis. Dracō dormiēbat super acervum aurī.",
+        "english_text": "At last they found the dragon’s lair. The dragon was sleeping on a pile of gold.",
+        "image_prompt": "Dragon curled up asleep on glittering gold coins and treasures. Soft warm light reflecting off gold. Cicadas peeking from behind rocks in the corner.",
+        "image_path": "projects/locusts_and_dragon/images/page_09.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 10,
+        "latin_text": "Aurum et gemmae fulgēbant. Dracō ruber erat et dentēs magnī erant eī.",
+        "english_text": "The gold and gems sparkled. The dragon was red and had large teeth.",
+        "image_prompt": "Close-up of the red dragon sleeping with mouth partly open, showing sharp teeth. Gold and gems sparkling beneath it. Warm colors, gentle contrast.",
+        "image_path": "projects/locusts_and_dragon/images/page_10.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 11,
+        "latin_text": "Cicādae super dracōnem volāvērunt. Eum pungēre temptāvērunt, sed frūstrā.",
+        "english_text": "The cicadas flew above the dragon. They tried to sting it, but in vain.",
+        "image_prompt": "Small cicadas darting around the dragon, attempting to poke or sting. Dragon slightly stirring, still half-asleep. Action-filled composition, soft edges.",
+        "image_path": "projects/locusts_and_dragon/images/page_11.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 12,
+        "latin_text": "Dracō excitātus est et īrātus factus est. Rugīvit valdē et ālās mōvit.",
+        "english_text": "The dragon woke up and became angry. It roared loudly and moved its wings.",
+        "image_prompt": "Dragon roaring in fury inside the cave, wings outspread. Gold coins flying from the ground. Strong diagonal composition, warm red light.",
+        "image_path": "projects/locusts_and_dragon/images/page_12.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 13,
+        "latin_text": "Per antrum volāvit, mordēns et ungues vibrāns. Multās cicādās occīdit.",
+        "english_text": "It flew through the cave, biting and swinging its claws. It killed many cicadas.",
+        "image_prompt": "Action scene with dragon sweeping through the air, claws extended. A few cicadas fleeing in panic. Motion blur lines, dim cave background.",
+        "image_path": "projects/locusts_and_dragon/images/page_13.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 14,
+        "latin_text": "Ceterae cicādae tremēbant et consilium quaesīvērunt.",
+        "english_text": "The remaining cicadas trembled and sought a plan.",
+        "image_prompt": "Group of surviving cicadas huddled together on a rock, looking worried. Cave background dark but not frightening, soft light on them.",
+        "image_path": "projects/locusts_and_dragon/images/page_14.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 15,
+        "latin_text": "Antōnius, una cicāda fortis, dīxit: “Strīdāmus omnēs simul!”",
+        "english_text": "Antonius, one brave cicada, said: 'Let’s all buzz together!'",
+        "image_prompt": "Close-up of Antonius the cicada standing tall and brave, wings lifted as he speaks to the others. Warm light on his face, hopeful tone.",
+        "image_path": "projects/locusts_and_dragon/images/page_15.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 16,
+        "latin_text": "Antōnius prīmus strīdit. Deinde omnēs cicādae fortiter strīdēbant.",
+        "english_text": "Antonius buzzed first. Then all the cicadas buzzed loudly.",
+        "image_prompt": "Cicadas surrounding the dragon, wings vibrating powerfully, visible sound waves or motion lines to show buzzing. The dragon flinches slightly.",
+        "image_path": "projects/locusts_and_dragon/images/page_16.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 17,
+        "latin_text": "Sonus magnus tōtam cavernam implēvit. Aurēs dracōnis doluērunt.",
+        "english_text": "A great sound filled the whole cave. The dragon’s ears hurt.",
+        "image_prompt": "Dragon covering its ears in pain as glowing waves of sound fill the cave. Bright yellows and soft blues to show echoing sound. Simple layout.",
+        "image_path": "projects/locusts_and_dragon/images/page_17.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 18,
+        "latin_text": "Dracō īnsānīvit et sine mente volāvit. In parietem cavernae volāvit et cecidit.",
+        "english_text": "The dragon went mad and flew without sense. It crashed into the cave wall and fell.",
+        "image_prompt": "Dragon flying wildly, eyes wide, crashing into a stone wall. Gold scattering through the air. Dramatic action but soft, child-safe tone.",
+        "image_path": "projects/locusts_and_dragon/images/page_18.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 19,
+        "latin_text": "Dracō mortuus est. Cicādae gāvīsae sunt.",
+        "english_text": "The dragon was dead. The cicadas rejoiced.",
+        "image_prompt": "Dragon lying still in the background, while cicadas dance and flutter with joy near the cave entrance. Warm morning light entering the cave.",
+        "image_path": "projects/locusts_and_dragon/images/page_19.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 20,
+        "latin_text": "Ad oppidum rediērunt et strīdēbant: “Dracō mortuus est!”",
+        "english_text": "They returned to the town and buzzed: 'The dragon is dead!'",
+        "image_prompt": "Cicadas flying joyfully back into the town, villagers looking up and smiling. Soft sunlight, simple town background, celebratory feeling.",
+        "image_path": "projects/locusts_and_dragon/images/page_20.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 21,
+        "latin_text": "Hominēs laetī erant et grātiās ēgērunt.",
+        "english_text": "The people were happy and gave thanks.",
+        "image_prompt": "Villagers with open arms and smiling faces thanking the cicadas. Warm colors, simple cobblestone street, soft afternoon light.",
+        "image_path": "projects/locusts_and_dragon/images/page_21.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 22,
+        "latin_text": "Aurum cēpērunt et inter sē dīvīsērunt.",
+        "english_text": "They took the gold and shared it among themselves.",
+        "image_prompt": "Villagers carrying gold coins from baskets, sharing them kindly. Simple town square, children and elders smiling. Warm browns and yellows.",
+        "image_path": "projects/locusts_and_dragon/images/page_22.png",
+        "vocabulary_used": []
+      },
+      {
+        "page_number": 23,
+        "latin_text": "Omnēs laetī erant. Cicādae carmen laetum strīdēbant.",
+        "english_text": "Everyone was happy. The cicadas buzzed a joyful song.",
+        "image_prompt": "Cicadas on tree branches outside the bright town, singing under a golden sunset. Peaceful mood, warm colors, final celebratory tone.",
+        "image_path": "projects/locusts_and_dragon/images/page_23.png",
+        "vocabulary_used": []
+      }
+    ],
+    "vocabulary_list": [
+      {
+        "latin": "acervus",
+        "english": "pile, heap",
+        "part_of_speech": "noun",
+        "dictionary_form": "acervus, acervī, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "ala",
+        "english": "wing",
+        "part_of_speech": "noun",
+        "dictionary_form": "ala, alae, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "ambulo",
+        "english": "walk",
+        "part_of_speech": "verb",
+        "dictionary_form": "ambulō, ambulāre, ambulāvī, ambulātum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "antrum",
+        "english": "cave, cavern",
+        "part_of_speech": "noun",
+        "dictionary_form": "antrum, antrī, n.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "aurus",
+        "english": "gold",
+        "part_of_speech": "noun",
+        "dictionary_form": "aurum, aurī, n.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "cado",
+        "english": "fall",
+        "part_of_speech": "verb",
+        "dictionary_form": "cadō, cadere, cecidī, cāsum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "carmen",
+        "english": "song, poem",
+        "part_of_speech": "noun",
+        "dictionary_form": "carmen, carminis, n.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "caverna",
+        "english": "cave",
+        "part_of_speech": "noun",
+        "dictionary_form": "caverna, cavernae, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "ceterus",
+        "english": "remaining, the rest",
+        "part_of_speech": "adjective",
+        "dictionary_form": "ceterus, ceteri, ceterum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "cicada",
+        "english": "cicada",
+        "part_of_speech": "noun",
+        "dictionary_form": "cicāda, cicādae, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "consilium",
+        "english": "plan, advice",
+        "part_of_speech": "noun",
+        "dictionary_form": "consilium, consiliī, n.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "cubile",
+        "english": "bed, lair",
+        "part_of_speech": "noun",
+        "dictionary_form": "cubile, cubilis, n.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "deinde",
+        "english": "then, next",
+        "part_of_speech": "adverb",
+        "dictionary_form": "deinde",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "dens",
+        "english": "tooth",
+        "part_of_speech": "noun",
+        "dictionary_form": "dēns, dentis, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "dico",
+        "english": "say, speak",
+        "part_of_speech": "verb",
+        "dictionary_form": "dīcō, dīcere, dīxī, dictum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "dormio",
+        "english": "sleep",
+        "part_of_speech": "verb",
+        "dictionary_form": "dormiō, dormīre, dormīvī, dormītum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "draco",
+        "english": "dragon",
+        "part_of_speech": "noun",
+        "dictionary_form": "dracō, dracōnis, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "eo",
+        "english": "go",
+        "part_of_speech": "verb",
+        "dictionary_form": "eō, īre, iī/īvī, itum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "excitatus",
+        "english": "awakened, roused",
+        "part_of_speech": "adjective",
+        "dictionary_form": "excitatus, excitata, excitatum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "facio",
+        "english": "make, do",
+        "part_of_speech": "verb",
+        "dictionary_form": "faciō, facere, fēcī, factum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "foramen",
+        "english": "hole, passage",
+        "part_of_speech": "noun",
+        "dictionary_form": "forāmen, forāminis, n.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "fortis",
+        "english": "strong, brave",
+        "part_of_speech": "adjective",
+        "dictionary_form": "fortis, fortis, forte",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "fortiter",
+        "english": "bravely, strongly",
+        "part_of_speech": "adverb",
+        "dictionary_form": "fortiter",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "frustra",
+        "english": "in vain",
+        "part_of_speech": "adverb",
+        "dictionary_form": "frūstrā",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "fulgeo",
+        "english": "shine, glitter",
+        "part_of_speech": "verb",
+        "dictionary_form": "fulgeō, fulgēre, fulsī, —",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "gaudeo",
+        "english": "rejoice",
+        "part_of_speech": "verb",
+        "dictionary_form": "gaudeō, gaudēre, gāvīsus sum, —",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "gemma",
+        "english": "gem, jewel",
+        "part_of_speech": "noun",
+        "dictionary_form": "gemma, gemmae, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "gratia",
+        "english": "thanks, gratitude",
+        "part_of_speech": "noun",
+        "dictionary_form": "grātia, grātiae, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "habeo",
+        "english": "have, hold",
+        "part_of_speech": "verb",
+        "dictionary_form": "habeō, habēre, habuī, habitum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "habito",
+        "english": "live, dwell",
+        "part_of_speech": "verb",
+        "dictionary_form": "habitō, habitāre, habitāvī, habitātum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "homo",
+        "english": "human, person",
+        "part_of_speech": "noun",
+        "dictionary_form": "homō, hominis, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "insanio",
+        "english": "go mad, rage",
+        "part_of_speech": "verb",
+        "dictionary_form": "īnāniō, īnsanīre, īnsānīvī, īnsānītum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "inter",
+        "english": "between, among",
+        "part_of_speech": "preposition",
+        "dictionary_form": "inter",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "intra",
+        "english": "enter",
+        "part_of_speech": "verb",
+        "dictionary_form": "intrō, intrāre, intrāvī, intrātum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "invenio",
+        "english": "find",
+        "part_of_speech": "verb",
+        "dictionary_form": "inveniō, invenīre, invēnī, inventum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "iratus",
+        "english": "angry",
+        "part_of_speech": "adjective",
+        "dictionary_form": "īrātus, īrāta, īrātum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "itaque",
+        "english": "and so, therefore",
+        "part_of_speech": "conjunction",
+        "dictionary_form": "itaque",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "iter",
+        "english": "journey, path",
+        "part_of_speech": "noun",
+        "dictionary_form": "iter, itineris, n.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "laetus",
+        "english": "happy, joyful",
+        "part_of_speech": "adjective",
+        "dictionary_form": "laetus, laeta, laetum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "longus",
+        "english": "long",
+        "part_of_speech": "adjective",
+        "dictionary_form": "longus, longa, longum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "magnus",
+        "english": "large, great",
+        "part_of_speech": "adjective",
+        "dictionary_form": "magnus, magna, magnum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "mens",
+        "english": "mind",
+        "part_of_speech": "noun",
+        "dictionary_form": "mēns, mentis, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "mons",
+        "english": "mountain",
+        "part_of_speech": "noun",
+        "dictionary_form": "mōns, montis, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "mordeo",
+        "english": "bite",
+        "part_of_speech": "verb",
+        "dictionary_form": "mordeō, mordēre, momordī, morsum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "mortuus",
+        "english": "dead",
+        "part_of_speech": "adjective",
+        "dictionary_form": "mortuus, mortua, mortuum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "moveo",
+        "english": "move",
+        "part_of_speech": "verb",
+        "dictionary_form": "moveō, movēre, mōvī, mōtum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "multus",
+        "english": "many, much",
+        "part_of_speech": "adjective",
+        "dictionary_form": "multus, multa, multum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "nihil",
+        "english": "nothing",
+        "part_of_speech": "pronoun",
+        "dictionary_form": "nihil, n.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "non",
+        "english": "not",
+        "part_of_speech": "adverb",
+        "dictionary_form": "nōn",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "novus",
+        "english": "new",
+        "part_of_speech": "adjective",
+        "dictionary_form": "novus, nova, novum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "obscurus",
+        "english": "dark, obscure",
+        "part_of_speech": "adjective",
+        "dictionary_form": "obscūrus, obscūra, obscūrum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "occido",
+        "english": "kill",
+        "part_of_speech": "verb",
+        "dictionary_form": "occīdō, occīdere, occīdī, occīsum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "omnis",
+        "english": "all, every",
+        "part_of_speech": "adjective",
+        "dictionary_form": "omnis, omnis, omne",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "oppidum",
+        "english": "town",
+        "part_of_speech": "noun",
+        "dictionary_form": "oppidum, oppidī, n.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "paries",
+        "english": "wall",
+        "part_of_speech": "noun",
+        "dictionary_form": "pariēs, parietis, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "per",
+        "english": "through",
+        "part_of_speech": "preposition",
+        "dictionary_form": "per",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "prope",
+        "english": "near",
+        "part_of_speech": "preposition",
+        "dictionary_form": "prope",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "proximus",
+        "english": "nearest, next",
+        "part_of_speech": "adjective",
+        "dictionary_form": "proximus, proxima, proximum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "pungo",
+        "english": "sting, prick",
+        "part_of_speech": "verb",
+        "dictionary_form": "pungō, pungere, pupugī, punctum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "quaero",
+        "english": "seek, ask",
+        "part_of_speech": "verb",
+        "dictionary_form": "quaerō, quaerere, quaesīvī, quaesītum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "redeo",
+        "english": "return",
+        "part_of_speech": "verb",
+        "dictionary_form": "redeō, redīre, rediī, reditum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "ruber",
+        "english": "red",
+        "part_of_speech": "adjective",
+        "dictionary_form": "ruber, rubra, rubrum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "rugio",
+        "english": "roar",
+        "part_of_speech": "verb",
+        "dictionary_form": "rugiō, rugīre, rugīvī, rugītum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "simul",
+        "english": "together, at the same time",
+        "part_of_speech": "adverb",
+        "dictionary_form": "simul",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "sonus",
+        "english": "sound, noise",
+        "part_of_speech": "noun",
+        "dictionary_form": "sonus, sonī, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "strido",
+        "english": "buzz, creak",
+        "part_of_speech": "verb",
+        "dictionary_form": "strīdō, strīdere, strīdī, —",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "sum",
+        "english": "be",
+        "part_of_speech": "verb",
+        "dictionary_form": "sum, esse, fuī, futūrum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "super",
+        "english": "above, over",
+        "part_of_speech": "preposition",
+        "dictionary_form": "super",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "taedeo",
+        "english": "be bored, be weary",
+        "part_of_speech": "verb",
+        "dictionary_form": "taedeō, taedēre, taeduī, —",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "tandem",
+        "english": "at last, finally",
+        "part_of_speech": "adverb",
+        "dictionary_form": "tandem",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "tenebrae",
+        "english": "darkness",
+        "part_of_speech": "noun",
+        "dictionary_form": "tenebrae, tenebrārum, f. pl.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "terreo",
+        "english": "frighten, scare",
+        "part_of_speech": "verb",
+        "dictionary_form": "terreō, terrēre, terruī, territum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "timeo",
+        "english": "fear, be afraid",
+        "part_of_speech": "verb",
+        "dictionary_form": "timeō, timēre, timuī, —",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "totus",
+        "english": "whole, entire",
+        "part_of_speech": "adjective",
+        "dictionary_form": "tōtus, tōta, tōtum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "tremo",
+        "english": "tremble",
+        "part_of_speech": "verb",
+        "dictionary_form": "tremō, tremere, tremuī, —",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "tristis",
+        "english": "sad",
+        "part_of_speech": "adjective",
+        "dictionary_form": "trīstis, trīstis, trīste",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "unguis",
+        "english": "claw, nail",
+        "part_of_speech": "noun",
+        "dictionary_form": "unguis, unguis, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "unus",
+        "english": "one",
+        "part_of_speech": "adjective",
+        "dictionary_form": "ūnus, ūna, ūnum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "valde",
+        "english": "greatly, very",
+        "part_of_speech": "adverb",
+        "dictionary_form": "valdē",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "ventus",
+        "english": "wind",
+        "part_of_speech": "noun",
+        "dictionary_form": "ventus, ventī, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "vibro",
+        "english": "brandish, wave",
+        "part_of_speech": "verb",
+        "dictionary_form": "vibrō, vibrāre, vibrāvī, vibrātum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "vinco",
+        "english": "conquer, defeat",
+        "part_of_speech": "verb",
+        "dictionary_form": "vincō, vincere, vīcī, victum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "volo",
+        "english": "fly",
+        "part_of_speech": "verb",
+        "dictionary_form": "volō, volāre, volāvī, volātum",
+        "frequency_tier": null,
+        "notes": null
+      }
+    ],
+    "play_extensions": [
+      {
+        "category": "retelling",
+        "title": "Gesture Retelling",
+        "description": "Parent reads while child acts out all verbs",
+        "checked": false
+      },
+      {
+        "category": "retelling",
+        "title": "Echo Reading",
+        "description": "Child repeats each sentence after parent",
+        "checked": false
+      },
+      {
+        "category": "physical",
+        "title": "Act It Out",
+        "description": "Use toy animals or objects to act out the story",
+        "checked": false
+      },
+      {
+        "category": "creative",
+        "title": "Draw the Story",
+        "description": "Child illustrates each sentence",
+        "checked": false
+      },
+      {
+        "category": "vocabulary",
+        "title": "Point and Name",
+        "description": "Look at illustrations and identify objects in Latin",
+        "checked": false
+      },
+      {
+        "category": "real_world",
+        "title": "Daily Connections",
+        "description": "Use story vocabulary during daily activities",
+        "checked": false
+      }
+    ]
+  },
+  "image_config": {
+    "reference_image_path": null,
+    "art_style": "PROJECT: Latin Reader Series\n\nART STYLE:\nSimple storybook art with clean shapes, light shading, and bright flat colors; gentle and consistent visual tone\n\nCHARACTER DESIGN:\n- Dragon: a red dragon with four legs and two wings. \n\nENVIRONMENT:\n- Background: low complexity; focus on characters and key actions, no visual clutter\n\nCOMPOSITION:\n- Layout: center or slightly lower center framing\n- Camera angle: mostly eye-level or slightly above; keep perspective simple\n- Focus: clear storytelling pose or action per scene, easy for a child to interpret\n- Color palette: cobalt blue accents, warm browns, and soft yellows; avoid dark or saturated tones\n\nTECHNICAL:\n- Aspect ratio: square (1:1) or 4:3 portrait — keep consistent within book\n- Resolution: 512x512 or 640x480 for compact files (low detail, small size)\n- Style consistency: maintain same colors, proportions, and visual tone across all images\n- Output format: PNG or WebP for quality at small file sizes\n\nLAYOUT NOTES:\n- Page flow: each image corresponds to one or two sentences of Latin; keep visual action easy to map to text\n\nAI INSTRUCTIONS:\nKeep visuals simple, warm, and readable for children. Avoid text, labels, or complex shadows. Focus on consistent characters and simple emotions. Each image should clearly illustrate the moment described in the Latin text.\n",
+    "seed": null,
+    "provider": "nano_banana",
+    "consistency_mode": "reference_image"
+  },
+  "theme": "dragon slaying tale",
+  "target_age": "2-5",
+  "target_pages": 20,
+  "level": 1,
+  "status": "pdf_built",
+  "date_created": "2025-10-09T11:54:01.836597",
+  "date_modified": "2025-10-10T09:43:34.768888",
+  "project_folder": "projects/locusts_and_dragon"
+}
