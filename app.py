@@ -8,8 +8,13 @@ import streamlit as st
 import sqlite3
 import pandas as pd
 import json
+import os
 from pathlib import Path
 from typing import Optional
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 from scripts.book_manager import (
     create_project,
