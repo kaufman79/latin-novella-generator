@@ -655,6 +655,7 @@ def step_3_generate_book():
         # Update project
         project.title_latin = translation.title_latin
         project.translation = translation
+        project.cover_image_prompt = json_data.get('cover_image_prompt', '')
         update_project_status(project, 'reviewed')
     else:
         st.error("No translation data available. Please go back to Step 2.")
@@ -758,7 +759,8 @@ def step_3_generate_book():
             with col2:
                 st.write("**Cover**")
                 st.info("This cover image shows all main characters and is used as a reference for character consistency across all pages.")
-                cover_prompt = json_data.get('cover_image_prompt', '') if json_data else ''
+                # Get cover prompt from project (saved) or json_data (new session)
+                cover_prompt = project.cover_image_prompt or (json_data.get('cover_image_prompt', '') if json_data else '')
                 if cover_prompt:
                     st.write("**Cover Prompt:**")
                     st.text(cover_prompt)
@@ -810,7 +812,11 @@ def step_3_generate_book():
                                 # Save (overwrite existing)
                                 img.save(cover_path)
 
-                                # Update the JSON data with the edited prompt
+                                # Update the project with the edited prompt
+                                project.cover_image_prompt = edited_cover_prompt
+                                update_project_status(project, project.status)  # Save to disk
+
+                                # Also update JSON data if it exists
                                 if json_data:
                                     json_data['cover_image_prompt'] = edited_cover_prompt
                                     st.session_state.json_data = json_data

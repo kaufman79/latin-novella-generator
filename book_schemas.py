@@ -70,6 +70,7 @@ class BookProject(BaseModel):
 
     # Image generation
     image_config: ImageGenerationConfig = Field(default_factory=ImageGenerationConfig)
+    cover_image_prompt: Optional[str] = None  # Store cover prompt for regeneration
 
     # Metadata
     theme: Optional[str] = None
