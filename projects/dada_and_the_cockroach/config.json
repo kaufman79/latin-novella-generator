@@ -1,0 +1,23 @@
+{
+  "project_id": "dada_and_the_cockroach",
+  "title_english": "Dada and the Cockroach",
+  "title_latin": null,
+  "source_text": "",
+  "source_type": "original",
+  "translation": null,
+  "image_config": {
+    "reference_image_path": null,
+    "art_style": "PROJECT: Latin Reader Series\n\nART STYLE:\nSimple storybook art with clean shapes, light shading, and bright flat colors; gentle and consistent visual tone\n\nCHARACTER DESIGN:\n- Dada: 32 year old, red hair, short red beard\n- Mama: 30 year old, long dirty blond hair, skinny, laying in bed with Judah\n- Judah: the baby, dark hair\n- Rowan: three year old boy, blond hair, pale skin. sleeping in crib\n\nENVIRONMENT:\n- Setting: A home at night\n- Lighting: dark, candle-lighting, shadows\n- Background: low complexity; focus on characters and key actions, no visual clutter\n\nCOMPOSITION:\n- Layout: center or slightly lower center framing\n- Camera angle: mostly eye-level or slightly above; keep perspective simple\n- Focus: clear storytelling pose or action per scene, easy for a child to interpret\n\nTECHNICAL:\n- Aspect ratio: square (1:1) or 4:3 portrait — keep consistent within book\n- Resolution: 512x512 or 640x480 for compact files (low detail, small size)\n- Style consistency: maintain same colors, proportions, and visual tone across all images\n\nLAYOUT NOTES:\n- Text placement: text will be added programmatically above or below image; leave compositional breathing room but AI doesn't need to render text space explicitly\n- Page flow: each image corresponds to one or two sentences of Latin; keep visual action easy to map to text\n\nAI INSTRUCTIONS:\nKeep visuals simple, warm, and readable for children. Avoid text, labels, or complex shadows. Focus on consistent characters and simple emotions. Each image should clearly illustrate the moment described in the Latin text.\n",
+    "seed": null,
+    "provider": "nano_banana",
+    "consistency_mode": "reference_image"
+  },
+  "theme": "Dada gets a call from mama in the middle of the night to kill a cockroach",
+  "target_age": "2-5",
+  "target_pages": 20,
+  "level": 1,
+  "status": "initialized",
+  "date_created": "2025-10-13T13:47:12.648205",
+  "date_modified": "2025-10-13T13:47:12.648286",
+  "project_folder": "projects/dada_and_the_cockroach"
+}

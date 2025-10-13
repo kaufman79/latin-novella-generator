@@ -18,16 +18,13 @@ COMPOSITION:
 - Layout: center or slightly lower center framing
 - Camera angle: mostly eye-level or slightly above; keep perspective simple
 - Focus: clear storytelling pose or action per scene, easy for a child to interpret
-- Color palette: cobalt blue accents, warm browns, and soft yellows; avoid dark or saturated tones
 
 TECHNICAL:
 - Aspect ratio: square (1:1) or 4:3 portrait — keep consistent within book
 - Resolution: 512x512 or 640x480 for compact files (low detail, small size)
 - Style consistency: maintain same colors, proportions, and visual tone across all images
-- Output format: PNG or WebP for quality at small file sizes
 
 LAYOUT NOTES:
-- Text placement: text will be added programmatically above or below image; leave compositional breathing room but AI doesn't need to render text space explicitly
 - Page flow: each image corresponds to one or two sentences of Latin; keep visual action easy to map to text
 
 AI INSTRUCTIONS:

@@ -47,13 +47,13 @@ Return only:
 - **Story Title (English)**
 - **Story Outline (1–2 sentences)**
 - **Full English Story Text**
-- **List of proposed NEW vocabulary words** (words that may not be in the child's known list)
 
 ### Example of a good story concept
 Title: Cicadas and the dragon
 Outline: Bored Cicadas go into town. Townsfolk are scared of a dragon. The Cicadas go kill the dragon. The grateful townsfolk get the Dragon's gold.
 Story: [A bunch of cicadas were bored one day. So they all flew to a local town, but they noticed that everybody in the town was scared. There was a dragon that they were scared of who lived in a cave in a mountain near the town. The cicadas decided to go and take care of the dragon. So they all flew to the cave. The cicadas entered the cave, fearless. They navigated through tunnels. And then they found the dragon's lair. The dragon was sleeping on a mound of gold and treasures and gems. The dragon was red in color. And had big teeth. The cicadas all flew at it, trying to hurt the dragon. But they were unable to hurt the dragon. They just woke it up. The dragon was mad and flew around his lair, chomping and swiping at the cicadas. He killed some. The cicadas didn't know what to do - how would they defeat this dragon? One cicada, named Antonius, had an idea. They would all be really, really loud, with their cicada screams. Antonius started screaming, and then the rest of the cicadas also screamed. The noise was so loud it hurt the dragon's ears. It made the dragon go crazy. He flew around his lair, flying this way and that, aimlessly and recklessly. He was smashing into walls. And then he flew headfirst right into a wall in his frenzy. And he died from the impact. The cicadas rejoiced, they had won! And there was a bunch of gold, and no dragon to protect it. The cicadas all flew back to the town. They told the people that the dragon was dead and they didn't need to be scared anymore. The people were all so thankful and happy. The cicadas told the people "hey there is a bunch of gold in that cave, you can have it." So the people marched to the cave and gathered up the gold. The people came back to town with the gold, and they all shared it, because some people were old or unable to walk and so they couldn't go get gold for themselves. And everybody was happy, and had a lot of gold.]
-New words: ["dragon", "gold", "local", "cave", "tunnel"]
+
+Note: Vocabulary will be automatically extracted later after translation to Latin.
 
 ---
 
