@@ -765,11 +765,23 @@ def step_3_generate_book():
 
                 # Regeneration UI for cover
                 with st.expander("🔄 Regenerate Cover"):
+                    st.write("**Edit the cover prompt below:**")
+
+                    # Editable cover prompt
+                    edited_cover_prompt = st.text_area(
+                        "Cover Image Prompt",
+                        value=cover_prompt,
+                        key="edit_cover_prompt",
+                        height=150,
+                        help="Edit the full image prompt for the cover"
+                    )
+
+                    st.write("**Additional Instructions (optional):**")
                     cover_custom_instructions = st.text_area(
-                        "Custom instructions (optional)",
+                        "Custom modifications",
                         key="custom_cover",
                         placeholder="e.g., 'Make characters larger', 'Add more detail to dragon', 'Change background'",
-                        height=100
+                        height=80
                     )
 
                     use_current_cover = st.checkbox(
@@ -779,13 +791,13 @@ def step_3_generate_book():
                         help="When checked, uses the existing cover as a reference for minor adjustments. Uncheck for completely fresh generation."
                     )
 
-                    if st.button("Regenerate Cover", key="regen_cover"):
+                    if st.button("Regenerate Cover", key="regen_cover", type="primary"):
                         with st.spinner("Regenerating cover..."):
                             try:
                                 from scripts.image_generator import generate_image
 
-                                # Build prompt with custom instructions
-                                base_prompt = f"{project.image_config.art_style}. {cover_prompt}"
+                                # Build prompt with edited prompt and custom instructions
+                                base_prompt = f"{project.image_config.art_style}. {edited_cover_prompt}"
                                 if cover_custom_instructions.strip():
                                     base_prompt = f"{base_prompt}. Additional instructions: {cover_custom_instructions}"
 
@@ -797,6 +809,11 @@ def step_3_generate_book():
 
                                 # Save (overwrite existing)
                                 img.save(cover_path)
+
+                                # Update the JSON data with the edited prompt
+                                if json_data:
+                                    json_data['cover_image_prompt'] = edited_cover_prompt
+                                    st.session_state.json_data = json_data
 
                                 st.success("✅ Cover regenerated!")
                                 st.rerun()
