@@ -663,253 +663,294 @@ def step_3_generate_book():
 
     st.markdown("---")
 
-    # Generate cover button
+    # Parse characters from JSON if using new format
+    if json_data and 'characters' in json_data:
+        # Update project with characters from Stage 4
+        from book_schemas import Character
+        project.characters = [Character(**char_data) for char_data in json_data['characters']]
+        # Save to project
+        update_project_status(project, project.status)
+
     images_dir = Path('projects') / project.project_id / 'images'
-    cover_path = images_dir / 'cover.png'
-    cover_exists = cover_path.exists()
+    images_dir.mkdir(parents=True, exist_ok=True)
 
-    if not cover_exists:
-        if st.button("🎨 Step 1: Generate Cover Image (~$0.03, ~10 sec)"):
-            with st.spinner("Generating cover image..."):
-                try:
-                    from scripts.image_generator import generate_image
+    # ===================================================================
+    # SECTION 1: Generate Character References
+    # ===================================================================
+    st.header("📋 Step 1: Character References")
 
-                    cover_prompt = json_data.get('cover_image_prompt', '')
-                    if not cover_prompt:
-                        st.error("No cover_image_prompt found in data. Please regenerate Stage 4.")
-                        return
+    if project.characters:
+        # Check if all character references are generated
+        all_refs_exist = all(
+            c.reference_image_path and Path(c.reference_image_path).exists()
+            for c in project.characters
+        )
 
-                    # Create full cover prompt with style
-                    full_cover_prompt = f"{project.image_config.art_style}. {cover_prompt}"
+        if not all_refs_exist:
+            st.info(f"Found {len(project.characters)} characters. Generate reference images for consistency.")
 
-                    # Generate cover (no reference)
-                    cover_img = generate_image(full_cover_prompt, reference_image_path=None)
+            # Show character list
+            for char in project.characters:
+                st.write(f"- **{char.name}**: {char.description[:80]}...")
 
-                    # Save cover
-                    images_dir.mkdir(parents=True, exist_ok=True)
-                    cover_img.save(cover_path)
+            if st.button("🎨 Generate Character References", type="primary"):
+                progress_bar = st.progress(0)
+                status_text = st.empty()
 
-                    st.success("✅ Cover generated! Review it below, then generate page images.")
-                    st.rerun()
-
-                except Exception as e:
-                    st.error(f"Error generating cover: {e}")
-                    return
-    else:
-        st.info("✅ Cover image generated. Review below. If satisfied, generate page images.")
-
-    # Generate page images button (only if cover exists)
-    if cover_exists:
-        page_images_exist = len(list(images_dir.glob('page_*.png'))) > 0
-
-        if not page_images_exist:
-            if st.button("🎨 Step 2: Generate Page Images (~$0.30, ~2 min)"):
-                with st.spinner("Generating page images..."):
-                    progress_bar = st.progress(0)
-                    status_text = st.empty()
+                for i, char in enumerate(project.characters):
+                    status_text.text(f"Generating reference for {char.name}...")
 
                     try:
                         from scripts.image_generator import generate_image
 
-                        # Use cover as reference for all pages
-                        reference_path = str(cover_path)
+                        # Generate character reference with NO other references
+                        full_prompt = f"{project.image_config.art_style}. {char.description}. Standing in neutral pose on plain white background. Character reference sheet style."
 
-                        # Generate all page images using cover as reference
-                        num_pages = len(translation.pages)
-                        for i, page in enumerate(translation.pages):
-                            status_text.text(f"Generating page image {i+1}/{num_pages}...")
+                        img = generate_image(full_prompt, reference_image_paths=None)
 
-                            # Create image prompt with style
-                            full_prompt = f"{project.image_config.art_style}. {page.image_prompt}"
+                        # Save reference image
+                        ref_path = images_dir / f'char_{char.name.lower().replace(" ", "_")}.png'
+                        img.save(ref_path)
 
-                            # Generate with cover as reference
-                            img = generate_image(full_prompt, reference_image_path=reference_path)
+                        # Update character
+                        char.reference_image_path = str(ref_path)
 
-                            # Save
-                            img_path = Path('projects') / project.project_id / 'images' / f'page_{page.page_number:02d}.png'
-                            img_path.parent.mkdir(parents=True, exist_ok=True)
-                            img.save(img_path)
-
-                            # Update page
-                            page.image_path = str(img_path)
-
-                            progress_bar.progress((i + 1) / num_pages)
-
-                        status_text.text("✅ All page images generated!")
-                        update_project_status(project, 'images_generated')
-                        st.success("🎨 Page images complete!")
-                        st.rerun()
+                        progress_bar.progress((i + 1) / len(project.characters))
 
                     except Exception as e:
-                        st.error(f"Error generating page images: {e}")
-                        return
+                        st.error(f"Error generating {char.name}: {e}")
+
+                # Save project with updated character paths
+                update_project_status(project, project.status)
+                status_text.text("✅ All character references generated!")
+                st.success("Character references complete!")
+                st.rerun()
+
         else:
-            st.info("✅ All images generated!")
+            st.success(f"✅ {len(project.characters)} character references ready!")
 
-    # Show generated images if they exist
-    images_dir = Path('projects') / project.project_id / 'images'
-    if images_dir.exists():
-        # Show cover image first if it exists
-        cover_path = images_dir / 'cover.png'
-        if cover_path.exists():
-            st.subheader("📕 Cover Image (Character Reference)")
-            col1, col2 = st.columns([2, 1])
-            with col1:
-                st.image(str(cover_path), caption="Cover - All Characters", use_container_width=True)
-            with col2:
-                st.write("**Cover**")
-                st.info("This cover image shows all main characters and is used as a reference for character consistency across all pages.")
-                # Get cover prompt from project (saved) or json_data (new session)
-                cover_prompt = project.cover_image_prompt or (json_data.get('cover_image_prompt', '') if json_data else '')
-                if cover_prompt:
-                    st.write("**Cover Prompt:**")
-                    st.text(cover_prompt)
+            # Display character reference grid
+            cols = st.columns(min(len(project.characters), 4))
+            for i, char in enumerate(project.characters):
+                with cols[i % 4]:
+                    if char.reference_image_path and Path(char.reference_image_path).exists():
+                        st.image(char.reference_image_path, caption=char.name, use_container_width=True)
 
-                # Regeneration UI for cover
-                with st.expander("🔄 Regenerate Cover"):
-                    st.write("**Edit the cover prompt below:**")
+                        # Regeneration option
+                        with st.expander(f"🔄 Regenerate {char.name}"):
+                            edited_desc = st.text_area(
+                                "Character description:",
+                                value=char.description,
+                                key=f"edit_char_{char.name}",
+                                height=100
+                            )
 
-                    # Editable cover prompt
-                    edited_cover_prompt = st.text_area(
-                        "Cover Image Prompt",
-                        value=cover_prompt,
-                        key="edit_cover_prompt",
-                        height=150,
-                        help="Edit the full image prompt for the cover"
-                    )
+                            if st.button(f"Regenerate", key=f"regen_char_{char.name}"):
+                                try:
+                                    from scripts.image_generator import generate_image
 
-                    st.write("**Additional Instructions (optional):**")
-                    cover_custom_instructions = st.text_area(
-                        "Custom modifications",
-                        key="custom_cover",
-                        placeholder="e.g., 'Make characters larger', 'Add more detail to dragon', 'Change background'",
-                        height=80
-                    )
+                                    full_prompt = f"{project.image_config.art_style}. {edited_desc}. Standing in neutral pose on plain white background."
+                                    img = generate_image(full_prompt)
+                                    img.save(char.reference_image_path)
 
-                    use_current_cover = st.checkbox(
-                        "Use current cover as reference (for small tweaks)",
-                        value=False,
-                        key="use_current_cover_ref",
-                        help="When checked, uses the existing cover as a reference for minor adjustments. Uncheck for completely fresh generation."
-                    )
+                                    # Update description
+                                    char.description = edited_desc
+                                    update_project_status(project, project.status)
 
-                    if st.button("Regenerate Cover", key="regen_cover", type="primary"):
-                        with st.spinner("Regenerating cover..."):
-                            try:
-                                from scripts.image_generator import generate_image
+                                    st.success(f"✅ {char.name} regenerated!")
+                                    st.rerun()
+                                except Exception as e:
+                                    st.error(f"Error: {e}")
 
-                                # Build prompt with edited prompt and custom instructions
-                                base_prompt = f"{project.image_config.art_style}. {edited_cover_prompt}"
-                                if cover_custom_instructions.strip():
-                                    base_prompt = f"{base_prompt}. Additional instructions: {cover_custom_instructions}"
+    else:
+        # No characters (old format with cover_image_prompt)
+        st.info("Using legacy cover image format. No character references needed.")
 
-                                # Get reference based on checkbox
-                                ref_path = str(cover_path) if use_current_cover else None
+    st.markdown("---")
 
-                                # Generate
-                                img = generate_image(base_prompt, reference_image_path=ref_path)
+    # ===================================================================
+    # SECTION 2: Select Characters Per Page
+    # ===================================================================
 
-                                # Save (overwrite existing)
-                                img.save(cover_path)
+    if project.characters:
+        st.header("👥 Step 2: Select Characters for Each Page")
+        st.write("Choose which characters appear in each scene. This controls which reference images are used.")
 
-                                # Update the project with the edited prompt
-                                project.cover_image_prompt = edited_cover_prompt
-                                update_project_status(project, project.status)  # Save to disk
+        # Check how many pages have character selections
+        pages_configured = sum(1 for p in translation.pages if p.characters)
+        st.write(f"**Progress:** {pages_configured}/{len(translation.pages)} pages configured")
 
-                                # Also update JSON data if it exists
-                                if json_data:
-                                    json_data['cover_image_prompt'] = edited_cover_prompt
-                                    st.session_state.json_data = json_data
-
-                                st.success("✅ Cover regenerated!")
-                                st.rerun()
-
-                            except Exception as e:
-                                st.error(f"Error: {e}")
-
-            st.markdown("---")
-
-        image_files = sorted(images_dir.glob('page_*.png'))
-        if image_files:
-            st.subheader("📸 Page Images")
-
-            # Show images in rows of 2 for better regeneration UI
-            for i, img_path in enumerate(image_files):
-                page_num = i + 1
-                page = translation.pages[i] if i < len(translation.pages) else None
-
+        # Show all pages with character selection
+        for page in translation.pages:
+            with st.expander(f"📄 Page {page.page_number}: {page.latin_text[:50]}..."):
                 col1, col2 = st.columns([2, 1])
 
                 with col1:
-                    st.image(str(img_path), caption=f"Page {page_num}", use_container_width=True)
+                    st.write("**Latin:**")
+                    st.text(page.latin_text)
+                    st.write("**English:**")
+                    st.text(page.english_text)
+                    st.write("**Scene Description:**")
+                    st.text(page.image_prompt[:150] + "...")
 
                 with col2:
-                    st.write(f"**Page {page_num}**")
-                    if page:
+                    # Character multiselect
+                    character_names = [c.name for c in project.characters]
+
+                    selected_chars = st.multiselect(
+                        "Characters in this scene:",
+                        options=character_names,
+                        default=page.characters if page.characters else [],
+                        key=f"chars_select_page_{page.page_number}",
+                        help="Select which characters should appear in this image"
+                    )
+
+                    # Save button
+                    if st.button("💾 Save Selection", key=f"save_chars_page_{page.page_number}"):
+                        page.characters = selected_chars
+                        update_project_status(project, project.status)
+                        st.success(f"✅ Page {page.page_number} updated!")
+                        st.rerun()
+
+                    # Show current selection
+                    if page.characters:
+                        st.write(f"**Current:** {', '.join(page.characters)}")
+                    else:
+                        st.warning("No characters selected")
+
+        st.markdown("---")
+
+    # ===================================================================
+    # SECTION 3: Generate Page Images
+    # ===================================================================
+
+    st.header("🎨 Step 3: Generate Page Images")
+
+    # Check if page images exist
+    page_images_exist = len(list(images_dir.glob('page_*.png'))) > 0
+
+    if not page_images_exist:
+        # Check if we can generate (need character refs if using new format)
+        can_generate = True
+        if project.characters:
+            # New format: need character references
+            if not all(c.reference_image_path for c in project.characters):
+                can_generate = False
+                st.warning("⚠️ Generate character references first (Step 1)")
+
+        if can_generate:
+            if st.button("🎨 Generate All Page Images", type="primary"):
+                progress_bar = st.progress(0)
+                status_text = st.empty()
+
+                num_pages = len(translation.pages)
+                for i, page in enumerate(translation.pages):
+                    status_text.text(f"Generating page {page.page_number}/{num_pages}...")
+
+                    try:
+                        from scripts.image_generator import generate_image
+
+                        # Get reference paths for selected characters
+                        ref_paths = []
+                        if project.characters and page.characters:
+                            ref_paths = [
+                                c.reference_image_path
+                                for c in project.characters
+                                if c.name in page.characters and c.reference_image_path
+                            ]
+
+                        # Build prompt
+                        full_prompt = f"{project.image_config.art_style}. {page.image_prompt}"
+
+                        # Generate image with character references
+                        img = generate_image(full_prompt, reference_image_paths=ref_paths)
+
+                        # Save
+                        img_path = images_dir / f'page_{page.page_number:02d}.png'
+                        img.save(img_path)
+                        page.image_path = str(img_path)
+
+                        progress_bar.progress((i + 1) / num_pages)
+
+                    except Exception as e:
+                        st.error(f"Error generating page {page.page_number}: {e}")
+
+                status_text.text("✅ All page images generated!")
+                update_project_status(project, 'images_generated')
+                st.success("🎨 Page images complete!")
+                st.rerun()
+
+    else:
+        st.success("✅ All page images generated!")
+
+    # ===================================================================
+    # Display Generated Page Images
+    # ===================================================================
+
+    if page_images_exist:
+        st.subheader("📖 Generated Page Images")
+
+        image_files = sorted(images_dir.glob('page_*.png'))
+
+        for img_path in image_files:
+            # Extract page number from filename
+            page_num = int(img_path.stem.split('_')[1])
+            page = next((p for p in translation.pages if p.page_number == page_num), None)
+
+            if page:
+                with st.expander(f"Page {page_num}", expanded=False):
+                    col1, col2 = st.columns([2, 1])
+
+                    with col1:
+                        st.image(str(img_path), use_container_width=True)
+
+                    with col2:
                         st.write("**Latin:**")
                         st.text(page.latin_text)
                         st.write("**English:**")
                         st.text(page.english_text)
-                        st.write("**Image Prompt:**")
-                        st.text(page.image_prompt)
+                        st.write("**Characters:**")
+                        if page.characters:
+                            st.write(", ".join(page.characters))
+                        else:
+                            st.write("(None selected)")
 
-                    # Regeneration UI
-                    with st.expander("🔄 Regenerate"):
-                        custom_instructions = st.text_area(
-                            "Custom instructions (optional)",
-                            key=f"custom_{page_num}",
-                            placeholder="e.g., 'Make the background darker', 'Add more trees', 'Change dragon color to blue'",
-                            height=100
-                        )
-
-                        st.write("**Reference Image Options:**")
-                        col_ref1, col_ref2 = st.columns(2)
-
-                        with col_ref1:
-                            use_cover_ref = st.checkbox(
-                                "Use cover reference",
-                                value=True,
-                                key=f"use_cover_ref_{page_num}",
-                                help="Use cover image for character consistency"
+                        # Regeneration UI
+                        with st.expander("🔄 Regenerate"):
+                            custom_instructions = st.text_area(
+                                "Custom instructions:",
+                                key=f"custom_page_{page_num}",
+                                placeholder="e.g., 'Make background darker', 'Add more trees'",
+                                height=80
                             )
 
-                        with col_ref2:
-                            use_current_ref = st.checkbox(
-                                "Use current image",
-                                value=False,
-                                key=f"use_current_ref_{page_num}",
-                                help="Use current page image for small tweaks"
+                            use_current = st.checkbox(
+                                "Use current image as reference (for small tweaks)",
+                                key=f"use_current_{page_num}"
                             )
 
-                        # Show warning if both are checked
-                        if use_cover_ref and use_current_ref:
-                            st.warning("⚠️ Both reference options selected. Only the current image will be used.")
-
-                        if st.button(f"Regenerate Page {page_num}", key=f"regen_{page_num}"):
-                            with st.spinner(f"Regenerating page {page_num}..."):
+                            if st.button(f"Regenerate", key=f"regen_page_{page_num}"):
                                 try:
                                     from scripts.image_generator import generate_image
 
-                                    # Get reference image based on user choice (current image takes precedence)
-                                    reference_path = None
-                                    if use_current_ref:
-                                        # Use current page image as reference (for small tweaks)
-                                        reference_path = str(img_path)
-                                    elif use_cover_ref:
-                                        # Use cover image for character consistency
-                                        cover_path = Path('projects') / project.project_id / 'images' / 'cover.png'
-                                        if cover_path.exists():
-                                            reference_path = str(cover_path)
+                                    # Get references
+                                    ref_paths = []
+                                    if use_current:
+                                        ref_paths = [str(img_path)]
+                                    elif project.characters and page.characters:
+                                        ref_paths = [
+                                            c.reference_image_path
+                                            for c in project.characters
+                                            if c.name in page.characters
+                                        ]
 
-                                    # Build prompt with custom instructions
+                                    # Build prompt
                                     base_prompt = f"{project.image_config.art_style}. {page.image_prompt}"
                                     if custom_instructions.strip():
-                                        base_prompt = f"{base_prompt}. Additional instructions: {custom_instructions}"
+                                        base_prompt = f"{base_prompt}. {custom_instructions}"
 
                                     # Generate
-                                    img = generate_image(base_prompt, reference_image_path=reference_path)
-
-                                    # Save (overwrite existing)
+                                    img = generate_image(base_prompt, reference_image_paths=ref_paths)
                                     img.save(img_path)
 
                                     st.success(f"✅ Page {page_num} regenerated!")
@@ -917,8 +958,6 @@ def step_3_generate_book():
 
                                 except Exception as e:
                                     st.error(f"Error: {e}")
-
-                st.markdown("---")
 
     st.markdown("---")
 
