@@ -20,7 +20,7 @@ from PIL import Image
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from book_schemas import BookProject, BookTranslation
+from book_schemas import BookProject, BookTranslation, Character
 from scripts.book_manager import load_project, update_project_status
 
 
@@ -50,40 +50,48 @@ def get_client() -> genai.Client:
     return genai.Client(api_key=api_key)
 
 
-def generate_image(prompt: str, reference_image_path: Optional[str] = None) -> Image.Image:
+def generate_image(prompt: str, reference_image_paths: Optional[list[str]] = None) -> Image.Image:
     """
     Generate image using Gemini 2.5 Flash Image API.
 
     Args:
-        prompt: Text description of image to generate
-        reference_image_path: Optional path to reference image for consistency
+        prompt: Text description of image to generate (scene/action, NOT character appearance)
+        reference_image_paths: Optional list of character reference image paths for consistency
 
     Returns:
         PIL Image object
     """
     client = get_client()
 
-    # Build contents list
-    contents = [prompt]
+    # Build contents list starting with prompt
+    contents = []
 
-    # Add reference image if provided
-    if reference_image_path and Path(reference_image_path).exists():
-        # Load reference image
-        ref_image = Image.open(reference_image_path)
+    # Add all reference images if provided
+    if reference_image_paths:
+        # Enhance prompt to use reference styles
+        enhanced_prompt = f"Using the character styles from the reference images provided, {prompt}"
+        contents.append(enhanced_prompt)
 
-        # Convert to bytes for API
-        img_byte_arr = BytesIO()
-        ref_image.save(img_byte_arr, format='PNG')
-        img_byte_arr.seek(0)
+        # Add each reference image
+        for ref_path in reference_image_paths:
+            if ref_path and Path(ref_path).exists():
+                # Load reference image
+                ref_image = Image.open(ref_path)
 
-        # Modify prompt to use reference style
-        contents = [
-            f"Using the character style from the reference image, {prompt}",
-            types.Part.from_bytes(
-                data=img_byte_arr.read(),
-                mime_type='image/png'
-            )
-        ]
+                # Convert to bytes for API
+                img_byte_arr = BytesIO()
+                ref_image.save(img_byte_arr, format='PNG')
+                img_byte_arr.seek(0)
+
+                contents.append(
+                    types.Part.from_bytes(
+                        data=img_byte_arr.read(),
+                        mime_type='image/png'
+                    )
+                )
+    else:
+        # No references, just the prompt
+        contents = [prompt]
 
     # Generate image with configuration
     response = client.models.generate_content(
