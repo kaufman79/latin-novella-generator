@@ -231,31 +231,51 @@ Split the story into {project.target_pages} pages and create detailed image prom
 - Be specific about colors, composition, camera angle
 - Keep focus on the main action
 
+## Character References
+First, identify all main characters in the story and create character reference descriptions. Each character needs:
+- Name (e.g., "Pater", "Mater", "Dragon", "Cicadas")
+- Detailed visual description for generating a reference image (appearance, clothing, colors, distinctive features)
+
 ## Output Format
 Output as JSON:
 
 ```json
 {{
   "title_latin": "Title in Latin (2-5 words)",
-  "cover_image_prompt": "Cover art showing ALL main characters together in a representative scene. Include: [list each character with detailed appearance]. Background should represent the story's main setting. This will be used as the reference image for character consistency throughout the book.",
+  "characters": [
+    {{
+      "name": "Pater",
+      "description": "32-year-old man with red hair and a short red beard, wearing a blue tunic. Standing in a neutral pose with a kind expression. Simple, clean character design with flat colors."
+    }},
+    {{
+      "name": "Filia",
+      "description": "6-year-old girl with blonde hair in pigtails, wearing a yellow dress. Standing with arms at sides, cheerful expression. Simple, child-friendly design with bright colors."
+    }}
+  ],
   "pages": [
     {{
       "page_number": 1,
       "latin_text": "Full Latin sentence(s) for this page.",
       "english_text": "Full English translation for this page.",
-      "image_prompt": "Detailed visual description following style sheet: character in specific pose, setting details, lighting, mood, colors, composition."
+      "image_prompt": "Detailed scene description: setting, action, mood, lighting. Do NOT repeat character appearances.",
+      "characters": ["Pater", "Filia"]
     }},
     {{
       "page_number": 2,
       "latin_text": "...",
       "english_text": "...",
-      "image_prompt": "..."
+      "image_prompt": "...",
+      "characters": ["Pater"]
     }}
   ]
 }}
 ```
 
-**CRITICAL**: The `cover_image_prompt` must include ALL main characters with detailed visual descriptions (colors, clothing, features). This cover will be used as the reference for all page images to maintain character consistency.
+**CRITICAL**:
+- List ALL main characters in the `characters` array with detailed visual descriptions
+- For each page, specify which character names appear in that scene using the `characters` array
+- Character descriptions will be used to generate reference images for consistency
+- Page image prompts should focus on SCENE/ACTION/SETTING only, not character appearance (that comes from references)
 
 **Important**: Output ONLY the JSON, no additional text.
 
@@ -377,12 +397,19 @@ def validate_stage_4_input(json_text: str) -> tuple[bool, Optional[str], Optiona
         if not isinstance(data['title_latin'], str) or not data['title_latin'].strip():
             return False, "'title_latin' must be a non-empty string", None
 
-        # Check for cover_image_prompt
-        if 'cover_image_prompt' not in data:
-            return False, "Missing 'cover_image_prompt' field in JSON", None
+        # Check for characters array (new format)
+        if 'characters' in data:
+            if not isinstance(data['characters'], list):
+                return False, "'characters' must be an array", None
 
-        if not isinstance(data['cover_image_prompt'], str) or not data['cover_image_prompt'].strip():
-            return False, "'cover_image_prompt' must be a non-empty string", None
+            for i, char in enumerate(data['characters']):
+                if 'name' not in char:
+                    return False, f"Character {i+1} missing 'name' field", None
+                if 'description' not in char:
+                    return False, f"Character {i+1} missing 'description' field", None
+        # Fallback to old format for backwards compatibility
+        elif 'cover_image_prompt' not in data:
+            return False, "Missing either 'characters' array or 'cover_image_prompt' field in JSON", None
 
         if 'pages' not in data:
             return False, "Missing 'pages' array in JSON", None
@@ -399,6 +426,11 @@ def validate_stage_4_input(json_text: str) -> tuple[bool, Optional[str], Optiona
             for field in required:
                 if field not in page:
                     return False, f"Page {i+1} missing required field: {field}", None
+
+            # Check for characters field in new format (optional but recommended)
+            if 'characters' in data and 'characters' not in page:
+                # Auto-add empty characters list if using new format but page doesn't have it
+                page['characters'] = []
 
         return True, None, data
 
