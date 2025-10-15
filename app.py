@@ -829,9 +829,36 @@ def step_3_generate_book():
         if not all_loc_refs_exist:
             st.info(f"Found {len(project.locations)} locations. Generate reference images for consistent settings.")
 
-            # Show location list
+            # Show location list with editable prompts
+            st.write("**Review and edit prompts before generating:**")
+
+            # Store edited prompts in session state
+            if 'loc_prompts' not in st.session_state:
+                st.session_state.loc_prompts = {}
+
             for loc in project.locations:
-                st.write(f"- **{loc.name}**: {loc.description[:80]}...")
+                with st.expander(f"**{loc.name}**"):
+                    # Default location-specific prompt (just the location part, not the full style guide)
+                    # Check if description already has the reference sheet suffix to avoid duplication
+                    if "Location reference image" in loc.description:
+                        default_loc_prompt = loc.description
+                    else:
+                        default_loc_prompt = f"{loc.description}. Empty room with no people, neutral eye-level angle. Location reference image for consistent setting across multiple scenes."
+
+                    # Get or initialize prompt (store only the location-specific part)
+                    if loc.name not in st.session_state.loc_prompts:
+                        st.session_state.loc_prompts[loc.name] = default_loc_prompt
+
+                    # Editable prompt (only shows location-specific part)
+                    st.session_state.loc_prompts[loc.name] = st.text_area(
+                        f"Location prompt for {loc.name}:",
+                        value=st.session_state.loc_prompts[loc.name],
+                        key=f"loc_prompt_{loc.name}",
+                        height=120,
+                        help="Edit the location-specific part. The full style guide will be automatically added when generating."
+                    )
+
+                    st.caption("💡 The full art style guide will be prepended automatically during generation.")
 
             if st.button("🎨 Generate Location References", type="primary"):
                 progress_bar = st.progress(0)
@@ -843,8 +870,9 @@ def step_3_generate_book():
                     try:
                         from scripts.image_generator import generate_image
 
-                        # Generate location reference - empty scene, no characters
-                        full_prompt = f"{project.image_config.art_style}. {loc.description}. Empty room with no people, neutral eye-level angle. Location reference image for consistent setting across multiple scenes."
+                        # Build full prompt: style guide + location-specific prompt
+                        loc_specific_prompt = st.session_state.loc_prompts.get(loc.name, loc.description)
+                        full_prompt = f"{project.image_config.art_style}. {loc_specific_prompt}"
 
                         img = generate_image(full_prompt, reference_image_paths=None)
 
@@ -864,6 +892,9 @@ def step_3_generate_book():
                 update_project_status(project, project.status)
                 status_text.text("✅ All location references generated!")
                 st.success("Location references complete!")
+
+                # Clear session state prompts after successful generation
+                st.session_state.loc_prompts = {}
                 st.rerun()
 
         else:
