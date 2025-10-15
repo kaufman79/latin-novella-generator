@@ -337,7 +337,7 @@ def step_1_create_project():
             "Art Style & Visual Guidelines",
             value=default_value,
             height=300,
-            placeholder="Describe art style, character designs, environment, composition, colors, etc.\n\nExample:\nArt Style: Watercolor, whimsical, bright colors\nCharacters: Small brown dog, friendly expression\nSetting: Sunny garden with flowers\nColors: Warm yellows, greens, blues"
+            placeholder="Define UNIVERSAL visual style only (art style, composition, technical specs).\n\nDO NOT include specific character designs or environment details here.\nThose will be defined separately as reference images in Stage 4.\n\nExample:\nART STYLE:\nWatercolor, whimsical, bright colors\n\nCOMPOSITION:\n- Center framing, eye-level angle\n- Simple perspective\n\nTECHNICAL:\n- Square aspect ratio\n- Bright, flat colors"
         )
 
         submitted = st.form_submit_button("Create Project")

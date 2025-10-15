@@ -3,17 +3,6 @@ PROJECT: Latin Reader Series
 ART STYLE:
 Simple storybook art with clean shapes, light shading, and bright flat colors; gentle and consistent visual tone
 
-CHARACTER DESIGN:
-- Buzz: small astronaut toy, white suit with green and purple accents, smiling face
-- Woody: cowboy toy with hat, yellow shirt, jeans, and star badge, friendly expression
-- Child: young boy, short brown hair, red shirt, curious look
-- Other toys: minimalist designs, colorful, easily recognizable but not detailed
-
-ENVIRONMENT:
-- Setting: child's bedroom (cubiculum puerī) with wooden floor, bed, window, and scattered toys
-- Lighting: soft daylight or lamplight depending on scene
-- Background: low complexity; focus on characters and key actions, no visual clutter
-
 COMPOSITION:
 - Layout: center or slightly lower center framing
 - Camera angle: mostly eye-level or slightly above; keep perspective simple
@@ -29,3 +18,6 @@ LAYOUT NOTES:
 
 AI INSTRUCTIONS:
 Keep visuals simple, warm, and readable for children. Avoid text, labels, or complex shadows. Focus on consistent characters and simple emotions. Each image should clearly illustrate the moment described in the Latin text.
+
+NOTE: Do not include CHARACTER DESIGN or ENVIRONMENT sections here.
+Characters and locations will be defined separately as reference images in Stage 4.
