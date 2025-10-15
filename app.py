@@ -915,49 +915,51 @@ def step_3_generate_book():
                         else:
                             st.write("(None selected)")
 
-                        # Regeneration UI
-                        with st.expander("🔄 Regenerate"):
-                            custom_instructions = st.text_area(
-                                "Custom instructions:",
-                                key=f"custom_page_{page_num}",
-                                placeholder="e.g., 'Make background darker', 'Add more trees'",
-                                height=80
-                            )
+                        # Regeneration UI (without nested expander)
+                        st.write("---")
+                        st.write("**🔄 Regenerate This Image**")
 
-                            use_current = st.checkbox(
-                                "Use current image as reference (for small tweaks)",
-                                key=f"use_current_{page_num}"
-                            )
+                        custom_instructions = st.text_area(
+                            "Custom instructions:",
+                            key=f"custom_page_{page_num}",
+                            placeholder="e.g., 'Make background darker', 'Add more trees'",
+                            height=68
+                        )
 
-                            if st.button(f"Regenerate", key=f"regen_page_{page_num}"):
-                                try:
-                                    from scripts.image_generator import generate_image
+                        use_current = st.checkbox(
+                            "Use current image as reference (for small tweaks)",
+                            key=f"use_current_{page_num}"
+                        )
 
-                                    # Get references
-                                    ref_paths = []
-                                    if use_current:
-                                        ref_paths = [str(img_path)]
-                                    elif project.characters and page.characters:
-                                        ref_paths = [
-                                            c.reference_image_path
-                                            for c in project.characters
-                                            if c.name in page.characters
-                                        ]
+                        if st.button(f"🔄 Regenerate", key=f"regen_page_{page_num}"):
+                            try:
+                                from scripts.image_generator import generate_image
 
-                                    # Build prompt
-                                    base_prompt = f"{project.image_config.art_style}. {page.image_prompt}"
-                                    if custom_instructions.strip():
-                                        base_prompt = f"{base_prompt}. {custom_instructions}"
+                                # Get references
+                                ref_paths = []
+                                if use_current:
+                                    ref_paths = [str(img_path)]
+                                elif project.characters and page.characters:
+                                    ref_paths = [
+                                        c.reference_image_path
+                                        for c in project.characters
+                                        if c.name in page.characters
+                                    ]
 
-                                    # Generate
-                                    img = generate_image(base_prompt, reference_image_paths=ref_paths)
-                                    img.save(img_path)
+                                # Build prompt
+                                base_prompt = f"{project.image_config.art_style}. {page.image_prompt}"
+                                if custom_instructions.strip():
+                                    base_prompt = f"{base_prompt}. {custom_instructions}"
 
-                                    st.success(f"✅ Page {page_num} regenerated!")
-                                    st.rerun()
+                                # Generate
+                                img = generate_image(base_prompt, reference_image_paths=ref_paths)
+                                img.save(img_path)
 
-                                except Exception as e:
-                                    st.error(f"Error: {e}")
+                                st.success(f"✅ Page {page_num} regenerated!")
+                                st.rerun()
+
+                            except Exception as e:
+                                st.error(f"Error: {e}")
 
     st.markdown("---")
 

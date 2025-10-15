@@ -13,224 +13,328 @@
         "latin_text": "Nox erat.",
         "english_text": "It was night.",
         "image_prompt": "A simple nighttime house exterior in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. A small wooden house with glowing windows, surrounded by a dark blue sky with stars. Candlelight spills from the windows, casting a warm yellow glow. Background: minimal, with a simple tree silhouette. Mood: quiet, calm, setting the nighttime scene.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_01.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": []
       },
       {
         "page_number": 2,
         "latin_text": "Pater in lectō dormit.",
         "english_text": "Father sleeps on the couch.",
         "image_prompt": "A cozy downstairs room in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (32-year-old man, red hair, short red beard, wearing a blue tunic) sleeps on a simple wooden couch with a red blanket, snoring softly with a peaceful expression. A single candle on a nearby table casts warm light and soft shadows. Background: plain wooden walls, no clutter. Mood: calm, sleepy.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_02.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater"
+        ]
       },
       {
         "page_number": 3,
         "latin_text": "Aurēlius in cūnīs dormit.",
         "english_text": "Aurēlius sleeps in the crib.",
         "image_prompt": "A simple upstairs bedroom in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, slightly above angle. Aurēlius (three-year-old boy, blond hair, pale skin, in a white tunic) sleeps in a wooden crib with a blue blanket, curled up with a content expression. A candle on a nearby shelf casts a warm glow. Background: minimal, with a wooden floor and plain wall. Mood: peaceful, cozy.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_03.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Aurēlius"
+        ]
       },
       {
         "page_number": 4,
         "latin_text": "Māter Iūdam, īnfantem, in cubiculō lactat.",
         "english_text": "Mother nurses Judah, the baby, in the bedroom.",
         "image_prompt": "A warm bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Māter (30-year-old woman, long dirty blond hair, skinny, in a green nightgown) sits on a bed, nursing Iūda (baby, dark hair, in a white cloth diaper) with a gentle smile. A nursing pillow (soft yellow) supports Iūda. A candle on a bedside table casts warm light. Background: simple wooden bed and plain walls. Mood: nurturing, serene.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_04.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Māter",
+          "Iūda"
+        ]
       },
       {
         "page_number": 5,
         "latin_text": "Subitō blatta super pulvīnum currit!",
         "english_text": "Suddenly, a cockroach runs across the pillow!",
         "image_prompt": "A dramatic bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, slightly above angle. A large brown cockroach crawls across a yellow nursing pillow on the bed where Māter (long dirty blond hair, green nightgown) sits, holding Iūda (baby, dark hair). Māter’s eyes widen in surprise. Candlelight casts soft shadows, highlighting the cockroach. Background: simple bed and wooden wall. Mood: sudden, startling.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_05.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Māter",
+          "Iūda",
+          "Blatta"
+        ]
       },
       {
         "page_number": 6,
         "latin_text": "Māter exlāmāvit!",
         "english_text": "Mother screams!",
         "image_prompt": "A lively bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Māter (long dirty blond hair, green nightgown) sits on the bed, holding Iūda (baby, dark hair), with a shocked expression, mouth open in a scream. The cockroach is visible on the yellow nursing pillow. Candlelight casts dramatic shadows. Background: minimal, with bed and plain wall. Mood: alarmed, intense.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_06.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Māter",
+          "Iūda",
+          "Blatta"
+        ]
       },
       {
         "page_number": 7,
         "latin_text": "Māter telephōnum capit et patrem vocat:",
         "english_text": "Mother grabs the phone and calls Father:",
         "image_prompt": "A focused bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Māter (long dirty blond hair, green nightgown) holds Iūda (baby, dark hair) in one arm and a simple black phone in the other, her expression urgent. The cockroach remains on the yellow pillow. Candlelight glows softly. Background: simple bed and wooden wall. Mood: tense, urgent.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_07.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Māter",
+          "Iūda",
+          "Blatta"
+        ]
       },
       {
         "page_number": 8,
         "latin_text": "“Pater, blatta est! Venī eam necā!”",
         "english_text": "“Father, there’s a cockroach! Come kill it!”",
         "image_prompt": "A close-up bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Māter (long dirty blond hair, green nightgown) holds the phone to her ear, her face showing worry as she speaks. Iūda (baby, dark hair) rests in her arm. The cockroach is on the yellow pillow. Candlelight casts a warm glow. Background: minimal, bed-focused. Mood: anxious, calling for help.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_08.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Māter",
+          "Iūda",
+          "Blatta"
+        ]
       },
       {
         "page_number": 9,
         "latin_text": "Pater surgit.",
         "english_text": "Father gets up.",
         "image_prompt": "A downstairs room in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (red hair, short red beard, blue tunic) sits up on the couch, eyes wide, startled awake. The red blanket falls to the side. A candle on a table casts warm light and shadows. Background: simple wooden walls. Mood: sudden, alert.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_09.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater"
+        ]
       },
       {
         "page_number": 10,
         "latin_text": "Pater calceum capit.",
         "english_text": "Father grabs a boot.",
         "image_prompt": "A dynamic downstairs scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, slightly above angle. Pater (red hair, short red beard, blue tunic) stands, holding a large brown boot with a determined expression. The couch and red blanket are behind him. Candlelight casts soft shadows. Background: minimal, wooden floor and walls. Mood: purposeful, ready for action.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_10.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater"
+        ]
       },
       {
         "page_number": 11,
         "latin_text": "Pater cito ad cubiculum currit.",
         "english_text": "Father quickly runs to the bedroom.",
         "image_prompt": "An action-packed scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (red hair, short red beard, blue tunic) runs up a wooden staircase, holding a brown boot, his face focused. Candlelight from a wall sconce casts dynamic shadows. Background: simple stairs and plain wall. Mood: urgent, energetic.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_11.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater"
+        ]
       },
       {
         "page_number": 12,
         "latin_text": "Māter ostium aperit.",
         "english_text": "Mother opens the door.",
         "image_prompt": "A bedroom doorway scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Māter (long dirty blond hair, green nightgown) stands at the open wooden door, holding Iūda (baby, dark hair), her expression worried. Candlelight from inside the room glows warmly. Background: simple doorway and bed. Mood: tense, expectant.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_12.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Māter",
+          "Iūda"
+        ]
       },
       {
         "page_number": 13,
         "latin_text": "Māter dīcit: “Ecce blatta!”",
         "english_text": "Mother says: “Look, the cockroach!”",
         "image_prompt": "A bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Māter (long dirty blond hair, green nightgown) points with one hand, holding Iūda (baby, dark hair) in the other, her face alarmed. A brown cockroach crawls on a wooden basket of diapers (white cloths). Candlelight casts soft shadows. Background: bed and plain wall. Mood: excited, pointing out danger.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_13.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Māter",
+          "Iūda",
+          "Blatta"
+        ]
       },
       {
         "page_number": 14,
         "latin_text": "Blatta in cistā pannōrum currit.",
         "english_text": "The cockroach runs on the basket of diapers.",
         "image_prompt": "A focused bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, slightly above angle. A large brown cockroach crawls across a wooden basket filled with white diaper cloths. Pater (red hair, short red beard, blue tunic) stands nearby, holding a brown boot, watching intently. Candlelight highlights the basket. Background: minimal, bed in the distance. Mood: tense, focused.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_14.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater",
+          "Blatta"
+        ]
       },
       {
         "page_number": 15,
         "latin_text": "Pater calceum tenet, sed blatta rapida est.",
         "english_text": "Father holds the boot, but the cockroach is fast.",
         "image_prompt": "A suspenseful bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (red hair, short red beard, blue tunic) holds a brown boot raised, his face frustrated as he watches a brown cockroach scurry across the diaper basket. Candlelight casts dramatic shadows. Background: simple bed and wooden floor. Mood: tense, challenging.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_15.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater",
+          "Blatta"
+        ]
       },
       {
         "page_number": 16,
         "latin_text": "Blatta in culcitam currit.",
         "english_text": "The cockroach runs onto the changing pad.",
         "image_prompt": "A dynamic bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, slightly above angle. A brown cockroach crawls onto a soft green changing pad on a wooden table. Pater (red hair, short red beard, blue tunic) stands ready with a brown boot, eyes focused. Candlelight highlights the pad. Background: minimal, bed in the background. Mood: anticipatory, action-ready.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_16.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater",
+          "Blatta"
+        ]
       },
       {
         "page_number": 17,
         "latin_text": "Pater calceum levat et percutit.",
         "english_text": "Father lifts the boot and strikes.",
         "image_prompt": "An action-packed bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (red hair, short red beard, blue tunic) swings a brown boot down toward the green changing pad, his face determined. The brown cockroach is on the pad. Candlelight casts dynamic shadows. Background: simple bed and floor. Mood: intense, dramatic.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_17.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater",
+          "Blatta"
+        ]
       },
       {
         "page_number": 18,
         "latin_text": "Ēheu, blatta cadit in solum, nōn mortua!",
         "english_text": "Oh no, the cockroach falls to the floor, not dead!",
         "image_prompt": "A dramatic bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, slightly above angle. A brown cockroach lands on the wooden floor beside a bed, still moving. Pater (red hair, short red beard, blue tunic) looks surprised, holding a brown boot. Candlelight casts soft shadows. Background: bed and minimal furniture. Mood: surprised, slightly chaotic.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_18.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater",
+          "Blatta"
+        ]
       },
       {
         "page_number": 19,
         "latin_text": "Blatta in saccō rubrō currit.",
         "english_text": "The cockroach runs onto the red bag.",
         "image_prompt": "A tense bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. A brown cockroach crawls onto a red duffle bag on the floor. Pater (red hair, short red beard, blue tunic) watches closely, holding a brown boot, his face focused. Candlelight highlights the bag. Background: simple bed and floor. Mood: suspenseful, alert.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_19.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater",
+          "Blatta"
+        ]
       },
       {
         "page_number": 20,
         "latin_text": "Pater calceum levat et percutit. Pater blattam calceō percutit!",
         "english_text": "Father lifts the boot and strikes. Father hits the cockroach with the boot!",
         "image_prompt": "An energetic bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (red hair, short red beard, blue tunic) swings a brown boot down onto a red duffle bag, hitting a brown cockroach, his face triumphant. Candlelight casts dynamic shadows. Background: minimal, bed in the distance. Mood: exciting, victorious.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_20.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater",
+          "Blatta"
+        ]
       },
       {
         "page_number": 21,
         "latin_text": "Pater chartam hygēnicam petit ut blattam tollat.",
         "english_text": "Father gets toilet paper to pick up the cockroach.",
         "image_prompt": "A purposeful bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (red hair, short red beard, blue tunic) walks toward a wooden shelf, reaching for a roll of white toilet paper, his expression confident. The red duffle bag is on the floor. Candlelight glows softly. Background: simple bed and wall. Mood: determined, proactive.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_21.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater"
+        ]
       },
       {
         "page_number": 22,
         "latin_text": "Pater redit, sed blatta nōn vidērī! Pater saccō movet.",
         "english_text": "Father returns, but the cockroach is gone! Father moves the bag.",
         "image_prompt": "A surprising bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, slightly above angle. Pater (red hair, short red beard, blue tunic) holds white toilet paper, looking confused at the red duffle bag he’s lifting. No cockroach is visible. Candlelight casts soft shadows. Background: bed and wooden floor. Mood: puzzled, searching.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_22.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater"
+        ]
       },
       {
         "page_number": 23,
         "latin_text": "Ecce blatta! Pater percutit.",
         "english_text": "Look, the cockroach! Father strikes.",
         "image_prompt": "An exciting bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (red hair, short red beard, blue tunic) swings a brown boot at a brown cockroach inside the red duffle bag, his face determined. Candlelight highlights the action. Background: minimal, bed in the background. Mood: intense, climactic.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_23.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater",
+          "Blatta"
+        ]
       },
       {
         "page_number": 24,
         "latin_text": "Nunc blatta mortua est.",
         "english_text": "Now the cockroach is dead.",
         "image_prompt": "A triumphant bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, slightly above angle. Pater (red hair, short red beard, blue tunic) stands proudly, holding a brown boot, looking at a motionless brown cockroach on the red duffle bag. Candlelight casts a warm glow. Background: simple bed and floor. Mood: victorious, relieved.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_24.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater",
+          "Blatta"
+        ]
       },
       {
         "page_number": 25,
         "latin_text": "Pater blattam chartā hygēnicā tollit et dēposuit in quisquiliās.",
         "english_text": "Father picks up the cockroach with toilet paper and throws it in the trash can.",
         "image_prompt": "A satisfying bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (red hair, short red beard, blue tunic) holds a white piece of toilet paper with a brown cockroach, tossing it into a simple wooden trash can. His expression is relieved. Candlelight glows softly. Background: bed and minimal furniture. Mood: accomplished, calm.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_25.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater",
+          "Blatta"
+        ]
       },
       {
         "page_number": 26,
         "latin_text": "Māter dīcit: “Grātiās, Pater!” Pater dīcit: “Bene, mea cāra!”",
         "english_text": "Mother says: “Thank you, Father!” Father says: “You’re welcome, my dear!”",
         "image_prompt": "A heartwarming bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Māter (long dirty blond hair, green nightgown) smiles gratefully, holding Iūda (baby, dark hair). Pater (red hair, short red beard, blue tunic) smiles back, holding a brown boot. Candlelight casts a warm glow. Background: bed and wooden floor. Mood: happy, loving.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_26.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater",
+          "Māter",
+          "Iūda"
+        ]
       },
       {
         "page_number": 27,
         "latin_text": "Pater in lectum redit et dormit.",
         "english_text": "Father returns to the couch and sleeps.",
         "image_prompt": "A cozy downstairs scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (red hair, short red beard, blue tunic) lies on the couch, covered with a red blanket, sleeping peacefully. A candle on a table casts a soft glow. Background: simple wooden walls. Mood: calm, restful.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_27.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Pater"
+        ]
       },
       {
         "page_number": 28,
         "latin_text": "Blatta nōn redit.",
         "english_text": "The cockroach does not return.",
         "image_prompt": "A serene nighttime house exterior in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. The wooden house from page 1, with glowing windows now dimmed, under a starry dark blue sky. No cockroach is visible. Background: minimal, with a tree silhouette. Mood: peaceful, conclusive.",
-        "image_path": "projects/dada_and_the_cockroach/images/page_28.png",
-        "vocabulary_used": []
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": []
       }
     ],
     "vocabulary_list": [
@@ -777,8 +881,35 @@
   "target_age": "2-5",
   "target_pages": 20,
   "level": 1,
-  "status": "images_generated",
+  "status": "translation_complete",
   "date_created": "2025-10-13T13:47:12.648205",
   "date_modified": "2025-10-13T15:35:33.311365",
-  "project_folder": "projects/dada_and_the_cockroach"
+  "project_folder": "projects/dada_and_the_cockroach",
+  "characters": [
+    {
+      "name": "Pater",
+      "description": "32-year-old man with red hair and a short red beard, wearing a simple blue tunic. Standing in neutral pose on plain white background. Character reference sheet style.",
+      "reference_image_path": null
+    },
+    {
+      "name": "Māter",
+      "description": "30-year-old woman with long dirty blond hair, skinny build, wearing a soft green nightgown. Standing in neutral pose on plain white background. Character reference sheet style.",
+      "reference_image_path": null
+    },
+    {
+      "name": "Iūda",
+      "description": "Baby with dark hair, wearing a white cloth diaper. Lying on back in neutral pose on plain white background. Character reference sheet style.",
+      "reference_image_path": null
+    },
+    {
+      "name": "Aurēlius",
+      "description": "Three-year-old boy with blond hair and pale skin, wearing a white tunic. Standing in neutral pose on plain white background. Character reference sheet style.",
+      "reference_image_path": null
+    },
+    {
+      "name": "Blatta",
+      "description": "Large brown cockroach with detailed legs and antennae. Side view on plain white background. Character reference sheet style.",
+      "reference_image_path": null
+    }
+  ]
 }
