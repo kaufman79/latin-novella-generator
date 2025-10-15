@@ -20,8 +20,47 @@ from PIL import Image
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from book_schemas import BookProject, BookTranslation, Character
+from book_schemas import BookProject, BookTranslation, Character, Location
 from scripts.book_manager import load_project, update_project_status
+
+
+def get_reference_images_for_page(page, project: BookProject) -> list[str]:
+    """
+    Get reference image paths for a page, respecting the 3-image API limit.
+
+    Priority:
+    1. Location reference (if specified) - 1 image
+    2. Character references (up to 2 to stay under 3-image limit)
+
+    Args:
+        page: BookPage with characters and location fields
+        project: BookProject with characters and locations lists
+
+    Returns:
+        List of reference image paths (max 3)
+    """
+    refs = []
+
+    # Priority 1: Location reference (if specified)
+    if hasattr(page, 'location') and page.location:
+        loc = next((l for l in project.locations if l.name == page.location), None)
+        if loc and loc.reference_image_path and Path(loc.reference_image_path).exists():
+            refs.append(loc.reference_image_path)
+
+    # Priority 2-3: Character references (up to 2 remaining slots)
+    if page.characters and project.characters:
+        char_refs = [
+            c.reference_image_path
+            for c in project.characters
+            if c.name in page.characters
+            and c.reference_image_path
+            and Path(c.reference_image_path).exists()
+        ]
+        # Calculate available slots (3 total - location if present)
+        available_slots = 3 - len(refs)
+        refs.extend(char_refs[:available_slots])
+
+    return refs
 
 
 def get_client() -> genai.Client:
@@ -68,8 +107,8 @@ def generate_image(prompt: str, reference_image_paths: Optional[list[str]] = Non
 
     # Add all reference images if provided
     if reference_image_paths:
-        # Enhance prompt to use reference styles
-        enhanced_prompt = f"Using the character styles from the reference images provided, {prompt}"
+        # Enhance prompt to use reference styles (handles both location and character refs)
+        enhanced_prompt = f"Using the setting and character styles from the reference images provided, {prompt}. Maintain consistency with the reference images for location environment and character appearance."
         contents.append(enhanced_prompt)
 
         # Add each reference image

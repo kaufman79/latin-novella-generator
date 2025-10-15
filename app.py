@@ -769,18 +769,117 @@ def step_3_generate_book():
     st.markdown("---")
 
     # ===================================================================
+    # SECTION 1B: Generate Location References
+    # ===================================================================
+    st.header("🏠 Step 1b: Location References")
+
+    # Parse locations from JSON if using new format
+    if json_data and 'locations' in json_data:
+        from book_schemas import Location
+        project.locations = [Location(**loc_data) for loc_data in json_data['locations']]
+        update_project_status(project, project.status)
+
+    if project.locations:
+        # Check if all location references are generated
+        all_loc_refs_exist = all(
+            l.reference_image_path and Path(l.reference_image_path).exists()
+            for l in project.locations
+        )
+
+        if not all_loc_refs_exist:
+            st.info(f"Found {len(project.locations)} locations. Generate reference images for consistent settings.")
+
+            # Show location list
+            for loc in project.locations:
+                st.write(f"- **{loc.name}**: {loc.description[:80]}...")
+
+            if st.button("🎨 Generate Location References", type="primary"):
+                progress_bar = st.progress(0)
+                status_text = st.empty()
+
+                for i, loc in enumerate(project.locations):
+                    status_text.text(f"Generating reference for {loc.name}...")
+
+                    try:
+                        from scripts.image_generator import generate_image
+
+                        # Generate location reference - empty scene, no characters
+                        full_prompt = f"{project.image_config.art_style}. {loc.description}. Empty room with no people, neutral eye-level angle. Location reference image for consistent setting across multiple scenes."
+
+                        img = generate_image(full_prompt, reference_image_paths=None)
+
+                        # Save reference image
+                        ref_path = images_dir / f'loc_{loc.name.lower().replace(" ", "_")}.png'
+                        img.save(ref_path)
+
+                        # Update location
+                        loc.reference_image_path = str(ref_path)
+
+                        progress_bar.progress((i + 1) / len(project.locations))
+
+                    except Exception as e:
+                        st.error(f"Error generating {loc.name}: {e}")
+
+                # Save project with updated location paths
+                update_project_status(project, project.status)
+                status_text.text("✅ All location references generated!")
+                st.success("Location references complete!")
+                st.rerun()
+
+        else:
+            st.success(f"✅ {len(project.locations)} location references ready!")
+
+            # Display location reference grid
+            cols = st.columns(min(len(project.locations), 3))
+            for i, loc in enumerate(project.locations):
+                with cols[i % 3]:
+                    if loc.reference_image_path and Path(loc.reference_image_path).exists():
+                        st.image(loc.reference_image_path, caption=loc.name, use_container_width=True)
+
+                        # Regeneration option
+                        with st.expander(f"🔄 Regenerate {loc.name}"):
+                            edited_desc = st.text_area(
+                                "Location description:",
+                                value=loc.description,
+                                key=f"edit_loc_{loc.name}",
+                                height=100
+                            )
+
+                            if st.button(f"Regenerate", key=f"regen_loc_{loc.name}"):
+                                try:
+                                    from scripts.image_generator import generate_image
+
+                                    full_prompt = f"{project.image_config.art_style}. {edited_desc}. Empty room with no people."
+                                    img = generate_image(full_prompt)
+                                    img.save(loc.reference_image_path)
+
+                                    # Update description
+                                    loc.description = edited_desc
+                                    update_project_status(project, project.status)
+
+                                    st.success(f"✅ {loc.name} regenerated!")
+                                    st.rerun()
+                                except Exception as e:
+                                    st.error(f"Error: {e}")
+
+    else:
+        st.info("No locations defined. Add locations to your project configuration.")
+
+    st.markdown("---")
+
+    # ===================================================================
     # SECTION 2: Select Characters Per Page
     # ===================================================================
 
-    if project.characters:
-        st.header("👥 Step 2: Select Characters for Each Page")
-        st.write("Choose which characters appear in each scene. This controls which reference images are used.")
+    if project.characters or project.locations:
+        st.header("👥🏠 Step 2: Configure Each Page")
+        st.write("Choose which characters and location appear in each scene. This controls which reference images are used.")
 
-        # Check how many pages have character selections
-        pages_configured = sum(1 for p in translation.pages if p.characters)
+        # Check how many pages have selections
+        pages_configured = sum(1 for p in translation.pages if (p.characters or (hasattr(p, 'location') and p.location)))
         st.write(f"**Progress:** {pages_configured}/{len(translation.pages)} pages configured")
 
-        # Show all pages with character selection
+        # Show all pages with character and location selection
         for page in translation.pages:
             with st.expander(f"📄 Page {page.page_number}: {page.latin_text[:50]}..."):
                 col1, col2 = st.columns([2, 1])
@@ -794,29 +893,62 @@ def step_3_generate_book():
                     st.text(page.image_prompt[:150] + "...")
 
                 with col2:
-                    # Character multiselect
-                    character_names = [c.name for c in project.characters]
+                    # Initialize variables
+                    selected_location = None
+                    selected_chars = []
 
-                    selected_chars = st.multiselect(
-                        "Characters in this scene:",
-                        options=character_names,
-                        default=page.characters if page.characters else [],
-                        key=f"chars_select_page_{page.page_number}",
-                        help="Select which characters should appear in this image"
-                    )
+                    # Location selectbox (if locations exist)
+                    if project.locations:
+                        location_names = [l.name for l in project.locations]
+                        location_names = ["(None)"] + location_names  # Add None option
+
+                        current_location = page.location if hasattr(page, 'location') and page.location else "(None)"
+
+                        selected_location = st.selectbox(
+                            "Location/Setting:",
+                            options=location_names,
+                            index=location_names.index(current_location) if current_location in location_names else 0,
+                            key=f"loc_select_page_{page.page_number}",
+                            help="Select the location for this scene"
+                        )
+
+                    # Character multiselect
+                    if project.characters:
+                        character_names = [c.name for c in project.characters]
+
+                        selected_chars = st.multiselect(
+                            "Characters in this scene:",
+                            options=character_names,
+                            default=page.characters if page.characters else [],
+                            key=f"chars_select_page_{page.page_number}",
+                            help="Select which characters should appear in this image"
+                        )
 
                     # Save button
-                    if st.button("💾 Save Selection", key=f"save_chars_page_{page.page_number}"):
-                        page.characters = selected_chars
+                    if st.button("💾 Save Selection", key=f"save_page_{page.page_number}"):
+                        # Save location
+                        if project.locations and selected_location is not None:
+                            page.location = None if selected_location == "(None)" else selected_location
+
+                        # Save characters
+                        if project.characters:
+                            page.characters = selected_chars
+
                         update_project_status(project, project.status)
                         st.success(f"✅ Page {page.page_number} updated!")
                         st.rerun()
 
                     # Show current selection
+                    status_parts = []
+                    if hasattr(page, 'location') and page.location:
+                        status_parts.append(f"📍 {page.location}")
                     if page.characters:
-                        st.write(f"**Current:** {', '.join(page.characters)}")
+                        status_parts.append(f"👥 {', '.join(page.characters)}")
+
+                    if status_parts:
+                        st.write(f"**Current:** {' | '.join(status_parts)}")
                     else:
-                        st.warning("No characters selected")
+                        st.warning("No characters or location selected")
 
         st.markdown("---")
 
@@ -830,13 +962,24 @@ def step_3_generate_book():
     page_images_exist = len(list(images_dir.glob('page_*.png'))) > 0
 
     if not page_images_exist:
-        # Check if we can generate (need character refs if using new format)
+        # Check if we can generate (need references if using new format)
         can_generate = True
+        warnings = []
+
         if project.characters:
             # New format: need character references
             if not all(c.reference_image_path for c in project.characters):
                 can_generate = False
-                st.warning("⚠️ Generate character references first (Step 1)")
+                warnings.append("⚠️ Generate character references first (Step 1)")
+
+        if project.locations:
+            # Need location references
+            if not all(l.reference_image_path for l in project.locations):
+                can_generate = False
+                warnings.append("⚠️ Generate location references first (Step 1b)")
+
+        for warning in warnings:
+            st.warning(warning)
 
         if can_generate:
             if st.button("🎨 Generate All Page Images", type="primary"):
@@ -848,21 +991,15 @@ def step_3_generate_book():
                     status_text.text(f"Generating page {page.page_number}/{num_pages}...")
 
                     try:
-                        from scripts.image_generator import generate_image
+                        from scripts.image_generator import generate_image, get_reference_images_for_page
 
-                        # Get reference paths for selected characters
-                        ref_paths = []
-                        if project.characters and page.characters:
-                            ref_paths = [
-                                c.reference_image_path
-                                for c in project.characters
-                                if c.name in page.characters and c.reference_image_path
-                            ]
+                        # Get reference paths using priority system (location + characters, max 3)
+                        ref_paths = get_reference_images_for_page(page, project)
 
                         # Build prompt
                         full_prompt = f"{project.image_config.art_style}. {page.image_prompt}"
 
-                        # Generate image with character references
+                        # Generate image with location and character references
                         img = generate_image(full_prompt, reference_image_paths=ref_paths)
 
                         # Save
@@ -909,11 +1046,16 @@ def step_3_generate_book():
                         st.text(page.latin_text)
                         st.write("**English:**")
                         st.text(page.english_text)
-                        st.write("**Characters:**")
+                        st.write("**Scene Setup:**")
+                        info_parts = []
+                        if hasattr(page, 'location') and page.location:
+                            info_parts.append(f"📍 {page.location}")
                         if page.characters:
-                            st.write(", ".join(page.characters))
+                            info_parts.append(f"👥 {', '.join(page.characters)}")
+                        if info_parts:
+                            st.write(" | ".join(info_parts))
                         else:
-                            st.write("(None selected)")
+                            st.write("(No references selected)")
 
                         # Regeneration UI (without nested expander)
                         st.write("---")
@@ -933,18 +1075,16 @@ def step_3_generate_book():
 
                         if st.button(f"🔄 Regenerate", key=f"regen_page_{page_num}"):
                             try:
-                                from scripts.image_generator import generate_image
+                                from scripts.image_generator import generate_image, get_reference_images_for_page
 
                                 # Get references
                                 ref_paths = []
                                 if use_current:
+                                    # Use current image as reference for tweaking
                                     ref_paths = [str(img_path)]
-                                elif project.characters and page.characters:
-                                    ref_paths = [
-                                        c.reference_image_path
-                                        for c in project.characters
-                                        if c.name in page.characters
-                                    ]
+                                else:
+                                    # Use location + character references with priority system
+                                    ref_paths = get_reference_images_for_page(page, project)
 
                                 # Build prompt
                                 base_prompt = f"{project.image_config.art_style}. {page.image_prompt}"

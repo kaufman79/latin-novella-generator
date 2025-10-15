@@ -15,7 +15,8 @@
         "image_prompt": "A simple nighttime house exterior in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. A small wooden house with glowing windows, surrounded by a dark blue sky with stars. Candlelight spills from the windows, casting a warm yellow glow. Background: minimal, with a simple tree silhouette. Mood: quiet, calm, setting the nighttime scene.",
         "image_path": null,
         "vocabulary_used": [],
-        "characters": []
+        "characters": [],
+        "location": "Exterior"
       },
       {
         "page_number": 2,
@@ -26,7 +27,8 @@
         "vocabulary_used": [],
         "characters": [
           "Pater"
-        ]
+        ],
+        "location": "Downstairs Room"
       },
       {
         "page_number": 3,
@@ -37,7 +39,8 @@
         "vocabulary_used": [],
         "characters": [
           "Aurēlius"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 4,
@@ -49,7 +52,8 @@
         "characters": [
           "Māter",
           "Iūda"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 5,
@@ -62,7 +66,8 @@
           "Māter",
           "Iūda",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 6,
@@ -75,7 +80,8 @@
           "Māter",
           "Iūda",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 7,
@@ -88,7 +94,8 @@
           "Māter",
           "Iūda",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 8,
@@ -101,7 +108,8 @@
           "Māter",
           "Iūda",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 9,
@@ -112,7 +120,8 @@
         "vocabulary_used": [],
         "characters": [
           "Pater"
-        ]
+        ],
+        "location": "Downstairs Room"
       },
       {
         "page_number": 10,
@@ -123,7 +132,8 @@
         "vocabulary_used": [],
         "characters": [
           "Pater"
-        ]
+        ],
+        "location": "Downstairs Room"
       },
       {
         "page_number": 11,
@@ -134,7 +144,8 @@
         "vocabulary_used": [],
         "characters": [
           "Pater"
-        ]
+        ],
+        "location": "Staircase"
       },
       {
         "page_number": 12,
@@ -146,7 +157,8 @@
         "characters": [
           "Māter",
           "Iūda"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 13,
@@ -159,7 +171,8 @@
           "Māter",
           "Iūda",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 14,
@@ -171,7 +184,8 @@
         "characters": [
           "Pater",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 15,
@@ -183,7 +197,8 @@
         "characters": [
           "Pater",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 16,
@@ -195,7 +210,8 @@
         "characters": [
           "Pater",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 17,
@@ -207,7 +223,8 @@
         "characters": [
           "Pater",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 18,
@@ -219,7 +236,8 @@
         "characters": [
           "Pater",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 19,
@@ -231,7 +249,8 @@
         "characters": [
           "Pater",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 20,
@@ -243,7 +262,8 @@
         "characters": [
           "Pater",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 21,
@@ -254,7 +274,8 @@
         "vocabulary_used": [],
         "characters": [
           "Pater"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 22,
@@ -265,7 +286,8 @@
         "vocabulary_used": [],
         "characters": [
           "Pater"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 23,
@@ -277,7 +299,8 @@
         "characters": [
           "Pater",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 24,
@@ -289,7 +312,8 @@
         "characters": [
           "Pater",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 25,
@@ -301,7 +325,8 @@
         "characters": [
           "Pater",
           "Blatta"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 26,
@@ -314,7 +339,8 @@
           "Pater",
           "Māter",
           "Iūda"
-        ]
+        ],
+        "location": "Bedroom"
       },
       {
         "page_number": 27,
@@ -325,7 +351,8 @@
         "vocabulary_used": [],
         "characters": [
           "Pater"
-        ]
+        ],
+        "location": "Downstairs Room"
       },
       {
         "page_number": 28,
@@ -334,7 +361,8 @@
         "image_prompt": "A serene nighttime house exterior in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. The wooden house from page 1, with glowing windows now dimmed, under a starry dark blue sky. No cockroach is visible. Background: minimal, with a tree silhouette. Mood: peaceful, conclusive.",
         "image_path": null,
         "vocabulary_used": [],
-        "characters": []
+        "characters": [],
+        "location": "Exterior"
       }
     ],
     "vocabulary_list": [
@@ -909,6 +937,28 @@
     {
       "name": "Blatta",
       "description": "Large brown cockroach with detailed legs and antennae. Side view on plain white background. Character reference sheet style.",
+      "reference_image_path": null
+    }
+  ],
+  "locations": [
+    {
+      "name": "Exterior",
+      "description": "A small wooden house exterior at night with glowing windows, surrounded by a dark blue sky with stars. Simple tree silhouette in background. Minimal setting. Storybook style with clean shapes, bright flat colors, and light shading.",
+      "reference_image_path": null
+    },
+    {
+      "name": "Downstairs Room",
+      "description": "A cozy downstairs room with a simple wooden couch covered with a red blanket, candle on a nearby table casting warm light, plain wooden walls, minimal clutter. Empty room with no people. Eye-level angle. Storybook style with clean shapes, bright flat colors, and light shading.",
+      "reference_image_path": null
+    },
+    {
+      "name": "Bedroom",
+      "description": "A warm upstairs bedroom with a wooden bed, yellow nursing pillow, red duffle bag on floor, wooden basket of white diaper cloths, green changing pad on wooden table, candle on bedside table or shelf casting warm light and soft shadows, simple wooden walls. Empty room with no people. Eye-level angle. Storybook style with clean shapes, bright flat colors, and light shading.",
+      "reference_image_path": null
+    },
+    {
+      "name": "Staircase",
+      "description": "A simple wooden staircase going upward with plain walls, candle sconce on wall casting dynamic shadows. Empty staircase with no people. Eye-level angle. Storybook style with clean shapes, bright flat colors, and light shading.",
       "reference_image_path": null
     }
   ]

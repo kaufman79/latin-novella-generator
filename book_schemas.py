@@ -16,6 +16,13 @@ class Character(BaseModel):
     reference_image_path: Optional[str] = None  # Path to character reference image
 
 
+class Location(BaseModel):
+    """Location/setting definition for reference image generation."""
+    name: str  # e.g., "Bedroom", "Downstairs Room", "Forest"
+    description: str  # Full visual description for reference image (empty scene, no characters)
+    reference_image_path: Optional[str] = None  # Path to location reference image
+
+
 class VocabularyEntry(BaseModel):
     """Single vocabulary entry with dictionary formatting."""
     latin: str
@@ -35,6 +42,7 @@ class BookPage(BaseModel):
     image_path: Optional[str] = None  # Filled after image generation
     vocabulary_used: List[str] = Field(default_factory=list)  # Lemmas used on this page
     characters: List[str] = Field(default_factory=list)  # Character names to include in this page's image
+    location: Optional[str] = None  # Location name for this page's setting
 
 
 class PlayExtension(BaseModel):
@@ -80,6 +88,7 @@ class BookProject(BaseModel):
     image_config: ImageGenerationConfig = Field(default_factory=ImageGenerationConfig)
     cover_image_prompt: Optional[str] = None  # Store cover prompt for regeneration (legacy - will be replaced by characters)
     characters: List[Character] = Field(default_factory=list)  # Character reference sheets
+    locations: List[Location] = Field(default_factory=list)  # Location/setting reference sheets
 
     # Metadata
     theme: Optional[str] = None
