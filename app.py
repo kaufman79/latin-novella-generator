@@ -671,6 +671,15 @@ def step_3_generate_book():
         # Save to project
         update_project_status(project, project.status)
 
+    # Clean art_style if project has characters/locations (remove redundant sections)
+    if (project.characters or project.locations) and project.image_config.art_style:
+        from scripts.book_manager import clean_art_style
+        cleaned = clean_art_style(project.image_config.art_style)
+        if cleaned != project.image_config.art_style:
+            project.image_config.art_style = cleaned
+            update_project_status(project, project.status)
+            st.info("ℹ️ Cleaned redundant CHARACTER DESIGN and ENVIRONMENT sections from art style (now using reference images)")
+
     images_dir = Path('projects') / project.project_id / 'images'
     images_dir.mkdir(parents=True, exist_ok=True)
 
@@ -689,9 +698,36 @@ def step_3_generate_book():
         if not all_refs_exist:
             st.info(f"Found {len(project.characters)} characters. Generate reference images for consistency.")
 
-            # Show character list
+            # Show character list with editable prompts
+            st.write("**Review and edit prompts before generating:**")
+
+            # Store edited prompts in session state
+            if 'char_prompts' not in st.session_state:
+                st.session_state.char_prompts = {}
+
             for char in project.characters:
-                st.write(f"- **{char.name}**: {char.description[:80]}...")
+                with st.expander(f"**{char.name}**"):
+                    # Default character-specific prompt (just the character part, not the full style guide)
+                    # Check if description already has the reference sheet suffix to avoid duplication
+                    if "Character reference sheet style" in char.description:
+                        default_char_prompt = char.description
+                    else:
+                        default_char_prompt = f"{char.description}. Standing in neutral pose on plain white background. Character reference sheet style."
+
+                    # Get or initialize prompt (store only the character-specific part)
+                    if char.name not in st.session_state.char_prompts:
+                        st.session_state.char_prompts[char.name] = default_char_prompt
+
+                    # Editable prompt (only shows character-specific part)
+                    st.session_state.char_prompts[char.name] = st.text_area(
+                        f"Character prompt for {char.name}:",
+                        value=st.session_state.char_prompts[char.name],
+                        key=f"char_prompt_{char.name}",
+                        height=100,
+                        help="Edit the character-specific part. The full style guide will be automatically added when generating."
+                    )
+
+                    st.caption("💡 The full art style guide will be prepended automatically during generation.")
 
             if st.button("🎨 Generate Character References", type="primary"):
                 progress_bar = st.progress(0)
@@ -703,8 +739,9 @@ def step_3_generate_book():
                     try:
                         from scripts.image_generator import generate_image
 
-                        # Generate character reference with NO other references
-                        full_prompt = f"{project.image_config.art_style}. {char.description}. Standing in neutral pose on plain white background. Character reference sheet style."
+                        # Build full prompt: style guide + character-specific prompt
+                        char_specific_prompt = st.session_state.char_prompts.get(char.name, char.description)
+                        full_prompt = f"{project.image_config.art_style}. {char_specific_prompt}"
 
                         img = generate_image(full_prompt, reference_image_paths=None)
 
@@ -724,6 +761,9 @@ def step_3_generate_book():
                 update_project_status(project, project.status)
                 status_text.text("✅ All character references generated!")
                 st.success("Character references complete!")
+
+                # Clear session state prompts after successful generation
+                st.session_state.char_prompts = {}
                 st.rerun()
 
         else:

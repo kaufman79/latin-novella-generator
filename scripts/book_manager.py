@@ -129,6 +129,53 @@ def load_project(project_id: str) -> Optional[BookProject]:
     return BookProject.load(str(config_file))
 
 
+def clean_art_style(art_style: str) -> str:
+    """
+    Remove CHARACTER DESIGN and ENVIRONMENT sections from art_style.
+
+    These sections are redundant when using character and location reference images.
+    Keep only universal style guidance (composition, technical, layout, etc.)
+
+    Args:
+        art_style: Original art style string that may contain character/environment sections
+
+    Returns:
+        Cleaned art style without CHARACTER DESIGN and ENVIRONMENT sections
+    """
+    if not art_style:
+        return art_style
+
+    lines = art_style.split('\n')
+    cleaned_lines = []
+    skip_section = False
+
+    for line in lines:
+        # Check if this is a section header
+        stripped = line.strip()
+
+        # Skip CHARACTER DESIGN and ENVIRONMENT sections
+        if stripped in ['CHARACTER DESIGN:', 'ENVIRONMENT:']:
+            skip_section = True
+            continue
+
+        # Check if we're entering a new section (ends with colon, not a bullet point)
+        if stripped and stripped.endswith(':') and not stripped.startswith('-'):
+            # This is a new section header
+            if stripped not in ['CHARACTER DESIGN:', 'ENVIRONMENT:']:
+                skip_section = False
+                cleaned_lines.append(line)
+        elif not skip_section:
+            # Keep lines that aren't in skipped sections
+            cleaned_lines.append(line)
+
+    # Remove excessive blank lines (more than 2 consecutive)
+    result = '\n'.join(cleaned_lines)
+    while '\n\n\n' in result:
+        result = result.replace('\n\n\n', '\n\n')
+
+    return result.strip()
+
+
 def update_project_status(project: BookProject, new_status: str):
     """Update project status and save."""
     project.status = new_status
