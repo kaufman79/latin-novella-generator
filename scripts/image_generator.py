@@ -133,10 +133,13 @@ def generate_image(prompt: str, reference_image_paths: Optional[list[str]] = Non
         contents = [prompt]
 
     # Generate image with configuration
+    # Use low temperature and seed for consistency across book images
     response = client.models.generate_content(
         model='gemini-2.5-flash-image',
         contents=contents,
         config=types.GenerateContentConfig(
+            temperature=0.2,  # Low temperature for consistency (0.0-2.0, default 1.0)
+            seed=42,  # Fixed seed for deterministic output (best effort)
             response_modalities=['Image']
         )
     )

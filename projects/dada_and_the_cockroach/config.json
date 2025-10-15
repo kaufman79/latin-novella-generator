@@ -905,39 +905,31 @@
     "consistency_mode": "reference_image"
   },
   "cover_image_prompt": "A cozy nighttime bedroom scene in a simple storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (32-year-old man, red hair, short red beard, wearing a simple blue tunic, standing with a boot in hand, determined expression), Māter (30-year-old woman, long dirty blond hair, skinny, wearing a soft green nightgown, sitting on a bed with a gentle smile), Iūda (baby, dark hair, in a white cloth diaper, cradled in Māter’s arms)\n\nBackground: a simple bedroom with wooden furniture, a red duffle bag, and a candle casting warm light and soft shadows. A cockroach crawls near the bed, hinting at the story’s action. Mood: warm, slightly suspenseful, family-oriented.\"",
-  "theme": "Dada gets a call from mama in the middle of the night to kill a cockroach",
-  "target_age": "2-5",
-  "target_pages": 20,
-  "level": 1,
-  "status": "translation_complete",
-  "date_created": "2025-10-13T13:47:12.648205",
-  "date_modified": "2025-10-13T15:35:33.311365",
-  "project_folder": "projects/dada_and_the_cockroach",
   "characters": [
     {
       "name": "Pater",
       "description": "32-year-old man with red hair and a short red beard, wearing a simple blue tunic. Standing in neutral pose on plain white background. Character reference sheet style.",
-      "reference_image_path": null
+      "reference_image_path": "projects/dada_and_the_cockroach/images/char_pater.png"
     },
     {
       "name": "Māter",
       "description": "30-year-old woman with long dirty blond hair, skinny build, wearing a soft green nightgown. Standing in neutral pose on plain white background. Character reference sheet style.",
-      "reference_image_path": null
+      "reference_image_path": "projects/dada_and_the_cockroach/images/char_māter.png"
     },
     {
       "name": "Iūda",
       "description": "Baby with dark hair, wearing a white cloth diaper. Lying on back in neutral pose on plain white background. Character reference sheet style.",
-      "reference_image_path": null
+      "reference_image_path": "projects/dada_and_the_cockroach/images/char_iūda.png"
     },
     {
       "name": "Aurēlius",
       "description": "Three-year-old boy with blond hair and pale skin, wearing a white tunic. Standing in neutral pose on plain white background. Character reference sheet style.",
-      "reference_image_path": null
+      "reference_image_path": "projects/dada_and_the_cockroach/images/char_aurēlius.png"
     },
     {
       "name": "Blatta",
       "description": "Large brown cockroach with detailed legs and antennae. Side view on plain white background. Character reference sheet style.",
-      "reference_image_path": null
+      "reference_image_path": "projects/dada_and_the_cockroach/images/char_blatta.png"
     }
   ],
   "locations": [
@@ -961,5 +953,13 @@
       "description": "A simple wooden staircase going upward with plain walls, candle sconce on wall casting dynamic shadows. Empty staircase with no people. Eye-level angle. Storybook style with clean shapes, bright flat colors, and light shading.",
       "reference_image_path": null
     }
-  ]
+  ],
+  "theme": "Dada gets a call from mama in the middle of the night to kill a cockroach",
+  "target_age": "2-5",
+  "target_pages": 20,
+  "level": 1,
+  "status": "translation_complete",
+  "date_created": "2025-10-13T13:47:12.648205",
+  "date_modified": "2025-10-15T13:03:00.700045",
+  "project_folder": "projects/dada_and_the_cockroach"
 }
