@@ -236,6 +236,11 @@ First, identify all main characters in the story and create character reference 
 - Name (e.g., "Pater", "Mater", "Dragon", "Cicadas")
 - Detailed visual description for generating a reference image (appearance, clothing, colors, distinctive features)
 
+## Location References
+Next, identify all main locations/settings in the story. Each location needs:
+- Name (e.g., "Bedroom", "Forest", "Kitchen", "Town Square")
+- Detailed visual description of the EMPTY setting (no characters, just the environment: furniture, walls, lighting, background elements)
+
 ## Output Format
 Output as JSON:
 
@@ -252,20 +257,32 @@ Output as JSON:
       "description": "6-year-old girl with blonde hair in pigtails, wearing a yellow dress. Standing with arms at sides, cheerful expression. Simple, child-friendly design with bright colors."
     }}
   ],
+  "locations": [
+    {{
+      "name": "Bedroom",
+      "description": "A warm bedroom with a wooden bed, yellow nursing pillow, wooden basket, simple wooden walls, candle on bedside table casting warm light and soft shadows. Empty room with no people."
+    }},
+    {{
+      "name": "Kitchen",
+      "description": "A simple kitchen with wooden table, stone hearth, shelves with pottery, plain walls, window letting in natural light. Empty room with no people."
+    }}
+  ],
   "pages": [
     {{
       "page_number": 1,
       "latin_text": "Full Latin sentence(s) for this page.",
       "english_text": "Full English translation for this page.",
-      "image_prompt": "Detailed scene description: setting, action, mood, lighting. Do NOT repeat character appearances.",
-      "characters": ["Pater", "Filia"]
+      "image_prompt": "Detailed scene description: action, mood, lighting. Do NOT repeat character appearances or location details.",
+      "characters": ["Pater", "Filia"],
+      "location": "Bedroom"
     }},
     {{
       "page_number": 2,
       "latin_text": "...",
       "english_text": "...",
       "image_prompt": "...",
-      "characters": ["Pater"]
+      "characters": ["Pater"],
+      "location": "Kitchen"
     }}
   ]
 }}
@@ -273,9 +290,12 @@ Output as JSON:
 
 **CRITICAL**:
 - List ALL main characters in the `characters` array with detailed visual descriptions
-- For each page, specify which character names appear in that scene using the `characters` array
-- Character descriptions will be used to generate reference images for consistency
-- Page image prompts should focus on SCENE/ACTION/SETTING only, not character appearance (that comes from references)
+- List ALL main locations in the `locations` array with detailed visual descriptions (EMPTY scenes, no people)
+- For each page, specify which character names appear using the `characters` array
+- For each page, specify which location it's set in using the `location` field (or null for outdoor/varying scenes)
+- Character descriptions will be used to generate character reference images
+- Location descriptions will be used to generate location reference images (empty scenes)
+- Page image prompts should focus on ACTION/MOOD only, not character appearance or location details (those come from references)
 
 **Important**: Output ONLY the JSON, no additional text.
 
