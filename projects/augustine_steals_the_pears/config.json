@@ -1,0 +1,810 @@
+{
+  "project_id": "augustine_steals_the_pears",
+  "title_english": "Augustine steals the pears",
+  "title_latin": "Augustīnus et Pirus",
+  "source_text": "",
+  "source_type": "original",
+  "translation": {
+    "title_latin": "Augustīnus et Pirus",
+    "title_english": "Augustine steals the pears",
+    "pages": [
+      {
+        "page_number": 1,
+        "latin_text": "Augustīnus erat puer laetus.",
+        "english_text": "Augustine was a happy boy.",
+        "image_prompt": "A sunny field with green grass under a blue sky. A young boy stands in the center, arms outstretched, smiling joyfully. Bright, flat colors with simple shapes, eye-level angle, warm and cheerful mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Puer"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 2,
+        "latin_text": "Amābat currere et rīdēre cum amīcīs.",
+        "english_text": "He loved to run and laugh with friends.",
+        "image_prompt": "A grassy hill under a clear sky. Three boys chase each other, laughing, in a playful run. Centered composition, eye-level angle, vibrant colors, energetic and happy mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Puer",
+          "Amīcī"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 3,
+        "latin_text": "Ūnā nocte, lūna clāra fulsit.",
+        "english_text": "One night, the moon shone brightly.",
+        "image_prompt": "A night sky with a glowing full moon casting soft light. Stars twinkle faintly. Centered on the moon, slightly above eye-level, cool blue tones, calm and serene mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [],
+        "location": null
+      },
+      {
+        "page_number": 4,
+        "latin_text": "Pirus stābat trans saepem.",
+        "english_text": "A pear tree stood beyond the fence.",
+        "image_prompt": "A wooden fence under moonlight, with a tall pear tree full of fruit on the other side. Green leaves and yellow pears glow softly. Centered on the tree, eye-level angle, quiet and inviting mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [],
+        "location": null
+      },
+      {
+        "page_number": 5,
+        "latin_text": "Pira erant rotunda et lucida.",
+        "english_text": "The pears were round and shiny.",
+        "image_prompt": "Close-up of a pear tree branch with round, shiny yellow pears under moonlight. Stars visible in the background. Centered on the pears, eye-level angle, bright and tempting mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [],
+        "location": null
+      },
+      {
+        "page_number": 6,
+        "latin_text": "\"Capiāmus pira!\" dixērunt amīcī.",
+        "english_text": "\"Let’s take the pears!\" said the friends.",
+        "image_prompt": "Three boys huddle near a fence under moonlight, pointing at a pear tree. Mischievous expressions, whispering gestures. Centered on the group, eye-level angle, secretive and excited mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Amīcī"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 7,
+        "latin_text": "Conscientia Augustīnī susurrāvit, \"Nōlī fūrārī.\"",
+        "english_text": "Augustine’s conscience whispered, \"Don’t steal.\"",
+        "image_prompt": "A young boy stands alone under a starry sky, head tilted as if listening. A faint, glowing cricket silhouette hovers near his shoulder. Centered on the boy, eye-level angle, quiet and introspective mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Puer"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 8,
+        "latin_text": "Sed nōn audīvit.",
+        "english_text": "But he didn’t listen.",
+        "image_prompt": "A young boy turns away from a glowing cricket silhouette, looking toward a pear tree. Moonlit background with stars. Centered on the boy, eye-level angle, conflicted and curious mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Puer"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 9,
+        "latin_text": "Tacitē trans saepem iērunt.",
+        "english_text": "Silently, they went over the fence.",
+        "image_prompt": "Three boys climb over a wooden fence under moonlight, tiptoeing carefully. Pear tree visible in the background. Centered on the action, slightly above eye-level, sneaky and tense mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Puer",
+          "Amīcī"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 10,
+        "latin_text": "Arborem agitāvērunt. Pira cecidērunt!",
+        "english_text": "They shook the tree. Pears fell!",
+        "image_prompt": "A pear tree shakes under moonlight, yellow pears falling to the ground. Boys’ hands visible on the trunk. Centered on the tree, eye-level angle, dynamic and chaotic mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Puer",
+          "Amīcī"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 11,
+        "latin_text": "Frūctūs abstulērunt et fūgērunt,",
+        "english_text": "They took the fruit and fled,",
+        "image_prompt": "Three boys run from a pear tree, holding yellow pears, under a starry sky. Fence in the background. Centered on the running boys, eye-level angle, hurried and excited mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Puer",
+          "Amīcī"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 12,
+        "latin_text": "et rīdentēs sub stēllīs.",
+        "english_text": "and laughing under the stars.",
+        "image_prompt": "Three boys laugh joyfully, holding pears, running under a starry night sky. Moonlight casts soft glows. Centered on the group, eye-level angle, playful and carefree mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Puer",
+          "Amīcī"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 13,
+        "latin_text": "Sed pira nōn erant bona.",
+        "english_text": "But the pears were not good.",
+        "image_prompt": "A pile of yellow pears on the ground, some bitten and discarded. Starry sky in the background. Centered on the pears, eye-level angle, disappointing and dim mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [],
+        "location": null
+      },
+      {
+        "page_number": 14,
+        "latin_text": "Pira porcīs iēcērunt.",
+        "english_text": "They threw the pears to the pigs.",
+        "image_prompt": "Three pigs eat yellow pears scattered on the ground near a fence. Moonlight illuminates the scene. Centered on the pigs, eye-level angle, content and simple mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Porcī"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 15,
+        "latin_text": "Porcī erant laetī. Augustīnus nōn erat laetus.",
+        "english_text": "The pigs were happy. Augustine was not.",
+        "image_prompt": "Three pigs munch pears happily, while a young boy stands nearby, head down, frowning. Moonlit field, starry sky. Centered on the contrast, eye-level angle, sad and reflective mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Puer",
+          "Porcī"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 16,
+        "latin_text": "Conscientia eius gravis erat.",
+        "english_text": "His conscience was heavy.",
+        "image_prompt": "A young boy sits on the ground, head in hands, under a starry sky. A faint cricket silhouette glows near him. Centered on the boy, eye-level angle, heavy and somber mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Puer"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 17,
+        "latin_text": "Domum iit et cubitum iit.",
+        "english_text": "He went home and to bed.",
+        "image_prompt": "A small house under moonlight, a boy walking toward it with a sad expression. Starry sky above. Centered on the boy and house, eye-level angle, quiet and lonely mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Puer"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 18,
+        "latin_text": "Sed dormīre nōn poterat.",
+        "english_text": "But he couldn’t sleep.",
+        "image_prompt": "A boy lies in a simple bed, eyes open, staring at the ceiling. Moonlight streams through a window. Centered on the boy, eye-level angle, restless and troubled mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Puer"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 19,
+        "latin_text": "Tacitē sēdit et ōrāvit: \"Domine meus, doleō fūrārī pira et nōn audīre vōcem interiōrem.\"",
+        "english_text": "He sat quietly and prayed: \"My Lord, I’m sorry for stealing pears and not listening to my inner voice.\"",
+        "image_prompt": "A man kneels in a simple room, hands clasped, head bowed in prayer. Soft golden light glows around him. Centered on the man, eye-level angle, solemn and hopeful mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Vir"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 20,
+        "latin_text": "Augustīnus amōrem Deī in corde sēnsit. Deus eī iamprīdem remīserat.",
+        "english_text": "Augustine felt God’s love in his heart. God had forgiven him long ago.",
+        "image_prompt": "A man stands in a simple room, arms raised, smiling peacefully, bathed in warm golden light. A starry sky visible through a window. Centered on the man, eye-level angle, joyful and serene mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [
+          "Augustīnus Vir"
+        ],
+        "location": null
+      },
+      {
+        "page_number": 21,
+        "latin_text": "Cum dīcimus, \"Mē paenitet, Deus,\" Deus dīcit, \"Remittō tibi!\"",
+        "english_text": "When we say, \"I’m sorry, God,\" God says, \"I forgive you!\"",
+        "image_prompt": "A pale, blond boy lies in a white crib, eyes closed, hands folded in prayer. Soft golden light glows around him, with a faint starry sky visible through a window. Centered on the boy, eye-level angle, peaceful and reverent mood.",
+        "image_path": null,
+        "vocabulary_used": [],
+        "characters": [],
+        "location": null
+      }
+    ],
+    "vocabulary_list": [
+      {
+        "latin": "agito",
+        "english": "stir up",
+        "part_of_speech": "verb",
+        "dictionary_form": "agito, agitare, agitavi, agitatus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "Augustinus",
+        "english": "Augustine",
+        "part_of_speech": "proper noun",
+        "dictionary_form": "Augustinus, Augustini, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "Deus",
+        "english": "God",
+        "part_of_speech": "noun",
+        "dictionary_form": "Deus, Dei, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "Pira",
+        "english": "Pear",
+        "part_of_speech": "adjective",
+        "dictionary_form": "Pira, Pirae, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "Porcus",
+        "english": "Pig",
+        "part_of_speech": "noun",
+        "dictionary_form": "Porcus, Porci, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "Tacitus",
+        "english": "Quiet",
+        "part_of_speech": "verb",
+        "dictionary_form": "taceo, tacere, tacui, tacitus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "amicus",
+        "english": "friend",
+        "part_of_speech": "noun",
+        "dictionary_form": "amicus, amici, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "amo",
+        "english": "I love",
+        "part_of_speech": "verb",
+        "dictionary_form": "amo, amare, amavi, amatus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "amor",
+        "english": "love",
+        "part_of_speech": "noun",
+        "dictionary_form": "amor, amoris, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "arbor",
+        "english": "tree",
+        "part_of_speech": "noun",
+        "dictionary_form": "arbor, arboris, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "audio",
+        "english": "I hear",
+        "part_of_speech": "verb",
+        "dictionary_form": "audio, audire, audivi, auditus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "aufero",
+        "english": "take away",
+        "part_of_speech": "verb",
+        "dictionary_form": "aufero, auferre, abstuli, ablatus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "bonus",
+        "english": "good",
+        "part_of_speech": "adjective",
+        "dictionary_form": "bonus, bona, bonum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "bonus",
+        "english": "gift",
+        "part_of_speech": "noun",
+        "dictionary_form": "bonus, boni, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "caedo",
+        "english": "to cut",
+        "part_of_speech": "verb",
+        "dictionary_form": "caedo, caedere, cecidi, caesus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "clarus",
+        "english": "bright",
+        "part_of_speech": "adjective",
+        "dictionary_form": "clarus, clara, clarum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "conscientia",
+        "english": "conscience",
+        "part_of_speech": "noun",
+        "dictionary_form": "conscientia, conscientiae, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "cor",
+        "english": "heart",
+        "part_of_speech": "noun",
+        "dictionary_form": "cor, cordis, n.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "cubitum",
+        "english": "elbow",
+        "part_of_speech": "noun",
+        "dictionary_form": "cubitum, cubiti, n.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "cum",
+        "english": "with",
+        "part_of_speech": "preposition",
+        "dictionary_form": "cum (+ abl.)",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "curro",
+        "english": "I run",
+        "part_of_speech": "verb",
+        "dictionary_form": "curro, currere, cucurri, cursurus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "dico",
+        "english": "I say",
+        "part_of_speech": "verb",
+        "dictionary_form": "dico, dicere, dixi, dictus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "doleo",
+        "english": "I hurt",
+        "part_of_speech": "verb",
+        "dictionary_form": "doleo, dolere, dolui, doliturus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "domus",
+        "english": "house",
+        "part_of_speech": "noun",
+        "dictionary_form": "domus, domus, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "dormio",
+        "english": "I sleep",
+        "part_of_speech": "verb",
+        "dictionary_form": "dormio, dormire, dormivi, dormitus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "eo",
+        "english": "I go",
+        "part_of_speech": "verb",
+        "dictionary_form": "eo, ire, ivi/ii, iturus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "et",
+        "english": "and",
+        "part_of_speech": "conjunction",
+        "dictionary_form": "et",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "fructus",
+        "english": "fruit",
+        "part_of_speech": "noun",
+        "dictionary_form": "fructus, fructus, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "fugio",
+        "english": "I flee",
+        "part_of_speech": "verb",
+        "dictionary_form": "fugio, fugere, fugi, fugitururus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "fulgeo",
+        "english": "to shine",
+        "part_of_speech": "verb",
+        "dictionary_form": "fulgeo, fulgere, fulsi",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "furor",
+        "english": "be mad",
+        "part_of_speech": "verb",
+        "dictionary_form": "furo, furere, -, -",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "grauis",
+        "english": "heavy",
+        "part_of_speech": "adjective",
+        "dictionary_form": "gravis, gravis, grave",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "iacio",
+        "english": "I throw",
+        "part_of_speech": "verb",
+        "dictionary_form": "iacio, iacere, ieci, iactus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "iampridem",
+        "english": "long ago",
+        "part_of_speech": "adverb",
+        "dictionary_form": "iampridem",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "in",
+        "english": "in",
+        "part_of_speech": "preposition",
+        "dictionary_form": "in (+ abl. or acc.)",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "interior",
+        "english": "inner",
+        "part_of_speech": "adjective",
+        "dictionary_form": "interior, interior, interius",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "is",
+        "english": "he",
+        "part_of_speech": "pronoun",
+        "dictionary_form": "is, ea, id",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "laetus",
+        "english": "happy",
+        "part_of_speech": "adjective",
+        "dictionary_form": "laetus, laeta, laetum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "lucidus",
+        "english": "clear",
+        "part_of_speech": "adjective",
+        "dictionary_form": "lucidus, lucida, lucidum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "luna",
+        "english": "moon",
+        "part_of_speech": "noun",
+        "dictionary_form": "luna, lunae, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "meus",
+        "english": "my",
+        "part_of_speech": "determiner",
+        "dictionary_form": "meus, mea, meum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "non",
+        "english": "not",
+        "part_of_speech": "particle",
+        "dictionary_form": "non",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "nox",
+        "english": "night",
+        "part_of_speech": "noun",
+        "dictionary_form": "nox, noctis, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "oro",
+        "english": "I pray",
+        "part_of_speech": "verb",
+        "dictionary_form": "oro, orare, oravi, oratus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "paeniteo",
+        "english": "I regret",
+        "part_of_speech": "verb",
+        "dictionary_form": "paenitet, paenitere, paenituit",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "pirum",
+        "english": "pear",
+        "part_of_speech": "noun",
+        "dictionary_form": "pirum, piri, n.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "pirus",
+        "english": "pear tree",
+        "part_of_speech": "noun",
+        "dictionary_form": "pirus, piri, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "porcus",
+        "english": "pig",
+        "part_of_speech": "noun",
+        "dictionary_form": "porcus, porci, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "possum",
+        "english": "I can",
+        "part_of_speech": "verb",
+        "dictionary_form": "possum, posse, potui",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "puer",
+        "english": "boy",
+        "part_of_speech": "noun",
+        "dictionary_form": "puer, pueri, m.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "remitto",
+        "english": "send back",
+        "part_of_speech": "verb",
+        "dictionary_form": "remitto, remittere, remisi, remissus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "rideo",
+        "english": "I laugh",
+        "part_of_speech": "verb",
+        "dictionary_form": "rideo, ridere, risi, risus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "rotundus",
+        "english": "round",
+        "part_of_speech": "adjective",
+        "dictionary_form": "rotundus, rotunda, rotundum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "saepes",
+        "english": "hedge",
+        "part_of_speech": "noun",
+        "dictionary_form": "saepes, saepis, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "sed",
+        "english": "but",
+        "part_of_speech": "conjunction",
+        "dictionary_form": "sed",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "sedeo",
+        "english": "I sit",
+        "part_of_speech": "verb",
+        "dictionary_form": "sedeo, sedere, sedi, sessurus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "sentio",
+        "english": "I feel",
+        "part_of_speech": "verb",
+        "dictionary_form": "sentio, sentire, sensi, sensus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "stella",
+        "english": "star",
+        "part_of_speech": "noun",
+        "dictionary_form": "stella, stellae, f.",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "sto",
+        "english": "I stand",
+        "part_of_speech": "verb",
+        "dictionary_form": "sto, stare, steti, staturus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "sub",
+        "english": "under",
+        "part_of_speech": "preposition",
+        "dictionary_form": "sub (+ abl. or acc.)",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "sum",
+        "english": "I am",
+        "part_of_speech": "auxiliary verb",
+        "dictionary_form": "sum, esse, fui, futurus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "susurro",
+        "english": "I whisper",
+        "part_of_speech": "verb",
+        "dictionary_form": "susurro, susurrare, susurravi, susurratus",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "trans",
+        "english": "across",
+        "part_of_speech": "preposition",
+        "dictionary_form": "trans (+ acc.)",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "tu",
+        "english": "you",
+        "part_of_speech": "pronoun",
+        "dictionary_form": "tu, tui",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "unus",
+        "english": "one",
+        "part_of_speech": "numeral",
+        "dictionary_form": "unus, una, unum",
+        "frequency_tier": null,
+        "notes": null
+      },
+      {
+        "latin": "uox",
+        "english": "voice",
+        "part_of_speech": "noun",
+        "dictionary_form": "vox, vocis, f.",
+        "frequency_tier": null,
+        "notes": null
+      }
+    ],
+    "play_extensions": []
+  },
+  "image_config": {
+    "reference_image_path": null,
+    "art_style": "PROJECT: Latin Reader Series\n\nART STYLE:\nSimple storybook art with clean shapes, light shading, and bright flat colors; gentle and consistent visual tone\n\nCOMPOSITION:\n- Layout: center or slightly lower center framing\n- Camera angle: mostly eye-level or slightly above; keep perspective simple\n- Focus: clear storytelling pose or action per scene, easy for a child to interpret\n\nTECHNICAL:\n- Aspect ratio: square (1:1) or 4:3 portrait — keep consistent within book\n- Resolution: 512x512 or 640x480 for compact files (low detail, small size)\n- Style consistency: maintain same colors, proportions, and visual tone across all images\n\nLAYOUT NOTES:\n- Page flow: each image corresponds to one or two sentences of Latin; keep visual action easy to map to text\n\nAI INSTRUCTIONS:\nKeep visuals simple, warm, and readable for children. Avoid text, labels, or complex shadows. Focus on consistent characters and simple emotions. Each image should clearly illustrate the moment described in the Latin text.\n\nNOTE: Do not include CHARACTER DESIGN or ENVIRONMENT sections here.\nCharacters and locations will be defined separately as reference images in Stage 4.\n",
+    "seed": null,
+    "provider": "nano_banana",
+    "consistency_mode": "reference_image"
+  },
+  "cover_image_prompt": "",
+  "characters": [],
+  "locations": [],
+  "theme": "Saint Augustine steals paris and later repents",
+  "target_age": "2-5",
+  "target_pages": 20,
+  "level": 1,
+  "status": "reviewed",
+  "date_created": "2025-10-20T16:06:47.770727",
+  "date_modified": "2025-10-20T17:04:23.202812",
+  "project_folder": "projects/augustine_steals_the_pears"
+}

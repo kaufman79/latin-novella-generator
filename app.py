@@ -612,6 +612,7 @@ def step_2_get_ai_story():
                 combined_json = {
                     "title_latin": page_data.get('title_latin', project.title_english),
                     "cover_image_prompt": page_data.get('cover_image_prompt', ''),
+                    "characters": page_data.get('characters', []),  # Include characters from Stage 4
                     "pages": page_data['pages'],
                     "vocabulary": vocab_data['vocabulary']
                 }
