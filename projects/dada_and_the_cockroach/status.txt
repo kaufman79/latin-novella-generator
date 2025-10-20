@@ -1,3 +1,3 @@
-Status: translation_complete
+Status: images_generated
 Created: 2025-10-13T13:47:12.648205
-Last modified: 2025-10-15T13:03:00.700045
+Last modified: 2025-10-15T13:40:12.018362

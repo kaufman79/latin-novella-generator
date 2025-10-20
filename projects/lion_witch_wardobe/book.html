@@ -1,0 +1,1426 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Palatino', 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Title page */
+        .title-page {
+            text-align: center;
+            page-break-after: always;
+            padding-top: 3in;
+        }
+
+        .title-page h1 {
+            font-size: 36pt;
+            margin-bottom: 0.5in;
+            color: #2c3e50;
+        }
+
+        .title-page .english {
+            font-size: 24pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        /* Story pages */
+        .story-page {
+            page-break-after: always;
+            text-align: center;
+        }
+
+        .story-page img {
+            max-width: 100%;
+            max-height: 7in;
+            display: block;
+            margin: 0 auto 0.5in auto;
+        }
+
+        .story-page .latin-text {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0.3in 0;
+        }
+
+        .story-page .english-text {
+            font-size: 14pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page .page-number {
+            position: absolute;
+            bottom: 0.3in;
+            right: 0.3in;
+            font-size: 12pt;
+            color: #bdc3c7;
+        }
+
+        /* Vocabulary section */
+        .vocabulary-section {
+            page-break-before: always;
+        }
+
+        .vocabulary-section h2 {
+            font-size: 24pt;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.2in;
+            margin-bottom: 0.3in;
+        }
+
+        .vocab-entry {
+            margin-bottom: 0.05in;
+            page-break-inside: avoid;
+            line-height: 1.0;
+        }
+
+        .vocab-entry .headword {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .vocab-entry .definition {
+            font-size: 10pt;
+            color: #34495e;
+            margin-left: 0.15in;
+        }
+
+        .vocab-entry .pos {
+            font-size: 9pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        /* Play extensions */
+        .extensions-section {
+            page-break-before: always;
+        }
+
+        .extensions-section h2 {
+            font-size: 24pt;
+            color: #2c3e50;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 0.2in;
+            margin-bottom: 0.3in;
+        }
+
+        .extension-category h3 {
+            font-size: 16pt;
+            color: #e74c3c;
+            margin-top: 0.3in;
+            margin-bottom: 0.1in;
+        }
+
+        .extension {
+            margin-bottom: 0.15in;
+            margin-left: 0.2in;
+        }
+
+        .extension strong {
+            color: #2c3e50;
+        }
+
+        .repetition-tracker {
+            margin-top: 0.3in;
+            padding: 0.2in;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+
+        .repetition-tracker h3 {
+            font-size: 14pt;
+            color: #2c3e50;
+            margin-bottom: 0.1in;
+        }
+
+        .checkbox {
+            display: inline-block;
+            width: 0.15in;
+            height: 0.15in;
+            border: 1px solid #34495e;
+            margin-right: 0.1in;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="story-page" style="position: relative;">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/cover.png" alt="Cover" style="max-height: 10in; width: 100%;">
+        <div style="position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); text-align: center; width: 90%; background-color: rgba(255, 255, 255, 0.65); padding: 20px; border-radius: 10px;">
+            <h1 style="font-size: 48pt; margin: 0; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Leo, Malefica et Armarium</h1>
+            <p style="font-size: 28pt; margin: 10px 0 0 0; color: #7f8c8d; font-style: italic;">Lion, Witch, Wardobe</p>
+        </div>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_01.png" alt="Page 1">
+        <p class="latin-text">Tempore Bellī Secundī Orbis Terrārum Petrus, Susanna, Edmundus et Lucia Pevensiē in domō Professōris habitābant.</p>
+        <p class="english-text">During World War II, Peter, Susan, Edmund, and Lucy Pevensie lived in the Professor's house.</p>
+        <span class="page-number">1</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_02.png" alt="Page 2">
+        <p class="latin-text">Diē pluviōsō Luciā in armārium intrāvit.</p>
+        <p class="english-text">On a rainy day, Lucy entered the wardrobe.</p>
+        <span class="page-number">2</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_03.png" alt="Page 3">
+        <p class="latin-text">Subitō in terram nivis cecidit.</p>
+        <p class="english-text">Suddenly she fell into the snowy land.</p>
+        <span class="page-number">3</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_04.png" alt="Page 4">
+        <p class="latin-text">Lampā lūcēns viam mōnstrābat.</p>
+        <p class="english-text">A glowing lamp showed the way.</p>
+        <span class="page-number">4</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_05.png" alt="Page 5">
+        <p class="latin-text">Faunus Tumnus Luciam ad theam invītāvit.</p>
+        <p class="english-text">Faun Tumnus invited Lucy to tea.</p>
+        <span class="page-number">5</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_06.png" alt="Page 6">
+        <p class="latin-text">Dīxit Albam Maleficam semper hiemem facere et diem Nātālem vetāre.</p>
+        <p class="english-text">He said the White Witch makes eternal winter and forbids Christmas.</p>
+        <span class="page-number">6</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_07.png" alt="Page 7">
+        <p class="latin-text">Posteā Luciam domum redīre iussit, quamquam id facere nōn licēbat.</p>
+        <p class="english-text">Afterward he ordered Lucy to return home, though it was not allowed.</p>
+        <span class="page-number">7</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_08.png" alt="Page 8">
+        <p class="latin-text">Frātrēs eī nōn crēdidērunt.</p>
+        <p class="english-text">Her siblings did not believe her.</p>
+        <span class="page-number">8</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_09.png" alt="Page 9">
+        <p class="latin-text">Mox omnēs armārium intrāvērunt et Narniam vēram invēnērunt.</p>
+        <p class="english-text">Soon all entered the wardrobe and found real Narnia.</p>
+        <span class="page-number">9</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_10.png" alt="Page 10">
+        <p class="latin-text">Edmundus clam discessit et Maleficam in currū ā rēnis tractō convenit.</p>
+        <p class="english-text">Edmund sneaked away and met the Witch in her reindeer-pulled sledge.</p>
+        <span class="page-number">10</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_11.png" alt="Page 11">
+        <p class="latin-text">Malefica Edmundō dēliciās Turcīcās dedit.</p>
+        <p class="english-text">The Witch gave Edmund Turkish Delights.</p>
+        <span class="page-number">11</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_12.png" alt="Page 12">
+        <p class="latin-text">Prōmīsit eum rēgem factūram esse, sī frātrēs trāderet.</p>
+        <p class="english-text">She promised to make him king if he betrayed his siblings.</p>
+        <span class="page-number">12</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_13.png" alt="Page 13">
+        <p class="latin-text">Aliī ad domum Castorum vēnērunt.</p>
+        <p class="english-text">The others came to the Beavers' house.</p>
+        <span class="page-number">13</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_14.png" alt="Page 14">
+        <p class="latin-text">Ibi audiērunt Aslanem, leōnem magnum, redīre.</p>
+        <p class="english-text">There they heard the great lion Aslan was returning.</p>
+        <span class="page-number">14</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_15.png" alt="Page 15">
+        <p class="latin-text">In viā Pater Nātālis venit.</p>
+        <p class="english-text">On the way Father Christmas came.</p>
+        <span class="page-number">15</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_16.png" alt="Page 16">
+        <p class="latin-text">Dēdit Petrō gladium et clipeum, Susannae arcum et sagittās, Luciae pōtiōnem sānantem et pūgiōnem.</p>
+        <p class="english-text">He gave Peter a sword and shield, Susan a bow and arrows, Lucy a healing potion and dagger.</p>
+        <span class="page-number">16</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_17.png" alt="Page 17">
+        <p class="latin-text">Maleficae Edmundī prōditiōne eum cēpit.</p>
+        <p class="english-text">By Edmund's betrayal the Witch captured him.</p>
+        <span class="page-number">17</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_18.png" alt="Page 18">
+        <p class="latin-text">Aslan aliōs ad Mēnsam Lapideam vocāvit. Malefica dīxit Edmundō mortem merērī.</p>
+        <p class="english-text">Aslan called the others to the Stone Table. The Witch said Edmund deserved death.</p>
+        <span class="page-number">18</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_19.png" alt="Page 19">
+        <p class="latin-text">Aslan sē prō eō moritūrum esse dīxit. Mediā nocte Aslan occīsus est.</p>
+        <p class="english-text">Aslan said he would die for him. At midnight Aslan was killed.</p>
+        <span class="page-number">19</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_20.png" alt="Page 20">
+        <p class="latin-text">Lucia et Susanna flēbant.</p>
+        <p class="english-text">Lucy and Susan wept.</p>
+        <span class="page-number">20</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_21.png" alt="Page 21">
+        <p class="latin-text">Aurōra venit. Magīa profundior Aslanem revocāvit.</p>
+        <p class="english-text">Dawn came. Deeper magic revived Aslan.</p>
+        <span class="page-number">21</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_22.png" alt="Page 22">
+        <p class="latin-text">Vīvit iterum! Currit ad castellum Maleficae.</p>
+        <p class="english-text">He lives again! He runs to the Witch's castle.</p>
+        <span class="page-number">22</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_23.png" alt="Page 23">
+        <p class="latin-text">Statuās lapideās tangit et vīvās facit.</p>
+        <p class="english-text">He touches the stone statues and makes them live.</p>
+        <span class="page-number">23</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_24.png" alt="Page 24">
+        <p class="latin-text">In proeliō apud flūmen Petrus fortiter pugnat.</p>
+        <p class="english-text">In the battle by the river Peter fights bravely.</p>
+        <span class="page-number">24</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_25.png" alt="Page 25">
+        <p class="latin-text">Aslan baculum Maleficae frangit et eam vincit.</p>
+        <p class="english-text">Aslan breaks the Witch's wand and defeats her.</p>
+        <span class="page-number">25</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_26.png" alt="Page 26">
+        <p class="latin-text">Nix liquēscit, et vēr venit.</p>
+        <p class="english-text">Snow melts, and spring comes.</p>
+        <span class="page-number">26</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_27.png" alt="Page 27">
+        <p class="latin-text">Aslan eōs apud Cair Paravel corōnat.</p>
+        <p class="english-text">Aslan crowns them at Cair Paravel.</p>
+        <span class="page-number">27</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_28.png" alt="Page 28">
+        <p class="latin-text">Petrus Magnificus, Susanna Lenis, Edmundus Iūstus, Luciā Valēns fīunt.</p>
+        <p class="english-text">They become Peter the Magnificent, Susan the Gentle, Edmund the Just, Lucy the Valiant.</p>
+        <span class="page-number">28</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_29.png" alt="Page 29">
+        <p class="latin-text">Post multōs annōs cervum album vident et eum sequuntur. Per armārium redeunt in Angliam, paulō postquam discesserant.</p>
+        <p class="english-text">Years later they see a white stag and follow it. Through the wardrobe they return to England, shortly after they left.</p>
+        <span class="page-number">29</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lion_witch_wardobe/images/page_30.png" alt="Page 30">
+        <p class="latin-text">Professor rīdet et dīcit: “Narnia iterum vōs vocābit.”</p>
+        <p class="english-text">The Professor smiles and says: 'Narnia will call you again.'</p>
+        <span class="page-number">30</span>
+    </div>
+
+
+    <div class="vocabulary-section">
+        <h2>📖 Vocabulary</h2>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Alba, Albae, f.</span>
+            <span class="definition">Alba (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Anglia, Angliae, f.</span>
+            <span class="definition">England</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Aslan, Aslanis, m.</span>
+            <span class="definition">Aslan (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Aslas, Aslis, m.</span>
+            <span class="definition">Aslas (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Aurora, Aurorae, f.</span>
+            <span class="definition">Dawn</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Bellus, Belli, m.</span>
+            <span class="definition">Handsome</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Cair, Cairis, n.</span>
+            <span class="definition">Cair (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Castor, Castoris, m.</span>
+            <span class="definition">Castor (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Edmundus, Edmundi, m.</span>
+            <span class="definition">Edmund (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Faunus, Fauna, Faunum</span>
+            <span class="definition">Faun-like</span>
+            <span class="pos">(adjective)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Iustus, Iusti, m.</span>
+            <span class="definition">Just (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Lampa, Lampae, m.</span>
+            <span class="definition">Lampa (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Lenis, Lenis, m.</span>
+            <span class="definition">Lenis (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Lucia, Luciae, f.</span>
+            <span class="definition">Lucy (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Malefica, Maleficae, f.</span>
+            <span class="definition">Maleficent (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Narnia, Narniae, f.</span>
+            <span class="definition">Narnia (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Natalis, Natalis, m.</span>
+            <span class="definition">Christmas (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Paravel, Paravelis, n.</span>
+            <span class="definition">Paravel (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Petrus, Petri, m.</span>
+            <span class="definition">Peter (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Pevensia, Pevensiae, f.</span>
+            <span class="definition">Pevensie (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Secundus, Secundi, m.</span>
+            <span class="definition">Second (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Susanna, Susannae, f.</span>
+            <span class="definition">Susan (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Tumnus, Tumni, m.</span>
+            <span class="definition">Tumnus (name)</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">valeo, valere, valui, valitus</span>
+            <span class="definition">Be Strong!</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">ab (+ ablative)</span>
+            <span class="definition">from</span>
+            <span class="pos">(preposition)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">ad (+ accusative)</span>
+            <span class="definition">to</span>
+            <span class="pos">(preposition)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">albus, alba, album</span>
+            <span class="definition">white</span>
+            <span class="pos">(adjective)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">alius, alia, aliud (accusative singular neuter)</span>
+            <span class="definition">another</span>
+            <span class="pos">(determiner)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">alius, alia, aliud</span>
+            <span class="definition">another</span>
+            <span class="pos">(determiner)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">annus, anni, m.</span>
+            <span class="definition">year</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">apud (+ accusative)</span>
+            <span class="definition">near</span>
+            <span class="pos">(preposition)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">arcus, arcūs, m.</span>
+            <span class="definition">bow</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">armarium, armarii, n.</span>
+            <span class="definition">wardrobe</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Aslan, Aslanis, m.</span>
+            <span class="definition">Aslan (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">audio, audire, audivi, auditus</span>
+            <span class="definition">I hear</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">baculum, baculi, n.</span>
+            <span class="definition">stick</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">cado, cadere, cecidi, casus</span>
+            <span class="definition">I fall</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">capio, capere, cepi, captus</span>
+            <span class="definition">I take</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">castellum, castelli, n.</span>
+            <span class="definition">castle</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">ceruus, cerui, m.</span>
+            <span class="definition">deer</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">clam</span>
+            <span class="definition">secretly</span>
+            <span class="pos">(adverb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">clipeus, clipei, m.</span>
+            <span class="definition">shield</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">conuenio, conuenire, conueni, conuentus</span>
+            <span class="definition">I meet</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">corono, coronare, coronavi, coronatus</span>
+            <span class="definition">I crown</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">credo, credere, credidi, creditus</span>
+            <span class="definition">I believe</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">curro, currere, cucurri, cursus</span>
+            <span class="definition">I run</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">currus, currūs, m.</span>
+            <span class="definition">chariot</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">delicia, deliciae, f.</span>
+            <span class="definition">delight</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">dico, dicere, dixi, dictus</span>
+            <span class="definition">I say</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">dies, diei, m.</span>
+            <span class="definition">day</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">discedo, discedere, discessi, discessus</span>
+            <span class="definition">I leave</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">do, dare, dedi, datus</span>
+            <span class="definition">I give</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">domus, domūs, f.</span>
+            <span class="definition">house</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">et</span>
+            <span class="definition">and</span>
+            <span class="pos">(conjunction)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">facio, facere, feci, factus</span>
+            <span class="definition">I do</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">fio, fieri, factus sum</span>
+            <span class="definition">I become</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">fleo, flere, flevi, fletus</span>
+            <span class="definition">I cry</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">flumen, fluminis, n.</span>
+            <span class="definition">river</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">fortiter</span>
+            <span class="definition">bravely</span>
+            <span class="pos">(adverb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">frango, frangere, fregi, fractus</span>
+            <span class="definition">I break</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">frater, fratris, m.</span>
+            <span class="definition">brother</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">gladius, gladii, m.</span>
+            <span class="definition">sword</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">habito, habitare, habitavi, habitatus</span>
+            <span class="definition">I live</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">hiems, hiemis, f.</span>
+            <span class="definition">winter</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">ibi</span>
+            <span class="definition">there</span>
+            <span class="pos">(adverb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">in (+ ablative or accusative)</span>
+            <span class="definition">in</span>
+            <span class="pos">(preposition)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">intro, intrare, intravi, intratus</span>
+            <span class="definition">I enter</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">inuenio, inuenire, inueni, inuentus</span>
+            <span class="definition">I find</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">inuito, inuitare, inuitavi, inuitatus</span>
+            <span class="definition">I invite</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">is, ea, id</span>
+            <span class="definition">he/she/it</span>
+            <span class="pos">(pronoun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">iterum</span>
+            <span class="definition">again</span>
+            <span class="pos">(adverb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">iubeo, iubere, iussi, iussus</span>
+            <span class="definition">I order</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Lapideus, Lapidei, m.</span>
+            <span class="definition">Stone (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">leo, leonis, m.</span>
+            <span class="definition">lion</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">licet, licere, licuit</span>
+            <span class="definition">it is allowed</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">liquesco, liquescere, licui</span>
+            <span class="definition">I melt</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">luceo, lucere, luxi</span>
+            <span class="definition">I shine</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">magia, magiae, f.</span>
+            <span class="definition">magic</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Magnificus, Magnifici, m.</span>
+            <span class="definition">Magnificent (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">magnus, magna, magnum</span>
+            <span class="definition">big</span>
+            <span class="pos">(adjective)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Maleficus, Malefici, m.</span>
+            <span class="definition">maleficient (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">medius, media, medium</span>
+            <span class="definition">middle</span>
+            <span class="pos">(adjective)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Mensa, Mensae, f.</span>
+            <span class="definition">Table (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">mereo, merere, merui, meritus</span>
+            <span class="definition">I deserve</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">monstro, monstrare, monstravi, monstratus</span>
+            <span class="definition">I show</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">morior, mori, mortuus sum</span>
+            <span class="definition">I die</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">mors, mortis, f.</span>
+            <span class="definition">death</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">mox</span>
+            <span class="definition">soon</span>
+            <span class="pos">(adverb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">multus, multa, multum</span>
+            <span class="definition">much</span>
+            <span class="pos">(determiner)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Natalis, Natalis, m.</span>
+            <span class="definition">Christmas (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">nix, nivis, f.</span>
+            <span class="definition">snow</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">non</span>
+            <span class="definition">not</span>
+            <span class="pos">(particle)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">nox, noctis, f.</span>
+            <span class="definition">night</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">occido, occidere, occidi, occisus</span>
+            <span class="definition">I kill</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">omnis, omnis, omne</span>
+            <span class="definition">all</span>
+            <span class="pos">(determiner)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">orbis, orbis, m.</span>
+            <span class="definition">world</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">pater, patris, m.</span>
+            <span class="definition">father</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">paulo</span>
+            <span class="definition">a little</span>
+            <span class="pos">(adverb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">per (+ accusative)</span>
+            <span class="definition">through</span>
+            <span class="pos">(preposition)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">pluuiosus, pluuiosa, pluuiosum</span>
+            <span class="definition">rainy</span>
+            <span class="pos">(adjective)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">post (+ accusative)</span>
+            <span class="definition">after</span>
+            <span class="pos">(preposition)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">postea</span>
+            <span class="definition">afterwards</span>
+            <span class="pos">(adverb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">postquam</span>
+            <span class="definition">after</span>
+            <span class="pos">(subordinating conjunction)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">potio, potionis, f.</span>
+            <span class="definition">drink</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">pro (+ ablative)</span>
+            <span class="definition">for</span>
+            <span class="pos">(preposition)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">proditio, proditionis, f.</span>
+            <span class="definition">betrayal</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">proelium, proelii, n.</span>
+            <span class="definition">battle</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">Professor, Professoris, m.</span>
+            <span class="definition">Professor (name)</span>
+            <span class="pos">(proper noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">profundus, profunda, profundum</span>
+            <span class="definition">deep</span>
+            <span class="pos">(adjective)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">promitto, promittere, promisi, promissus</span>
+            <span class="definition">I promise</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">pugio, pugionis, m.</span>
+            <span class="definition">dagger</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">pugno, pugnare, pugnavi, pugnatus</span>
+            <span class="definition">I fight</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">quamquam</span>
+            <span class="definition">although</span>
+            <span class="pos">(subordinating conjunction)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">redeo, redire, redii, reditus</span>
+            <span class="definition">I return</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">ren, renis, m.</span>
+            <span class="definition">reindeer</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">reuoco, reuocare, reuocavi, reuocatus</span>
+            <span class="definition">I call back</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">rex, regis, m.</span>
+            <span class="definition">king</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">rideo, ridere, risi, risus</span>
+            <span class="definition">I laugh</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">sagitta, sagittae, f.</span>
+            <span class="definition">arrow</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">sano, sanare, sanavi, sanatus</span>
+            <span class="definition">I heal</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">semper</span>
+            <span class="definition">always</span>
+            <span class="pos">(adverb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">sequor, sequi, secutus sum</span>
+            <span class="definition">I follow</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">si</span>
+            <span class="definition">if</span>
+            <span class="pos">(subordinating conjunction)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">statua, statuae, f.</span>
+            <span class="definition">statue</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">subito</span>
+            <span class="definition">suddenly</span>
+            <span class="pos">(adverb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">sui (reflexive pronoun)</span>
+            <span class="definition">himself/herself/itself</span>
+            <span class="pos">(pronoun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">sum, esse, fui, futurus</span>
+            <span class="definition">I am</span>
+            <span class="pos">(auxiliary verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">tango, tangere, tetigi, tactus</span>
+            <span class="definition">I touch</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">tempus, temporis, n.</span>
+            <span class="definition">time</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">terra, terrae, f.</span>
+            <span class="definition">land</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">thea, theae, f.</span>
+            <span class="definition">tea</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">tero, terere, trivi, tritus</span>
+            <span class="definition">I wear out</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">trado, tradere, tradidi, traditus</span>
+            <span class="definition">I hand over</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">turcicus, turcica, turcicum</span>
+            <span class="definition">Turkish</span>
+            <span class="pos">(adjective)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">uenio, uenire, ueni, uentus</span>
+            <span class="definition">I come</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">uer, ueris, n.</span>
+            <span class="definition">spring</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">uerus, uera, uerum</span>
+            <span class="definition">true</span>
+            <span class="pos">(adjective)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">ueto, uetare, uetui, uetitus</span>
+            <span class="definition">I forbid</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">uia, uiae, f.</span>
+            <span class="definition">road</span>
+            <span class="pos">(noun)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">uideo, uidere, uidi, uisus</span>
+            <span class="definition">I see</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">uincio, uincire, uinxi, uinctus</span>
+            <span class="definition">I bind</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">uiuo, uiuere, uixi, uictus</span>
+            <span class="definition">I live</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">uoco, uocare, uocavi, uocatus</span>
+            <span class="definition">I call</span>
+            <span class="pos">(verb)</span>
+        </div>
+
+
+        <div class="vocab-entry">
+            <span class="headword">uos</span>
+            <span class="definition">you (pl.)</span>
+            <span class="pos">(pronoun)</span>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -29,8 +29,8 @@ def get_reference_images_for_page(page, project: BookProject) -> list[str]:
     Get reference image paths for a page, respecting the 3-image API limit.
 
     Priority:
-    1. Location reference (if specified) - 1 image
-    2. Character references (up to 2 to stay under 3-image limit)
+    - If 3+ characters: Include up to 3 character references (skip location)
+    - If <3 characters: Include location + remaining character references
 
     Args:
         page: BookPage with characters and location fields
@@ -41,13 +41,8 @@ def get_reference_images_for_page(page, project: BookProject) -> list[str]:
     """
     refs = []
 
-    # Priority 1: Location reference (if specified)
-    if hasattr(page, 'location') and page.location:
-        loc = next((l for l in project.locations if l.name == page.location), None)
-        if loc and loc.reference_image_path and Path(loc.reference_image_path).exists():
-            refs.append(loc.reference_image_path)
-
-    # Priority 2-3: Character references (up to 2 remaining slots)
+    # Get character references
+    char_refs = []
     if page.characters and project.characters:
         char_refs = [
             c.reference_image_path
@@ -56,7 +51,19 @@ def get_reference_images_for_page(page, project: BookProject) -> list[str]:
             and c.reference_image_path
             and Path(c.reference_image_path).exists()
         ]
-        # Calculate available slots (3 total - location if present)
+
+    # Priority decision: If 3+ characters, skip location to include all characters
+    if len(char_refs) >= 3:
+        # Include up to 3 character references, skip location
+        refs.extend(char_refs[:3])
+    else:
+        # Include location first, then remaining character slots
+        if hasattr(page, 'location') and page.location:
+            loc = next((l for l in project.locations if l.name == page.location), None)
+            if loc and loc.reference_image_path and Path(loc.reference_image_path).exists():
+                refs.append(loc.reference_image_path)
+
+        # Add character references (up to remaining slots)
         available_slots = 3 - len(refs)
         refs.extend(char_refs[:available_slots])
 
