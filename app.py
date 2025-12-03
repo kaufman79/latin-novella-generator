@@ -858,20 +858,22 @@ def step_3_generate_book():
                     status_text.text(f"Generating page {page.page_number}/{num_pages}...")
 
                     try:
-                        # Get reference paths for selected characters
-                        ref_paths = []
+                        # Build character references with metadata for better consistency
+                        char_refs = []
                         if project.characters and page.characters:
-                            ref_paths = [
-                                c.reference_image_path
-                                for c in project.characters
-                                if c.name in page.characters and c.reference_image_path
-                            ]
+                            for char in project.characters:
+                                if char.name in page.characters and char.reference_image_path:
+                                    char_refs.append({
+                                        'name': char.name,
+                                        'description': char.description,
+                                        'image_path': char.reference_image_path
+                                    })
 
                         # Build prompt
                         full_prompt = f"{project.image_config.art_style}. {page.image_prompt}"
 
-                        # Generate image with character references
-                        img = generate_image(full_prompt, reference_image_paths=ref_paths)
+                        # Generate image with character references (new improved method)
+                        img = generate_image(full_prompt, character_references=char_refs if char_refs else None)
 
                         # Save
                         img_path = images_dir / f'page_{page.page_number:02d}.png'
@@ -939,24 +941,27 @@ def step_3_generate_book():
 
                             if st.button(f"Regenerate", key=f"regen_page_{page_num}"):
                                 try:
-                                    # Get references
-                                    ref_paths = []
-                                    if use_current:
-                                        ref_paths = [str(img_path)]
-                                    elif project.characters and page.characters:
-                                        ref_paths = [
-                                            c.reference_image_path
-                                            for c in project.characters
-                                            if c.name in page.characters
-                                        ]
-
                                     # Build prompt
                                     base_prompt = f"{project.image_config.art_style}. {page.image_prompt}"
                                     if custom_instructions.strip():
                                         base_prompt = f"{base_prompt}. {custom_instructions}"
 
-                                    # Generate
-                                    img = generate_image(base_prompt, reference_image_paths=ref_paths)
+                                    # Generate with appropriate references
+                                    if use_current:
+                                        # Use current image for small tweaks (old method)
+                                        img = generate_image(base_prompt, reference_image_paths=[str(img_path)])
+                                    else:
+                                        # Use character references for consistency (new improved method)
+                                        char_refs = []
+                                        if project.characters and page.characters:
+                                            for char in project.characters:
+                                                if char.name in page.characters and char.reference_image_path:
+                                                    char_refs.append({
+                                                        'name': char.name,
+                                                        'description': char.description,
+                                                        'image_path': char.reference_image_path
+                                                    })
+                                        img = generate_image(base_prompt, character_references=char_refs if char_refs else None)
                                     img.save(img_path)
 
                                     st.success(f"✅ Page {page_num} regenerated!")

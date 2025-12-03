@@ -53,35 +53,79 @@ def get_client() -> genai.Client:
     return genai.Client(api_key=api_key)
 
 
-def generate_image(prompt: str, reference_image_paths: Optional[list[str]] = None) -> Image.Image:
+def generate_image(
+    prompt: str,
+    character_references: Optional[list[dict]] = None,
+    reference_image_paths: Optional[list[str]] = None  # DEPRECATED: Use character_references instead
+) -> Image.Image:
     """
-    Generate image using Gemini 2.5 Flash Image API.
+    Generate image using Gemini 2.5 Flash Image API with character consistency.
 
     Args:
-        prompt: Text description of image to generate (scene/action, NOT character appearance)
-        reference_image_paths: Optional list of character reference image paths for consistency
+        prompt: Text description of scene/action (NOT character appearance)
+        character_references: List of character dicts with keys:
+            - name: Character name (e.g., "Pater")
+            - description: Visual description (e.g., "red hair, beard, blue tunic")
+            - image_path: Path to reference image
+        reference_image_paths: DEPRECATED - Use character_references instead.
+            If provided without character_references, will use old generic prompting.
 
     Returns:
         PIL Image object
+
+    Example:
+        characters = [
+            {"name": "Pater", "description": "man with red hair and beard", "image_path": "char_pater.png"},
+            {"name": "Mater", "description": "woman with blonde hair", "image_path": "char_mater.png"}
+        ]
+        generate_image("Pater and Mater reading a book", character_references=characters)
     """
     client = get_client()
 
-    # Build contents list starting with prompt
+    # Build contents list
     contents = []
 
-    # Add all reference images if provided
-    if reference_image_paths:
-        # Enhance prompt to use reference styles
+    # New improved approach with character metadata
+    if character_references:
+        # Build explicit prompt naming each character
+        char_descriptions = []
+        for i, char in enumerate(character_references, 1):
+            char_descriptions.append(
+                f"Reference {i}: {char['name']} ({char['description']})"
+            )
+
+        # Enhanced prompt with explicit character mapping
+        char_intro = ". ".join(char_descriptions)
+        enhanced_prompt = (
+            f"{char_intro}. "
+            f"Using these character reference images for consistency, generate: {prompt}"
+        )
+        contents.append(enhanced_prompt)
+
+        # Add reference images in the same order
+        for char in character_references:
+            img_path = char.get('image_path')
+            if img_path and Path(img_path).exists():
+                ref_image = Image.open(img_path)
+                img_byte_arr = BytesIO()
+                ref_image.save(img_byte_arr, format='PNG')
+                img_byte_arr.seek(0)
+
+                contents.append(
+                    types.Part.from_bytes(
+                        data=img_byte_arr.read(),
+                        mime_type='image/png'
+                    )
+                )
+
+    # Fallback to old generic approach (deprecated)
+    elif reference_image_paths:
         enhanced_prompt = f"Using the character styles from the reference images provided, {prompt}"
         contents.append(enhanced_prompt)
 
-        # Add each reference image
         for ref_path in reference_image_paths:
             if ref_path and Path(ref_path).exists():
-                # Load reference image
                 ref_image = Image.open(ref_path)
-
-                # Convert to bytes for API
                 img_byte_arr = BytesIO()
                 ref_image.save(img_byte_arr, format='PNG')
                 img_byte_arr.seek(0)
@@ -196,16 +240,33 @@ def generate_page_images(project: BookProject, translation: BookTranslation) -> 
         print(f"   Generating image...")
 
         try:
-            # Use page 1 as reference for consistency (not page 1 itself)
+            # Build character references for this page (new improved method)
+            char_refs = []
+            if project.characters and page.characters:
+                for char in project.characters:
+                    if char.name in page.characters and char.reference_image_path:
+                        char_refs.append({
+                            'name': char.name,
+                            'description': char.description,
+                            'image_path': char.reference_image_path
+                        })
+                if char_refs:
+                    print(f"   Using character references: {', '.join(c['name'] for c in char_refs)}")
+
+            # Fallback: Use page 1 as reference if no character references (legacy)
             ref_paths = None
-            if page_num > 1:
+            if not char_refs and page_num > 1:
                 page_1_path = images_dir / 'page_01.png'
                 if page_1_path.exists():
                     ref_paths = [str(page_1_path)]
-                    print(f"   Using page 1 as reference for character consistency")
+                    print(f"   Using page 1 as reference (legacy method)")
 
-            # Generate with reference for consistency
-            image = generate_image(full_prompt, ref_paths)
+            # Generate with references for consistency
+            image = generate_image(
+                full_prompt,
+                character_references=char_refs if char_refs else None,
+                reference_image_paths=ref_paths
+            )
 
             # Save image
             image_path = images_dir / f'page_{page_num:02d}.png'
