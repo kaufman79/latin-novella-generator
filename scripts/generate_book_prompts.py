@@ -10,34 +10,32 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from book_schemas import BookProject
 from scripts.book_manager import load_project
-from database import LatinDatabase
+from scripts.database import LatinDatabase
 
 
 def suggest_vocabulary_for_book(db, theme=None, count=15):
-    """Get vocabulary suggestions for book translation."""
+    """
+    Get vocabulary suggestions for book translation.
+
+    Args:
+        db: LatinDatabase instance
+        theme: Optional theme to filter by (not currently used)
+        count: Number of words to return
+
+    Returns:
+        List of tuples: (lemma, english, part_of_speech, mastery_level)
+    """
     cursor = db.conn.cursor()
 
-    if theme:
-        # Theme-based suggestions
-        query = """
-            SELECT latin_word, english_gloss, part_of_speech, frequency_tier
-            FROM lexicon
-            WHERE (LOWER(ff625_category) LIKE ? OR LOWER(dcc_semantic_group) LIKE ?)
-            ORDER BY COALESCE(ff625_rank, dcc_rank, 9999)
-            LIMIT ?
-        """
-        theme_pattern = f"%{theme.lower()}%"
-        words = cursor.execute(query, (theme_pattern, theme_pattern, count)).fetchall()
-    else:
-        # High-frequency suggestions
-        query = """
-            SELECT latin_word, english_gloss, part_of_speech, frequency_tier
-            FROM lexicon
-            WHERE (ff625_rank IS NOT NULL OR dcc_rank IS NOT NULL)
-            ORDER BY COALESCE(ff625_rank, dcc_rank, 9999)
-            LIMIT ?
-        """
-        words = cursor.execute(query, (count,)).fetchall()
+    # Get known words, prioritizing by frequency of use (times_seen)
+    # and mastery level (lower = needs more practice)
+    query = """
+        SELECT lemma, english, part_of_speech, mastery_level
+        FROM known_words
+        ORDER BY times_seen DESC, mastery_level ASC
+        LIMIT ?
+    """
+    words = cursor.execute(query, (count,)).fetchall()
 
     return words
 
@@ -94,13 +92,13 @@ def generate_translation_prompt(project: BookProject, db: LatinDatabase) -> str:
 
     vocab = suggest_vocabulary_for_book(db, theme=project.theme, count=20)
 
-    lines.append("| Latin | English | Part of Speech | Priority |")
-    lines.append("|-------|---------|----------------|----------|")
+    lines.append("| Latin | English | Part of Speech | Mastery |")
+    lines.append("|-------|---------|----------------|---------|")
 
-    for latin, english, pos, tier in vocab:
+    for lemma, english, pos, mastery in vocab:
         pos_display = pos or "—"
-        tier_display = tier or "—"
-        lines.append(f"| {latin} | {english} | {pos_display} | {tier_display} |")
+        mastery_display = ["New", "Familiar", "Mastered"][min(mastery or 1, 3) - 1] if mastery else "—"
+        lines.append(f"| {lemma} | {english} | {pos_display} | {mastery_display} |")
 
     lines.append("")
     lines.append("*Note: You don't have to use all of these - they're just suggestions.*")
