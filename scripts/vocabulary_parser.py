@@ -9,6 +9,8 @@ from typing import List, Dict, Optional
 from pathlib import Path
 import google.generativeai as genai
 
+from config import GEMINI_TEXT_MODEL, ERROR_MESSAGES
+
 
 class LatinVocabularyParser:
     """Parse Latin text to extract vocabulary with lemmas, POS, and definitions."""
@@ -73,10 +75,17 @@ class LatinVocabularyParser:
 
         Returns:
             List of vocabulary entries with lemma, english, pos, and dictionary_form
+
+        Raises:
+            ValueError: If API key is None or empty
         """
+        # Validate API key
+        if not api_key:
+            raise ValueError(ERROR_MESSAGES["api_key_missing"])
+
         # Configure Gemini
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-2.0-flash-exp')
+        model = genai.GenerativeModel(GEMINI_TEXT_MODEL)
 
         # Build prompt
         lemma_list = "\n".join([f"- {item['lemma']} ({item['pos']})" for item in lemmas])
