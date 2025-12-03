@@ -389,6 +389,7 @@ def step_2_get_ai_story():
         validate_stage_1_input, validate_stage_2_input, validate_stage_3_input,
         validate_stage_4_input, validate_stage_5_input
     )
+    from scripts.auto_workflow import show_auto_workflow
 
     project = st.session_state.current_project
 
@@ -398,6 +399,33 @@ def step_2_get_ai_story():
         return
 
     st.write(f"**Project**: {project.title_english} (`{project.project_id}`)")
+
+    # Workflow mode selector
+    st.markdown("---")
+    workflow_mode = st.radio(
+        "Choose workflow mode:",
+        options=["Auto (Recommended) - AI translates automatically", "Manual - Copy/paste prompts to external AI"],
+        index=0 if st.session_state.get('auto_workflow_step') else 1,
+        key="workflow_mode_selector",
+        horizontal=True
+    )
+
+    is_auto_mode = "Auto" in workflow_mode
+
+    # If switching modes, initialize state
+    if is_auto_mode and 'auto_workflow_step' not in st.session_state:
+        st.session_state.auto_workflow_step = 1
+    elif not is_auto_mode and st.session_state.get('auto_workflow_step'):
+        st.session_state.auto_workflow_step = None
+
+    st.markdown("---")
+
+    # Show appropriate workflow
+    if is_auto_mode:
+        show_auto_workflow(project)
+        return  # Exit early, auto workflow handles everything
+
+    # Continue with manual workflow below...
 
     # Get workflow stage (default to 1 if not started)
     if st.session_state.workflow_stage == 0:
