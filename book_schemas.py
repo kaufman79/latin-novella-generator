@@ -9,67 +9,111 @@ from datetime import datetime
 from pydantic import BaseModel, Field
 
 
-class Character(BaseModel):
-    """Character definition for reference image generation."""
-    name: str  # e.g., "Pater", "Mater", "Filia"
-    description: str  # Full visual description for reference image
-    reference_image_path: Optional[str] = None  # Path to character reference image
+# --- Story Outline (source) ---
+
+class CharacterOutline(BaseModel):
+    """Character in the story outline."""
+    name: str
+    description: str  # Visual description
+    source: Optional[str] = None  # e.g., "Toon Link from Wind Waker" for established characters
+    is_established: bool = False  # True if well-known character (better image consistency)
 
 
-class Location(BaseModel):
-    """Location/setting definition for reference image generation."""
-    name: str  # e.g., "Bedroom", "Downstairs Room", "Forest"
-    description: str  # Full visual description for reference image (empty scene, no characters)
-    reference_image_path: Optional[str] = None  # Path to location reference image
+class LocationOutline(BaseModel):
+    """Location in the story outline."""
+    name: str
+    description: str
 
 
-class VocabularyEntry(BaseModel):
-    """Single vocabulary entry with dictionary formatting."""
-    latin: str
-    english: str
-    part_of_speech: str  # noun, verb, adjective, etc.
-    dictionary_form: str  # "puer, puerī, m." or "videō, vidēre, vīdī, vīsum"
-    frequency_tier: Optional[str] = None  # ff625, core, common, supplemental
-    notes: Optional[str] = None
+class PageOutline(BaseModel):
+    """Single page in the story outline."""
+    page_number: int
+    english_text: str
+    scene_description: str  # What the illustration should show
+    characters_present: List[str] = Field(default_factory=list)
+    location: Optional[str] = None
 
+
+class StoryOutline(BaseModel):
+    """Complete story outline (output of Story Architect)."""
+    title_english: str
+    title_latin: Optional[str] = None
+    target_pages: int = 20
+    characters: List[CharacterOutline] = Field(default_factory=list)
+    locations: List[LocationOutline] = Field(default_factory=list)
+    pages: List[PageOutline] = Field(default_factory=list)
+
+
+# --- Translation ---
 
 class BookPage(BaseModel):
-    """Single page in the book."""
+    """Single page in the translated book."""
     page_number: int
     latin_text: str
     english_text: str
-    image_prompt: str
-    image_path: Optional[str] = None  # Filled after image generation
-    vocabulary_used: List[str] = Field(default_factory=list)  # Lemmas used on this page
-    characters: List[str] = Field(default_factory=list)  # Character names to include in this page's image
-    location: Optional[str] = None  # Location name for this page's setting
-
-
-class PlayExtension(BaseModel):
-    """Play-based activity extension."""
-    category: str  # "retelling", "physical", "creative", "vocabulary", "real_world"
-    title: str
-    description: str
-    checked: bool = False
-
-
-class ImageGenerationConfig(BaseModel):
-    """Configuration for image generation."""
-    reference_image_path: Optional[str] = None
-    art_style: str = "children's book illustration, warm colors, simple shapes"
-    seed: Optional[int] = None
-    provider: str = "nano_banana"  # Could support multiple providers
-    consistency_mode: str = "reference_image"  # or "seed" or "style_description"
+    image_prompt: str  # Carried from outline, refined by Art Director
+    image_path: Optional[str] = None
+    characters: List[str] = Field(default_factory=list)
+    location: Optional[str] = None
 
 
 class BookTranslation(BaseModel):
-    """Complete book translation with pages and vocabulary."""
+    """Complete book translation (output of Latin Scribe, reviewed by Latin Censor)."""
     title_latin: str
     title_english: str
     pages: List[BookPage]
-    vocabulary_list: List[VocabularyEntry]
-    play_extensions: List[PlayExtension] = Field(default_factory=list)
 
+
+# --- Visual Bible (Art Direction) ---
+
+class StyleSpec(BaseModel):
+    """Art style specification."""
+    medium: str  # e.g., "cel-shaded digital art in the style of Wind Waker"
+    palette: str  # e.g., "warm saturated colors, teal ocean, golden sand"
+    line_weight: str  # e.g., "bold black outlines, clean simple shapes"
+    lighting: str  # e.g., "bright, flat lighting with soft shadows"
+    mood: str  # e.g., "cheerful, adventurous, whimsical"
+    technical: str = "square aspect ratio, child-friendly illustration, no text in image"
+
+
+class CharacterVisual(BaseModel):
+    """Character visual specification for image prompts."""
+    source: Optional[str] = None  # e.g., "Toon Link from Wind Waker"
+    is_established: bool = False
+    visual_description: str  # Detailed, exact visual description
+    expression_default: str = "neutral"
+    height_reference: Optional[str] = None
+    reference_image_path: Optional[str] = None  # Optional single reference image
+
+
+class LocationVisual(BaseModel):
+    """Location visual specification for image prompts."""
+    visual_description: str
+    time_of_day_default: str = "bright daylight"
+
+
+class VisualBible(BaseModel):
+    """Complete visual specification for a book (output of Art Director)."""
+    style: StyleSpec
+    characters: Dict[str, CharacterVisual]
+    locations: Dict[str, LocationVisual]
+    composition_rules: List[str] = Field(default_factory=list)
+
+
+class PagePrompt(BaseModel):
+    """Self-contained image prompt for a single page."""
+    page_number: int
+    prompt: str  # Full self-contained prompt (style + characters + location + scene)
+    characters_in_scene: List[str] = Field(default_factory=list)
+    location: Optional[str] = None
+
+
+class ImagePrompts(BaseModel):
+    """All page prompts for a book (output of Art Director)."""
+    pages: List[PagePrompt]
+
+
+# --- Project ---
 
 class BookProject(BaseModel):
     """Complete book project configuration."""
@@ -77,35 +121,25 @@ class BookProject(BaseModel):
     title_english: str
     title_latin: Optional[str] = None
 
-    # Source story
-    source_text: str  # Original English story
-    source_type: str = "original"  # or "existing"
-
-    # Translation
-    translation: Optional[BookTranslation] = None
-
-    # Image generation
-    image_config: ImageGenerationConfig = Field(default_factory=ImageGenerationConfig)
-    cover_image_prompt: Optional[str] = None  # Store cover prompt for regeneration (legacy - will be replaced by characters)
-    characters: List[Character] = Field(default_factory=list)  # Character reference sheets
-    locations: List[Location] = Field(default_factory=list)  # Location/setting reference sheets
+    # Source
+    source_type: str = "original"  # "original" or "adaptation"
 
     # Metadata
     theme: Optional[str] = None
-    target_age: str = "2-5"
-    target_pages: int = 10
-    level: Optional[int] = None
+    target_pages: int = 20
 
     # Workflow status
-    status: str = "initialized"  # initialized, translated, reviewed, images_generated, pdf_built, approved
+    status: str = "initialized"
+    # Statuses: initialized → outlined → translated → reviewed → art_directed → images_generated → pdf_built
     date_created: str = Field(default_factory=lambda: datetime.now().isoformat())
     date_modified: str = Field(default_factory=lambda: datetime.now().isoformat())
 
-    # Paths
+    # Project folder path
     project_folder: str
 
     def save(self, path: str):
         """Save project to JSON file."""
+        self.date_modified = datetime.now().isoformat()
         with open(path, 'w', encoding='utf-8') as f:
             f.write(self.model_dump_json(indent=2))
 
@@ -114,68 +148,3 @@ class BookProject(BaseModel):
         """Load project from JSON file."""
         with open(path, 'r', encoding='utf-8') as f:
             return cls.model_validate_json(f.read())
-
-
-class VocabularySuggestion(BaseModel):
-    """Vocabulary suggestions for translation."""
-    high_priority: List[Dict[str, str]]  # New words to introduce
-    reuse: List[Dict[str, str]]  # Words from previous books
-    theme_words: List[Dict[str, str]]  # Theme-specific words
-
-
-# Example usage and validation
-if __name__ == '__main__':
-    # Test creating a book project
-    project = BookProject(
-        project_id="book_001",
-        title_english="The Boy and the Pig",
-        source_text="Once upon a time, a boy saw a pig. The pig was big!",
-        theme="animals",
-        target_pages=8,
-        level=1,
-        project_folder="projects/book_001"
-    )
-
-    print("Created project:")
-    print(project.model_dump_json(indent=2))
-
-    # Test creating a translation
-    translation = BookTranslation(
-        title_latin="Puer et Porcus",
-        title_english="The Boy and the Pig",
-        pages=[
-            BookPage(
-                page_number=1,
-                latin_text="Puer porcum videt.",
-                english_text="The boy sees a pig.",
-                image_prompt="A young boy looking at a friendly pig in a sunny farm yard",
-                vocabulary_used=["puer", "porcus", "videō"]
-            ),
-            BookPage(
-                page_number=2,
-                latin_text="Porcus magnus est!",
-                english_text="The pig is big!",
-                image_prompt="Close-up of a large, happy pig",
-                vocabulary_used=["porcus", "magnus", "sum"]
-            )
-        ],
-        vocabulary_list=[
-            VocabularyEntry(
-                latin="puer",
-                english="boy",
-                part_of_speech="noun",
-                dictionary_form="puer, puerī, m.",
-                frequency_tier="common"
-            ),
-            VocabularyEntry(
-                latin="porcus",
-                english="pig",
-                part_of_speech="noun",
-                dictionary_form="porcus, porcī, m.",
-                frequency_tier="ff625"
-            )
-        ]
-    )
-
-    print("\nCreated translation:")
-    print(translation.model_dump_json(indent=2))

@@ -1,295 +1,185 @@
 #!/usr/bin/env python3
 """
-Image generation using Gemini 2.5 Flash Image API.
-Handles reference images for character consistency.
+Image generation using OpenAI API (gpt-image-1).
+Uses Visual Bible approach for consistency across book pages.
 """
 
 import os
 import sys
 import json
+import base64
 from pathlib import Path
 from typing import Optional
-from datetime import datetime
 from io import BytesIO
-import base64
 
-from google import genai
-from google.genai import types
+from openai import OpenAI
 from PIL import Image
 
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from book_schemas import BookProject, BookTranslation, Character, Location
-from scripts.book_manager import load_project, update_project_status
-from config import GEMINI_IMAGE_MODEL, ENV_FILE, ERROR_MESSAGES
+from config import OPENAI_IMAGE_MODEL, DEFAULT_IMAGE_SIZE, DEFAULT_IMAGE_QUALITY, ENV_FILE
 
 
-def get_reference_images_for_page(page, project: BookProject) -> list[str]:
-    """
-    Get reference image paths for a page, respecting the 3-image API limit.
-
-    Priority:
-    - If 3+ characters: Include up to 3 character references (skip location)
-    - If <3 characters: Include location + remaining character references
-
-    Args:
-        page: BookPage with characters and location fields
-        project: BookProject with characters and locations lists
-
-    Returns:
-        List of reference image paths (max 3)
-    """
-    refs = []
-
-    # Get character references
-    char_refs = []
-    if page.characters and project.characters:
-        char_refs = [
-            c.reference_image_path
-            for c in project.characters
-            if c.name in page.characters
-            and c.reference_image_path
-            and Path(c.reference_image_path).exists()
-        ]
-
-    # Priority decision: If 3+ characters, skip location to include all characters
-    if len(char_refs) >= 3:
-        # Include up to 3 character references, skip location
-        refs.extend(char_refs[:3])
-    else:
-        # Include location first, then remaining character slots
-        if hasattr(page, 'location') and page.location:
-            loc = next((l for l in project.locations if l.name == page.location), None)
-            if loc and loc.reference_image_path and Path(loc.reference_image_path).exists():
-                refs.append(loc.reference_image_path)
-
-        # Add character references (up to remaining slots)
-        available_slots = 3 - len(refs)
-        refs.extend(char_refs[:available_slots])
-
-    return refs
-
-
-def get_client() -> genai.Client:
-    """
-    Get configured Gemini client.
-
-    Raises:
-        ValueError: If GEMINI_API_KEY is not found
-    """
-    # Try .env file first
+def get_client() -> OpenAI:
+    """Get configured OpenAI client."""
     env_file = Path(__file__).parent.parent / ENV_FILE
     api_key = None
 
     if env_file.exists():
         with open(env_file) as f:
             for line in f:
-                if line.startswith('GEMINI_API_KEY='):
-                    api_key = line.split('=', 1)[1].strip()
+                line = line.strip()
+                if line.startswith('OPENAI_API_KEY='):
+                    api_key = line.split('=', 1)[1].strip().strip('"').strip("'")
                     break
 
-    # Try environment variable if not found in .env
     if not api_key:
-        api_key = os.getenv('GEMINI_API_KEY')
+        api_key = os.getenv('OPENAI_API_KEY')
 
     if not api_key:
-        raise ValueError(ERROR_MESSAGES["api_key_missing"])
+        raise ValueError("OPENAI_API_KEY not found in .env or environment variables")
 
-    return genai.Client(api_key=api_key)
+    return OpenAI(api_key=api_key)
 
 
-def generate_image(prompt: str, reference_image_paths: Optional[list[str]] = None) -> Image.Image:
+def generate_image(
+    prompt: str,
+    reference_image_path: Optional[str] = None,
+    size: str = DEFAULT_IMAGE_SIZE,
+    quality: str = DEFAULT_IMAGE_QUALITY,
+) -> Image.Image:
     """
-    Generate image using Gemini 2.5 Flash Image API.
+    Generate an image using OpenAI's gpt-image-1 model.
 
     Args:
-        prompt: Text description of image to generate (scene/action, NOT character appearance)
-        reference_image_paths: Optional list of character reference image paths for consistency
+        prompt: Full self-contained image prompt (style + characters + scene)
+        reference_image_path: Optional single reference image for character consistency
+        size: Image size (1024x1024, 1536x1024, 1024x1536)
+        quality: Image quality (low, medium, high)
 
     Returns:
         PIL Image object
     """
     client = get_client()
 
-    # Build contents list starting with prompt
-    contents = []
-
-    # Add all reference images if provided
-    if reference_image_paths:
-        # Enhance prompt to use reference styles (handles both location and character refs)
-        enhanced_prompt = f"Using the setting and character styles from the reference images provided, {prompt}. Maintain consistency with the reference images for location environment and character appearance."
-        contents.append(enhanced_prompt)
-
-        # Add each reference image
-        for ref_path in reference_image_paths:
-            if ref_path and Path(ref_path).exists():
-                # Load reference image
-                ref_image = Image.open(ref_path)
-
-                # Convert to bytes for API
-                img_byte_arr = BytesIO()
-                ref_image.save(img_byte_arr, format='PNG')
-                img_byte_arr.seek(0)
-
-                contents.append(
-                    types.Part.from_bytes(
-                        data=img_byte_arr.read(),
-                        mime_type='image/png'
-                    )
-                )
-    else:
-        # No references, just the prompt
-        contents = [prompt]
-
-    # Generate image with configuration
-    # Use low temperature and seed for consistency across book images
-    response = client.models.generate_content(
-        model=GEMINI_IMAGE_MODEL,
-        contents=contents,
-        config=types.GenerateContentConfig(
-            temperature=0.2,  # Low temperature for consistency (0.0-2.0, default 1.0)
-            seed=42,  # Fixed seed for deterministic output (best effort)
-            response_modalities=['Image']
-        )
+    result = client.images.generate(
+        model=OPENAI_IMAGE_MODEL,
+        prompt=prompt,
+        n=1,
+        size=size,
+        quality=quality,
     )
 
-    # Extract image from response
-    image_parts = [
-        part.inline_data.data
-        for part in response.candidates[0].content.parts
-        if part.inline_data
-    ]
+    # Decode the base64 image
+    image_data = base64.b64decode(result.data[0].b64_json)
+    image = Image.open(BytesIO(image_data))
 
-    if not image_parts:
-        raise ValueError(f"No image returned from Gemini API. Response: {response}")
-
-    # Convert to PIL Image
-    image = Image.open(BytesIO(image_parts[0]))
     return image
 
 
-def generate_reference_image(project: BookProject) -> str:
+def build_prompt_from_visual_bible(visual_bible: dict, page_prompt: dict) -> str:
     """
-    Generate a reference image for character consistency.
+    Assemble a full self-contained prompt from visual bible + page-specific prompt.
+
+    This is the core of the consistency strategy: every prompt includes the complete
+    style and character descriptions, so the API doesn't need to "remember" anything.
 
     Args:
-        project: BookProject instance
+        visual_bible: Parsed visual_bible.json
+        page_prompt: Single page entry from prompts.json
 
     Returns:
-        Path to saved reference image
+        Full self-contained prompt string
     """
-    print("🎨 Generating reference image for character consistency...")
-
-    # Create reference prompt based on theme
-    theme_characters = {
-        'animal': 'a friendly young boy in simple tunic with a happy animal companion',
-        'family': 'a happy Roman family with simple clothing',
-        'food': 'a cheerful child with simple food items',
-    }
-
-    character_desc = theme_characters.get(
-        project.theme,
-        'a young child in simple classical clothing'
-    )
-
-    reference_prompt = (
-        f"Character reference sheet: {character_desc}. "
-        f"Style: {project.image_config.art_style}. "
-        "Full body view, neutral background, clear details for consistency."
-    )
-
-    # Generate image
-    print(f"   Prompt: {reference_prompt[:100]}...")
-    image = generate_image(reference_prompt)
-
-    # Save reference image
-    images_dir = Path(project.project_folder) / 'images'
-    images_dir.mkdir(exist_ok=True)
-
-    ref_path = images_dir / 'reference.png'
-    image.save(ref_path)
-
-    print(f"   ✅ Saved to {ref_path}")
-
-    return str(ref_path)
+    # If the page prompt is already fully self-contained, use it as-is
+    # (the Art Director agent builds these)
+    return page_prompt["prompt"]
 
 
-def generate_page_images(project: BookProject, translation: BookTranslation) -> dict:
+def generate_book_images(
+    project_id: str,
+    pages: Optional[list[int]] = None,
+    size: str = DEFAULT_IMAGE_SIZE,
+    quality: str = DEFAULT_IMAGE_QUALITY,
+) -> dict[int, str]:
     """
-    Generate all page images for a book.
+    Generate images for a book project.
 
     Args:
-        project: BookProject instance
-        translation: BookTranslation with pages and image prompts
+        project_id: Project ID
+        pages: Optional list of specific page numbers to generate (None = all)
+        size: Image size
+        quality: Image quality
 
     Returns:
-        Dictionary mapping page numbers to image paths
+        Dict mapping page numbers to saved image paths
     """
-    images_dir = Path(project.project_folder) / 'images'
-    images_dir.mkdir(exist_ok=True)
+    project_dir = Path("projects") / project_id
+    prompts_file = project_dir / "art" / "prompts.json"
+    images_dir = project_dir / "images"
+    images_dir.mkdir(parents=True, exist_ok=True)
 
-    # Generate each page image
+    if not prompts_file.exists():
+        raise FileNotFoundError(f"Prompts file not found: {prompts_file}")
+
+    with open(prompts_file) as f:
+        prompts_data = json.load(f)
+
+    # Load visual bible for reference (currently prompts are self-contained,
+    # but we load it in case we need it)
+    visual_bible_file = project_dir / "art" / "visual_bible.json"
+    visual_bible = None
+    if visual_bible_file.exists():
+        with open(visual_bible_file) as f:
+            visual_bible = json.load(f)
+
+    page_prompts = prompts_data["pages"]
+
+    # Filter to specific pages if requested
+    if pages:
+        page_prompts = [p for p in page_prompts if p["page_number"] in pages]
+
     image_paths = {}
-    total_pages = len(translation.pages)
+    total = len(page_prompts)
 
-    print(f"\n🎨 Generating {total_pages} page images...")
+    print(f"Generating {total} image(s) for '{project_id}'...")
 
-    for page in translation.pages:
-        page_num = page.page_number
-        print(f"\n   Page {page_num}/{total_pages}:")
-        print(f"   Latin: {page.latin_text}")
+    for i, page_prompt in enumerate(page_prompts):
+        page_num = page_prompt["page_number"]
+        prompt = build_prompt_from_visual_bible(visual_bible, page_prompt)
 
-        # Enhance prompt with art style
-        full_prompt = f"{page.image_prompt}. Style: {project.image_config.art_style}"
-        print(f"   Generating image...")
+        print(f"  Page {page_num} ({i+1}/{total})...")
 
         try:
-            # Use page 1 as reference for consistency (not page 1 itself)
-            ref_paths = None
-            if page_num > 1:
-                page_1_path = images_dir / 'page_01.png'
-                if page_1_path.exists():
-                    ref_paths = [str(page_1_path)]
-                    print(f"   Using page 1 as reference for character consistency")
+            image = generate_image(prompt, size=size, quality=quality)
 
-            # Generate with reference for consistency
-            image = generate_image(full_prompt, ref_paths)
-
-            # Save image
-            image_path = images_dir / f'page_{page_num:02d}.png'
+            image_path = images_dir / f"page_{page_num:02d}.png"
             image.save(image_path)
 
             image_paths[page_num] = str(image_path)
-            print(f"   ✅ Saved to {image_path}")
+            print(f"    Saved: {image_path}")
 
         except Exception as e:
-            print(f"   ❌ Error generating image: {e}")
+            print(f"    Error: {e}")
             image_paths[page_num] = None
 
-    # Save generation log
-    log_file = images_dir / 'generation_log.json'
-    page_1_ref = images_dir / 'page_01.png'
-    log_data = {
-        'timestamp': datetime.now().isoformat(),
-        'model': GEMINI_IMAGE_MODEL,
-        'reference_strategy': 'page_1_as_reference',
-        'reference_image': str(page_1_ref) if page_1_ref.exists() else None,
-        'art_style': project.image_config.art_style,
-        'pages': {
-            page.page_number: {
-                'prompt': page.image_prompt,
-                'image_path': image_paths.get(page.page_number),
-                'latin_text': page.latin_text
-            }
-            for page in translation.pages
-        }
-    }
+    # Update translation.json with image paths if it exists
+    translation_file = project_dir / "translation" / "translation.json"
+    if translation_file.exists():
+        with open(translation_file) as f:
+            translation = json.load(f)
 
-    with open(log_file, 'w') as f:
-        json.dump(log_data, f, indent=2)
+        for page in translation.get("pages", []):
+            page_num = page["page_number"]
+            if page_num in image_paths and image_paths[page_num]:
+                page["image_path"] = image_paths[page_num]
 
-    print(f"\n✅ Generation log saved to {log_file}")
+        with open(translation_file, 'w') as f:
+            json.dump(translation, f, indent=2, ensure_ascii=False)
+
+    success = sum(1 for v in image_paths.values() if v)
+    print(f"\nDone: {success}/{total} images generated.")
 
     return image_paths
 
@@ -298,65 +188,21 @@ def main():
     """CLI for image generation."""
     import argparse
 
-    parser = argparse.ArgumentParser(description='Generate images for book')
-    parser.add_argument('project_id', help='Project ID')
-    parser.add_argument('--reference-only', action='store_true',
-                       help='Only generate reference image')
+    parser = argparse.ArgumentParser(description="Generate images for a book project")
+    parser.add_argument("project_id", help="Project ID")
+    parser.add_argument("--pages", type=int, nargs="+", help="Specific page numbers to generate")
+    parser.add_argument("--size", default=DEFAULT_IMAGE_SIZE, help=f"Image size (default: {DEFAULT_IMAGE_SIZE})")
+    parser.add_argument("--quality", default=DEFAULT_IMAGE_QUALITY, help=f"Quality: low/medium/high (default: {DEFAULT_IMAGE_QUALITY})")
 
     args = parser.parse_args()
 
-    # Load project
-    project = load_project(args.project_id)
-    if not project:
-        print(f"❌ Project '{args.project_id}' not found")
-        sys.exit(1)
-
-    # Check if translation exists
-    translation_file = Path(project.project_folder) / 'translation' / 'translation.json'
-
-    if args.reference_only:
-        # Just generate reference
-        ref_path = generate_reference_image(project)
-        print(f"\n✅ Reference image ready: {ref_path}")
-        return
-
-    if not translation_file.exists():
-        print(f"❌ Translation file not found: {translation_file}")
-        print("   Run: python cli.py book-review", args.project_id)
-        print("   Then save the JSON output to:", translation_file)
-        sys.exit(1)
-
-    # Load translation
-    with open(translation_file) as f:
-        translation_data = json.load(f)
-
-    translation = BookTranslation(**translation_data)
-
-    # Generate images
-    print(f"📚 Generating images for: {project.title_english}")
-    print(f"   Theme: {project.theme}")
-    print(f"   Style: {project.image_config.art_style}")
-    print(f"   Pages: {len(translation.pages)}")
-    print()
-
-    image_paths = generate_page_images(project, translation)
-
-    # Update translation JSON with image paths
-    for page in translation.pages:
-        if page.page_number in image_paths:
-            page.image_path = image_paths[page.page_number]
-
-    # Save updated translation
-    with open(translation_file, 'w') as f:
-        f.write(translation.model_dump_json(indent=2))
-
-    # Update project status
-    update_project_status(project, 'images_generated')
-
-    print(f"\n✅ All images generated!")
-    print(f"   Images: {len([p for p in image_paths.values() if p])}/{len(translation.pages)}")
-    print(f"\n💡 Next step: python cli.py book-pdf {args.project_id}")
+    generate_book_images(
+        project_id=args.project_id,
+        pages=args.pages,
+        size=args.size,
+        quality=args.quality,
+    )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
