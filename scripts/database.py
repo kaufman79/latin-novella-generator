@@ -9,11 +9,13 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Optional
 
+from config import DB_PATH
+
 
 class LatinDatabase:
     """Manages known vocabulary and book tracking."""
 
-    def __init__(self, db_path: str = "data/lexicon.db"):
+    def __init__(self, db_path: str = DB_PATH):
         """Initialize database connection and create tables if needed."""
         self.db_path = Path(db_path)
         self.db_path.parent.mkdir(parents=True, exist_ok=True)

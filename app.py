@@ -23,8 +23,9 @@ from scripts.book_manager import (
     list_all_projects
 )
 from scripts.database import LatinDatabase
-from scripts.image_generator import generate_page_images
+from scripts.image_generator import generate_page_images, generate_image, get_reference_images_for_page
 from scripts.pdf_builder import build_pdf
+from scripts.vocabulary_parser import LatinVocabularyParser
 from book_schemas import BookProject, BookTranslation, BookPage, VocabularyEntry
 
 
@@ -225,16 +226,24 @@ def track_book_vocabulary(project: BookProject, translation: BookTranslation):
         # Add new words to database as mastery_level=1
         for vocab_entry in translation.vocabulary_list:
             if vocab_entry.latin in new_words:
-                try:
-                    db.add_known_word(
-                        lemma=vocab_entry.latin,
-                        english=vocab_entry.english,
-                        part_of_speech=vocab_entry.part_of_speech,
-                        dictionary_form=vocab_entry.dictionary_form,
-                        notes=f"Introduced in: {project.title_latin or project.title_english}"
-                    )
-                except sqlite3.IntegrityError:
-                    pass  # Word already exists
+                # Check if word already exists before attempting to add
+                existing_word = db.get_known_word_by_lemma(vocab_entry.latin)
+                if not existing_word:
+                    try:
+                        db.add_known_word(
+                            lemma=vocab_entry.latin,
+                            english=vocab_entry.english,
+                            part_of_speech=vocab_entry.part_of_speech,
+                            dictionary_form=vocab_entry.dictionary_form,
+                            notes=f"Introduced in: {project.title_latin or project.title_english}"
+                        )
+                    except sqlite3.IntegrityError as e:
+                        # Only ignore if it's truly a duplicate (UNIQUE constraint)
+                        if "UNIQUE constraint failed" in str(e):
+                            st.warning(f"Word '{vocab_entry.latin}' already exists, skipping.")
+                        else:
+                            # Re-raise for other integrity errors (foreign key, NOT NULL, etc.)
+                            raise
 
     # Calculate coverage percentage
     total_words = len(all_lemmas)
@@ -273,7 +282,15 @@ def track_book_vocabulary(project: BookProject, translation: BookTranslation):
 
 
 def validate_json_structure(data: dict) -> tuple[bool, Optional[str]]:
-    """Validate the JSON structure from AI."""
+    """
+    Validate the JSON structure from AI.
+
+    Args:
+        data: Dictionary containing book translation data
+
+    Returns:
+        Tuple of (is_valid, error_message)
+    """
     try:
         # Check required top-level keys
         if 'title_latin' not in data:
@@ -299,8 +316,8 @@ def validate_json_structure(data: dict) -> tuple[bool, Optional[str]]:
 
         return True, None
 
-    except Exception as e:
-        return False, str(e)
+    except (TypeError, AttributeError) as e:
+        return False, f"Invalid data structure: {str(e)}"
 
 
 def step_1_create_project():
@@ -576,9 +593,6 @@ def step_2_get_ai_story():
 
                 with st.spinner("Parsing Latin vocabulary with LatinCy..."):
                     try:
-                        from scripts.vocabulary_parser import LatinVocabularyParser
-                        import os
-
                         api_key = os.getenv('GEMINI_API_KEY')
                         if not api_key:
                             st.error("❌ GEMINI_API_KEY not found in environment")
@@ -739,8 +753,6 @@ def step_3_generate_book():
                     status_text.text(f"Generating reference for {char.name}...")
 
                     try:
-                        from scripts.image_generator import generate_image
-
                         # Build full prompt: style guide + character-specific prompt
                         char_specific_prompt = st.session_state.char_prompts.get(char.name, char.description)
                         full_prompt = f"{project.image_config.art_style}. {char_specific_prompt}"
@@ -789,8 +801,6 @@ def step_3_generate_book():
 
                             if st.button(f"Regenerate", key=f"regen_char_{char.name}"):
                                 try:
-                                    from scripts.image_generator import generate_image
-
                                     full_prompt = f"{project.image_config.art_style}. {edited_desc}. Standing in neutral pose on plain white background."
                                     img = generate_image(full_prompt)
                                     img.save(char.reference_image_path)
@@ -870,8 +880,6 @@ def step_3_generate_book():
                     status_text.text(f"Generating reference for {loc.name}...")
 
                     try:
-                        from scripts.image_generator import generate_image
-
                         # Build full prompt: style guide + location-specific prompt
                         loc_specific_prompt = st.session_state.loc_prompts.get(loc.name, loc.description)
                         full_prompt = f"{project.image_config.art_style}. {loc_specific_prompt}"
@@ -920,8 +928,6 @@ def step_3_generate_book():
 
                             if st.button(f"Regenerate", key=f"regen_loc_{loc.name}"):
                                 try:
-                                    from scripts.image_generator import generate_image
-
                                     full_prompt = f"{project.image_config.art_style}. {edited_desc}. Empty room with no people."
                                     img = generate_image(full_prompt)
                                     img.save(loc.reference_image_path)
@@ -1064,8 +1070,6 @@ def step_3_generate_book():
                     status_text.text(f"Generating page {page.page_number}/{num_pages}...")
 
                     try:
-                        from scripts.image_generator import generate_image, get_reference_images_for_page
-
                         # Get reference paths using priority system (location + characters, max 3)
                         ref_paths = get_reference_images_for_page(page, project)
 
@@ -1148,7 +1152,6 @@ def step_3_generate_book():
 
                         if st.button(f"🔄 Regenerate", key=f"regen_page_{page_num}"):
                             try:
-                                from scripts.image_generator import generate_image, get_reference_images_for_page
 
                                 # Get references
                                 ref_paths = []
@@ -1433,7 +1436,6 @@ def sidebar():
             col1, col2 = st.sidebar.columns(2)
             with col1:
                 if st.button("Load", key="load_btn"):
-                    from scripts.book_manager import load_project
                     project = load_project(project_id)
                     if project:
                         st.session_state.current_project = project

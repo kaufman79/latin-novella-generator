@@ -22,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from book_schemas import BookProject, BookTranslation, Character, Location
 from scripts.book_manager import load_project, update_project_status
+from config import GEMINI_IMAGE_MODEL, ENV_FILE, ERROR_MESSAGES
 
 
 def get_reference_images_for_page(page, project: BookProject) -> list[str]:
@@ -71,9 +72,14 @@ def get_reference_images_for_page(page, project: BookProject) -> list[str]:
 
 
 def get_client() -> genai.Client:
-    """Get configured Gemini client."""
+    """
+    Get configured Gemini client.
+
+    Raises:
+        ValueError: If GEMINI_API_KEY is not found
+    """
     # Try .env file first
-    env_file = Path(__file__).parent.parent / '.env'
+    env_file = Path(__file__).parent.parent / ENV_FILE
     api_key = None
 
     if env_file.exists():
@@ -88,10 +94,7 @@ def get_client() -> genai.Client:
         api_key = os.getenv('GEMINI_API_KEY')
 
     if not api_key:
-        raise ValueError(
-            "GEMINI_API_KEY not found. "
-            "Add it to .env file or set as environment variable."
-        )
+        raise ValueError(ERROR_MESSAGES["api_key_missing"])
 
     return genai.Client(api_key=api_key)
 
@@ -142,7 +145,7 @@ def generate_image(prompt: str, reference_image_paths: Optional[list[str]] = Non
     # Generate image with configuration
     # Use low temperature and seed for consistency across book images
     response = client.models.generate_content(
-        model='gemini-2.5-flash-image',
+        model=GEMINI_IMAGE_MODEL,
         contents=contents,
         config=types.GenerateContentConfig(
             temperature=0.2,  # Low temperature for consistency (0.0-2.0, default 1.0)
@@ -243,15 +246,15 @@ def generate_page_images(project: BookProject, translation: BookTranslation) -> 
 
         try:
             # Use page 1 as reference for consistency (not page 1 itself)
-            ref_path = None
+            ref_paths = None
             if page_num > 1:
                 page_1_path = images_dir / 'page_01.png'
                 if page_1_path.exists():
-                    ref_path = str(page_1_path)
+                    ref_paths = [str(page_1_path)]
                     print(f"   Using page 1 as reference for character consistency")
 
             # Generate with reference for consistency
-            image = generate_image(full_prompt, ref_path)
+            image = generate_image(full_prompt, ref_paths)
 
             # Save image
             image_path = images_dir / f'page_{page_num:02d}.png'
@@ -269,7 +272,7 @@ def generate_page_images(project: BookProject, translation: BookTranslation) -> 
     page_1_ref = images_dir / 'page_01.png'
     log_data = {
         'timestamp': datetime.now().isoformat(),
-        'model': 'gemini-2.5-flash-image',
+        'model': GEMINI_IMAGE_MODEL,
         'reference_strategy': 'page_1_as_reference',
         'reference_image': str(page_1_ref) if page_1_ref.exists() else None,
         'art_style': project.image_config.art_style,
