@@ -1,0 +1,207 @@
+{
+  "title_english": "Link and the Stolen Treasure",
+  "title_latin": null,
+  "target_pages": 22,
+  "characters": [
+    {
+      "name": "Toon Link",
+      "description": "Small boy hero with large expressive eyes, blonde hair, pointed ears, green tunic and cap, brown boots. Carries a small sword.",
+      "source": "Toon Link from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    },
+    {
+      "name": "Tetra",
+      "description": "Pirate girl with tan skin, blonde hair, blue vest. Captain of the pirate ship.",
+      "source": "Tetra from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    },
+    {
+      "name": "Moblins",
+      "description": "Large pig-like monster guards with big noses, spears, and lanterns. Blue-gray skin, simple armor. Bumbling and goofy, not scary.",
+      "source": "Moblins from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    }
+  ],
+  "locations": [
+    {
+      "name": "Pirate Ship",
+      "description": "Red-sailed pirate ship on moonlit ocean, Wind Waker cel-shaded style"
+    },
+    {
+      "name": "Forsaken Fortress Exterior",
+      "description": "Dark stone fortress on a rocky island, searchlight beams sweeping, spiky walls, ominous but cartoony"
+    },
+    {
+      "name": "Fortress Courtyard",
+      "description": "Stone courtyard with wooden barrels, crates, torches on walls, patrolling Moblins"
+    },
+    {
+      "name": "Fortress Interior",
+      "description": "Stone corridors with torches, barrels to hide in, wooden doors"
+    },
+    {
+      "name": "Treasure Room",
+      "description": "Small room with a glowing chest on a pedestal"
+    },
+    {
+      "name": "Fortress Walls",
+      "description": "High fortress walls with searchlights, ocean visible below"
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "english_text": "Link sailed across the dark sea. A fortress stood far away.",
+      "scene_description": "Wide shot of the pirate ship on moonlit ocean, the Forsaken Fortress looming dark on the horizon. Tetra points. Link looks determined. Cel-shaded Wind Waker style, dramatic moonlight on the water.",
+      "characters_present": ["Toon Link", "Tetra"],
+      "location": "Pirate Ship"
+    },
+    {
+      "page_number": 2,
+      "english_text": "\"The Moblins stole the treasure!\" said Tetra. \"Get it back!\"",
+      "scene_description": "Close-up of Tetra talking to Link on the ship deck. She looks angry. Link listens, fists clenched. The fortress glows ominously behind them.",
+      "characters_present": ["Toon Link", "Tetra"],
+      "location": "Pirate Ship"
+    },
+    {
+      "page_number": 3,
+      "english_text": "Link hid inside a barrel. The barrel flew through the air!",
+      "scene_description": "Link curled up inside a barrel, big eyes peeking out, as he flies through the air toward the fortress. The barrel arcs across the night sky. Classic Wind Waker moment.",
+      "characters_present": ["Toon Link"],
+      "location": "Pirate Ship"
+    },
+    {
+      "page_number": 4,
+      "english_text": "The barrel landed in the fortress. Link peeked out quietly.",
+      "scene_description": "The barrel has landed among other barrels in the fortress courtyard. Link's eyes peer out from inside it. Moblins patrol nearby with lanterns and spears. Stone walls, torches.",
+      "characters_present": ["Toon Link", "Moblins"],
+      "location": "Fortress Courtyard"
+    },
+    {
+      "page_number": 5,
+      "english_text": "A big light moved across the ground. Link hid! The light did not see him.",
+      "scene_description": "Dramatic shot of a bright searchlight beam sweeping right over the barrel Link is in. His barrel is one of many -- he blends in. A Moblin stands nearby, looking the other direction.",
+      "characters_present": ["Toon Link", "Moblins"],
+      "location": "Fortress Courtyard"
+    },
+    {
+      "page_number": 6,
+      "english_text": "Link ran quietly. From barrel to barrel he crept.",
+      "scene_description": "Side view showing Link darting between barrels in a crouched run, shadows and torchlight creating dramatic contrast. A Moblin patrol is visible in the background, facing away.",
+      "characters_present": ["Toon Link", "Moblins"],
+      "location": "Fortress Courtyard"
+    },
+    {
+      "page_number": 7,
+      "english_text": "A Moblin turned around! Link did not move. Link did not breathe.",
+      "scene_description": "A big Moblin has turned to look directly toward Link's position. Link is pressed flat against a barrel, eyes wide. Tension! The Moblin squints suspiciously.",
+      "characters_present": ["Toon Link", "Moblins"],
+      "location": "Fortress Courtyard"
+    },
+    {
+      "page_number": 8,
+      "english_text": "The Moblin walked away. Link breathed again.",
+      "scene_description": "The Moblin walking away, scratching its head. Link slumped against the barrel, wiping his forehead with visible relief. Comic tone.",
+      "characters_present": ["Toon Link", "Moblins"],
+      "location": "Fortress Courtyard"
+    },
+    {
+      "page_number": 9,
+      "english_text": "Link found a door. He went inside quietly.",
+      "scene_description": "Link pushing open a heavy wooden door, peeking into a dark stone corridor lit by torches. His green cap and blonde hair bright against the darkness.",
+      "characters_present": ["Toon Link"],
+      "location": "Fortress Interior"
+    },
+    {
+      "page_number": 10,
+      "english_text": "Moblins were sleeping behind the door. Link heard them snoring.",
+      "scene_description": "Link tiptoeing down a stone hallway with torchlight. A door to one side has ZZZ coming from it or visible snoring Moblin feet poking under the door. Link grins mischievously.",
+      "characters_present": ["Toon Link", "Moblins"],
+      "location": "Fortress Interior"
+    },
+    {
+      "page_number": 11,
+      "english_text": "Another light! Link put a barrel over himself.",
+      "scene_description": "Link lifting a barrel over his head to put it on himself, his little legs sticking out the bottom. The searchlight beam is visible ahead of him. Funny, classic Wind Waker stealth moment.",
+      "characters_present": ["Toon Link"],
+      "location": "Fortress Interior"
+    },
+    {
+      "page_number": 12,
+      "english_text": "Link walked past the Moblin. The Moblin saw only a barrel!",
+      "scene_description": "Link-in-a-barrel walking past a confused-looking Moblin guard. The Moblin leans forward, squinting at the barrel that has legs. Comedic beat. The searchlight illuminates them both.",
+      "characters_present": ["Toon Link", "Moblins"],
+      "location": "Fortress Interior"
+    },
+    {
+      "page_number": 13,
+      "english_text": "Link found the treasure! It glowed with golden light.",
+      "scene_description": "Link standing in a doorway looking at a glowing treasure chest on a stone pedestal. Golden light radiates from the chest. The room is small and dramatic.",
+      "characters_present": ["Toon Link"],
+      "location": "Treasure Room"
+    },
+    {
+      "page_number": 14,
+      "english_text": "Link opened the chest. He lifted the treasure high!",
+      "scene_description": "The classic Zelda item-get pose -- Link holds a golden object above his head, light radiating outward, his face joyful. Full-page iconic moment.",
+      "characters_present": ["Toon Link"],
+      "location": "Treasure Room"
+    },
+    {
+      "page_number": 15,
+      "english_text": "But the chest was loud! The Moblins woke up! They were angry!",
+      "scene_description": "Link holding the treasure with a suddenly worried expression, and in the background through doorways, Moblin eyes snapping open, angry faces appearing. Alarm!",
+      "characters_present": ["Toon Link", "Moblins"],
+      "location": "Treasure Room"
+    },
+    {
+      "page_number": 16,
+      "english_text": "Moblins ran from every door. \"Get him!\" they shouted.",
+      "scene_description": "Link clutching the treasure, surrounded by Moblin silhouettes pouring in from corridors and doors. Dramatic low-angle shot. Torchlight, spears, angry pig faces.",
+      "characters_present": ["Toon Link", "Moblins"],
+      "location": "Fortress Interior"
+    },
+    {
+      "page_number": 17,
+      "english_text": "Link ran fast! The Moblins chased him.",
+      "scene_description": "Dynamic chase scene -- Link sprinting down a stone corridor, treasure under one arm, Moblins behind him with spears. Motion lines, dramatic angle. Wind Waker action energy.",
+      "characters_present": ["Toon Link", "Moblins"],
+      "location": "Fortress Interior"
+    },
+    {
+      "page_number": 18,
+      "english_text": "Link saw the sea! The ship was below!",
+      "scene_description": "Link running along a high fortress wall, ocean and moonlight visible through a large arched window. Moblins still behind him but falling behind. The pirate ship is visible far below on the water.",
+      "characters_present": ["Toon Link", "Moblins"],
+      "location": "Fortress Walls"
+    },
+    {
+      "page_number": 19,
+      "english_text": "The Moblins were close. Link looked down at the sea. He jumped!",
+      "scene_description": "Link at the very edge of the fortress wall, looking down at the ocean far below. Behind him, Moblins charge with spears. Dramatic moment of decision -- the wind blows his cap and tunic.",
+      "characters_present": ["Toon Link", "Moblins"],
+      "location": "Fortress Walls"
+    },
+    {
+      "page_number": 20,
+      "english_text": "Link fell through the air and splashed into the sea!",
+      "scene_description": "Spectacular wide shot of Link falling through the air, treasure clutched to his chest, cape fluttering, the fortress above him and the ocean below. Moblins shake their fists from the wall. Moonlight, stars.",
+      "characters_present": ["Toon Link", "Moblins"],
+      "location": "Fortress Walls"
+    },
+    {
+      "page_number": 21,
+      "english_text": "Tetra pulled Link onto the ship. \"You did it!\" she said.",
+      "scene_description": "Tetra reaching over the side of the ship to pull a dripping-wet, grinning Link aboard. He holds the golden treasure up triumphantly with one hand. The pirate crew cheers in the background.",
+      "characters_present": ["Toon Link", "Tetra"],
+      "location": "Pirate Ship"
+    },
+    {
+      "page_number": 22,
+      "english_text": "The ship sailed away into the night. Link smiled. He was brave.",
+      "scene_description": "Wide final shot of the pirate ship sailing away from the fortress under a big moon and starry sky. Link sits on the prow, small and happy, treasure glowing beside him. Peaceful, triumphant ending.",
+      "characters_present": ["Toon Link"],
+      "location": "Pirate Ship"
+    }
+  ]
+}
