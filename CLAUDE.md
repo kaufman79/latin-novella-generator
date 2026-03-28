@@ -8,12 +8,61 @@ This system creates picture books in Latin for a toddler (~3.5 years old) learni
 
 These are real children's books, not language textbooks. No vocab lists, no grammar drills. The pictures do a lot of the heavy lifting for comprehension — a child who doesn't fully understand the Latin should be able to follow the story through the illustrations.
 
+---
+
+## Story Philosophy: Classical Virtue Formation
+
+These books are not just entertainment — they are forming a child's moral imagination. The framework is the classical and Christian virtue tradition (Aristotle → Aquinas).
+
+### The Virtues
+
+**Cardinal Virtues (Aristotelian):**
+- **Prudentia** (Prudence) — practical wisdom, good judgment, discernment
+- **Iustitia** (Justice) — giving others their due, fairness, doing right by others
+- **Fortitudo** (Fortitude) — courage, endurance, perseverance through difficulty
+- **Temperantia** (Temperance) — self-control, moderation, resisting impulse
+
+**Theological Virtues (Pauline/Scholastic):**
+- **Fides** (Faith) — trust, belief, faithfulness
+- **Spes** (Hope) — hope, confidence in good outcomes, not despairing
+- **Caritas** (Charity/Love) — self-giving love, compassion, mercy, generosity
+
+**Related Virtues:**
+- Humilitas, Patientia, Misericordia, Gratitudo, Pietas, Magnanimitas, Mansuetudo
+
+### Story Evaluation Framework
+
+Every story should be checked against these five questions before production:
+
+1. **Would this story be interesting if the child already knew the "lesson"?** The story must work as a story first. The virtue is depth, not the point.
+2. **Does the character WANT something and face a genuine obstacle?** Want + obstacle = story. Without these, you have a lecture.
+3. **Is emotion shown, not told?** "Link did not breathe" > "Link was afraid." Concrete, visible actions over abstract statements.
+4. **Does the resolution come from the character's own choice?** The protagonist must be the agent of the decisive action.
+5. **Is there one clear emotional through-line?** State the arc in one sentence. If you can't, the story is trying to do too much.
+
+### Virtue Ratings
+
+Each book's `config.json` carries a `virtue_ratings` object rating how strongly it models each virtue (0-5 scale). Run `python scripts/virtue_chart.py` to generate a coverage chart at `output/virtue_chart.png`. The collection should be balanced across virtues over time.
+
+### Story Principles
+
+- **Build the virtue into the structure, not the ending.** Don't sermonize. Let cause-and-effect carry the moral weight.
+- **Show, don't tell.** Illustrations do most of the emotional heavy lifting. Every moral beat must be visible in the art.
+- **Give the hero one real choice.** The best stories hinge on a moment where the character chooses.
+- **Failure is valuable.** Characters who fail and try again teach more than effortless success.
+- **Repetition carries both language and values.** A repeated Latin phrase teaches vocabulary AND a virtue simultaneously.
+- **One book, one primary virtue.** Secondary virtues can appear, but one should be central.
+- **Respect the child's intelligence.** No moralizing, no "and so we learn that..." endings. Trust the story.
+
+---
+
 ## Workflow
 
 The book creation pipeline has review gates between each stage. **All gates are iterative** — the user gives feedback, you edit the existing draft. Never start from scratch unless explicitly asked.
 
 ### 1. Story Planning → `@story-architect`
 - Interactive back-and-forth to develop a story concept
+- **Check the story against the 5 evaluation questions and virtue framework**
 - Output: `projects/{id}/source/outline.json`
 - **REVIEW GATE**: User approves story before proceeding
 
@@ -36,7 +85,7 @@ The book creation pipeline has review gates between each stage. **All gates are 
 python scripts/image_generator.py {project_id}
 python scripts/image_generator.py {project_id} --pages 3 7 12   # regenerate specific pages
 ```
-- Generates images using OpenAI API (`gpt-image-1`)
+- Generates images using Gemini API
 - **REVIEW GATE**: User reviews images, can regenerate individual pages
 
 ### 6. PDF Assembly
@@ -45,87 +94,122 @@ python scripts/pdf_builder.py {project_id}
 ```
 - Assembles final PDF in `projects/{id}/output/book.pdf`
 
+---
+
 ## Latin Guidelines
 
-- **Living language, not academic.** Write Latin like you'd find in a children's picture book — simple, clear, natural. Not textbook prose, not literary/archaic.
-- **Don't shelter grammar.** Let tense, case, and construction come naturally from the story. Simple past (perfect) is fine for narratives. Don't artificially restrict to present tense or nominative case.
+- **Living language, not academic.** Write Latin like a children's picture book — simple, clear, natural. Not textbook prose, not literary/archaic.
+- **Don't shelter grammar.** Let tense, case, and construction come naturally. Perfect tense is fine for narratives.
 - **Macrons on long vowels.** Mark all long vowels. Wrong macrons are worse than missing ones — if unsure, leave unmarked.
-- **Minor latinity compromises are OK.** Perfection isn't the goal, natural readability is. Some English influence in word order is tolerable.
-- **Modern concepts.** When Latin lacks a clean equivalent, paraphrase or borrow. There are reference Latin picture books in `existing_stories/` that handle modern vocabulary well.
-- **Sentences: 3-7 words.** This is a picture book for a toddler. Keep it short.
-- **Repetition is good.** Repeated phrases across pages help language learning naturally.
+- **Minor latinity compromises are OK.** Natural readability over perfection.
+- **Modern concepts.** Paraphrase or borrow. Reference Latin picture books in `existing_stories/` handle modern vocabulary well.
+- **Sentences: 3-7 words.** This is a picture book for a toddler.
+- **Repetition is good.** Repeated phrases help language learning naturally.
 
-## Image Consistency Strategy
+---
 
-The Visual Bible approach: every image prompt is fully self-contained with identical style and character descriptions. Consistency comes from repeating the same text descriptions, not from reference images (which APIs handle poorly).
+## Image Generation
 
-- **Established characters** (Toon Link, Mario, etc.) are a huge consistency win — the image model already knows them. Text prompt alone produces more consistent results than any reference image system.
-- **Original characters** need extremely specific visual descriptions: exact colors, proportions, clothing, features. The more specific, the more consistent.
+### Primary: Google Gemini API
+- **Model**: `gemini-3.1-flash-image-preview` (Nano Banana 2) — best for illustrated/cel-shaded styles and established characters
+- **Cost**: ~$0.045/image at 512px resolution
+- **Key**: `GEMINI_API_KEY` in `.env`
+- **Prompt guidelines**: Never mention "book", "commercial", or "publication" in prompts. Describe art style and scene only.
+
+### Fallback: OpenAI API
+- **Model**: `gpt-image-1`
+- **Key**: `OPENAI_API_KEY` in `.env`
+- **Limitation**: Strict content filter blocks copyrighted characters (Nintendo, Disney, etc.)
+
+### Image Consistency Strategy (Visual Bible)
+
+Every image prompt is fully self-contained with identical style and character descriptions. Consistency comes from repeating the same text descriptions, not from reference images.
+
+- **Established characters** (Toon Link, Mario, etc.) are a huge consistency win — the image model already knows them.
+- **Original characters** need extremely specific visual descriptions: exact colors, proportions, clothing, features.
 - **Every prompt** = [STYLE block] + [CHARACTER descriptions] + [LOCATION] + [SCENE]. Style and character blocks are identical across all pages.
+- **Lock down details** to prevent drift: specify exact colors ("purple-gray skin, beady yellow eyes"), not vague descriptions.
 
-## Secondary Pipeline: Translate Existing Books
+---
 
-For translating English kids' books into Latin:
+## Book Sources
+
+### Original Stories
+Interactive story development with `@story-architect`. Can use established characters (video game, fairy tale) or original characters.
+
+### Toon Link Series
+Ongoing series of Wind Waker-themed Latin adventure books. Reference images and style tests in `reference_images/toon_link/`. Uses `gemini-3.1-flash-image-preview` for image generation — handles Nintendo characters well.
+
+### Public Domain Adaptations
+See `docs/public_domain_story_ideas.md` for a curated list of candidates with links to free illustrations. Key advantage: many have public domain illustrations (Potter, Brooke, Winter, Gag, Caldecott) on Project Gutenberg, saving image generation costs entirely.
+
+### Translate Existing Books
+For translating English kids' books into Latin (personal use):
 1. Scan/photograph the pages
 2. Extract or transcribe the English text
 3. Use `@latin-scribe` to translate to Latin
 4. Keep the original illustrations
 5. Assemble new PDF with Latin text + original images
 
+---
+
 ## Project Structure
 
+### Repository Layout
 ```
-projects/{project_id}/
-├── config.json              # Project metadata
-├── source/
-│   └── outline.json         # English story outline
+projects/{project_id}/          # One directory per book
+├── config.json                 # Metadata + virtue_ratings
+├── source/outline.json         # English story outline
 ├── translation/
-│   ├── translation.json     # Latin text + English
-│   └── review.md            # Latin review notes
+│   ├── translation.json        # Latin text + English
+│   └── review.md               # Latin review notes
 ├── art/
-│   ├── visual_bible.json    # Style guide, character sheets, locations
-│   └── prompts.json         # Per-page image prompts (self-contained)
-├── images/
-│   └── page_*.png           # Generated page images
-└── output/
-    ├── book.html
-    └── book.pdf
+│   ├── visual_bible.json       # Style guide, character sheets
+│   └── prompts.json            # Per-page image prompts
+├── images/page_*.png           # Generated page images
+└── output/book.pdf             # Final PDF
+
+reference_images/               # Reusable character/style tests
+└── toon_link/                  # Toon Link series reference images
+
+existing_stories/               # Published Latin picture books (reference)
+docs/                           # Project documentation
+  └── public_domain_story_ideas.md
+output/                         # Cross-project outputs
+  └── virtue_chart.png          # Virtue coverage visualization
 ```
 
-## Creating a New Project
-
+### Creating a New Project
 ```bash
 python scripts/project_manager.py create "My Book Title"
 python scripts/project_manager.py create "My Book Title" --theme adventure --pages 20
 python scripts/project_manager.py list
 ```
 
+---
+
 ## Reference Material
 
-### Existing books we've made (for Latin level reference)
-- `projects/dada_and_the_cockroach/` — simplest Latin, best baseline for new books
-- `projects/augustine_steals_the_pears/` — slightly more complex
-- `projects/locusts_and_dragon/` — action-heavy adventure
-- `projects/lion_witch_wardobe/` — adapted story, most complex Latin
+### Existing books we've made
+- `projects/dada_and_the_cockroach/` — simplest Latin, domestic comedy, best baseline
+- `projects/augustine_steals_the_pears/` — moral arc (temperantia), slightly more complex
+- `projects/locusts_and_dragon/` — action-heavy adventure, teamwork (fortitudo)
+- `projects/lion_witch_wardobe/` — adapted story, richest virtue content, most complex Latin
+- `projects/link_and_the_stolen_treasure/` — Toon Link adventure (in progress)
 
 ### Published Latin picture books (in `existing_stories/`)
 - Candidus et dies horribilis, Iulus et pugna, Minimus et umbra
 - Octavus Octopus (Rose Williams), Taurus Rex
 - Vibrissa amissa est, Vibrissa et ballista
-- These are useful for vocabulary and style reference, especially for modern concepts
+- Useful for vocabulary and style reference, especially for modern concepts
 
-## Environment
+---
 
-- **Image generation**: OpenAI API (`gpt-image-1`) — requires `OPENAI_API_KEY` in `.env`
-- **PDF generation**: WeasyPrint
-- **Schemas**: Pydantic models in `book_schemas.py`
+## Environment & Key Files
+
 - **Python deps**: `pip install -r requirements.txt`
-
-## Key Files
-
-- `book_schemas.py` — data models (StoryOutline, BookTranslation, VisualBible, BookProject)
-- `config.py` — configuration constants
-- `scripts/project_manager.py` — create/load/list projects
-- `scripts/image_generator.py` — OpenAI image generation + CLI
-- `scripts/pdf_builder.py` — HTML→PDF assembly + CLI
-- `.claude/agents/` — agent definitions (story-architect, latin-scribe, latin-censor, art-director)
+- **PDF generation**: WeasyPrint
+- **Schemas**: `book_schemas.py` — Pydantic models (StoryOutline, BookTranslation, VisualBible, BookProject)
+- **Config**: `config.py` — constants
+- **Scripts**: `scripts/project_manager.py`, `scripts/image_generator.py`, `scripts/pdf_builder.py`, `scripts/virtue_chart.py`
+- **Agents**: `.claude/agents/` — story-architect, latin-scribe, latin-censor, art-director

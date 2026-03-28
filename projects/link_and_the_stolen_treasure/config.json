@@ -8,5 +8,14 @@
   "status": "initialized",
   "date_created": "2026-03-23T20:37:08.202945",
   "date_modified": "2026-03-23T20:37:08.202960",
-  "project_folder": "projects/link_and_the_stolen_treasure"
+  "project_folder": "projects/link_and_the_stolen_treasure",
+  "virtue_ratings": {
+    "prudentia": 1,
+    "iustitia": 0,
+    "fortitudo": 2,
+    "temperantia": 0,
+    "fides": 0,
+    "spes": 0,
+    "caritas": 0
+  }
 }

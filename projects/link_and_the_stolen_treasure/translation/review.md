@@ -1,146 +1,156 @@
-# Latin Review
+# Latin Review (Revised 24-Page Version)
 
 ## Summary
 Overall quality: **Good**
-Pages reviewed: 22
+Pages reviewed: 24
 Pages with corrections: 3
 
-The translation is strong overall. The Latin reads naturally, sentences are appropriately short, and the repeated vocabulary (tacitē, sē cēlāvit, cucurrit, dolium) creates good pedagogical rhythm without feeling forced. The narrative tension comes through well in Latin -- the stealth sequence (pages 5-12) is especially effective with its short, punchy sentences.
+The revised translation is strong. The failure/perseverance arc (pages 8-15) lands well in Latin, and the "iterum" repetition through pages 16-20 creates a satisfying structural echo of the first attempt. Sentence length is consistently within the 3-7 word target. The Latin reads naturally and has good rhythm for reading aloud.
 
-Three corrections were made, all minor: one missing reflexive pronoun, one incorrect macron, and one verb change to avoid awkward repetition.
+Three macron corrections were made, all minor: two incorrect macrons on short vowels (trans, iuxta) and one missing macron on an adverb (arte).
 
 ## Page-by-Page Notes
 
 ### Page 1
-- Status: Approved
-- "Link trāns mare obscūrum nāvigāvit. Arx procul stābat."
-- Clean and atmospheric. Good use of imperfect (stābat) for the background scene vs. perfect (nāvigāvit) for the action. Macrons all correct.
+- Status: **Corrected**
+- Changed: "Link **trāns** mare" -> "Link **trans** mare"
+- Reason: The a in trans is short. The macron was incorrect.
+- Otherwise clean. Good opening image.
 
 ### Page 2
 - Status: Approved
-- "Moblinī thēsaurum rapuērunt!" inquit Tetra. "Refer!"
-- "Refer!" is an excellent choice for "Get it back!" -- imperative of referō, punchy and clear. The Latinization "Moblinī" (nom. pl. of Moblīnus, 2nd declension) is perfectly reasonable. See vocabulary note below.
+- "Moblini thesaurum rapuerunt" + "Refer!" -- all correct. "Refer!" (imperative of refero) is punchy and natural for "Get it back!"
 
 ### Page 3
 - Status: Approved
-- "Link sē in doliō cēlāvit. Dolium per āera volāvit!"
-- "per āera" uses the Greek accusative of āēr -- acceptable and common. The scene is vivid and fun.
+- "se in dolio celavit" -- reflexive + ablative, correct. "per aera" -- Greek accusative, acceptable.
 
 ### Page 4
 - Status: Approved
-- "Dolium in arcem cecidit. Link tacitē prōspexit."
-- prōspexit (peeked out/looked ahead) is a nice verb choice. All correct.
+- "prospex it" -- nice verb choice for "peeked out." tacite consistent with later usage.
 
 ### Page 5
-- Status: **Corrected**
-- Changed: "Lūx magna per terram mōvit" → "Lūx magna per terram **sē** mōvit"
-- Reason: mōveō is primarily transitive. Without an object or reflexive pronoun, "mōvit" reads as "moved [something]." Adding "sē" makes it properly intransitive: "the light moved itself across the ground." This is standard Latin for expressing self-movement.
+- Status: Approved
+- "Lux magna per terram se movit" -- reflexive moveo for intransitive motion, correct. "se celavit" echoes page 3 nicely.
 
 ### Page 6
 - Status: Approved
-- "Link tacitē cucurrit. Ā doliō ad dolium rēpsit."
-- Beautiful sentence. "Ā doliō ad dolium" has great rhythm when read aloud. rēpsit (crept) is perfect for the stealth scene.
+- "A dolio ad dolium repsit" -- beautiful rhythm when read aloud. The barrel-to-barrel phrase is memorable.
 
 ### Page 7
 - Status: Approved
-- "Moblīnus sē vertit! Link nōn sē mōvit. Link nōn spīrāvit."
-- The parallel "Link nōn..." structure is dramatic and effective. Good tension-building.
+- "Moblinus se vertit!" -- vertit works as perfect (context clear). "non se movit" -- good parallel structure.
 
 ### Page 8
 - Status: Approved
-- "Moblīnus abiit. Link iterum spīrāvit."
-- Short, comic relief. "iterum spīrāvit" (breathed again) is a nice payoff.
+- "ECCE!" is the right interjection for "THERE!" -- dramatic and natural.
 
 ### Page 9
 - Status: Approved
-- "Link ōstium invēnit. Tacitē intrāvit."
-- Clean. The subject-less second sentence (understood "he") is natural Latin.
+- "ex omni ostio" -- abl sg neuter of omnis, correct. "Link ceperunt!" -- subject (Moblini) carried from previous sentence, natural in Latin.
 
 ### Page 10
 - Status: Approved
-- "Moblinī post ōstium dormiēbant. Link eōs stertentēs audīvit."
-- "stertentēs" (snoring) is a fun word -- good mouthfeel for reading aloud. The participial construction (audīvit eōs stertentēs) is natural Latin.
+- "iecerunt" -- perfect of iacio, correct. "Iterum per aera volavit" echoes page 3 but now with a dark irony (thrown, not flying by choice).
 
 ### Page 11
 - Status: Approved
-- "Iterum lūx! Link dolium super sē posuit."
-- "Iterum lūx!" as a verbless exclamation is vivid. "super sē" (over himself) is correct.
+- "e mari traxit" -- ablative with e, correct. "Nihil habebat" -- imperfect for ongoing state, appropriate. Two devastating short sentences.
 
 ### Page 12
 - Status: Approved
-- "Link praeter Moblīnum ambulāvit. Moblīnus sōlum dolium vīdit!"
-- Funny page. "sōlum dolium" works as "only a barrel" -- the comedy comes through.
+- "Link solus sedit. Arx obscura et procul erat." -- The imperfect "erat" for the fortress sitting dark and far away is right. The loneliness comes through.
 
 ### Page 13
 - Status: Approved
-- "Link thēsaurum invēnit! Lūce aureā fulgēbat."
-- "Lūce aureā fulgēbat" -- ablative of means, imperfect for ongoing glowing. Lovely.
+- "Moblinos meminit" -- meminit (perfect used as present) + accusative is correct. "Redire nolebat" -- imperfect of nolo for ongoing reluctance, good. This page is the emotional low point and the Latin captures it: short, blunt, scared.
 
 ### Page 14
-- Status: Approved
-- "Link arcam aperuit. Thēsaurum altē sustulit!"
-- "altē sustulit" captures the iconic Zelda item-get pose perfectly. sustulit (from tollō) is correct.
+- Status: **Corrected**
+- Changed: "Tetra **iuxta** eum" (removed incorrect macron on u)
+- Reason: The u in iuxta is short. Only the final a is long.
+- "Iterum tempta" -- imperative, direct and warm. "leniter" (gently) is a nice adverb choice for Tetra's tone.
 
 ### Page 15
 - Status: Approved
-- "Sed arca sonuit! Moblinī excitatī sunt! Īrātī erant!"
-- Three exclamations build alarm effectively. "Īrātī erant" (they were angry) -- erant + predicate adjective is correct for describing a state.
+- "Adhuc timebat. Sed surrexit." -- This is the turning point and it works perfectly. The imperfect "timebat" (was still afraid) followed by the decisive perfect "surrexit" (but he stood up) is exactly right. The fear doesn't disappear -- he acts despite it. Three sentences, three beats, three emotional shifts. Best page in the book.
 
 ### Page 16
 - Status: Approved
-- "Moblinī ex omnī ōstiō cucurrērunt. 'Capite eum!' clāmāvērunt."
-- "ex omnī ōstiō" (from every door) -- omnī abl. sg. neut., correct. "Capite" -- imperative plural of capiō, correct.
+- "Iterum se in dolio celavit. Iterum per aera volavit!" -- Direct echo of page 3. The "iterum" at the start of both sentences marks the beginning of the second attempt. Consistent and effective.
 
 ### Page 17
 - Status: Approved
-- "Link celeriter cucurrit! Moblinī eum secūtī sunt."
-- secūtī sunt (deponent perfect of sequor) is correct and natural for "chased."
+- "Hac vice diutius exspectavit" -- "this time he waited longer." Shows Link has learned. "diutius" (comparative of diu) is a good word here.
 
 ### Page 18
-- Status: **Corrected**
-- Changed: "Nāvis **īnfrā** erat" → "Nāvis **infrā** erat"
-- Reason: The i in "infrā" is short. The word is from "inferus" where the i is short. Only the final ā is long. The original had an incorrect macron on the i.
+- Status: Approved
+- "Iterum lux magna venit." -- The macron on venit correctly distinguishes perfect from present. "dolium super se posuit" -- clever and funny.
 
 ### Page 19
 - Status: Approved
-- "Moblinī prope erant. Link mare dēspexit. Dēsiluit!"
-- "dēspexit" (looked down at) and "dēsiluit" (jumped down) -- both dē- prefix verbs, nice echo. Dramatic pacing.
+- "Praeter Moblinos ambulavit!" -- praeter + acc, correct. "Solum dolium viderunt" -- solum as adjective modifying dolium ("only a barrel"), correct and funny.
 
 ### Page 20
-- Status: **Corrected**
-- Changed: "Link per āera cecidit et in mare dēsiluit!" → "Link per āera cecidit — in mare ruit!"
-- Reason: "dēsiluit" was already used on page 19 for "He jumped!" Using it again here for the falling/splashing is repetitive in a way that doesn't serve the story (unlike the deliberate repetitions of tacitē and dolium which build pattern). "ruit" (from ruō, to rush/plunge) is more vivid for the splashing impact and avoids the awkward pairing of "fell" + "jumped down" in the same sentence. The em-dash creates a dramatic beat: he fell through the air -- he plunged into the sea!
+- Status: Approved
+- "Iterum arcam aperuit. Tacite, hac vice." -- The fragment "Tacite, hac vice" lands well as a callback. "arca" for chest is consistently used.
 
 ### Page 21
-- Status: Approved
-- "Tetra Link in nāvem trāxit. 'Fēcistī!' inquit."
-- "Fēcistī!" -- perfect 2nd person of faciō, natural and warm. trāxit (pulled) is vivid.
+- Status: **Corrected**
+- Changed: "Thesaurum **arte** tenebat" -> "Thesaurum **arte** tenebat"
+- Reason: Added macron to adverb arte -> "artē" (tightly). The adverbial ending -e from 1st/2nd declension adjectives is long.
 
 ### Page 22
 - Status: Approved
-- "Nāvis in noctem nāvigāvit. Link rīsit. Fortis erat."
-- Satisfying ending. "Fortis erat" is a lovely final line -- simple, affirming.
+- "In mare desiluit. Hac vice ridebat." -- Mirror of page 10 (thrown out) but now by choice. The imperfect "ridebat" (was smiling) contrasts beautifully with the earlier imperfect "timebat" (was afraid).
 
-## Vocabulary Notes
+### Page 23
+- Status: Approved
+- "Fecisti!" -- Perfect 2sg, warm and celebratory. "iterum traxit" echoes page 11 (pulling him from the sea) but the tone is completely different. The parallelism works.
 
-### Moblīnus / Moblinī
-The Latinization of "Moblin" as a 2nd-declension masculine noun (Moblīnus, -ī) is the natural and correct choice. The long ī in the stem is a reasonable decision for a coined word and is used consistently throughout. Declension forms used: Moblīnus (nom. sg., pp. 7, 8, 12), Moblinī (nom. pl., pp. 2, 10, 15, 16, 17, 19), Moblīnum (acc. sg., p. 12). All correct.
+### Page 24
+- Status: Approved
+- "Link timebat. Sed iterum temptavit. Fortis erat."
+- The closing line is earned and powerful. "timebat" (imperfect -- he was afraid, ongoing) + "sed iterum temptavit" (perfect -- but he tried again, a decisive act) + "Fortis erat" (imperfect -- he was brave, a settled truth). The tense interplay says everything: bravery isn't the absence of fear, it's acting despite it. Perfect ending.
 
-### thēsaurus
-Greek loanword (θησαυρός) -- the ē is correctly marked throughout. Used for both "treasure" (the object) and in the title. The chest itself is distinguished as "arca" (pp. 14-15), which is a nice distinction.
+## Consistency Check
 
-### dolium
-Excellent choice for "barrel" -- authentic Latin (storage jar/barrel), neuter 2nd declension. Used heavily and correctly throughout the stealth sequence.
+### Repeated words/phrases
+- **iterum**: Used on pages 10, 16 (x2), 17, 18, 20, 23, 24. Consistent throughout the second-attempt sequence. Good density without overuse.
+- **tacite**: Pages 4, 6, 20, 21. Consistent adverb form (tacite with long e). Ties the stealth sequences together.
+- **dolium/dolio**: Pages 3, 4, 6, 16, 18, 19. Consistent neuter 2nd declension forms throughout.
+- **se celavit**: Pages 3, 5, 16. Consistent reflexive construction.
+- **hac vice**: Pages 17, 20, 22. "This time" -- used to mark how Link does things differently on the second attempt. Consistent ablative forms.
+- **Moblinus/Moblini/Moblinos**: Nominative sg (7, 8), nominative pl (2, 9, 10), accusative pl (13, 19). All forms correct with long i in stem.
 
-### āēr (acc. āera)
-Greek declension accusative rather than Latinized āerem. Both are attested; āera is fine and sounds better in "per āera."
+### Structural parallels (first attempt / second attempt)
+- Page 3 / Page 16: barrel launch (se in dolio celavit + per aera volavit)
+- Page 4 / Page 17: landing in fortress (in arcem cecidit)
+- Page 5 / Page 18: searchlight (lux magna)
+- Page 11 / Page 23: Tetra pulls him from sea (traxit)
+- These parallels are all linguistically consistent -- the same Latin words and constructions recur, which reinforces the repetition for a child listener.
+
+## Emotional Arc (Pages 12-15)
+The failure/fear/choice sequence works well in Latin:
+- **Page 12** (defeat): "solus sedit" -- alone, sitting. Imperfect "erat" for the distant fortress.
+- **Page 13** (fear): "Moblinos meminit" -- the accusative object up front, what he remembers hitting hard. "Redire nolebat" -- blunt refusal.
+- **Page 14** (encouragement): "Iterum tempta" -- Tetra's imperative is gentle (leniter) not commanding. The same word "iterum" that will drive the second half of the book.
+- **Page 15** (choice): "Adhuc timebat. Sed surrexit." -- Still afraid AND standing up. The "sed" carries enormous weight.
+
+This four-page sequence is the heart of the book and it reads naturally in Latin. The sentences are short enough that even a child who doesn't understand every word will feel the emotional rhythm: sitting alone, remembering, being encouraged, standing up.
 
 ## Macron Audit
-All macrons checked and verified correct after the one fix on page 18 (īnfrā → infrā). The translation is careful and consistent with macron placement throughout. Key patterns verified:
-- 1st conjugation perfects: -āvit (nāvigāvit, cēlāvit, volāvit, clāmāvērunt, etc.) -- all correct
-- Long-vowel stems: lūx, thēsaurus, ōstium, nāvis -- all correct
-- Adverbs: tacitē, altē, celeriter -- all correct
-- Prefix vowels: prō- (prōspexit), dē- (dēspexit, dēsiluit) -- all correct
+Three corrections made:
+1. **trans** (p.1): a is short. Was incorrectly marked trāns.
+2. **iuxta** (p.14): u is short. Was incorrectly marked iūxtā. (The final a remains correctly long.)
+3. **arte** (p.21): adverbial e is long. Was incorrectly left unmarked. Corrected to artē.
+
+All other macrons verified correct. Key patterns:
+- 1st conjugation perfects (-āvit): navigavit, celavit, volavit, clamavit, spectavit, ambulavit, exspectavit, temptavit -- all correct
+- 2nd conjugation imperfects (-ēbat): habebat, timebat, nolebat, tenebat, ridebat -- all correct
+- Perfect stems: vidit, cepit, repsit, traxit, fecit, venit, invenit, surrexit -- all correct
+- Prefixes: pro- (prospexit), de- (desiluit) -- all correct
+- Adverbs: tacite, leniter, diutius -- all correct
 
 ## Overall Assessment
-This is a well-crafted translation. The Latin is natural, the sentences are short and vivid, and the story has excellent pacing. The stealth sequence (pages 5-12) is the highlight -- the repeated vocabulary of hiding and sneaking creates a pattern that a child hearing this read aloud will pick up on naturally. The three corrections are all minor. Ready for art direction after user approval.
+This is a well-crafted translation. The Latin is natural, sentences are short and vivid, and the failure-to-success arc comes through powerfully. The "iterum" repetition is the structural backbone of the second half and it works both narratively and pedagogically -- a child hearing the book read aloud multiple times will latch onto that word. The three corrections are all minor macron issues. Ready for art direction.

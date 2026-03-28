@@ -13,7 +13,7 @@ from typing import Optional
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from book_schemas import BookProject
+from book_schemas import BookProject, PublicDomainSource
 
 
 PROJECTS_DIR = Path("projects")
@@ -35,7 +35,15 @@ def generate_project_id(title: str) -> str:
     return slug
 
 
-def create_project(title: str, theme: Optional[str] = None, target_pages: int = 20) -> BookProject:
+def create_project(
+    title: str,
+    theme: Optional[str] = None,
+    target_pages: int = 20,
+    source_type: str = "original",
+    source_url: Optional[str] = None,
+    illustrator: Optional[str] = None,
+    author: Optional[str] = None,
+) -> BookProject:
     """Create a new book project with folder structure."""
     PROJECTS_DIR.mkdir(exist_ok=True)
 
@@ -43,12 +51,27 @@ def create_project(title: str, theme: Optional[str] = None, target_pages: int = 
     project_folder = PROJECTS_DIR / project_id
 
     # Create directory structure
-    for subdir in ['source', 'translation', 'art', 'images', 'output']:
+    subdirs = ['source', 'translation', 'art', 'images', 'output']
+    if source_type == "public_domain_adaptation":
+        subdirs.append('source_images')
+    for subdir in subdirs:
         (project_folder / subdir).mkdir(parents=True, exist_ok=True)
+
+    # Build public domain source metadata if applicable
+    pd_source = None
+    if source_type == "public_domain_adaptation":
+        pd_source = PublicDomainSource(
+            title=title,
+            author=author or "Unknown",
+            illustrator=illustrator or "Unknown",
+            source_url=source_url or "",
+        )
 
     project = BookProject(
         project_id=project_id,
         title_english=title,
+        source_type=source_type,
+        public_domain_source=pd_source,
         theme=theme,
         target_pages=target_pages,
         project_folder=str(project_folder),
@@ -59,6 +82,9 @@ def create_project(title: str, theme: Optional[str] = None, target_pages: int = 
 
     print(f"Created project: {project_id}")
     print(f"  Folder: {project_folder}")
+    if source_type == "public_domain_adaptation":
+        print(f"  Source type: public_domain_adaptation")
+        print(f"  Source URL: {source_url}")
 
     return project
 
@@ -108,6 +134,12 @@ def main():
     create_parser.add_argument("title", help="Book title in English")
     create_parser.add_argument("--theme", help="Story theme")
     create_parser.add_argument("--pages", type=int, default=20, help="Target page count")
+    create_parser.add_argument("--source-type", default="original",
+                               choices=["original", "adaptation", "public_domain_adaptation"],
+                               help="Project source type")
+    create_parser.add_argument("--source-url", help="Source URL (e.g. Gutenberg page)")
+    create_parser.add_argument("--illustrator", help="Original illustrator name")
+    create_parser.add_argument("--author", help="Original author name")
 
     # List
     subparsers.add_parser("list", help="List all projects")
@@ -119,7 +151,15 @@ def main():
     args = parser.parse_args()
 
     if args.command == "create":
-        create_project(args.title, theme=args.theme, target_pages=args.pages)
+        create_project(
+            args.title,
+            theme=args.theme,
+            target_pages=args.pages,
+            source_type=args.source_type,
+            source_url=args.source_url,
+            illustrator=args.illustrator,
+            author=args.author,
+        )
     elif args.command == "list":
         for p in list_projects():
             print(f"  {p.project_id:35s} {p.title_english:35s} [{p.status}]")

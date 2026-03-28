@@ -1,0 +1,174 @@
+{
+  "source_url": "https://www.gutenberg.org/files/14838/14838-h/14838-h.htm",
+  "download_count": 28,
+  "images": [
+    {
+      "index": 1,
+      "filename": "image_001.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter04.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 2,
+      "filename": "image_002.gif",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter02.gif",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 3,
+      "filename": "image_003.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter08.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 4,
+      "filename": "image_004.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter11.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 5,
+      "filename": "image_005.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter12.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 6,
+      "filename": "image_006.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter15.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 7,
+      "filename": "image_007.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter16.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 8,
+      "filename": "image_008.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter19.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 9,
+      "filename": "image_009.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter20.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 10,
+      "filename": "image_010.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter23.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 11,
+      "filename": "image_011.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter24.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 12,
+      "filename": "image_012.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter27.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 13,
+      "filename": "image_013.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter28.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 14,
+      "filename": "image_014.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter31.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 15,
+      "filename": "image_015.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter32.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 16,
+      "filename": "image_016.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter35.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 17,
+      "filename": "image_017.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter36.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 18,
+      "filename": "image_018.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter39.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 19,
+      "filename": "image_019.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter40.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 20,
+      "filename": "image_020.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter43.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 21,
+      "filename": "image_021.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter44.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 22,
+      "filename": "image_022.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter47.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 23,
+      "filename": "image_023.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter48.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 24,
+      "filename": "image_024.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter51.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 25,
+      "filename": "image_025.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter52.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 26,
+      "filename": "image_026.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter55.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 27,
+      "filename": "image_027.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter57.jpg",
+      "alt_text": "[Illustration]"
+    },
+    {
+      "index": 28,
+      "filename": "image_028.jpg",
+      "original_url": "https://www.gutenberg.org/files/14838/14838-h/images/peter58.jpg",
+      "alt_text": "[Illustration]"
+    }
+  ]
+}

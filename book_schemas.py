@@ -113,6 +113,33 @@ class ImagePrompts(BaseModel):
     pages: List[PagePrompt]
 
 
+# --- Public Domain Adaptation ---
+
+class PublicDomainSource(BaseModel):
+    """Metadata for a public domain illustration source."""
+    title: str
+    author: str
+    illustrator: str
+    source_url: str
+    year: Optional[int] = None
+    license: str = "Public Domain"
+
+
+class ImageMapping(BaseModel):
+    """Single page-to-image mapping."""
+    page_number: int
+    source: str = "existing"  # "existing" or "generate"
+    image_filename: Optional[str] = None
+    original_caption: Optional[str] = None
+    generate_prompt: Optional[str] = None
+
+
+class ImageManifest(BaseModel):
+    """Page-to-image mapping for projects using pre-existing illustrations."""
+    pd_source: PublicDomainSource
+    mappings: List[ImageMapping]
+
+
 # --- Project ---
 
 class BookProject(BaseModel):
@@ -122,11 +149,15 @@ class BookProject(BaseModel):
     title_latin: Optional[str] = None
 
     # Source
-    source_type: str = "original"  # "original" or "adaptation"
+    source_type: str = "original"  # "original", "adaptation", or "public_domain_adaptation"
+    public_domain_source: Optional[PublicDomainSource] = None
 
     # Metadata
     theme: Optional[str] = None
     target_pages: int = 20
+
+    # Virtue ratings (0-5 scale)
+    virtue_ratings: Dict[str, int] = Field(default_factory=dict)  # 0-5 scale per virtue
 
     # Workflow status
     status: str = "initialized"

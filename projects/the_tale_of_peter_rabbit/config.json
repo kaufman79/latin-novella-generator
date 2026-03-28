@@ -1,0 +1,21 @@
+{
+  "project_id": "the_tale_of_peter_rabbit",
+  "title_english": "The Tale of Peter Rabbit",
+  "title_latin": null,
+  "source_type": "public_domain_adaptation",
+  "public_domain_source": {
+    "title": "The Tale of Peter Rabbit",
+    "author": "Beatrix Potter",
+    "illustrator": "Beatrix Potter",
+    "source_url": "https://www.gutenberg.org/ebooks/14838",
+    "year": null,
+    "license": "Public Domain"
+  },
+  "theme": null,
+  "target_pages": 20,
+  "virtue_ratings": {},
+  "status": "initialized",
+  "date_created": "2026-03-28T01:05:14.157190",
+  "date_modified": "2026-03-28T01:05:14.157203",
+  "project_folder": "projects/the_tale_of_peter_rabbit"
+}

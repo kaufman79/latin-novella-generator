@@ -1,4 +1,6 @@
+google-genai
 openai
 weasyprint
 pillow
 pydantic
+requests

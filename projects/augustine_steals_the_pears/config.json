@@ -864,5 +864,14 @@
   "status": "pdf_built",
   "date_created": "2025-10-20T16:06:47.770727",
   "date_modified": "2025-10-20T17:32:50.252871",
-  "project_folder": "projects/augustine_steals_the_pears"
+  "project_folder": "projects/augustine_steals_the_pears",
+  "virtue_ratings": {
+    "prudentia": 0,
+    "iustitia": 3,
+    "fortitudo": 1,
+    "temperantia": 4,
+    "fides": 2,
+    "spes": 0,
+    "caritas": 2
+  }
 }

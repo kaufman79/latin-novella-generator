@@ -1,0 +1,71 @@
+{
+  "style": {
+    "medium": "Cel-shaded digital art in the style of The Legend of Zelda: The Wind Waker. Clean vector-like shapes with flat color fills and bold black outlines.",
+    "palette": "Bright saturated colors. Deep teal ocean, warm golden torchlight, cool blue-gray stone, vivid greens on Link's tunic. High color contrast between warm and cool tones.",
+    "line_weight": "Bold black outlines on all characters and objects. Clean, crisp edges. No sketchy or painterly lines.",
+    "lighting": "Bright cel-shaded lighting with flat color areas and simple cast shadows. Nighttime scenes use deep blue ambient light with warm orange torchlight and white moonlight for contrast.",
+    "mood": "Adventurous and expressive with big cartoon emotions. Ranges from comedic stealth to genuine fear and vulnerability to earned triumph. Characters wear their feelings on their faces.",
+    "technical": "Square aspect ratio. Child-friendly composition with characters filling at least 40% of the frame. Single clear focal point per image. No text in image."
+  },
+  "characters": {
+    "Toon Link": {
+      "source": "Toon Link from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "Toon Link from The Wind Waker. Small boy with a very large round head (chibi proportions, roughly 3 heads tall). Huge expressive cartoon eyes that are solid black with white highlights. Messy blonde hair poking out from under his cap. Long pointed elf ears. Wears a bright green tunic, a bright green long pointed cap, a brown leather belt with a gold buckle, and brown boots. Fair skin with rosy round cheeks. Small button nose. When armed, carries a small sword in a brown scabbard on his back.",
+      "expression_default": "wide-eyed, curious, determined",
+      "height_reference": "Very short, child-sized, roughly 3 heads tall in chibi proportions. Comes up to about waist height on a Moblin."
+    },
+    "Tetra": {
+      "source": "Tetra from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "Tetra from The Wind Waker. Young pirate girl with tan brown skin, bright blonde hair pulled back in a messy bun with a blue bandana. Large expressive cartoon eyes (same style as Toon Link). Wears a sleeveless blue vest with gold trim over a white undershirt, brown belt, brown sandals, and a red sash at her waist. Has a confident smirk as her default expression. Same chibi proportions as Link — large head, small body, roughly 3 heads tall. Slightly taller than Link.",
+      "expression_default": "confident smirk, arms crossed",
+      "height_reference": "Same chibi proportions as Link, slightly taller. Roughly 3 heads tall."
+    },
+    "Moblins": {
+      "source": "Moblins from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "Wind Waker Moblins. Large bumbling pig-like monsters, about three times Link's height. Blue-gray skin, big round snouts, small beady eyes, floppy pointed ears. Wear simple brown leather armor vests and brown loincloths. Carry long wooden spears and round paper lanterns on sticks. Pot-bellied with thick stubby legs. Goofy and threatening at the same time — cartoonishly menacing, not actually scary.",
+      "expression_default": "dopey, suspicious, squinting",
+      "height_reference": "About three times Link's height. Large, pot-bellied, towering over Link."
+    }
+  },
+  "locations": {
+    "Pirate Ship": {
+      "visual_description": "Wind Waker-style pirate ship with a carved dragon figurehead at the prow, bright red sails, warm brown wooden deck and hull. Rope rigging, wooden barrels and crates on deck. Sails on the deep teal ocean under a large white moon and starry night sky.",
+      "time_of_day_default": "nighttime with bright moonlight and stars"
+    },
+    "Forsaken Fortress Exterior": {
+      "visual_description": "Dark imposing stone fortress on a craggy rocky island. Tall spiky stone walls with jagged battlements. Bright white searchlight beams sweep across the walls and water from spotlights mounted on towers. Ominous but cartoonish in Wind Waker cel-shaded style — threatening shapes but bright clean colors.",
+      "time_of_day_default": "nighttime with searchlights and moonlight"
+    },
+    "Fortress Courtyard": {
+      "visual_description": "Enclosed stone courtyard inside the fortress. Gray stone walls and floor. Wooden barrels and crates stacked along the walls. Flickering orange torches mounted on the walls casting warm pools of light against the cool blue-gray stone. Wooden doors in the walls. Patrolling Moblins with lanterns.",
+      "time_of_day_default": "nighttime, torchlit"
+    },
+    "Fortress Interior": {
+      "visual_description": "Stone corridor inside the fortress. Gray stone walls and floor with flickering orange torches. Wooden barrels lined along the walls. Wooden doors. Dim blue-gray ambient light with warm orange torch pools. Narrow and enclosed.",
+      "time_of_day_default": "nighttime, torchlit"
+    },
+    "Treasure Room": {
+      "visual_description": "Small stone chamber deep inside the fortress. A single ornate golden treasure chest sits on a raised stone pedestal in the center. The chest glows with warm golden light. The room is otherwise dim with cool blue-gray stone walls. A single torch on the wall.",
+      "time_of_day_default": "dim with golden glow from the chest"
+    },
+    "Fortress Walls": {
+      "visual_description": "High fortress battlements and outer walls. Gray stone with jagged crenellations. Searchlight beams sweep across the walls. The deep teal ocean is visible far below. The night sky with stars and moon above. Vertigo-inducing height.",
+      "time_of_day_default": "nighttime with searchlights and moonlight"
+    }
+  },
+  "composition_rules": [
+    "Characters fill at least 40% of the frame",
+    "Simple backgrounds — do not over-detail environments",
+    "Eye-level or slightly low angle (child's perspective) for most shots",
+    "Close-ups for emotional moments (fear, determination, triumph)",
+    "Wide shots for establishing location and for dramatic moments (falling, sailing)",
+    "Single focal point per image — one clear action or emotion",
+    "Vary shot types across pages to maintain visual interest",
+    "Mirrored scenes (3/16, 10/22, 11/23) should use similar composition but with clearly different character expressions and body language",
+    "Nighttime throughout — all scenes lit by moonlight, torchlight, or searchlights",
+    "No text, watermarks, or UI elements in any image"
+  ]
+}

@@ -962,5 +962,14 @@
   "status": "images_generated",
   "date_created": "2025-10-13T13:47:12.648205",
   "date_modified": "2025-10-15T13:40:12.018362",
-  "project_folder": "projects/dada_and_the_cockroach"
+  "project_folder": "projects/dada_and_the_cockroach",
+  "virtue_ratings": {
+    "prudentia": 0,
+    "iustitia": 0,
+    "fortitudo": 1,
+    "temperantia": 0,
+    "fides": 0,
+    "spes": 0,
+    "caritas": 1
+  }
 }

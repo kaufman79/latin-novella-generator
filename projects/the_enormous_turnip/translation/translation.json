@@ -1,0 +1,168 @@
+{
+  "title_latin": "Rāpa Ingēns",
+  "title_english": "The Enormous Turnip",
+  "pages": [
+    {
+      "page_number": 1,
+      "latin_text": "Avus sēmen sēvit.",
+      "english_text": "Grandfather planted a seed.",
+      "image_prompt": "Avus kneeling in the garden soil, carefully placing a tiny seed into a small hole with his thick fingers. Bright sunny day, the cottage and sunflowers behind him. He smiles down at the seed with gentle expectation. Close-up enough to see the tiny seed in the brown earth. Garden tools — a watering can and a small spade — rest beside him.",
+      "image_path": null,
+      "characters": ["Avus"],
+      "location": "Garden"
+    },
+    {
+      "page_number": 2,
+      "latin_text": "Rāpa crēvit. Crēvit et crēvit!",
+      "english_text": "The turnip grew. It grew and grew!",
+      "image_prompt": "A progression shot showing the turnip sprouting and growing. On the left, a small green shoot pokes out of the soil. In the middle, a medium turnip with leafy greens. On the right, the turnip is already bigger than expected, leaves spreading wide. Avus stands to the side, eyes getting wider with each stage, hand on his head in amazement. Bright sunshine, the garden around him lush and green.",
+      "image_path": null,
+      "characters": ["Avus"],
+      "location": "Garden"
+    },
+    {
+      "page_number": 3,
+      "latin_text": "Rāpa INGĒNS erat!",
+      "english_text": "The turnip was ENORMOUS!",
+      "image_prompt": "Full-page reveal: the turnip is now absurdly, comically huge — as tall as Avus, round and bulging out of the cracked earth, its massive green leaves fanning out like a tree canopy. Avus stands next to it, tiny by comparison, jaw dropped, arms thrown up in amazement. The turnip dwarfs everything around it. Other garden vegetables look like miniatures next to it. The sheer scale is the joke. Bright, bold colors — the purple-white turnip dominates the frame.",
+      "image_path": null,
+      "characters": ["Avus"],
+      "location": "Turnip Spot"
+    },
+    {
+      "page_number": 4,
+      "latin_text": "Avus rāpam trahit. Trahit et trahit. NŌN POTEST!",
+      "english_text": "Grandfather pulled the turnip. He pulled and pulled. He COULD NOT!",
+      "image_prompt": "Avus gripping the thick green turnip leaves with both hands, leaning way back with his feet braced against the ground, face red with effort, teeth gritted. The turnip does not budge at all — it sits immovably in the earth. His boots dig furrows in the soil. Sweat drops fly off his forehead. The turnip is completely unmoved, almost smug in its enormity.",
+      "image_path": null,
+      "characters": ["Avus"],
+      "location": "Turnip Spot"
+    },
+    {
+      "page_number": 5,
+      "latin_text": "Avus Aviam vocāvit. \"Venī! Mē adiuvā!\" Avia Avum prehendit. Trahunt et trahunt. NŌN POSSUNT!",
+      "english_text": "\"Grandmother, come help!\" Grandmother grabbed Grandfather. They pulled and pulled. They COULD NOT!",
+      "image_prompt": "Avia has arrived and grabs Avus around the waist from behind. Avus grips the turnip leaves. Both lean back hard, straining — Avus red-faced, Avia's kerchief slipping, her teeth clenched. A chain of two pulling with all their might. The turnip sits firmly in place, not budging a millimeter. Their feet slide in the dirt.",
+      "image_path": null,
+      "characters": ["Avus", "Avia"],
+      "location": "Turnip Spot"
+    },
+    {
+      "page_number": 6,
+      "latin_text": "Avia Puellam vocāvit. \"Venī! Nōs adiuvā!\" Puella Aviam prehendit. Trahunt et trahunt. NŌN POSSUNT!",
+      "english_text": "\"Granddaughter, come help!\" They all pulled. They COULD NOT!",
+      "image_prompt": "Now Puella joins the chain: Puella grabs Avia's waist, Avia grabs Avus's waist, Avus grips the turnip leaves. Three people in a leaning-back chain, all straining. Puella's braids fly out behind her, her little face scrunched with effort. The turnip remains absolutely immovable. The comedy builds — three humans vs. one vegetable, and the vegetable is winning.",
+      "image_path": null,
+      "characters": ["Avus", "Avia", "Puella"],
+      "location": "Turnip Spot"
+    },
+    {
+      "page_number": 7,
+      "latin_text": "Puella Canem vocāvit. \"Venī! Nōs adiuvā!\" Canis Puellam prehendit. Trahunt et trahunt. NŌN POSSUNT!",
+      "english_text": "\"Dog, come help!\" They all pulled. They COULD NOT!",
+      "image_prompt": "Canis joins the chain, biting onto the hem of Puella's dress and pulling backward with all four paws digging into the dirt. The chain is now four long: Avus on the turnip, Avia on Avus, Puella on Avia, Canis on Puella. All leaning back at the same angle like a tug-of-war team. Canis's ears flap, tongue out, tail stiff with effort. The turnip does not move.",
+      "image_path": null,
+      "characters": ["Avus", "Avia", "Puella", "Canis"],
+      "location": "Turnip Spot"
+    },
+    {
+      "page_number": 8,
+      "latin_text": "Canis Fēlem vocāvit. \"Venī! Nōs adiuvā!\" Fēlēs Canem prehendit. Trahunt et trahunt. NŌN POSSUNT!",
+      "english_text": "\"Cat, come help!\" They all pulled. They COULD NOT!",
+      "image_prompt": "Feles joins the chain, gripping Canis's tail with both front paws and leaning back, hind paws braced. The chain of five stretches across the page: Avus gripping leaves, Avia on Avus, Puella on Avia, Canis on Puella, Feles on Canis. All straining at a steep backward angle. Feles looks indignant — pulling a dog's tail is beneath her dignity, but she does it anyway. Still the turnip holds firm.",
+      "image_path": null,
+      "characters": ["Avus", "Avia", "Puella", "Canis", "Feles"],
+      "location": "Turnip Spot"
+    },
+    {
+      "page_number": 9,
+      "latin_text": "Fēlēs Mūrem vocāvit. \"Venī! Nōs adiuvā!\" \"Sed tam parva sum!\" inquit Mūs.",
+      "english_text": "\"Mouse, come help!\" \"But I am so small!\" said Mouse.",
+      "image_prompt": "Close-up of Feles looking back over her shoulder, calling out. In the foreground, Mus stands on the ground looking up at the enormous chain of pullers and the massive turnip beyond. Mus is absolutely tiny compared to everyone else — barely reaching Feles's ankle. Mus's big round ears droop, her little paws pressed together uncertainly, looking overwhelmed by the task. The size contrast is the whole picture: tiny mouse, huge turnip, long chain of big creatures.",
+      "image_path": null,
+      "characters": ["Feles", "Mus"],
+      "location": "Turnip Spot"
+    },
+    {
+      "page_number": 10,
+      "latin_text": "\"Venī! Nōs adiuvā!\" omnēs clāmāvērunt.",
+      "english_text": "\"Come! Help us!\" they all said.",
+      "image_prompt": "All five characters in the chain turn their heads to look back at Mus, calling out encouragingly. Avus grins, Avia beckons, Puella waves, Canis barks happily, Feles nods. All their faces are warm and inviting. Mus stands at the end, tiny but now straightening up, gathering courage, little paws curling into fists.",
+      "image_path": null,
+      "characters": ["Avus", "Avia", "Puella", "Canis", "Feles", "Mus"],
+      "location": "Turnip Spot"
+    },
+    {
+      "page_number": 11,
+      "latin_text": "Mūs caudam Fēlis prehendit. Omnēs trahunt!",
+      "english_text": "Mouse grabbed Cat's tail. Everyone pulled!",
+      "image_prompt": "The complete chain from the side, stretching across the full page: Avus grips the turnip leaves, Avia holds Avus, Puella holds Avia, Canis holds Puella, Feles holds Canis, and at the very end, tiny Mus grips the tip of Feles's tail with both paws, feet braced against the ground, whole tiny body leaning back with maximum effort. Six links in the chain. The composition shows the full absurd scale — from the enormous turnip on one side to the tiny mouse on the other.",
+      "image_path": null,
+      "characters": ["Avus", "Avia", "Puella", "Canis", "Feles", "Mus"],
+      "location": "Turnip Spot"
+    },
+    {
+      "page_number": 12,
+      "latin_text": "Trahunt... et trahunt... et trahunt...",
+      "english_text": "They pulled... and pulled... and pulled...",
+      "image_prompt": "Close-up of straining faces and bodies in sequence: Avus's red face, veins popping. Avia's gritted teeth. Puella squeezing her eyes shut. Canis's paws churning dirt. Feles's claws digging in. Mus's tiny face scrunched in maximum effort, every whisker trembling. The ground around the turnip starts to crack — just barely. Tiny clods of earth begin to loosen. Something is about to give.",
+      "image_path": null,
+      "characters": ["Avus", "Avia", "Puella", "Canis", "Feles", "Mus"],
+      "location": "Turnip Spot"
+    },
+    {
+      "page_number": 13,
+      "latin_text": "POSSUNT! Rāpa ē terrā exit!",
+      "english_text": "THEY COULD! The turnip came out!",
+      "image_prompt": "THE BIG MOMENT — full-page explosion of movement! The enormous turnip has popped free from the earth, launching upward with a shower of dirt and soil and roots. Everyone tumbles backward in a joyful, chaotic pile — Avus falls onto his back, Avia lands on Avus, Puella topples onto Avia, Canis rolls over Puella, Feles flies through the air, and Mus is catapulted skyward with a huge grin. Clumps of earth rain down. The hole where the turnip was is enormous and dark. Everyone is laughing despite being in a heap. Pure slapstick joy.",
+      "image_path": null,
+      "characters": ["Avus", "Avia", "Puella", "Canis", "Feles", "Mus"],
+      "location": "Turnip Spot"
+    },
+    {
+      "page_number": 14,
+      "latin_text": "Rāpam domum omnēs portāvērunt.",
+      "english_text": "They carried the turnip home together.",
+      "image_prompt": "All six characters work together to roll the enormous turnip down the dirt path toward the cottage. Avus and Avia push from behind, Puella pushes from the side, Canis pushes with his head, Feles braces against the bottom, and Mus rides on top, pointing the way like a tiny captain. The turnip is still absurdly huge — they roll it like a boulder. Rolling green hills, wildflowers, the cottage ahead with smoke curling from its chimney. Everyone is smiling, working together happily.",
+      "image_path": null,
+      "characters": ["Avus", "Avia", "Puella", "Canis", "Feles", "Mus"],
+      "location": "Road Home"
+    },
+    {
+      "page_number": 15,
+      "latin_text": "Avia iūs rāpārum fēcit. Tantum iūris!",
+      "english_text": "Grandmother made turnip soup. SO MUCH soup!",
+      "image_prompt": "Inside the warm cottage kitchen, Avia stands at the hearth stirring an enormous pot that overflows with steam. The huge turnip, now cut into pieces, fills the table and spills onto the floor — chunks of turnip everywhere. Multiple pots and bowls are filled to the brim. Avus carries more turnip pieces. Puella tastes from a spoon. The scale is the joke again — one turnip has produced an absurd mountain of food. The kitchen is golden and warm with firelight.",
+      "image_path": null,
+      "characters": ["Avus", "Avia", "Puella"],
+      "location": "Cottage Interior"
+    },
+    {
+      "page_number": 16,
+      "latin_text": "Omnēs ūnā cēnāvērunt.",
+      "english_text": "They all ate together.",
+      "image_prompt": "Everyone gathered around the big wooden table eating turnip soup from wooden bowls. Avus and Avia sit at the table with Puella between them. Canis has a bowl on the floor, lapping happily. Feles sits on a stool with her own small bowl, eating daintily. Mus sits ON the table next to a thimble-sized bowl. All faces are content and happy. Steam rises from the bowls. The hearth glows behind them. A scene of warmth, togetherness, and shared reward.",
+      "image_path": null,
+      "characters": ["Avus", "Avia", "Puella", "Canis", "Feles", "Mus"],
+      "location": "Cottage Interior"
+    },
+    {
+      "page_number": 17,
+      "latin_text": "Mūs plūrimum ēdit!",
+      "english_text": "Mouse ate the most!",
+      "image_prompt": "Comedic close-up: tiny Mus lies on her back on the table next to her thimble-bowl, belly round and full, paws on her stuffed belly, eyes closed in bliss with a satisfied smile. Around her, the others look on and laugh — Puella points and giggles, Avus slaps his knee, Canis's tongue hangs out in a doggy grin. The joke: the smallest one ate the most. A warm, funny beat to end the meal.",
+      "image_path": null,
+      "characters": ["Avus", "Avia", "Puella", "Canis", "Feles", "Mus"],
+      "location": "Cottage Interior"
+    },
+    {
+      "page_number": 18,
+      "latin_text": "Omnēs adiūvērunt. Etiam minima.",
+      "english_text": "Everyone helped. Even the smallest.",
+      "image_prompt": "Quiet, warm final page. Evening light through the cottage window. All six characters are dozing together in a cozy heap by the hearth. Avus slumps in a wooden chair, snoring. Avia leans against him, eyes closed. Puella curls on a blanket on the floor. Canis is sprawled across Puella's feet. Feles is curled in a ball on Avia's lap. And tiny Mus sleeps nestled in Avus's open palm, the smallest creature held gently by the biggest. Firelight flickers. Everyone is full and at peace. The through-line lands visually: even the smallest mattered.",
+      "image_path": null,
+      "characters": ["Avus", "Avia", "Puella", "Canis", "Feles", "Mus"],
+      "location": "Cottage Interior"
+    }
+  ]
+}

@@ -1,20 +1,20 @@
 {
-  "title_latin": "Link et Thesaurus Raptus",
+  "title_latin": "Link et Thēsaurus Raptus",
   "title_english": "Link and the Stolen Treasure",
   "pages": [
     {
       "page_number": 1,
-      "latin_text": "Link trāns mare obscūrum nāvigāvit. Arx procul stābat.",
-      "english_text": "Link sailed across the dark sea. A fortress stood far away.",
-      "image_prompt": "Wide shot of the pirate ship on moonlit ocean, the Forsaken Fortress looming dark on the horizon. Tetra points. Link looks determined. Cel-shaded Wind Waker style, dramatic moonlight on the water.",
+      "latin_text": "Link trāns mare obscūrum nāvigāvit.",
+      "english_text": "Link sailed across the dark sea.",
+      "image_prompt": "Wide shot of the pirate ship on a moonlit ocean, the Forsaken Fortress a dark silhouette on the horizon. Link stands at the prow, small against the big sky. Cel-shaded Wind Waker style, dramatic moonlight on water.",
       "characters": ["Toon Link", "Tetra"],
       "location": "Pirate Ship"
     },
     {
       "page_number": 2,
-      "latin_text": "\"Moblīnī thēsaurum rapuērunt!\" inquit Tetra. \"Refer!\"",
-      "english_text": "\"The Moblins stole the treasure!\" said Tetra. \"Get it back!\"",
-      "image_prompt": "Close-up of Tetra talking to Link on the ship deck. She looks angry. Link listens, fists clenched. The fortress glows ominously behind them.",
+      "latin_text": "\"Moblīnī thēsaurum rapuērunt,\" inquit Tetra. \"Refer!\"",
+      "english_text": "\"The Moblins stole the treasure,\" said Tetra. \"Get it back.\"",
+      "image_prompt": "Close-up of Tetra talking to Link on the ship deck. She points toward the fortress. Link nods, fists clenched, looking determined. The dark fortress glows behind them.",
       "characters": ["Toon Link", "Tetra"],
       "location": "Pirate Ship"
     },
@@ -22,7 +22,7 @@
       "page_number": 3,
       "latin_text": "Link sē in doliō cēlāvit. Dolium per āera volāvit!",
       "english_text": "Link hid inside a barrel. The barrel flew through the air!",
-      "image_prompt": "Link curled up inside a barrel, big eyes peeking out, as he flies through the air toward the fortress. The barrel arcs across the night sky. Classic Wind Waker moment.",
+      "image_prompt": "Link curled up inside a barrel, big eyes peeking out, as the barrel arcs through the night sky toward the fortress. Stars and moon behind him. Classic Wind Waker moment — funny and dramatic.",
       "characters": ["Toon Link"],
       "location": "Pirate Ship"
     },
@@ -30,15 +30,15 @@
       "page_number": 4,
       "latin_text": "Dolium in arcem cecidit. Link tacitē prōspexit.",
       "english_text": "The barrel landed in the fortress. Link peeked out quietly.",
-      "image_prompt": "The barrel has landed among other barrels in the fortress courtyard. Link's eyes peer out from inside it. Moblins patrol nearby with lanterns and spears. Stone walls, torches.",
+      "image_prompt": "The barrel has crash-landed among other barrels in the fortress courtyard. Link's wide eyes peer out from inside. Moblins patrol nearby with lanterns and spears. Stone walls, flickering torchlight.",
       "characters": ["Toon Link", "Moblins"],
       "location": "Fortress Courtyard"
     },
     {
       "page_number": 5,
-      "latin_text": "Lūx magna per terram sē mōvit. Link sē cēlāvit! Lūx eum nōn vīdit.",
-      "english_text": "A big light moved across the ground. Link hid! The light did not see him.",
-      "image_prompt": "Dramatic shot of a bright searchlight beam sweeping right over the barrel Link is in. His barrel is one of many -- he blends in. A Moblin stands nearby, looking the other direction.",
+      "latin_text": "Lūx magna per terram sē mōvit. Link sē cēlāvit!",
+      "english_text": "A big light moved across the ground. Link hid!",
+      "image_prompt": "Dramatic shot of a bright searchlight beam sweeping right over the barrel Link is in. He ducks down, just his eyes visible. The beam passes. A Moblin stands nearby, looking the other direction.",
       "characters": ["Toon Link", "Moblins"],
       "location": "Fortress Courtyard"
     },
@@ -52,130 +52,146 @@
     },
     {
       "page_number": 7,
-      "latin_text": "Moblīnus sē vertit! Link nōn sē mōvit. Link nōn spīrāvit.",
-      "english_text": "A Moblin turned around! Link did not move. Link did not breathe.",
-      "image_prompt": "A big Moblin has turned to look directly toward Link's position. Link is pressed flat against a barrel, eyes wide. Tension! The Moblin squints suspiciously.",
+      "latin_text": "Moblīnus sē vertit! Link nōn sē mōvit.",
+      "english_text": "A Moblin turned around! Link did not move.",
+      "image_prompt": "A big Moblin has turned to look directly toward Link's position. Link is pressed flat against a barrel, eyes wide, holding his breath. The Moblin squints suspiciously.",
       "characters": ["Toon Link", "Moblins"],
       "location": "Fortress Courtyard"
     },
     {
       "page_number": 8,
-      "latin_text": "Moblīnus abiit. Link iterum spīrāvit.",
-      "english_text": "The Moblin walked away. Link breathed again.",
-      "image_prompt": "The Moblin walking away, scratching its head. Link slumped against the barrel, wiping his forehead with visible relief. Comic tone.",
+      "latin_text": "Moblīnus eum vīdit! \"ECCE!\" clāmāvit.",
+      "english_text": "The Moblin saw him! \"THERE!\" it shouted.",
+      "image_prompt": "The Moblin's eyes go wide, mouth open in a shout. It points directly at Link with one hand, raising its spear with the other. Link's face shifts from frozen to panicked. Other Moblins turn to look.",
       "characters": ["Toon Link", "Moblins"],
       "location": "Fortress Courtyard"
     },
     {
       "page_number": 9,
-      "latin_text": "Link ōstium invēnit. Tacitē intrāvit.",
-      "english_text": "Link found a door. He went inside quietly.",
-      "image_prompt": "Link pushing open a heavy wooden door, peeking into a dark stone corridor lit by torches. His green cap and blonde hair bright against the darkness.",
-      "characters": ["Toon Link"],
-      "location": "Fortress Interior"
+      "latin_text": "Moblīnī ex omnī ōstiō cucurrērunt. Link cēpērunt!",
+      "english_text": "Moblins ran from every door. They grabbed Link!",
+      "image_prompt": "Moblins swarm from all directions — through doors, around corners. Two big Moblins have Link by the arms, lifting him off the ground. His legs kick. His sword clatters away. Chaos, lanterns swinging.",
+      "characters": ["Toon Link", "Moblins"],
+      "location": "Fortress Courtyard"
     },
     {
       "page_number": 10,
-      "latin_text": "Moblīnī post ōstium dormiēbant. Link eōs stertentēs audīvit.",
-      "english_text": "Moblins were sleeping behind the door. Link heard them snoring.",
-      "image_prompt": "Link tiptoeing down a stone hallway with torchlight. A door to one side has ZZZ coming from it or visible snoring Moblin feet poking under the door. Link grins mischievously.",
+      "latin_text": "Moblīnī Link ex arce iēcērunt. Iterum per āera volāvit.",
+      "english_text": "They threw Link out of the fortress. He flew through the air again.",
+      "image_prompt": "Link tumbling through the air, thrown off the fortress wall. No barrel this time — just Link, arms flailing, cap flying off his head. The fortress looms above. The dark ocean below. Not triumphant. Humiliating.",
       "characters": ["Toon Link", "Moblins"],
-      "location": "Fortress Interior"
+      "location": "Fortress Walls"
     },
     {
       "page_number": 11,
-      "latin_text": "Iterum lūx! Link dolium super sē posuit.",
-      "english_text": "Another light! Link put a barrel over himself.",
-      "image_prompt": "Link lifting a barrel over his head to put it on himself, his little legs sticking out the bottom. The searchlight beam is visible ahead of him. Funny, classic Wind Waker stealth moment.",
-      "characters": ["Toon Link"],
-      "location": "Fortress Interior"
-    },
-    {
-      "page_number": 12,
-      "latin_text": "Link praeter Moblīnum ambulāvit. Moblīnus sōlum dolium vīdit!",
-      "english_text": "Link walked past the Moblin. The Moblin saw only a barrel!",
-      "image_prompt": "Link-in-a-barrel walking past a confused-looking Moblin guard. The Moblin leans forward, squinting at the barrel that has legs. Comedic beat. The searchlight illuminates them both.",
-      "characters": ["Toon Link", "Moblins"],
-      "location": "Fortress Interior"
-    },
-    {
-      "page_number": 13,
-      "latin_text": "Link thēsaurum invēnit! Lūce aureā fulgēbat.",
-      "english_text": "Link found the treasure! It glowed with golden light.",
-      "image_prompt": "Link standing in a doorway looking at a glowing treasure chest on a stone pedestal. Golden light radiates from the chest. The room is small and dramatic.",
-      "characters": ["Toon Link"],
-      "location": "Treasure Room"
-    },
-    {
-      "page_number": 14,
-      "latin_text": "Link arcam aperuit. Thēsaurum altē sustulit!",
-      "english_text": "Link opened the chest. He lifted the treasure high!",
-      "image_prompt": "The classic Zelda item-get pose -- Link holds a golden object above his head, light radiating outward, his face joyful. Full-page iconic moment.",
-      "characters": ["Toon Link"],
-      "location": "Treasure Room"
-    },
-    {
-      "page_number": 15,
-      "latin_text": "Sed arca sonuit! Moblīnī excitatī sunt! Īrātī erant!",
-      "english_text": "But the chest was loud! The Moblins woke up! They were angry!",
-      "image_prompt": "Link holding the treasure with a suddenly worried expression, and in the background through doorways, Moblin eyes snapping open, angry faces appearing. Alarm!",
-      "characters": ["Toon Link", "Moblins"],
-      "location": "Treasure Room"
-    },
-    {
-      "page_number": 16,
-      "latin_text": "Moblīnī ex omnī ōstiō cucurrērunt. \"Capite eum!\" clāmāvērunt.",
-      "english_text": "Moblins ran from every door. \"Get him!\" they shouted.",
-      "image_prompt": "Link clutching the treasure, surrounded by Moblin silhouettes pouring in from corridors and doors. Dramatic low-angle shot. Torchlight, spears, angry pig faces.",
-      "characters": ["Toon Link", "Moblins"],
-      "location": "Fortress Interior"
-    },
-    {
-      "page_number": 17,
-      "latin_text": "Link celeriter cucurrit! Moblīnī eum secūtī sunt.",
-      "english_text": "Link ran fast! The Moblins chased him.",
-      "image_prompt": "Dynamic chase scene -- Link sprinting down a stone corridor, treasure under one arm, Moblins behind him with spears. Motion lines, dramatic angle. Wind Waker action energy.",
-      "characters": ["Toon Link", "Moblins"],
-      "location": "Fortress Interior"
-    },
-    {
-      "page_number": 18,
-      "latin_text": "Link mare vīdit! Nāvis infrā erat!",
-      "english_text": "Link saw the sea! The ship was below!",
-      "image_prompt": "Link running along a high fortress wall, ocean and moonlight visible through a large arched window. Moblins still behind him but falling behind. The pirate ship is visible far below on the water.",
-      "characters": ["Toon Link", "Moblins"],
-      "location": "Fortress Walls"
-    },
-    {
-      "page_number": 19,
-      "latin_text": "Moblīnī prope erant. Link mare dēspexit. Dēsiluit!",
-      "english_text": "The Moblins were close. Link looked down at the sea. He jumped!",
-      "image_prompt": "Link at the very edge of the fortress wall, looking down at the ocean far below. Behind him, Moblins charge with spears. Dramatic moment of decision -- the wind blows his cap and tunic.",
-      "characters": ["Toon Link", "Moblins"],
-      "location": "Fortress Walls"
-    },
-    {
-      "page_number": 20,
-      "latin_text": "Link per āera cecidit — in mare ruit!",
-      "english_text": "Link fell through the air — he plunged into the sea!",
-      "image_prompt": "Spectacular wide shot of Link falling through the air, treasure clutched to his chest, cape fluttering, the fortress above him and the ocean below. Moblins shake their fists from the wall. Moonlight, stars.",
-      "characters": ["Toon Link", "Moblins"],
-      "location": "Fortress Walls"
-    },
-    {
-      "page_number": 21,
-      "latin_text": "Tetra Link in nāvem trāxit. \"Fēcistī!\" inquit.",
-      "english_text": "Tetra pulled Link onto the ship. \"You did it!\" she said.",
-      "image_prompt": "Tetra reaching over the side of the ship to pull a dripping-wet, grinning Link aboard. He holds the golden treasure up triumphantly with one hand. The pirate crew cheers in the background.",
+      "latin_text": "Tetra Link ē marī trāxit. Nihil habēbat.",
+      "english_text": "Tetra pulled Link from the sea. He had nothing.",
+      "image_prompt": "Tetra reaching over the ship railing to haul a soaking wet, miserable Link aboard. He's dripping, head down, hands empty. No treasure. His cap is gone. He looks small and defeated.",
       "characters": ["Toon Link", "Tetra"],
       "location": "Pirate Ship"
     },
     {
-      "page_number": 22,
-      "latin_text": "Nāvis in noctem nāvigāvit. Link rīsit. Fortis erat.",
-      "english_text": "The ship sailed away into the night. Link smiled. He was brave.",
-      "image_prompt": "Wide final shot of the pirate ship sailing away from the fortress under a big moon and starry sky. Link sits on the prow, small and happy, treasure glowing beside him. Peaceful, triumphant ending.",
+      "page_number": 12,
+      "latin_text": "Link sōlus sēdit. Arx obscūra et procul erat.",
+      "english_text": "Link sat alone. The fortress was dark and far away.",
+      "image_prompt": "Link sitting on the ship deck with his knees pulled up, arms wrapped around them. He stares at the dark fortress on the horizon. Moonlight on the water. He's alone in the frame — small, wet, scared. His cap is missing, making him look even more vulnerable.",
       "characters": ["Toon Link"],
+      "location": "Pirate Ship"
+    },
+    {
+      "page_number": 13,
+      "latin_text": "Moblīnōs meminit. Redīre nōlēbat.",
+      "english_text": "He remembered the Moblins. He did not want to go back.",
+      "image_prompt": "Close-up of Link's face, eyes wide with fear. Above him, a thought-cloud shows the Moblins grabbing him — big pig faces, spears, angry eyes. Link's hands grip his own arms. He's shaking slightly.",
+      "characters": ["Toon Link"],
+      "location": "Pirate Ship"
+    },
+    {
+      "page_number": 14,
+      "latin_text": "Tetra iuxtā eum sēdit. \"Iterum temptā,\" inquit lēniter.",
+      "english_text": "Tetra sat next to him. \"You can try again,\" she said quietly.",
+      "image_prompt": "Tetra sits down beside Link on the deck. She's not looking at him directly — she looks out at the sea. Her voice is gentle, not commanding. Link glances at her. Moonlight on both of them. Two kids on a big ocean.",
+      "characters": ["Toon Link", "Tetra"],
+      "location": "Pirate Ship"
+    },
+    {
+      "page_number": 15,
+      "latin_text": "Link arcem spectāvit. Adhūc timēbat. Sed surrēxit.",
+      "english_text": "Link looked at the fortress. He was still afraid. But he stood up.",
+      "image_prompt": "Link rising to his feet on the ship deck, facing the fortress. His fists are clenched at his sides but his knees are shaking. His face shows fear AND determination together — not one replacing the other. Tetra watches from behind him. The fortress looms dark ahead.",
+      "characters": ["Toon Link", "Tetra"],
+      "location": "Pirate Ship"
+    },
+    {
+      "page_number": 16,
+      "latin_text": "Iterum sē in doliō cēlāvit. Iterum per āera volāvit!",
+      "english_text": "Link hid in a barrel again. Again he flew through the air!",
+      "image_prompt": "Same barrel-launch as page 3, but Link's expression is different — not excited, but grimly determined, jaw set. The fortress ahead. Same journey, different Link. His cap is back on.",
+      "characters": ["Toon Link"],
+      "location": "Pirate Ship"
+    },
+    {
+      "page_number": 17,
+      "latin_text": "Iterum in arcem cecidit. Hāc vice diūtius exspectāvit.",
+      "english_text": "Again he landed in the fortress. This time he waited longer.",
+      "image_prompt": "Link inside the barrel in the courtyard — same as page 4. But this time he waits patiently, watching a Moblin patrol pass by completely before moving. His eyes track them carefully. He's learning.",
+      "characters": ["Toon Link", "Moblins"],
+      "location": "Fortress Courtyard"
+    },
+    {
+      "page_number": 18,
+      "latin_text": "Iterum lūx magna vēnit. Link dolium super sē posuit!",
+      "english_text": "Again the big light came. Link put a barrel over himself!",
+      "image_prompt": "Link lifting a barrel over his head to wear it like a shell, his little legs sticking out the bottom. The searchlight beam sweeps toward him. Funny, classic Wind Waker stealth moment — but now it's a trick he learned from last time.",
+      "characters": ["Toon Link"],
+      "location": "Fortress Courtyard"
+    },
+    {
+      "page_number": 19,
+      "latin_text": "Praeter Moblīnōs ambulāvit! Sōlum dolium vīdērunt.",
+      "english_text": "He walked right past the Moblins! They saw only a barrel.",
+      "image_prompt": "Link-in-a-barrel walking casually past two confused Moblins. One Moblin leans forward, squinting at the barrel that has legs. The other scratches its head. Comedic beat — Link's eyes gleam through a crack in the barrel.",
+      "characters": ["Toon Link", "Moblins"],
+      "location": "Fortress Interior"
+    },
+    {
+      "page_number": 20,
+      "latin_text": "Link thēsaurum invēnit. Iterum arcam aperuit. Tacitē, hāc vice.",
+      "english_text": "Link found the treasure. Again he opened the chest. Quietly this time.",
+      "image_prompt": "Link carefully, slowly opening the treasure chest, both hands easing the lid up. He winces, bracing for noise. Golden light seeps out but he controls it. His whole body is tense with care. He learned from last time.",
+      "characters": ["Toon Link"],
+      "location": "Treasure Room"
+    },
+    {
+      "page_number": 21,
+      "latin_text": "Link tacitē ex arce rēpsit. Thēsaurum arte tenēbat.",
+      "english_text": "Link crept out of the fortress. He held the treasure tight.",
+      "image_prompt": "Link sneaking along the fortress wall toward an opening, treasure clutched to his chest with both arms. Moblins visible in the distance, oblivious. He moves carefully, staying in shadow. Moonlight ahead shows the way out.",
+      "characters": ["Toon Link", "Moblins"],
+      "location": "Fortress Walls"
+    },
+    {
+      "page_number": 22,
+      "latin_text": "In mare dēsiluit. Hāc vice rīdēbat.",
+      "english_text": "He jumped into the sea. This time he was smiling.",
+      "image_prompt": "Link leaping off the fortress wall into the ocean below — but unlike page 10, this is his CHOICE. He jumps freely, treasure in one arm, the other arm spread wide. He grins. The moon behind him. A mirror of page 10 but triumphant instead of humiliating.",
+      "characters": ["Toon Link"],
+      "location": "Fortress Walls"
+    },
+    {
+      "page_number": 23,
+      "latin_text": "Tetra eum iterum trāxit. \"Fēcistī!\" inquit.",
+      "english_text": "Tetra pulled him up again. \"You did it!\" she said.",
+      "image_prompt": "Tetra hauling Link aboard the ship — mirror of page 11, but now Link is grinning, holding the golden treasure up with one hand while dripping wet. Tetra is smiling too. The crew cheers behind them.",
+      "characters": ["Toon Link", "Tetra"],
+      "location": "Pirate Ship"
+    },
+    {
+      "page_number": 24,
+      "latin_text": "Link timēbat. Sed iterum temptāvit. Fortis erat.",
+      "english_text": "Link was afraid. But he tried again. He was brave.",
+      "image_prompt": "Wide final shot of the pirate ship sailing away from the fortress under a huge moon and starry sky. Link sits on the prow, small and happy, treasure glowing beside him. Peaceful, triumphant. The fortress shrinks behind them. The word 'brave' is EARNED — he earned it by failing and choosing to go back.",
+      "characters": ["Toon Link", "Tetra"],
       "location": "Pirate Ship"
     }
   ]

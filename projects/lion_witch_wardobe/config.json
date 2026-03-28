@@ -1627,5 +1627,14 @@
   "status": "pdf_built",
   "date_created": "2025-10-15T14:01:29.116858",
   "date_modified": "2025-10-15T15:12:50.746027",
-  "project_folder": "projects/lion_witch_wardobe"
+  "project_folder": "projects/lion_witch_wardobe",
+  "virtue_ratings": {
+    "prudentia": 1,
+    "iustitia": 3,
+    "fortitudo": 3,
+    "temperantia": 2,
+    "fides": 4,
+    "spes": 3,
+    "caritas": 5
+  }
 }

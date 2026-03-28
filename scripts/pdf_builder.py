@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from book_schemas import BookTranslation
 
 
-def generate_html(title_latin: str, title_english: str, translation: BookTranslation, project_folder: str) -> str:
+def generate_html(title_latin: str, title_english: str, translation: BookTranslation, project_folder: str, config: dict = None) -> str:
     """Generate HTML for the book."""
     html_parts = []
 
@@ -62,6 +62,7 @@ def generate_html(title_latin: str, title_english: str, translation: BookTransla
         .story-page img {
             max-width: 100%;
             max-height: 7in;
+            object-fit: contain;
             display: block;
             margin: 0 auto 0.5in auto;
         }
@@ -128,6 +129,17 @@ def generate_html(title_latin: str, title_english: str, translation: BookTransla
     </div>
 """)
 
+    # Attribution page for public domain adaptations
+    if config and config.get("public_domain_source"):
+        source = config["public_domain_source"]
+        html_parts.append(f"""
+    <div class="story-page" style="padding-top: 3in; text-align: center;">
+        <p style="font-size: 14pt; color: #7f8c8d;">Illustrations by {source['illustrator']}</p>
+        <p style="font-size: 12pt; color: #95a5a6;">from <em>{source['title']}</em> ({source.get('year', '')})</p>
+        <p style="font-size: 10pt; color: #bdc3c7;">{source.get('license', 'Public Domain')}</p>
+    </div>
+""")
+
     html_parts.append("""
 </body>
 </html>
@@ -172,7 +184,7 @@ def build_pdf(project_id: str) -> Path:
 
     # Generate HTML
     print(f"Building PDF: {title_english}")
-    html_content = generate_html(title_latin, title_english, translation, str(project_dir))
+    html_content = generate_html(title_latin, title_english, translation, str(project_dir), config=config)
 
     # Save HTML
     output_dir = project_dir / "output"
