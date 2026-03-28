@@ -1,0 +1,384 @@
+{
+  "title_latin": "Leo, Malefica et Armarium",
+  "title_english": "Lion, Witch, Wardobe",
+  "pages": [
+    {
+      "page_number": 1,
+      "latin_text": "Tempore Bellī Secundī Orbis Terrārum Petrus, Susanna, Edmundus et Lucia Pevensiē in domō Professōris habitābant.",
+      "english_text": "During World War II, Peter, Susan, Edmund, and Lucy Pevensie lived in the Professor's house.",
+      "image_prompt": "Four children arriving at a large old countryside house during wartime, with airplanes in distant sky, rainy atmosphere, warm interior light from windows, eye-level view centered on the group approaching the door, simple shapes and flat colors evoking safety amid chaos.",
+      "image_path": "projects/lion_witch_wardobe/images/page_01.png",
+      "characters": [
+        "Petrus",
+        "Susanna",
+        "Edmundus",
+        "Lucia"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 2,
+      "latin_text": "Diē pluviōsō Luciā in armārium intrāvit.",
+      "english_text": "On a rainy day, Lucy entered the wardrobe.",
+      "image_prompt": "Rainy day inside a dusty room, open wardrobe door with fur coats visible, window showing storm outside, slightly above eye-level focusing on the wardrobe, cool blues and grays with soft lighting.",
+      "image_path": "projects/lion_witch_wardobe/images/page_02.png",
+      "characters": [
+        "Lucia"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 3,
+      "latin_text": "Subitō in terram nivis cecidit.",
+      "english_text": "Suddenly she fell into the snowy land.",
+      "image_prompt": "Lucy tumbling through fur coats into a snowy forest, transition from dark wardrobe to bright white snow, dynamic falling pose, eye-level perspective capturing surprise, clean shapes with stark contrast.",
+      "image_path": "projects/lion_witch_wardobe/images/page_03.png",
+      "characters": [
+        "Lucia"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 4,
+      "latin_text": "Lampā lūcēns viam mōnstrābat.",
+      "english_text": "A glowing lamp showed the way.",
+      "image_prompt": "Snowy Narnian forest with a magical glowing lamppost in center, soft light illuminating snowflakes and trees, mysterious mood, centered composition at eye-level, gentle shading in cool whites and yellow glow.",
+      "image_path": "projects/lion_witch_wardobe/images/page_04.png",
+      "characters": [
+        "Lucia"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 5,
+      "latin_text": "Faunus Tumnus Luciam ad theam invītāvit.",
+      "english_text": "Faun Tumnus invited Lucy to tea.",
+      "image_prompt": "Cozy faun's cave entrance in snowy woods, table set with teapot and scones, welcoming warm firelight contrasting cold outside, eye-level view on invitation gesture, bright flat colors inside.",
+      "image_path": "projects/lion_witch_wardobe/images/page_05.png",
+      "characters": [
+        "Lucia",
+        "Faunus Tumnus"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 6,
+      "latin_text": "Dīxit Albam Maleficam semper hiemem facere et diem Nātālem vetāre.",
+      "english_text": "He said the White Witch makes eternal winter and forbids Christmas.",
+      "image_prompt": "Inside cave, faun explaining with sad expression over tea, window showing endless snow, somber mood with dim firelight, centered on conversation, simple shading.",
+      "image_path": "projects/lion_witch_wardobe/images/page_06.png",
+      "characters": [
+        "Lucia",
+        "Faunus Tumnus",
+        "Alba Malefica"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 7,
+      "latin_text": "Posteā Luciam domum redīre iussit, quamquam id facere nōn licēbat.",
+      "english_text": "Afterward he ordered Lucy to return home, though it was not allowed.",
+      "image_prompt": "Faun helping Lucy toward wardrobe exit, conflicted expression, snowy path outside, tense but kind mood, eye-level on farewell, soft warm cave light.",
+      "image_path": "projects/lion_witch_wardobe/images/page_07.png",
+      "characters": [
+        "Lucia",
+        "Faunus Tumnus"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 8,
+      "latin_text": "Frātrēs eī nōn crēdidērunt.",
+      "english_text": "Her siblings did not believe her.",
+      "image_prompt": "Children in house room, Lucy telling story excitedly while others laugh disbelievingly, wardrobe in background, indoor lighting, centered on group skepticism, playful colors.",
+      "image_path": "projects/lion_witch_wardobe/images/page_08.png",
+      "characters": [
+        "Petrus",
+        "Susanna",
+        "Edmundus",
+        "Lucia"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 9,
+      "latin_text": "Mox omnēs armārium intrāvērunt et Narniam vēram invēnērunt.",
+      "english_text": "Soon all entered the wardrobe and found real Narnia.",
+      "image_prompt": "Four children pushing through coats into snowy forest, amazed faces emerging, lamppost visible, dynamic entry action, eye-level perspective, bright snow contrast.",
+      "image_path": "projects/lion_witch_wardobe/images/page_09.png",
+      "characters": [
+        "Petrus",
+        "Susanna",
+        "Edmundus",
+        "Lucia"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 10,
+      "latin_text": "Edmundus clam discessit et Maleficam in currū ā rēnis tractō convenit.",
+      "english_text": "Edmund sneaked away and met the Witch in her reindeer-pulled sledge.",
+      "image_prompt": "Snowy path with reindeer sledge approaching, mysterious winter fog, centered on meeting moment, cold blue lighting with sledge lanterns, slightly above view for drama.",
+      "image_path": "projects/lion_witch_wardobe/images/page_10.png",
+      "characters": [
+        "Edmundus",
+        "Alba Malefica"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 11,
+      "latin_text": "Malefica Edmundō dēliciās Turcīcās dedit.",
+      "english_text": "The Witch gave Edmund Turkish Delights.",
+      "image_prompt": "Inside sledge, Witch offering tray of sweets, tempting atmosphere, close-up on exchange, dim interior light with snowy backdrop, eye-level focus.",
+      "image_path": "projects/lion_witch_wardobe/images/page_11.png",
+      "characters": [
+        "Edmundus",
+        "Alba Malefica"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 12,
+      "latin_text": "Prōmīsit eum rēgem factūram esse, sī frātrēs trāderet.",
+      "english_text": "She promised to make him king if he betrayed his siblings.",
+      "image_prompt": "Witch whispering promise, Edmund eating sweets greedily, sly mood in sledge interior, centered composition, shadowy lighting emphasizing temptation.",
+      "image_path": "projects/lion_witch_wardobe/images/page_12.png",
+      "characters": [
+        "Edmundus",
+        "Alba Malefica"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 13,
+      "latin_text": "Aliī ad domum Castorum vēnērunt.",
+      "english_text": "The others came to the Beavers' house.",
+      "image_prompt": "Cozy beaver dam by frozen river, children arriving at door, welcoming warm light from inside, snowy exterior, eye-level on approach, gentle colors.",
+      "image_path": "projects/lion_witch_wardobe/images/page_13.png",
+      "characters": [
+        "Petrus",
+        "Susanna",
+        "Lucia",
+        "Castor"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 14,
+      "latin_text": "Ibi audiērunt Aslanem, leōnem magnum, redīre.",
+      "english_text": "There they heard the great lion Aslan was returning.",
+      "image_prompt": "Inside dam, beavers telling story around table, children listening eagerly, map or prophecy shown, cozy firelight, centered on excited faces.",
+      "image_path": "projects/lion_witch_wardobe/images/page_14.png",
+      "characters": [
+        "Petrus",
+        "Susanna",
+        "Lucia",
+        "Castor",
+        "Aslan"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 15,
+      "latin_text": "In viā Pater Nātālis venit.",
+      "english_text": "On the way Father Christmas came.",
+      "image_prompt": "Snowy path with sleigh bells, Father Christmas approaching on reindeer sleigh, hopeful mood breaking winter gloom, eye-level on arrival, festive glow.",
+      "image_path": "projects/lion_witch_wardobe/images/page_15.png",
+      "characters": [
+        "Pater Natalis"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 16,
+      "latin_text": "Dēdit Petrō gladium et clipeum, Susannae arcum et sagittās, Luciae pōtiōnem sānantem et pūgiōnem.",
+      "english_text": "He gave Peter a sword and shield, Susan a bow and arrows, Lucy a healing potion and dagger.",
+      "image_prompt": "Father Christmas handing out gifts in snowy clearing, children receiving weapons excitedly, practical tools gleaming, centered action, bright holiday lighting.",
+      "image_path": "projects/lion_witch_wardobe/images/page_16.png",
+      "characters": [
+        "Petrus",
+        "Susanna",
+        "Lucia",
+        "Pater Natalis"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 17,
+      "latin_text": "Maleficae Edmundī prōditiōne eum cēpit.",
+      "english_text": "By Edmund's betrayal the Witch captured him.",
+      "image_prompt": "Icy castle interior, Witch's minions dragging Edmund in chains, dark and cold atmosphere, dramatic shadows, eye-level on capture moment.",
+      "image_path": "projects/lion_witch_wardobe/images/page_17.png",
+      "characters": [
+        "Edmundus",
+        "Alba Malefica"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 18,
+      "latin_text": "Aslan aliōs ad Mēnsam Lapideam vocāvit. Malefica dīxit Edmundō mortem merērī.",
+      "english_text": "Aslan called the others to the Stone Table. The Witch said Edmund deserved death.",
+      "image_prompt": "Stone Table camp with Aslan welcoming children, Witch confronting group in background, tense standoff, firelight and moonlight mix, centered on table.",
+      "image_path": "projects/lion_witch_wardobe/images/page_18.png",
+      "characters": [
+        "Petrus",
+        "Susanna",
+        "Lucia",
+        "Aslan",
+        "Alba Malefica",
+        "Edmundus"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 19,
+      "latin_text": "Aslan sē prō eō moritūrum esse dīxit. Mediā nocte Aslan occīsus est.",
+      "english_text": "Aslan said he would die for him. At midnight Aslan was killed.",
+      "image_prompt": "Dramatic midnight scene at Stone Table, Aslan lying sacrificed, Witch triumphant, somber dark mood with stark shadows, slightly above view.",
+      "image_path": "projects/lion_witch_wardobe/images/page_19.png",
+      "characters": [
+        "Aslan",
+        "Alba Malefica"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 20,
+      "latin_text": "Lucia et Susanna flēbant.",
+      "english_text": "Lucy and Susan wept.",
+      "image_prompt": "Sisters crying beside the Stone Table, dark night with faint stars, emotional grief focus, close eye-level composition, soft shading.",
+      "image_path": "projects/lion_witch_wardobe/images/page_20.png",
+      "characters": [
+        "Lucia",
+        "Susanna"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 21,
+      "latin_text": "Aurōra venit. Magīa profundior Aslanem revocāvit.",
+      "english_text": "Dawn came. Deeper magic revived Aslan.",
+      "image_prompt": "Sunrise over Stone Table, Aslan rising alive with cracking stone, joyful light breaking darkness, centered resurrection action, warm dawn colors.",
+      "image_path": "projects/lion_witch_wardobe/images/page_21.png",
+      "characters": [
+        "Aslan"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 22,
+      "latin_text": "Vīvit iterum! Currit ad castellum Maleficae.",
+      "english_text": "He lives again! He runs to the Witch's castle.",
+      "image_prompt": "Aslan charging toward icy castle in dawn light, dynamic running pose, hopeful energy, wide eye-level view of approach, brightening sky.",
+      "image_path": "projects/lion_witch_wardobe/images/page_22.png",
+      "characters": [
+        "Aslan",
+        "Alba Malefica"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 23,
+      "latin_text": "Statuās lapideās tangit et vīvās facit.",
+      "english_text": "He touches the stone statues and makes them live.",
+      "image_prompt": "Inside castle, Aslan breathing life into stone creatures awakening joyfully, magical transformation sparks, centered on revival, warm magic glow.",
+      "image_path": "projects/lion_witch_wardobe/images/page_23.png",
+      "characters": [
+        "Aslan"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 24,
+      "latin_text": "In proeliō apud flūmen Petrus fortiter pugnat.",
+      "english_text": "In the battle by the river Peter fights bravely.",
+      "image_prompt": "Chaotic river battle scene, Peter swinging sword against dark forces, action-packed but simple composition, eye-level on combat, dramatic daylight.",
+      "image_path": "projects/lion_witch_wardobe/images/page_24.png",
+      "characters": [
+        "Petrus"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 25,
+      "latin_text": "Aslan baculum Maleficae frangit et eam vincit.",
+      "english_text": "Aslan breaks the Witch's wand and defeats her.",
+      "image_prompt": "Climactic moment, Aslan shattering wand and overpowering Witch, triumphant pose, epic center focus, bright victory lighting with debris.",
+      "image_path": "projects/lion_witch_wardobe/images/page_25.png",
+      "characters": [
+        "Aslan",
+        "Alba Malefica"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 26,
+      "latin_text": "Nix liquēscit, et vēr venit.",
+      "english_text": "Snow melts, and spring comes.",
+      "image_prompt": "Winter transforming to spring, melting snow revealing flowers and green, joyful nature rebirth, wide eye-level landscape, vibrant shifting colors.",
+      "image_path": "projects/lion_witch_wardobe/images/page_26.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 27,
+      "latin_text": "Aslan eōs apud Cair Paravel corōnat.",
+      "english_text": "Aslan crowns them at Cair Paravel.",
+      "image_prompt": "Grand castle ceremony by sea, Aslan placing crowns, regal atmosphere, centered on crowning, sunny warm lighting.",
+      "image_path": "projects/lion_witch_wardobe/images/page_27.png",
+      "characters": [
+        "Petrus",
+        "Susanna",
+        "Edmundus",
+        "Lucia",
+        "Aslan"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 28,
+      "latin_text": "Petrus Magnificus, Susanna Lenis, Edmundus Iūstus, Luciā Valēns fīunt.",
+      "english_text": "They become Peter the Magnificent, Susan the Gentle, Edmund the Just, Lucy the Valiant.",
+      "image_prompt": "Four children on thrones in castle hall, proud kingly poses, celebratory mood, eye-level on group, golden hour light.",
+      "image_path": "projects/lion_witch_wardobe/images/page_28.png",
+      "characters": [
+        "Petrus",
+        "Susanna",
+        "Edmundus",
+        "Lucia"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 29,
+      "latin_text": "Post multōs annōs cervum album vident et eum sequuntur. Per armārium redeunt in Angliam, paulō postquam discesserant.",
+      "english_text": "Years later they see a white stag and follow it. Through the wardrobe they return to England, shortly after they left.",
+      "image_prompt": "Forest chase of white stag leading to glowing wardrobe portal, children riding horses, magical return transition, dynamic eye-level action, mystical light.",
+      "image_path": "projects/lion_witch_wardobe/images/page_29.png",
+      "characters": [
+        "Petrus",
+        "Susanna",
+        "Edmundus",
+        "Lucia"
+      ],
+      "location": null
+    },
+    {
+      "page_number": 30,
+      "latin_text": "Professor rīdet et dīcit: “Narnia iterum vōs vocābit.”",
+      "english_text": "The Professor smiles and says: 'Narnia will call you again.'",
+      "image_prompt": "Children back in house with Professor, wardrobe closed, knowing smiles all around, cozy room lighting, centered on group conversation, warm closure mood.",
+      "image_path": "projects/lion_witch_wardobe/images/page_30.png",
+      "characters": [
+        "Petrus",
+        "Susanna",
+        "Edmundus",
+        "Lucia",
+        "Professor"
+      ],
+      "location": null
+    }
+  ]
+}

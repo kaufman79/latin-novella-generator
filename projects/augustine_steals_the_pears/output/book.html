@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Palatino', 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .title-page {
+            text-align: center;
+            page-break-after: always;
+            padding-top: 3in;
+        }
+
+        .title-page h1 {
+            font-size: 36pt;
+            margin-bottom: 0.5in;
+            color: #2c3e50;
+        }
+
+        .title-page .english {
+            font-size: 24pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page {
+            page-break-after: always;
+            text-align: center;
+        }
+
+        .story-page img {
+            max-width: 100%;
+            max-height: 7in;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 0.5in auto;
+        }
+
+        .story-page .latin-text {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0.3in 0;
+        }
+
+        .story-page .english-text {
+            font-size: 14pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page .page-number {
+            position: absolute;
+            bottom: 0.3in;
+            right: 0.3in;
+            font-size: 12pt;
+            color: #bdc3c7;
+        }
+
+        .virtue-badge {
+            display: inline-block;
+            border: 2px solid #8e7c5a;
+            border-radius: 20px;
+            padding: 4px 18px;
+            font-size: 13pt;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            color: #8e7c5a;
+            background-color: rgba(255, 255, 255, 0.75);
+            margin-top: 15px;
+        }
+
+        .inside-cover {
+            page-break-after: always;
+            padding-top: 2.5in;
+            text-align: center;
+        }
+
+        .inside-cover h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            margin-bottom: 0.4in;
+            border-bottom: 1px solid #d5c9b1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .virtue-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 8px 0;
+            font-size: 12pt;
+        }
+
+        .virtue-name {
+            width: 140px;
+            text-align: right;
+            padding-right: 15px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            color: #5a5a5a;
+        }
+
+        .virtue-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .virtue-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1.5px solid #8e7c5a;
+        }
+
+        .virtue-dot.filled {
+            background-color: #8e7c5a;
+        }
+
+        .virtue-dot.empty {
+            background-color: transparent;
+        }
+
+        .glossary-page {
+            page-break-after: always;
+            padding-top: 0.5in;
+        }
+
+        .glossary-page h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            text-align: center;
+            margin-bottom: 0.3in;
+            border-bottom: 1px solid #d5c9b1;
+            padding-bottom: 6px;
+        }
+
+        .glossary-entry {
+            margin: 6px 0;
+            padding: 4px 0;
+            border-bottom: 1px dotted #e0d9cc;
+        }
+
+        .glossary-latin {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-english {
+            font-size: 10pt;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="story-page" style="position: relative;">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/cover.png" alt="Cover" style="max-height: 10in; width: 100%;">
+        <div style="position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); text-align: center; width: 90%; background-color: rgba(255, 255, 255, 0.65); padding: 20px; border-radius: 10px;">
+            <h1 style="font-size: 48pt; margin: 0; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Augustīnus et Pirus</h1>
+            <p style="font-size: 28pt; margin: 10px 0 0 0; color: #7f8c8d; font-style: italic;">Augustine steals the pears</p>
+            <div class='virtue-badge'>Temperantia</div>
+        </div>
+    </div>
+
+
+    <div class="inside-cover">
+        <h2>Virtūtēs</h2>
+        <div class="virtue-row"><span class="virtue-name">Prudentia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Iūstitia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fortitūdō</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Temperantia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span></span></div><div class="virtue-row"><span class="virtue-name">Fidēs</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Spēs</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Cāritās</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_01.png" alt="Page 1">
+        <p class="latin-text">Augustīnus erat puer laetus.</p>
+        <p class="english-text">Augustine was a happy boy.</p>
+        <span class="page-number">1</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_02.png" alt="Page 2">
+        <p class="latin-text">Amābat currere et rīdēre cum amīcīs.</p>
+        <p class="english-text">He loved to run and laugh with friends.</p>
+        <span class="page-number">2</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_03.png" alt="Page 3">
+        <p class="latin-text">Ūnā nocte, lūna clāra fulsit.</p>
+        <p class="english-text">One night, the moon shone brightly.</p>
+        <span class="page-number">3</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_04.png" alt="Page 4">
+        <p class="latin-text">Pirus stābat trans saepem.</p>
+        <p class="english-text">A pear tree stood beyond the fence.</p>
+        <span class="page-number">4</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_05.png" alt="Page 5">
+        <p class="latin-text">Pira erant rotunda et lucida.</p>
+        <p class="english-text">The pears were round and shiny.</p>
+        <span class="page-number">5</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_06.png" alt="Page 6">
+        <p class="latin-text">"Capiāmus pira!" dixērunt amīcī.</p>
+        <p class="english-text">"Let’s take the pears!" said the friends.</p>
+        <span class="page-number">6</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_07.png" alt="Page 7">
+        <p class="latin-text">Conscientia Augustīnī susurrāvit, "Nōlī fūrārī."</p>
+        <p class="english-text">Augustine’s conscience whispered, "Don’t steal."</p>
+        <span class="page-number">7</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_08.png" alt="Page 8">
+        <p class="latin-text">Sed nōn audīvit.</p>
+        <p class="english-text">But he didn’t listen.</p>
+        <span class="page-number">8</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_09.png" alt="Page 9">
+        <p class="latin-text">Tacitē trans saepem iērunt.</p>
+        <p class="english-text">Silently, they went over the fence.</p>
+        <span class="page-number">9</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_10.png" alt="Page 10">
+        <p class="latin-text">Arborem agitāvērunt. Pira cecidērunt!</p>
+        <p class="english-text">They shook the tree. Pears fell!</p>
+        <span class="page-number">10</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_11.png" alt="Page 11">
+        <p class="latin-text">Frūctūs abstulērunt et fūgērunt,</p>
+        <p class="english-text">They took the fruit and fled,</p>
+        <span class="page-number">11</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_12.png" alt="Page 12">
+        <p class="latin-text">et rīdentēs sub stēllīs.</p>
+        <p class="english-text">and laughing under the stars.</p>
+        <span class="page-number">12</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_13.png" alt="Page 13">
+        <p class="latin-text">Sed pira nōn erant bona.</p>
+        <p class="english-text">But the pears were not good.</p>
+        <span class="page-number">13</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_14.png" alt="Page 14">
+        <p class="latin-text">Pira porcīs iēcērunt.</p>
+        <p class="english-text">They threw the pears to the pigs.</p>
+        <span class="page-number">14</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_15.png" alt="Page 15">
+        <p class="latin-text">Porcī erant laetī. Augustīnus nōn erat laetus.</p>
+        <p class="english-text">The pigs were happy. Augustine was not.</p>
+        <span class="page-number">15</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_16.png" alt="Page 16">
+        <p class="latin-text">Conscientia eius gravis erat.</p>
+        <p class="english-text">His conscience was heavy.</p>
+        <span class="page-number">16</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_17.png" alt="Page 17">
+        <p class="latin-text">Domum iit et cubitum iit.</p>
+        <p class="english-text">He went home and to bed.</p>
+        <span class="page-number">17</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_18.png" alt="Page 18">
+        <p class="latin-text">Sed dormīre nōn poterat.</p>
+        <p class="english-text">But he couldn’t sleep.</p>
+        <span class="page-number">18</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_19.png" alt="Page 19">
+        <p class="latin-text">Tacitē sēdit et ōrāvit: "Domine meus, doleō fūrārī pira et nōn audīre vōcem interiōrem."</p>
+        <p class="english-text">He sat quietly and prayed: "My Lord, I’m sorry for stealing pears and not listening to my inner voice."</p>
+        <span class="page-number">19</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_20.png" alt="Page 20">
+        <p class="latin-text">Augustīnus amōrem Deī in corde sēnsit. Deus eī iamprīdem remīserat.</p>
+        <p class="english-text">Augustine felt God’s love in his heart. God had forgiven him long ago.</p>
+        <span class="page-number">20</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_21.png" alt="Page 21">
+        <p class="latin-text">Cum dīcimus, "Mē paenitet, Deus," Deus dīcit, "Remittō tibi!"</p>
+        <p class="english-text">When we say, "I’m sorry, God," God says, "I forgive you!"</p>
+        <span class="page-number">21</span>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Palatino', 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .title-page {
+            text-align: center;
+            page-break-after: always;
+            padding-top: 3in;
+        }
+
+        .title-page h1 {
+            font-size: 36pt;
+            margin-bottom: 0.5in;
+            color: #2c3e50;
+        }
+
+        .title-page .english {
+            font-size: 24pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page {
+            page-break-after: always;
+            text-align: center;
+        }
+
+        .story-page img {
+            max-width: 100%;
+            max-height: 7in;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 0.5in auto;
+        }
+
+        .story-page .latin-text {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0.3in 0;
+        }
+
+        .story-page .english-text {
+            font-size: 14pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page .page-number {
+            position: absolute;
+            bottom: 0.3in;
+            right: 0.3in;
+            font-size: 12pt;
+            color: #bdc3c7;
+        }
+
+        .virtue-badge {
+            display: inline-block;
+            border: 2px solid #8e7c5a;
+            border-radius: 20px;
+            padding: 4px 18px;
+            font-size: 13pt;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            color: #8e7c5a;
+            background-color: rgba(255, 255, 255, 0.75);
+            margin-top: 15px;
+        }
+
+        .inside-cover {
+            page-break-after: always;
+            padding-top: 2.5in;
+            text-align: center;
+        }
+
+        .inside-cover h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            margin-bottom: 0.4in;
+            border-bottom: 1px solid #d5c9b1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .virtue-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 8px 0;
+            font-size: 12pt;
+        }
+
+        .virtue-name {
+            width: 140px;
+            text-align: right;
+            padding-right: 15px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            color: #5a5a5a;
+        }
+
+        .virtue-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .virtue-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1.5px solid #8e7c5a;
+        }
+
+        .virtue-dot.filled {
+            background-color: #8e7c5a;
+        }
+
+        .virtue-dot.empty {
+            background-color: transparent;
+        }
+
+        .glossary-page {
+            page-break-after: always;
+            padding-top: 0.5in;
+        }
+
+        .glossary-page h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            text-align: center;
+            margin-bottom: 0.3in;
+            border-bottom: 1px solid #d5c9b1;
+            padding-bottom: 6px;
+        }
+
+        .glossary-entry {
+            margin: 6px 0;
+            padding: 4px 0;
+            border-bottom: 1px dotted #e0d9cc;
+        }
+
+        .glossary-latin {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-english {
+            font-size: 10pt;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="story-page" style="position: relative;">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/cover.png" alt="Cover" style="max-height: 10in; width: 100%;">
+        <div style="position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); text-align: center; width: 90%; background-color: rgba(255, 255, 255, 0.65); padding: 20px; border-radius: 10px;">
+            <h1 style="font-size: 48pt; margin: 0; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Cicādae et Dracō</h1>
+            <p style="font-size: 28pt; margin: 10px 0 0 0; color: #7f8c8d; font-style: italic;">locusts and dragon</p>
+            <div class='virtue-badge'>Fortitūdō</div>
+        </div>
+    </div>
+
+
+    <div class="inside-cover">
+        <h2>Virtūtēs</h2>
+        <div class="virtue-row"><span class="virtue-name">Prudentia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Iūstitia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fortitūdō</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Temperantia</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fidēs</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Spēs</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Cāritās</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_01.png" alt="Page 1">
+        <p class="latin-text">Multae cicādae ūnō diē taedēbant. Nihil novum erat.</p>
+        <p class="english-text">Many cicadas were bored one day. Nothing was new.</p>
+        <span class="page-number">1</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_02.png" alt="Page 2">
+        <p class="latin-text">Itaque omnēs ad oppidum proximum volāvērunt.</p>
+        <p class="english-text">So they all flew to the nearby town.</p>
+        <span class="page-number">2</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_03.png" alt="Page 3">
+        <p class="latin-text">Ibī hominēs timidi et trīstēs erant.</p>
+        <p class="english-text">There, the people were afraid and sad.</p>
+        <span class="page-number">3</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_04.png" alt="Page 4">
+        <p class="latin-text">Dracō eōs terrēbat. Habitābat in monte prope oppidum. Caverna erat magna et obscūra.</p>
+        <p class="english-text">A dragon scared them. It lived in a mountain near the town. The cave was large and dark.</p>
+        <span class="page-number">4</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_05.png" alt="Page 5">
+        <p class="latin-text">Cicādae inter sē dīxērunt: “Eāmus! Dracōnem vincāmus!”</p>
+        <p class="english-text">The cicadas said to each other: 'Let’s go! Let’s defeat the dragon!'</p>
+        <span class="page-number">5</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_06.png" alt="Page 6">
+        <p class="latin-text">Itaque omnēs ad montem volāvērunt. Ventus fortis erat, sed nōn timuērunt.</p>
+        <p class="english-text">So they all flew to the mountain. The wind was strong, but they were not afraid.</p>
+        <span class="page-number">6</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_07.png" alt="Page 7">
+        <p class="latin-text">Cicādae intrāvērunt cavernam. Tenebrās vīdērunt et nihil aliud.</p>
+        <p class="english-text">The cicadas entered the cave. They saw darkness and nothing else.</p>
+        <span class="page-number">7</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_08.png" alt="Page 8">
+        <p class="latin-text">Per obscūra forāmina et longa itinera ambulāvērunt.</p>
+        <p class="english-text">They walked through dark tunnels and long paths.</p>
+        <span class="page-number">8</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_09.png" alt="Page 9">
+        <p class="latin-text">Tandem invēnērunt cubīle dracōnis. Dracō dormiēbat super acervum aurī.</p>
+        <p class="english-text">At last they found the dragon’s lair. The dragon was sleeping on a pile of gold.</p>
+        <span class="page-number">9</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_10.png" alt="Page 10">
+        <p class="latin-text">Aurum et gemmae fulgēbant. Dracō ruber erat et dentēs magnī erant eī.</p>
+        <p class="english-text">The gold and gems sparkled. The dragon was red and had large teeth.</p>
+        <span class="page-number">10</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_11.png" alt="Page 11">
+        <p class="latin-text">Cicādae super dracōnem volāvērunt. Eum pungēre temptāvērunt, sed frūstrā.</p>
+        <p class="english-text">The cicadas flew above the dragon. They tried to sting it, but in vain.</p>
+        <span class="page-number">11</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_12.png" alt="Page 12">
+        <p class="latin-text">Dracō excitātus est et īrātus factus est. Rugīvit valdē et ālās mōvit.</p>
+        <p class="english-text">The dragon woke up and became angry. It roared loudly and moved its wings.</p>
+        <span class="page-number">12</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_13.png" alt="Page 13">
+        <p class="latin-text">Per antrum volāvit, mordēns et ungues vibrāns. Multās cicādās occīdit.</p>
+        <p class="english-text">It flew through the cave, biting and swinging its claws. It killed many cicadas.</p>
+        <span class="page-number">13</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_14.png" alt="Page 14">
+        <p class="latin-text">Ceterae cicādae tremēbant et consilium quaesīvērunt.</p>
+        <p class="english-text">The remaining cicadas trembled and sought a plan.</p>
+        <span class="page-number">14</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_15.png" alt="Page 15">
+        <p class="latin-text">Antōnius, una cicāda fortis, dīxit: “Strīdāmus omnēs simul!”</p>
+        <p class="english-text">Antonius, one brave cicada, said: 'Let’s all buzz together!'</p>
+        <span class="page-number">15</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_16.png" alt="Page 16">
+        <p class="latin-text">Antōnius prīmus strīdit. Deinde omnēs cicādae fortiter strīdēbant.</p>
+        <p class="english-text">Antonius buzzed first. Then all the cicadas buzzed loudly.</p>
+        <span class="page-number">16</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_17.png" alt="Page 17">
+        <p class="latin-text">Sonus magnus tōtam cavernam implēvit. Aurēs dracōnis doluērunt.</p>
+        <p class="english-text">A great sound filled the whole cave. The dragon’s ears hurt.</p>
+        <span class="page-number">17</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_18.png" alt="Page 18">
+        <p class="latin-text">Dracō īnsānīvit et sine mente volāvit. In parietem cavernae volāvit et cecidit.</p>
+        <p class="english-text">The dragon went mad and flew without sense. It crashed into the cave wall and fell.</p>
+        <span class="page-number">18</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_19.png" alt="Page 19">
+        <p class="latin-text">Dracō mortuus est. Cicādae gāvīsae sunt.</p>
+        <p class="english-text">The dragon was dead. The cicadas rejoiced.</p>
+        <span class="page-number">19</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_20.png" alt="Page 20">
+        <p class="latin-text">Ad oppidum rediērunt et strīdēbant: “Dracō mortuus est!”</p>
+        <p class="english-text">They returned to the town and buzzed: 'The dragon is dead!'</p>
+        <span class="page-number">20</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_21.png" alt="Page 21">
+        <p class="latin-text">Hominēs laetī erant et grātiās ēgērunt.</p>
+        <p class="english-text">The people were happy and gave thanks.</p>
+        <span class="page-number">21</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_22.png" alt="Page 22">
+        <p class="latin-text">Aurum cēpērunt et inter sē dīvīsērunt.</p>
+        <p class="english-text">They took the gold and shared it among themselves.</p>
+        <span class="page-number">22</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/locusts_and_dragon/images/page_23.png" alt="Page 23">
+        <p class="latin-text">Omnēs laetī erant. Cicādae carmen laetum strīdēbant.</p>
+        <p class="english-text">Everyone was happy. The cicadas buzzed a joyful song.</p>
+        <span class="page-number">23</span>
+    </div>
+
+
+</body>
+</html>

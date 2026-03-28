@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Palatino', 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .title-page {
+            text-align: center;
+            page-break-after: always;
+            padding-top: 3in;
+        }
+
+        .title-page h1 {
+            font-size: 36pt;
+            margin-bottom: 0.5in;
+            color: #2c3e50;
+        }
+
+        .title-page .english {
+            font-size: 24pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page {
+            page-break-after: always;
+            text-align: center;
+        }
+
+        .story-page img {
+            max-width: 100%;
+            max-height: 7in;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 0.5in auto;
+        }
+
+        .story-page .latin-text {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0.3in 0;
+        }
+
+        .story-page .english-text {
+            font-size: 14pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page .page-number {
+            position: absolute;
+            bottom: 0.3in;
+            right: 0.3in;
+            font-size: 12pt;
+            color: #bdc3c7;
+        }
+
+        .virtue-badge {
+            display: inline-block;
+            border: 2px solid #8e7c5a;
+            border-radius: 20px;
+            padding: 4px 18px;
+            font-size: 13pt;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            color: #8e7c5a;
+            background-color: rgba(255, 255, 255, 0.75);
+            margin-top: 15px;
+        }
+
+        .inside-cover {
+            page-break-after: always;
+            padding-top: 2.5in;
+            text-align: center;
+        }
+
+        .inside-cover h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            margin-bottom: 0.4in;
+            border-bottom: 1px solid #d5c9b1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .virtue-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 8px 0;
+            font-size: 12pt;
+        }
+
+        .virtue-name {
+            width: 140px;
+            text-align: right;
+            padding-right: 15px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            color: #5a5a5a;
+        }
+
+        .virtue-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .virtue-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1.5px solid #8e7c5a;
+        }
+
+        .virtue-dot.filled {
+            background-color: #8e7c5a;
+        }
+
+        .virtue-dot.empty {
+            background-color: transparent;
+        }
+
+        .glossary-page {
+            page-break-after: always;
+            padding-top: 0.5in;
+        }
+
+        .glossary-page h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            text-align: center;
+            margin-bottom: 0.3in;
+            border-bottom: 1px solid #d5c9b1;
+            padding-bottom: 6px;
+        }
+
+        .glossary-entry {
+            margin: 6px 0;
+            padding: 4px 0;
+            border-bottom: 1px dotted #e0d9cc;
+        }
+
+        .glossary-latin {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-english {
+            font-size: 10pt;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="title-page">
+        <h1>None</h1>
+        <p class="english">The Enormous Turnip</p>
+        <div class='virtue-badge'>Fortitūdō</div>
+    </div>
+
+
+    <div class="inside-cover">
+        <h2>Virtūtēs</h2>
+        <div class="virtue-row"><span class="virtue-name">Prudentia</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Iūstitia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fortitūdō</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Temperantia</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fidēs</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Spēs</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Cāritās</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Avus sēmen sēvit.</p>
+        <p class="english-text">Grandfather planted a seed.</p>
+        <span class="page-number">1</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Rāpa crēvit. Crēvit et crēvit!</p>
+        <p class="english-text">The turnip grew. It grew and grew!</p>
+        <span class="page-number">2</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Rāpa INGĒNS erat!</p>
+        <p class="english-text">The turnip was ENORMOUS!</p>
+        <span class="page-number">3</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Avus rāpam trahit. Trahit et trahit. NŌN POTEST!</p>
+        <p class="english-text">Grandfather pulled the turnip. He pulled and pulled. He COULD NOT!</p>
+        <span class="page-number">4</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Avus Aviam vocāvit. "Venī! Mē adiuvā!" Avia Avum prehendit. Trahunt et trahunt. NŌN POSSUNT!</p>
+        <p class="english-text">"Grandmother, come help!" Grandmother grabbed Grandfather. They pulled and pulled. They COULD NOT!</p>
+        <span class="page-number">5</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Avia Puellam vocāvit. "Venī! Nōs adiuvā!" Puella Aviam prehendit. Trahunt et trahunt. NŌN POSSUNT!</p>
+        <p class="english-text">"Granddaughter, come help!" They all pulled. They COULD NOT!</p>
+        <span class="page-number">6</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Puella Canem vocāvit. "Venī! Nōs adiuvā!" Canis Puellam prehendit. Trahunt et trahunt. NŌN POSSUNT!</p>
+        <p class="english-text">"Dog, come help!" They all pulled. They COULD NOT!</p>
+        <span class="page-number">7</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Canis Fēlem vocāvit. "Venī! Nōs adiuvā!" Fēlēs Canem prehendit. Trahunt et trahunt. NŌN POSSUNT!</p>
+        <p class="english-text">"Cat, come help!" They all pulled. They COULD NOT!</p>
+        <span class="page-number">8</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Fēlēs Mūrem vocāvit. "Venī! Nōs adiuvā!" "Sed tam parva sum!" inquit Mūs.</p>
+        <p class="english-text">"Mouse, come help!" "But I am so small!" said Mouse.</p>
+        <span class="page-number">9</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">"Venī! Nōs adiuvā!" omnēs clāmāvērunt.</p>
+        <p class="english-text">"Come! Help us!" they all said.</p>
+        <span class="page-number">10</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Mūs caudam Fēlis prehendit. Omnēs trahunt!</p>
+        <p class="english-text">Mouse grabbed Cat's tail. Everyone pulled!</p>
+        <span class="page-number">11</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Trahunt... et trahunt... et trahunt...</p>
+        <p class="english-text">They pulled... and pulled... and pulled...</p>
+        <span class="page-number">12</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">POSSUNT! Rāpa ē terrā exit!</p>
+        <p class="english-text">THEY COULD! The turnip came out!</p>
+        <span class="page-number">13</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Rāpam domum omnēs portāvērunt.</p>
+        <p class="english-text">They carried the turnip home together.</p>
+        <span class="page-number">14</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Avia iūs rāpārum fēcit. Tantum iūris!</p>
+        <p class="english-text">Grandmother made turnip soup. SO MUCH soup!</p>
+        <span class="page-number">15</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Omnēs ūnā cēnāvērunt.</p>
+        <p class="english-text">They all ate together.</p>
+        <span class="page-number">16</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Mūs plūrimum ēdit!</p>
+        <p class="english-text">Mouse ate the most!</p>
+        <span class="page-number">17</span>
+    </div>
+
+
+    <div class="story-page">
+        
+        <p class="latin-text">Omnēs adiūvērunt. Etiam minima.</p>
+        <p class="english-text">Everyone helped. Even the smallest.</p>
+        <span class="page-number">18</span>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium</h2>
+        <div class="glossary-entry"><span class="glossary-latin">Avus sēmen sēvit</span><br><span class="glossary-english">Grandfather planted a seed</span></div><div class="glossary-entry"><span class="glossary-latin">Rāpa crēvit</span><br><span class="glossary-english">The turnip grew</span></div><div class="glossary-entry"><span class="glossary-latin">Crēvit et crēvit</span><br><span class="glossary-english">It grew and grew</span></div><div class="glossary-entry"><span class="glossary-latin">Rāpa INGĒNS erat</span><br><span class="glossary-english">The turnip was ENORMOUS</span></div><div class="glossary-entry"><span class="glossary-latin">Avus rāpam trahit</span><br><span class="glossary-english">Grandfather pulled the turnip</span></div><div class="glossary-entry"><span class="glossary-latin">Trahit et trahit</span><br><span class="glossary-english">He pulled and pulled</span></div><div class="glossary-entry"><span class="glossary-latin">NŌN POTEST</span><br><span class="glossary-english">He COULD NOT</span></div><div class="glossary-entry"><span class="glossary-latin">Avus Aviam vocāvit</span><br><span class="glossary-english">"Grandmother, come help</span></div><div class="glossary-entry"><span class="glossary-latin">"Venī</span><br><span class="glossary-english">" Grandmother grabbed Grandfather</span></div><div class="glossary-entry"><span class="glossary-latin">Mē adiuvā</span><br><span class="glossary-english">They pulled and pulled</span></div><div class="glossary-entry"><span class="glossary-latin">" Avia Avum prehendit</span><br><span class="glossary-english">They COULD NOT</span></div><div class="glossary-entry"><span class="glossary-latin">Trahunt et trahunt</span><br><span class="glossary-english">"Grandmother, come help!" Grandmother grabbed Grandfather. They pulled and pulled. They COULD NOT!</span></div><div class="glossary-entry"><span class="glossary-latin">NŌN POSSUNT</span><br><span class="glossary-english">"Grandmother, come help!" Grandmother grabbed Grandfather. They pulled and pulled. They COULD NOT!</span></div><div class="glossary-entry"><span class="glossary-latin">Avia Puellam vocāvit</span><br><span class="glossary-english">"Granddaughter, come help</span></div><div class="glossary-entry"><span class="glossary-latin">Nōs adiuvā</span><br><span class="glossary-english">They COULD NOT</span></div><div class="glossary-entry"><span class="glossary-latin">" Puella Aviam prehendit</span><br><span class="glossary-english">"Granddaughter, come help!" They all pulled. They COULD NOT!</span></div><div class="glossary-entry"><span class="glossary-latin">Puella Canem vocāvit</span><br><span class="glossary-english">"Dog, come help</span></div><div class="glossary-entry"><span class="glossary-latin">" Canis Puellam prehendit</span><br><span class="glossary-english">"Dog, come help!" They all pulled. They COULD NOT!</span></div>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium (cont.)</h2>
+        <div class="glossary-entry"><span class="glossary-latin">Canis Fēlem vocāvit</span><br><span class="glossary-english">"Cat, come help</span></div><div class="glossary-entry"><span class="glossary-latin">" Fēlēs Canem prehendit</span><br><span class="glossary-english">"Cat, come help!" They all pulled. They COULD NOT!</span></div><div class="glossary-entry"><span class="glossary-latin">Fēlēs Mūrem vocāvit</span><br><span class="glossary-english">"Mouse, come help</span></div><div class="glossary-entry"><span class="glossary-latin">" "Sed tam parva sum</span><br><span class="glossary-english">"Mouse, come help!" "But I am so small!" said Mouse.</span></div><div class="glossary-entry"><span class="glossary-latin">" inquit Mūs</span><br><span class="glossary-english">"Mouse, come help!" "But I am so small!" said Mouse.</span></div><div class="glossary-entry"><span class="glossary-latin">" omnēs clāmāvērunt</span><br><span class="glossary-english">" they all said</span></div><div class="glossary-entry"><span class="glossary-latin">Mūs caudam Fēlis prehendit</span><br><span class="glossary-english">Mouse grabbed Cat's tail</span></div><div class="glossary-entry"><span class="glossary-latin">Omnēs trahunt</span><br><span class="glossary-english">Everyone pulled</span></div><div class="glossary-entry"><span class="glossary-latin">Trahunt</span><br><span class="glossary-english">They pulled</span></div><div class="glossary-entry"><span class="glossary-latin">et trahunt</span><br><span class="glossary-english">and pulled</span></div><div class="glossary-entry"><span class="glossary-latin">POSSUNT</span><br><span class="glossary-english">THEY COULD</span></div><div class="glossary-entry"><span class="glossary-latin">Rāpa ē terrā exit</span><br><span class="glossary-english">The turnip came out</span></div><div class="glossary-entry"><span class="glossary-latin">Rāpam domum omnēs portāvērunt</span><br><span class="glossary-english">They carried the turnip home together</span></div><div class="glossary-entry"><span class="glossary-latin">Avia iūs rāpārum fēcit</span><br><span class="glossary-english">Grandmother made turnip soup</span></div><div class="glossary-entry"><span class="glossary-latin">Tantum iūris</span><br><span class="glossary-english">SO MUCH soup</span></div><div class="glossary-entry"><span class="glossary-latin">Omnēs ūnā cēnāvērunt</span><br><span class="glossary-english">They all ate together</span></div><div class="glossary-entry"><span class="glossary-latin">Mūs plūrimum ēdit</span><br><span class="glossary-english">Mouse ate the most</span></div><div class="glossary-entry"><span class="glossary-latin">Omnēs adiūvērunt</span><br><span class="glossary-english">Everyone helped</span></div>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium (cont.)</h2>
+        <div class="glossary-entry"><span class="glossary-latin">Etiam minima</span><br><span class="glossary-english">Even the smallest</span></div>
+    </div>
+
+
+</body>
+</html>

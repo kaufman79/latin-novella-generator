@@ -311,8 +311,9 @@ def generate_html(title_latin: str, title_english: str, translation: BookTransla
     </div>
 """)
 
-    # Glossary page
-    glossary = _build_glossary(translation)
+    # Glossary page (disabled — sentence-splitting approach was not useful.
+    # TODO: implement proper word-by-word two-column vocabulary list)
+    glossary = None  # _build_glossary(translation)
     if glossary:
         entries_html = []
         for lat, eng in glossary:

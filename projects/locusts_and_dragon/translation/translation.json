@@ -1,0 +1,213 @@
+{
+  "title_latin": "Cicādae et Dracō",
+  "title_english": "By Rowan & Ryan Kaufman",
+  "pages": [
+    {
+      "page_number": 1,
+      "latin_text": "Multae cicādae ūnō diē taedēbant. Nihil novum erat.",
+      "english_text": "Many cicadas were bored one day. Nothing was new.",
+      "image_prompt": "A sunny field with several small brown cicadas resting on grass stalks, looking bored. Warm sunlight, soft yellow tones, simple background of green hills and sky. Center composition, gentle mood.",
+      "image_path": "projects/locusts_and_dragon/images/page_01.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 2,
+      "latin_text": "Itaque omnēs ad oppidum proximum volāvērunt.",
+      "english_text": "So they all flew to the nearby town.",
+      "image_prompt": "Group of cicadas flying together toward a small brown-and-yellow town in the distance. Eye-level angle, bright blue sky, motion lines showing flight, cheerful tone.",
+      "image_path": "projects/locusts_and_dragon/images/page_02.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 3,
+      "latin_text": "Ibī hominēs timidi et trīstēs erant.",
+      "english_text": "There, the people were afraid and sad.",
+      "image_prompt": "Simple town square with a few villagers looking frightened and frowning. Soft colors, houses with red roofs, gentle afternoon light.",
+      "image_path": "projects/locusts_and_dragon/images/page_03.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 4,
+      "latin_text": "Dracō eōs terrēbat. Habitābat in monte prope oppidum. Caverna erat magna et obscūra.",
+      "english_text": "A dragon scared them. It lived in a mountain near the town. The cave was large and dark.",
+      "image_prompt": "Red dragon peeking out from a dark cave in a rocky mountain above a small town. The cave mouth is shadowy; dragon eyes glowing faintly. Warm light on the town below, cooler tones for the cave.",
+      "image_path": "projects/locusts_and_dragon/images/page_04.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 5,
+      "latin_text": "Cicādae inter sē dīxērunt: “Eāmus! Dracōnem vincāmus!”",
+      "english_text": "The cicadas said to each other: 'Let’s go! Let’s defeat the dragon!'",
+      "image_prompt": "Cicadas gathered together in a small circle, wings raised in determination. Simple grassy ground, bright sunlight, expressions of courage.",
+      "image_path": "projects/locusts_and_dragon/images/page_05.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 6,
+      "latin_text": "Itaque omnēs ad montem volāvērunt. Ventus fortis erat, sed nōn timuērunt.",
+      "english_text": "So they all flew to the mountain. The wind was strong, but they were not afraid.",
+      "image_prompt": "Cicadas flying upward toward a rocky mountain in gusty wind. Grass and leaves bending, bright sky with motion. Slight diagonal composition for action.",
+      "image_path": "projects/locusts_and_dragon/images/page_06.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 7,
+      "latin_text": "Cicādae intrāvērunt cavernam. Tenebrās vīdērunt et nihil aliud.",
+      "english_text": "The cicadas entered the cave. They saw darkness and nothing else.",
+      "image_prompt": "Inside a dark cave with the small glow of light behind the entering cicadas. Cave walls simple and rocky; mood quiet and dim with gentle shadows.",
+      "image_path": "projects/locusts_and_dragon/images/page_07.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 8,
+      "latin_text": "Per obscūra forāmina et longa itinera ambulāvērunt.",
+      "english_text": "They walked through dark tunnels and long paths.",
+      "image_prompt": "Cicadas moving carefully through winding cave tunnels. Dim warm torchlight or glowing stones guiding the way. Narrow perspective to show depth.",
+      "image_path": "projects/locusts_and_dragon/images/page_08.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 9,
+      "latin_text": "Tandem invēnērunt cubīle dracōnis. Dracō dormiēbat super acervum aurī.",
+      "english_text": "At last they found the dragon’s lair. The dragon was sleeping on a pile of gold.",
+      "image_prompt": "Dragon curled up asleep on glittering gold coins and treasures. Soft warm light reflecting off gold. Cicadas peeking from behind rocks in the corner.",
+      "image_path": "projects/locusts_and_dragon/images/page_09.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 10,
+      "latin_text": "Aurum et gemmae fulgēbant. Dracō ruber erat et dentēs magnī erant eī.",
+      "english_text": "The gold and gems sparkled. The dragon was red and had large teeth.",
+      "image_prompt": "Close-up of the red dragon sleeping with mouth partly open, showing sharp teeth. Gold and gems sparkling beneath it. Warm colors, gentle contrast.",
+      "image_path": "projects/locusts_and_dragon/images/page_10.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 11,
+      "latin_text": "Cicādae super dracōnem volāvērunt. Eum pungēre temptāvērunt, sed frūstrā.",
+      "english_text": "The cicadas flew above the dragon. They tried to sting it, but in vain.",
+      "image_prompt": "Small cicadas darting around the dragon, attempting to poke or sting. Dragon slightly stirring, still half-asleep. Action-filled composition, soft edges.",
+      "image_path": "projects/locusts_and_dragon/images/page_11.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 12,
+      "latin_text": "Dracō excitātus est et īrātus factus est. Rugīvit valdē et ālās mōvit.",
+      "english_text": "The dragon woke up and became angry. It roared loudly and moved its wings.",
+      "image_prompt": "Dragon roaring in fury inside the cave, wings outspread. Gold coins flying from the ground. Strong diagonal composition, warm red light.",
+      "image_path": "projects/locusts_and_dragon/images/page_12.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 13,
+      "latin_text": "Per antrum volāvit, mordēns et ungues vibrāns. Multās cicādās occīdit.",
+      "english_text": "It flew through the cave, biting and swinging its claws. It killed many cicadas.",
+      "image_prompt": "Action scene with dragon sweeping through the air, claws extended. A few cicadas fleeing in panic. Motion blur lines, dim cave background.",
+      "image_path": "projects/locusts_and_dragon/images/page_13.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 14,
+      "latin_text": "Ceterae cicādae tremēbant et consilium quaesīvērunt.",
+      "english_text": "The remaining cicadas trembled and sought a plan.",
+      "image_prompt": "Group of surviving cicadas huddled together on a rock, looking worried. Cave background dark but not frightening, soft light on them.",
+      "image_path": "projects/locusts_and_dragon/images/page_14.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 15,
+      "latin_text": "Antōnius, una cicāda fortis, dīxit: “Strīdāmus omnēs simul!”",
+      "english_text": "Antonius, one brave cicada, said: 'Let’s all buzz together!'",
+      "image_prompt": "Close-up of Antonius the cicada standing tall and brave, wings lifted as he speaks to the others. Warm light on his face, hopeful tone.",
+      "image_path": "projects/locusts_and_dragon/images/page_15.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 16,
+      "latin_text": "Antōnius prīmus strīdit. Deinde omnēs cicādae fortiter strīdēbant.",
+      "english_text": "Antonius buzzed first. Then all the cicadas buzzed loudly.",
+      "image_prompt": "Cicadas surrounding the dragon, wings vibrating powerfully, visible sound waves or motion lines to show buzzing. The dragon flinches slightly.",
+      "image_path": "projects/locusts_and_dragon/images/page_16.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 17,
+      "latin_text": "Sonus magnus tōtam cavernam implēvit. Aurēs dracōnis doluērunt.",
+      "english_text": "A great sound filled the whole cave. The dragon’s ears hurt.",
+      "image_prompt": "Dragon covering its ears in pain as glowing waves of sound fill the cave. Bright yellows and soft blues to show echoing sound. Simple layout.",
+      "image_path": "projects/locusts_and_dragon/images/page_17.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 18,
+      "latin_text": "Dracō īnsānīvit et sine mente volāvit. In parietem cavernae volāvit et cecidit.",
+      "english_text": "The dragon went mad and flew without sense. It crashed into the cave wall and fell.",
+      "image_prompt": "Dragon flying wildly, eyes wide, crashing into a stone wall. Gold scattering through the air. Dramatic action but soft, child-safe tone.",
+      "image_path": "projects/locusts_and_dragon/images/page_18.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 19,
+      "latin_text": "Dracō mortuus est. Cicādae gāvīsae sunt.",
+      "english_text": "The dragon was dead. The cicadas rejoiced.",
+      "image_prompt": "Dragon lying still in the background, while cicadas dance and flutter with joy near the cave entrance. Warm morning light entering the cave.",
+      "image_path": "projects/locusts_and_dragon/images/page_19.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 20,
+      "latin_text": "Ad oppidum rediērunt et strīdēbant: “Dracō mortuus est!”",
+      "english_text": "They returned to the town and buzzed: 'The dragon is dead!'",
+      "image_prompt": "Cicadas flying joyfully back into the town, villagers looking up and smiling. Soft sunlight, simple town background, celebratory feeling.",
+      "image_path": "projects/locusts_and_dragon/images/page_20.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 21,
+      "latin_text": "Hominēs laetī erant et grātiās ēgērunt.",
+      "english_text": "The people were happy and gave thanks.",
+      "image_prompt": "Villagers with open arms and smiling faces thanking the cicadas. Warm colors, simple cobblestone street, soft afternoon light.",
+      "image_path": "projects/locusts_and_dragon/images/page_21.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 22,
+      "latin_text": "Aurum cēpērunt et inter sē dīvīsērunt.",
+      "english_text": "They took the gold and shared it among themselves.",
+      "image_prompt": "Villagers carrying gold coins from baskets, sharing them kindly. Simple town square, children and elders smiling. Warm browns and yellows.",
+      "image_path": "projects/locusts_and_dragon/images/page_22.png",
+      "characters": [],
+      "location": null
+    },
+    {
+      "page_number": 23,
+      "latin_text": "Omnēs laetī erant. Cicādae carmen laetum strīdēbant.",
+      "english_text": "Everyone was happy. The cicadas buzzed a joyful song.",
+      "image_prompt": "Cicadas on tree branches outside the bright town, singing under a golden sunset. Peaceful mood, warm colors, final celebratory tone.",
+      "image_path": "projects/locusts_and_dragon/images/page_23.png",
+      "characters": [],
+      "location": null
+    }
+  ]
+}
