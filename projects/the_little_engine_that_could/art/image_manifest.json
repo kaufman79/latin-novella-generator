@@ -1,0 +1,144 @@
+{
+  "pd_source": {
+    "title": "The Little Engine That Could",
+    "author": "Watty Piper",
+    "illustrator": "Lois Lenski",
+    "source_url": "https://archive.org/details/little-engine-that-could-1930",
+    "year": 1930,
+    "license": "Public Domain"
+  },
+  "mappings": [
+    {
+      "page_number": 1,
+      "source": "existing",
+      "image_filename": "1949-008.jpg",
+      "original_caption": "Small blue engine silhouette vignette — puffing along with smoke rings"
+    },
+    {
+      "page_number": 2,
+      "source": "existing",
+      "image_filename": "1949-004.jpg",
+      "original_caption": "Title page illustration — blue engine pulling colorful train over snowy mountain with toy animals (giraffe, elephant) visible in cars"
+    },
+    {
+      "page_number": 3,
+      "source": "existing",
+      "image_filename": "1930-page3.jpg",
+      "original_caption": "1930 color plate — shiny black passenger engine passing by on adjacent track, toy train cars with dolls and toys visible, power lines and trees"
+    },
+    {
+      "page_number": 4,
+      "source": "existing",
+      "image_filename": "1930-page1.jpg",
+      "original_caption": "1930 color plate — wide establishing shot of train landscape with mountain in background"
+    },
+    {
+      "page_number": 5,
+      "source": "existing",
+      "image_filename": "1930-page8.jpg",
+      "original_caption": "1930 color plate — stopped engine at tracks, toys and dolls gathered around pleading: clown, soldier, doll, giraffe, duck. Mountain with blue sky behind"
+    },
+    {
+      "page_number": 6,
+      "source": "existing",
+      "image_filename": "1949-012.jpg",
+      "original_caption": "1949 color plate — big black engine at station, toys/dolls pleading on tracks. Clown, soldier, doll, duck visible. Mountain in background"
+    },
+    {
+      "page_number": 7,
+      "source": "existing",
+      "image_filename": "1949-015.jpg",
+      "original_caption": "1949 color plate — enormous red passenger engine looming in foreground with billowing smoke, tiny toy train behind. Giraffe visible. Scale contrast"
+    },
+    {
+      "page_number": 8,
+      "source": "existing",
+      "image_filename": "1949-007.jpg",
+      "original_caption": "1949 color plate — shiny black passenger engine steaming past on adjacent track, toys waving from colorful red and yellow cars"
+    },
+    {
+      "page_number": 9,
+      "source": "existing",
+      "image_filename": "1949-022.jpg",
+      "original_caption": "1949 B&W — big black freight engine on adjacent track with toy train below. Mountain behind. Clown approaching"
+    },
+    {
+      "page_number": 10,
+      "source": "existing",
+      "image_filename": "1949-017.jpg",
+      "original_caption": "1949 B&W — large freight engine departing on adjacent track, toy train with giraffe and elephant on lower track. Clown on tracks between"
+    },
+    {
+      "page_number": 11,
+      "source": "existing",
+      "image_filename": "1949-019.jpg",
+      "original_caption": "1949 color plate — yellow engine with roundhouse behind, steam curling from stack. Approaching slowly"
+    },
+    {
+      "page_number": 12,
+      "source": "existing",
+      "image_filename": "1949-020-2.jpg",
+      "original_caption": "1949 color plate — green engine with sad downturned face departing. Clown on tracks with flag. Snowy hills behind"
+    },
+    {
+      "page_number": 13,
+      "source": "existing",
+      "image_filename": "1949-025.jpg",
+      "original_caption": "1949 B&W — two trains on parallel tracks: big engine departing above, small bright engine approaching below. Mountain behind"
+    },
+    {
+      "page_number": 14,
+      "source": "existing",
+      "image_filename": "1949-018.jpg",
+      "original_caption": "1949 B&W — little engine with uncertain expression looking up at mountain and departing bigger engine. Scale and difficulty contrast"
+    },
+    {
+      "page_number": 15,
+      "source": "existing",
+      "image_filename": "1930-page21.jpg",
+      "original_caption": "1930 B&W — little engine approaching toy train on tracks. Clown standing by. Mountain looming behind. The moment of decision"
+    },
+    {
+      "page_number": 16,
+      "source": "existing",
+      "image_filename": "1949-023.jpg",
+      "original_caption": "1949 color plate — blue engine coupled to colorful toy train, starting up mountain. Toys cheering: giraffe, elephant, clown visible. The climb begins"
+    },
+    {
+      "page_number": 17,
+      "source": "existing",
+      "image_filename": "1949-027.jpg",
+      "original_caption": "1949 color plate — blue engine pulling train up steep mountain slope. Trees below, clouds near. Train at steep angle. THE iconic climb image"
+    },
+    {
+      "page_number": 18,
+      "source": "existing",
+      "image_filename": "1930-page14.jpg",
+      "original_caption": "1930 B&W — engine straining up steepest part of mountain, dramatic angle. Effort and difficulty visible"
+    },
+    {
+      "page_number": 19,
+      "source": "existing",
+      "image_filename": "1930-page16.jpg",
+      "original_caption": "1930 B&W — engine and train cresting mountain ridge. Moment of triumph at the summit"
+    },
+    {
+      "page_number": 20,
+      "source": "existing",
+      "image_filename": "1949-029.jpg",
+      "original_caption": "1949 B&W — train rolling down far side of mountain. Engine has big smile. Speed, momentum, joyful descent"
+    },
+    {
+      "page_number": 21,
+      "source": "existing",
+      "image_filename": "1930-page23.jpg",
+      "original_caption": "1930 B&W — train arriving, celebration scene. Delivery complete"
+    },
+    {
+      "page_number": 22,
+      "source": "existing",
+      "image_filename": "1949-030.jpg",
+      "original_caption": "1949 B&W — endpiece vignette: small black train silhouette puffing contentedly. Smoke rings rising gently"
+    }
+  ]
+}

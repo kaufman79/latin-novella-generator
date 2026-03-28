@@ -1,0 +1,29 @@
+{
+  "project_id": "the_little_engine_that_could",
+  "title_english": "The Little Engine That Could",
+  "title_latin": "Machina Parva Quae Potuit",
+  "source_type": "public_domain_adaptation",
+  "public_domain_source": {
+    "title": "The Little Engine That Could",
+    "author": "Watty Piper",
+    "illustrator": "Lois Lenski",
+    "source_url": "https://archive.org/details/little-engine-that-could-1930",
+    "year": 1930,
+    "license": "Public Domain"
+  },
+  "theme": null,
+  "target_pages": 22,
+  "virtue_ratings": {
+    "prudentia": 0,
+    "iustitia": 1,
+    "fortitudo": 3,
+    "temperantia": 0,
+    "fides": 1,
+    "spes": 5,
+    "caritas": 2
+  },
+  "status": "reviewed",
+  "date_created": "2026-03-28T19:38:58.518835",
+  "date_modified": "2026-03-28T19:38:58.518852",
+  "project_folder": "projects/the_little_engine_that_could"
+}

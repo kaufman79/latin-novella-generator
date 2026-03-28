@@ -1,0 +1,221 @@
+{
+  "title_english": "The Little Engine That Could",
+  "title_latin": "Machina Parva Quae Potuit",
+  "target_pages": 22,
+  "characters": [
+    {
+      "name": "Little Red Engine",
+      "description": "A small, cheerful red steam engine with a friendly face. She pulls the toy train at the start but breaks down partway.",
+      "source": "The Little Engine That Could (1930, Watty Piper / Lois Lenski)",
+      "is_established": true
+    },
+    {
+      "name": "The Toys",
+      "description": "Anthropomorphic toy passengers: a clown in a polka-dot suit, a toy soldier, a rag doll, a teddy bear, a giraffe, an elephant. They ride in the train cars and plead for help when the engine breaks down.",
+      "source": "The Little Engine That Could (1930, Watty Piper / Lois Lenski)",
+      "is_established": true
+    },
+    {
+      "name": "Shiny New Engine",
+      "description": "A big, gleaming red passenger engine. Enormous and impressive, towering over the toy train. Proud and disdainful — refuses to help because the cargo is beneath her.",
+      "source": "The Little Engine That Could (1930, Watty Piper / Lois Lenski)",
+      "is_established": true
+    },
+    {
+      "name": "Big Strong Engine",
+      "description": "A huge, powerful black freight engine. Covered in soot, massive wheels. Self-important — refuses because he carries 'important things' for grown-ups.",
+      "source": "The Little Engine That Could (1930, Watty Piper / Lois Lenski)",
+      "is_established": true
+    },
+    {
+      "name": "Old Rusty Engine",
+      "description": "A tired, worn-out yellow/green engine with drooping features and a sad face. Weary and defeated — refuses because he is too old and tired. Embodies despair.",
+      "source": "The Little Engine That Could (1930, Watty Piper / Lois Lenski)",
+      "is_established": true
+    },
+    {
+      "name": "Little Blue Engine",
+      "description": "A very small, bright blue engine with big earnest eyes and a tiny smokestack. Not impressive, but determined. Female. She has never been over the mountain but chooses to try. The hero — embodies spes (hope).",
+      "source": "The Little Engine That Could (1930, Watty Piper / Lois Lenski)",
+      "is_established": true
+    }
+  ],
+  "locations": [
+    {
+      "name": "The Tracks",
+      "description": "Sunny countryside with green fields and railroad tracks stretching toward a large mountain in the background."
+    },
+    {
+      "name": "The Breakdown Spot",
+      "description": "Where the Little Red Engine stops. Tracks in a meadow with the mountain looming ahead. The toys climb out of their cars."
+    },
+    {
+      "name": "The Mountain",
+      "description": "A tall, imposing mountain with tracks winding steeply up its side. Trees, power lines, and clouds. Gets steeper as the climb progresses."
+    },
+    {
+      "name": "The Summit",
+      "description": "The top of the mountain. Wide sky, the world spread below. A moment of triumph."
+    },
+    {
+      "name": "The Other Side",
+      "description": "The far side of the mountain, sloping down toward a cheerful town where children wait."
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "english_text": "Chug, chug, chug! A little train climbed along the tracks.",
+      "scene_description": "[IMAGE: 1949-008.jpg] Small blue engine silhouette puffing along happily with smoke rings rising. Simple, cheerful opening vignette.",
+      "characters_present": ["Little Red Engine"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 2,
+      "english_text": "The train was full of good things for children.",
+      "scene_description": "[IMAGE: 1949-004.jpg] Blue engine pulling a long colorful train of red and yellow cars over snowy mountain landscape. Cars full of toy animals — giraffe, elephant visible. Bright, festive, full-page color illustration.",
+      "characters_present": ["Little Red Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 3,
+      "english_text": "Toys and dolls! Oranges and apples! And cold, sweet milk.",
+      "scene_description": "[IMAGE: 1930-page3.jpg] Close-up view of the train cars showing toys, dolls in the red cars, and cargo visible. The shiny new engine is visible on adjacent track. Detailed scene with power lines and trees.",
+      "characters_present": ["The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 4,
+      "english_text": "The children on the other side of the mountain were waiting.",
+      "scene_description": "[IMAGE: 1930-page1.jpg] Wide establishing shot of the train and landscape with mountain in background. Sets the stakes — the good is future, the obstacle is visible.",
+      "characters_present": [],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 5,
+      "english_text": "But the little engine stopped! She could not go on.",
+      "scene_description": "[IMAGE: 1930-page8.jpg] The stopped engine at the tracks with toys and dolls gathered around it, pleading. The clown, soldier, doll, giraffe, duck all visible. Mountain looming in background with blue sky.",
+      "characters_present": ["Little Red Engine", "The Toys"],
+      "location": "The Breakdown Spot"
+    },
+    {
+      "page_number": 6,
+      "english_text": "The toys were worried. 'Who will pull us over the mountain?'",
+      "scene_description": "[IMAGE: 1949-012.jpg] Toys clustered around the stopped black engine at a station. Clown, soldier, doll, duck visible on the tracks pleading. Mountain in background. The toys look anxious and small.",
+      "characters_present": ["The Toys"],
+      "location": "The Breakdown Spot"
+    },
+    {
+      "page_number": 7,
+      "english_text": "A shiny new engine came by. 'Please pull us!' said the toys.",
+      "scene_description": "[IMAGE: 1949-015.jpg] Enormous red passenger engine looming in foreground, billowing smoke. The tiny toy train visible behind. The shiny engine is massive and impressive. The clown waves a flag.",
+      "characters_present": ["Shiny New Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 8,
+      "english_text": "'I pull YOU?' said the Shiny Engine. 'No!' And she rushed away.",
+      "scene_description": "[IMAGE: 1949-007.jpg] The shiny engine (black passenger engine) steaming past on adjacent track, ignoring the toy train. Toys wave from their colorful cars. The big engine passes without stopping.",
+      "characters_present": ["Shiny New Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 9,
+      "english_text": "A big, strong engine came by. 'Please help us!' said the toys.",
+      "scene_description": "[IMAGE: 1949-022.jpg] Big black freight engine on adjacent track, with the toy train on the lower track. Mountain visible in background. The clown approaches the big engine. B&W illustration showing scale contrast.",
+      "characters_present": ["Big Strong Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 10,
+      "english_text": "'I am too important,' said the Big Engine. And he puffed away.",
+      "scene_description": "[IMAGE: 1949-017.jpg] Large freight engine departing on adjacent track, puffing smoke. Toy train with animals (giraffe, elephant) visible on lower track. Clown stands on tracks between them. B&W illustration.",
+      "characters_present": ["Big Strong Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 11,
+      "english_text": "A tired old engine came slowly. 'Please, please help us!'",
+      "scene_description": "[IMAGE: 1949-019.jpg] Yellow/old engine with roundhouse behind it. Steam curling from its stack. Approaching slowly on the tracks. Color illustration.",
+      "characters_present": ["Old Rusty Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 12,
+      "english_text": "'I cannot. I cannot,' said the Old Engine. And he crept away.",
+      "scene_description": "[IMAGE: 1949-020-2.jpg] Green engine with sad, downturned face departing. Clown stands on tracks with flag, watching it go. Snowy hills behind. The despair beat — three refusals done.",
+      "characters_present": ["Old Rusty Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 13,
+      "english_text": "Then a little blue engine came along. She was very small.",
+      "scene_description": "[IMAGE: 1949-025.jpg] Two trains on parallel tracks — the big engine departing on the upper track, the small bright engine approaching on the lower. Mountain behind. The little engine is visibly smaller. B&W illustration.",
+      "characters_present": ["Little Blue Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 14,
+      "english_text": "'I am not big. I have never been over the mountain.'",
+      "scene_description": "[IMAGE: 1949-018.jpg] The little engine (shown with an uncertain face) looking up at the big mountain and the departing bigger engine above. B&W illustration showing the contrast between the small engine and the great task ahead.",
+      "characters_present": ["Little Blue Engine"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 15,
+      "english_text": "But the children need their toys. 'I think I can,' she said.",
+      "scene_description": "[IMAGE: 1930-page21.jpg] The little blue engine approaches the toy train. The clown stands by the tracks. Mountain looms behind. The moment of decision — she is small but willing. B&W illustration.",
+      "characters_present": ["Little Blue Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 16,
+      "english_text": "She pulled and pulled. 'Possum, putō! Possum, putō!'",
+      "scene_description": "[IMAGE: 1949-023.jpg] The little blue engine coupled to the colorful toy train, starting up the mountain. Toys cheer — giraffe, elephant, clown visible. The engine strains upward. Bright color illustration. The climb begins!",
+      "characters_present": ["Little Blue Engine", "The Toys"],
+      "location": "The Mountain"
+    },
+    {
+      "page_number": 17,
+      "english_text": "'Possum, putō! Possum, putō!' Higher and higher she climbed.",
+      "scene_description": "[IMAGE: 1949-027.jpg] The blue engine pulling the train up a steep mountain slope. Trees below, clouds near. The train tilts at a steep angle. Half-page color illustration — the most iconic image of the climb.",
+      "characters_present": ["Little Blue Engine", "The Toys"],
+      "location": "The Mountain"
+    },
+    {
+      "page_number": 18,
+      "english_text": "She was so tired. But she did not stop. 'POSSUM, PUTŌ!'",
+      "scene_description": "[IMAGE: 1930-page14.jpg] The engine straining up the steepest part, shown from a dramatic angle. Effort visible in the scene. B&W illustration emphasizing the difficulty of the final push.",
+      "characters_present": ["Little Blue Engine", "The Toys"],
+      "location": "The Mountain"
+    },
+    {
+      "page_number": 19,
+      "english_text": "POSSUM! She reached the top!",
+      "scene_description": "[IMAGE: 1930-page16.jpg] The engine and train cresting the mountain ridge. A moment of triumph. B&W illustration showing the train at the summit with sky opening up.",
+      "characters_present": ["Little Blue Engine", "The Toys"],
+      "location": "The Summit"
+    },
+    {
+      "page_number": 20,
+      "english_text": "Down the mountain she went. 'Potuī! Potuī! Putāvī!'",
+      "scene_description": "[IMAGE: 1949-029.jpg] The train rolling joyfully down the far side of the mountain. The engine has a big smile on its face. Speed and momentum — the descent is joyful. B&W illustration.",
+      "characters_present": ["Little Blue Engine", "The Toys"],
+      "location": "The Other Side"
+    },
+    {
+      "page_number": 21,
+      "english_text": "The children came running! 'The toys are here!'",
+      "scene_description": "[IMAGE: 1930-page23.jpg] The train arriving, scene of joy and celebration. Toys being unloaded, children receiving them. The good has been achieved.",
+      "characters_present": ["Little Blue Engine", "The Toys"],
+      "location": "The Other Side"
+    },
+    {
+      "page_number": 22,
+      "english_text": "The little blue engine smiled. 'Potuī,' she said softly.",
+      "scene_description": "[IMAGE: 1949-030.jpg] Simple, quiet endpiece: small black train silhouette puffing along contentedly. Smoke rings rise gently. The quiet satisfaction of hope fulfilled.",
+      "characters_present": ["Little Blue Engine"],
+      "location": "The Other Side"
+    }
+  ]
+}

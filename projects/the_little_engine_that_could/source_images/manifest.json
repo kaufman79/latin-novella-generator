@@ -1,0 +1,50 @@
+{
+  "source": "Wikimedia Commons + Internet Archive",
+  "license": "Public Domain (published 1930, entered PD January 1, 2026)",
+  "download_date": "2026-03-28",
+  "files": {
+    "1949_color_scans": {
+      "description": "High-resolution color scans from 1949 printing of The Little Engine That Could (same Lois Lenski illustrations as 1930 first edition)",
+      "source_url": "https://commons.wikimedia.org/wiki/Category:The_Little_Engine_That_Could",
+      "download_method": "Wikimedia Commons thumbnail API (commons.wikimedia.org/w/thumb.php)",
+      "files": [
+        {"filename": "1949-004.jpg", "resolution": "3664x4620", "content": "Title page illustration — blue engine pulling train over mountain with toy animals"},
+        {"filename": "1949-007.jpg", "resolution": "2752x3187", "content": "Shiny black passenger engine passing by toy train on adjacent track"},
+        {"filename": "1949-008.jpg", "resolution": "1008x528", "content": "Small blue engine silhouette vignette with smoke rings"},
+        {"filename": "1949-012.jpg", "resolution": "2765x3202", "content": "Big black engine at station, toys pleading on tracks"},
+        {"filename": "1949-015.jpg", "resolution": "2737x1651", "content": "Enormous red passenger engine looming, toy train tiny behind"},
+        {"filename": "1949-017.jpg", "resolution": "2523x3003", "content": "B&W: Large freight engine departing, toy train with animals below"},
+        {"filename": "1949-018.jpg", "resolution": "2571x3016", "content": "B&W: Little engine looking up at mountain and departing big engine"},
+        {"filename": "1949-019.jpg", "resolution": "2729x3193", "content": "Yellow/old engine with roundhouse behind, approaching slowly"},
+        {"filename": "1949-020-2.jpg", "resolution": "2717x1657", "content": "Green engine with sad face departing, clown with flag on tracks"},
+        {"filename": "1949-022.jpg", "resolution": "2541x2987", "content": "B&W: Big freight engine on upper track, toy train on lower track"},
+        {"filename": "1949-023.jpg", "resolution": "2736x3186", "content": "Blue engine coupled to toy train, starting up mountain — the climb begins"},
+        {"filename": "1949-025.jpg", "resolution": "2571x3000", "content": "B&W: Two trains on parallel tracks, small engine approaching"},
+        {"filename": "1949-027.jpg", "resolution": "2722x1644", "content": "Blue engine pulling train up steep mountain slope — the iconic climb image"},
+        {"filename": "1949-029.jpg", "resolution": "2574x2993", "content": "B&W: Train going down other side of mountain, engine smiling"},
+        {"filename": "1949-030.jpg", "resolution": "1001x537", "content": "Endpiece vignette: small black train silhouette"}
+      ]
+    },
+    "1930_bw_crops": {
+      "description": "Cropped illustrations from 1930 first edition B&W scan",
+      "source_url": "https://commons.wikimedia.org/wiki/Category:The_Little_Engine_That_Could",
+      "download_method": "Wikimedia Commons thumbnail API",
+      "files": [
+        {"filename": "1930-page1.jpg", "resolution": "~2400x2800", "content": "Wide establishing shot with train and landscape"},
+        {"filename": "1930-page3.jpg", "resolution": "~2400x2800", "content": "Shiny engine passing, toy train cars visible (color version)"},
+        {"filename": "1930-page8.jpg", "resolution": "~2400x2800", "content": "Stopped engine with toys pleading (color version)"},
+        {"filename": "1930-page14.jpg", "resolution": "~2400x2800", "content": "Engine straining up steepest part of mountain"},
+        {"filename": "1930-page16.jpg", "resolution": "~2400x2800", "content": "Engine cresting the mountain ridge"},
+        {"filename": "1930-page21.jpg", "resolution": "~2400x2800", "content": "Little engine approaching toy train, moment of decision"},
+        {"filename": "1930-page23.jpg", "resolution": "~2400x2800", "content": "Train arriving, celebration"}
+      ]
+    },
+    "cover": {
+      "description": "1st edition cover photograph from eBay listing",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Little_Engine_That_Could_(1st_Edition_Cover).jpg",
+      "files": [
+        {"filename": "cover.jpg", "resolution": "1080x1288", "content": "Red cloth cover with blue line art of train"}
+      ]
+    }
+  }
+}

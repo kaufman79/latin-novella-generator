@@ -1,0 +1,204 @@
+{
+  "title_latin": "Machina Parva Quae Potuit",
+  "title_english": "The Little Engine That Could",
+  "pages": [
+    {
+      "page_number": 1,
+      "latin_text": "Puf, puf, puf! Parva machina per viās ferrātās ībat.",
+      "english_text": "Chug, chug, chug! A little engine went along the tracks.",
+      "image_prompt": "[IMAGE: 1949-008.jpg] Small blue engine silhouette puffing along happily.",
+      "image_path": "projects/the_little_engine_that_could/images/page_01.png",
+      "characters": ["Little Red Engine"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 2,
+      "latin_text": "Hamaxostichus plēnus erat rērum bonārum prō līberīs.",
+      "english_text": "The train was full of good things for children.",
+      "image_prompt": "[IMAGE: 1949-004.jpg] Blue engine pulling a long colorful train of cars over mountain landscape.",
+      "image_path": "projects/the_little_engine_that_could/images/page_02.png",
+      "characters": ["Little Red Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 3,
+      "latin_text": "Pūpae et ursulī! Māla aurantia et māla! Et lac frīgidum dulce!",
+      "english_text": "Dolls and teddy bears! Oranges and apples! And cold, sweet milk!",
+      "image_prompt": "[IMAGE: 1930-page3.jpg] Train cars showing toys and cargo.",
+      "image_path": "projects/the_little_engine_that_could/images/page_03.png",
+      "characters": ["The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 4,
+      "latin_text": "Līberī trāns montem exspectābant.",
+      "english_text": "The children on the other side of the mountain were waiting.",
+      "image_prompt": "[IMAGE: 1930-page1.jpg] Wide shot of train and landscape with mountain in background.",
+      "image_path": "projects/the_little_engine_that_could/images/page_04.png",
+      "characters": [],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 5,
+      "latin_text": "Sed parva machina cōnstitit! Prōgredī nōn poterat.",
+      "english_text": "But the little engine stopped! She could not go on.",
+      "image_prompt": "[IMAGE: 1930-page8.jpg] Stopped engine with toys and dolls gathered around, pleading.",
+      "image_path": "projects/the_little_engine_that_could/images/page_05.png",
+      "characters": ["Little Red Engine", "The Toys"],
+      "location": "The Breakdown Spot"
+    },
+    {
+      "page_number": 6,
+      "latin_text": "Lūdicra sollicita erant. \"Quis nōs trāns montem trahet?\"",
+      "english_text": "The toys were worried. \"Who will pull us over the mountain?\"",
+      "image_prompt": "[IMAGE: 1949-012.jpg] Toys clustered around stopped engine, pleading.",
+      "image_path": "projects/the_little_engine_that_could/images/page_06.png",
+      "characters": ["The Toys"],
+      "location": "The Breakdown Spot"
+    },
+    {
+      "page_number": 7,
+      "latin_text": "Machina nova splendida praeteriit. \"Nōs trahe!\" clāmāvērunt lūdicra.",
+      "english_text": "A shiny new engine came by. \"Pull us!\" cried the toys.",
+      "image_prompt": "[IMAGE: 1949-015.jpg] Enormous red engine in foreground, tiny toy train behind.",
+      "image_path": "projects/the_little_engine_that_could/images/page_07.png",
+      "characters": ["Shiny New Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 8,
+      "latin_text": "\"EGŌ vōs traham?\" inquit Machina Splendida. \"Minimē!\" Et abiit.",
+      "english_text": "\"I pull YOU?\" said the Shiny Engine. \"No!\" And she rushed away.",
+      "image_prompt": "[IMAGE: 1949-007.jpg] Shiny engine steaming past, ignoring the toy train.",
+      "image_path": "projects/the_little_engine_that_could/images/page_08.png",
+      "characters": ["Shiny New Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 9,
+      "latin_text": "Machina magna fortis praeteriit. \"Nōs adiuvā!\" clāmāvērunt lūdicra.",
+      "english_text": "A big, strong engine came by. \"Help us!\" cried the toys.",
+      "image_prompt": "[IMAGE: 1949-022.jpg] Big black freight engine on adjacent track.",
+      "image_path": "projects/the_little_engine_that_could/images/page_09.png",
+      "characters": ["Big Strong Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 10,
+      "latin_text": "\"Rēs magnās ferō,\" inquit Machina Magna. \"Nimis occupātus sum.\" Et abiit.",
+      "english_text": "\"I carry important things,\" said the Big Engine. \"I am too busy.\" And he puffed away.",
+      "image_prompt": "[IMAGE: 1949-017.jpg] Large freight engine departing, toy train below.",
+      "image_path": "projects/the_little_engine_that_could/images/page_10.png",
+      "characters": ["Big Strong Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 11,
+      "latin_text": "Machina vetusta lentē advēnit. \"Nōs adiuvā! Tē quaesō!\"",
+      "english_text": "A tired old engine came slowly. \"Help us! Please!\"",
+      "image_prompt": "[IMAGE: 1949-019.jpg] Yellow old engine approaching slowly.",
+      "image_path": "projects/the_little_engine_that_could/images/page_11.png",
+      "characters": ["Old Rusty Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 12,
+      "latin_text": "\"Nōn possum. Nōn possum,\" inquit Machina Vetusta. \"Fessus sum.\" Et abiit.",
+      "english_text": "\"I cannot. I cannot,\" said the Old Engine. \"I am tired.\" And he crept away.",
+      "image_prompt": "[IMAGE: 1949-020-2.jpg] Green engine with sad face departing.",
+      "image_path": "projects/the_little_engine_that_could/images/page_12.png",
+      "characters": ["Old Rusty Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 13,
+      "latin_text": "Tum parva machina caerulea advēnit. Valdē parva erat.",
+      "english_text": "Then a little blue engine came along. She was very small.",
+      "image_prompt": "[IMAGE: 1949-025.jpg] Small engine approaching on lower track.",
+      "image_path": "projects/the_little_engine_that_could/images/page_13.png",
+      "characters": ["Little Blue Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 14,
+      "latin_text": "\"Parva sum. Numquam trāns montem iī.\"",
+      "english_text": "\"I am small. I have never been over the mountain.\"",
+      "image_prompt": "[IMAGE: 1949-018.jpg] Little engine looking up at the mountain uncertainly.",
+      "image_path": "projects/the_little_engine_that_could/images/page_14.png",
+      "characters": ["Little Blue Engine"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 15,
+      "latin_text": "Sed līberī lūdicra dēsīderant. \"Possum, putō,\" inquit. \"POSSUM, PUTŌ.\"",
+      "english_text": "But the children need their toys. \"I think I can,\" she said. \"I THINK I CAN.\"",
+      "image_prompt": "[IMAGE: 1930-page21.jpg] Little engine approaches the toy train with determination.",
+      "image_path": "projects/the_little_engine_that_could/images/page_15.png",
+      "characters": ["Little Blue Engine", "The Toys"],
+      "location": "The Tracks"
+    },
+    {
+      "page_number": 16,
+      "latin_text": "Trāxit et trāxit. \"Possum, putō! Possum, putō!\" Sursum, sursum!",
+      "english_text": "She pulled and pulled. \"I can, I think! I can, I think!\" Up, up!",
+      "image_prompt": "[IMAGE: 1949-023.jpg] Blue engine coupled to toy train, starting up mountain. Color.",
+      "image_path": "projects/the_little_engine_that_could/images/page_16.png",
+      "characters": ["Little Blue Engine", "The Toys"],
+      "location": "The Mountain"
+    },
+    {
+      "page_number": 17,
+      "latin_text": "\"Possum, putō! Possum, putō!\" Altius et altius ascendit.",
+      "english_text": "\"I can, I think! I can, I think!\" Higher and higher she climbed.",
+      "image_prompt": "[IMAGE: 1949-027.jpg] Blue engine pulling train up steep mountain slope. Color.",
+      "image_path": "projects/the_little_engine_that_could/images/page_17.png",
+      "characters": ["Little Blue Engine", "The Toys"],
+      "location": "The Mountain"
+    },
+    {
+      "page_number": 18,
+      "latin_text": "Valdē fessa erat. Sed nōn cōnstitit. \"POSSUM, PUTŌ!\"",
+      "english_text": "She was so tired. But she did not stop. \"I CAN, I THINK!\"",
+      "image_prompt": "[IMAGE: 1930-page14.jpg] Engine straining up the steepest part.",
+      "image_path": "projects/the_little_engine_that_could/images/page_18.png",
+      "characters": ["Little Blue Engine", "The Toys"],
+      "location": "The Mountain"
+    },
+    {
+      "page_number": 19,
+      "latin_text": "POSSUM! Ad summum montem pervēnit!",
+      "english_text": "I CAN! She reached the top of the mountain!",
+      "image_prompt": "[IMAGE: 1930-page16.jpg] Engine and train cresting the mountain ridge.",
+      "image_path": "projects/the_little_engine_that_could/images/page_19.png",
+      "characters": ["Little Blue Engine", "The Toys"],
+      "location": "The Summit"
+    },
+    {
+      "page_number": 20,
+      "latin_text": "Dē monte dēscendit. \"Potuī! Potuī! Putāvī! Putāvī!\"",
+      "english_text": "Down the mountain she went. \"I could! I could! I thought so! I thought so!\"",
+      "image_prompt": "[IMAGE: 1949-029.jpg] Train rolling joyfully down the far side, engine smiling.",
+      "image_path": "projects/the_little_engine_that_could/images/page_20.png",
+      "characters": ["Little Blue Engine", "The Toys"],
+      "location": "The Other Side"
+    },
+    {
+      "page_number": 21,
+      "latin_text": "Līberī accurērunt! \"Lūdicra adsunt! Cibus adest!\"",
+      "english_text": "The children came running! \"The toys are here! The food is here!\"",
+      "image_prompt": "[IMAGE: 1930-page23.jpg] Train arriving, celebration scene.",
+      "image_path": "projects/the_little_engine_that_could/images/page_21.png",
+      "characters": ["Little Blue Engine", "The Toys"],
+      "location": "The Other Side"
+    },
+    {
+      "page_number": 22,
+      "latin_text": "Parva machina caerulea subrīsit. \"Potuī,\" molliter inquit.",
+      "english_text": "The little blue engine smiled. \"I could,\" she said softly.",
+      "image_prompt": "[IMAGE: 1949-030.jpg] Small train silhouette puffing contentedly. Endpiece.",
+      "image_path": "projects/the_little_engine_that_could/images/page_22.png",
+      "characters": ["Little Blue Engine"],
+      "location": "The Other Side"
+    }
+  ]
+}
