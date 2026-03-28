@@ -38,32 +38,66 @@ def _get_primary_virtue(config: dict) -> str | None:
     return VIRTUE_DISPLAY.get(best, best.capitalize())
 
 
-def _build_glossary(translation: BookTranslation) -> list[tuple[str, str]]:
-    """Extract a simple glossary from the translation: unique Latin words paired with English context."""
+def _load_glossary(project_folder: str) -> list[tuple[str, str]] | None:
+    """Load glossary from project's translation/glossary.json if it exists.
+
+    Format: [{"latin": "arx, arcis (f.)", "english": "fortress"}, ...]
+    Returns list of (latin, english) tuples, or None if no glossary file.
+    """
+    glossary_path = Path(project_folder) / "translation" / "glossary.json"
+    if not glossary_path.exists():
+        return None
+    with open(glossary_path) as f:
+        entries = json.load(f)
+    return [(e["latin"], e["english"]) for e in entries]
+
+
+def _build_glossary_from_translation(translation: BookTranslation) -> list[tuple[int, str, str]]:
+    """Build a page-by-page glossary from the translation.
+
+    Returns list of (page_number, latin_text, english_text) tuples.
+    For pages with multiple sentences, splits into separate entries so each
+    Latin sentence is paired with its English equivalent.
+    """
     import re
-    # Collect (latin_text, english_text) pairs
-    pairs = []
-    seen_latin = set()
+
+    entries = []
     for page in translation.pages:
         latin = page.latin_text.strip()
         english = page.english_text.strip()
-        if not latin:
-            continue
-        # Split into sentences (by . ! ?)
-        latin_sents = [s.strip() for s in re.split(r'[.!?]+', latin) if s.strip()]
-        english_sents = [s.strip() for s in re.split(r'[.!?]+', english) if s.strip()]
-        # Pair sentences 1:1 where possible
-        for i, lat_s in enumerate(latin_sents):
-            # Strip caps used for emphasis, quotes, ellipses
-            clean = re.sub(r'["""\'«»\-—…]', '', lat_s).strip()
-            if not clean or clean.upper() == clean and len(clean) <= 3:
-                continue
-            eng_s = english_sents[i] if i < len(english_sents) else english
-            key = clean.lower()
-            if key not in seen_latin:
-                seen_latin.add(key)
-                pairs.append((lat_s, eng_s))
-    return pairs
+
+        # Split multi-sentence pages into individual sentence pairs.
+        # Sentences end with . ! or ? (possibly inside quotes).
+        # We split both Latin and English the same way and pair them up.
+        latin_sentences = _split_sentences(latin)
+        english_sentences = _split_sentences(english)
+
+        if len(latin_sentences) == len(english_sentences) and len(latin_sentences) > 1:
+            # Matched split — pair each sentence
+            for lat, eng in zip(latin_sentences, english_sentences):
+                entries.append((page.page_number, lat.strip(), eng.strip()))
+        else:
+            # Can't split evenly — keep as one entry
+            entries.append((page.page_number, latin, english))
+
+    return entries
+
+
+def _split_sentences(text: str) -> list[str]:
+    """Split text into sentences, keeping punctuation attached.
+
+    Handles quoted speech and standard sentence-ending punctuation.
+    """
+    import re
+    # Split on sentence-ending punctuation followed by whitespace.
+    # Use alternation in the lookbehind for fixed-width patterns:
+    # match after .  !  ?  or closing-quote variants like ."  !"  ?"
+    parts = re.split(
+        r'(?:(?<=[.!?])|(?<=[.!?]["»\u201d]))\s+',
+        text.strip()
+    )
+    # Filter out empty strings
+    return [p for p in parts if p.strip()]
 
 
 def generate_html(title_latin: str, title_english: str, translation: BookTranslation, project_folder: str, config: dict = None) -> str:
@@ -225,23 +259,63 @@ def generate_html(title_latin: str, title_english: str, translation: BookTransla
             padding-bottom: 6px;
         }
 
-        .glossary-entry {
-            margin: 6px 0;
-            padding: 4px 0;
-            border-bottom: 1px dotted #e0d9cc;
+        .glossary-table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        .glossary-latin {
-            font-size: 11pt;
+        .glossary-table td {
+            padding: 4px 8px;
+            vertical-align: top;
+            font-size: 10pt;
+            line-height: 1.4;
+            border-bottom: 1px solid #f0ebe3;
+        }
+
+        .glossary-table td.glossary-page-num {
+            width: 30px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 9pt;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .glossary-table td.glossary-latin {
+            width: 48%;
             font-weight: bold;
             color: #2c3e50;
         }
 
-        .glossary-english {
-            font-size: 10pt;
+        .glossary-table td.glossary-english {
+            width: 48%;
             color: #7f8c8d;
             font-style: italic;
-            margin-left: 15px;
+        }
+
+        /* Legacy single-word glossary styles (for glossary.json overrides) */
+        .glossary-columns {
+            column-count: 2;
+            column-gap: 0.4in;
+            column-rule: 1px solid #e0d9cc;
+        }
+
+        .glossary-entry {
+            margin: 0;
+            padding: 3px 0;
+            break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .glossary-entry .glossary-latin {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-entry .glossary-english {
+            color: #7f8c8d;
+            font-style: italic;
         }
     </style>
 </head>
@@ -311,27 +385,55 @@ def generate_html(title_latin: str, title_english: str, translation: BookTransla
     </div>
 """)
 
-    # Glossary page (disabled — sentence-splitting approach was not useful.
-    # TODO: implement proper word-by-word two-column vocabulary list)
-    glossary = None  # _build_glossary(translation)
-    if glossary:
+    # Glossary — use manual glossary.json if it exists, otherwise auto-generate
+    # from the translation (page-by-page Latin/English reading aid)
+    manual_glossary = _load_glossary(project_folder)
+    if manual_glossary:
+        # Manual glossary: two-column word/phrase list (legacy format)
         entries_html = []
-        for lat, eng in glossary:
+        for lat, eng in manual_glossary:
             entries_html.append(
                 f'<div class="glossary-entry">'
-                f'<span class="glossary-latin">{lat}</span><br>'
+                f'<span class="glossary-latin">{lat}</span> — '
                 f'<span class="glossary-english">{eng}</span>'
                 f'</div>'
             )
-        # Split into pages of ~18 entries
-        page_size = 18
+        page_size = 40
         for chunk_start in range(0, len(entries_html), page_size):
             chunk = entries_html[chunk_start:chunk_start + page_size]
             header = "Glossārium" if chunk_start == 0 else "Glossārium (cont.)"
             html_parts.append(f"""
     <div class="glossary-page">
         <h2>{header}</h2>
-        {''.join(chunk)}
+        <div class="glossary-columns">
+            {''.join(chunk)}
+        </div>
+    </div>
+""")
+    else:
+        # Auto-generated glossary: page-by-page reading aid
+        auto_glossary = _build_glossary_from_translation(translation)
+        if auto_glossary:
+            rows_html = []
+            for pg, lat, eng in auto_glossary:
+                rows_html.append(
+                    f'<tr>'
+                    f'<td class="glossary-page-num">{pg}</td>'
+                    f'<td class="glossary-latin">{lat}</td>'
+                    f'<td class="glossary-english">{eng}</td>'
+                    f'</tr>'
+                )
+            # Split into pages of ~25 rows (table rows are taller than column entries)
+            page_size = 25
+            for chunk_start in range(0, len(rows_html), page_size):
+                chunk = rows_html[chunk_start:chunk_start + page_size]
+                header = "Glossārium" if chunk_start == 0 else "Glossārium (cont.)"
+                html_parts.append(f"""
+    <div class="glossary-page">
+        <h2>{header}</h2>
+        <table class="glossary-table">
+            {''.join(chunk)}
+        </table>
     </div>
 """)
 

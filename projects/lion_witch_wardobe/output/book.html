@@ -150,23 +150,63 @@
             padding-bottom: 6px;
         }
 
-        .glossary-entry {
-            margin: 6px 0;
-            padding: 4px 0;
-            border-bottom: 1px dotted #e0d9cc;
+        .glossary-table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        .glossary-latin {
-            font-size: 11pt;
+        .glossary-table td {
+            padding: 4px 8px;
+            vertical-align: top;
+            font-size: 10pt;
+            line-height: 1.4;
+            border-bottom: 1px solid #f0ebe3;
+        }
+
+        .glossary-table td.glossary-page-num {
+            width: 30px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 9pt;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .glossary-table td.glossary-latin {
+            width: 48%;
             font-weight: bold;
             color: #2c3e50;
         }
 
-        .glossary-english {
-            font-size: 10pt;
+        .glossary-table td.glossary-english {
+            width: 48%;
             color: #7f8c8d;
             font-style: italic;
-            margin-left: 15px;
+        }
+
+        /* Legacy single-word glossary styles (for glossary.json overrides) */
+        .glossary-columns {
+            column-count: 2;
+            column-gap: 0.4in;
+            column-rule: 1px solid #e0d9cc;
+        }
+
+        .glossary-entry {
+            margin: 0;
+            padding: 3px 0;
+            break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .glossary-entry .glossary-latin {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-entry .glossary-english {
+            color: #7f8c8d;
+            font-style: italic;
         }
     </style>
 </head>
@@ -426,6 +466,30 @@
         <p class="latin-text">Professor rīdet et dīcit: “Narnia iterum vōs vocābit.”</p>
         <p class="english-text">The Professor smiles and says: 'Narnia will call you again.'</p>
         <span class="page-number">30</span>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">albus, -a, -um</span> — <span class="glossary-english">white</span></div><div class="glossary-entry"><span class="glossary-latin">annus, -ī (m.)</span> — <span class="glossary-english">year</span></div><div class="glossary-entry"><span class="glossary-latin">arcus, -ūs (m.)</span> — <span class="glossary-english">bow</span></div><div class="glossary-entry"><span class="glossary-latin">armārium, -ī (n.)</span> — <span class="glossary-english">wardrobe, cabinet</span></div><div class="glossary-entry"><span class="glossary-latin">aurōra, -ae (f.)</span> — <span class="glossary-english">dawn</span></div><div class="glossary-entry"><span class="glossary-latin">baculum, -ī (n.)</span> — <span class="glossary-english">wand, staff</span></div><div class="glossary-entry"><span class="glossary-latin">bellum, -ī (n.)</span> — <span class="glossary-english">war</span></div><div class="glossary-entry"><span class="glossary-latin">castellum, -ī (n.)</span> — <span class="glossary-english">castle</span></div><div class="glossary-entry"><span class="glossary-latin">cervus, -ī (m.)</span> — <span class="glossary-english">stag, deer</span></div><div class="glossary-entry"><span class="glossary-latin">clam (adv.)</span> — <span class="glossary-english">secretly</span></div><div class="glossary-entry"><span class="glossary-latin">clipeus, -ī (m.)</span> — <span class="glossary-english">shield</span></div><div class="glossary-entry"><span class="glossary-latin">conveniō, -īre</span> — <span class="glossary-english">to meet</span></div><div class="glossary-entry"><span class="glossary-latin">corōnō, -āre</span> — <span class="glossary-english">to crown</span></div><div class="glossary-entry"><span class="glossary-latin">crēdō, -ere</span> — <span class="glossary-english">to believe</span></div><div class="glossary-entry"><span class="glossary-latin">currus, -ūs (m.)</span> — <span class="glossary-english">chariot, sledge</span></div><div class="glossary-entry"><span class="glossary-latin">dēliciae, -ārum (f.pl.)</span> — <span class="glossary-english">delights, sweets</span></div><div class="glossary-entry"><span class="glossary-latin">diēs, -ēī (m.)</span> — <span class="glossary-english">day</span></div><div class="glossary-entry"><span class="glossary-latin">discēdō, -ere</span> — <span class="glossary-english">to leave, depart</span></div><div class="glossary-entry"><span class="glossary-latin">domus, -ūs (f.)</span> — <span class="glossary-english">house, home</span></div><div class="glossary-entry"><span class="glossary-latin">faciō, -ere</span> — <span class="glossary-english">to make, do</span></div><div class="glossary-entry"><span class="glossary-latin">fleō, -ēre</span> — <span class="glossary-english">to weep, cry</span></div><div class="glossary-entry"><span class="glossary-latin">flūmen, -inis (n.)</span> — <span class="glossary-english">river</span></div><div class="glossary-entry"><span class="glossary-latin">fortiter (adv.)</span> — <span class="glossary-english">bravely</span></div><div class="glossary-entry"><span class="glossary-latin">frangō, -ere</span> — <span class="glossary-english">to break</span></div><div class="glossary-entry"><span class="glossary-latin">frāter, -tris (m.)</span> — <span class="glossary-english">sibling, brother</span></div><div class="glossary-entry"><span class="glossary-latin">gladius, -ī (m.)</span> — <span class="glossary-english">sword</span></div><div class="glossary-entry"><span class="glossary-latin">habitō, -āre</span> — <span class="glossary-english">to live, dwell</span></div><div class="glossary-entry"><span class="glossary-latin">hiems, hiemis (f.)</span> — <span class="glossary-english">winter</span></div><div class="glossary-entry"><span class="glossary-latin">intrō, -āre</span> — <span class="glossary-english">to enter</span></div><div class="glossary-entry"><span class="glossary-latin">inveniō, -īre</span> — <span class="glossary-english">to find</span></div><div class="glossary-entry"><span class="glossary-latin">invītō, -āre</span> — <span class="glossary-english">to invite</span></div><div class="glossary-entry"><span class="glossary-latin">iūstus, -a, -um</span> — <span class="glossary-english">just, fair</span></div><div class="glossary-entry"><span class="glossary-latin">lampa, -ae (f.)</span> — <span class="glossary-english">lamp, lamppost</span></div><div class="glossary-entry"><span class="glossary-latin">lapideus, -a, -um</span> — <span class="glossary-english">of stone</span></div><div class="glossary-entry"><span class="glossary-latin">leō, -ōnis (m.)</span> — <span class="glossary-english">lion</span></div><div class="glossary-entry"><span class="glossary-latin">lēnis, -e</span> — <span class="glossary-english">gentle</span></div><div class="glossary-entry"><span class="glossary-latin">licet (impers.)</span> — <span class="glossary-english">it is allowed</span></div><div class="glossary-entry"><span class="glossary-latin">liquēscō, -ere</span> — <span class="glossary-english">to melt</span></div><div class="glossary-entry"><span class="glossary-latin">lūceō, -ēre</span> — <span class="glossary-english">to glow, shine</span></div><div class="glossary-entry"><span class="glossary-latin">māgīa, -ae (f.)</span> — <span class="glossary-english">magic</span></div>
+        </div>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium (cont.)</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">magnificus, -a, -um</span> — <span class="glossary-english">magnificent</span></div><div class="glossary-entry"><span class="glossary-latin">malefica, -ae (f.)</span> — <span class="glossary-english">witch</span></div><div class="glossary-entry"><span class="glossary-latin">mēnsa, -ae (f.)</span> — <span class="glossary-english">table</span></div><div class="glossary-entry"><span class="glossary-latin">morior, morī</span> — <span class="glossary-english">to die</span></div><div class="glossary-entry"><span class="glossary-latin">mors, mortis (f.)</span> — <span class="glossary-english">death</span></div><div class="glossary-entry"><span class="glossary-latin">mōnstrō, -āre</span> — <span class="glossary-english">to show</span></div><div class="glossary-entry"><span class="glossary-latin">nix, nivis (f.)</span> — <span class="glossary-english">snow</span></div><div class="glossary-entry"><span class="glossary-latin">occīdō, -ere</span> — <span class="glossary-english">to kill</span></div><div class="glossary-entry"><span class="glossary-latin">pluviōsus, -a, -um</span> — <span class="glossary-english">rainy</span></div><div class="glossary-entry"><span class="glossary-latin">pōtiō, -ōnis (f.)</span> — <span class="glossary-english">potion, drink</span></div><div class="glossary-entry"><span class="glossary-latin">prōditiō, -ōnis (f.)</span> — <span class="glossary-english">betrayal</span></div><div class="glossary-entry"><span class="glossary-latin">prōmittō, -ere</span> — <span class="glossary-english">to promise</span></div><div class="glossary-entry"><span class="glossary-latin">profundus, -a, -um</span> — <span class="glossary-english">deep</span></div><div class="glossary-entry"><span class="glossary-latin">proelium, -ī (n.)</span> — <span class="glossary-english">battle</span></div><div class="glossary-entry"><span class="glossary-latin">pūgiō, -ōnis (m.)</span> — <span class="glossary-english">dagger</span></div><div class="glossary-entry"><span class="glossary-latin">pugnō, -āre</span> — <span class="glossary-english">to fight</span></div><div class="glossary-entry"><span class="glossary-latin">redeō, -īre</span> — <span class="glossary-english">to return</span></div><div class="glossary-entry"><span class="glossary-latin">rēn, rēnis (m.)</span> — <span class="glossary-english">reindeer</span></div><div class="glossary-entry"><span class="glossary-latin">revocō, -āre</span> — <span class="glossary-english">to call back, revive</span></div><div class="glossary-entry"><span class="glossary-latin">rēx, rēgis (m.)</span> — <span class="glossary-english">king</span></div><div class="glossary-entry"><span class="glossary-latin">rīdeō, -ēre</span> — <span class="glossary-english">to smile, laugh</span></div><div class="glossary-entry"><span class="glossary-latin">sagitta, -ae (f.)</span> — <span class="glossary-english">arrow</span></div><div class="glossary-entry"><span class="glossary-latin">sānō, -āre</span> — <span class="glossary-english">to heal</span></div><div class="glossary-entry"><span class="glossary-latin">semper (adv.)</span> — <span class="glossary-english">always</span></div><div class="glossary-entry"><span class="glossary-latin">sequor, sequī</span> — <span class="glossary-english">to follow</span></div><div class="glossary-entry"><span class="glossary-latin">statua, -ae (f.)</span> — <span class="glossary-english">statue</span></div><div class="glossary-entry"><span class="glossary-latin">subitō (adv.)</span> — <span class="glossary-english">suddenly</span></div><div class="glossary-entry"><span class="glossary-latin">tangō, -ere</span> — <span class="glossary-english">to touch</span></div><div class="glossary-entry"><span class="glossary-latin">tempus, -oris (n.)</span> — <span class="glossary-english">time</span></div><div class="glossary-entry"><span class="glossary-latin">terra, -ae (f.)</span> — <span class="glossary-english">land</span></div><div class="glossary-entry"><span class="glossary-latin">thea, -ae (f.)</span> — <span class="glossary-english">tea</span></div><div class="glossary-entry"><span class="glossary-latin">trādō, -ere</span> — <span class="glossary-english">to betray, hand over</span></div><div class="glossary-entry"><span class="glossary-latin">valēns, -entis</span> — <span class="glossary-english">valiant, strong</span></div><div class="glossary-entry"><span class="glossary-latin">vēr, vēris (n.)</span> — <span class="glossary-english">spring</span></div><div class="glossary-entry"><span class="glossary-latin">vērus, -a, -um</span> — <span class="glossary-english">true, real</span></div><div class="glossary-entry"><span class="glossary-latin">vetō, -āre</span> — <span class="glossary-english">to forbid</span></div><div class="glossary-entry"><span class="glossary-latin">via, -ae (f.)</span> — <span class="glossary-english">way, road</span></div><div class="glossary-entry"><span class="glossary-latin">vincō, -ere</span> — <span class="glossary-english">to conquer, defeat</span></div><div class="glossary-entry"><span class="glossary-latin">vīvō, -ere</span> — <span class="glossary-english">to live</span></div><div class="glossary-entry"><span class="glossary-latin">vīvus, -a, -um</span> — <span class="glossary-english">alive, living</span></div>
+        </div>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium (cont.)</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">vocō, -āre</span> — <span class="glossary-english">to call</span></div>
+        </div>
     </div>
 
 

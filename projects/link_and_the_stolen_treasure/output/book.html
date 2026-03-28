@@ -150,23 +150,63 @@
             padding-bottom: 6px;
         }
 
-        .glossary-entry {
-            margin: 6px 0;
-            padding: 4px 0;
-            border-bottom: 1px dotted #e0d9cc;
+        .glossary-table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        .glossary-latin {
-            font-size: 11pt;
+        .glossary-table td {
+            padding: 4px 8px;
+            vertical-align: top;
+            font-size: 10pt;
+            line-height: 1.4;
+            border-bottom: 1px solid #f0ebe3;
+        }
+
+        .glossary-table td.glossary-page-num {
+            width: 30px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 9pt;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .glossary-table td.glossary-latin {
+            width: 48%;
             font-weight: bold;
             color: #2c3e50;
         }
 
-        .glossary-english {
-            font-size: 10pt;
+        .glossary-table td.glossary-english {
+            width: 48%;
             color: #7f8c8d;
             font-style: italic;
-            margin-left: 15px;
+        }
+
+        /* Legacy single-word glossary styles (for glossary.json overrides) */
+        .glossary-columns {
+            column-count: 2;
+            column-gap: 0.4in;
+            column-rule: 1px solid #e0d9cc;
+        }
+
+        .glossary-entry {
+            margin: 0;
+            padding: 3px 0;
+            break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .glossary-entry .glossary-latin {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-entry .glossary-english {
+            color: #7f8c8d;
+            font-style: italic;
         }
     </style>
 </head>
@@ -378,6 +418,22 @@
         <p class="latin-text">Lincus timēbat. Sed iterum temptāvit. Fortis erat.</p>
         <p class="english-text">Link was afraid. But he tried again. He was brave.</p>
         <span class="page-number">24</span>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">adhūc (adv.)</span> — <span class="glossary-english">still, yet</span></div><div class="glossary-entry"><span class="glossary-latin">āēr, āeris (m.)</span> — <span class="glossary-english">air</span></div><div class="glossary-entry"><span class="glossary-latin">ambulō, -āre</span> — <span class="glossary-english">to walk</span></div><div class="glossary-entry"><span class="glossary-latin">aperiō, -īre</span> — <span class="glossary-english">to open</span></div><div class="glossary-entry"><span class="glossary-latin">arca, -ae (f.)</span> — <span class="glossary-english">chest, box</span></div><div class="glossary-entry"><span class="glossary-latin">arx, arcis (f.)</span> — <span class="glossary-english">fortress</span></div><div class="glossary-entry"><span class="glossary-latin">artē (adv.)</span> — <span class="glossary-english">tightly</span></div><div class="glossary-entry"><span class="glossary-latin">cadō, -ere</span> — <span class="glossary-english">to fall, land</span></div><div class="glossary-entry"><span class="glossary-latin">capiō, -ere</span> — <span class="glossary-english">to seize, grab</span></div><div class="glossary-entry"><span class="glossary-latin">cēlō, -āre</span> — <span class="glossary-english">to hide</span></div><div class="glossary-entry"><span class="glossary-latin">clāmō, -āre</span> — <span class="glossary-english">to shout</span></div><div class="glossary-entry"><span class="glossary-latin">cucurrō, -ere</span> — <span class="glossary-english">to run</span></div><div class="glossary-entry"><span class="glossary-latin">dēsiliō, -īre</span> — <span class="glossary-english">to jump down</span></div><div class="glossary-entry"><span class="glossary-latin">diūtius (adv.)</span> — <span class="glossary-english">longer</span></div><div class="glossary-entry"><span class="glossary-latin">dolium, -ī (n.)</span> — <span class="glossary-english">barrel</span></div><div class="glossary-entry"><span class="glossary-latin">exspectō, -āre</span> — <span class="glossary-english">to wait</span></div><div class="glossary-entry"><span class="glossary-latin">faciō, -ere</span> — <span class="glossary-english">to do, make</span></div><div class="glossary-entry"><span class="glossary-latin">fortis, -e</span> — <span class="glossary-english">brave, strong</span></div><div class="glossary-entry"><span class="glossary-latin">hāc vice</span> — <span class="glossary-english">this time</span></div><div class="glossary-entry"><span class="glossary-latin">iaciō, -ere</span> — <span class="glossary-english">to throw</span></div><div class="glossary-entry"><span class="glossary-latin">inquit</span> — <span class="glossary-english">he/she said</span></div><div class="glossary-entry"><span class="glossary-latin">inveniō, -īre</span> — <span class="glossary-english">to find</span></div><div class="glossary-entry"><span class="glossary-latin">iterum (adv.)</span> — <span class="glossary-english">again</span></div><div class="glossary-entry"><span class="glossary-latin">iuxtā (prep.)</span> — <span class="glossary-english">next to, beside</span></div><div class="glossary-entry"><span class="glossary-latin">lēniter (adv.)</span> — <span class="glossary-english">gently, softly</span></div><div class="glossary-entry"><span class="glossary-latin">lūx, lūcis (f.)</span> — <span class="glossary-english">light</span></div><div class="glossary-entry"><span class="glossary-latin">magnus, -a, -um</span> — <span class="glossary-english">big, great</span></div><div class="glossary-entry"><span class="glossary-latin">mare, maris (n.)</span> — <span class="glossary-english">sea</span></div><div class="glossary-entry"><span class="glossary-latin">meminī, meminisse</span> — <span class="glossary-english">to remember</span></div><div class="glossary-entry"><span class="glossary-latin">moveō, -ēre</span> — <span class="glossary-english">to move</span></div><div class="glossary-entry"><span class="glossary-latin">nāvigō, -āre</span> — <span class="glossary-english">to sail</span></div><div class="glossary-entry"><span class="glossary-latin">nihil (n. indecl.)</span> — <span class="glossary-english">nothing</span></div><div class="glossary-entry"><span class="glossary-latin">nōlō, nōlle</span> — <span class="glossary-english">to not want</span></div><div class="glossary-entry"><span class="glossary-latin">obscūrus, -a, -um</span> — <span class="glossary-english">dark</span></div><div class="glossary-entry"><span class="glossary-latin">omnis, -e</span> — <span class="glossary-english">every, all</span></div><div class="glossary-entry"><span class="glossary-latin">ōstium, -ī (n.)</span> — <span class="glossary-english">door, entrance</span></div><div class="glossary-entry"><span class="glossary-latin">pōnō, -ere</span> — <span class="glossary-english">to put, place</span></div><div class="glossary-entry"><span class="glossary-latin">praeter (prep.)</span> — <span class="glossary-english">past, beyond</span></div><div class="glossary-entry"><span class="glossary-latin">procul (adv.)</span> — <span class="glossary-english">far away</span></div><div class="glossary-entry"><span class="glossary-latin">prōspiciō, -ere</span> — <span class="glossary-english">to peek, look out</span></div>
+        </div>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium (cont.)</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">rapiō, -ere</span> — <span class="glossary-english">to steal, snatch</span></div><div class="glossary-entry"><span class="glossary-latin">redeō, -īre</span> — <span class="glossary-english">to return, go back</span></div><div class="glossary-entry"><span class="glossary-latin">referō, referre</span> — <span class="glossary-english">to bring back</span></div><div class="glossary-entry"><span class="glossary-latin">rēpō, -ere</span> — <span class="glossary-english">to creep, crawl</span></div><div class="glossary-entry"><span class="glossary-latin">rīdeō, -ēre</span> — <span class="glossary-english">to smile, laugh</span></div><div class="glossary-entry"><span class="glossary-latin">sedeō, -ēre</span> — <span class="glossary-english">to sit</span></div><div class="glossary-entry"><span class="glossary-latin">sōlus, -a, -um</span> — <span class="glossary-english">alone</span></div><div class="glossary-entry"><span class="glossary-latin">sōlum (adv.)</span> — <span class="glossary-english">only</span></div><div class="glossary-entry"><span class="glossary-latin">spectō, -āre</span> — <span class="glossary-english">to look at, watch</span></div><div class="glossary-entry"><span class="glossary-latin">surgō, -ere</span> — <span class="glossary-english">to stand up, rise</span></div><div class="glossary-entry"><span class="glossary-latin">tacitē (adv.)</span> — <span class="glossary-english">quietly, silently</span></div><div class="glossary-entry"><span class="glossary-latin">temptō, -āre</span> — <span class="glossary-english">to try, attempt</span></div><div class="glossary-entry"><span class="glossary-latin">teneō, -ēre</span> — <span class="glossary-english">to hold</span></div><div class="glossary-entry"><span class="glossary-latin">terra, -ae (f.)</span> — <span class="glossary-english">ground, land</span></div><div class="glossary-entry"><span class="glossary-latin">thēsaurus, -ī (m.)</span> — <span class="glossary-english">treasure</span></div><div class="glossary-entry"><span class="glossary-latin">timeō, -ēre</span> — <span class="glossary-english">to fear, be afraid</span></div><div class="glossary-entry"><span class="glossary-latin">trahō, -ere</span> — <span class="glossary-english">to pull, drag</span></div><div class="glossary-entry"><span class="glossary-latin">trāns (prep.)</span> — <span class="glossary-english">across</span></div><div class="glossary-entry"><span class="glossary-latin">vertō, -ere</span> — <span class="glossary-english">to turn</span></div><div class="glossary-entry"><span class="glossary-latin">videō, -ēre</span> — <span class="glossary-english">to see</span></div><div class="glossary-entry"><span class="glossary-latin">volō, -āre</span> — <span class="glossary-english">to fly</span></div>
+        </div>
     </div>
 
 

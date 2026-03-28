@@ -150,23 +150,63 @@
             padding-bottom: 6px;
         }
 
-        .glossary-entry {
-            margin: 6px 0;
-            padding: 4px 0;
-            border-bottom: 1px dotted #e0d9cc;
+        .glossary-table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        .glossary-latin {
-            font-size: 11pt;
+        .glossary-table td {
+            padding: 4px 8px;
+            vertical-align: top;
+            font-size: 10pt;
+            line-height: 1.4;
+            border-bottom: 1px solid #f0ebe3;
+        }
+
+        .glossary-table td.glossary-page-num {
+            width: 30px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 9pt;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .glossary-table td.glossary-latin {
+            width: 48%;
             font-weight: bold;
             color: #2c3e50;
         }
 
-        .glossary-english {
-            font-size: 10pt;
+        .glossary-table td.glossary-english {
+            width: 48%;
             color: #7f8c8d;
             font-style: italic;
-            margin-left: 15px;
+        }
+
+        /* Legacy single-word glossary styles (for glossary.json overrides) */
+        .glossary-columns {
+            column-count: 2;
+            column-gap: 0.4in;
+            column-rule: 1px solid #e0d9cc;
+        }
+
+        .glossary-entry {
+            margin: 0;
+            padding: 3px 0;
+            break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .glossary-entry .glossary-latin {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-entry .glossary-english {
+            color: #7f8c8d;
+            font-style: italic;
         }
     </style>
 </head>
@@ -351,13 +391,17 @@
 
     <div class="glossary-page">
         <h2>Glossārium</h2>
-        <div class="glossary-entry"><span class="glossary-latin">Trēs fēlīculī erant: Digitālia, Thomas, et Moppet</span><br><span class="glossary-english">There were three little kittens: Mittens, Tom Kitten, and Moppet</span></div><div class="glossary-entry"><span class="glossary-latin">Ōlim māter convīvium parāre volēbat</span><br><span class="glossary-english">One day their mother wanted to have a tea party</span></div><div class="glossary-entry"><span class="glossary-latin">Fēlīculōs lāvit et pīlōs eōrum dēpēxit</span><br><span class="glossary-english">She washed the kittens and brushed their fur</span></div><div class="glossary-entry"><span class="glossary-latin">Caudās et vibrissās eōrum pēxit</span><br><span class="glossary-english">She combed their tails and whiskers</span></div><div class="glossary-entry"><span class="glossary-latin">Thomam tunicā caeruleā vestīvit</span><br><span class="glossary-english">She dressed Tom in a blue suit</span></div><div class="glossary-entry"><span class="glossary-latin">Sed Thomas nimis pinguis erat</span><br><span class="glossary-english">But Tom was very fat</span></div><div class="glossary-entry"><span class="glossary-latin">Fībulae dēsiluērunt</span><br><span class="glossary-english">Several buttons popped off</span></div><div class="glossary-entry"><span class="glossary-latin">Māter eās resūit</span><br><span class="glossary-english">Mother sewed them back on</span></div><div class="glossary-entry"><span class="glossary-latin">"Īte in hortum</span><br><span class="glossary-english">"Go into the garden</span></div><div class="glossary-entry"><span class="glossary-latin">Vestīmenta munda servāte</span><br><span class="glossary-english">Keep your clothes clean</span></div><div class="glossary-entry"><span class="glossary-latin">" inquit Māter</span><br><span class="glossary-english">" said Mother</span></div><div class="glossary-entry"><span class="glossary-latin">Moppet et Digitālia per hortum ambulābant</span><br><span class="glossary-english">Moppet and Mittens walked down the path</span></div><div class="glossary-entry"><span class="glossary-latin">In stōlīs suīs offendērunt</span><br><span class="glossary-english">They tripped on their dresses</span></div><div class="glossary-entry"><span class="glossary-latin">In hortō cecidērunt et sordidī factī sunt</span><br><span class="glossary-english">They fell in the garden and got dirty</span></div><div class="glossary-entry"><span class="glossary-latin">Thomas mūrum ascendit</span><br><span class="glossary-english">Tom climbed up the wall</span></div><div class="glossary-entry"><span class="glossary-latin">Petasus dēcidit</span><br><span class="glossary-english">His hat fell off</span></div><div class="glossary-entry"><span class="glossary-latin">Fībulae iterum dēsiluērunt</span><br><span class="glossary-english">His buttons burst</span></div><div class="glossary-entry"><span class="glossary-latin">Moppet et Digitālia Thomam adiuvāre temptāvērunt</span><br><span class="glossary-english">Moppet and Mittens tried to help Tom</span></div>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">abeō, abīre</span> — <span class="glossary-english">to go away, leave</span></div><div class="glossary-entry"><span class="glossary-latin">adiuvō, -āre</span> — <span class="glossary-english">to help</span></div><div class="glossary-entry"><span class="glossary-latin">anas, anatis (f.)</span> — <span class="glossary-english">duck</span></div><div class="glossary-entry"><span class="glossary-latin">ascendō, -ere</span> — <span class="glossary-english">to climb</span></div><div class="glossary-entry"><span class="glossary-latin">cadō, -ere</span> — <span class="glossary-english">to fall</span></div><div class="glossary-entry"><span class="glossary-latin">caeruleus, -a, -um</span> — <span class="glossary-english">blue</span></div><div class="glossary-entry"><span class="glossary-latin">cauda, -ae (f.)</span> — <span class="glossary-english">tail</span></div><div class="glossary-entry"><span class="glossary-latin">conveniō, -īre</span> — <span class="glossary-english">to fit</span></div><div class="glossary-entry"><span class="glossary-latin">convīvium, -ī (n.)</span> — <span class="glossary-english">tea party, feast</span></div><div class="glossary-entry"><span class="glossary-latin">dēpēctō, -ere</span> — <span class="glossary-english">to comb out</span></div><div class="glossary-entry"><span class="glossary-latin">dēsiliō, -īre</span> — <span class="glossary-english">to pop off, jump off</span></div><div class="glossary-entry"><span class="glossary-latin">fēlīculus, -ī (m.)</span> — <span class="glossary-english">kitten</span></div><div class="glossary-entry"><span class="glossary-latin">fībula, -ae (f.)</span> — <span class="glossary-english">button, clasp</span></div><div class="glossary-entry"><span class="glossary-latin">hortus, -ī (m.)</span> — <span class="glossary-english">garden</span></div><div class="glossary-entry"><span class="glossary-latin">induō, -ere</span> — <span class="glossary-english">to put on, wear</span></div><div class="glossary-entry"><span class="glossary-latin">inquit</span> — <span class="glossary-english">he/she said</span></div><div class="glossary-entry"><span class="glossary-latin">īrātus, -a, -um</span> — <span class="glossary-english">angry</span></div><div class="glossary-entry"><span class="glossary-latin">iterum (adv.)</span> — <span class="glossary-english">again</span></div><div class="glossary-entry"><span class="glossary-latin">lavō, -āre</span> — <span class="glossary-english">to wash</span></div><div class="glossary-entry"><span class="glossary-latin">lectus, -ī (m.)</span> — <span class="glossary-english">bed</span></div><div class="glossary-entry"><span class="glossary-latin">māter, -tris (f.)</span> — <span class="glossary-english">mother</span></div><div class="glossary-entry"><span class="glossary-latin">mīttō, -ere</span> — <span class="glossary-english">to send</span></div><div class="glossary-entry"><span class="glossary-latin">mundus, -a, -um</span> — <span class="glossary-english">clean</span></div><div class="glossary-entry"><span class="glossary-latin">mūrus, -ī (m.)</span> — <span class="glossary-english">wall</span></div><div class="glossary-entry"><span class="glossary-latin">nūdus, -a, -um</span> — <span class="glossary-english">naked, bare</span></div><div class="glossary-entry"><span class="glossary-latin">offendō, -ere</span> — <span class="glossary-english">to trip, stumble</span></div><div class="glossary-entry"><span class="glossary-latin">ōlim (adv.)</span> — <span class="glossary-english">once, one day</span></div><div class="glossary-entry"><span class="glossary-latin">parō, -āre</span> — <span class="glossary-english">to prepare</span></div><div class="glossary-entry"><span class="glossary-latin">pēctō, -ere</span> — <span class="glossary-english">to comb</span></div><div class="glossary-entry"><span class="glossary-latin">petasus, -ī (m.)</span> — <span class="glossary-english">hat</span></div><div class="glossary-entry"><span class="glossary-latin">pīlus, -ī (m.)</span> — <span class="glossary-english">hair, fur</span></div><div class="glossary-entry"><span class="glossary-latin">pinguis, -e</span> — <span class="glossary-english">fat, plump</span></div><div class="glossary-entry"><span class="glossary-latin">pūniō, -īre</span> — <span class="glossary-english">to punish</span></div><div class="glossary-entry"><span class="glossary-latin">resūō, -ere</span> — <span class="glossary-english">to sew back on</span></div><div class="glossary-entry"><span class="glossary-latin">rīdeō, -ēre</span> — <span class="glossary-english">to laugh</span></div><div class="glossary-entry"><span class="glossary-latin">servō, -āre</span> — <span class="glossary-english">to keep, preserve</span></div><div class="glossary-entry"><span class="glossary-latin">sordidus, -a, -um</span> — <span class="glossary-english">dirty</span></div><div class="glossary-entry"><span class="glossary-latin">stāgnum, -ī (n.)</span> — <span class="glossary-english">pond</span></div><div class="glossary-entry"><span class="glossary-latin">stola, -ae (f.)</span> — <span class="glossary-english">dress, gown</span></div><div class="glossary-entry"><span class="glossary-latin">sustollō, -ere</span> — <span class="glossary-english">to pick up</span></div>
+        </div>
     </div>
 
 
     <div class="glossary-page">
         <h2>Glossārium (cont.)</h2>
-        <div class="glossary-entry"><span class="glossary-latin">Sed vestīmenta omnia cecidērunt</span><br><span class="glossary-english">But all his clothes fell off</span></div><div class="glossary-entry"><span class="glossary-latin">Tum trēs anatēs in viā vēnērunt</span><br><span class="glossary-english">Then three ducks came down the road</span></div><div class="glossary-entry"><span class="glossary-latin">Pit pat</span><br><span class="glossary-english">Pit pat paddle pat</span></div><div class="glossary-entry"><span class="glossary-latin">Anatēs petasum et vestīmenta Thomae sustulērunt</span><br><span class="glossary-english">The ducks picked up Tom's hat and clothes</span></div><div class="glossary-entry"><span class="glossary-latin">Fēlīculī rīsērunt</span><br><span class="glossary-english">The kittens laughed</span></div><div class="glossary-entry"><span class="glossary-latin">Digitālia dē mūrō cecidit</span><br><span class="glossary-english">Mittens fell off the wall</span></div><div class="glossary-entry"><span class="glossary-latin">Anas tunicam caeruleam Thomae induit</span><br><span class="glossary-english">Mr</span></div><div class="glossary-entry"><span class="glossary-latin">Nōn conveniēbat</span><br><span class="glossary-english">Drake put on Tom's blue suit</span></div><div class="glossary-entry"><span class="glossary-latin">Anatēs in vestīmentīs fēlīculōrum abiērunt</span><br><span class="glossary-english">The ducks walked away in the kittens' clothes</span></div><div class="glossary-entry"><span class="glossary-latin">Tum Māter in hortum vēnit</span><br><span class="glossary-english">Then Mother came into the garden</span></div><div class="glossary-entry"><span class="glossary-latin">Fēlīculī nūdī erant</span><br><span class="glossary-english">The kittens had no clothes on</span></div><div class="glossary-entry"><span class="glossary-latin">Māter īrātissima erat</span><br><span class="glossary-english">Mother was very angry</span></div><div class="glossary-entry"><span class="glossary-latin">Fēlīculōs pūnīvit</span><br><span class="glossary-english">She smacked the kittens</span></div><div class="glossary-entry"><span class="glossary-latin">Eōs in lectum mīsit</span><br><span class="glossary-english">She sent them to bed</span></div><div class="glossary-entry"><span class="glossary-latin">Sed fēlīculī in lectō nōn mānsērunt</span><br><span class="glossary-english">But the kittens did not stay in bed</span></div><div class="glossary-entry"><span class="glossary-latin">Et vestīmenta anatum in stāgnum cecidērunt</span><br><span class="glossary-english">And the ducks' clothes fell off in the pond</span></div>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">temptō, -āre</span> — <span class="glossary-english">to try, attempt</span></div><div class="glossary-entry"><span class="glossary-latin">tollō, -ere</span> — <span class="glossary-english">to pick up, take</span></div><div class="glossary-entry"><span class="glossary-latin">tunica, -ae (f.)</span> — <span class="glossary-english">suit, jacket</span></div><div class="glossary-entry"><span class="glossary-latin">venīō, -īre</span> — <span class="glossary-english">to come</span></div><div class="glossary-entry"><span class="glossary-latin">vestīmentum, -ī (n.)</span> — <span class="glossary-english">clothing, clothes</span></div><div class="glossary-entry"><span class="glossary-latin">vestiō, -īre</span> — <span class="glossary-english">to dress</span></div><div class="glossary-entry"><span class="glossary-latin">vibrissa, -ae (f.)</span> — <span class="glossary-english">whisker</span></div><div class="glossary-entry"><span class="glossary-latin">volō, velle</span> — <span class="glossary-english">to want</span></div>
+        </div>
     </div>
 
 

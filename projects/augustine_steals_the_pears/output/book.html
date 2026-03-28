@@ -150,23 +150,63 @@
             padding-bottom: 6px;
         }
 
-        .glossary-entry {
-            margin: 6px 0;
-            padding: 4px 0;
-            border-bottom: 1px dotted #e0d9cc;
+        .glossary-table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        .glossary-latin {
-            font-size: 11pt;
+        .glossary-table td {
+            padding: 4px 8px;
+            vertical-align: top;
+            font-size: 10pt;
+            line-height: 1.4;
+            border-bottom: 1px solid #f0ebe3;
+        }
+
+        .glossary-table td.glossary-page-num {
+            width: 30px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 9pt;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .glossary-table td.glossary-latin {
+            width: 48%;
             font-weight: bold;
             color: #2c3e50;
         }
 
-        .glossary-english {
-            font-size: 10pt;
+        .glossary-table td.glossary-english {
+            width: 48%;
             color: #7f8c8d;
             font-style: italic;
-            margin-left: 15px;
+        }
+
+        /* Legacy single-word glossary styles (for glossary.json overrides) */
+        .glossary-columns {
+            column-count: 2;
+            column-gap: 0.4in;
+            column-rule: 1px solid #e0d9cc;
+        }
+
+        .glossary-entry {
+            margin: 0;
+            padding: 3px 0;
+            break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .glossary-entry .glossary-latin {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-entry .glossary-english {
+            color: #7f8c8d;
+            font-style: italic;
         }
     </style>
 </head>
@@ -279,7 +319,7 @@
 
     <div class="story-page">
         <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/augustine_steals_the_pears/images/page_12.png" alt="Page 12">
-        <p class="latin-text">et rīdentēs sub stēllīs.</p>
+        <p class="latin-text">et rīdentēs sub stellīs.</p>
         <p class="english-text">and laughing under the stars.</p>
         <span class="page-number">12</span>
     </div>
@@ -354,6 +394,22 @@
         <p class="latin-text">Cum dīcimus, "Mē paenitet, Deus," Deus dīcit, "Remittō tibi!"</p>
         <p class="english-text">When we say, "I’m sorry, God," God says, "I forgive you!"</p>
         <span class="page-number">21</span>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">agitō, -āre</span> — <span class="glossary-english">to shake</span></div><div class="glossary-entry"><span class="glossary-latin">amīcus, -ī (m.)</span> — <span class="glossary-english">friend</span></div><div class="glossary-entry"><span class="glossary-latin">amō, -āre</span> — <span class="glossary-english">to love</span></div><div class="glossary-entry"><span class="glossary-latin">amor, -ōris (m.)</span> — <span class="glossary-english">love</span></div><div class="glossary-entry"><span class="glossary-latin">arbor, -oris (f.)</span> — <span class="glossary-english">tree</span></div><div class="glossary-entry"><span class="glossary-latin">audiō, -īre</span> — <span class="glossary-english">to hear, listen</span></div><div class="glossary-entry"><span class="glossary-latin">bonus, -a, -um</span> — <span class="glossary-english">good</span></div><div class="glossary-entry"><span class="glossary-latin">cadō, -ere</span> — <span class="glossary-english">to fall</span></div><div class="glossary-entry"><span class="glossary-latin">capiō, -ere</span> — <span class="glossary-english">to take, seize</span></div><div class="glossary-entry"><span class="glossary-latin">clārus, -a, -um</span> — <span class="glossary-english">bright, clear</span></div><div class="glossary-entry"><span class="glossary-latin">cōnscientia, -ae (f.)</span> — <span class="glossary-english">conscience</span></div><div class="glossary-entry"><span class="glossary-latin">cor, cordis (n.)</span> — <span class="glossary-english">heart</span></div><div class="glossary-entry"><span class="glossary-latin">cubitum (adv.)</span> — <span class="glossary-english">to bed</span></div><div class="glossary-entry"><span class="glossary-latin">currō, -ere</span> — <span class="glossary-english">to run</span></div><div class="glossary-entry"><span class="glossary-latin">dīcō, -ere</span> — <span class="glossary-english">to say</span></div><div class="glossary-entry"><span class="glossary-latin">doleō, -ēre</span> — <span class="glossary-english">to grieve, be sorry</span></div><div class="glossary-entry"><span class="glossary-latin">domus, -ūs (f.)</span> — <span class="glossary-english">home, house</span></div><div class="glossary-entry"><span class="glossary-latin">dormiō, -īre</span> — <span class="glossary-english">to sleep</span></div><div class="glossary-entry"><span class="glossary-latin">eō, īre</span> — <span class="glossary-english">to go</span></div><div class="glossary-entry"><span class="glossary-latin">frūctus, -ūs (m.)</span> — <span class="glossary-english">fruit</span></div><div class="glossary-entry"><span class="glossary-latin">fulgeō, -ēre</span> — <span class="glossary-english">to shine</span></div><div class="glossary-entry"><span class="glossary-latin">fūror, -ārī</span> — <span class="glossary-english">to steal</span></div><div class="glossary-entry"><span class="glossary-latin">gravis, -e</span> — <span class="glossary-english">heavy</span></div><div class="glossary-entry"><span class="glossary-latin">iamprīdem (adv.)</span> — <span class="glossary-english">long ago</span></div><div class="glossary-entry"><span class="glossary-latin">iaciō, -ere</span> — <span class="glossary-english">to throw</span></div><div class="glossary-entry"><span class="glossary-latin">interiōr, -ius</span> — <span class="glossary-english">inner</span></div><div class="glossary-entry"><span class="glossary-latin">laetus, -a, -um</span> — <span class="glossary-english">happy</span></div><div class="glossary-entry"><span class="glossary-latin">lucidus, -a, -um</span> — <span class="glossary-english">shiny, bright</span></div><div class="glossary-entry"><span class="glossary-latin">lūna, -ae (f.)</span> — <span class="glossary-english">moon</span></div><div class="glossary-entry"><span class="glossary-latin">nox, noctis (f.)</span> — <span class="glossary-english">night</span></div><div class="glossary-entry"><span class="glossary-latin">ōrō, -āre</span> — <span class="glossary-english">to pray</span></div><div class="glossary-entry"><span class="glossary-latin">paenitet (impers.)</span> — <span class="glossary-english">it causes regret</span></div><div class="glossary-entry"><span class="glossary-latin">pirum, -ī (n.)</span> — <span class="glossary-english">pear</span></div><div class="glossary-entry"><span class="glossary-latin">pirus, -ī (f.)</span> — <span class="glossary-english">pear tree</span></div><div class="glossary-entry"><span class="glossary-latin">porcus, -ī (m.)</span> — <span class="glossary-english">pig</span></div><div class="glossary-entry"><span class="glossary-latin">possum, posse</span> — <span class="glossary-english">to be able</span></div><div class="glossary-entry"><span class="glossary-latin">puer, puerī (m.)</span> — <span class="glossary-english">boy</span></div><div class="glossary-entry"><span class="glossary-latin">remittō, -ere</span> — <span class="glossary-english">to forgive</span></div><div class="glossary-entry"><span class="glossary-latin">rīdeō, -ēre</span> — <span class="glossary-english">to laugh</span></div><div class="glossary-entry"><span class="glossary-latin">rotundus, -a, -um</span> — <span class="glossary-english">round</span></div>
+        </div>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium (cont.)</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">saepes, -is (f.)</span> — <span class="glossary-english">fence, hedge</span></div><div class="glossary-entry"><span class="glossary-latin">sedeō, -ēre</span> — <span class="glossary-english">to sit</span></div><div class="glossary-entry"><span class="glossary-latin">sentiō, -īre</span> — <span class="glossary-english">to feel</span></div><div class="glossary-entry"><span class="glossary-latin">stēlla, -ae (f.)</span> — <span class="glossary-english">star</span></div><div class="glossary-entry"><span class="glossary-latin">sub (prep.)</span> — <span class="glossary-english">under</span></div><div class="glossary-entry"><span class="glossary-latin">subitō (adv.)</span> — <span class="glossary-english">suddenly</span></div><div class="glossary-entry"><span class="glossary-latin">susurrō, -āre</span> — <span class="glossary-english">to whisper</span></div><div class="glossary-entry"><span class="glossary-latin">tacitē (adv.)</span> — <span class="glossary-english">quietly, silently</span></div><div class="glossary-entry"><span class="glossary-latin">trāns (prep.)</span> — <span class="glossary-english">across, beyond</span></div><div class="glossary-entry"><span class="glossary-latin">ūnus, -a, -um</span> — <span class="glossary-english">one</span></div><div class="glossary-entry"><span class="glossary-latin">vōx, vōcis (f.)</span> — <span class="glossary-english">voice</span></div>
+        </div>
     </div>
 
 

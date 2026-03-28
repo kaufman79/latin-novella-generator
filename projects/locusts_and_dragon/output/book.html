@@ -150,23 +150,63 @@
             padding-bottom: 6px;
         }
 
-        .glossary-entry {
-            margin: 6px 0;
-            padding: 4px 0;
-            border-bottom: 1px dotted #e0d9cc;
+        .glossary-table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        .glossary-latin {
-            font-size: 11pt;
+        .glossary-table td {
+            padding: 4px 8px;
+            vertical-align: top;
+            font-size: 10pt;
+            line-height: 1.4;
+            border-bottom: 1px solid #f0ebe3;
+        }
+
+        .glossary-table td.glossary-page-num {
+            width: 30px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 9pt;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .glossary-table td.glossary-latin {
+            width: 48%;
             font-weight: bold;
             color: #2c3e50;
         }
 
-        .glossary-english {
-            font-size: 10pt;
+        .glossary-table td.glossary-english {
+            width: 48%;
             color: #7f8c8d;
             font-style: italic;
-            margin-left: 15px;
+        }
+
+        /* Legacy single-word glossary styles (for glossary.json overrides) */
+        .glossary-columns {
+            column-count: 2;
+            column-gap: 0.4in;
+            column-rule: 1px solid #e0d9cc;
+        }
+
+        .glossary-entry {
+            margin: 0;
+            padding: 3px 0;
+            break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .glossary-entry .glossary-latin {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-entry .glossary-english {
+            color: #7f8c8d;
+            font-style: italic;
         }
     </style>
 </head>
@@ -370,6 +410,22 @@
         <p class="latin-text">Omnēs laetī erant. Cicādae carmen laetum strīdēbant.</p>
         <p class="english-text">Everyone was happy. The cicadas buzzed a joyful song.</p>
         <span class="page-number">23</span>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">acervus, -ī (m.)</span> — <span class="glossary-english">pile, heap</span></div><div class="glossary-entry"><span class="glossary-latin">āla, -ae (f.)</span> — <span class="glossary-english">wing</span></div><div class="glossary-entry"><span class="glossary-latin">ambulō, -āre</span> — <span class="glossary-english">to walk</span></div><div class="glossary-entry"><span class="glossary-latin">antrum, -ī (n.)</span> — <span class="glossary-english">cave, cavern</span></div><div class="glossary-entry"><span class="glossary-latin">auris, -is (f.)</span> — <span class="glossary-english">ear</span></div><div class="glossary-entry"><span class="glossary-latin">aurum, -ī (n.)</span> — <span class="glossary-english">gold</span></div><div class="glossary-entry"><span class="glossary-latin">carmen, -inis (n.)</span> — <span class="glossary-english">song</span></div><div class="glossary-entry"><span class="glossary-latin">caverna, -ae (f.)</span> — <span class="glossary-english">cave</span></div><div class="glossary-entry"><span class="glossary-latin">cēterī, -ae, -a</span> — <span class="glossary-english">the rest, remaining</span></div><div class="glossary-entry"><span class="glossary-latin">cicāda, -ae (f.)</span> — <span class="glossary-english">cicada</span></div><div class="glossary-entry"><span class="glossary-latin">cōnsilium, -ī (n.)</span> — <span class="glossary-english">plan</span></div><div class="glossary-entry"><span class="glossary-latin">cubīle, -is (n.)</span> — <span class="glossary-english">lair, den</span></div><div class="glossary-entry"><span class="glossary-latin">dēns, dentis (m.)</span> — <span class="glossary-english">tooth</span></div><div class="glossary-entry"><span class="glossary-latin">dīvidō, -ere</span> — <span class="glossary-english">to divide, share</span></div><div class="glossary-entry"><span class="glossary-latin">doleō, -ēre</span> — <span class="glossary-english">to hurt, ache</span></div><div class="glossary-entry"><span class="glossary-latin">dormiō, -īre</span> — <span class="glossary-english">to sleep</span></div><div class="glossary-entry"><span class="glossary-latin">dracō, -ōnis (m.)</span> — <span class="glossary-english">dragon</span></div><div class="glossary-entry"><span class="glossary-latin">excitō, -āre</span> — <span class="glossary-english">to wake up, rouse</span></div><div class="glossary-entry"><span class="glossary-latin">forāmen, -inis (n.)</span> — <span class="glossary-english">tunnel, hole</span></div><div class="glossary-entry"><span class="glossary-latin">fortis, -e</span> — <span class="glossary-english">brave, strong</span></div><div class="glossary-entry"><span class="glossary-latin">fortiter (adv.)</span> — <span class="glossary-english">bravely, loudly</span></div><div class="glossary-entry"><span class="glossary-latin">frūstrā (adv.)</span> — <span class="glossary-english">in vain</span></div><div class="glossary-entry"><span class="glossary-latin">fulgeō, -ēre</span> — <span class="glossary-english">to sparkle, gleam</span></div><div class="glossary-entry"><span class="glossary-latin">gaudeō, -ēre</span> — <span class="glossary-english">to rejoice</span></div><div class="glossary-entry"><span class="glossary-latin">gemma, -ae (f.)</span> — <span class="glossary-english">gem, jewel</span></div><div class="glossary-entry"><span class="glossary-latin">grātiae, -ārum (f.pl.)</span> — <span class="glossary-english">thanks</span></div><div class="glossary-entry"><span class="glossary-latin">homō, -inis (m.)</span> — <span class="glossary-english">person, human</span></div><div class="glossary-entry"><span class="glossary-latin">impleō, -ēre</span> — <span class="glossary-english">to fill</span></div><div class="glossary-entry"><span class="glossary-latin">īnsāniō, -īre</span> — <span class="glossary-english">to go mad</span></div><div class="glossary-entry"><span class="glossary-latin">inter (prep.)</span> — <span class="glossary-english">among, between</span></div><div class="glossary-entry"><span class="glossary-latin">intrō, -āre</span> — <span class="glossary-english">to enter</span></div><div class="glossary-entry"><span class="glossary-latin">inveniō, -īre</span> — <span class="glossary-english">to find</span></div><div class="glossary-entry"><span class="glossary-latin">īrātus, -a, -um</span> — <span class="glossary-english">angry</span></div><div class="glossary-entry"><span class="glossary-latin">iter, itineris (n.)</span> — <span class="glossary-english">path, journey</span></div><div class="glossary-entry"><span class="glossary-latin">laetus, -a, -um</span> — <span class="glossary-english">happy, joyful</span></div><div class="glossary-entry"><span class="glossary-latin">longus, -a, -um</span> — <span class="glossary-english">long</span></div><div class="glossary-entry"><span class="glossary-latin">māns, montis (m.)</span> — <span class="glossary-english">mountain</span></div><div class="glossary-entry"><span class="glossary-latin">mordeō, -ēre</span> — <span class="glossary-english">to bite</span></div><div class="glossary-entry"><span class="glossary-latin">mortuus, -a, -um</span> — <span class="glossary-english">dead</span></div><div class="glossary-entry"><span class="glossary-latin">moveō, -ēre</span> — <span class="glossary-english">to move</span></div>
+        </div>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium (cont.)</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">multī, -ae, -a</span> — <span class="glossary-english">many</span></div><div class="glossary-entry"><span class="glossary-latin">nihil (n. indecl.)</span> — <span class="glossary-english">nothing</span></div><div class="glossary-entry"><span class="glossary-latin">novus, -a, -um</span> — <span class="glossary-english">new</span></div><div class="glossary-entry"><span class="glossary-latin">obscūrus, -a, -um</span> — <span class="glossary-english">dark</span></div><div class="glossary-entry"><span class="glossary-latin">occīdō, -ere</span> — <span class="glossary-english">to kill</span></div><div class="glossary-entry"><span class="glossary-latin">omnis, -e</span> — <span class="glossary-english">every, all</span></div><div class="glossary-entry"><span class="glossary-latin">oppidum, -ī (n.)</span> — <span class="glossary-english">town</span></div><div class="glossary-entry"><span class="glossary-latin">pariēs, -etis (m.)</span> — <span class="glossary-english">wall</span></div><div class="glossary-entry"><span class="glossary-latin">prīmus, -a, -um</span> — <span class="glossary-english">first</span></div><div class="glossary-entry"><span class="glossary-latin">prope (prep.)</span> — <span class="glossary-english">near</span></div><div class="glossary-entry"><span class="glossary-latin">proximus, -a, -um</span> — <span class="glossary-english">nearby, nearest</span></div><div class="glossary-entry"><span class="glossary-latin">pungō, -ere</span> — <span class="glossary-english">to sting, prick</span></div><div class="glossary-entry"><span class="glossary-latin">quaerō, -ere</span> — <span class="glossary-english">to seek, search for</span></div><div class="glossary-entry"><span class="glossary-latin">redeō, -īre</span> — <span class="glossary-english">to return</span></div><div class="glossary-entry"><span class="glossary-latin">ruber, -bra, -brum</span> — <span class="glossary-english">red</span></div><div class="glossary-entry"><span class="glossary-latin">rugiō, -īre</span> — <span class="glossary-english">to roar</span></div><div class="glossary-entry"><span class="glossary-latin">simul (adv.)</span> — <span class="glossary-english">together, at once</span></div><div class="glossary-entry"><span class="glossary-latin">sonus, -ī (m.)</span> — <span class="glossary-english">sound</span></div><div class="glossary-entry"><span class="glossary-latin">strīdō, -ere</span> — <span class="glossary-english">to buzz, chirp</span></div><div class="glossary-entry"><span class="glossary-latin">taedēre (impers.)</span> — <span class="glossary-english">to bore</span></div><div class="glossary-entry"><span class="glossary-latin">tandem (adv.)</span> — <span class="glossary-english">at last, finally</span></div><div class="glossary-entry"><span class="glossary-latin">tenebrae, -ārum (f.pl.)</span> — <span class="glossary-english">darkness</span></div><div class="glossary-entry"><span class="glossary-latin">terreō, -ēre</span> — <span class="glossary-english">to frighten</span></div><div class="glossary-entry"><span class="glossary-latin">timeō, -ēre</span> — <span class="glossary-english">to fear</span></div><div class="glossary-entry"><span class="glossary-latin">timidus, -a, -um</span> — <span class="glossary-english">afraid, timid</span></div><div class="glossary-entry"><span class="glossary-latin">tōtus, -a, -um</span> — <span class="glossary-english">whole, entire</span></div><div class="glossary-entry"><span class="glossary-latin">tremō, -ere</span> — <span class="glossary-english">to tremble</span></div><div class="glossary-entry"><span class="glossary-latin">trīstis, -e</span> — <span class="glossary-english">sad</span></div><div class="glossary-entry"><span class="glossary-latin">unguis, -is (m.)</span> — <span class="glossary-english">claw</span></div><div class="glossary-entry"><span class="glossary-latin">valdē (adv.)</span> — <span class="glossary-english">very, loudly</span></div><div class="glossary-entry"><span class="glossary-latin">ventus, -ī (m.)</span> — <span class="glossary-english">wind</span></div><div class="glossary-entry"><span class="glossary-latin">vibrō, -āre</span> — <span class="glossary-english">to swing, brandish</span></div><div class="glossary-entry"><span class="glossary-latin">vincō, -ere</span> — <span class="glossary-english">to defeat, conquer</span></div><div class="glossary-entry"><span class="glossary-latin">volō, -āre</span> — <span class="glossary-english">to fly</span></div>
+        </div>
     </div>
 
 

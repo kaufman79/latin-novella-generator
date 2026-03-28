@@ -150,23 +150,63 @@
             padding-bottom: 6px;
         }
 
-        .glossary-entry {
-            margin: 6px 0;
-            padding: 4px 0;
-            border-bottom: 1px dotted #e0d9cc;
+        .glossary-table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        .glossary-latin {
-            font-size: 11pt;
+        .glossary-table td {
+            padding: 4px 8px;
+            vertical-align: top;
+            font-size: 10pt;
+            line-height: 1.4;
+            border-bottom: 1px solid #f0ebe3;
+        }
+
+        .glossary-table td.glossary-page-num {
+            width: 30px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 9pt;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .glossary-table td.glossary-latin {
+            width: 48%;
             font-weight: bold;
             color: #2c3e50;
         }
 
-        .glossary-english {
-            font-size: 10pt;
+        .glossary-table td.glossary-english {
+            width: 48%;
             color: #7f8c8d;
             font-style: italic;
-            margin-left: 15px;
+        }
+
+        /* Legacy single-word glossary styles (for glossary.json overrides) */
+        .glossary-columns {
+            column-count: 2;
+            column-gap: 0.4in;
+            column-rule: 1px solid #e0d9cc;
+        }
+
+        .glossary-entry {
+            margin: 0;
+            padding: 3px 0;
+            break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .glossary-entry .glossary-latin {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-entry .glossary-english {
+            color: #7f8c8d;
+            font-style: italic;
         }
     </style>
 </head>
@@ -367,19 +407,17 @@
 
     <div class="glossary-page">
         <h2>Glossārium</h2>
-        <div class="glossary-entry"><span class="glossary-latin">Peter sōlus sedēbat</span><br><span class="glossary-english">Peter sat alone</span></div><div class="glossary-entry"><span class="glossary-latin">Tunicam nōn habēbat, calceōs nōn habēbat</span><br><span class="glossary-english">He had no jacket and no shoes</span></div><div class="glossary-entry"><span class="glossary-latin">Māter eum in sūdārium rubrum involvit</span><br><span class="glossary-english">His mother wrapped him in a red handkerchief</span></div><div class="glossary-entry"><span class="glossary-latin">Beniāmīn Cunīculus cōnsobrīnus Petrī erat</span><br><span class="glossary-english">Benjamin Bunny was Peter's cousin</span></div><div class="glossary-entry"><span class="glossary-latin">Audāx erat</span><br><span class="glossary-english">He was very bold</span></div><div class="glossary-entry"><span class="glossary-latin">Beniāmīn Petrum invēnit</span><br><span class="glossary-english">Benjamin found Peter</span></div><div class="glossary-entry"><span class="glossary-latin">"Cūr trīstis es</span><br><span class="glossary-english">"Why are you sad</span></div><div class="glossary-entry"><span class="glossary-latin">" rogāvit</span><br><span class="glossary-english">" he asked</span></div><div class="glossary-entry"><span class="glossary-latin">"Tunicam in hortō āmīsī," inquit Peter</span><br><span class="glossary-english">"I lost my jacket in the garden," said Peter</span></div><div class="glossary-entry"><span class="glossary-latin">"Venī</span><br><span class="glossary-english">"Come</span></div><div class="glossary-entry"><span class="glossary-latin">" inquit Beniāmīn</span><br><span class="glossary-english">" said Benjamin</span></div><div class="glossary-entry"><span class="glossary-latin">"Eam recipiēmus</span><br><span class="glossary-english">"We will get it back</span></div><div class="glossary-entry"><span class="glossary-latin">Mūrum hortī ascendērunt et dēspexērunt</span><br><span class="glossary-english">They climbed up the garden wall and looked down</span></div><div class="glossary-entry"><span class="glossary-latin">Peter dē mūrō cecidit</span><br><span class="glossary-english">Peter fell down from the wall</span></div><div class="glossary-entry"><span class="glossary-latin">In hortum dēvolūtus est</span><br><span class="glossary-english">He tumbled into the garden</span></div><div class="glossary-entry"><span class="glossary-latin">Tunicam Petrī in formīdine vīdērunt</span><br><span class="glossary-english">They saw Peter's jacket on the scarecrow</span></div><div class="glossary-entry"><span class="glossary-latin">Beniāmīn tunicam dētrāxit</span><br><span class="glossary-english">Benjamin took the jacket off the scarecrow</span></div><div class="glossary-entry"><span class="glossary-latin">Peter eam induit</span><br><span class="glossary-english">Peter put it on</span></div>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">abdō, -ere</span> — <span class="glossary-english">to hide</span></div><div class="glossary-entry"><span class="glossary-latin">abeō, abīre</span> — <span class="glossary-english">to go away, leave</span></div><div class="glossary-entry"><span class="glossary-latin">ascendō, -ere</span> — <span class="glossary-english">to climb</span></div><div class="glossary-entry"><span class="glossary-latin">audāx, -ācis</span> — <span class="glossary-english">bold, daring</span></div><div class="glossary-entry"><span class="glossary-latin">auris, -is (f.)</span> — <span class="glossary-english">ear</span></div><div class="glossary-entry"><span class="glossary-latin">cadō, -ere</span> — <span class="glossary-english">to fall</span></div><div class="glossary-entry"><span class="glossary-latin">calceus, -ī (m.)</span> — <span class="glossary-english">shoe</span></div><div class="glossary-entry"><span class="glossary-latin">cēpa, -ae (f.)</span> — <span class="glossary-english">onion</span></div><div class="glossary-entry"><span class="glossary-latin">colligō, -ere</span> — <span class="glossary-english">to gather, collect</span></div><div class="glossary-entry"><span class="glossary-latin">cōnsedeō, -ēre</span> — <span class="glossary-english">to sit down on</span></div><div class="glossary-entry"><span class="glossary-latin">cōnsobrīnus, -ī (m.)</span> — <span class="glossary-english">cousin</span></div><div class="glossary-entry"><span class="glossary-latin">corbula, -ae (f.)</span> — <span class="glossary-english">basket</span></div><div class="glossary-entry"><span class="glossary-latin">dēspiciō, -ere</span> — <span class="glossary-english">to look down</span></div><div class="glossary-entry"><span class="glossary-latin">dētrahō, -ere</span> — <span class="glossary-english">to pull off, remove</span></div><div class="glossary-entry"><span class="glossary-latin">diū (adv.)</span> — <span class="glossary-english">for a long time</span></div><div class="glossary-entry"><span class="glossary-latin">dūcō, -ere</span> — <span class="glossary-english">to lead</span></div><div class="glossary-entry"><span class="glossary-latin">edō, -ere</span> — <span class="glossary-english">to eat</span></div><div class="glossary-entry"><span class="glossary-latin">exeō, -īre</span> — <span class="glossary-english">to go out</span></div><div class="glossary-entry"><span class="glossary-latin">exspectō, -āre</span> — <span class="glossary-english">to wait</span></div><div class="glossary-entry"><span class="glossary-latin">fēlēs, -is (f.)</span> — <span class="glossary-english">cat</span></div><div class="glossary-entry"><span class="glossary-latin">formīdō, -inis (f.)</span> — <span class="glossary-english">scarecrow</span></div><div class="glossary-entry"><span class="glossary-latin">fugiō, -ere</span> — <span class="glossary-english">to flee, run away</span></div><div class="glossary-entry"><span class="glossary-latin">hortus, -ī (m.)</span> — <span class="glossary-english">garden</span></div><div class="glossary-entry"><span class="glossary-latin">identidem (adv.)</span> — <span class="glossary-english">repeatedly</span></div><div class="glossary-entry"><span class="glossary-latin">impleō, -ēre</span> — <span class="glossary-english">to fill</span></div><div class="glossary-entry"><span class="glossary-latin">induō, -ere</span> — <span class="glossary-english">to put on, wear</span></div><div class="glossary-entry"><span class="glossary-latin">inquit</span> — <span class="glossary-english">he/she said</span></div><div class="glossary-entry"><span class="glossary-latin">insiliō, -īre</span> — <span class="glossary-english">to jump on</span></div><div class="glossary-entry"><span class="glossary-latin">inveniō, -īre</span> — <span class="glossary-english">to find</span></div><div class="glossary-entry"><span class="glossary-latin">iterum (adv.)</span> — <span class="glossary-english">again</span></div><div class="glossary-entry"><span class="glossary-latin">lactūca, -ae (f.)</span> — <span class="glossary-english">lettuce</span></div><div class="glossary-entry"><span class="glossary-latin">magnus, -a, -um</span> — <span class="glossary-english">big, great</span></div><div class="glossary-entry"><span class="glossary-latin">māter, -tris (f.)</span> — <span class="glossary-english">mother</span></div><div class="glossary-entry"><span class="glossary-latin">moveō, -ēre</span> — <span class="glossary-english">to move</span></div><div class="glossary-entry"><span class="glossary-latin">mūrus, -ī (m.)</span> — <span class="glossary-english">wall</span></div><div class="glossary-entry"><span class="glossary-latin">pater, patris (m.)</span> — <span class="glossary-english">father</span></div><div class="glossary-entry"><span class="glossary-latin">poena, -ae (f.)</span> — <span class="glossary-english">punishment</span></div><div class="glossary-entry"><span class="glossary-latin">porta, -ae (f.)</span> — <span class="glossary-english">gate</span></div><div class="glossary-entry"><span class="glossary-latin">prehendō, -ere</span> — <span class="glossary-english">to grab, seize</span></div><div class="glossary-entry"><span class="glossary-latin">recipiō, -ere</span> — <span class="glossary-english">to get back, recover</span></div>
+        </div>
     </div>
 
 
     <div class="glossary-page">
         <h2>Glossārium (cont.)</h2>
-        <div class="glossary-entry"><span class="glossary-latin">Tum cēpās collēgērunt</span><br><span class="glossary-english">Then they picked onions to fill their basket</span></div><div class="glossary-entry"><span class="glossary-latin">Corbulam implēvērunt</span><br><span class="glossary-english">Then they picked onions to fill their basket.</span></div><div class="glossary-entry"><span class="glossary-latin">Beniāmīn lactūcam ēdit</span><br><span class="glossary-english">Benjamin ate some lettuce</span></div><div class="glossary-entry"><span class="glossary-latin">Nihil timēbat</span><br><span class="glossary-english">He was not afraid at all</span></div><div class="glossary-entry"><span class="glossary-latin">Peter cēpās identidem āmittēbat</span><br><span class="glossary-english">Peter kept dropping the onions</span></div><div class="glossary-entry"><span class="glossary-latin">Trepidābat</span><br><span class="glossary-english">He was nervous</span></div><div class="glossary-entry"><span class="glossary-latin">Peter sonitum audīvit</span><br><span class="glossary-english">Peter heard a noise</span></div><div class="glossary-entry"><span class="glossary-latin">"Abīre dēbēmus</span><br><span class="glossary-english">"We must go</span></div><div class="glossary-entry"><span class="glossary-latin">" inquit</span><br><span class="glossary-english">" he said</span></div><div class="glossary-entry"><span class="glossary-latin">Tum fēlem vīdērunt</span><br><span class="glossary-english">Then they saw the cat</span></div><div class="glossary-entry"><span class="glossary-latin">Magna erat</span><br><span class="glossary-english">She was very big</span></div><div class="glossary-entry"><span class="glossary-latin">Sub corbulā sē abdidērunt</span><br><span class="glossary-english">They hid under a basket</span></div><div class="glossary-entry"><span class="glossary-latin">Fēlēs suprā cōnsēdit</span><br><span class="glossary-english">The cat sat on top</span></div><div class="glossary-entry"><span class="glossary-latin">Diū exspectāvērunt</span><br><span class="glossary-english">They waited and waited</span></div><div class="glossary-entry"><span class="glossary-latin">Sē movēre nōn poterant</span><br><span class="glossary-english">They could not move</span></div><div class="glossary-entry"><span class="glossary-latin">Tum senex Dominus Bouncer vēnit</span><br><span class="glossary-english">Then old Mr</span></div><div class="glossary-entry"><span class="glossary-latin">Pater Beniāmīnī erat</span><br><span class="glossary-english">Bouncer came</span></div><div class="glossary-entry"><span class="glossary-latin">Dominus Bouncer in fēlem insiluit</span><br><span class="glossary-english">Mr</span></div>
-    </div>
-
-
-    <div class="glossary-page">
-        <h2>Glossārium (cont.)</h2>
-        <div class="glossary-entry"><span class="glossary-latin">Fēlēs fūgit</span><br><span class="glossary-english">Bouncer jumped on the cat</span></div><div class="glossary-entry"><span class="glossary-latin">Beniāmīnum auribus prehendit</span><br><span class="glossary-english">He pulled Benjamin out by the ears</span></div><div class="glossary-entry"><span class="glossary-latin">Beniāmīn poenās dabat</span><br><span class="glossary-english">Benjamin was in trouble</span></div><div class="glossary-entry"><span class="glossary-latin">Dominus Bouncer eōs domum dūxit</span><br><span class="glossary-english">Mr</span></div><div class="glossary-entry"><span class="glossary-latin">Per portam exiērunt</span><br><span class="glossary-english">Bouncer marched them all home</span></div><div class="glossary-entry"><span class="glossary-latin">Peter cēpās mātrī dedit</span><br><span class="glossary-english">Peter gave the onions to his mother</span></div><div class="glossary-entry"><span class="glossary-latin">Tunicam suam habēbat iterum</span><br><span class="glossary-english">He had his jacket back</span></div>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">rogō, -āre</span> — <span class="glossary-english">to ask</span></div><div class="glossary-entry"><span class="glossary-latin">sedeō, -ēre</span> — <span class="glossary-english">to sit</span></div><div class="glossary-entry"><span class="glossary-latin">senex, senis (m.)</span> — <span class="glossary-english">old man</span></div><div class="glossary-entry"><span class="glossary-latin">sōlus, -a, -um</span> — <span class="glossary-english">alone</span></div><div class="glossary-entry"><span class="glossary-latin">sonitus, -ūs (m.)</span> — <span class="glossary-english">noise, sound</span></div><div class="glossary-entry"><span class="glossary-latin">sub (prep.)</span> — <span class="glossary-english">under</span></div><div class="glossary-entry"><span class="glossary-latin">sūdārium, -ī (n.)</span> — <span class="glossary-english">handkerchief</span></div><div class="glossary-entry"><span class="glossary-latin">suprā (adv.)</span> — <span class="glossary-english">on top</span></div><div class="glossary-entry"><span class="glossary-latin">timeō, -ēre</span> — <span class="glossary-english">to be afraid</span></div><div class="glossary-entry"><span class="glossary-latin">trepidō, -āre</span> — <span class="glossary-english">to be nervous</span></div><div class="glossary-entry"><span class="glossary-latin">trīstis, -e</span> — <span class="glossary-english">sad</span></div><div class="glossary-entry"><span class="glossary-latin">tunica, -ae (f.)</span> — <span class="glossary-english">jacket, tunic</span></div><div class="glossary-entry"><span class="glossary-latin">videō, -ēre</span> — <span class="glossary-english">to see</span></div>
+        </div>
     </div>
 
 

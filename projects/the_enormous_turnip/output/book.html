@@ -150,23 +150,63 @@
             padding-bottom: 6px;
         }
 
-        .glossary-entry {
-            margin: 6px 0;
-            padding: 4px 0;
-            border-bottom: 1px dotted #e0d9cc;
+        .glossary-table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        .glossary-latin {
-            font-size: 11pt;
+        .glossary-table td {
+            padding: 4px 8px;
+            vertical-align: top;
+            font-size: 10pt;
+            line-height: 1.4;
+            border-bottom: 1px solid #f0ebe3;
+        }
+
+        .glossary-table td.glossary-page-num {
+            width: 30px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 9pt;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .glossary-table td.glossary-latin {
+            width: 48%;
             font-weight: bold;
             color: #2c3e50;
         }
 
-        .glossary-english {
-            font-size: 10pt;
+        .glossary-table td.glossary-english {
+            width: 48%;
             color: #7f8c8d;
             font-style: italic;
-            margin-left: 15px;
+        }
+
+        /* Legacy single-word glossary styles (for glossary.json overrides) */
+        .glossary-columns {
+            column-count: 2;
+            column-gap: 0.4in;
+            column-rule: 1px solid #e0d9cc;
+        }
+
+        .glossary-entry {
+            margin: 0;
+            padding: 3px 0;
+            break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .glossary-entry .glossary-latin {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-entry .glossary-english {
+            color: #7f8c8d;
+            font-style: italic;
         }
     </style>
 </head>
@@ -332,19 +372,9 @@
 
     <div class="glossary-page">
         <h2>Glossārium</h2>
-        <div class="glossary-entry"><span class="glossary-latin">Avus sēmen sēvit</span><br><span class="glossary-english">Grandfather planted a seed</span></div><div class="glossary-entry"><span class="glossary-latin">Rāpa crēvit</span><br><span class="glossary-english">The turnip grew</span></div><div class="glossary-entry"><span class="glossary-latin">Crēvit et crēvit</span><br><span class="glossary-english">It grew and grew</span></div><div class="glossary-entry"><span class="glossary-latin">Rāpa INGĒNS erat</span><br><span class="glossary-english">The turnip was ENORMOUS</span></div><div class="glossary-entry"><span class="glossary-latin">Avus rāpam trahit</span><br><span class="glossary-english">Grandfather pulled the turnip</span></div><div class="glossary-entry"><span class="glossary-latin">Trahit et trahit</span><br><span class="glossary-english">He pulled and pulled</span></div><div class="glossary-entry"><span class="glossary-latin">NŌN POTEST</span><br><span class="glossary-english">He COULD NOT</span></div><div class="glossary-entry"><span class="glossary-latin">Avus Aviam vocāvit</span><br><span class="glossary-english">"Grandmother, come help</span></div><div class="glossary-entry"><span class="glossary-latin">"Venī</span><br><span class="glossary-english">" Grandmother grabbed Grandfather</span></div><div class="glossary-entry"><span class="glossary-latin">Mē adiuvā</span><br><span class="glossary-english">They pulled and pulled</span></div><div class="glossary-entry"><span class="glossary-latin">" Avia Avum prehendit</span><br><span class="glossary-english">They COULD NOT</span></div><div class="glossary-entry"><span class="glossary-latin">Trahunt et trahunt</span><br><span class="glossary-english">"Grandmother, come help!" Grandmother grabbed Grandfather. They pulled and pulled. They COULD NOT!</span></div><div class="glossary-entry"><span class="glossary-latin">NŌN POSSUNT</span><br><span class="glossary-english">"Grandmother, come help!" Grandmother grabbed Grandfather. They pulled and pulled. They COULD NOT!</span></div><div class="glossary-entry"><span class="glossary-latin">Avia Puellam vocāvit</span><br><span class="glossary-english">"Granddaughter, come help</span></div><div class="glossary-entry"><span class="glossary-latin">Nōs adiuvā</span><br><span class="glossary-english">They COULD NOT</span></div><div class="glossary-entry"><span class="glossary-latin">" Puella Aviam prehendit</span><br><span class="glossary-english">"Granddaughter, come help!" They all pulled. They COULD NOT!</span></div><div class="glossary-entry"><span class="glossary-latin">Puella Canem vocāvit</span><br><span class="glossary-english">"Dog, come help</span></div><div class="glossary-entry"><span class="glossary-latin">" Canis Puellam prehendit</span><br><span class="glossary-english">"Dog, come help!" They all pulled. They COULD NOT!</span></div>
-    </div>
-
-
-    <div class="glossary-page">
-        <h2>Glossārium (cont.)</h2>
-        <div class="glossary-entry"><span class="glossary-latin">Canis Fēlem vocāvit</span><br><span class="glossary-english">"Cat, come help</span></div><div class="glossary-entry"><span class="glossary-latin">" Fēlēs Canem prehendit</span><br><span class="glossary-english">"Cat, come help!" They all pulled. They COULD NOT!</span></div><div class="glossary-entry"><span class="glossary-latin">Fēlēs Mūrem vocāvit</span><br><span class="glossary-english">"Mouse, come help</span></div><div class="glossary-entry"><span class="glossary-latin">" "Sed tam parva sum</span><br><span class="glossary-english">"Mouse, come help!" "But I am so small!" said Mouse.</span></div><div class="glossary-entry"><span class="glossary-latin">" inquit Mūs</span><br><span class="glossary-english">"Mouse, come help!" "But I am so small!" said Mouse.</span></div><div class="glossary-entry"><span class="glossary-latin">" omnēs clāmāvērunt</span><br><span class="glossary-english">" they all said</span></div><div class="glossary-entry"><span class="glossary-latin">Mūs caudam Fēlis prehendit</span><br><span class="glossary-english">Mouse grabbed Cat's tail</span></div><div class="glossary-entry"><span class="glossary-latin">Omnēs trahunt</span><br><span class="glossary-english">Everyone pulled</span></div><div class="glossary-entry"><span class="glossary-latin">Trahunt</span><br><span class="glossary-english">They pulled</span></div><div class="glossary-entry"><span class="glossary-latin">et trahunt</span><br><span class="glossary-english">and pulled</span></div><div class="glossary-entry"><span class="glossary-latin">POSSUNT</span><br><span class="glossary-english">THEY COULD</span></div><div class="glossary-entry"><span class="glossary-latin">Rāpa ē terrā exit</span><br><span class="glossary-english">The turnip came out</span></div><div class="glossary-entry"><span class="glossary-latin">Rāpam domum omnēs portāvērunt</span><br><span class="glossary-english">They carried the turnip home together</span></div><div class="glossary-entry"><span class="glossary-latin">Avia iūs rāpārum fēcit</span><br><span class="glossary-english">Grandmother made turnip soup</span></div><div class="glossary-entry"><span class="glossary-latin">Tantum iūris</span><br><span class="glossary-english">SO MUCH soup</span></div><div class="glossary-entry"><span class="glossary-latin">Omnēs ūnā cēnāvērunt</span><br><span class="glossary-english">They all ate together</span></div><div class="glossary-entry"><span class="glossary-latin">Mūs plūrimum ēdit</span><br><span class="glossary-english">Mouse ate the most</span></div><div class="glossary-entry"><span class="glossary-latin">Omnēs adiūvērunt</span><br><span class="glossary-english">Everyone helped</span></div>
-    </div>
-
-
-    <div class="glossary-page">
-        <h2>Glossārium (cont.)</h2>
-        <div class="glossary-entry"><span class="glossary-latin">Etiam minima</span><br><span class="glossary-english">Even the smallest</span></div>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">adiuvō, -āre</span> — <span class="glossary-english">to help</span></div><div class="glossary-entry"><span class="glossary-latin">avia, -ae (f.)</span> — <span class="glossary-english">grandmother</span></div><div class="glossary-entry"><span class="glossary-latin">avus, -ī (m.)</span> — <span class="glossary-english">grandfather</span></div><div class="glossary-entry"><span class="glossary-latin">canis, -is (m./f.)</span> — <span class="glossary-english">dog</span></div><div class="glossary-entry"><span class="glossary-latin">cauda, -ae (f.)</span> — <span class="glossary-english">tail</span></div><div class="glossary-entry"><span class="glossary-latin">cēnō, -āre</span> — <span class="glossary-english">to dine, eat</span></div><div class="glossary-entry"><span class="glossary-latin">clāmō, -āre</span> — <span class="glossary-english">to shout, call out</span></div><div class="glossary-entry"><span class="glossary-latin">crēscō, -ere</span> — <span class="glossary-english">to grow</span></div><div class="glossary-entry"><span class="glossary-latin">domus, -ūs (f.)</span> — <span class="glossary-english">home</span></div><div class="glossary-entry"><span class="glossary-latin">edō, -ere</span> — <span class="glossary-english">to eat</span></div><div class="glossary-entry"><span class="glossary-latin">etiam (adv.)</span> — <span class="glossary-english">even, also</span></div><div class="glossary-entry"><span class="glossary-latin">exeō, -īre</span> — <span class="glossary-english">to come out</span></div><div class="glossary-entry"><span class="glossary-latin">fēlēs, -is (f.)</span> — <span class="glossary-english">cat</span></div><div class="glossary-entry"><span class="glossary-latin">ingēns, -entis</span> — <span class="glossary-english">enormous, huge</span></div><div class="glossary-entry"><span class="glossary-latin">iūs, iūris (n.)</span> — <span class="glossary-english">soup, broth</span></div><div class="glossary-entry"><span class="glossary-latin">minimus, -a, -um</span> — <span class="glossary-english">smallest</span></div><div class="glossary-entry"><span class="glossary-latin">mūs, mūris (m./f.)</span> — <span class="glossary-english">mouse</span></div><div class="glossary-entry"><span class="glossary-latin">omnis, -e</span> — <span class="glossary-english">every, all</span></div><div class="glossary-entry"><span class="glossary-latin">parvus, -a, -um</span> — <span class="glossary-english">small, little</span></div><div class="glossary-entry"><span class="glossary-latin">plūrimum (adv.)</span> — <span class="glossary-english">the most</span></div><div class="glossary-entry"><span class="glossary-latin">portō, -āre</span> — <span class="glossary-english">to carry</span></div><div class="glossary-entry"><span class="glossary-latin">possum, posse</span> — <span class="glossary-english">to be able</span></div><div class="glossary-entry"><span class="glossary-latin">prehendō, -ere</span> — <span class="glossary-english">to grab, seize</span></div><div class="glossary-entry"><span class="glossary-latin">puella, -ae (f.)</span> — <span class="glossary-english">girl</span></div><div class="glossary-entry"><span class="glossary-latin">rāpa, -ae (f.)</span> — <span class="glossary-english">turnip</span></div><div class="glossary-entry"><span class="glossary-latin">sēmen, -inis (n.)</span> — <span class="glossary-english">seed</span></div><div class="glossary-entry"><span class="glossary-latin">serō, -ere</span> — <span class="glossary-english">to plant, sow</span></div><div class="glossary-entry"><span class="glossary-latin">tantum (adv.)</span> — <span class="glossary-english">so much</span></div><div class="glossary-entry"><span class="glossary-latin">terra, -ae (f.)</span> — <span class="glossary-english">earth, ground</span></div><div class="glossary-entry"><span class="glossary-latin">trahō, -ere</span> — <span class="glossary-english">to pull</span></div><div class="glossary-entry"><span class="glossary-latin">ūnā (adv.)</span> — <span class="glossary-english">together</span></div><div class="glossary-entry"><span class="glossary-latin">vocō, -āre</span> — <span class="glossary-english">to call</span></div>
+        </div>
     </div>
 
 

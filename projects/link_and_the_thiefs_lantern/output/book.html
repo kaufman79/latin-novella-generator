@@ -150,23 +150,63 @@
             padding-bottom: 6px;
         }
 
-        .glossary-entry {
-            margin: 6px 0;
-            padding: 4px 0;
-            border-bottom: 1px dotted #e0d9cc;
+        .glossary-table {
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        .glossary-latin {
-            font-size: 11pt;
+        .glossary-table td {
+            padding: 4px 8px;
+            vertical-align: top;
+            font-size: 10pt;
+            line-height: 1.4;
+            border-bottom: 1px solid #f0ebe3;
+        }
+
+        .glossary-table td.glossary-page-num {
+            width: 30px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 9pt;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .glossary-table td.glossary-latin {
+            width: 48%;
             font-weight: bold;
             color: #2c3e50;
         }
 
-        .glossary-english {
-            font-size: 10pt;
+        .glossary-table td.glossary-english {
+            width: 48%;
             color: #7f8c8d;
             font-style: italic;
-            margin-left: 15px;
+        }
+
+        /* Legacy single-word glossary styles (for glossary.json overrides) */
+        .glossary-columns {
+            column-count: 2;
+            column-gap: 0.4in;
+            column-rule: 1px solid #e0d9cc;
+        }
+
+        .glossary-entry {
+            margin: 0;
+            padding: 3px 0;
+            break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .glossary-entry .glossary-latin {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-entry .glossary-english {
+            color: #7f8c8d;
+            font-style: italic;
         }
     </style>
 </head>
@@ -370,6 +410,22 @@
         <p class="latin-text">Lincus suam lucernam cēpit. Collem ascendit. Eam ad speluncam relīquit.</p>
         <p class="english-text">Link took his own lantern. He walked up the hill. He left it by the cave.</p>
         <span class="page-number">23</span>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">abeō, abīre</span> — <span class="glossary-english">to go away, be gone</span></div><div class="glossary-entry"><span class="glossary-latin">accēnsus, -a, -um</span> — <span class="glossary-english">lit, kindled</span></div><div class="glossary-entry"><span class="glossary-latin">ascendō, -ere</span> — <span class="glossary-english">to climb</span></div><div class="glossary-entry"><span class="glossary-latin">calidus, -a, -um</span> — <span class="glossary-english">warm</span></div><div class="glossary-entry"><span class="glossary-latin">capiō, -ere</span> — <span class="glossary-english">to take, seize</span></div><div class="glossary-entry"><span class="glossary-latin">castra, -ōrum (n.pl.)</span> — <span class="glossary-english">camp</span></div><div class="glossary-entry"><span class="glossary-latin">clāmō, -āre</span> — <span class="glossary-english">to shout</span></div><div class="glossary-entry"><span class="glossary-latin">collis, -is (m.)</span> — <span class="glossary-english">hill</span></div><div class="glossary-entry"><span class="glossary-latin">dēsiliō, -īre</span> — <span class="glossary-english">to jump down</span></div><div class="glossary-entry"><span class="glossary-latin">dīmidium, -ī (n.)</span> — <span class="glossary-english">half</span></div><div class="glossary-entry"><span class="glossary-latin">domus, -ūs (f.)</span> — <span class="glossary-english">home</span></div><div class="glossary-entry"><span class="glossary-latin">edō, -ere</span> — <span class="glossary-english">to eat</span></div><div class="glossary-entry"><span class="glossary-latin">exspectō, -āre</span> — <span class="glossary-english">to wait, expect</span></div><div class="glossary-entry"><span class="glossary-latin">faciēs, -ēī (f.)</span> — <span class="glossary-english">face</span></div><div class="glossary-entry"><span class="glossary-latin">fugiō, -ere</span> — <span class="glossary-english">to flee, run away</span></div><div class="glossary-entry"><span class="glossary-latin">fūr, fūris (m.)</span> — <span class="glossary-english">thief</span></div><div class="glossary-entry"><span class="glossary-latin">ictus, -ūs (m.)</span> — <span class="glossary-english">a blow, hit</span></div><div class="glossary-entry"><span class="glossary-latin">incola, -ae (m./f.)</span> — <span class="glossary-english">inhabitant, townsperson</span></div><div class="glossary-entry"><span class="glossary-latin">inquit</span> — <span class="glossary-english">he/she said</span></div><div class="glossary-entry"><span class="glossary-latin">inveniō, -īre</span> — <span class="glossary-english">to find</span></div><div class="glossary-entry"><span class="glossary-latin">īnsula, -ae (f.)</span> — <span class="glossary-english">island</span></div><div class="glossary-entry"><span class="glossary-latin">īrātus, -a, -um</span> — <span class="glossary-english">angry</span></div><div class="glossary-entry"><span class="glossary-latin">lucerna, -ae (f.)</span> — <span class="glossary-english">lantern, lamp</span></div><div class="glossary-entry"><span class="glossary-latin">lūceō, -ēre</span> — <span class="glossary-english">to shine, glow</span></div><div class="glossary-entry"><span class="glossary-latin">lūx, lūcis (f.)</span> — <span class="glossary-english">light</span></div><div class="glossary-entry"><span class="glossary-latin">māne (adv.)</span> — <span class="glossary-english">in the morning</span></div><div class="glossary-entry"><span class="glossary-latin">Moblīnus, -ī (m.)</span> — <span class="glossary-english">a Moblin (pig guard)</span></div><div class="glossary-entry"><span class="glossary-latin">moveō, -ēre</span> — <span class="glossary-english">to move</span></div><div class="glossary-entry"><span class="glossary-latin">nox, noctis (f.)</span> — <span class="glossary-english">night</span></div><div class="glossary-entry"><span class="glossary-latin">omnis, -e</span> — <span class="glossary-english">every, all</span></div><div class="glossary-entry"><span class="glossary-latin">oppidum, -ī (n.)</span> — <span class="glossary-english">town</span></div><div class="glossary-entry"><span class="glossary-latin">ōstium, -ī (n.)</span> — <span class="glossary-english">entrance, doorway</span></div><div class="glossary-entry"><span class="glossary-latin">parvus, -a, -um</span> — <span class="glossary-english">small, little</span></div><div class="glossary-entry"><span class="glossary-latin">plēnus, -a, -um</span> — <span class="glossary-english">full</span></div><div class="glossary-entry"><span class="glossary-latin">portō, -āre</span> — <span class="glossary-english">to carry</span></div><div class="glossary-entry"><span class="glossary-latin">proximus, -a, -um</span> — <span class="glossary-english">next, nearest</span></div><div class="glossary-entry"><span class="glossary-latin">rapiō, -ere</span> — <span class="glossary-english">to grab, snatch</span></div><div class="glossary-entry"><span class="glossary-latin">relinquō, -ere</span> — <span class="glossary-english">to leave behind</span></div><div class="glossary-entry"><span class="glossary-latin">reliquiae, -ārum (f.pl.)</span> — <span class="glossary-english">scraps, remains</span></div><div class="glossary-entry"><span class="glossary-latin">repōnō, -ere</span> — <span class="glossary-english">to put back</span></div>
+        </div>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium (cont.)</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">rogō, -āre</span> — <span class="glossary-english">to ask</span></div><div class="glossary-entry"><span class="glossary-latin">sedeō, -ēre</span> — <span class="glossary-english">to sit</span></div><div class="glossary-entry"><span class="glossary-latin">sequor, sequī</span> — <span class="glossary-english">to follow</span></div><div class="glossary-entry"><span class="glossary-latin">sōlum (adv.)</span> — <span class="glossary-english">only, just</span></div><div class="glossary-entry"><span class="glossary-latin">sōlus, -a, -um</span> — <span class="glossary-english">alone</span></div><div class="glossary-entry"><span class="glossary-latin">spectō, -āre</span> — <span class="glossary-english">to watch, look at</span></div><div class="glossary-entry"><span class="glossary-latin">spelunca, -ae (f.)</span> — <span class="glossary-english">cave</span></div><div class="glossary-entry"><span class="glossary-latin">stīpes, -itis (m.)</span> — <span class="glossary-english">post, pole</span></div><div class="glossary-entry"><span class="glossary-latin">surgō, -ere</span> — <span class="glossary-english">to stand up, rise</span></div><div class="glossary-entry"><span class="glossary-latin">tacitē (adv.)</span> — <span class="glossary-english">quietly, silently</span></div><div class="glossary-entry"><span class="glossary-latin">tēctum, -ī (n.)</span> — <span class="glossary-english">roof, rooftop</span></div><div class="glossary-entry"><span class="glossary-latin">tegō, -ere</span> — <span class="glossary-english">to cover, hide</span></div><div class="glossary-entry"><span class="glossary-latin">tremō, -ere</span> — <span class="glossary-english">to tremble, shake</span></div><div class="glossary-entry"><span class="glossary-latin">umbra, -ae (f.)</span> — <span class="glossary-english">shadow</span></div><div class="glossary-entry"><span class="glossary-latin">ūnā (adv.)</span> — <span class="glossary-english">together</span></div>
+        </div>
     </div>
 
 

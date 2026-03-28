@@ -85,6 +85,14 @@ The book creation pipeline has review gates between each stage. **All gates are 
 - Updates translation in place, writes review to `projects/{id}/translation/review.md`
 - **REVIEW GATE**: User approves Latin before proceeding
 
+### 3b. Glossary
+- Generate `projects/{id}/translation/glossary.json` — word-by-word vocabulary list
+- Format: `[{"latin": "arx, arcis (f.)", "english": "fortress"}, ...]`
+- Dictionary headword forms (nom. for nouns, 1st person for verbs), with principal parts abbreviation, gender, macrons
+- Alphabetical, 30-80 entries per book. Skip proper names and common function words (et, in, nōn, sed, est)
+- The PDF builder renders this as a two-column glossary page at the end of the book
+- **Every book must have a glossary** — generate it after the Latin is finalized
+
 ### 4. Art Direction → `@art-director`
 - Creates Visual Bible and per-page image prompts
 - Output: `projects/{id}/art/visual_bible.json` and `projects/{id}/art/prompts.json`
