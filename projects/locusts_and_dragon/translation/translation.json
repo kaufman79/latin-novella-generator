@@ -4,7 +4,7 @@
   "pages": [
     {
       "page_number": 1,
-      "latin_text": "Multae cicādae ūnō diē taedēbant. Nihil novum erat.",
+      "latin_text": "Multae cicādae ūnō diē ōtiōsae erant. Nihil novum erat.",
       "english_text": "Many cicadas were bored one day. Nothing was new.",
       "image_prompt": "A sunny field with several small brown cicadas resting on grass stalks, looking bored. Warm sunlight, soft yellow tones, simple background of green hills and sky. Center composition, gentle mood.",
       "image_path": "projects/locusts_and_dragon/images/page_01.png",
@@ -22,7 +22,7 @@
     },
     {
       "page_number": 3,
-      "latin_text": "Ibī hominēs timidi et trīstēs erant.",
+      "latin_text": "Ibī hominēs timidī et trīstēs erant.",
       "english_text": "There, the people were afraid and sad.",
       "image_prompt": "Simple town square with a few villagers looking frightened and frowning. Soft colors, houses with red roofs, gentle afternoon light.",
       "image_path": "projects/locusts_and_dragon/images/page_03.png",
@@ -112,7 +112,7 @@
     },
     {
       "page_number": 13,
-      "latin_text": "Per antrum volāvit, mordēns et ungues vibrāns. Multās cicādās occīdit.",
+      "latin_text": "Per antrum volāvit, mordēns et unguēs vibrāns. Multās cicādās occīdit.",
       "english_text": "It flew through the cave, biting and swinging its claws. It killed many cicadas.",
       "image_prompt": "Action scene with dragon sweeping through the air, claws extended. A few cicadas fleeing in panic. Motion blur lines, dim cave background.",
       "image_path": "projects/locusts_and_dragon/images/page_13.png",
@@ -121,7 +121,7 @@
     },
     {
       "page_number": 14,
-      "latin_text": "Ceterae cicādae tremēbant et consilium quaesīvērunt.",
+      "latin_text": "Ceterae cicādae tremēbant et cōnsilium quaesīvērunt.",
       "english_text": "The remaining cicadas trembled and sought a plan.",
       "image_prompt": "Group of surviving cicadas huddled together on a rock, looking worried. Cave background dark but not frightening, soft light on them.",
       "image_path": "projects/locusts_and_dragon/images/page_14.png",
@@ -130,7 +130,7 @@
     },
     {
       "page_number": 15,
-      "latin_text": "Antōnius, una cicāda fortis, dīxit: “Strīdāmus omnēs simul!”",
+      "latin_text": "Antōnius, ūna cicāda fortis, dīxit: “Strīdāmus omnēs simul!”",
       "english_text": "Antonius, one brave cicada, said: 'Let’s all buzz together!'",
       "image_prompt": "Close-up of Antonius the cicada standing tall and brave, wings lifted as he speaks to the others. Warm light on his face, hopeful tone.",
       "image_path": "projects/locusts_and_dragon/images/page_15.png",

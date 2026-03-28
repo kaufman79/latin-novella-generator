@@ -1,0 +1,205 @@
+{
+  "title_english": "The Tale of Jemima Puddle-Duck",
+  "title_latin": "Fābula dē Jēmimā Anate",
+  "target_pages": 22,
+  "characters": [
+    {
+      "name": "Jemima Puddle-Duck",
+      "description": "A white farmyard duck wearing a blue poke bonnet and a pink shawl. Earnest, naive, trusting, determined to hatch her own eggs.",
+      "source": "Jemima Puddle-Duck from Beatrix Potter's The Tale of Jemima Puddle-Duck (1908)",
+      "is_established": true
+    },
+    {
+      "name": "The Fox",
+      "description": "A sandy-whiskered gentleman fox. Wears a coat and reads a newspaper. Charming, polite, cunning — he plans to eat Jemima and her eggs. Called 'the gentleman with sandy whiskers' in the original.",
+      "source": "The Fox from Beatrix Potter's The Tale of Jemima Puddle-Duck",
+      "is_established": true
+    },
+    {
+      "name": "Kep",
+      "description": "A collie dog on the farm. Brown and white, intelligent, watchful. He is the one who sees through the fox's deception and rescues Jemima. Exercises true prudentia.",
+      "source": "Kep from Beatrix Potter's The Tale of Jemima Puddle-Duck",
+      "is_established": true
+    },
+    {
+      "name": "The Farmer's Wife",
+      "description": "A woman in a blue dress and white apron. Manages the farm and the poultry. She takes Jemima's eggs away to be hatched by hens, which frustrates Jemima.",
+      "source": "The Farmer's Wife from Beatrix Potter's The Tale of Jemima Puddle-Duck",
+      "is_established": false
+    }
+  ],
+  "locations": [
+    {
+      "name": "The Farm",
+      "description": "An English farmyard with stone buildings, a barn, ducks, hens, and chicks. The farmer's wife tends the poultry."
+    },
+    {
+      "name": "The Hill and Countryside",
+      "description": "Rolling green hills and open countryside surrounding the farm. Where Jemima flies to find a nesting spot."
+    },
+    {
+      "name": "The Woods",
+      "description": "A shady wood with foxgloves and ferns. The fox's territory. He has a shed/hut made of sticks hidden among the trees."
+    },
+    {
+      "name": "The Fox's Shed",
+      "description": "A tumbledown shed in the woods with a thatched roof. Inside is a bed of feathers — suspiciously soft. This is where Jemima lays her eggs."
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "english_text": "Jemima was a duck who lived on a farm.",
+      "scene_description": "[IMAGE: image_003.jpg] The farmyard scene: the farmer's wife at the door, Jemima among hens, ducks, and chicks in the yard. Establishes the setting.",
+      "characters_present": ["Jemima Puddle-Duck", "The Farmer's Wife"],
+      "location": "The Farm"
+    },
+    {
+      "page_number": 2,
+      "english_text": "Jemima wanted to hatch her own eggs.",
+      "scene_description": "[IMAGE: image_004.jpg] Jemima in the barn looking frustrated, standing apart from the other hens. An egg visible nearby. She wants to sit on her eggs but is not allowed.",
+      "characters_present": ["Jemima Puddle-Duck"],
+      "location": "The Farm"
+    },
+    {
+      "page_number": 3,
+      "english_text": "But the farmer's wife always took the eggs away.",
+      "scene_description": "[IMAGE: image_005.jpg] The farmer's wife carrying eggs away while Jemima watches. Jemima looks upset — her eggs are being taken from her.",
+      "characters_present": ["Jemima Puddle-Duck", "The Farmer's Wife"],
+      "location": "The Farm"
+    },
+    {
+      "page_number": 4,
+      "english_text": "So Jemima left the farm to find a secret nest.",
+      "scene_description": "[IMAGE: image_006.jpg] Jemima setting off from the farm, wearing her bonnet and shawl, walking determinedly along a path toward the hills.",
+      "characters_present": ["Jemima Puddle-Duck"],
+      "location": "The Hill and Countryside"
+    },
+    {
+      "page_number": 5,
+      "english_text": "She flew over the hill, looking for a place.",
+      "scene_description": "[IMAGE: image_008.jpg] Jemima in flight, wings spread, bonnet on, soaring over green hills. A moment of freedom and determination.",
+      "characters_present": ["Jemima Puddle-Duck"],
+      "location": "The Hill and Countryside"
+    },
+    {
+      "page_number": 6,
+      "english_text": "She landed in a wood full of foxgloves.",
+      "scene_description": "[IMAGE: image_010.jpg] Jemima standing in a shady clearing among tall foxglove flowers. A beautiful but ominous setting.",
+      "characters_present": ["Jemima Puddle-Duck"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 7,
+      "english_text": "A gentleman with sandy whiskers sat reading a newspaper.",
+      "scene_description": "[IMAGE: image_011.jpg] The fox sitting on a tree stump, reading a newspaper, looking elegant and refined. Jemima approaches. He looks friendly.",
+      "characters_present": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 8,
+      "english_text": "Jemima told him all her troubles.",
+      "scene_description": "[IMAGE: image_012.jpg] Jemima talking earnestly to the fox, who listens with exaggerated sympathy. She is completely open and trusting.",
+      "characters_present": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 9,
+      "english_text": "\"I know a good place for a nest,\" said the fox.",
+      "scene_description": "[IMAGE: image_013.jpg] The fox leading Jemima to a tumbledown shed in the woods. He gestures toward it. The shed looks rough but Jemima looks hopeful.",
+      "characters_present": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 10,
+      "english_text": "The shed was full of feathers. Very soft feathers.",
+      "scene_description": "[IMAGE: image_015.jpg] Jemima nestled contentedly in a deep bed of feathers inside the shed. She looks happy. The feathers are sinister — they belong to the fox's previous victims.",
+      "characters_present": ["Jemima Puddle-Duck"],
+      "location": "The Fox's Shed"
+    },
+    {
+      "page_number": 11,
+      "english_text": "Jemima laid nine eggs in the feathery nest.",
+      "scene_description": "[IMAGE: image_014.jpg] The fox politely closing the shed door, locking Jemima inside with her eggs. She does not realize the danger.",
+      "characters_present": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Fox's Shed"
+    },
+    {
+      "page_number": 12,
+      "english_text": "The fox was very polite. He gave her food every day.",
+      "scene_description": "[IMAGE: image_016.jpg] The fox bowing politely to Jemima, who looks flattered. He is charming and attentive — but his motives are dark.",
+      "characters_present": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 13,
+      "english_text": "He smiled at Jemima and asked about her eggs.",
+      "scene_description": "[IMAGE: image_017.jpg] The fox sitting very close to Jemima, head tilted, smiling. Too attentive. A predator being patient.",
+      "characters_present": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 14,
+      "english_text": "Then the fox asked Jemima to bring herbs and onions.",
+      "scene_description": "[IMAGE: image_018.jpg] The fox standing by a gate, asking Jemima something. Jemima listens. He wants sage and onions — the stuffing for roast duck.",
+      "characters_present": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 15,
+      "english_text": "Jemima gathered sage and onions for him. She did not understand.",
+      "scene_description": "[IMAGE: image_019.jpg] Jemima in the farm garden, gathering herbs in her shawl. She cheerfully collects the ingredients for her own roasting — without any suspicion.",
+      "characters_present": ["Jemima Puddle-Duck"],
+      "location": "The Farm"
+    },
+    {
+      "page_number": 16,
+      "english_text": "On the farm, Jemima met Kep the collie dog.",
+      "scene_description": "[IMAGE: image_020.jpg] Jemima talking to Kep the collie dog by the farmhouse door. She is telling him everything — where she goes, the kind gentleman.",
+      "characters_present": ["Jemima Puddle-Duck", "Kep"],
+      "location": "The Farm"
+    },
+    {
+      "page_number": 17,
+      "english_text": "She told Kep everything. Kep listened carefully.",
+      "scene_description": "[IMAGE: image_021.jpg] Kep trotting off with purpose after hearing Jemima's story. He understands the danger immediately — the fox plans to eat Jemima.",
+      "characters_present": ["Kep"],
+      "location": "The Hill and Countryside"
+    },
+    {
+      "page_number": 18,
+      "english_text": "Jemima brought the herbs to the fox. He looked very happy.",
+      "scene_description": "[IMAGE: image_022.jpg] Jemima walking through the countryside carrying her bundle of herbs to the fox. She is innocent and cheerful, unaware of the danger.",
+      "characters_present": ["Jemima Puddle-Duck"],
+      "location": "The Hill and Countryside"
+    },
+    {
+      "page_number": 19,
+      "english_text": "But Kep came with two foxhound dogs!",
+      "scene_description": "[IMAGE: image_024.jpg] Kep arriving with two foxhound dogs, running toward the fox's lair. They are coming to the rescue.",
+      "characters_present": ["Kep"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 20,
+      "english_text": "The dogs chased the fox away! He ran into the woods.",
+      "scene_description": "[IMAGE: image_025.jpg] The foxhound dogs running and chasing. The fox is fleeing. A dramatic rescue scene.",
+      "characters_present": ["Kep"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 21,
+      "english_text": "Jemima was safe, but the dogs had eaten her eggs.",
+      "scene_description": "[IMAGE: image_027.jpg] Jemima walking home sadly with Kep and the foxhounds. The farm visible in the background. Jemima is safe but heartbroken — her eggs are gone.",
+      "characters_present": ["Jemima Puddle-Duck", "Kep"],
+      "location": "The Hill and Countryside"
+    },
+    {
+      "page_number": 22,
+      "english_text": "Later, Jemima hatched four ducklings. Only four.",
+      "scene_description": "[IMAGE: image_028.jpg] Jemima standing proudly with four small yellow ducklings at the farm. A bittersweet happy ending — she has some ducklings, but fewer than she should have.",
+      "characters_present": ["Jemima Puddle-Duck"],
+      "location": "The Farm"
+    }
+  ]
+}

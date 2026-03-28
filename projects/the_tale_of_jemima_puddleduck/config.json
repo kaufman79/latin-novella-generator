@@ -1,0 +1,29 @@
+{
+  "project_id": "the_tale_of_jemima_puddleduck",
+  "title_english": "The Tale of Jemima Puddle-Duck",
+  "title_latin": "Fābula dē Jēmimā Anate",
+  "source_type": "public_domain_adaptation",
+  "public_domain_source": {
+    "title": "The Tale of Jemima Puddle-Duck",
+    "author": "Beatrix Potter",
+    "illustrator": "Beatrix Potter",
+    "source_url": "https://www.gutenberg.org/ebooks/14814",
+    "year": 1908,
+    "license": "Public Domain"
+  },
+  "theme": null,
+  "target_pages": 22,
+  "virtue_ratings": {
+    "prudentia": 4,
+    "iustitia": 1,
+    "fortitudo": 1,
+    "temperantia": 2,
+    "fides": 2,
+    "spes": 0,
+    "caritas": 0
+  },
+  "status": "images_generated",
+  "date_created": "2026-03-28T13:52:32.330662",
+  "date_modified": "2026-03-28T13:52:32.330677",
+  "project_folder": "projects/the_tale_of_jemima_puddleduck"
+}

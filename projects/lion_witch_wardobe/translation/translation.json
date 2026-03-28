@@ -18,7 +18,7 @@
     },
     {
       "page_number": 2,
-      "latin_text": "Diē pluviōsō Luciā in armārium intrāvit.",
+      "latin_text": "Diē pluviōsō Lucia in armārium intrāvit.",
       "english_text": "On a rainy day, Lucy entered the wardrobe.",
       "image_prompt": "Rainy day inside a dusty room, open wardrobe door with fur coats visible, window showing storm outside, slightly above eye-level focusing on the wardrobe, cool blues and grays with soft lighting.",
       "image_path": "projects/lion_witch_wardobe/images/page_02.png",
@@ -40,7 +40,7 @@
     },
     {
       "page_number": 4,
-      "latin_text": "Lampā lūcēns viam mōnstrābat.",
+      "latin_text": "Lampas lūcēns viam mōnstrābat.",
       "english_text": "A glowing lamp showed the way.",
       "image_prompt": "Snowy Narnian forest with a magical glowing lamppost in center, soft light illuminating snowflakes and trees, mysterious mood, centered composition at eye-level, gentle shading in cool whites and yellow glow.",
       "image_path": "projects/lion_witch_wardobe/images/page_04.png",
@@ -116,7 +116,7 @@
     },
     {
       "page_number": 10,
-      "latin_text": "Edmundus clam discessit et Maleficam in currū ā rēnis tractō convenit.",
+      "latin_text": "Edmundus clam discessit et Maleficam in trahā convēnit.",
       "english_text": "Edmund sneaked away and met the Witch in her reindeer-pulled sledge.",
       "image_prompt": "Snowy path with reindeer sledge approaching, mysterious winter fog, centered on meeting moment, cold blue lighting with sledge lanterns, slightly above view for drama.",
       "image_path": "projects/lion_witch_wardobe/images/page_10.png",
@@ -206,7 +206,7 @@
     },
     {
       "page_number": 17,
-      "latin_text": "Maleficae Edmundī prōditiōne eum cēpit.",
+      "latin_text": "Malefica Edmundī prōditiōne eum cēpit.",
       "english_text": "By Edmund's betrayal the Witch captured him.",
       "image_prompt": "Icy castle interior, Witch's minions dragging Edmund in chains, dark and cold atmosphere, dramatic shadows, eye-level on capture moment.",
       "image_path": "projects/lion_witch_wardobe/images/page_17.png",
@@ -218,7 +218,7 @@
     },
     {
       "page_number": 18,
-      "latin_text": "Aslan aliōs ad Mēnsam Lapideam vocāvit. Malefica dīxit Edmundō mortem merērī.",
+      "latin_text": "Aslan aliōs ad Mēnsam Lapideam vocāvit. Malefica dīxit Edmundum mortem merērī.",
       "english_text": "Aslan called the others to the Stone Table. The Witch said Edmund deserved death.",
       "image_prompt": "Stone Table camp with Aslan welcoming children, Witch confronting group in background, tense standoff, firelight and moonlight mix, centered on table.",
       "image_path": "projects/lion_witch_wardobe/images/page_18.png",
@@ -339,7 +339,7 @@
     },
     {
       "page_number": 28,
-      "latin_text": "Petrus Magnificus, Susanna Lenis, Edmundus Iūstus, Luciā Valēns fīunt.",
+      "latin_text": "Petrus Magnificus, Susanna Lēnis, Edmundus Iūstus, Lucia Valēns fīunt.",
       "english_text": "They become Peter the Magnificent, Susan the Gentle, Edmund the Just, Lucy the Valiant.",
       "image_prompt": "Four children on thrones in castle hall, proud kingly poses, celebratory mood, eye-level on group, golden hour light.",
       "image_path": "projects/lion_witch_wardobe/images/page_28.png",

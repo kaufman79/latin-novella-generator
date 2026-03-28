@@ -1,0 +1,236 @@
+{
+  "title_latin": "Fābula dē Duōbus Mūribus Malīs",
+  "title_english": "The Tale of Two Bad Mice",
+  "pages": [
+    {
+      "page_number": 1,
+      "latin_text": "Ecce domus pulchra! Mūrī rubrī et fenestrae albae.",
+      "english_text": "This is a beautiful dollhouse. It has red walls and white windows.",
+      "image_prompt": "[IMAGE: image_004.jpg] The red brick dollhouse with white windows and muslin curtains.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_01.png",
+      "characters": [
+        "Lucinda",
+        "Jane"
+      ],
+      "location": "The Nursery"
+    },
+    {
+      "page_number": 2,
+      "latin_text": "Duae pūpae ibi habitābant: Lucinda et Iāna. Iāna coqua erat.",
+      "english_text": "Two dolls lived there: Lucinda and Jane. Jane was the cook.",
+      "image_prompt": "[IMAGE: image_005.jpg] The two dolls standing by their packing case.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_02.png",
+      "characters": [
+        "Lucinda",
+        "Jane"
+      ],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 3,
+      "latin_text": "Cibus pulcher in mēnsā erat: perna, piscis, et lībum.",
+      "english_text": "There was pretty food on the table: a ham, a fish, and a pudding.",
+      "image_prompt": "[IMAGE: image_006.jpg] Close-up of the dollhouse dining table laden with beautiful toy food.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_03.png",
+      "characters": [],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 4,
+      "latin_text": "Ōlim māne pūpae exiērunt. Domus tacita erat.",
+      "english_text": "One morning the dolls went out. The house was quiet.",
+      "image_prompt": "[IMAGE: image_007.jpg] Tom Thumb popping his head out of the mouse-hole.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_04.png",
+      "characters": [
+        "Tom Thumb"
+      ],
+      "location": "The Nursery"
+    },
+    {
+      "page_number": 5,
+      "latin_text": "Tom Pollex mūs erat. Hunca Munca uxor eius erat.",
+      "english_text": "Tom Thumb was a mouse. Hunca Munca was his wife.",
+      "image_prompt": "[IMAGE: image_008.jpg] Both mice peering out of their hole together.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_05.png",
+      "characters": [
+        "Tom Thumb",
+        "Hunca Munca"
+      ],
+      "location": "The Nursery"
+    },
+    {
+      "page_number": 6,
+      "latin_text": "Mūrēs ad domum rēpsērunt. Iānuam impulērunt!",
+      "english_text": "The mice crept up to the dollhouse. They pushed the door open!",
+      "image_prompt": "[IMAGE: image_009.jpg] The two mice creeping across the hearthrug toward the dollhouse.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_06.png",
+      "characters": [
+        "Tom Thumb",
+        "Hunca Munca"
+      ],
+      "location": "The Nursery"
+    },
+    {
+      "page_number": 7,
+      "latin_text": "Cēnāculum invēnērunt. Quantae epulae!",
+      "english_text": "They found the dining room. What a feast!",
+      "image_prompt": "[IMAGE: image_010.jpg] The mice peering into the dining room, eyes wide.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_07.png",
+      "characters": [
+        "Tom Thumb",
+        "Hunca Munca"
+      ],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 8,
+      "latin_text": "Tom Pollex pernam secāre temptāvit. Culter flexus est!",
+      "english_text": "Tom Thumb tried to cut the ham. The knife bent!",
+      "image_prompt": "[IMAGE: image_011.jpg] Tom Thumb pressing a lead knife into the ham.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_08.png",
+      "characters": [
+        "Tom Thumb",
+        "Hunca Munca"
+      ],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 9,
+      "latin_text": "Hunca Munca quoque temptāvit. Perna dūrissima erat!",
+      "english_text": "Hunca Munca tried too. The ham was very hard!",
+      "image_prompt": "[IMAGE: image_012.jpg] Hunca Munca standing on a chair, chopping at the ham.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_09.png",
+      "characters": [
+        "Tom Thumb",
+        "Hunca Munca"
+      ],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 10,
+      "latin_text": "Perna dē pātellā cecidit et sub mēnsam volūta est.",
+      "english_text": "The ham fell off the plate and rolled under the table.",
+      "image_prompt": "[IMAGE: image_013.jpg] The ham rolling under the table.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_10.png",
+      "characters": [
+        "Tom Thumb",
+        "Hunca Munca"
+      ],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 11,
+      "latin_text": "Tom Pollex īrātus erat! Cibum batillō frēgit. Gypsum erat!",
+      "english_text": "Tom Thumb was angry! He smashed the food with a shovel. It was all plaster!",
+      "image_prompt": "[IMAGE: image_014.jpg] Tom Thumb smashing plates with tongs and shovel.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_11.png",
+      "characters": [
+        "Tom Thumb",
+        "Hunca Munca"
+      ],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 12,
+      "latin_text": "Piscem in ignem posuērunt. Nōn ārsit!",
+      "english_text": "They put the fish in the fire. It would not burn!",
+      "image_prompt": "[IMAGE: image_015.jpg] Hunca Munca pushing the fish into the paper fire.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_12.png",
+      "characters": [
+        "Hunca Munca"
+      ],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 13,
+      "latin_text": "Tom Pollex camīnum ascendit. Nūlla fūlīgō!",
+      "english_text": "Tom Thumb went up the chimney. There was no soot!",
+      "image_prompt": "[IMAGE: image_016.jpg] Tom Thumb looking out from the top of the chimney.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_13.png",
+      "characters": [
+        "Tom Thumb"
+      ],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 14,
+      "latin_text": "Hunca Munca vāscula invēnit. Sed vacua erant!",
+      "english_text": "Hunca Munca found little cans. But they were empty inside!",
+      "image_prompt": "[IMAGE: image_017.jpg] Hunca Munca turning canisters upside down.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_14.png",
+      "characters": [
+        "Hunca Munca"
+      ],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 15,
+      "latin_text": "Mūrēs valdē īrātī erant! Tom Pollex omnia per fenestram iēcit!",
+      "english_text": "The mice were very angry! Tom Thumb threw everything out the window!",
+      "image_prompt": "[IMAGE: image_018.jpg] Tom Thumb throwing clothes out the upstairs window.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_15.png",
+      "characters": [
+        "Tom Thumb"
+      ],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 16,
+      "latin_text": "Hunca Munca culcitam plūmeam domum tulit.",
+      "english_text": "Hunca Munca took the feather bed home to the mouse-hole.",
+      "image_prompt": "[IMAGE: image_019.jpg] The mice carrying the bolster down the stairs.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_16.png",
+      "characters": [
+        "Tom Thumb",
+        "Hunca Munca"
+      ],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 17,
+      "latin_text": "Cūnās quoque cēpit, et caveam avium!",
+      "english_text": "She took a cradle and a birdcage too!",
+      "image_prompt": "[IMAGE: image_021.jpg] Hunca Munca carrying the cradle away.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_17.png",
+      "characters": [
+        "Hunca Munca"
+      ],
+      "location": "The Nursery"
+    },
+    {
+      "page_number": 18,
+      "latin_text": "Tum pūpae domum rediērunt. Quanta ruīna!",
+      "english_text": "Then the dolls came home. What a mess!",
+      "image_prompt": "[IMAGE: image_023.jpg] Lucinda and Jane in their wrecked dollhouse.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_18.png",
+      "characters": [
+        "Lucinda",
+        "Jane"
+      ],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 19,
+      "latin_text": "Sed mūrēs paenituit. Tom Pollex nummum invēnit et prō omnibus quae frēgerat solvit.",
+      "english_text": "But the mice were sorry. Tom Thumb found a coin and paid for everything he broke.",
+      "image_prompt": "[IMAGE: image_028.jpg] The mice stuffing a sixpence into a stocking.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_19.png",
+      "characters": [
+        "Tom Thumb",
+        "Hunca Munca"
+      ],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 20,
+      "latin_text": "Et cotīdiē māne, Hunca Munca domum pūpārum verrit.",
+      "english_text": "And every morning, Hunca Munca sweeps the dollhouse clean.",
+      "image_prompt": "[IMAGE: image_029.jpg] Hunca Munca with broom and dustpan at the dollhouse door.",
+      "image_path": "projects/the_tale_of_two_bad_mice/images/page_20.png",
+      "characters": [
+        "Hunca Munca"
+      ],
+      "location": "The Dollhouse"
+    }
+  ]
+}

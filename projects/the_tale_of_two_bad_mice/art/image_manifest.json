@@ -1,0 +1,152 @@
+{
+  "pd_source": {
+    "title": "The Tale of Two Bad Mice",
+    "author": "Beatrix Potter",
+    "illustrator": "Beatrix Potter",
+    "source_url": "https://www.gutenberg.org/ebooks/45264",
+    "year": 1904,
+    "license": "Public Domain"
+  },
+  "mappings": [
+    {
+      "page_number": 1,
+      "source": "existing",
+      "image_filename": "image_004.jpg",
+      "original_caption": "The red brick dollhouse with white windows",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 2,
+      "source": "existing",
+      "image_filename": "image_005.jpg",
+      "original_caption": "Lucinda and Jane, the two dolls",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 3,
+      "source": "existing",
+      "image_filename": "image_006.jpg",
+      "original_caption": "Pretty food on the dollhouse table",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 4,
+      "source": "existing",
+      "image_filename": "image_007.jpg",
+      "original_caption": "Tom Thumb popping out of the mouse-hole",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 5,
+      "source": "existing",
+      "image_filename": "image_008.jpg",
+      "original_caption": "Both mice peering out of their hole",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 6,
+      "source": "existing",
+      "image_filename": "image_009.jpg",
+      "original_caption": "Mice creeping up to the dollhouse",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 7,
+      "source": "existing",
+      "image_filename": "image_010.jpg",
+      "original_caption": "Mice looking at the dining room",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 8,
+      "source": "existing",
+      "image_filename": "image_011.jpg",
+      "original_caption": "Tom Thumb trying to carve the ham",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 9,
+      "source": "existing",
+      "image_filename": "image_012.jpg",
+      "original_caption": "Hunca Munca chopping at the ham",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 10,
+      "source": "existing",
+      "image_filename": "image_013.jpg",
+      "original_caption": "Ham rolling under the table",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 11,
+      "source": "existing",
+      "image_filename": "image_014.jpg",
+      "original_caption": "Tom Thumb smashing food with shovel",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 12,
+      "source": "existing",
+      "image_filename": "image_015.jpg",
+      "original_caption": "Putting the fish in the fire",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 13,
+      "source": "existing",
+      "image_filename": "image_016.jpg",
+      "original_caption": "Tom Thumb looking out of the chimney",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 14,
+      "source": "existing",
+      "image_filename": "image_017.jpg",
+      "original_caption": "Hunca Munca dumping out the canisters",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 15,
+      "source": "existing",
+      "image_filename": "image_018.jpg",
+      "original_caption": "Tom Thumb throwing things out the window",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 16,
+      "source": "existing",
+      "image_filename": "image_019.jpg",
+      "original_caption": "Mice carrying the feather bed downstairs",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 17,
+      "source": "existing",
+      "image_filename": "image_021.jpg",
+      "original_caption": "Hunca Munca stealing the cradle",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 18,
+      "source": "existing",
+      "image_filename": "image_023.jpg",
+      "original_caption": "Dolls shocked by the mess",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 19,
+      "source": "existing",
+      "image_filename": "image_028.jpg",
+      "original_caption": "Mice putting coin into stocking — restitution",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 20,
+      "source": "existing",
+      "image_filename": "image_029.jpg",
+      "original_caption": "Hunca Munca sweeping the dollhouse",
+      "generate_prompt": null
+    }
+  ]
+}

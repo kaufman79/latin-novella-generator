@@ -35,7 +35,7 @@
     },
     {
       "page_number": 4,
-      "latin_text": "Māter Iūdam, īnfantem, in cubiculō lactat.",
+      "latin_text": "Māter Iūdam, infantem, in cubiculō lactat.",
       "english_text": "Mother nurses Judah, the baby, in the bedroom.",
       "image_prompt": "A warm bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Māter (30-year-old woman, long dirty blond hair, skinny, in a green nightgown) sits on a bed, nursing Iūda (baby, dark hair, in a white cloth diaper) with a gentle smile. A nursing pillow (soft yellow) supports Iūda. A candle on a bedside table casts warm light. Background: simple wooden bed and plain walls. Mood: nurturing, serene.",
       "image_path": "projects/dada_and_the_cockroach/images/page_04.png",
@@ -60,7 +60,7 @@
     },
     {
       "page_number": 6,
-      "latin_text": "Māter exlāmāvit!",
+      "latin_text": "Māter exclāmāvit!",
       "english_text": "Mother screams!",
       "image_prompt": "A lively bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Māter (long dirty blond hair, green nightgown) sits on the bed, holding Iūda (baby, dark hair), with a shocked expression, mouth open in a scream. The cockroach is visible on the yellow nursing pillow. Candlelight casts dramatic shadows. Background: minimal, with bed and plain wall. Mood: alarmed, intense.",
       "image_path": "projects/dada_and_the_cockroach/images/page_06.png",
@@ -86,7 +86,7 @@
     },
     {
       "page_number": 8,
-      "latin_text": "“Pater, blatta est! Venī eam necā!”",
+      "latin_text": "“Pater, blatta est! Venī! Eam necā!”",
       "english_text": "“Father, there’s a cockroach! Come kill it!”",
       "image_prompt": "A close-up bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Māter (long dirty blond hair, green nightgown) holds the phone to her ear, her face showing worry as she speaks. Iūda (baby, dark hair) rests in her arm. The cockroach is on the yellow pillow. Candlelight casts a warm glow. Background: minimal, bed-focused. Mood: anxious, calling for help.",
       "image_path": "projects/dada_and_the_cockroach/images/page_08.png",
@@ -121,7 +121,7 @@
     },
     {
       "page_number": 11,
-      "latin_text": "Pater cito ad cubiculum currit.",
+      "latin_text": "Pater citō ad cubiculum currit.",
       "english_text": "Father quickly runs to the bedroom.",
       "image_prompt": "An action-packed scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (red hair, short red beard, blue tunic) runs up a wooden staircase, holding a brown boot, his face focused. Candlelight from a wall sconce casts dynamic shadows. Background: simple stairs and plain wall. Mood: urgent, energetic.",
       "image_path": "projects/dada_and_the_cockroach/images/page_11.png",
@@ -242,7 +242,7 @@
     },
     {
       "page_number": 21,
-      "latin_text": "Pater chartam hygēnicam petit ut blattam tollat.",
+      "latin_text": "Pater chartam hygiēnicam petit ut blattam tollat.",
       "english_text": "Father gets toilet paper to pick up the cockroach.",
       "image_prompt": "A purposeful bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (red hair, short red beard, blue tunic) walks toward a wooden shelf, reaching for a roll of white toilet paper, his expression confident. The red duffle bag is on the floor. Candlelight glows softly. Background: simple bed and wall. Mood: determined, proactive.",
       "image_path": "projects/dada_and_the_cockroach/images/page_21.png",
@@ -253,7 +253,7 @@
     },
     {
       "page_number": 22,
-      "latin_text": "Pater redit, sed blatta nōn vidērī! Pater saccō movet.",
+      "latin_text": "Pater redit, sed blattam nōn videt! Pater saccum movet.",
       "english_text": "Father returns, but the cockroach is gone! Father moves the bag.",
       "image_prompt": "A surprising bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, slightly above angle. Pater (red hair, short red beard, blue tunic) holds white toilet paper, looking confused at the red duffle bag he’s lifting. No cockroach is visible. Candlelight casts soft shadows. Background: bed and wooden floor. Mood: puzzled, searching.",
       "image_path": "projects/dada_and_the_cockroach/images/page_22.png",
@@ -288,7 +288,7 @@
     },
     {
       "page_number": 25,
-      "latin_text": "Pater blattam chartā hygēnicā tollit et dēposuit in quisquiliās.",
+      "latin_text": "Pater blattam chartā hygiēnicā tollit et dēpōnit in quisquiliās.",
       "english_text": "Father picks up the cockroach with toilet paper and throws it in the trash can.",
       "image_prompt": "A satisfying bedroom scene in a storybook art style with clean shapes, bright flat colors, and light shading. Center framing, eye-level angle. Pater (red hair, short red beard, blue tunic) holds a white piece of toilet paper with a brown cockroach, tossing it into a simple wooden trash can. His expression is relieved. Candlelight glows softly. Background: bed and minimal furniture. Mood: accomplished, calm.",
       "image_path": "projects/dada_and_the_cockroach/images/page_25.png",

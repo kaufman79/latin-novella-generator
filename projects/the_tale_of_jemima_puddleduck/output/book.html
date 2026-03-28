@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Palatino', 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .title-page {
+            text-align: center;
+            page-break-after: always;
+            padding-top: 3in;
+        }
+
+        .title-page h1 {
+            font-size: 36pt;
+            margin-bottom: 0.5in;
+            color: #2c3e50;
+        }
+
+        .title-page .english {
+            font-size: 24pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page {
+            page-break-after: always;
+            text-align: center;
+        }
+
+        .story-page img {
+            max-width: 100%;
+            max-height: 7in;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 0.5in auto;
+        }
+
+        .story-page .latin-text {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0.3in 0;
+        }
+
+        .story-page .english-text {
+            font-size: 14pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page .page-number {
+            position: absolute;
+            bottom: 0.3in;
+            right: 0.3in;
+            font-size: 12pt;
+            color: #bdc3c7;
+        }
+
+        .virtue-badge {
+            display: inline-block;
+            border: 2px solid #8e7c5a;
+            border-radius: 20px;
+            padding: 4px 18px;
+            font-size: 13pt;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            color: #8e7c5a;
+            background-color: rgba(255, 255, 255, 0.75);
+            margin-top: 15px;
+        }
+
+        .inside-cover {
+            page-break-after: always;
+            padding-top: 2.5in;
+            text-align: center;
+        }
+
+        .inside-cover h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            margin-bottom: 0.4in;
+            border-bottom: 1px solid #d5c9b1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .virtue-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 8px 0;
+            font-size: 12pt;
+        }
+
+        .virtue-name {
+            width: 140px;
+            text-align: right;
+            padding-right: 15px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            color: #5a5a5a;
+        }
+
+        .virtue-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .virtue-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1.5px solid #8e7c5a;
+        }
+
+        .virtue-dot.filled {
+            background-color: #8e7c5a;
+        }
+
+        .virtue-dot.empty {
+            background-color: transparent;
+        }
+
+        .glossary-page {
+            page-break-after: always;
+            padding-top: 0.5in;
+        }
+
+        .glossary-page h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            text-align: center;
+            margin-bottom: 0.3in;
+            border-bottom: 1px solid #d5c9b1;
+            padding-bottom: 6px;
+        }
+
+        .glossary-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .glossary-table td {
+            padding: 4px 8px;
+            vertical-align: top;
+            font-size: 10pt;
+            line-height: 1.4;
+            border-bottom: 1px solid #f0ebe3;
+        }
+
+        .glossary-table td.glossary-page-num {
+            width: 30px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 9pt;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .glossary-table td.glossary-latin {
+            width: 48%;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-table td.glossary-english {
+            width: 48%;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        /* Legacy single-word glossary styles (for glossary.json overrides) */
+        .glossary-columns {
+            column-count: 2;
+            column-gap: 0.4in;
+            column-rule: 1px solid #e0d9cc;
+        }
+
+        .glossary-entry {
+            margin: 0;
+            padding: 3px 0;
+            break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .glossary-entry .glossary-latin {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-entry .glossary-english {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="story-page" style="position: relative;">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/cover.png" alt="Cover" style="max-height: 10in; width: 100%;">
+        <div style="position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); text-align: center; width: 90%; background-color: rgba(255, 255, 255, 0.65); padding: 20px; border-radius: 10px;">
+            <h1 style="font-size: 48pt; margin: 0; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Fābula dē Jēmimā Anate</h1>
+            <p style="font-size: 28pt; margin: 10px 0 0 0; color: #7f8c8d; font-style: italic;">The Tale of Jemima Puddle-Duck</p>
+            <div class='virtue-badge'>Prudentia</div>
+        </div>
+    </div>
+
+
+    <div class="inside-cover">
+        <h2>Virtūtēs</h2>
+        <div class="virtue-row"><span class="virtue-name">Prudentia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Iūstitia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fortitūdō</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Temperantia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fidēs</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Spēs</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Cāritās</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_01.png" alt="Page 1">
+        <p class="latin-text">Jēmima anas erat quae in fundō habitābat.</p>
+        <p class="english-text">Jemima was a duck who lived on a farm.</p>
+        <span class="page-number">1</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_02.png" alt="Page 2">
+        <p class="latin-text">Jēmima ōva sua ipsa fovēre volēbat.</p>
+        <p class="english-text">Jemima wanted to hatch her own eggs.</p>
+        <span class="page-number">2</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_03.png" alt="Page 3">
+        <p class="latin-text">Sed uxor agricolae ōva semper auferēbat.</p>
+        <p class="english-text">But the farmer's wife always took the eggs away.</p>
+        <span class="page-number">3</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_04.png" alt="Page 4">
+        <p class="latin-text">Itaque Jēmima fundum relīquit. Nīdum sēcrētum quaerēbat.</p>
+        <p class="english-text">So Jemima left the farm. She was looking for a secret nest.</p>
+        <span class="page-number">4</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_05.png" alt="Page 5">
+        <p class="latin-text">Super collem volāvit, locum quaerēns.</p>
+        <p class="english-text">She flew over the hill, looking for a place.</p>
+        <span class="page-number">5</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_06.png" alt="Page 6">
+        <p class="latin-text">In silvam dēscendit. Digitālēs ubīque flōrēbant.</p>
+        <p class="english-text">She landed in a wood. Foxgloves bloomed everywhere.</p>
+        <span class="page-number">6</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_07.png" alt="Page 7">
+        <p class="latin-text">Vir elegāns ibi sedēbat, acta diurna legēns.</p>
+        <p class="english-text">An elegant gentleman sat there, reading a newspaper.</p>
+        <span class="page-number">7</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_08.png" alt="Page 8">
+        <p class="latin-text">Jēmima eī omnia nārrāvit. Ille attentē audīvit.</p>
+        <p class="english-text">Jemima told him everything. He listened carefully.</p>
+        <span class="page-number">8</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_09.png" alt="Page 9">
+        <p class="latin-text">"Locum optimum nōvī," inquit vulpēs, subrīdēns.</p>
+        <p class="english-text">"I know a very good place," said the fox, smiling.</p>
+        <span class="page-number">9</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_10.png" alt="Page 10">
+        <p class="latin-text">Tugurium plūmīs plēnum erat. Plūmae mollissimae!</p>
+        <p class="english-text">The shed was full of feathers. Very soft feathers!</p>
+        <span class="page-number">10</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_11.png" alt="Page 11">
+        <p class="latin-text">Jēmima novem ōva in nīdō plūmeō posuit.</p>
+        <p class="english-text">Jemima laid nine eggs in the feathery nest.</p>
+        <span class="page-number">11</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_12.png" alt="Page 12">
+        <p class="latin-text">Vulpēs valdē comis erat. Cotīdiē cibum dabat.</p>
+        <p class="english-text">The fox was very polite. He gave her food every day.</p>
+        <span class="page-number">12</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_13.png" alt="Page 13">
+        <p class="latin-text">Subrīdēbat et dē ōvīs rogābat.</p>
+        <p class="english-text">He smiled and asked about the eggs.</p>
+        <span class="page-number">13</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_14.png" alt="Page 14">
+        <p class="latin-text">Tum vulpēs herbās et cēpās poposcit.</p>
+        <p class="english-text">Then the fox asked for herbs and onions.</p>
+        <span class="page-number">14</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_15.png" alt="Page 15">
+        <p class="latin-text">Jēmima salviam et cēpās laeta collēgit. Nihil intellegēbat.</p>
+        <p class="english-text">Jemima happily gathered sage and onions. She understood nothing.</p>
+        <span class="page-number">15</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_16.png" alt="Page 16">
+        <p class="latin-text">In fundō, Jēmima Kep canem invēnit.</p>
+        <p class="english-text">On the farm, Jemima met Kep the collie dog.</p>
+        <span class="page-number">16</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_17.png" alt="Page 17">
+        <p class="latin-text">Eī omnia nārrāvit. Kep statim intellēxit.</p>
+        <p class="english-text">She told Kep everything. Kep understood at once.</p>
+        <span class="page-number">17</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_18.png" alt="Page 18">
+        <p class="latin-text">Jēmima herbās ad vulpem portāvit. Ille laetissimus erat.</p>
+        <p class="english-text">Jemima brought the herbs to the fox. He was very happy.</p>
+        <span class="page-number">18</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_19.png" alt="Page 19">
+        <p class="latin-text">Sed Kep cum duōbus canibus vēnātōriīs vēnit!</p>
+        <p class="english-text">But Kep came with two foxhound dogs!</p>
+        <span class="page-number">19</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_20.png" alt="Page 20">
+        <p class="latin-text">Canēs vulpem fugāvērunt! In silvam fūgit.</p>
+        <p class="english-text">The dogs chased the fox away! He fled into the woods.</p>
+        <span class="page-number">20</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_21.png" alt="Page 21">
+        <p class="latin-text">Jēmima salva erat. Sed canēs ōva ēderant.</p>
+        <p class="english-text">Jemima was safe. But the dogs had eaten her eggs.</p>
+        <span class="page-number">21</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_jemima_puddleduck/images/page_22.png" alt="Page 22">
+        <p class="latin-text">Posteā Jēmima quattuor anāticulās ēdūxit. Quattuor tantum.</p>
+        <p class="english-text">Later, Jemima hatched four ducklings. Only four.</p>
+        <span class="page-number">22</span>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium</h2>
+        <table class="glossary-table">
+            <tr><td class="glossary-page-num">1</td><td class="glossary-latin">Jēmima anas erat quae in fundō habitābat.</td><td class="glossary-english">Jemima was a duck who lived on a farm.</td></tr><tr><td class="glossary-page-num">2</td><td class="glossary-latin">Jēmima ōva sua ipsa fovēre volēbat.</td><td class="glossary-english">Jemima wanted to hatch her own eggs.</td></tr><tr><td class="glossary-page-num">3</td><td class="glossary-latin">Sed uxor agricolae ōva semper auferēbat.</td><td class="glossary-english">But the farmer's wife always took the eggs away.</td></tr><tr><td class="glossary-page-num">4</td><td class="glossary-latin">Itaque Jēmima fundum relīquit.</td><td class="glossary-english">So Jemima left the farm.</td></tr><tr><td class="glossary-page-num">4</td><td class="glossary-latin">Nīdum sēcrētum quaerēbat.</td><td class="glossary-english">She was looking for a secret nest.</td></tr><tr><td class="glossary-page-num">5</td><td class="glossary-latin">Super collem volāvit, locum quaerēns.</td><td class="glossary-english">She flew over the hill, looking for a place.</td></tr><tr><td class="glossary-page-num">6</td><td class="glossary-latin">In silvam dēscendit.</td><td class="glossary-english">She landed in a wood.</td></tr><tr><td class="glossary-page-num">6</td><td class="glossary-latin">Digitālēs ubīque flōrēbant.</td><td class="glossary-english">Foxgloves bloomed everywhere.</td></tr><tr><td class="glossary-page-num">7</td><td class="glossary-latin">Vir elegāns ibi sedēbat, acta diurna legēns.</td><td class="glossary-english">An elegant gentleman sat there, reading a newspaper.</td></tr><tr><td class="glossary-page-num">8</td><td class="glossary-latin">Jēmima eī omnia nārrāvit.</td><td class="glossary-english">Jemima told him everything.</td></tr><tr><td class="glossary-page-num">8</td><td class="glossary-latin">Ille attentē audīvit.</td><td class="glossary-english">He listened carefully.</td></tr><tr><td class="glossary-page-num">9</td><td class="glossary-latin">"Locum optimum nōvī," inquit vulpēs, subrīdēns.</td><td class="glossary-english">"I know a very good place," said the fox, smiling.</td></tr><tr><td class="glossary-page-num">10</td><td class="glossary-latin">Tugurium plūmīs plēnum erat.</td><td class="glossary-english">The shed was full of feathers.</td></tr><tr><td class="glossary-page-num">10</td><td class="glossary-latin">Plūmae mollissimae!</td><td class="glossary-english">Very soft feathers!</td></tr><tr><td class="glossary-page-num">11</td><td class="glossary-latin">Jēmima novem ōva in nīdō plūmeō posuit.</td><td class="glossary-english">Jemima laid nine eggs in the feathery nest.</td></tr><tr><td class="glossary-page-num">12</td><td class="glossary-latin">Vulpēs valdē comis erat.</td><td class="glossary-english">The fox was very polite.</td></tr><tr><td class="glossary-page-num">12</td><td class="glossary-latin">Cotīdiē cibum dabat.</td><td class="glossary-english">He gave her food every day.</td></tr><tr><td class="glossary-page-num">13</td><td class="glossary-latin">Subrīdēbat et dē ōvīs rogābat.</td><td class="glossary-english">He smiled and asked about the eggs.</td></tr><tr><td class="glossary-page-num">14</td><td class="glossary-latin">Tum vulpēs herbās et cēpās poposcit.</td><td class="glossary-english">Then the fox asked for herbs and onions.</td></tr><tr><td class="glossary-page-num">15</td><td class="glossary-latin">Jēmima salviam et cēpās laeta collēgit.</td><td class="glossary-english">Jemima happily gathered sage and onions.</td></tr><tr><td class="glossary-page-num">15</td><td class="glossary-latin">Nihil intellegēbat.</td><td class="glossary-english">She understood nothing.</td></tr><tr><td class="glossary-page-num">16</td><td class="glossary-latin">In fundō, Jēmima Kep canem invēnit.</td><td class="glossary-english">On the farm, Jemima met Kep the collie dog.</td></tr><tr><td class="glossary-page-num">17</td><td class="glossary-latin">Eī omnia nārrāvit.</td><td class="glossary-english">She told Kep everything.</td></tr><tr><td class="glossary-page-num">17</td><td class="glossary-latin">Kep statim intellēxit.</td><td class="glossary-english">Kep understood at once.</td></tr><tr><td class="glossary-page-num">18</td><td class="glossary-latin">Jēmima herbās ad vulpem portāvit.</td><td class="glossary-english">Jemima brought the herbs to the fox.</td></tr>
+        </table>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium (cont.)</h2>
+        <table class="glossary-table">
+            <tr><td class="glossary-page-num">18</td><td class="glossary-latin">Ille laetissimus erat.</td><td class="glossary-english">He was very happy.</td></tr><tr><td class="glossary-page-num">19</td><td class="glossary-latin">Sed Kep cum duōbus canibus vēnātōriīs vēnit!</td><td class="glossary-english">But Kep came with two foxhound dogs!</td></tr><tr><td class="glossary-page-num">20</td><td class="glossary-latin">Canēs vulpem fugāvērunt!</td><td class="glossary-english">The dogs chased the fox away!</td></tr><tr><td class="glossary-page-num">20</td><td class="glossary-latin">In silvam fūgit.</td><td class="glossary-english">He fled into the woods.</td></tr><tr><td class="glossary-page-num">21</td><td class="glossary-latin">Jēmima salva erat.</td><td class="glossary-english">Jemima was safe.</td></tr><tr><td class="glossary-page-num">21</td><td class="glossary-latin">Sed canēs ōva ēderant.</td><td class="glossary-english">But the dogs had eaten her eggs.</td></tr><tr><td class="glossary-page-num">22</td><td class="glossary-latin">Posteā Jēmima quattuor anāticulās ēdūxit.</td><td class="glossary-english">Later, Jemima hatched four ducklings.</td></tr><tr><td class="glossary-page-num">22</td><td class="glossary-latin">Quattuor tantum.</td><td class="glossary-english">Only four.</td></tr>
+        </table>
+    </div>
+
+
+    <div class="story-page" style="padding-top: 3in; text-align: center;">
+        <p style="font-size: 14pt; color: #7f8c8d;">Illustrations by Beatrix Potter</p>
+        <p style="font-size: 12pt; color: #95a5a6;">from <em>The Tale of Jemima Puddle-Duck</em> (1908)</p>
+        <p style="font-size: 10pt; color: #bdc3c7;">Public Domain</p>
+    </div>
+
+
+</body>
+</html>

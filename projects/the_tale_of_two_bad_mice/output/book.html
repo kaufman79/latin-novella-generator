@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Palatino', 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .title-page {
+            text-align: center;
+            page-break-after: always;
+            padding-top: 3in;
+        }
+
+        .title-page h1 {
+            font-size: 36pt;
+            margin-bottom: 0.5in;
+            color: #2c3e50;
+        }
+
+        .title-page .english {
+            font-size: 24pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page {
+            page-break-after: always;
+            text-align: center;
+        }
+
+        .story-page img {
+            max-width: 100%;
+            max-height: 7in;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 0.5in auto;
+        }
+
+        .story-page .latin-text {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0.3in 0;
+        }
+
+        .story-page .english-text {
+            font-size: 14pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page .page-number {
+            position: absolute;
+            bottom: 0.3in;
+            right: 0.3in;
+            font-size: 12pt;
+            color: #bdc3c7;
+        }
+
+        .virtue-badge {
+            display: inline-block;
+            border: 2px solid #8e7c5a;
+            border-radius: 20px;
+            padding: 4px 18px;
+            font-size: 13pt;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            color: #8e7c5a;
+            background-color: rgba(255, 255, 255, 0.75);
+            margin-top: 15px;
+        }
+
+        .inside-cover {
+            page-break-after: always;
+            padding-top: 2.5in;
+            text-align: center;
+        }
+
+        .inside-cover h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            margin-bottom: 0.4in;
+            border-bottom: 1px solid #d5c9b1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .virtue-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 8px 0;
+            font-size: 12pt;
+        }
+
+        .virtue-name {
+            width: 140px;
+            text-align: right;
+            padding-right: 15px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            color: #5a5a5a;
+        }
+
+        .virtue-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .virtue-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1.5px solid #8e7c5a;
+        }
+
+        .virtue-dot.filled {
+            background-color: #8e7c5a;
+        }
+
+        .virtue-dot.empty {
+            background-color: transparent;
+        }
+
+        .glossary-page {
+            page-break-after: always;
+            padding-top: 0.5in;
+        }
+
+        .glossary-page h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            text-align: center;
+            margin-bottom: 0.3in;
+            border-bottom: 1px solid #d5c9b1;
+            padding-bottom: 6px;
+        }
+
+        .glossary-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .glossary-table td {
+            padding: 4px 8px;
+            vertical-align: top;
+            font-size: 10pt;
+            line-height: 1.4;
+            border-bottom: 1px solid #f0ebe3;
+        }
+
+        .glossary-table td.glossary-page-num {
+            width: 30px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 9pt;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .glossary-table td.glossary-latin {
+            width: 48%;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-table td.glossary-english {
+            width: 48%;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        /* Legacy single-word glossary styles (for glossary.json overrides) */
+        .glossary-columns {
+            column-count: 2;
+            column-gap: 0.4in;
+            column-rule: 1px solid #e0d9cc;
+        }
+
+        .glossary-entry {
+            margin: 0;
+            padding: 3px 0;
+            break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .glossary-entry .glossary-latin {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-entry .glossary-english {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="story-page" style="position: relative;">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/cover.png" alt="Cover" style="max-height: 10in; width: 100%;">
+        <div style="position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); text-align: center; width: 90%; background-color: rgba(255, 255, 255, 0.65); padding: 20px; border-radius: 10px;">
+            <h1 style="font-size: 48pt; margin: 0; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Fābula dē Duōbus Mūribus Malīs</h1>
+            <p style="font-size: 28pt; margin: 10px 0 0 0; color: #7f8c8d; font-style: italic;">The Tale of Two Bad Mice</p>
+            <div class='virtue-badge'>Iūstitia</div>
+        </div>
+    </div>
+
+
+    <div class="inside-cover">
+        <h2>Virtūtēs</h2>
+        <div class="virtue-row"><span class="virtue-name">Prudentia</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Iūstitia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fortitūdō</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Temperantia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fidēs</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Spēs</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Cāritās</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_01.png" alt="Page 1">
+        <p class="latin-text">Ecce domus pulchra! Mūrī rubrī et fenestrae albae.</p>
+        <p class="english-text">This is a beautiful dollhouse. It has red walls and white windows.</p>
+        <span class="page-number">1</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_02.png" alt="Page 2">
+        <p class="latin-text">Duae pūpae ibi habitābant: Lucinda et Iāna. Iāna coqua erat.</p>
+        <p class="english-text">Two dolls lived there: Lucinda and Jane. Jane was the cook.</p>
+        <span class="page-number">2</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_03.png" alt="Page 3">
+        <p class="latin-text">Cibus pulcher in mēnsā erat: perna, piscis, et lībum.</p>
+        <p class="english-text">There was pretty food on the table: a ham, a fish, and a pudding.</p>
+        <span class="page-number">3</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_04.png" alt="Page 4">
+        <p class="latin-text">Ōlim māne pūpae exiērunt. Domus tacita erat.</p>
+        <p class="english-text">One morning the dolls went out. The house was quiet.</p>
+        <span class="page-number">4</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_05.png" alt="Page 5">
+        <p class="latin-text">Tom Pollex mūs erat. Hunca Munca uxor eius erat.</p>
+        <p class="english-text">Tom Thumb was a mouse. Hunca Munca was his wife.</p>
+        <span class="page-number">5</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_06.png" alt="Page 6">
+        <p class="latin-text">Mūrēs ad domum rēpsērunt. Iānuam impulērunt!</p>
+        <p class="english-text">The mice crept up to the dollhouse. They pushed the door open!</p>
+        <span class="page-number">6</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_07.png" alt="Page 7">
+        <p class="latin-text">Cēnāculum invēnērunt. Quantae epulae!</p>
+        <p class="english-text">They found the dining room. What a feast!</p>
+        <span class="page-number">7</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_08.png" alt="Page 8">
+        <p class="latin-text">Tom Pollex pernam secāre temptāvit. Culter flexus est!</p>
+        <p class="english-text">Tom Thumb tried to cut the ham. The knife bent!</p>
+        <span class="page-number">8</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_09.png" alt="Page 9">
+        <p class="latin-text">Hunca Munca quoque temptāvit. Perna dūrissima erat!</p>
+        <p class="english-text">Hunca Munca tried too. The ham was very hard!</p>
+        <span class="page-number">9</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_10.png" alt="Page 10">
+        <p class="latin-text">Perna dē pātellā cecidit et sub mēnsam volūta est.</p>
+        <p class="english-text">The ham fell off the plate and rolled under the table.</p>
+        <span class="page-number">10</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_11.png" alt="Page 11">
+        <p class="latin-text">Tom Pollex īrātus erat! Cibum batillō frēgit. Gypsum erat!</p>
+        <p class="english-text">Tom Thumb was angry! He smashed the food with a shovel. It was all plaster!</p>
+        <span class="page-number">11</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_12.png" alt="Page 12">
+        <p class="latin-text">Piscem in ignem posuērunt. Nōn ārsit!</p>
+        <p class="english-text">They put the fish in the fire. It would not burn!</p>
+        <span class="page-number">12</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_13.png" alt="Page 13">
+        <p class="latin-text">Tom Pollex camīnum ascendit. Nūlla fūlīgō!</p>
+        <p class="english-text">Tom Thumb went up the chimney. There was no soot!</p>
+        <span class="page-number">13</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_14.png" alt="Page 14">
+        <p class="latin-text">Hunca Munca vāscula invēnit. Sed vacua erant!</p>
+        <p class="english-text">Hunca Munca found little cans. But they were empty inside!</p>
+        <span class="page-number">14</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_15.png" alt="Page 15">
+        <p class="latin-text">Mūrēs valdē īrātī erant! Tom Pollex omnia per fenestram iēcit!</p>
+        <p class="english-text">The mice were very angry! Tom Thumb threw everything out the window!</p>
+        <span class="page-number">15</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_16.png" alt="Page 16">
+        <p class="latin-text">Hunca Munca culcitam plūmeam domum tulit.</p>
+        <p class="english-text">Hunca Munca took the feather bed home to the mouse-hole.</p>
+        <span class="page-number">16</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_17.png" alt="Page 17">
+        <p class="latin-text">Cūnās quoque cēpit, et caveam avium!</p>
+        <p class="english-text">She took a cradle and a birdcage too!</p>
+        <span class="page-number">17</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_18.png" alt="Page 18">
+        <p class="latin-text">Tum pūpae domum rediērunt. Quanta ruīna!</p>
+        <p class="english-text">Then the dolls came home. What a mess!</p>
+        <span class="page-number">18</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_19.png" alt="Page 19">
+        <p class="latin-text">Sed mūrēs paenituit. Tom Pollex nummum invēnit et prō omnibus quae frēgerat solvit.</p>
+        <p class="english-text">But the mice were sorry. Tom Thumb found a coin and paid for everything he broke.</p>
+        <span class="page-number">19</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_two_bad_mice/images/page_20.png" alt="Page 20">
+        <p class="latin-text">Et cotīdiē māne, Hunca Munca domum pūpārum verrit.</p>
+        <p class="english-text">And every morning, Hunca Munca sweeps the dollhouse clean.</p>
+        <span class="page-number">20</span>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium</h2>
+        <table class="glossary-table">
+            <tr><td class="glossary-page-num">1</td><td class="glossary-latin">Ecce domus pulchra!</td><td class="glossary-english">This is a beautiful dollhouse.</td></tr><tr><td class="glossary-page-num">1</td><td class="glossary-latin">Mūrī rubrī et fenestrae albae.</td><td class="glossary-english">It has red walls and white windows.</td></tr><tr><td class="glossary-page-num">2</td><td class="glossary-latin">Duae pūpae ibi habitābant: Lucinda et Iāna.</td><td class="glossary-english">Two dolls lived there: Lucinda and Jane.</td></tr><tr><td class="glossary-page-num">2</td><td class="glossary-latin">Iāna coqua erat.</td><td class="glossary-english">Jane was the cook.</td></tr><tr><td class="glossary-page-num">3</td><td class="glossary-latin">Cibus pulcher in mēnsā erat: perna, piscis, et lībum.</td><td class="glossary-english">There was pretty food on the table: a ham, a fish, and a pudding.</td></tr><tr><td class="glossary-page-num">4</td><td class="glossary-latin">Ōlim māne pūpae exiērunt.</td><td class="glossary-english">One morning the dolls went out.</td></tr><tr><td class="glossary-page-num">4</td><td class="glossary-latin">Domus tacita erat.</td><td class="glossary-english">The house was quiet.</td></tr><tr><td class="glossary-page-num">5</td><td class="glossary-latin">Tom Pollex mūs erat.</td><td class="glossary-english">Tom Thumb was a mouse.</td></tr><tr><td class="glossary-page-num">5</td><td class="glossary-latin">Hunca Munca uxor eius erat.</td><td class="glossary-english">Hunca Munca was his wife.</td></tr><tr><td class="glossary-page-num">6</td><td class="glossary-latin">Mūrēs ad domum rēpsērunt.</td><td class="glossary-english">The mice crept up to the dollhouse.</td></tr><tr><td class="glossary-page-num">6</td><td class="glossary-latin">Iānuam impulērunt!</td><td class="glossary-english">They pushed the door open!</td></tr><tr><td class="glossary-page-num">7</td><td class="glossary-latin">Cēnāculum invēnērunt.</td><td class="glossary-english">They found the dining room.</td></tr><tr><td class="glossary-page-num">7</td><td class="glossary-latin">Quantae epulae!</td><td class="glossary-english">What a feast!</td></tr><tr><td class="glossary-page-num">8</td><td class="glossary-latin">Tom Pollex pernam secāre temptāvit.</td><td class="glossary-english">Tom Thumb tried to cut the ham.</td></tr><tr><td class="glossary-page-num">8</td><td class="glossary-latin">Culter flexus est!</td><td class="glossary-english">The knife bent!</td></tr><tr><td class="glossary-page-num">9</td><td class="glossary-latin">Hunca Munca quoque temptāvit.</td><td class="glossary-english">Hunca Munca tried too.</td></tr><tr><td class="glossary-page-num">9</td><td class="glossary-latin">Perna dūrissima erat!</td><td class="glossary-english">The ham was very hard!</td></tr><tr><td class="glossary-page-num">10</td><td class="glossary-latin">Perna dē pātellā cecidit et sub mēnsam volūta est.</td><td class="glossary-english">The ham fell off the plate and rolled under the table.</td></tr><tr><td class="glossary-page-num">11</td><td class="glossary-latin">Tom Pollex īrātus erat!</td><td class="glossary-english">Tom Thumb was angry!</td></tr><tr><td class="glossary-page-num">11</td><td class="glossary-latin">Cibum batillō frēgit.</td><td class="glossary-english">He smashed the food with a shovel.</td></tr><tr><td class="glossary-page-num">11</td><td class="glossary-latin">Gypsum erat!</td><td class="glossary-english">It was all plaster!</td></tr><tr><td class="glossary-page-num">12</td><td class="glossary-latin">Piscem in ignem posuērunt.</td><td class="glossary-english">They put the fish in the fire.</td></tr><tr><td class="glossary-page-num">12</td><td class="glossary-latin">Nōn ārsit!</td><td class="glossary-english">It would not burn!</td></tr><tr><td class="glossary-page-num">13</td><td class="glossary-latin">Tom Pollex camīnum ascendit.</td><td class="glossary-english">Tom Thumb went up the chimney.</td></tr><tr><td class="glossary-page-num">13</td><td class="glossary-latin">Nūlla fūlīgō!</td><td class="glossary-english">There was no soot!</td></tr>
+        </table>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium (cont.)</h2>
+        <table class="glossary-table">
+            <tr><td class="glossary-page-num">14</td><td class="glossary-latin">Hunca Munca vāscula invēnit.</td><td class="glossary-english">Hunca Munca found little cans.</td></tr><tr><td class="glossary-page-num">14</td><td class="glossary-latin">Sed vacua erant!</td><td class="glossary-english">But they were empty inside!</td></tr><tr><td class="glossary-page-num">15</td><td class="glossary-latin">Mūrēs valdē īrātī erant!</td><td class="glossary-english">The mice were very angry!</td></tr><tr><td class="glossary-page-num">15</td><td class="glossary-latin">Tom Pollex omnia per fenestram iēcit!</td><td class="glossary-english">Tom Thumb threw everything out the window!</td></tr><tr><td class="glossary-page-num">16</td><td class="glossary-latin">Hunca Munca culcitam plūmeam domum tulit.</td><td class="glossary-english">Hunca Munca took the feather bed home to the mouse-hole.</td></tr><tr><td class="glossary-page-num">17</td><td class="glossary-latin">Cūnās quoque cēpit, et caveam avium!</td><td class="glossary-english">She took a cradle and a birdcage too!</td></tr><tr><td class="glossary-page-num">18</td><td class="glossary-latin">Tum pūpae domum rediērunt.</td><td class="glossary-english">Then the dolls came home.</td></tr><tr><td class="glossary-page-num">18</td><td class="glossary-latin">Quanta ruīna!</td><td class="glossary-english">What a mess!</td></tr><tr><td class="glossary-page-num">19</td><td class="glossary-latin">Sed mūrēs paenituit.</td><td class="glossary-english">But the mice were sorry.</td></tr><tr><td class="glossary-page-num">19</td><td class="glossary-latin">Tom Pollex nummum invēnit et prō omnibus quae frēgerat solvit.</td><td class="glossary-english">Tom Thumb found a coin and paid for everything he broke.</td></tr><tr><td class="glossary-page-num">20</td><td class="glossary-latin">Et cotīdiē māne, Hunca Munca domum pūpārum verrit.</td><td class="glossary-english">And every morning, Hunca Munca sweeps the dollhouse clean.</td></tr>
+        </table>
+    </div>
+
+
+    <div class="story-page" style="padding-top: 3in; text-align: center;">
+        <p style="font-size: 14pt; color: #7f8c8d;">Illustrations by Beatrix Potter</p>
+        <p style="font-size: 12pt; color: #95a5a6;">from <em>The Tale of Two Bad Mice</em> (1904)</p>
+        <p style="font-size: 10pt; color: #bdc3c7;">Public Domain</p>
+    </div>
+
+
+</body>
+</html>

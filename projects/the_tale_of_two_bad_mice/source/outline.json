@@ -1,0 +1,187 @@
+{
+  "title_english": "The Tale of Two Bad Mice",
+  "title_latin": "Fābula dē Duōbus Mūribus Malīs",
+  "target_pages": 20,
+  "characters": [
+    {
+      "name": "Tom Thumb",
+      "description": "A small brown mouse, Hunca Munca's husband. Bold and quick-tempered. Often shown upright on hind legs.",
+      "source": "Tom Thumb from Beatrix Potter's The Tale of Two Bad Mice (1904)",
+      "is_established": true
+    },
+    {
+      "name": "Hunca Munca",
+      "description": "A small brown mouse, Tom Thumb's wife. Practical and frugal-minded. Wears a patterned dress and apron in later scenes.",
+      "source": "Hunca Munca from Beatrix Potter's The Tale of Two Bad Mice (1904)",
+      "is_established": true
+    },
+    {
+      "name": "Lucinda",
+      "description": "A tall wooden doll with dark hair, wearing a pink floral dress. Owner of the dollhouse. Stiff and proper.",
+      "source": "Lucinda from Beatrix Potter's The Tale of Two Bad Mice",
+      "is_established": true
+    },
+    {
+      "name": "Jane",
+      "description": "A smaller wooden doll with blonde hair and a blue bow, wearing a blue dress. The cook doll. Always smiling.",
+      "source": "Jane from Beatrix Potter's The Tale of Two Bad Mice",
+      "is_established": true
+    }
+  ],
+  "locations": [
+    {
+      "name": "The Dollhouse",
+      "description": "A beautiful red brick dollhouse with white windows, real muslin curtains, a front door, and a chimney. Contains a dining room with laid table, a kitchen, and bedrooms upstairs."
+    },
+    {
+      "name": "The Nursery",
+      "description": "The room where the dollhouse stands, by a fireplace. The mouse-hole is under the skirting-board near the fireplace."
+    },
+    {
+      "name": "The Mouse-Hole",
+      "description": "Tom Thumb and Hunca Munca's home, behind the skirting-board near the fireplace."
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "english_text": "This is a beautiful dollhouse. It has red walls and white windows.",
+      "scene_description": "[IMAGE: image_004.jpg] The red brick dollhouse with white windows and muslin curtains. Two dolls visible outside — Lucinda standing on the roof balcony, Jane sitting below.",
+      "characters_present": ["Lucinda", "Jane"],
+      "location": "The Nursery"
+    },
+    {
+      "page_number": 2,
+      "english_text": "Two dolls lived there: Lucinda and Jane. Jane was the cook.",
+      "scene_description": "[IMAGE: image_005.jpg] The two dolls — tall Lucinda in pink and smaller Jane in blue — standing by their packing case. Proper and stiff.",
+      "characters_present": ["Lucinda", "Jane"],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 3,
+      "english_text": "There was pretty food on the table: a ham, a fish, and a pudding.",
+      "scene_description": "[IMAGE: image_006.jpg] Close-up of the dollhouse dining table laden with beautiful toy food — ham, lobsters, fish, pudding, pears, oranges on tiny plates.",
+      "characters_present": [],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 4,
+      "english_text": "One morning the dolls went out. The house was quiet.",
+      "scene_description": "[IMAGE: image_007.jpg] Tom Thumb popping his head out of the mouse-hole near the fireplace, peering cautiously into the quiet nursery.",
+      "characters_present": ["Tom Thumb"],
+      "location": "The Nursery"
+    },
+    {
+      "page_number": 5,
+      "english_text": "Tom Thumb was a mouse. Hunca Munca was his wife.",
+      "scene_description": "[IMAGE: image_008.jpg] Both mice peering out of their hole together, looking across the nursery toward the dollhouse. Alert, curious, planning.",
+      "characters_present": ["Tom Thumb", "Hunca Munca"],
+      "location": "The Nursery"
+    },
+    {
+      "page_number": 6,
+      "english_text": "The mice crept up to the dollhouse. They pushed the door open!",
+      "scene_description": "[IMAGE: image_009.jpg] The two mice creeping cautiously across the hearthrug toward the red dollhouse, approaching the front door.",
+      "characters_present": ["Tom Thumb", "Hunca Munca"],
+      "location": "The Nursery"
+    },
+    {
+      "page_number": 7,
+      "english_text": "They found the dining room. What a feast!",
+      "scene_description": "[IMAGE: image_010.jpg] Tom Thumb and Hunca Munca peering into the dollhouse dining room, seeing the table set with beautiful food. Their eyes wide with delight.",
+      "characters_present": ["Tom Thumb", "Hunca Munca"],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 8,
+      "english_text": "Tom Thumb tried to cut the ham. The knife bent!",
+      "scene_description": "[IMAGE: image_011.jpg] Tom Thumb sitting at the table, pressing a lead knife into the shiny painted ham. Hunca Munca watches from behind. The knife crumples.",
+      "characters_present": ["Tom Thumb", "Hunca Munca"],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 9,
+      "english_text": "Hunca Munca tried too. The ham was very hard!",
+      "scene_description": "[IMAGE: image_012.jpg] Hunca Munca standing on a chair, chopping at the ham with a lead knife. Tom Thumb watches. Both frustrated.",
+      "characters_present": ["Tom Thumb", "Hunca Munca"],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 10,
+      "english_text": "The ham fell off the plate and rolled under the table.",
+      "scene_description": "[IMAGE: image_013.jpg] The ham broken off the plate, rolling under the table. Tom Thumb leans down from his chair to look. Hunca Munca annoyed.",
+      "characters_present": ["Tom Thumb", "Hunca Munca"],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 11,
+      "english_text": "Tom Thumb was angry! He smashed the food with a shovel. It was all plaster!",
+      "scene_description": "[IMAGE: image_014.jpg] Tom Thumb in a rage, hitting the plates with tongs and a shovel. Broken plaster food everywhere. Hunca Munca putting the fish into the fire. Chaos and destruction.",
+      "characters_present": ["Tom Thumb", "Hunca Munca"],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 12,
+      "english_text": "They put the fish in the fire. It would not burn!",
+      "scene_description": "[IMAGE: image_015.jpg] Hunca Munca pushing the fish into the red crinkly paper fire in the dollhouse kitchen. The fish will not burn because it is painted tin.",
+      "characters_present": ["Hunca Munca"],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 13,
+      "english_text": "Tom Thumb went up the chimney. There was no soot!",
+      "scene_description": "[IMAGE: image_016.jpg] Tom Thumb looking out from the top of the dollhouse chimney, bewildered. Nothing is real in this house.",
+      "characters_present": ["Tom Thumb"],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 14,
+      "english_text": "Hunca Munca found little cans. But they were empty inside!",
+      "scene_description": "[IMAGE: image_017.jpg] Hunca Munca turning canisters upside down on the dresser. Labeled Rice, Coffee, Sago — but only beads fall out. Another disappointment.",
+      "characters_present": ["Hunca Munca"],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 15,
+      "english_text": "The mice were very angry. Tom Thumb threw everything out the window!",
+      "scene_description": "[IMAGE: image_018.jpg] Tom Thumb throwing clothes and objects out the upstairs window of the dollhouse. Wild mischief and destruction.",
+      "characters_present": ["Tom Thumb"],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 16,
+      "english_text": "Hunca Munca took the feather bed home to the mouse-hole.",
+      "scene_description": "[IMAGE: image_019.jpg] The two mice carrying the large bolster/feather bed down the dollhouse stairs. Struggling to squeeze it through. Hunca Munca's practical side.",
+      "characters_present": ["Tom Thumb", "Hunca Munca"],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 17,
+      "english_text": "She took a cradle and a birdcage too!",
+      "scene_description": "[IMAGE: image_021.jpg] Hunca Munca carrying the cradle away. The birdcage left behind the coal-box because it would not fit through the mouse-hole.",
+      "characters_present": ["Hunca Munca"],
+      "location": "The Nursery"
+    },
+    {
+      "page_number": 18,
+      "english_text": "Then the dolls came home. What a mess!",
+      "scene_description": "[IMAGE: image_023.jpg] Lucinda and Jane standing in their wrecked dollhouse — Lucinda staring, Jane smiling blankly. Broken food, missing furniture, chaos everywhere.",
+      "characters_present": ["Lucinda", "Jane"],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 19,
+      "english_text": "But the mice were sorry. Tom Thumb found a coin and paid for everything he broke.",
+      "scene_description": "[IMAGE: image_028.jpg] Tom Thumb and Hunca Munca together, stuffing a crooked sixpence into a tiny stocking. The dolls visible in bed behind them. A quiet act of restitution.",
+      "characters_present": ["Tom Thumb", "Hunca Munca"],
+      "location": "The Dollhouse"
+    },
+    {
+      "page_number": 20,
+      "english_text": "And every morning, Hunca Munca sweeps the dollhouse clean.",
+      "scene_description": "[IMAGE: image_029.jpg] Hunca Munca in her dress and apron, standing in the dollhouse doorway with a broom and dustpan. Faithful restitution, every single morning.",
+      "characters_present": ["Hunca Munca"],
+      "location": "The Dollhouse"
+    }
+  ]
+}

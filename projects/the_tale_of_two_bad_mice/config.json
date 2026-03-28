@@ -1,0 +1,29 @@
+{
+  "project_id": "the_tale_of_two_bad_mice",
+  "title_english": "The Tale of Two Bad Mice",
+  "title_latin": "Fābula dē Duōbus Mūribus Malīs",
+  "source_type": "public_domain_adaptation",
+  "public_domain_source": {
+    "title": "The Tale of Two Bad Mice",
+    "author": "Beatrix Potter",
+    "illustrator": "Beatrix Potter",
+    "source_url": "https://www.gutenberg.org/ebooks/45264",
+    "year": 1904,
+    "license": "Public Domain"
+  },
+  "theme": null,
+  "target_pages": 20,
+  "virtue_ratings": {
+    "prudentia": 0,
+    "iustitia": 4,
+    "fortitudo": 0,
+    "temperantia": 2,
+    "fides": 0,
+    "spes": 0,
+    "caritas": 1
+  },
+  "status": "reviewed",
+  "date_created": "2026-03-28T13:52:52.182670",
+  "date_modified": "2026-03-28T13:52:52.182693",
+  "project_folder": "projects/the_tale_of_two_bad_mice"
+}

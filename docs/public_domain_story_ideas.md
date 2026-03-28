@@ -58,10 +58,11 @@ Stories with repetitive/cumulative structure, strong visual narratives, and mini
 - **Difficulty to adapt**: Medium-high — original is ~1000 words with sophisticated vocabulary. Plot is simple enough but needs heavy simplification. Note: existing Latin translations (*Fabula de Petro Cuniculo*) use complex literary Latin, not our style.
 
 ### The Little Engine That Could (Watty Piper / Lois Lenski, 1930)
-- **Why**: Public domain as of January 2026. Refrain: *"Possum, putō! Possum, putō!"*
-- **Art**: Lois Lenski's 1930 illustrations now public domain.
-- **Pages**: 20-25
+- **Why**: Public domain as of January 2026. Refrain: *"Possum, putō! Possum, putō!"* The definitive spes (hope) story — hits all four Thomistic conditions. The three refusing engines model the two sins against hope (praesumptio, desperatio).
+- **Art**: Lenski's 1930 illustrations now PD on [Internet Archive](https://archive.org/details/little-engine-that-could-1930), but only ~12-15 illustrations (not enough for our format). Mix of color plates and B&W. **Recommend generating new art** and using Lenski as style reference. See `docs/little_engine_plan.md` for full analysis.
+- **Pages**: 22 (planned)
 - **Difficulty to adapt**: Medium — text needs condensing but the refrain carries it
+- **Status**: Full adaptation plan written. See `docs/little_engine_plan.md`.
 
 ### Goldilocks and the Three Bears (L. Leslie Brooke illus., 1905)
 - **Why**: Triple repetition (chairs, bowls, beds). *"Nimis calida! Nimis frigida! Apta!"*
@@ -109,7 +110,7 @@ Stories with repetitive/cumulative structure, strong visual narratives, and mini
   - Millions of Cats (Gag): ~15-18 illustrations — likely enough (B&W only)
   - Fierce Bad Rabbit (Potter): ~14-16 illustrations — borderline
   - Three Little Pigs section of Golden Goose Book (Brooke): ~8-10 illustrations — **not enough** on its own
-  - Little Engine That Could (Lenski): ~12-15 illustrations — borderline, copyright status uncertain
+  - Little Engine That Could (Lenski): ~12-15 illustrations — **not enough**; mix of color plates and B&W; copyright confirmed PD Jan 2026
   - Aesop fables (Winter/Rackham): 1-2 per fable — **not usable** for our format
 - **Existing Latin translations exist** for some classics (Peter Rabbit, Winnie the Pooh, Cat in the Hat) but all use complex literary Latin — totally different from our living-language approach.
 - **Cumulative/repetitive tales are ideal** — they naturally produce the kind of repeated simple phrases that work for language acquisition.

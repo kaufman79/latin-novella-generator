@@ -1,0 +1,204 @@
+{
+  "title_latin": "Fābula dē Jēmimā Anate",
+  "title_english": "The Tale of Jemima Puddle-Duck",
+  "pages": [
+    {
+      "page_number": 1,
+      "latin_text": "Jēmima anas erat quae in fundō habitābat.",
+      "english_text": "Jemima was a duck who lived on a farm.",
+      "image_prompt": "[IMAGE: image_003.jpg] The farmyard scene: the farmer's wife at the door, Jemima among hens, ducks, and chicks in the yard.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_01.png",
+      "characters": ["Jemima Puddle-Duck", "The Farmer's Wife"],
+      "location": "The Farm"
+    },
+    {
+      "page_number": 2,
+      "latin_text": "Jēmima ōva sua ipsa fovēre volēbat.",
+      "english_text": "Jemima wanted to hatch her own eggs.",
+      "image_prompt": "[IMAGE: image_004.jpg] Jemima in the barn looking frustrated, standing apart from the other hens.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_02.png",
+      "characters": ["Jemima Puddle-Duck"],
+      "location": "The Farm"
+    },
+    {
+      "page_number": 3,
+      "latin_text": "Sed uxor agricolae ōva semper auferēbat.",
+      "english_text": "But the farmer's wife always took the eggs away.",
+      "image_prompt": "[IMAGE: image_005.jpg] The farmer's wife carrying eggs away while Jemima watches.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_03.png",
+      "characters": ["Jemima Puddle-Duck", "The Farmer's Wife"],
+      "location": "The Farm"
+    },
+    {
+      "page_number": 4,
+      "latin_text": "Itaque Jēmima fundum relīquit. Nīdum sēcrētum quaerēbat.",
+      "english_text": "So Jemima left the farm. She was looking for a secret nest.",
+      "image_prompt": "[IMAGE: image_006.jpg] Jemima setting off from the farm, wearing her bonnet and shawl.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_04.png",
+      "characters": ["Jemima Puddle-Duck"],
+      "location": "The Hill and Countryside"
+    },
+    {
+      "page_number": 5,
+      "latin_text": "Super collem volāvit, locum quaerēns.",
+      "english_text": "She flew over the hill, looking for a place.",
+      "image_prompt": "[IMAGE: image_008.jpg] Jemima in flight, wings spread, soaring over green hills.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_05.png",
+      "characters": ["Jemima Puddle-Duck"],
+      "location": "The Hill and Countryside"
+    },
+    {
+      "page_number": 6,
+      "latin_text": "In silvam dēscendit. Digitālēs ubīque flōrēbant.",
+      "english_text": "She landed in a wood. Foxgloves bloomed everywhere.",
+      "image_prompt": "[IMAGE: image_010.jpg] Jemima standing in a shady clearing among tall foxglove flowers.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_06.png",
+      "characters": ["Jemima Puddle-Duck"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 7,
+      "latin_text": "Vir elegāns ibi sedēbat, acta diurna legēns.",
+      "english_text": "An elegant gentleman sat there, reading a newspaper.",
+      "image_prompt": "[IMAGE: image_011.jpg] The fox on a tree stump, reading a newspaper. Jemima approaches.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_07.png",
+      "characters": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 8,
+      "latin_text": "Jēmima eī omnia nārrāvit. Ille attentē audīvit.",
+      "english_text": "Jemima told him everything. He listened carefully.",
+      "image_prompt": "[IMAGE: image_012.jpg] Jemima talking earnestly to the fox, who listens with exaggerated sympathy.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_08.png",
+      "characters": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 9,
+      "latin_text": "\"Locum optimum nōvī,\" inquit vulpēs, subrīdēns.",
+      "english_text": "\"I know a very good place,\" said the fox, smiling.",
+      "image_prompt": "[IMAGE: image_013.jpg] The fox leading Jemima to a tumbledown shed in the woods.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_09.png",
+      "characters": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 10,
+      "latin_text": "Tugurium plūmīs plēnum erat. Plūmae mollissimae!",
+      "english_text": "The shed was full of feathers. Very soft feathers!",
+      "image_prompt": "[IMAGE: image_015.jpg] Jemima nestled in a deep bed of feathers inside the shed.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_10.png",
+      "characters": ["Jemima Puddle-Duck"],
+      "location": "The Fox's Shed"
+    },
+    {
+      "page_number": 11,
+      "latin_text": "Jēmima novem ōva in nīdō plūmeō posuit.",
+      "english_text": "Jemima laid nine eggs in the feathery nest.",
+      "image_prompt": "[IMAGE: image_014.jpg] The fox politely closing the shed door, locking Jemima inside with her eggs.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_11.png",
+      "characters": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Fox's Shed"
+    },
+    {
+      "page_number": 12,
+      "latin_text": "Vulpēs valdē comis erat. Cotīdiē cibum dabat.",
+      "english_text": "The fox was very polite. He gave her food every day.",
+      "image_prompt": "[IMAGE: image_016.jpg] The fox bowing politely to Jemima, who looks flattered.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_12.png",
+      "characters": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 13,
+      "latin_text": "Subrīdēbat et dē ōvīs rogābat.",
+      "english_text": "He smiled and asked about the eggs.",
+      "image_prompt": "[IMAGE: image_017.jpg] The fox sitting close to Jemima, head tilted, smiling. Too attentive.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_13.png",
+      "characters": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 14,
+      "latin_text": "Tum vulpēs herbās et cēpās poposcit.",
+      "english_text": "Then the fox asked for herbs and onions.",
+      "image_prompt": "[IMAGE: image_018.jpg] The fox by a gate, asking Jemima for sage and onions.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_14.png",
+      "characters": ["Jemima Puddle-Duck", "The Fox"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 15,
+      "latin_text": "Jēmima salviam et cēpās laeta collēgit. Nihil intellegēbat.",
+      "english_text": "Jemima happily gathered sage and onions. She understood nothing.",
+      "image_prompt": "[IMAGE: image_019.jpg] Jemima gathering herbs in the farm garden.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_15.png",
+      "characters": ["Jemima Puddle-Duck"],
+      "location": "The Farm"
+    },
+    {
+      "page_number": 16,
+      "latin_text": "In fundō, Jēmima Kep canem invēnit.",
+      "english_text": "On the farm, Jemima met Kep the collie dog.",
+      "image_prompt": "[IMAGE: image_020.jpg] Jemima talking to Kep the collie by the farmhouse door.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_16.png",
+      "characters": ["Jemima Puddle-Duck", "Kep"],
+      "location": "The Farm"
+    },
+    {
+      "page_number": 17,
+      "latin_text": "Eī omnia nārrāvit. Kep statim intellēxit.",
+      "english_text": "She told Kep everything. Kep understood at once.",
+      "image_prompt": "[IMAGE: image_021.jpg] Kep trotting off with purpose after hearing Jemima's story.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_17.png",
+      "characters": ["Kep"],
+      "location": "The Hill and Countryside"
+    },
+    {
+      "page_number": 18,
+      "latin_text": "Jēmima herbās ad vulpem portāvit. Ille laetissimus erat.",
+      "english_text": "Jemima brought the herbs to the fox. He was very happy.",
+      "image_prompt": "[IMAGE: image_022.jpg] Jemima carrying her bundle of herbs through the countryside.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_18.png",
+      "characters": ["Jemima Puddle-Duck"],
+      "location": "The Hill and Countryside"
+    },
+    {
+      "page_number": 19,
+      "latin_text": "Sed Kep cum duōbus canibus vēnātōriīs vēnit!",
+      "english_text": "But Kep came with two foxhound dogs!",
+      "image_prompt": "[IMAGE: image_024.jpg] Kep arriving with two foxhound dogs, running toward the fox's lair.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_19.png",
+      "characters": ["Kep"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 20,
+      "latin_text": "Canēs vulpem fugāvērunt! In silvam fūgit.",
+      "english_text": "The dogs chased the fox away! He fled into the woods.",
+      "image_prompt": "[IMAGE: image_025.jpg] The foxhound dogs chasing. The fox is fleeing.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_20.png",
+      "characters": ["Kep"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 21,
+      "latin_text": "Jēmima salva erat. Sed canēs ōva ēderant.",
+      "english_text": "Jemima was safe. But the dogs had eaten her eggs.",
+      "image_prompt": "[IMAGE: image_027.jpg] Jemima walking home sadly with Kep and the foxhounds.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_21.png",
+      "characters": ["Jemima Puddle-Duck", "Kep"],
+      "location": "The Hill and Countryside"
+    },
+    {
+      "page_number": 22,
+      "latin_text": "Posteā Jēmima quattuor anāticulās ēdūxit. Quattuor tantum.",
+      "english_text": "Later, Jemima hatched four ducklings. Only four.",
+      "image_prompt": "[IMAGE: image_028.jpg] Jemima with four small yellow ducklings at the farm.",
+      "image_path": "projects/the_tale_of_jemima_puddleduck/images/page_22.png",
+      "characters": ["Jemima Puddle-Duck"],
+      "location": "The Farm"
+    }
+  ]
+}
