@@ -15,9 +15,35 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from book_schemas import BookTranslation
 
 
+ALL_VIRTUES = ["prudentia", "iustitia", "fortitudo", "temperantia", "fides", "spes", "caritas"]
+VIRTUE_DISPLAY = {
+    "prudentia": "Prudentia",
+    "iustitia": "Iūstitia",
+    "fortitudo": "Fortitūdō",
+    "temperantia": "Temperantia",
+    "fides": "Fidēs",
+    "spes": "Spēs",
+    "caritas": "Cāritās",
+}
+
+
+def _get_primary_virtue(config: dict) -> str | None:
+    """Get the highest-rated virtue from config."""
+    ratings = config.get("virtue_ratings", {})
+    if not ratings:
+        return None
+    best = max(ALL_VIRTUES, key=lambda v: ratings.get(v, 0))
+    if ratings.get(best, 0) == 0:
+        return None
+    return VIRTUE_DISPLAY.get(best, best.capitalize())
+
+
 def generate_html(title_latin: str, title_english: str, translation: BookTranslation, project_folder: str, config: dict = None) -> str:
     """Generate HTML for the book."""
     html_parts = []
+
+    # Get primary virtue for cover badge
+    primary_virtue = _get_primary_virtue(config) if config else None
 
     html_parts.append("""
 <!DOCTYPE html>
@@ -87,6 +113,73 @@ def generate_html(title_latin: str, title_english: str, translation: BookTransla
             font-size: 12pt;
             color: #bdc3c7;
         }
+
+        .virtue-badge {
+            display: inline-block;
+            border: 2px solid #8e7c5a;
+            border-radius: 20px;
+            padding: 4px 18px;
+            font-size: 13pt;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            color: #8e7c5a;
+            background-color: rgba(255, 255, 255, 0.75);
+            margin-top: 15px;
+        }
+
+        .inside-cover {
+            page-break-after: always;
+            padding-top: 2.5in;
+            text-align: center;
+        }
+
+        .inside-cover h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            margin-bottom: 0.4in;
+            border-bottom: 1px solid #d5c9b1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .virtue-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 8px 0;
+            font-size: 12pt;
+        }
+
+        .virtue-name {
+            width: 140px;
+            text-align: right;
+            padding-right: 15px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            color: #5a5a5a;
+        }
+
+        .virtue-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .virtue-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1.5px solid #8e7c5a;
+        }
+
+        .virtue-dot.filled {
+            background-color: #8e7c5a;
+        }
+
+        .virtue-dot.empty {
+            background-color: transparent;
+        }
     </style>
 </head>
 <body>
@@ -102,6 +195,7 @@ def generate_html(title_latin: str, title_english: str, translation: BookTransla
         <div style="position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); text-align: center; width: 90%; background-color: rgba(255, 255, 255, 0.65); padding: 20px; border-radius: 10px;">
             <h1 style="font-size: 48pt; margin: 0; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">{title_latin}</h1>
             <p style="font-size: 28pt; margin: 10px 0 0 0; color: #7f8c8d; font-style: italic;">{title_english}</p>
+            {"<div class='virtue-badge'>" + primary_virtue + "</div>" if primary_virtue else ""}
         </div>
     </div>
 """)
@@ -110,6 +204,31 @@ def generate_html(title_latin: str, title_english: str, translation: BookTransla
     <div class="title-page">
         <h1>{title_latin}</h1>
         <p class="english">{title_english}</p>
+        {"<div class='virtue-badge'>" + primary_virtue + "</div>" if primary_virtue else ""}
+    </div>
+""")
+
+    # Inside cover — virtue ratings
+    ratings = config.get("virtue_ratings", {}) if config else {}
+    if any(ratings.get(v, 0) > 0 for v in ALL_VIRTUES):
+        virtue_rows = []
+        for v in ALL_VIRTUES:
+            score = ratings.get(v, 0)
+            display_name = VIRTUE_DISPLAY.get(v, v.capitalize())
+            dots = ''.join(
+                f'<span class="virtue-dot {"filled" if i < score else "empty"}"></span>'
+                for i in range(5)
+            )
+            virtue_rows.append(
+                f'<div class="virtue-row">'
+                f'<span class="virtue-name">{display_name}</span>'
+                f'<span class="virtue-dots">{dots}</span>'
+                f'</div>'
+            )
+        html_parts.append(f"""
+    <div class="inside-cover">
+        <h2>Virtūtēs</h2>
+        {''.join(virtue_rows)}
     </div>
 """)
 

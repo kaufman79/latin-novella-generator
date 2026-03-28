@@ -1,0 +1,29 @@
+{
+  "project_id": "the_tale_of_tom_kitten",
+  "title_english": "The Tale of Tom Kitten",
+  "title_latin": "Fābula dē Thomā Fēlīculō",
+  "source_type": "public_domain_adaptation",
+  "public_domain_source": {
+    "title": "The Tale of Tom Kitten",
+    "author": "Beatrix Potter",
+    "illustrator": "Beatrix Potter",
+    "source_url": "https://www.gutenberg.org/ebooks/14837",
+    "year": 1907,
+    "license": "Public Domain"
+  },
+  "theme": null,
+  "target_pages": 20,
+  "virtue_ratings": {
+    "prudentia": 1,
+    "iustitia": 0,
+    "fortitudo": 0,
+    "temperantia": 4,
+    "fides": 0,
+    "spes": 0,
+    "caritas": 0
+  },
+  "status": "reviewed",
+  "date_created": "2026-03-28T02:44:53.364207",
+  "date_modified": "2026-03-28T02:44:53.364219",
+  "project_folder": "projects/the_tale_of_tom_kitten"
+}

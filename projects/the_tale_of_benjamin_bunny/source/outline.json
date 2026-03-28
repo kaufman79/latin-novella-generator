@@ -1,0 +1,211 @@
+{
+  "title_english": "The Tale of Benjamin Bunny",
+  "title_latin": "Fābula dē Beniāmīnō Cunīculō",
+  "target_pages": 22,
+  "characters": [
+    {
+      "name": "Benjamin Bunny",
+      "description": "Peter Rabbit's cousin. A confident young rabbit wearing a tam-o-shanter cap and a brown jacket. Bold and adventurous, he takes the lead.",
+      "source": "Benjamin Bunny from Beatrix Potter's The Tale of Benjamin Bunny (1904)",
+      "is_established": true
+    },
+    {
+      "name": "Peter Rabbit",
+      "description": "A young rabbit, Benjamin's cousin. At the start he has lost his blue jacket and shoes (from his previous adventure) and is wrapped in a red cotton handkerchief, miserable. Later recovers his blue jacket.",
+      "source": "Peter Rabbit from Beatrix Potter's The Tale of Peter Rabbit (1902)",
+      "is_established": true
+    },
+    {
+      "name": "Mrs. Rabbit",
+      "description": "Peter's mother. Wears an apron and blue dress. Runs a small shop under a fir tree.",
+      "source": "Mrs. Rabbit (Old Mrs. Rabbit) from Beatrix Potter's Peter Rabbit series",
+      "is_established": true
+    },
+    {
+      "name": "Mr. Bouncer",
+      "description": "Benjamin's father, old Mr. Benjamin Bunny. A large, stern old rabbit in a purple-brown jacket who smokes a pipe and carries a switch. The authority figure who rescues and punishes.",
+      "source": "Old Mr. Benjamin Bunny from Beatrix Potter's The Tale of Benjamin Bunny",
+      "is_established": true
+    },
+    {
+      "name": "The Cat",
+      "description": "Mr. McGregor's large tabby cat. Sleeps in the garden and traps the rabbits under a basket.",
+      "source": "The cat from Beatrix Potter's The Tale of Benjamin Bunny",
+      "is_established": false
+    }
+  ],
+  "locations": [
+    {
+      "name": "The Rabbit Burrow",
+      "description": "The rabbit family home under a big fir tree. Mrs. Rabbit's shop where she sells tea and tobacco. Cozy interior with herbs hanging from the ceiling."
+    },
+    {
+      "name": "The Woods",
+      "description": "Woodland path between the burrow and the garden. Trees, mossy banks, fallen leaves."
+    },
+    {
+      "name": "The Garden Wall",
+      "description": "The high stone wall around Mr. McGregor's garden. The rabbits climb up and look down into the garden from here."
+    },
+    {
+      "name": "Mr. McGregor's Garden",
+      "description": "The same vegetable garden from Peter Rabbit. Rows of lettuce, onions, vegetables. Has a scarecrow, a garden shed, flowerpots, and a wooden gate."
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "english_text": "Peter sat alone. He had no jacket and no shoes.",
+      "scene_description": "[IMAGE: image_003.jpg] Peter sitting sadly on a mossy bank in the woods. He is bare — no blue jacket, no shoes. He looks forlorn and cold after his adventure in Mr. McGregor's garden.",
+      "characters_present": ["Peter Rabbit"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 2,
+      "english_text": "His mother wrapped him in a red handkerchief.",
+      "scene_description": "[IMAGE: image_007.jpg] Peter wrapped tightly in a big red cotton pocket-handkerchief. He looks small and miserable. His lost shoes are visible nearby.",
+      "characters_present": ["Peter Rabbit"],
+      "location": "The Rabbit Burrow"
+    },
+    {
+      "page_number": 3,
+      "english_text": "Benjamin Bunny was Peter's cousin. He was very bold.",
+      "scene_description": "[IMAGE: image_004.jpg] Benjamin Bunny walking confidently through the woods, wearing his tam-o-shanter cap and brown jacket. He walks upright with a spring in his step. A figure visible in the background.",
+      "characters_present": ["Benjamin Bunny"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 4,
+      "english_text": "Benjamin found Peter. \"Why are you sad?\" he asked.",
+      "scene_description": "[IMAGE: image_008.jpg] Benjamin whispering to Peter, who is still wrapped in the red handkerchief. Benjamin leans in close, concerned but confident. Peter looks up at him.",
+      "characters_present": ["Benjamin Bunny", "Peter Rabbit"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 5,
+      "english_text": "\"I lost my jacket in the garden,\" said Peter.",
+      "scene_description": "[IMAGE: image_006.jpg] Peter sitting hunched in the handkerchief, looking down. He is explaining what happened — he lost his clothes to the scarecrow in McGregor's garden.",
+      "characters_present": ["Peter Rabbit"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 6,
+      "english_text": "\"Come!\" said Benjamin. \"We will get it back!\"",
+      "scene_description": "[IMAGE: image_009.jpg] Benjamin leading Peter (still in the red handkerchief) along the path toward the garden. Benjamin walks ahead confidently; Peter follows nervously.",
+      "characters_present": ["Benjamin Bunny", "Peter Rabbit"],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 7,
+      "english_text": "They climbed up the garden wall and looked down.",
+      "scene_description": "[IMAGE: image_010.jpg] Benjamin and Peter on top of the high garden wall, looking down into Mr. McGregor's garden. The scarecrow wearing Peter's blue jacket is visible below.",
+      "characters_present": ["Benjamin Bunny", "Peter Rabbit"],
+      "location": "The Garden Wall"
+    },
+    {
+      "page_number": 8,
+      "english_text": "Peter fell down from the wall! He tumbled into the garden.",
+      "scene_description": "[IMAGE: image_011.jpg] Peter (still in red handkerchief) tumbling and falling off the wall into the garden. Benjamin watches from the wall above. A comic, clumsy fall.",
+      "characters_present": ["Peter Rabbit", "Benjamin Bunny"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 9,
+      "english_text": "They saw Peter's jacket on the scarecrow!",
+      "scene_description": "[IMAGE: image_013.jpg] The scarecrow dressed in Peter's blue jacket and shoes. Benjamin is taking back the tam-o-shanter hat. Birds perch nearby watching. The moment of finding the lost clothes.",
+      "characters_present": ["Benjamin Bunny", "Peter Rabbit"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 10,
+      "english_text": "Benjamin took the jacket off the scarecrow. Peter put it on.",
+      "scene_description": "[IMAGE: image_012.jpg] Benjamin and Peter standing in the garden. Peter is now wearing his blue jacket again. Benjamin stands beside him. Footprints visible on the ground.",
+      "characters_present": ["Benjamin Bunny", "Peter Rabbit"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 11,
+      "english_text": "Then they picked onions to fill their basket.",
+      "scene_description": "[IMAGE: image_014.jpg] Peter (in blue jacket) and Benjamin among rows of large onions in the garden. They are gathering onions, filling a handkerchief-basket. Vegetables all around them.",
+      "characters_present": ["Peter Rabbit", "Benjamin Bunny"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 12,
+      "english_text": "Benjamin ate some lettuce. He was not afraid at all.",
+      "scene_description": "[IMAGE: image_015.jpg] Benjamin munching lettuce leaves among the lettuces in the garden. Peter peeks from behind the lettuce. Benjamin is relaxed and confident — no fear.",
+      "characters_present": ["Benjamin Bunny", "Peter Rabbit"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 13,
+      "english_text": "Peter kept dropping the onions. He was nervous!",
+      "scene_description": "[IMAGE: image_016.jpg] Peter in his blue jacket holding the red handkerchief bundle, but onions spilling out and rolling on the ground. He looks anxious and clumsy.",
+      "characters_present": ["Peter Rabbit"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 14,
+      "english_text": "Peter heard a noise. \"We must go!\" he said.",
+      "scene_description": "[IMAGE: image_019.jpg] Peter and Benjamin in the garden shed area, both alert. Peter's ears are up — he heard something. Watering cans and pots around them. Tension building.",
+      "characters_present": ["Peter Rabbit", "Benjamin Bunny"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 15,
+      "english_text": "Then they saw the cat! She was very big.",
+      "scene_description": "[IMAGE: image_020.jpg] The two rabbits peering around a corner and seeing the large tabby cat lying in the garden path. The cat is big and intimidating. The rabbits freeze.",
+      "characters_present": ["Peter Rabbit", "Benjamin Bunny", "The Cat"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 16,
+      "english_text": "They hid under a basket. The cat sat on top!",
+      "scene_description": "[IMAGE: image_022.jpg] The big tabby cat sleeping contentedly on top of a woven basket. Inside, hidden beneath, are Peter and Benjamin — trapped. A tense, scary moment.",
+      "characters_present": ["Peter Rabbit", "Benjamin Bunny", "The Cat"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 17,
+      "english_text": "They waited and waited. They could not move.",
+      "scene_description": "[IMAGE: image_021.jpg] The cat sniffing at the basket from the side. The rabbits are trapped inside. Time passes. They are stuck and frightened.",
+      "characters_present": ["Peter Rabbit", "Benjamin Bunny", "The Cat"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 18,
+      "english_text": "Then old Mr. Bouncer came! He was Benjamin's father.",
+      "scene_description": "[IMAGE: image_023.jpg] Old Mr. Bouncer — a large, stern rabbit in a purple-brown jacket, smoking a pipe, carrying a switch — striding purposefully through the garden. He has come looking for his son.",
+      "characters_present": ["Mr. Bouncer"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 19,
+      "english_text": "Mr. Bouncer jumped on the cat! She ran away!",
+      "scene_description": "[IMAGE: image_024.jpg] Mr. Bouncer leaping onto the startled cat, who recoils in surprise. A dramatic, decisive rescue. The old rabbit is fierce and brave.",
+      "characters_present": ["Mr. Bouncer", "The Cat"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 20,
+      "english_text": "He pulled Benjamin out by the ears. Benjamin was in trouble.",
+      "scene_description": "[IMAGE: image_025.jpg] Mr. Bouncer grabbing Benjamin firmly by the ears and scolding him. Peter watches nearby looking small. Benjamin is being punished for going into the garden.",
+      "characters_present": ["Mr. Bouncer", "Benjamin Bunny", "Peter Rabbit"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 21,
+      "english_text": "Mr. Bouncer marched them all home. Out the gate!",
+      "scene_description": "[IMAGE: image_026.jpg] Mr. Bouncer marching Benjamin and Peter out through the garden gate, carrying the basket of onions. The cat watches from behind. A stern procession home.",
+      "characters_present": ["Mr. Bouncer", "Benjamin Bunny", "Peter Rabbit"],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 22,
+      "english_text": "Peter gave the onions to his mother. He had his jacket back!",
+      "scene_description": "[IMAGE: image_028.jpg] Mrs. Rabbit at home in her burrow with the young bunnies. Peter, back in his blue jacket, arrives with the handkerchief bundle of onions. A warm homecoming — all is well.",
+      "characters_present": ["Peter Rabbit", "Mrs. Rabbit"],
+      "location": "The Rabbit Burrow"
+    }
+  ]
+}

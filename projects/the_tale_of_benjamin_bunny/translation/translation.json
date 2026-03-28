@@ -1,0 +1,269 @@
+{
+  "title_latin": "Fābula dē Beniāmīnō Cunīculō",
+  "title_english": "The Tale of Benjamin Bunny",
+  "pages": [
+    {
+      "page_number": 1,
+      "latin_text": "Peter sōlus sedēbat. Tunicam nōn habēbat, calceōs nōn habēbat.",
+      "english_text": "Peter sat alone. He had no jacket and no shoes.",
+      "image_prompt": "[IMAGE: image_003.jpg] Peter sitting sadly on a mossy bank in the woods. He is bare — no blue jacket, no shoes. He looks forlorn and cold.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_01.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 2,
+      "latin_text": "Māter eum in sūdārium rubrum involvit.",
+      "english_text": "His mother wrapped him in a red handkerchief.",
+      "image_prompt": "[IMAGE: image_007.jpg] Peter wrapped tightly in a big red cotton pocket-handkerchief. He looks small and miserable.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_02.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "The Rabbit Burrow"
+    },
+    {
+      "page_number": 3,
+      "latin_text": "Beniāmīn Cunīculus cōnsobrīnus Petrī erat. Audāx erat.",
+      "english_text": "Benjamin Bunny was Peter's cousin. He was very bold.",
+      "image_prompt": "[IMAGE: image_004.jpg] Benjamin Bunny walking confidently through the woods in his tam-o-shanter cap and brown jacket.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_03.png",
+      "characters": [
+        "Benjamin Bunny"
+      ],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 4,
+      "latin_text": "Beniāmīn Petrum invēnit. \"Cūr trīstis es?\" rogāvit.",
+      "english_text": "Benjamin found Peter. \"Why are you sad?\" he asked.",
+      "image_prompt": "[IMAGE: image_008.jpg] Benjamin whispering to Peter, who is still wrapped in the red handkerchief.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_04.png",
+      "characters": [
+        "Benjamin Bunny",
+        "Peter Rabbit"
+      ],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 5,
+      "latin_text": "\"Tunicam in hortō āmīsī,\" inquit Peter.",
+      "english_text": "\"I lost my jacket in the garden,\" said Peter.",
+      "image_prompt": "[IMAGE: image_006.jpg] Peter sitting hunched in the handkerchief, looking down.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_05.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 6,
+      "latin_text": "\"Venī!\" inquit Beniāmīn. \"Eam recipiēmus!\"",
+      "english_text": "\"Come!\" said Benjamin. \"We will get it back!\"",
+      "image_prompt": "[IMAGE: image_009.jpg] Benjamin leading Peter along the path toward the garden.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_06.png",
+      "characters": [
+        "Benjamin Bunny",
+        "Peter Rabbit"
+      ],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 7,
+      "latin_text": "Mūrum hortī ascendērunt et dēspexērunt.",
+      "english_text": "They climbed up the garden wall and looked down.",
+      "image_prompt": "[IMAGE: image_010.jpg] Benjamin and Peter on top of the high garden wall, looking down into Mr. McGregor's garden.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_07.png",
+      "characters": [
+        "Benjamin Bunny",
+        "Peter Rabbit"
+      ],
+      "location": "The Garden Wall"
+    },
+    {
+      "page_number": 8,
+      "latin_text": "Peter dē mūrō cecidit! In hortum dēvolūtus est.",
+      "english_text": "Peter fell down from the wall! He tumbled into the garden.",
+      "image_prompt": "[IMAGE: image_011.jpg] Peter tumbling and falling off the wall into the garden. Benjamin watches from above.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_08.png",
+      "characters": [
+        "Peter Rabbit",
+        "Benjamin Bunny"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 9,
+      "latin_text": "Tunicam Petrī in formīdine vīdērunt!",
+      "english_text": "They saw Peter's jacket on the scarecrow!",
+      "image_prompt": "[IMAGE: image_013.jpg] The scarecrow dressed in Peter's blue jacket. Benjamin takes back the hat. Birds watch.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_09.png",
+      "characters": [
+        "Benjamin Bunny",
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 10,
+      "latin_text": "Beniāmīn tunicam dētrāxit. Peter eam induit.",
+      "english_text": "Benjamin took the jacket off the scarecrow. Peter put it on.",
+      "image_prompt": "[IMAGE: image_012.jpg] Peter now wearing his blue jacket again, standing with Benjamin.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_10.png",
+      "characters": [
+        "Benjamin Bunny",
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 11,
+      "latin_text": "Tum cēpās collēgērunt. Corbulam implēvērunt.",
+      "english_text": "Then they picked onions to fill their basket.",
+      "image_prompt": "[IMAGE: image_014.jpg] Peter and Benjamin among rows of onions, gathering them into a basket.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_11.png",
+      "characters": [
+        "Peter Rabbit",
+        "Benjamin Bunny"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 12,
+      "latin_text": "Beniāmīn lactūcam ēdit. Nihil timēbat.",
+      "english_text": "Benjamin ate some lettuce. He was not afraid at all.",
+      "image_prompt": "[IMAGE: image_015.jpg] Benjamin munching lettuce among the lettuce rows. Peter peeks from behind.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_12.png",
+      "characters": [
+        "Benjamin Bunny",
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 13,
+      "latin_text": "Peter cēpās identidem āmittēbat. Trepidābat!",
+      "english_text": "Peter kept dropping the onions. He was nervous!",
+      "image_prompt": "[IMAGE: image_016.jpg] Peter holding the red handkerchief bundle, onions spilling and rolling on the ground.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_13.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 14,
+      "latin_text": "Peter sonitum audīvit. \"Abīre dēbēmus!\" inquit.",
+      "english_text": "Peter heard a noise. \"We must go!\" he said.",
+      "image_prompt": "[IMAGE: image_019.jpg] Peter and Benjamin alert in the garden shed area. Peter's ears up — he heard something.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_14.png",
+      "characters": [
+        "Peter Rabbit",
+        "Benjamin Bunny"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 15,
+      "latin_text": "Tum fēlem vīdērunt! Magna erat.",
+      "english_text": "Then they saw the cat! She was very big.",
+      "image_prompt": "[IMAGE: image_020.jpg] The two rabbits peering around a corner, seeing the large tabby cat lying in the garden path.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_15.png",
+      "characters": [
+        "Peter Rabbit",
+        "Benjamin Bunny",
+        "The Cat"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 16,
+      "latin_text": "Sub corbulā sē abdidērunt. Fēlēs suprā cōnsēdit!",
+      "english_text": "They hid under a basket. The cat sat on top!",
+      "image_prompt": "[IMAGE: image_022.jpg] The big tabby cat sleeping on top of a woven basket, trapping Peter and Benjamin inside.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_16.png",
+      "characters": [
+        "Peter Rabbit",
+        "Benjamin Bunny",
+        "The Cat"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 17,
+      "latin_text": "Diū exspectāvērunt. Sē movēre nōn poterant.",
+      "english_text": "They waited and waited. They could not move.",
+      "image_prompt": "[IMAGE: image_021.jpg] The cat sniffing at the basket from the side. The rabbits are trapped inside.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_17.png",
+      "characters": [
+        "Peter Rabbit",
+        "Benjamin Bunny",
+        "The Cat"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 18,
+      "latin_text": "Tum senex Dominus Bouncer vēnit! Pater Beniāmīnī erat.",
+      "english_text": "Then old Mr. Bouncer came! He was Benjamin's father.",
+      "image_prompt": "[IMAGE: image_023.jpg] Old Mr. Bouncer striding through the garden, stern, smoking a pipe, carrying a switch.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_18.png",
+      "characters": [
+        "Mr. Bouncer"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 19,
+      "latin_text": "Dominus Bouncer in fēlem insiluit! Fēlēs fūgit!",
+      "english_text": "Mr. Bouncer jumped on the cat! She ran away!",
+      "image_prompt": "[IMAGE: image_024.jpg] Mr. Bouncer leaping onto the startled cat, who recoils in surprise.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_19.png",
+      "characters": [
+        "Mr. Bouncer",
+        "The Cat"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 20,
+      "latin_text": "Beniāmīnum auribus prehendit. Beniāmīn poenās dabat.",
+      "english_text": "He pulled Benjamin out by the ears. Benjamin was in trouble.",
+      "image_prompt": "[IMAGE: image_025.jpg] Mr. Bouncer grabbing Benjamin by the ears, scolding him. Peter watches.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_20.png",
+      "characters": [
+        "Mr. Bouncer",
+        "Benjamin Bunny",
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 21,
+      "latin_text": "Dominus Bouncer eōs domum dūxit. Per portam exiērunt!",
+      "english_text": "Mr. Bouncer marched them all home. Out the gate!",
+      "image_prompt": "[IMAGE: image_026.jpg] Mr. Bouncer marching Benjamin and Peter out through the garden gate.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_21.png",
+      "characters": [
+        "Mr. Bouncer",
+        "Benjamin Bunny",
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 22,
+      "latin_text": "Peter cēpās mātrī dedit. Tunicam suam habēbat iterum!",
+      "english_text": "Peter gave the onions to his mother. He had his jacket back!",
+      "image_prompt": "[IMAGE: image_028.jpg] Peter back in his blue jacket, giving onions to Mrs. Rabbit at home. A warm homecoming.",
+      "image_path": "projects/the_tale_of_benjamin_bunny/images/page_22.png",
+      "characters": [
+        "Peter Rabbit",
+        "Mrs. Rabbit"
+      ],
+      "location": "The Rabbit Burrow"
+    }
+  ]
+}

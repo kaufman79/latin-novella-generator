@@ -1,0 +1,197 @@
+{
+  "title_english": "The Tale of Tom Kitten",
+  "title_latin": "Fābula dē Thomā Fēlīculō",
+  "target_pages": 20,
+  "characters": [
+    {
+      "name": "Tom Kitten",
+      "description": "A plump tabby kitten, the only boy. Wears a blue suit with brass buttons that is too tight. Mischievous and energetic.",
+      "source": "Tom Kitten from Beatrix Potter's The Tale of Tom Kitten (1907)",
+      "is_established": true
+    },
+    {
+      "name": "Mittens",
+      "description": "A grey-and-white kitten, one of Tom's sisters. Wears a white pinafore and mittens. Giggly and playful.",
+      "source": "Mittens from Beatrix Potter's The Tale of Tom Kitten",
+      "is_established": true
+    },
+    {
+      "name": "Moppet",
+      "description": "A tabby kitten, one of Tom's sisters. Wears a pink pinafore. The youngest-looking of the three.",
+      "source": "Moppet from Beatrix Potter's The Tale of Tom Kitten",
+      "is_established": true
+    },
+    {
+      "name": "Mrs. Tabitha Twitchit",
+      "description": "Mother cat. Large, wears a pink/purple dress and white apron. Fussy, proper, concerned with appearances.",
+      "source": "Mrs. Tabitha Twitchit from Beatrix Potter's The Tale of Tom Kitten",
+      "is_established": true
+    },
+    {
+      "name": "The Puddle-Ducks",
+      "description": "Three white ducks: Mr. Drake Puddle-Duck, Jemima, and Rebeccah. They walk past the garden wall and take the kittens' dropped clothes.",
+      "source": "The Puddle-Ducks from Beatrix Potter's The Tale of Tom Kitten",
+      "is_established": true
+    }
+  ],
+  "locations": [
+    {
+      "name": "The House",
+      "description": "Mrs. Tabitha Twitchit's cottage interior. Bedroom with chest of drawers, stairs, front door. Warm and tidy."
+    },
+    {
+      "name": "The Garden",
+      "description": "A cottage garden with a stone wall, flower beds, a garden path, roses and foxgloves. The wall overlooks a country lane."
+    },
+    {
+      "name": "The Lane",
+      "description": "A country road outside the garden wall where the Puddle-Ducks walk past."
+    },
+    {
+      "name": "The Pond",
+      "description": "A farm pond with lily pads where the ducks swim. The borrowed clothes fall off in the water."
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "english_text": "There were three little kittens: Mittens, Tom Kitten, and Moppet.",
+      "scene_description": "[IMAGE: image_004.jpg] Mrs. Tabitha indoors with her three kittens. The kittens are small and playful, gathered near the stairs. Warm domestic interior.",
+      "characters_present": ["Tom Kitten", "Mittens", "Moppet", "Mrs. Tabitha Twitchit"],
+      "location": "The House"
+    },
+    {
+      "page_number": 2,
+      "english_text": "One day their mother wanted to have a tea party.",
+      "scene_description": "[IMAGE: image_005.jpg] Mrs. Tabitha scrubbing Moppet's face with a cloth. A washbowl nearby. She is getting the kittens ready. Other kittens wait in the background.",
+      "characters_present": ["Mrs. Tabitha Twitchit", "Moppet", "Mittens"],
+      "location": "The House"
+    },
+    {
+      "page_number": 3,
+      "english_text": "She washed the kittens and brushed their fur.",
+      "scene_description": "[IMAGE: image_006.jpg] Mrs. Tabitha brushing a kitten's fur on a chair. Another kitten watches. The mother is thorough and determined.",
+      "characters_present": ["Mrs. Tabitha Twitchit", "Mittens", "Moppet"],
+      "location": "The House"
+    },
+    {
+      "page_number": 4,
+      "english_text": "She combed their tails and whiskers.",
+      "scene_description": "[IMAGE: image_007.jpg] Mrs. Tabitha combing Tom Kitten's tail and whiskers while Tom stands on a chair. The other kittens watch.",
+      "characters_present": ["Mrs. Tabitha Twitchit", "Tom Kitten", "Mittens", "Moppet"],
+      "location": "The House"
+    },
+    {
+      "page_number": 5,
+      "english_text": "She dressed Tom in a blue suit. But Tom was very fat!",
+      "scene_description": "[IMAGE: image_009.jpg] Tom Kitten standing in his tight blue suit, looking uncomfortable. Buttons are popping off. Mother stands behind him looking worried. A button and thread on the floor.",
+      "characters_present": ["Tom Kitten", "Mrs. Tabitha Twitchit"],
+      "location": "The House"
+    },
+    {
+      "page_number": 6,
+      "english_text": "Several buttons popped off. Mother sewed them back on.",
+      "scene_description": "[IMAGE: image_008.jpg] Mrs. Tabitha getting elegant clothes out of a chest of drawers to dress Tom. Tom stands watching. The sisters peek from the window seat.",
+      "characters_present": ["Tom Kitten", "Mrs. Tabitha Twitchit", "Mittens", "Moppet"],
+      "location": "The House"
+    },
+    {
+      "page_number": 7,
+      "english_text": "\"Now go into the garden. Keep your clothes clean!\" said Mother.",
+      "scene_description": "[IMAGE: image_010.jpg] Mrs. Tabitha sending the three dressed-up kittens out the garden door. Roses and flowers around the doorway. The kittens are all dressed in their fine clothes — Tom in blue, the girls in white pinafores.",
+      "characters_present": ["Mrs. Tabitha Twitchit", "Tom Kitten", "Mittens", "Moppet"],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 8,
+      "english_text": "Moppet and Mittens walked down the path. They tripped on their dresses!",
+      "scene_description": "[IMAGE: image_011.jpg] Moppet and Mittens walking unsteadily down the garden path in their pinafores. They look clumsy and uncomfortable in the fancy clothes. Flowers alongside the path.",
+      "characters_present": ["Mittens", "Moppet"],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 9,
+      "english_text": "They fell in the garden and got dirty.",
+      "scene_description": "[IMAGE: image_012.jpg] The kittens tumbling and playing in the garden, their pinafores turned around and getting dirty. Butterflies, flowers, and ferns around them.",
+      "characters_present": ["Tom Kitten", "Mittens", "Moppet"],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 10,
+      "english_text": "Tom climbed up the wall. His hat fell off! His buttons burst!",
+      "scene_description": "[IMAGE: image_013.jpg] Tom Kitten climbing among ferns on the garden wall, his hat falling off his head, buttons popping from his blue suit. He looks wild and happy.",
+      "characters_present": ["Tom Kitten"],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 11,
+      "english_text": "Moppet and Mittens tried to help Tom. But all his clothes fell off!",
+      "scene_description": "[IMAGE: image_014.jpg] Moppet and Mittens pulling at Tom's clothes, trying to put him back together on the garden wall. His suit is coming apart. Comedy of effort.",
+      "characters_present": ["Tom Kitten", "Mittens", "Moppet"],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 12,
+      "english_text": "Then three ducks came down the road. Pit pat paddle pat!",
+      "scene_description": "[IMAGE: image_015.jpg] The three kittens sitting on the garden wall looking down. Three white Puddle-Ducks walking along the road below through a gate. The ducks look curious.",
+      "characters_present": ["Tom Kitten", "Mittens", "Moppet", "The Puddle-Ducks"],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 13,
+      "english_text": "The ducks picked up Tom's hat and clothes!",
+      "scene_description": "[IMAGE: image_017.jpg] Two ducks picking up Tom's hat and tucker from the ground near the wall. The kittens peek down from above, watching. Clothes scattered on the path.",
+      "characters_present": ["The Puddle-Ducks", "Tom Kitten", "Mittens", "Moppet"],
+      "location": "The Lane"
+    },
+    {
+      "page_number": 14,
+      "english_text": "The kittens laughed! Mittens fell off the wall!",
+      "scene_description": "[IMAGE: image_018.jpg] The kittens on the wall with ducks below. Clothes on the ground between them. Mittens is laughing so hard she nearly falls. The ducks look pompous.",
+      "characters_present": ["Tom Kitten", "Mittens", "Moppet", "The Puddle-Ducks"],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 15,
+      "english_text": "Mr. Drake put on Tom's blue suit. It did not fit!",
+      "scene_description": "[IMAGE: image_020.jpg] Mr. Drake Puddle-Duck wearing Tom Kitten's blue suit, which fits him very badly. He looks ridiculous but proud. The clothes are bursting at the seams on a duck.",
+      "characters_present": ["The Puddle-Ducks"],
+      "location": "The Lane"
+    },
+    {
+      "page_number": 16,
+      "english_text": "The ducks walked away in the kittens' clothes.",
+      "scene_description": "[IMAGE: image_021.jpg] All three ducks waddling up the road wearing the kittens' clothes — hats, pinafores, blue suit. Chickens in the farmyard stare. Very funny sight.",
+      "characters_present": ["The Puddle-Ducks"],
+      "location": "The Lane"
+    },
+    {
+      "page_number": 17,
+      "english_text": "Then Mother came into the garden. The kittens had no clothes on!",
+      "scene_description": "[IMAGE: image_022.jpg] Mrs. Tabitha coming around the garden corner and seeing her three kittens sitting naked on the wall. She looks horrified. The kittens look guilty.",
+      "characters_present": ["Mrs. Tabitha Twitchit", "Tom Kitten", "Mittens", "Moppet"],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 18,
+      "english_text": "Mother was very angry. She smacked the kittens!",
+      "scene_description": "[IMAGE: image_023.jpg] Mrs. Tabitha pulling the kittens off the wall and smacking them. She is furious. The kittens look sorry. Garden flowers around them.",
+      "characters_present": ["Mrs. Tabitha Twitchit", "Tom Kitten", "Mittens", "Moppet"],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 19,
+      "english_text": "She sent them to bed. But the kittens did not stay in bed!",
+      "scene_description": "[IMAGE: image_025.jpg] The three kittens NOT in bed — they are climbing the bed curtains, jumping on the bed, throwing clothes around. Total chaos in the bedroom. Messy, funny.",
+      "characters_present": ["Tom Kitten", "Mittens", "Moppet"],
+      "location": "The House"
+    },
+    {
+      "page_number": 20,
+      "english_text": "And the ducks' clothes fell off in the pond!",
+      "scene_description": "[IMAGE: image_027.jpg] The three Puddle-Ducks swimming in a pond with lily pads. The kitten clothes are falling off and floating in the water. The ducks look unconcerned. A peaceful, funny ending.",
+      "characters_present": ["The Puddle-Ducks"],
+      "location": "The Pond"
+    }
+  ]
+}

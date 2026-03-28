@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Palatino', 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .title-page {
+            text-align: center;
+            page-break-after: always;
+            padding-top: 3in;
+        }
+
+        .title-page h1 {
+            font-size: 36pt;
+            margin-bottom: 0.5in;
+            color: #2c3e50;
+        }
+
+        .title-page .english {
+            font-size: 24pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page {
+            page-break-after: always;
+            text-align: center;
+        }
+
+        .story-page img {
+            max-width: 100%;
+            max-height: 7in;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 0.5in auto;
+        }
+
+        .story-page .latin-text {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0.3in 0;
+        }
+
+        .story-page .english-text {
+            font-size: 14pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page .page-number {
+            position: absolute;
+            bottom: 0.3in;
+            right: 0.3in;
+            font-size: 12pt;
+            color: #bdc3c7;
+        }
+
+        .virtue-badge {
+            display: inline-block;
+            border: 2px solid #8e7c5a;
+            border-radius: 20px;
+            padding: 4px 18px;
+            font-size: 13pt;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            color: #8e7c5a;
+            background-color: rgba(255, 255, 255, 0.75);
+            margin-top: 15px;
+        }
+
+        .inside-cover {
+            page-break-after: always;
+            padding-top: 2.5in;
+            text-align: center;
+        }
+
+        .inside-cover h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            margin-bottom: 0.4in;
+            border-bottom: 1px solid #d5c9b1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .virtue-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 8px 0;
+            font-size: 12pt;
+        }
+
+        .virtue-name {
+            width: 140px;
+            text-align: right;
+            padding-right: 15px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            color: #5a5a5a;
+        }
+
+        .virtue-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .virtue-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1.5px solid #8e7c5a;
+        }
+
+        .virtue-dot.filled {
+            background-color: #8e7c5a;
+        }
+
+        .virtue-dot.empty {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="story-page" style="position: relative;">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/cover.png" alt="Cover" style="max-height: 10in; width: 100%;">
+        <div style="position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); text-align: center; width: 90%; background-color: rgba(255, 255, 255, 0.65); padding: 20px; border-radius: 10px;">
+            <h1 style="font-size: 48pt; margin: 0; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Fābula dē Thomā Fēlīculō</h1>
+            <p style="font-size: 28pt; margin: 10px 0 0 0; color: #7f8c8d; font-style: italic;">The Tale of Tom Kitten</p>
+            <div class='virtue-badge'>Temperantia</div>
+        </div>
+    </div>
+
+
+    <div class="inside-cover">
+        <h2>Virtūtēs</h2>
+        <div class="virtue-row"><span class="virtue-name">Prudentia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Iūstitia</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fortitūdō</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Temperantia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fidēs</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Spēs</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Cāritās</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_01.png" alt="Page 1">
+        <p class="latin-text">Trēs fēlīculī erant: Digitālia, Thomas, et Moppet.</p>
+        <p class="english-text">There were three little kittens: Mittens, Tom Kitten, and Moppet.</p>
+        <span class="page-number">1</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_02.png" alt="Page 2">
+        <p class="latin-text">Ōlim māter convīvium parāre volēbat.</p>
+        <p class="english-text">One day their mother wanted to have a tea party.</p>
+        <span class="page-number">2</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_03.png" alt="Page 3">
+        <p class="latin-text">Fēlīculōs lāvit et pīlōs eōrum dēpēxit.</p>
+        <p class="english-text">She washed the kittens and brushed their fur.</p>
+        <span class="page-number">3</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_04.png" alt="Page 4">
+        <p class="latin-text">Caudās et vibrissās eōrum pēxit.</p>
+        <p class="english-text">She combed their tails and whiskers.</p>
+        <span class="page-number">4</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_05.png" alt="Page 5">
+        <p class="latin-text">Thomam tunicā caeruleā vestīvit. Sed Thomas nimis pinguis erat!</p>
+        <p class="english-text">She dressed Tom in a blue suit. But Tom was very fat!</p>
+        <span class="page-number">5</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_06.png" alt="Page 6">
+        <p class="latin-text">Fībulae dēsiluērunt! Māter eās resūit.</p>
+        <p class="english-text">Several buttons popped off. Mother sewed them back on.</p>
+        <span class="page-number">6</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_07.png" alt="Page 7">
+        <p class="latin-text">"Īte in hortum! Vestīmenta munda servāte!" inquit Māter.</p>
+        <p class="english-text">"Go into the garden. Keep your clothes clean!" said Mother.</p>
+        <span class="page-number">7</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_08.png" alt="Page 8">
+        <p class="latin-text">Moppet et Digitālia per hortum ambulābant. In stōlīs suīs offendērunt!</p>
+        <p class="english-text">Moppet and Mittens walked down the path. They tripped on their dresses!</p>
+        <span class="page-number">8</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_09.png" alt="Page 9">
+        <p class="latin-text">In hortō cecidērunt et sordidī factī sunt.</p>
+        <p class="english-text">They fell in the garden and got dirty.</p>
+        <span class="page-number">9</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_10.png" alt="Page 10">
+        <p class="latin-text">Thomas mūrum ascendit. Petasus dēcidit! Fībulae iterum dēsiluērunt!</p>
+        <p class="english-text">Tom climbed up the wall. His hat fell off! His buttons burst!</p>
+        <span class="page-number">10</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_11.png" alt="Page 11">
+        <p class="latin-text">Moppet et Digitālia Thomam adiuvāre temptāvērunt. Sed vestīmenta omnia cecidērunt!</p>
+        <p class="english-text">Moppet and Mittens tried to help Tom. But all his clothes fell off!</p>
+        <span class="page-number">11</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_12.png" alt="Page 12">
+        <p class="latin-text">Tum trēs anatēs in viā vēnērunt. Pit pat! Pit pat!</p>
+        <p class="english-text">Then three ducks came down the road. Pit pat paddle pat!</p>
+        <span class="page-number">12</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_13.png" alt="Page 13">
+        <p class="latin-text">Anatēs petasum et vestīmenta Thomae sustulērunt!</p>
+        <p class="english-text">The ducks picked up Tom's hat and clothes!</p>
+        <span class="page-number">13</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_14.png" alt="Page 14">
+        <p class="latin-text">Fēlīculī rīsērunt! Digitālia dē mūrō cecidit!</p>
+        <p class="english-text">The kittens laughed! Mittens fell off the wall!</p>
+        <span class="page-number">14</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_15.png" alt="Page 15">
+        <p class="latin-text">Anas tunicam caeruleam Thomae induit. Nōn conveniēbat!</p>
+        <p class="english-text">Mr. Drake put on Tom's blue suit. It did not fit!</p>
+        <span class="page-number">15</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_16.png" alt="Page 16">
+        <p class="latin-text">Anatēs in vestīmentīs fēlīculōrum abiērunt.</p>
+        <p class="english-text">The ducks walked away in the kittens' clothes.</p>
+        <span class="page-number">16</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_17.png" alt="Page 17">
+        <p class="latin-text">Tum Māter in hortum vēnit. Fēlīculī nūdī erant!</p>
+        <p class="english-text">Then Mother came into the garden. The kittens had no clothes on!</p>
+        <span class="page-number">17</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_18.png" alt="Page 18">
+        <p class="latin-text">Māter īrātissima erat! Fēlīculōs pūnīvit!</p>
+        <p class="english-text">Mother was very angry. She smacked the kittens!</p>
+        <span class="page-number">18</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_19.png" alt="Page 19">
+        <p class="latin-text">Eōs in lectum mīsit. Sed fēlīculī in lectō nōn mānsērunt!</p>
+        <p class="english-text">She sent them to bed. But the kittens did not stay in bed!</p>
+        <span class="page-number">19</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_tom_kitten/images/page_20.png" alt="Page 20">
+        <p class="latin-text">Et vestīmenta anatum in stāgnum cecidērunt!</p>
+        <p class="english-text">And the ducks' clothes fell off in the pond!</p>
+        <span class="page-number">20</span>
+    </div>
+
+
+    <div class="story-page" style="padding-top: 3in; text-align: center;">
+        <p style="font-size: 14pt; color: #7f8c8d;">Illustrations by Beatrix Potter</p>
+        <p style="font-size: 12pt; color: #95a5a6;">from <em>The Tale of Tom Kitten</em> (1907)</p>
+        <p style="font-size: 10pt; color: #bdc3c7;">Public Domain</p>
+    </div>
+
+
+</body>
+</html>

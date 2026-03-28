@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Palatino', 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .title-page {
+            text-align: center;
+            page-break-after: always;
+            padding-top: 3in;
+        }
+
+        .title-page h1 {
+            font-size: 36pt;
+            margin-bottom: 0.5in;
+            color: #2c3e50;
+        }
+
+        .title-page .english {
+            font-size: 24pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page {
+            page-break-after: always;
+            text-align: center;
+        }
+
+        .story-page img {
+            max-width: 100%;
+            max-height: 7in;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 0.5in auto;
+        }
+
+        .story-page .latin-text {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0.3in 0;
+        }
+
+        .story-page .english-text {
+            font-size: 14pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page .page-number {
+            position: absolute;
+            bottom: 0.3in;
+            right: 0.3in;
+            font-size: 12pt;
+            color: #bdc3c7;
+        }
+
+        .virtue-badge {
+            display: inline-block;
+            border: 2px solid #8e7c5a;
+            border-radius: 20px;
+            padding: 4px 18px;
+            font-size: 13pt;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            color: #8e7c5a;
+            background-color: rgba(255, 255, 255, 0.75);
+            margin-top: 15px;
+        }
+
+        .inside-cover {
+            page-break-after: always;
+            padding-top: 2.5in;
+            text-align: center;
+        }
+
+        .inside-cover h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            margin-bottom: 0.4in;
+            border-bottom: 1px solid #d5c9b1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .virtue-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 8px 0;
+            font-size: 12pt;
+        }
+
+        .virtue-name {
+            width: 140px;
+            text-align: right;
+            padding-right: 15px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            color: #5a5a5a;
+        }
+
+        .virtue-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .virtue-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1.5px solid #8e7c5a;
+        }
+
+        .virtue-dot.filled {
+            background-color: #8e7c5a;
+        }
+
+        .virtue-dot.empty {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="story-page" style="position: relative;">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/cover.png" alt="Cover" style="max-height: 10in; width: 100%;">
+        <div style="position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); text-align: center; width: 90%; background-color: rgba(255, 255, 255, 0.65); padding: 20px; border-radius: 10px;">
+            <h1 style="font-size: 48pt; margin: 0; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Lincus et Thēsaurus Raptus</h1>
+            <p style="font-size: 28pt; margin: 10px 0 0 0; color: #7f8c8d; font-style: italic;">Link and the Stolen Treasure</p>
+            <div class='virtue-badge'>Fortitūdō</div>
+        </div>
+    </div>
+
+
+    <div class="inside-cover">
+        <h2>Virtūtēs</h2>
+        <div class="virtue-row"><span class="virtue-name">Prudentia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Iūstitia</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fortitūdō</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span></span></div><div class="virtue-row"><span class="virtue-name">Temperantia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fidēs</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Spēs</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Cāritās</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_01.png" alt="Page 1">
+        <p class="latin-text">Lincus trāns mare obscūrum nāvigāvit.</p>
+        <p class="english-text">Link sailed across the dark sea.</p>
+        <span class="page-number">1</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_02.png" alt="Page 2">
+        <p class="latin-text">"Moblīnī thēsaurum rapuērunt," inquit Tetra. "Refer!"</p>
+        <p class="english-text">"The Moblins stole the treasure," said Tetra. "Get it back."</p>
+        <span class="page-number">2</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_03.png" alt="Page 3">
+        <p class="latin-text">Lincus sē in doliō cēlāvit. Dolium per āera volāvit!</p>
+        <p class="english-text">Link hid inside a barrel. The barrel flew through the air!</p>
+        <span class="page-number">3</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_04.png" alt="Page 4">
+        <p class="latin-text">Dolium in arcem cecidit. Lincus tacitē prōspexit.</p>
+        <p class="english-text">The barrel landed in the fortress. Link peeked out quietly.</p>
+        <span class="page-number">4</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_05.png" alt="Page 5">
+        <p class="latin-text">Lūx magna per terram sē mōvit. Lincus sē cēlāvit!</p>
+        <p class="english-text">A big light moved across the ground. Link hid!</p>
+        <span class="page-number">5</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_06.png" alt="Page 6">
+        <p class="latin-text">Lincus tacitē cucurrit. Ā doliō ad dolium rēpsit.</p>
+        <p class="english-text">Link ran quietly. From barrel to barrel he crept.</p>
+        <span class="page-number">6</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_07.png" alt="Page 7">
+        <p class="latin-text">Moblīnus sē vertit! Lincus nōn sē mōvit.</p>
+        <p class="english-text">A Moblin turned around! Link did not move.</p>
+        <span class="page-number">7</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_08.png" alt="Page 8">
+        <p class="latin-text">Moblīnus eum vīdit! "ECCE!" clāmāvit.</p>
+        <p class="english-text">The Moblin saw him! "THERE!" it shouted.</p>
+        <span class="page-number">8</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_09.png" alt="Page 9">
+        <p class="latin-text">Moblīnī ex omnī ōstiō cucurrērunt. Lincum cēpērunt!</p>
+        <p class="english-text">Moblins ran from every door. They grabbed Link!</p>
+        <span class="page-number">9</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_10.png" alt="Page 10">
+        <p class="latin-text">Moblīnī Lincum ex arce iēcērunt. Iterum per āera volāvit.</p>
+        <p class="english-text">They threw Link out of the fortress. He flew through the air again.</p>
+        <span class="page-number">10</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_11.png" alt="Page 11">
+        <p class="latin-text">Tetra Lincum ē marī trāxit. Nihil habēbat.</p>
+        <p class="english-text">Tetra pulled Link from the sea. He had nothing.</p>
+        <span class="page-number">11</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_12.png" alt="Page 12">
+        <p class="latin-text">Lincus sōlus sēdit. Arx obscūra et procul erat.</p>
+        <p class="english-text">Link sat alone. The fortress was dark and far away.</p>
+        <span class="page-number">12</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_13.png" alt="Page 13">
+        <p class="latin-text">Moblīnōs meminit. Redīre nōlēbat.</p>
+        <p class="english-text">He remembered the Moblins. He did not want to go back.</p>
+        <span class="page-number">13</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_14.png" alt="Page 14">
+        <p class="latin-text">Tetra iuxtā eum sēdit. "Iterum temptā," inquit lēniter.</p>
+        <p class="english-text">Tetra sat next to him. "You can try again," she said quietly.</p>
+        <span class="page-number">14</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_15.png" alt="Page 15">
+        <p class="latin-text">Lincus arcem spectāvit. Adhūc timēbat. Sed surrēxit.</p>
+        <p class="english-text">Link looked at the fortress. He was still afraid. But he stood up.</p>
+        <span class="page-number">15</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_16.png" alt="Page 16">
+        <p class="latin-text">Iterum sē in doliō cēlāvit. Iterum per āera volāvit!</p>
+        <p class="english-text">Link hid in a barrel again. Again he flew through the air!</p>
+        <span class="page-number">16</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_17.png" alt="Page 17">
+        <p class="latin-text">Iterum in arcem cecidit. Hāc vice diūtius exspectāvit.</p>
+        <p class="english-text">Again he landed in the fortress. This time he waited longer.</p>
+        <span class="page-number">17</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_18.png" alt="Page 18">
+        <p class="latin-text">Iterum lūx magna vēnit. Lincus dolium super sē posuit!</p>
+        <p class="english-text">Again the big light came. Link put a barrel over himself!</p>
+        <span class="page-number">18</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_19.png" alt="Page 19">
+        <p class="latin-text">Praeter Moblīnōs ambulāvit! Sōlum dolium vīdērunt.</p>
+        <p class="english-text">He walked right past the Moblins! They saw only a barrel.</p>
+        <span class="page-number">19</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_20.png" alt="Page 20">
+        <p class="latin-text">Lincus thēsaurum invēnit. Iterum arcam aperuit. Tacitē, hāc vice.</p>
+        <p class="english-text">Link found the treasure. Again he opened the chest. Quietly this time.</p>
+        <span class="page-number">20</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_21.png" alt="Page 21">
+        <p class="latin-text">Lincus tacitē ex arce rēpsit. Thēsaurum arte tenēbat.</p>
+        <p class="english-text">Link crept out of the fortress. He held the treasure tight.</p>
+        <span class="page-number">21</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_22.png" alt="Page 22">
+        <p class="latin-text">In mare dēsiluit. Hāc vice rīdēbat.</p>
+        <p class="english-text">He jumped into the sea. This time he was smiling.</p>
+        <span class="page-number">22</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_23.png" alt="Page 23">
+        <p class="latin-text">Tetra eum iterum trāxit. "Fēcistī!" inquit.</p>
+        <p class="english-text">Tetra pulled him up again. "You did it!" she said.</p>
+        <span class="page-number">23</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_stolen_treasure/images/page_24.png" alt="Page 24">
+        <p class="latin-text">Lincus timēbat. Sed iterum temptāvit. Fortis erat.</p>
+        <p class="english-text">Link was afraid. But he tried again. He was brave.</p>
+        <span class="page-number">24</span>
+    </div>
+
+
+</body>
+</html>

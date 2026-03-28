@@ -1,0 +1,293 @@
+{
+  "title_latin": "Fābula dē Petrō Cunīculō",
+  "title_english": "The Tale of Peter Rabbit",
+  "pages": [
+    {
+      "page_number": 1,
+      "latin_text": "Peter cum familiā sub arbore magnā habitābat.",
+      "english_text": "Peter lived with his family under a big tree.",
+      "image_prompt": "[IMAGE: image_003.jpg] Rabbit family gathered outside their burrow under a large fir tree. Mother rabbit and four baby bunnies visible in a woodland setting. Warm, inviting opening scene.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_01.png",
+      "characters": [
+        "Peter Rabbit",
+        "Mrs. Rabbit",
+        "Flopsy, Mopsy, and Cotton-tail"
+      ],
+      "location": "The Rabbit Burrow"
+    },
+    {
+      "page_number": 2,
+      "latin_text": "Māter cunīculōs parvōs vestīvit. Peter tunicam caeruleam gerēbat.",
+      "english_text": "Mother dressed the little rabbits. Peter wore his blue jacket.",
+      "image_prompt": "[IMAGE: image_004.jpg] Mrs. Rabbit in her apron dressing and fussing over the young rabbits indoors. Peter stands slightly apart, wearing his distinctive blue jacket with brass buttons.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_02.png",
+      "characters": [
+        "Peter Rabbit",
+        "Mrs. Rabbit",
+        "Flopsy, Mopsy, and Cotton-tail"
+      ],
+      "location": "The Rabbit Burrow"
+    },
+    {
+      "page_number": 3,
+      "latin_text": "\"Nōlīte īre in hortum Dominī McGregor!\" inquit Māter.",
+      "english_text": "\"Do not go into Mr. McGregor's garden!\" said Mother.",
+      "image_prompt": "[IMAGE: image_005.jpg] Mrs. Rabbit bending down in the woods, speaking seriously to Peter and his siblings. She is warning them, finger raised. The young rabbits look up at her.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_03.png",
+      "characters": [
+        "Peter Rabbit",
+        "Mrs. Rabbit",
+        "Flopsy, Mopsy, and Cotton-tail"
+      ],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 4,
+      "latin_text": "Tum Māter cum corbulā abiit.",
+      "english_text": "Then Mother went out with her basket.",
+      "image_prompt": "[IMAGE: image_006.jpg] Mrs. Rabbit walking away through the woods carrying a basket and umbrella, wearing her red cape. She is heading off, leaving the children behind.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_04.png",
+      "characters": [
+        "Mrs. Rabbit"
+      ],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 5,
+      "latin_text": "Cunīculī bonī mōra in viā carpēbant.",
+      "english_text": "The good rabbits picked blackberries in the lane.",
+      "image_prompt": "[IMAGE: image_007.jpg] Three well-behaved young rabbits picking blackberries together from bushes. They are happy, obedient, doing exactly what Mother asked.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_05.png",
+      "characters": [
+        "Flopsy, Mopsy, and Cotton-tail"
+      ],
+      "location": "The Woods"
+    },
+    {
+      "page_number": 6,
+      "latin_text": "Sed Peter rēctā ad hortum cucurrit!",
+      "english_text": "But Peter ran straight to the garden!",
+      "image_prompt": "[IMAGE: image_008.jpg] Peter in his blue jacket squeezing his body under a wooden garden gate, sneaking into Mr. McGregor's garden. He looks determined and naughty — the moment of disobedience.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_06.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 7,
+      "latin_text": "Peter lactūcam ēdit, et fabās, et rādīcēs.",
+      "english_text": "Peter ate lettuce and beans and radishes.",
+      "image_prompt": "[IMAGE: image_009.jpg] Peter standing upright among rows of vegetables, happily munching. A robin perches on a spade handle nearby, watching him. Peter looks content and greedy.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_07.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 8,
+      "latin_text": "Nimis ēdit! Venter eius dolēbat.",
+      "english_text": "He ate too much. His stomach hurt.",
+      "image_prompt": "[IMAGE: image_010.jpg] Peter looking uncomfortable and sick, standing hunched by flowerpots. His expression shows he has overeaten — queasy and worried. First consequence of his greed.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_08.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 9,
+      "latin_text": "Dominus McGregor eum vīdit! \"Cōnsiste, fūr!\"",
+      "english_text": "Mr. McGregor saw him! \"Stop, thief!\"",
+      "image_prompt": "[IMAGE: image_011.jpg] Mr. McGregor — old man with beard and glasses — bending down and spotting Peter among the vegetables. His expression is angry. Peter is caught!",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_09.png",
+      "characters": [
+        "Peter Rabbit",
+        "Mr. McGregor"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 10,
+      "latin_text": "Peter valdē perterritus erat. Cucurrit et cucurrit!",
+      "english_text": "Peter was very scared. He ran and ran!",
+      "image_prompt": "[IMAGE: image_012.jpg] Peter sprinting away in terror. Mr. McGregor chasing behind him with a rake. Dynamic action — Peter's ears flat, legs pumping, blue jacket flying.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_10.png",
+      "characters": [
+        "Peter Rabbit",
+        "Mr. McGregor"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 11,
+      "latin_text": "Tunica Petrī in rēte haesit. Haerēbat!",
+      "english_text": "Peter's jacket got caught in a net. He was stuck!",
+      "image_prompt": "[IMAGE: image_014.jpg] Peter tangled and struggling in a gooseberry net, his blue jacket caught in the mesh. He pulls and twists but cannot free himself. A desperate, frightened moment.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_11.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 12,
+      "latin_text": "Passerēs ad eum volāvērunt. \"Perge! Perge!\" pipiāvērunt.",
+      "english_text": "Sparrows flew to him. \"Keep trying!\" they chirped.",
+      "image_prompt": "[IMAGE: image_015.jpg] Peter bursting free from the net as small sparrows flutter around him encouragingly. His jacket tears as he pulls loose. Birds circle as if cheering him on.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_12.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 13,
+      "latin_text": "Peter sē līberāvit, sed tunicam et calceōs āmīsit.",
+      "english_text": "Peter pulled free, but he lost his jacket and shoes.",
+      "image_prompt": "[IMAGE: image_016.jpg] McGregor's boot and a sieve slamming down just where Peter was — Peter barely escaping. Birds scatter. The jacket left behind. A near-miss moment of danger.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_13.png",
+      "characters": [
+        "Peter Rabbit",
+        "Mr. McGregor"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 14,
+      "latin_text": "Peter in vās aquārium sē abdidit! Aqua frīgida erat!",
+      "english_text": "Peter hid in a watering can full of cold water!",
+      "image_prompt": "[IMAGE: image_017.jpg] Peter hiding inside a large green watering can, only his ears and front paws sticking out. He is drenched and shivering. A funny, desperate hiding spot.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_14.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 15,
+      "latin_text": "Dominus McGregor ubīque Petrum quaerēbat.",
+      "english_text": "Mr. McGregor looked everywhere for Peter.",
+      "image_prompt": "[IMAGE: image_018.jpg] Mr. McGregor searching inside a garden shed, looking behind pots and containers. The watering can where Peter hides is visible. Tense — will he find Peter?",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_15.png",
+      "characters": [
+        "Mr. McGregor",
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 16,
+      "latin_text": "Peter fūrtim exiit — et trēs ollās dēiēcit. Fragor!",
+      "english_text": "Peter sneaked out and knocked over three flowerpots. Crash!",
+      "image_prompt": "[IMAGE: image_019.jpg] Peter crashing into flowerpots, knocking them over with a clatter. McGregor's boot visible at edge — he heard the noise! Terracotta pots tumbling and breaking.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_16.png",
+      "characters": [
+        "Peter Rabbit",
+        "Mr. McGregor"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 17,
+      "latin_text": "Peter errābat. Portam invenīre nōn poterat.",
+      "english_text": "Peter was lost. He could not find the gate.",
+      "image_prompt": "[IMAGE: image_020.jpg] Peter standing upright by a garden wall, looking around anxiously. Alone, alert, ears up, trying to figure out which way to go. Lost and frightened.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_17.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 18,
+      "latin_text": "Mūrem parvam rogāvit, sed ea adiuvāre nōn potuit.",
+      "english_text": "He asked a little mouse for help, but she could not help him.",
+      "image_prompt": "[IMAGE: image_021.jpg] Peter leaning exhausted against a blue locked door in the garden wall. A tiny mouse sits at his feet. Peter looks down hopefully, but the door is locked.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_18.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 19,
+      "latin_text": "Peter fēlem albam vīdit. Procul ab eā mānsit.",
+      "english_text": "Peter saw a white cat. He stayed away from her.",
+      "image_prompt": "[IMAGE: image_022.jpg] A white cat sitting still by a garden pond. Peter visible peeking cautiously from behind a watering can. He wisely avoids the cat — a moment of prudence at last.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_19.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 20,
+      "latin_text": "Tum Peter portam tandem vīdit!",
+      "english_text": "Then Peter saw the gate at last!",
+      "image_prompt": "[IMAGE: image_023.jpg] Peter crouching behind a wheelbarrow in a cabbage patch. Mr. McGregor in background hoeing with his back turned. The garden gate visible beyond. Peter sees his chance!",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_20.png",
+      "characters": [
+        "Peter Rabbit",
+        "Mr. McGregor"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 21,
+      "latin_text": "Ad portam cucurrit et sub eā sē pressit. Līber!",
+      "english_text": "He ran to the gate and squeezed under it. Free!",
+      "image_prompt": "[IMAGE: image_024.jpg] Peter sprinting and squeezing under the garden gate to escape. His body halfway through. Freedom on the other side. Mirrors page 6 — the escape.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_21.png",
+      "characters": [
+        "Peter Rabbit"
+      ],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 22,
+      "latin_text": "Tunica Petrī formīdō in hortō facta est.",
+      "english_text": "Peter's jacket became a scarecrow in the garden.",
+      "image_prompt": "[IMAGE: image_025.jpg] Peter's little blue jacket and shoes on a scarecrow in the garden. Birds perch on the scarecrow's arms. A quiet, humorous aftermath — Peter lost his clothes.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_22.png",
+      "characters": [],
+      "location": "Mr. McGregor's Garden"
+    },
+    {
+      "page_number": 23,
+      "latin_text": "Peter domum tōtam viam cucurrit. Valdē fessus erat.",
+      "english_text": "Peter ran all the way home. He was very tired.",
+      "image_prompt": "[IMAGE: image_026.jpg] Mrs. Rabbit in the kitchen with a pot. Peter collapsed nearby, exhausted, lying flat. Home but utterly spent. No jacket, no shoes, just a sick little rabbit.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_23.png",
+      "characters": [
+        "Peter Rabbit",
+        "Mrs. Rabbit"
+      ],
+      "location": "The Rabbit Burrow"
+    },
+    {
+      "page_number": 24,
+      "latin_text": "Māter Petrum in lectum posuit et potum chamomillae dedit.",
+      "english_text": "Mother put Peter to bed with chamomile tea.",
+      "image_prompt": "[IMAGE: image_001.jpg] Mrs. Rabbit giving Peter medicine or tea in bed. Peter lies looking miserable. Mother tends to him lovingly despite his disobedience — consequences, but still loved.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_24.png",
+      "characters": [
+        "Peter Rabbit",
+        "Mrs. Rabbit"
+      ],
+      "location": "The Rabbit Burrow"
+    },
+    {
+      "page_number": 25,
+      "latin_text": "Sed cunīculī bonī pānem et lac ad cēnam habēbant.",
+      "english_text": "But the good rabbits had bread and milk for supper.",
+      "image_prompt": "[IMAGE: image_028.jpg] The three good sister rabbits sitting happily at a table, eating bread and milk. They obeyed. They get the reward. Clear contrast with poor Peter in bed.",
+      "image_path": "projects/the_tale_of_peter_rabbit/images/page_25.png",
+      "characters": [
+        "Flopsy, Mopsy, and Cotton-tail"
+      ],
+      "location": "The Rabbit Burrow"
+    }
+  ]
+}

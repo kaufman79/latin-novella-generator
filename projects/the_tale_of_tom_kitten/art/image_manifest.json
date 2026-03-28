@@ -1,0 +1,159 @@
+{
+  "pd_source": {
+    "title": "The Tale of Tom Kitten",
+    "author": "Beatrix Potter",
+    "illustrator": "Beatrix Potter",
+    "source_url": "https://www.gutenberg.org/ebooks/14837",
+    "year": 1907,
+    "license": "Public Domain"
+  },
+  "mappings": [
+    {
+      "page_number": 1,
+      "source": "existing",
+      "image_filename": "image_004.jpg",
+      "original_caption": "Once upon a time there were three little kittens, and their names were Mittens, Tom Kitten, and Moppet.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 2,
+      "source": "existing",
+      "image_filename": "image_005.jpg",
+      "original_caption": "First she scrubbed their faces (this one is Moppet).",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 3,
+      "source": "existing",
+      "image_filename": "image_006.jpg",
+      "original_caption": "Then she brushed their fur, (this one is Mittens).",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 4,
+      "source": "existing",
+      "image_filename": "image_007.jpg",
+      "original_caption": "Then she combed their tails and whiskers (this is Tom Kitten).",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 5,
+      "source": "existing",
+      "image_filename": "image_009.jpg",
+      "original_caption": "Tom Kitten was very fat, and he had grown; several buttons burst off.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 6,
+      "source": "existing",
+      "image_filename": "image_008.jpg",
+      "original_caption": "She took all sorts of elegant uncomfortable clothes out of a chest of drawers, in order to dress up her son Thomas.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 7,
+      "source": "existing",
+      "image_filename": "image_010.jpg",
+      "original_caption": "Now keep your frocks clean, children!",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 8,
+      "source": "existing",
+      "image_filename": "image_011.jpg",
+      "original_caption": "Moppet and Mittens walked down the garden path unsteadily.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 9,
+      "source": "existing",
+      "image_filename": "image_012.jpg",
+      "original_caption": "They turned their pinafores back to front.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 10,
+      "source": "existing",
+      "image_filename": "image_013.jpg",
+      "original_caption": "His hat fell off, and the rest of his buttons burst.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 11,
+      "source": "existing",
+      "image_filename": "image_014.jpg",
+      "original_caption": "Moppet and Mittens tried to pull him together.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 12,
+      "source": "existing",
+      "image_filename": "image_015.jpg",
+      "original_caption": "While they were in difficulties, there was a pit pat paddle pat!",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 13,
+      "source": "existing",
+      "image_filename": "image_017.jpg",
+      "original_caption": "Then the two duck-birds, Rebeccah and Jemima Puddle-Duck, picked up the hat and tucker and put them on.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 14,
+      "source": "existing",
+      "image_filename": "image_018.jpg",
+      "original_caption": "Mittens laughed so that she fell off the wall.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 15,
+      "source": "existing",
+      "image_filename": "image_020.jpg",
+      "original_caption": "They fitted him even worse than Tom Kitten.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 16,
+      "source": "existing",
+      "image_filename": "image_021.jpg",
+      "original_caption": "And he and Jemima and Rebeccah Puddle-Duck set off up the road.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 17,
+      "source": "existing",
+      "image_filename": "image_022.jpg",
+      "original_caption": "Then Tabitha Twitchit came down the garden and found her kittens on the wall with no clothes on.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 18,
+      "source": "existing",
+      "image_filename": "image_023.jpg",
+      "original_caption": "She pulled them off the wall, smacked them, and took them back to the house.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 19,
+      "source": "existing",
+      "image_filename": "image_025.jpg",
+      "original_caption": "Quite the contrary; they were not in bed: not in the least.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 20,
+      "source": "existing",
+      "image_filename": "image_027.jpg",
+      "original_caption": "The clothes all came off directly, because there were no buttons.",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 0,
+      "source": "existing",
+      "image_filename": "image_001.jpg",
+      "original_caption": "Mrs. Tabitha Twitchit and Children (cover image)",
+      "generate_prompt": null
+    }
+  ]
+}

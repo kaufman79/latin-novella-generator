@@ -1,0 +1,187 @@
+{
+  "pd_source": {
+    "title": "The Tale of Peter Rabbit",
+    "author": "Beatrix Potter",
+    "illustrator": "Beatrix Potter",
+    "source_url": "https://www.gutenberg.org/ebooks/14838",
+    "year": 1902,
+    "license": "Public Domain"
+  },
+  "mappings": [
+    {
+      "page_number": 1,
+      "source": "existing",
+      "image_filename": "image_003.jpg",
+      "original_caption": "Rabbit family under a big tree",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 2,
+      "source": "existing",
+      "image_filename": "image_004.jpg",
+      "original_caption": "Mother dressing rabbits, Peter in blue jacket",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 3,
+      "source": "existing",
+      "image_filename": "image_005.jpg",
+      "original_caption": "Mother warning children in the woods",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 4,
+      "source": "existing",
+      "image_filename": "image_006.jpg",
+      "original_caption": "Mother walking away with basket and umbrella",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 5,
+      "source": "existing",
+      "image_filename": "image_007.jpg",
+      "original_caption": "Three good rabbits picking blackberries",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 6,
+      "source": "existing",
+      "image_filename": "image_008.jpg",
+      "original_caption": "Peter squeezing under the garden gate",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 7,
+      "source": "existing",
+      "image_filename": "image_009.jpg",
+      "original_caption": "Peter eating vegetables, robin on spade",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 8,
+      "source": "existing",
+      "image_filename": "image_010.jpg",
+      "original_caption": "Peter feeling sick by flowerpots",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 9,
+      "source": "existing",
+      "image_filename": "image_011.jpg",
+      "original_caption": "Mr. McGregor spotting Peter",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 10,
+      "source": "existing",
+      "image_filename": "image_012.jpg",
+      "original_caption": "Peter running, McGregor chasing with rake",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 11,
+      "source": "existing",
+      "image_filename": "image_014.jpg",
+      "original_caption": "Peter tangled in gooseberry net",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 12,
+      "source": "existing",
+      "image_filename": "image_015.jpg",
+      "original_caption": "Sparrows encouraging Peter as he escapes net",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 13,
+      "source": "existing",
+      "image_filename": "image_016.jpg",
+      "original_caption": "McGregor's boot slamming down, Peter escaping",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 14,
+      "source": "existing",
+      "image_filename": "image_017.jpg",
+      "original_caption": "Peter hiding in watering can",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 15,
+      "source": "existing",
+      "image_filename": "image_018.jpg",
+      "original_caption": "McGregor searching in shed",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 16,
+      "source": "existing",
+      "image_filename": "image_019.jpg",
+      "original_caption": "Peter knocking over flowerpots",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 17,
+      "source": "existing",
+      "image_filename": "image_020.jpg",
+      "original_caption": "Peter lost by garden wall",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 18,
+      "source": "existing",
+      "image_filename": "image_021.jpg",
+      "original_caption": "Peter at locked door with mouse",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 19,
+      "source": "existing",
+      "image_filename": "image_022.jpg",
+      "original_caption": "White cat by pond, Peter hiding",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 20,
+      "source": "existing",
+      "image_filename": "image_023.jpg",
+      "original_caption": "Peter behind wheelbarrow, McGregor hoeing",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 21,
+      "source": "existing",
+      "image_filename": "image_024.jpg",
+      "original_caption": "Peter squeezing under gate to escape",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 22,
+      "source": "existing",
+      "image_filename": "image_025.jpg",
+      "original_caption": "Peter's jacket on scarecrow",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 23,
+      "source": "existing",
+      "image_filename": "image_026.jpg",
+      "original_caption": "Peter collapsed at home, exhausted",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 24,
+      "source": "existing",
+      "image_filename": "image_001.jpg",
+      "original_caption": "Mother giving Peter tea in bed",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 25,
+      "source": "existing",
+      "image_filename": "image_028.jpg",
+      "original_caption": "Three good rabbits eating bread and milk",
+      "generate_prompt": null
+    }
+  ]
+}

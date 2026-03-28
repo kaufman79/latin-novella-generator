@@ -1,0 +1,265 @@
+{
+  "title_latin": "Fābula dē Thomā Fēlīculō",
+  "title_english": "The Tale of Tom Kitten",
+  "pages": [
+    {
+      "page_number": 1,
+      "latin_text": "Trēs fēlīculī erant: Digitālia, Thomas, et Moppet.",
+      "english_text": "There were three little kittens: Mittens, Tom Kitten, and Moppet.",
+      "image_prompt": "[IMAGE: image_004.jpg] Mrs. Tabitha indoors with her three kittens.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_01.png",
+      "characters": [
+        "Tom Kitten",
+        "Mittens",
+        "Moppet",
+        "Mrs. Tabitha Twitchit"
+      ],
+      "location": "The House"
+    },
+    {
+      "page_number": 2,
+      "latin_text": "Ōlim māter convīvium parāre volēbat.",
+      "english_text": "One day their mother wanted to have a tea party.",
+      "image_prompt": "[IMAGE: image_005.jpg] Mrs. Tabitha scrubbing Moppet's face.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_02.png",
+      "characters": [
+        "Mrs. Tabitha Twitchit",
+        "Moppet",
+        "Mittens"
+      ],
+      "location": "The House"
+    },
+    {
+      "page_number": 3,
+      "latin_text": "Fēlīculōs lāvit et pīlōs eōrum dēpēxit.",
+      "english_text": "She washed the kittens and brushed their fur.",
+      "image_prompt": "[IMAGE: image_006.jpg] Mrs. Tabitha brushing a kitten's fur.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_03.png",
+      "characters": [
+        "Mrs. Tabitha Twitchit",
+        "Mittens",
+        "Moppet"
+      ],
+      "location": "The House"
+    },
+    {
+      "page_number": 4,
+      "latin_text": "Caudās et vibrissās eōrum pēxit.",
+      "english_text": "She combed their tails and whiskers.",
+      "image_prompt": "[IMAGE: image_007.jpg] Mrs. Tabitha combing Tom Kitten.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_04.png",
+      "characters": [
+        "Mrs. Tabitha Twitchit",
+        "Tom Kitten",
+        "Mittens",
+        "Moppet"
+      ],
+      "location": "The House"
+    },
+    {
+      "page_number": 5,
+      "latin_text": "Thomam tunicā caeruleā vestīvit. Sed Thomas nimis pinguis erat!",
+      "english_text": "She dressed Tom in a blue suit. But Tom was very fat!",
+      "image_prompt": "[IMAGE: image_009.jpg] Tom in his tight blue suit, buttons popping.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_05.png",
+      "characters": [
+        "Tom Kitten",
+        "Mrs. Tabitha Twitchit"
+      ],
+      "location": "The House"
+    },
+    {
+      "page_number": 6,
+      "latin_text": "Fībulae dēsiluērunt! Māter eās resūit.",
+      "english_text": "Several buttons popped off. Mother sewed them back on.",
+      "image_prompt": "[IMAGE: image_008.jpg] Mrs. Tabitha getting clothes from chest to dress Tom.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_06.png",
+      "characters": [
+        "Tom Kitten",
+        "Mrs. Tabitha Twitchit",
+        "Mittens",
+        "Moppet"
+      ],
+      "location": "The House"
+    },
+    {
+      "page_number": 7,
+      "latin_text": "\"Īte in hortum! Vestīmenta munda servāte!\" inquit Māter.",
+      "english_text": "\"Go into the garden. Keep your clothes clean!\" said Mother.",
+      "image_prompt": "[IMAGE: image_010.jpg] Mrs. Tabitha sending the dressed-up kittens outside.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_07.png",
+      "characters": [
+        "Mrs. Tabitha Twitchit",
+        "Tom Kitten",
+        "Mittens",
+        "Moppet"
+      ],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 8,
+      "latin_text": "Moppet et Digitālia per hortum ambulābant. In stōlīs suīs offendērunt!",
+      "english_text": "Moppet and Mittens walked down the path. They tripped on their dresses!",
+      "image_prompt": "[IMAGE: image_011.jpg] Moppet and Mittens walking unsteadily.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_08.png",
+      "characters": [
+        "Mittens",
+        "Moppet"
+      ],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 9,
+      "latin_text": "In hortō cecidērunt et sordidī factī sunt.",
+      "english_text": "They fell in the garden and got dirty.",
+      "image_prompt": "[IMAGE: image_012.jpg] Kittens tumbling and playing, clothes turned around.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_09.png",
+      "characters": [
+        "Tom Kitten",
+        "Mittens",
+        "Moppet"
+      ],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 10,
+      "latin_text": "Thomas mūrum ascendit. Petasus dēcidit! Fībulae iterum dēsiluērunt!",
+      "english_text": "Tom climbed up the wall. His hat fell off! His buttons burst!",
+      "image_prompt": "[IMAGE: image_013.jpg] Tom Kitten climbing wall, hat falling, buttons bursting.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_10.png",
+      "characters": [
+        "Tom Kitten"
+      ],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 11,
+      "latin_text": "Moppet et Digitālia Thomam adiuvāre temptāvērunt. Sed vestīmenta omnia cecidērunt!",
+      "english_text": "Moppet and Mittens tried to help Tom. But all his clothes fell off!",
+      "image_prompt": "[IMAGE: image_014.jpg] Sisters pulling at Tom's clothes on the wall.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_11.png",
+      "characters": [
+        "Tom Kitten",
+        "Mittens",
+        "Moppet"
+      ],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 12,
+      "latin_text": "Tum trēs anatēs in viā vēnērunt. Pit pat! Pit pat!",
+      "english_text": "Then three ducks came down the road. Pit pat paddle pat!",
+      "image_prompt": "[IMAGE: image_015.jpg] Kittens on wall, ducks approaching below.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_12.png",
+      "characters": [
+        "Tom Kitten",
+        "Mittens",
+        "Moppet",
+        "The Puddle-Ducks"
+      ],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 13,
+      "latin_text": "Anatēs petasum et vestīmenta Thomae sustulērunt!",
+      "english_text": "The ducks picked up Tom's hat and clothes!",
+      "image_prompt": "[IMAGE: image_017.jpg] Ducks picking up clothes, kittens watching from wall.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_13.png",
+      "characters": [
+        "The Puddle-Ducks",
+        "Tom Kitten",
+        "Mittens",
+        "Moppet"
+      ],
+      "location": "The Lane"
+    },
+    {
+      "page_number": 14,
+      "latin_text": "Fēlīculī rīsērunt! Digitālia dē mūrō cecidit!",
+      "english_text": "The kittens laughed! Mittens fell off the wall!",
+      "image_prompt": "[IMAGE: image_018.jpg] Kittens on wall laughing, Mittens nearly falling.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_14.png",
+      "characters": [
+        "Tom Kitten",
+        "Mittens",
+        "Moppet",
+        "The Puddle-Ducks"
+      ],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 15,
+      "latin_text": "Anas tunicam caeruleam Thomae induit. Nōn conveniēbat!",
+      "english_text": "Mr. Drake put on Tom's blue suit. It did not fit!",
+      "image_prompt": "[IMAGE: image_020.jpg] Mr. Drake in Tom's ill-fitting blue suit.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_15.png",
+      "characters": [
+        "The Puddle-Ducks"
+      ],
+      "location": "The Lane"
+    },
+    {
+      "page_number": 16,
+      "latin_text": "Anatēs in vestīmentīs fēlīculōrum abiērunt.",
+      "english_text": "The ducks walked away in the kittens' clothes.",
+      "image_prompt": "[IMAGE: image_021.jpg] Ducks waddling up road in kittens' clothes.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_16.png",
+      "characters": [
+        "The Puddle-Ducks"
+      ],
+      "location": "The Lane"
+    },
+    {
+      "page_number": 17,
+      "latin_text": "Tum Māter in hortum vēnit. Fēlīculī nūdī erant!",
+      "english_text": "Then Mother came into the garden. The kittens had no clothes on!",
+      "image_prompt": "[IMAGE: image_022.jpg] Tabitha finding naked kittens on wall.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_17.png",
+      "characters": [
+        "Mrs. Tabitha Twitchit",
+        "Tom Kitten",
+        "Mittens",
+        "Moppet"
+      ],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 18,
+      "latin_text": "Māter īrātissima erat! Fēlīculōs pūnīvit!",
+      "english_text": "Mother was very angry. She smacked the kittens!",
+      "image_prompt": "[IMAGE: image_023.jpg] Tabitha pulling kittens off wall and smacking them.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_18.png",
+      "characters": [
+        "Mrs. Tabitha Twitchit",
+        "Tom Kitten",
+        "Mittens",
+        "Moppet"
+      ],
+      "location": "The Garden"
+    },
+    {
+      "page_number": 19,
+      "latin_text": "Eōs in lectum mīsit. Sed fēlīculī in lectō nōn mānsērunt!",
+      "english_text": "She sent them to bed. But the kittens did not stay in bed!",
+      "image_prompt": "[IMAGE: image_025.jpg] Kittens NOT in bed — climbing curtains, making a mess.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_19.png",
+      "characters": [
+        "Tom Kitten",
+        "Mittens",
+        "Moppet"
+      ],
+      "location": "The House"
+    },
+    {
+      "page_number": 20,
+      "latin_text": "Et vestīmenta anatum in stāgnum cecidērunt!",
+      "english_text": "And the ducks' clothes fell off in the pond!",
+      "image_prompt": "[IMAGE: image_027.jpg] Ducks swimming, clothes falling off in pond.",
+      "image_path": "projects/the_tale_of_tom_kitten/images/page_20.png",
+      "characters": [
+        "The Puddle-Ducks"
+      ],
+      "location": "The Pond"
+    }
+  ]
+}

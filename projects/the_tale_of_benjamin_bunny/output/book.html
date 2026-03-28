@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Palatino', 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .title-page {
+            text-align: center;
+            page-break-after: always;
+            padding-top: 3in;
+        }
+
+        .title-page h1 {
+            font-size: 36pt;
+            margin-bottom: 0.5in;
+            color: #2c3e50;
+        }
+
+        .title-page .english {
+            font-size: 24pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page {
+            page-break-after: always;
+            text-align: center;
+        }
+
+        .story-page img {
+            max-width: 100%;
+            max-height: 7in;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 0.5in auto;
+        }
+
+        .story-page .latin-text {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0.3in 0;
+        }
+
+        .story-page .english-text {
+            font-size: 14pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page .page-number {
+            position: absolute;
+            bottom: 0.3in;
+            right: 0.3in;
+            font-size: 12pt;
+            color: #bdc3c7;
+        }
+
+        .virtue-badge {
+            display: inline-block;
+            border: 2px solid #8e7c5a;
+            border-radius: 20px;
+            padding: 4px 18px;
+            font-size: 13pt;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            color: #8e7c5a;
+            background-color: rgba(255, 255, 255, 0.75);
+            margin-top: 15px;
+        }
+
+        .inside-cover {
+            page-break-after: always;
+            padding-top: 2.5in;
+            text-align: center;
+        }
+
+        .inside-cover h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            margin-bottom: 0.4in;
+            border-bottom: 1px solid #d5c9b1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .virtue-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 8px 0;
+            font-size: 12pt;
+        }
+
+        .virtue-name {
+            width: 140px;
+            text-align: right;
+            padding-right: 15px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            color: #5a5a5a;
+        }
+
+        .virtue-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .virtue-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1.5px solid #8e7c5a;
+        }
+
+        .virtue-dot.filled {
+            background-color: #8e7c5a;
+        }
+
+        .virtue-dot.empty {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="story-page" style="position: relative;">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/cover.png" alt="Cover" style="max-height: 10in; width: 100%;">
+        <div style="position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); text-align: center; width: 90%; background-color: rgba(255, 255, 255, 0.65); padding: 20px; border-radius: 10px;">
+            <h1 style="font-size: 48pt; margin: 0; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Fābula dē Beniāmīnō Cunīculō</h1>
+            <p style="font-size: 28pt; margin: 10px 0 0 0; color: #7f8c8d; font-style: italic;">The Tale of Benjamin Bunny</p>
+            <div class='virtue-badge'>Fortitūdō</div>
+        </div>
+    </div>
+
+
+    <div class="inside-cover">
+        <h2>Virtūtēs</h2>
+        <div class="virtue-row"><span class="virtue-name">Prudentia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Iūstitia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fortitūdō</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Temperantia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fidēs</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Spēs</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Cāritās</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_01.png" alt="Page 1">
+        <p class="latin-text">Peter sōlus sedēbat. Tunicam nōn habēbat, calceōs nōn habēbat.</p>
+        <p class="english-text">Peter sat alone. He had no jacket and no shoes.</p>
+        <span class="page-number">1</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_02.png" alt="Page 2">
+        <p class="latin-text">Māter eum in sūdārium rubrum involvit.</p>
+        <p class="english-text">His mother wrapped him in a red handkerchief.</p>
+        <span class="page-number">2</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_03.png" alt="Page 3">
+        <p class="latin-text">Beniāmīn Cunīculus cōnsobrīnus Petrī erat. Audāx erat.</p>
+        <p class="english-text">Benjamin Bunny was Peter's cousin. He was very bold.</p>
+        <span class="page-number">3</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_04.png" alt="Page 4">
+        <p class="latin-text">Beniāmīn Petrum invēnit. "Cūr trīstis es?" rogāvit.</p>
+        <p class="english-text">Benjamin found Peter. "Why are you sad?" he asked.</p>
+        <span class="page-number">4</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_05.png" alt="Page 5">
+        <p class="latin-text">"Tunicam in hortō āmīsī," inquit Peter.</p>
+        <p class="english-text">"I lost my jacket in the garden," said Peter.</p>
+        <span class="page-number">5</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_06.png" alt="Page 6">
+        <p class="latin-text">"Venī!" inquit Beniāmīn. "Eam recipiēmus!"</p>
+        <p class="english-text">"Come!" said Benjamin. "We will get it back!"</p>
+        <span class="page-number">6</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_07.png" alt="Page 7">
+        <p class="latin-text">Mūrum hortī ascendērunt et dēspexērunt.</p>
+        <p class="english-text">They climbed up the garden wall and looked down.</p>
+        <span class="page-number">7</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_08.png" alt="Page 8">
+        <p class="latin-text">Peter dē mūrō cecidit! In hortum dēvolūtus est.</p>
+        <p class="english-text">Peter fell down from the wall! He tumbled into the garden.</p>
+        <span class="page-number">8</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_09.png" alt="Page 9">
+        <p class="latin-text">Tunicam Petrī in formīdine vīdērunt!</p>
+        <p class="english-text">They saw Peter's jacket on the scarecrow!</p>
+        <span class="page-number">9</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_10.png" alt="Page 10">
+        <p class="latin-text">Beniāmīn tunicam dētrāxit. Peter eam induit.</p>
+        <p class="english-text">Benjamin took the jacket off the scarecrow. Peter put it on.</p>
+        <span class="page-number">10</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_11.png" alt="Page 11">
+        <p class="latin-text">Tum cēpās collēgērunt. Corbulam implēvērunt.</p>
+        <p class="english-text">Then they picked onions to fill their basket.</p>
+        <span class="page-number">11</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_12.png" alt="Page 12">
+        <p class="latin-text">Beniāmīn lactūcam ēdit. Nihil timēbat.</p>
+        <p class="english-text">Benjamin ate some lettuce. He was not afraid at all.</p>
+        <span class="page-number">12</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_13.png" alt="Page 13">
+        <p class="latin-text">Peter cēpās identidem āmittēbat. Trepidābat!</p>
+        <p class="english-text">Peter kept dropping the onions. He was nervous!</p>
+        <span class="page-number">13</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_14.png" alt="Page 14">
+        <p class="latin-text">Peter sonitum audīvit. "Abīre dēbēmus!" inquit.</p>
+        <p class="english-text">Peter heard a noise. "We must go!" he said.</p>
+        <span class="page-number">14</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_15.png" alt="Page 15">
+        <p class="latin-text">Tum fēlem vīdērunt! Magna erat.</p>
+        <p class="english-text">Then they saw the cat! She was very big.</p>
+        <span class="page-number">15</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_16.png" alt="Page 16">
+        <p class="latin-text">Sub corbulā sē abdidērunt. Fēlēs suprā cōnsēdit!</p>
+        <p class="english-text">They hid under a basket. The cat sat on top!</p>
+        <span class="page-number">16</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_17.png" alt="Page 17">
+        <p class="latin-text">Diū exspectāvērunt. Sē movēre nōn poterant.</p>
+        <p class="english-text">They waited and waited. They could not move.</p>
+        <span class="page-number">17</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_18.png" alt="Page 18">
+        <p class="latin-text">Tum senex Dominus Bouncer vēnit! Pater Beniāmīnī erat.</p>
+        <p class="english-text">Then old Mr. Bouncer came! He was Benjamin's father.</p>
+        <span class="page-number">18</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_19.png" alt="Page 19">
+        <p class="latin-text">Dominus Bouncer in fēlem insiluit! Fēlēs fūgit!</p>
+        <p class="english-text">Mr. Bouncer jumped on the cat! She ran away!</p>
+        <span class="page-number">19</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_20.png" alt="Page 20">
+        <p class="latin-text">Beniāmīnum auribus prehendit. Beniāmīn poenās dabat.</p>
+        <p class="english-text">He pulled Benjamin out by the ears. Benjamin was in trouble.</p>
+        <span class="page-number">20</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_21.png" alt="Page 21">
+        <p class="latin-text">Dominus Bouncer eōs domum dūxit. Per portam exiērunt!</p>
+        <p class="english-text">Mr. Bouncer marched them all home. Out the gate!</p>
+        <span class="page-number">21</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/the_tale_of_benjamin_bunny/images/page_22.png" alt="Page 22">
+        <p class="latin-text">Peter cēpās mātrī dedit. Tunicam suam habēbat iterum!</p>
+        <p class="english-text">Peter gave the onions to his mother. He had his jacket back!</p>
+        <span class="page-number">22</span>
+    </div>
+
+
+    <div class="story-page" style="padding-top: 3in; text-align: center;">
+        <p style="font-size: 14pt; color: #7f8c8d;">Illustrations by Beatrix Potter</p>
+        <p style="font-size: 12pt; color: #95a5a6;">from <em>The Tale of Benjamin Bunny</em> (1904)</p>
+        <p style="font-size: 10pt; color: #bdc3c7;">Public Domain</p>
+    </div>
+
+
+</body>
+</html>

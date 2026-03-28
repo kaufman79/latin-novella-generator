@@ -67,5 +67,9 @@
     "Mirrored scenes (3/16, 10/22, 11/23) should use similar composition but with clearly different character expressions and body language",
     "Nighttime throughout — all scenes lit by moonlight, torchlight, or searchlights",
     "No text, watermarks, or UI elements in any image"
+  ],
+  "reference_images": [
+    "toon_link/official/zww-link1.jpg",
+    "toon_link/official/zww-link2.jpg"
   ]
 }

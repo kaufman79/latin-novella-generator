@@ -60,10 +60,23 @@ def get_gemini_client() -> genai.Client:
     return genai.Client(api_key=api_key)
 
 
+def _load_reference_images(ref_paths: list[str]) -> list[types.Part]:
+    """Load reference images as Gemini content parts."""
+    parts = []
+    for path_str in ref_paths:
+        path = Path(path_str)
+        if not path.exists():
+            print(f"    Warning: reference image not found: {path}")
+            continue
+        mime = "image/png" if path.suffix == ".png" else "image/jpeg"
+        parts.append(types.Part.from_bytes(data=path.read_bytes(), mime_type=mime))
+    return parts
+
+
 def generate_image(
     prompt: str,
     resolution: str = DEFAULT_IMAGE_RESOLUTION,
-    quality: str = DEFAULT_IMAGE_QUALITY,
+    reference_images: list[str] | None = None,
 ) -> Image.Image:
     """
     Generate an image using Google Gemini's image generation.
@@ -71,20 +84,29 @@ def generate_image(
     Args:
         prompt: Full self-contained image prompt (style + characters + scene)
         resolution: Image resolution for Gemini (default from config)
-        quality: Unused for Gemini, kept for interface compatibility
+        reference_images: Optional list of file paths to reference images for style/character consistency
 
     Returns:
         PIL Image object
     """
     client = get_gemini_client()
 
+    # Build content: reference images first, then prompt text
+    if reference_images:
+        ref_parts = _load_reference_images(reference_images)
+        style_instruction = "Using the exact art style from these reference images — the textured cel-shading, brush-stroke coloring, thick black outlines, and character proportions — generate a new scene:\n\n"
+        contents = ref_parts + [style_instruction + prompt]
+    else:
+        contents = prompt
+
     response = client.models.generate_content(
         model=GEMINI_IMAGE_MODEL,
-        contents=prompt,
+        contents=contents,
         config=types.GenerateContentConfig(
             response_modalities=["IMAGE", "TEXT"],
             image_config=types.ImageConfig(
                 image_size=resolution,
+                aspect_ratio="1:1",
             ),
         ),
     )
@@ -202,15 +224,34 @@ def generate_book_images(
 
     print(f"Generating {total} image(s) for '{project_id}' using Gemini ({GEMINI_IMAGE_MODEL})...")
 
+    # Load reference images from visual bible
+    ref_images_dir = Path("reference_images")
+    default_refs = []
+    if visual_bible and "reference_images" in visual_bible:
+        for ref_path in visual_bible["reference_images"]:
+            full_path = Path(ref_path)
+            if not full_path.is_absolute():
+                full_path = ref_images_dir / ref_path
+            if full_path.exists():
+                default_refs.append(str(full_path))
+            else:
+                print(f"  Warning: reference image not found: {full_path}")
+
+    if default_refs:
+        print(f"  Using {len(default_refs)} reference image(s) for style consistency")
+
     for i, page_prompt in enumerate(page_prompts):
         page_num = page_prompt["page_number"]
         prompt = build_prompt_from_visual_bible(visual_bible, page_prompt)
         prompt = _sanitize_prompt(prompt)
 
+        # Use page-specific refs if provided, otherwise default refs
+        page_refs = page_prompt.get("reference_images", default_refs)
+
         print(f"  Page {page_num} ({i+1}/{total})...")
 
         try:
-            image = generate_image(prompt, resolution=size, quality=quality)
+            image = generate_image(prompt, resolution=size, reference_images=page_refs)
 
             image_path = images_dir / f"page_{page_num:02d}.png"
             image.save(image_path)
@@ -246,6 +287,162 @@ def generate_book_images(
     return image_paths
 
 
+def generate_book_images_batch(
+    project_id: str,
+    pages: Optional[list[int]] = None,
+    size: str = DEFAULT_IMAGE_RESOLUTION,
+) -> str:
+    """
+    Submit a batch job for all book images (50% cheaper, async).
+
+    Returns the batch job name for polling.
+    """
+    project_dir = Path("projects") / project_id
+    prompts_file = project_dir / "art" / "prompts.json"
+    images_dir = project_dir / "images"
+    images_dir.mkdir(parents=True, exist_ok=True)
+
+    if not prompts_file.exists():
+        raise FileNotFoundError(f"Prompts file not found: {prompts_file}")
+
+    with open(prompts_file) as f:
+        prompts_data = json.load(f)
+
+    visual_bible_file = project_dir / "art" / "visual_bible.json"
+    visual_bible = None
+    if visual_bible_file.exists():
+        with open(visual_bible_file) as f:
+            visual_bible = json.load(f)
+
+    page_prompts = prompts_data["pages"]
+    if pages:
+        page_prompts = [p for p in page_prompts if p["page_number"] in pages]
+
+    # Load default reference images
+    ref_images_dir = Path("reference_images")
+    default_refs = []
+    if visual_bible and "reference_images" in visual_bible:
+        for ref_path in visual_bible["reference_images"]:
+            full_path = ref_images_dir / ref_path
+            if full_path.exists():
+                default_refs.append(full_path)
+
+    # Build JSONL requests
+    jsonl_file = project_dir / "batch_requests.jsonl"
+    style_instruction = "Using the exact art style from these reference images — the textured cel-shading, brush-stroke coloring, thick black outlines, and character proportions — generate a new scene:\n\n"
+
+    with open(jsonl_file, "w") as f:
+        for page_prompt in page_prompts:
+            page_num = page_prompt["page_number"]
+            prompt = build_prompt_from_visual_bible(visual_bible, page_prompt)
+            prompt = _sanitize_prompt(prompt)
+            page_refs = page_prompt.get("reference_images", [str(r) for r in default_refs])
+
+            # Build content parts
+            parts = []
+            for ref_path in page_refs:
+                ref = Path(ref_path)
+                if not ref.exists():
+                    ref = ref_images_dir / ref_path
+                if ref.exists():
+                    mime = "image/png" if ref.suffix == ".png" else "image/jpeg"
+                    b64 = base64.b64encode(ref.read_bytes()).decode()
+                    parts.append({"inlineData": {"mimeType": mime, "data": b64}})
+
+            parts.append({"text": style_instruction + prompt if parts else prompt})
+
+            request = {
+                "key": f"page_{page_num:02d}",
+                "request": {
+                    "contents": [{"parts": parts}],
+                    "generation_config": {
+                        "responseModalities": ["TEXT", "IMAGE"],
+                    },
+                },
+            }
+            f.write(json.dumps(request) + "\n")
+
+    print(f"Created batch request file with {len(page_prompts)} pages")
+
+    # Upload and submit batch job
+    client = get_gemini_client()
+
+    uploaded_file = client.files.upload(
+        file=str(jsonl_file),
+        config=types.UploadFileConfig(
+            display_name=f"{project_id}-image-batch",
+            mime_type="jsonl",
+        ),
+    )
+    print(f"Uploaded request file: {uploaded_file.name}")
+
+    batch_job = client.batches.create(
+        model=GEMINI_IMAGE_MODEL,
+        src=uploaded_file.name,
+        config={"display_name": f"{project_id}-images"},
+    )
+    print(f"Batch job created: {batch_job.name}")
+    print(f"Status: {batch_job.state.name}")
+    print(f"\nTo check status: python scripts/image_generator.py {project_id} --batch-status {batch_job.name}")
+    print(f"To download results: python scripts/image_generator.py {project_id} --batch-download {batch_job.name}")
+
+    return batch_job.name
+
+
+def check_batch_status(batch_name: str) -> str:
+    """Check the status of a batch job."""
+    client = get_gemini_client()
+    batch_job = client.batches.get(name=batch_name)
+    print(f"Job: {batch_job.name}")
+    print(f"Status: {batch_job.state.name}")
+    return batch_job.state.name
+
+
+def download_batch_results(project_id: str, batch_name: str) -> dict[int, str]:
+    """Download completed batch results and save images."""
+    client = get_gemini_client()
+    batch_job = client.batches.get(name=batch_name)
+
+    if batch_job.state.name != "JOB_STATE_SUCCEEDED":
+        print(f"Job not complete. Status: {batch_job.state.name}")
+        return {}
+
+    project_dir = Path("projects") / project_id
+    images_dir = project_dir / "images"
+    images_dir.mkdir(parents=True, exist_ok=True)
+
+    result_file_name = batch_job.dest.file_name
+    print(f"Downloading results from {result_file_name}...")
+    file_content_bytes = client.files.download(file=result_file_name)
+    file_content = file_content_bytes.decode("utf-8")
+
+    image_paths = {}
+    for line in file_content.splitlines():
+        if not line:
+            continue
+        parsed = json.loads(line)
+        key = parsed.get("key", "")
+        page_num = int(key.replace("page_", ""))
+
+        if "response" in parsed and parsed["response"]:
+            for part in parsed["response"]["candidates"][0]["content"]["parts"]:
+                if part.get("inlineData"):
+                    data = base64.b64decode(part["inlineData"]["data"])
+                    img = Image.open(BytesIO(data))
+                    image_path = images_dir / f"page_{page_num:02d}.png"
+                    img.save(image_path)
+                    image_paths[page_num] = str(image_path)
+                    print(f"  Saved page {page_num}: {image_path}")
+                    break
+        elif "error" in parsed:
+            print(f"  Page {page_num} error: {parsed['error']}")
+            image_paths[page_num] = None
+
+    success = sum(1 for v in image_paths.values() if v)
+    print(f"\nDone: {success}/{len(image_paths)} images saved.")
+    return image_paths
+
+
 def main():
     """CLI for image generation."""
     import argparse
@@ -255,17 +452,28 @@ def main():
     parser.add_argument("--pages", type=int, nargs="+", help="Specific page numbers to generate")
     parser.add_argument("--size", default=DEFAULT_IMAGE_RESOLUTION,
                         help=f"Image resolution (default: {DEFAULT_IMAGE_RESOLUTION})")
-    parser.add_argument("--quality", default=DEFAULT_IMAGE_QUALITY,
-                        help=f"Quality: low/medium/high (default: {DEFAULT_IMAGE_QUALITY})")
+    parser.add_argument("--batch", action="store_true", help="Use batch API (50%% cheaper, async)")
+    parser.add_argument("--batch-status", metavar="JOB_NAME", help="Check batch job status")
+    parser.add_argument("--batch-download", metavar="JOB_NAME", help="Download batch job results")
 
     args = parser.parse_args()
 
-    generate_book_images(
-        project_id=args.project_id,
-        pages=args.pages,
-        size=args.size,
-        quality=args.quality,
-    )
+    if args.batch_status:
+        check_batch_status(args.batch_status)
+    elif args.batch_download:
+        download_batch_results(args.project_id, args.batch_download)
+    elif args.batch:
+        generate_book_images_batch(
+            project_id=args.project_id,
+            pages=args.pages,
+            size=args.size,
+        )
+    else:
+        generate_book_images(
+            project_id=args.project_id,
+            pages=args.pages,
+            size=args.size,
+        )
 
 
 if __name__ == "__main__":

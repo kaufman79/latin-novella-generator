@@ -1,0 +1,29 @@
+{
+  "project_id": "the_tale_of_benjamin_bunny",
+  "title_english": "The Tale of Benjamin Bunny",
+  "title_latin": "Fābula dē Beniāmīnō Cunīculō",
+  "source_type": "public_domain_adaptation",
+  "public_domain_source": {
+    "title": "The Tale of Benjamin Bunny",
+    "author": "Beatrix Potter",
+    "illustrator": "Beatrix Potter",
+    "source_url": "https://www.gutenberg.org/ebooks/14407",
+    "year": 1904,
+    "license": "Public Domain"
+  },
+  "theme": null,
+  "target_pages": 22,
+  "virtue_ratings": {
+    "prudentia": 1,
+    "iustitia": 1,
+    "fortitudo": 3,
+    "temperantia": 1,
+    "fides": 3,
+    "spes": 1,
+    "caritas": 1
+  },
+  "status": "initialized",
+  "date_created": "2026-03-28T02:44:40.099543",
+  "date_modified": "2026-03-28T02:44:40.099556",
+  "project_folder": "projects/the_tale_of_benjamin_bunny"
+}

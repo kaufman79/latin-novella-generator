@@ -98,6 +98,7 @@ class VisualBible(BaseModel):
     characters: Dict[str, CharacterVisual]
     locations: Dict[str, LocationVisual]
     composition_rules: List[str] = Field(default_factory=list)
+    reference_images: List[str] = Field(default_factory=list)  # Default ref image paths for all pages
 
 
 class PagePrompt(BaseModel):
@@ -106,6 +107,7 @@ class PagePrompt(BaseModel):
     prompt: str  # Full self-contained prompt (style + characters + location + scene)
     characters_in_scene: List[str] = Field(default_factory=list)
     location: Optional[str] = None
+    reference_images: Optional[List[str]] = None  # Page-specific refs (overrides visual bible defaults)
 
 
 class ImagePrompts(BaseModel):

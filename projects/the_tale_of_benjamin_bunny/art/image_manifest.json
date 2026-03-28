@@ -1,0 +1,166 @@
+{
+  "pd_source": {
+    "title": "The Tale of Benjamin Bunny",
+    "author": "Beatrix Potter",
+    "illustrator": "Beatrix Potter",
+    "source_url": "https://www.gutenberg.org/ebooks/14407",
+    "year": 1904,
+    "license": "Public Domain"
+  },
+  "mappings": [
+    {
+      "page_number": 1,
+      "source": "existing",
+      "image_filename": "image_003.jpg",
+      "original_caption": "On the bank — Peter sitting alone without his jacket",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 2,
+      "source": "existing",
+      "image_filename": "image_007.jpg",
+      "original_caption": "In a handkerchief — Peter wrapped in a red cotton handkerchief",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 3,
+      "source": "existing",
+      "image_filename": "image_004.jpg",
+      "original_caption": "Hop, skip — Benjamin Bunny walking through the woods",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 4,
+      "source": "existing",
+      "image_filename": "image_008.jpg",
+      "original_caption": "The Whisper — Benjamin whispering to Peter",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 5,
+      "source": "existing",
+      "image_filename": "image_006.jpg",
+      "original_caption": "Ears — Peter sitting hunched, looking sad",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 6,
+      "source": "existing",
+      "image_filename": "image_009.jpg",
+      "original_caption": "Led away — Benjamin leading Peter toward the garden",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 7,
+      "source": "existing",
+      "image_filename": "image_010.jpg",
+      "original_caption": "Looking Down on the Garden — two rabbits atop the wall",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 8,
+      "source": "existing",
+      "image_filename": "image_011.jpg",
+      "original_caption": "Falling — Peter tumbling from the wall into the garden",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 9,
+      "source": "existing",
+      "image_filename": "image_013.jpg",
+      "original_caption": "Tam — the scarecrow wearing Peter's jacket, Benjamin taking the hat",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 10,
+      "source": "existing",
+      "image_filename": "image_012.jpg",
+      "original_caption": "Footmarks — Peter back in his jacket, standing with Benjamin",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 11,
+      "source": "existing",
+      "image_filename": "image_014.jpg",
+      "original_caption": "Filling the pockets — Peter and Benjamin gathering onions",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 12,
+      "source": "existing",
+      "image_filename": "image_015.jpg",
+      "original_caption": "Munching lettuce — Benjamin eating lettuce in the garden",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 13,
+      "source": "existing",
+      "image_filename": "image_016.jpg",
+      "original_caption": "Dropping Onions — Peter dropping onions from the handkerchief",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 14,
+      "source": "existing",
+      "image_filename": "image_019.jpg",
+      "original_caption": "Hearing Noises — Peter and Benjamin alert in the garden",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 15,
+      "source": "existing",
+      "image_filename": "image_020.jpg",
+      "original_caption": "Cat — the two rabbits seeing the large tabby cat",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 16,
+      "source": "existing",
+      "image_filename": "image_022.jpg",
+      "original_caption": "Cat on Basket — the cat sleeping on the basket trapping the rabbits",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 17,
+      "source": "existing",
+      "image_filename": "image_021.jpg",
+      "original_caption": "Cat Sniffing Basket — the cat investigating the basket",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 18,
+      "source": "existing",
+      "image_filename": "image_023.jpg",
+      "original_caption": "Benjamin — old Mr. Bouncer striding through the garden",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 19,
+      "source": "existing",
+      "image_filename": "image_024.jpg",
+      "original_caption": "Benjamin Pounces — Mr. Bouncer leaping onto the cat",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 20,
+      "source": "existing",
+      "image_filename": "image_025.jpg",
+      "original_caption": "By the Ears — Mr. Bouncer grabbing Benjamin by the ears",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 21,
+      "source": "existing",
+      "image_filename": "image_026.jpg",
+      "original_caption": "Marching — Mr. Bouncer marching the rabbits out through the gate",
+      "generate_prompt": null
+    },
+    {
+      "page_number": 22,
+      "source": "existing",
+      "image_filename": "image_028.jpg",
+      "original_caption": "Home Again — Peter giving onions to Mrs. Rabbit at home",
+      "generate_prompt": null
+    }
+  ]
+}
