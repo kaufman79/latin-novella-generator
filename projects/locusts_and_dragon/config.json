@@ -915,11 +915,11 @@
   "project_folder": "projects/locusts_and_dragon",
   "virtue_ratings": {
     "prudentia": 2,
-    "iustitia": 0,
-    "fortitudo": 4,
+    "iustitia": 1,
+    "fortitudo": 3,
     "temperantia": 0,
     "fides": 0,
-    "spes": 0,
+    "spes": 1,
     "caritas": 1
   }
 }

@@ -966,10 +966,10 @@
   "virtue_ratings": {
     "prudentia": 0,
     "iustitia": 0,
-    "fortitudo": 2,
+    "fortitudo": 1,
     "temperantia": 0,
     "fides": 0,
     "spes": 0,
-    "caritas": 2
+    "caritas": 1
   }
 }

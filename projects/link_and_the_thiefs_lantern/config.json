@@ -1,0 +1,19 @@
+{
+  "project_id": "link_and_the_thiefs_lantern",
+  "title_english": "Link and the Thief's Lantern",
+  "title_latin": null,
+  "source_type": "original",
+  "theme": "mystery",
+  "target_pages": 23,
+  "status": "outlined",
+  "virtue_ratings": {
+    "prudentia": 4,
+    "iustitia": 4,
+    "fortitudo": 1,
+    "temperantia": 0,
+    "fides": 2,
+    "spes": 0,
+    "caritas": 4
+  },
+  "project_folder": "projects/link_and_the_thiefs_lantern"
+}

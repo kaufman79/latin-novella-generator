@@ -866,12 +866,12 @@
   "date_modified": "2025-10-20T17:32:50.252871",
   "project_folder": "projects/augustine_steals_the_pears",
   "virtue_ratings": {
-    "prudentia": 0,
+    "prudentia": 1,
     "iustitia": 3,
-    "fortitudo": 1,
-    "temperantia": 4,
-    "fides": 2,
+    "fortitudo": 0,
+    "temperantia": 5,
+    "fides": 1,
     "spes": 0,
-    "caritas": 2
+    "caritas": 1
   }
 }

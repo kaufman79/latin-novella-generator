@@ -17,15 +17,15 @@ These books are not just entertainment — they are forming a child's moral imag
 ### The Virtues
 
 **Cardinal Virtues (Aristotelian):**
-- **Prudentia** (Prudence) — practical wisdom, good judgment, discernment
-- **Iustitia** (Justice) — giving others their due, fairness, doing right by others
-- **Fortitudo** (Fortitude) — courage, endurance, perseverance through difficulty
-- **Temperantia** (Temperance) — self-control, moderation, resisting impulse
+- **Prudentia** (Prudence / Practical Wisdom) — perceiving what a situation really is and determining the right response, then acting decisively on that judgment. Not caution or timidity — the prudent person sees reality clearly and commands action. The charioteer of the virtues (*auriga virtutum*).
+- **Iustitia** (Justice) — the settled disposition to recognize and render to each person what genuinely belongs to them: their rights, their due, their fair share. Relational by nature — it always faces outward toward other persons. The minimum of love.
+- **Fortitudo** (Fortitude / Courage) — the firm disposition to endure dangers and hardships for the sake of a genuine good, without being broken. The principal act is *sustinere* (endurance), not *aggredi* (attack) — holding firm over time, not the dramatic charge.
+- **Temperantia** (Temperance / Self-Governance) — the inner ordering of the self, so that desires and appetites serve one's genuine good rather than ruling one's life. Not denial of pleasure but right proportion — the temperate person is free; the intemperate person is enslaved.
 
 **Theological Virtues (Pauline/Scholastic):**
-- **Fides** (Faith) — trust, belief, faithfulness
-- **Spes** (Hope) — hope, confidence in good outcomes, not despairing
-- **Caritas** (Charity/Love) — self-giving love, compassion, mercy, generosity
+- **Fides** (Faith / Trust) — entrusting yourself to another person based on their character; faithfulness and loyalty. Not blind credulity but relational trust that involves vulnerability — the decision to trust when you could choose not to.
+- **Spes** (Hope) — the confident, active pursuit of a genuine good that is difficult to reach, sustained through hardship and delay. Not optimism or wishful thinking — spes looks the difficulty in the face and moves forward anyway. Hope gives fortitudo its direction; fortitudo gives spes its backbone.
+- **Caritas** (Charity / Love) — actively willing and doing the genuine good of another person, even at cost to yourself. Not "being nice" or sentimentality — caritas is a choice sustained over time, expressed through sacrifice, mercy, patience, and joy in the other's flourishing.
 
 **Related Virtues:**
 - Humilitas, Patientia, Misericordia, Gratitudo, Pietas, Magnanimitas, Mansuetudo
@@ -43,6 +43,10 @@ Every story should be checked against these five questions before production:
 ### Virtue Ratings & Tracking
 
 Each book's `config.json` carries a `virtue_ratings` object rating how strongly it models each virtue (0-5 scale for each of the 7 cardinal + theological virtues). The collection should be balanced across virtues over time.
+
+For detailed rubrics, rating guidelines (with examples at each level 0-5), and philosophical background on each virtue, see:
+- `docs/cardinal_virtues_deep_dive.md` — Prudentia, Iustitia, Fortitudo, Temperantia
+- `docs/theological_virtues_deep_dive.md` — Fides, Spes, Caritas
 
 **Virtue badge on cover:** The PDF builder reads the highest-rated virtue from `config.json` and displays it as a badge on the front cover (e.g. "Fortitudo") in Latin with proper macrons, small-caps, and a decorative border.
 
@@ -229,8 +233,11 @@ reference_images/               # Reusable character/style references
 existing_stories/               # Published Latin picture books (PDFs, for vocabulary/style reference)
 docs/                           # Project documentation
 ├── public_domain_story_ideas.md
+├── cardinal_virtues_deep_dive.md    # Detailed rubrics for prudentia, iustitia, fortitudo, temperantia
+├── theological_virtues_deep_dive.md # Detailed rubrics for fides, spes, caritas
 ├── pd_adaptation_pipeline.md
-└── pd_adaptation_priorities.md
+├── pd_adaptation_priorities.md
+└── potter_books_research.md
 output/                         # Cross-project outputs
 └── virtue_chart.png            # Virtue coverage visualization
 ```

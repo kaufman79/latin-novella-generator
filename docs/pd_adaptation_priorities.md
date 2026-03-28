@@ -4,7 +4,9 @@ Prioritized plan for which stories to adapt first, based on virtue gaps, story q
 
 ## Current Virtue Coverage
 
-Ratings from existing books (0-5 scale):
+> **Note:** The ratings table below is from the initial planning phase and may be outdated. The authoritative virtue ratings live in each book's `config.json`. For the most current coverage data, run `python scripts/virtue_chart.py`. For detailed rating rubrics (what each 0-5 level means), see `docs/cardinal_virtues_deep_dive.md` and `docs/theological_virtues_deep_dive.md`.
+
+Ratings from existing books (0-5 scale) — **snapshot from initial planning, may not reflect re-ratings**:
 
 | Virtue | Augustine Pears | Dada Cockroach | Locusts Dragon | Lion/Witch/Wardrobe | Link Treasure | **Total** | **Gap?** |
 |--------|:-:|:-:|:-:|:-:|:-:|:-:|:--|
