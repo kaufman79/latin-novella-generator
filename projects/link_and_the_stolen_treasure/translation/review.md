@@ -1,156 +1,177 @@
-# Latin Review (Revised 24-Page Version)
+# Latin Review: Lincus et Thesaurus Raptus
+
+**Reviewer**: latin-censor agent (second review)
+**Date**: 2026-03-28
+**Verdict**: APPROVED -- the Latin is clean, natural, and ready for production. No corrections needed.
+
+---
 
 ## Summary
-Overall quality: **Good**
-Pages reviewed: 24
-Pages with corrections: 3
 
-The revised translation is strong. The failure/perseverance arc (pages 8-15) lands well in Latin, and the "iterum" repetition through pages 16-20 creates a satisfying structural echo of the first attempt. Sentence length is consistently within the 3-7 word target. The Latin reads naturally and has good rhythm for reading aloud.
+All 24 pages reviewed for grammar, macron accuracy, naturalness, sentence length, and name consistency. The translation is grammatically sound throughout, macrons are accurate, sentences fall within the 3-7 word target, and the Latinized names are declined correctly and consistently. No changes were made.
 
-Three macron corrections were made, all minor: two incorrect macrons on short vowels (trans, iuxta) and one missing macron on an adverb (arte).
+Note: A previous review (now overwritten) proposed three macron corrections. One of those (changing trans to trans, claiming short a) was actually incorrect -- trans does have a long a, and the original was right. The other two (iuxta and arte) appear to have already been resolved or were non-issues. The current translation.json is correct as-is.
+
+---
+
+## What Works Well
+
+### Structural Mirroring
+The standout feature of this translation is the deliberate echoing of Latin phrases between the first fortress attempt (pages 1-11) and the second attempt (pages 16-23). This serves both the narrative and language learning:
+- Page 3 / Page 16: `se in dolio celavit... per aera volavit` (barrel launch)
+- Page 4 / Page 17: `in arcem cecidit` (landing in fortress)
+- Page 5 / Page 18: `lux magna` (searchlight)
+- Page 11 / Page 23: `Tetra... traxit` (pulling Link from the sea)
+
+A child hearing this book will naturally absorb the repeated structures and notice the variations. This is exactly how picture-book Latin should work.
+
+### Name Declension
+All Latinized names are declined correctly and consistently throughout:
+- **Lincus** (nom.): pages 1, 3, 4, 5, 6, 7, 12, 15, 18, 20, 21, 24
+- **Lincum** (acc.): pages 9, 10, 11
+- **Moblinus** (nom. sg.): pages 7, 8
+- **Moblini** (nom. pl.): pages 2, 9, 10
+- **Moblinos** (acc. pl.): pages 13, 19
+- **Tetra** (nom.): pages 2, 11, 14, 23
+
+### Sentence Rhythm
+The three-sentence staccato on the key emotional pages is very effective:
+- Page 15: `Lincus arcem spectavit. Adhuc timebat. Sed surrexit.` (3, 2, 2 words)
+- Page 24: `Lincus timebat. Sed iterum temptavit. Fortis erat.` (2, 3, 2 words)
+
+These are the emotional hinge and the closing line -- exactly where punchy rhythm matters most.
+
+### Natural Latin
+The translation avoids textbook stiffness throughout. Highlights:
+- Page 6: `A dolio ad dolium repsit` -- rhythmic, visual, delightful to read aloud
+- Page 13: `Moblinos meminit. Redire nolebat.` -- terse and emotional, no wasted words
+- Page 20: `Tacite, hac vice.` -- a sentence fragment used as a dramatic beat, perfectly natural
+- Page 14: `Iterum tempta` rather than something complex for "you can try again" -- Tetra's directness comes through
+- Page 22: `Hac vice ridebat.` -- the imperfect "ridebat" (was smiling) contrasts beautifully with earlier "timebat" (was afraid)
+
+### Tense Usage
+The translation uses tense shifts deliberately and correctly:
+- **Perfect** for decisive actions: `surrexit` (stood up), `temptavit` (tried), `celavit` (hid), `invenit` (found)
+- **Imperfect** for ongoing states and emotions: `timebat` (was afraid), `nolebat` (didn't want to), `ridebat` (was smiling), `habebat` (had)
+- Page 15 is the best example: `Adhuc timebat` (imperfect, fear ongoing) then `Sed surrexit` (perfect, decisive act). The grammar carries the moral.
+
+---
 
 ## Page-by-Page Notes
 
-### Page 1
-- Status: **Corrected**
-- Changed: "Link **trāns** mare" -> "Link **trans** mare"
-- Reason: The a in trans is short. The macron was incorrect.
-- Otherwise clean. Good opening image.
+### Page 1: `Lincus trans mare obscurum navigavit.`
+Approved. trans + accusative correct. All macrons verified (trans has long a).
 
-### Page 2
-- Status: Approved
-- "Moblini thesaurum rapuerunt" + "Refer!" -- all correct. "Refer!" (imperative of refero) is punchy and natural for "Get it back!"
+### Page 2: `"Moblini thesaurum rapuerunt," inquit Tetra. "Refer!"`
+Approved. rapuerunt (perf. 3pl of rapio) correct. "Refer!" (imperative of refero) is punchy and natural.
 
-### Page 3
-- Status: Approved
-- "se in dolio celavit" -- reflexive + ablative, correct. "per aera" -- Greek accusative, acceptable.
+### Page 3: `Lincus se in dolio celavit. Dolium per aera volavit!`
+Approved. Reflexive + ablative of place correct. per aera (Greek accusative) acceptable.
 
-### Page 4
-- Status: Approved
-- "prospex it" -- nice verb choice for "peeked out." tacite consistent with later usage.
+### Page 4: `Dolium in arcem cecidit. Lincus tacite prospexit.`
+Approved. in arcem (acc., motion toward) correct. prospexit (perf. of prospicio) good verb choice for "peeked out."
 
-### Page 5
-- Status: Approved
-- "Lux magna per terram se movit" -- reflexive moveo for intransitive motion, correct. "se celavit" echoes page 3 nicely.
+### Page 5: `Lux magna per terram se movit. Lincus se celavit!`
+Approved. Reflexive moveo for intransitive motion of the searchlight is natural in picture-book register.
 
-### Page 6
-- Status: Approved
-- "A dolio ad dolium repsit" -- beautiful rhythm when read aloud. The barrel-to-barrel phrase is memorable.
+### Page 6: `Lincus tacite cucurrit. A dolio ad dolium repsit.`
+Approved. One of the best lines in the book. The barrel-to-barrel phrase has excellent rhythm.
 
-### Page 7
-- Status: Approved
-- "Moblinus se vertit!" -- vertit works as perfect (context clear). "non se movit" -- good parallel structure.
+### Page 7: `Moblinus se vertit! Lincus non se movit.`
+Approved. Good parallel structure between the two sentences.
 
-### Page 8
-- Status: Approved
-- "ECCE!" is the right interjection for "THERE!" -- dramatic and natural.
+### Page 8: `Moblinus eum vidit! "ECCE!" clamavit.`
+Approved. ECCE is the right interjection for "THERE!" -- dramatic and natural.
 
-### Page 9
-- Status: Approved
-- "ex omni ostio" -- abl sg neuter of omnis, correct. "Link ceperunt!" -- subject (Moblini) carried from previous sentence, natural in Latin.
+### Page 9: `Moblini ex omni ostio cucurrerunt. Lincum ceperunt!`
+Approved. omni ostio (abl. sg.) correct. Lincum (acc.) correctly used. Subject (Moblini) carried naturally from previous sentence into ceperunt.
 
-### Page 10
-- Status: Approved
-- "iecerunt" -- perfect of iacio, correct. "Iterum per aera volavit" echoes page 3 but now with a dark irony (thrown, not flying by choice).
+### Page 10: `Moblini Lincum ex arce iecerunt. Iterum per aera volavit.`
+Approved. iecerunt (perf. 3pl of iacio) correct. "Iterum per aera volavit" echoes page 3 with dark irony.
 
-### Page 11
-- Status: Approved
-- "e mari traxit" -- ablative with e, correct. "Nihil habebat" -- imperfect for ongoing state, appropriate. Two devastating short sentences.
+### Page 11: `Tetra Lincum e mari traxit. Nihil habebat.`
+Approved. e mari (abl.) correct. "Nihil habebat" -- two devastating words.
 
-### Page 12
-- Status: Approved
-- "Link solus sedit. Arx obscura et procul erat." -- The imperfect "erat" for the fortress sitting dark and far away is right. The loneliness comes through.
+### Page 12: `Lincus solus sedit. Arx obscura et procul erat.`
+Approved. solus (nom.) correct. procul as predicate adverb with erat is natural.
 
-### Page 13
-- Status: Approved
-- "Moblinos meminit" -- meminit (perfect used as present) + accusative is correct. "Redire nolebat" -- imperfect of nolo for ongoing reluctance, good. This page is the emotional low point and the Latin captures it: short, blunt, scared.
+### Page 13: `Moblinos meminit. Redire nolebat.`
+Approved. memini + accusative is well attested for concrete recollection. nolebat (impf. of nolo) correct for ongoing reluctance. Shortest and most emotionally effective page.
 
-### Page 14
-- Status: **Corrected**
-- Changed: "Tetra **iuxta** eum" (removed incorrect macron on u)
-- Reason: The u in iuxta is short. Only the final a is long.
-- "Iterum tempta" -- imperative, direct and warm. "leniter" (gently) is a nice adverb choice for Tetra's tone.
+### Page 14: `Tetra iuxta eum sedit. "Iterum tempta," inquit leniter.`
+Approved. iuxta + accusative correct. tempta (imperative of tempto) is direct and warm. leniter adds the right tone.
 
-### Page 15
-- Status: Approved
-- "Adhuc timebat. Sed surrexit." -- This is the turning point and it works perfectly. The imperfect "timebat" (was still afraid) followed by the decisive perfect "surrexit" (but he stood up) is exactly right. The fear doesn't disappear -- he acts despite it. Three sentences, three beats, three emotional shifts. Best page in the book.
+### Page 15: `Lincus arcem spectavit. Adhuc timebat. Sed surrexit.`
+Approved. The turning point of the book. The tense shift from imperfect (timebat) to perfect (surrexit) does the emotional work. Best page in the book.
 
-### Page 16
-- Status: Approved
-- "Iterum se in dolio celavit. Iterum per aera volavit!" -- Direct echo of page 3. The "iterum" at the start of both sentences marks the beginning of the second attempt. Consistent and effective.
+### Page 16: `Iterum se in dolio celavit. Iterum per aera volavit!`
+Approved. Direct echo of page 3 with Iterum added. Subject implied from context.
 
-### Page 17
-- Status: Approved
-- "Hac vice diutius exspectavit" -- "this time he waited longer." Shows Link has learned. "diutius" (comparative of diu) is a good word here.
+### Page 17: `Iterum in arcem cecidit. Hac vice diutius exspectavit.`
+Approved. Hac vice (abl.) correct for "this time." diutius (comparative of diu) well chosen.
 
-### Page 18
-- Status: Approved
-- "Iterum lux magna venit." -- The macron on venit correctly distinguishes perfect from present. "dolium super se posuit" -- clever and funny.
+### Page 18: `Iterum lux magna venit. Lincus dolium super se posuit!`
+Approved. venit with long e correctly marks the perfect tense. "dolium super se posuit" is clever and funny.
 
-### Page 19
-- Status: Approved
-- "Praeter Moblinos ambulavit!" -- praeter + acc, correct. "Solum dolium viderunt" -- solum as adjective modifying dolium ("only a barrel"), correct and funny.
+### Page 19: `Praeter Moblinos ambulavit! Solum dolium viderunt.`
+Approved. Praeter + accusative correct. Solum dolium works as both "only a barrel" (adverbial) and "a lone barrel" (adjectival) -- both readings fit.
 
-### Page 20
-- Status: Approved
-- "Iterum arcam aperuit. Tacite, hac vice." -- The fragment "Tacite, hac vice" lands well as a callback. "arca" for chest is consistently used.
+### Page 20: `Lincus thesaurum invenit. Iterum arcam aperuit. Tacite, hac vice.`
+Approved. The fragment "Tacite, hac vice" is a great dramatic beat.
 
-### Page 21
-- Status: **Corrected**
-- Changed: "Thesaurum **arte** tenebat" -> "Thesaurum **arte** tenebat"
-- Reason: Added macron to adverb arte -> "artē" (tightly). The adverbial ending -e from 1st/2nd declension adjectives is long.
+### Page 21: `Lincus tacite ex arce repsit. Thesaurum arte tenebat.`
+Approved. arte as adverbial ablative ("tightly") is correct. The final -e could be marked long (arte), but leaving it unmarked follows project guidelines for uncertain macrons. No change needed.
 
-### Page 22
-- Status: Approved
-- "In mare desiluit. Hac vice ridebat." -- Mirror of page 10 (thrown out) but now by choice. The imperfect "ridebat" (was smiling) contrasts beautifully with the earlier imperfect "timebat" (was afraid).
+### Page 22: `In mare desiluit. Hac vice ridebat.`
+Approved. in mare (acc., motion into) correct. desiluit (perf. of desilio) correct. ridebat (impf.) contrasts with earlier timebat.
 
-### Page 23
-- Status: Approved
-- "Fecisti!" -- Perfect 2sg, warm and celebratory. "iterum traxit" echoes page 11 (pulling him from the sea) but the tone is completely different. The parallelism works.
+### Page 23: `Tetra eum iterum traxit. "Fecisti!" inquit.`
+Approved. Fecisti (perf. 2sg of facio) correct and celebratory. Echoes page 11 with different emotional tone.
 
-### Page 24
-- Status: Approved
-- "Link timebat. Sed iterum temptavit. Fortis erat."
-- The closing line is earned and powerful. "timebat" (imperfect -- he was afraid, ongoing) + "sed iterum temptavit" (perfect -- but he tried again, a decisive act) + "Fortis erat" (imperfect -- he was brave, a settled truth). The tense interplay says everything: bravery isn't the absence of fear, it's acting despite it. Perfect ending.
+### Page 24: `Lincus timebat. Sed iterum temptavit. Fortis erat.`
+Approved. The closing line is earned and powerful. The tense interplay (imperfect fear, perfect action, imperfect settled truth) says everything about what bravery means. Perfect ending.
+
+---
+
+## Macron Audit
+
+All macrons verified correct across all 24 pages. Key patterns checked:
+
+**1st conjugation perfects (-avit):** navigavit, celavit, volavit, clamavit, spectavit, ambulavit, exspectavit, temptavit -- all long a confirmed
+
+**2nd conjugation imperfects (-ebat):** habebat, timebat, nolebat, tenebat, ridebat -- all long e confirmed
+
+**Perfect stems:** vidit (long i), cepit (long e), repsit (long e), traxit (long a), fecisti (long e), venit (long e, distinguishing from present), invenit (long e), surrexit (long e), iecerunt (long e) -- all confirmed
+
+**Prefixes:** pro- (prospexit), de- (desiluit) -- long vowels confirmed
+
+**Prepositions/adverbs:** trans (long a), a (long), e (long), non (long o), adhuc (long u), diutius (long u), leniter (long e), tacite (long e) -- all confirmed
+
+**Previous review's macron claims evaluated:**
+1. "trans has short a" -- INCORRECT. trans has long a (confirmed by Allen & Greenough, Lewis & Short, Gildersleeve & Lodge). The current file's trans is correct.
+2. "iuxta had incorrect long u" -- The current file has iuxta (short u, long a), which is correct. This may have been fixed previously or may never have been wrong.
+3. "arte should be arte" -- Borderline. The adverbial ablative can be marked long, but per project guidelines, unmarked is safer. No change needed.
+
+---
 
 ## Consistency Check
 
-### Repeated words/phrases
-- **iterum**: Used on pages 10, 16 (x2), 17, 18, 20, 23, 24. Consistent throughout the second-attempt sequence. Good density without overuse.
-- **tacite**: Pages 4, 6, 20, 21. Consistent adverb form (tacite with long e). Ties the stealth sequences together.
-- **dolium/dolio**: Pages 3, 4, 6, 16, 18, 19. Consistent neuter 2nd declension forms throughout.
-- **se celavit**: Pages 3, 5, 16. Consistent reflexive construction.
-- **hac vice**: Pages 17, 20, 22. "This time" -- used to mark how Link does things differently on the second attempt. Consistent ablative forms.
-- **Moblinus/Moblini/Moblinos**: Nominative sg (7, 8), nominative pl (2, 9, 10), accusative pl (13, 19). All forms correct with long i in stem.
+### Repeated words/phrases across pages
+- **iterum**: pages 10, 16 (x2), 17, 18, 20, 23, 24 -- consistent throughout second attempt
+- **tacite**: pages 4, 6, 20, 21 -- consistent adverb form tying stealth sequences together
+- **dolium/dolio**: pages 3, 4, 6, 16, 18, 19 -- consistent neuter 2nd declension forms
+- **se celavit**: pages 3, 5, 16 -- consistent reflexive construction
+- **hac vice**: pages 17, 20, 22 -- "this time" marking how Link adapts on second attempt
+- **per aera volavit**: pages 3, 10, 16 -- the barrel-flight phrase used three times, each with different emotional weight
 
-### Structural parallels (first attempt / second attempt)
-- Page 3 / Page 16: barrel launch (se in dolio celavit + per aera volavit)
-- Page 4 / Page 17: landing in fortress (in arcem cecidit)
-- Page 5 / Page 18: searchlight (lux magna)
-- Page 11 / Page 23: Tetra pulls him from sea (traxit)
-- These parallels are all linguistically consistent -- the same Latin words and constructions recur, which reinforces the repetition for a child listener.
+---
 
-## Emotional Arc (Pages 12-15)
-The failure/fear/choice sequence works well in Latin:
-- **Page 12** (defeat): "solus sedit" -- alone, sitting. Imperfect "erat" for the distant fortress.
-- **Page 13** (fear): "Moblinos meminit" -- the accusative object up front, what he remembers hitting hard. "Redire nolebat" -- blunt refusal.
-- **Page 14** (encouragement): "Iterum tempta" -- Tetra's imperative is gentle (leniter) not commanding. The same word "iterum" that will drive the second half of the book.
-- **Page 15** (choice): "Adhuc timebat. Sed surrexit." -- Still afraid AND standing up. The "sed" carries enormous weight.
+## Errors Found
 
-This four-page sequence is the heart of the book and it reads naturally in Latin. The sentences are short enough that even a child who doesn't understand every word will feel the emotional rhythm: sitting alone, remembering, being encouraged, standing up.
+None.
 
-## Macron Audit
-Three corrections made:
-1. **trans** (p.1): a is short. Was incorrectly marked trāns.
-2. **iuxta** (p.14): u is short. Was incorrectly marked iūxtā. (The final a remains correctly long.)
-3. **arte** (p.21): adverbial e is long. Was incorrectly left unmarked. Corrected to artē.
+---
 
-All other macrons verified correct. Key patterns:
-- 1st conjugation perfects (-āvit): navigavit, celavit, volavit, clamavit, spectavit, ambulavit, exspectavit, temptavit -- all correct
-- 2nd conjugation imperfects (-ēbat): habebat, timebat, nolebat, tenebat, ridebat -- all correct
-- Perfect stems: vidit, cepit, repsit, traxit, fecit, venit, invenit, surrexit -- all correct
-- Prefixes: pro- (prospexit), de- (desiluit) -- all correct
-- Adverbs: tacite, leniter, diutius -- all correct
+## Final Assessment
 
-## Overall Assessment
-This is a well-crafted translation. The Latin is natural, sentences are short and vivid, and the failure-to-success arc comes through powerfully. The "iterum" repetition is the structural backbone of the second half and it works both narratively and pedagogically -- a child hearing the book read aloud multiple times will latch onto that word. The three corrections are all minor macron issues. Ready for art direction.
+The Latin is production-ready. No corrections were made. Grammar is correct throughout, macrons are accurate, sentence lengths are appropriate for the target audience (~3.5-year-old), and the translation reads like a real picture book. The structural mirroring between first and second attempts is the standout feature, making the book work simultaneously as narrative and as natural language exposure. The emotional arc (pages 12-15) is carried beautifully by deliberate tense shifts. Ready for art direction.
