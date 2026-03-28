@@ -1,0 +1,80 @@
+{
+  "style": {
+    "medium": "Cel-shaded digital art in the style of The Legend of Zelda: The Wind Waker. Textured brush-stroke coloring with bold black outlines and flat color fills. Not smooth vector — slightly painterly cel-shading with visible texture.",
+    "palette": "Dual palette story. COLD scenes: deep blue-black night sky, blue-gray stone, desaturated town streets, cold moonlight. WARM scenes: rich amber-gold lantern glow, honey-orange light on skin and stone, warm brown cave walls. The contrast between cold darkness and warm lantern-light is the visual engine of the entire book. Windfall daytime scenes use bright saturated colors — red and blue rooftops, green grass, cheerful but secondary to the night palette.",
+    "line_weight": "Bold black outlines on all characters and objects. Clean, crisp edges. Slightly thicker outlines on foreground characters to separate them from backgrounds.",
+    "lighting": "Lantern-light is the star. Warm amber-gold point lighting from lanterns casts soft radial glows, orange highlights on faces and surfaces, and long soft shadows. Nighttime ambient light is cool deep blue. Moonlight is cold white-blue. The emotional arc tracks the lighting: page 1 (warm, full of lanterns) to pages 3-10 (cold, lanterns disappearing) to pages 13-19 (overwhelming warmth inside the cave) to page 23 (two small warm lights in the dark — hope).",
+    "mood": "Mystery shifting to compassion. The first act (pages 1-10) is a detective story — tense, watchful, shadowy. The middle (pages 11-19) is an emotional revelation — the expected threat becomes vulnerability and tenderness. The ending (pages 20-23) is quiet resolution — justice tempered by mercy. Overall: gentler and more contemplative than the fortress heist book. Big emotions shown through stillness, not action.",
+    "technical": "Square aspect ratio. Child-friendly composition with characters filling at least 40% of the frame in close and medium shots. Single clear focal point per image. No text in image. No watermarks or UI elements."
+  },
+  "characters": {
+    "Toon Link": {
+      "source": "Toon Link from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "Toon Link from The Wind Waker. Small boy with a very large round head (chibi proportions, roughly 3 heads tall). Huge expressive cartoon eyes that are solid black with white highlights. Messy blonde hair poking out from under his cap. Long pointed elf ears. Wears a bright green tunic, a bright green long pointed cap, a brown leather belt with a gold buckle, and brown boots. Fair skin with rosy round cheeks. Small button nose. NO SWORD in this story — he is unarmed throughout. He carries lanterns in the final act.",
+      "expression_default": "watchful, thoughtful, quietly determined",
+      "height_reference": "Very short, child-sized, roughly 3 heads tall in chibi proportions. About the same height as Grunio."
+    },
+    "Townspeople": {
+      "source": "Townspeople from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "Wind Waker Windfall Island villagers. Round faces, simple features, bright colorful clothing — reds, blues, yellows. A mix of merchants, sailors, and residents. Large heads, small bodies, expressive cartoon eyes and mouths. Varied body types: stout old men, thin women, broad-shouldered fishermen. All taller than Link. Colorful and lively in daytime, nervous and huddled at night.",
+      "expression_default": "animated, expressive, talkative",
+      "height_reference": "Adults, roughly twice Link's height in chibi proportions."
+    },
+    "Grunio": {
+      "source": "Original character — a young Moblin from The Legend of Zelda: The Wind Waker universe",
+      "is_established": false,
+      "visual_description": "A very small, young Moblin — roughly Link's height, half the size of a normal Wind Waker Moblin. Scruffy purple-gray skin (lighter and more washed-out than adult Moblins). Big round sad eyes — beady yellow irises with visible whites, always slightly wet-looking, like a puppy about to cry. A small rounded piglet-like snout, softer and less menacing than an adult Moblin's blunt snout. Small floppy pointed ears that droop downward. Thin and bony — visible ribs and knobby joints, none of the pot-bellied bulk of adult Moblins. Wears a single torn, oversized brown tunic that hangs past his knees and slips off one shoulder, frayed hems, held with a bit of rope at the waist. Bare feet, dirty. Smudges of dirt on his face and arms. Overall impression: a lost, underfed child, not a monster. He should evoke protective instinct, not fear.",
+      "expression_default": "wary, sad, hunched, avoiding eye contact",
+      "height_reference": "Roughly Link's height — about 3 heads tall. Half the size of adult Moblins. Thin where they are thick, small where they are large."
+    }
+  },
+  "locations": {
+    "Windfall Island - Night": {
+      "visual_description": "Charming hillside village on a steep island. Winding cobblestone paths lined with iron lamp posts. Colorful houses with red and blue tile roofs stacked up the hillside. When lanterns are present: warm golden glow from every post, windows glowing, cozy and inviting. When lanterns are missing: dark shadowy streets, cold blue moonlight, the same charming architecture now feels exposed and lonely. Deep teal ocean visible at the edges. Starry sky above.",
+      "time_of_day_default": "nighttime — lighting depends on whether lanterns are present or stolen"
+    },
+    "Windfall Island - Day": {
+      "visual_description": "Same hillside village in bright daylight. Cheerful saturated colors — red and blue tile roofs, green grass patches, white and cream stone buildings, cobblestone paths. The ocean sparkles bright teal behind the town. Bustling and lively. Lamp posts visible along the streets (empty brackets when lanterns are stolen).",
+      "time_of_day_default": "bright daylight, cheerful"
+    },
+    "Rooftop": {
+      "visual_description": "A red-tiled rooftop near the top of Windfall's hillside. The roof slopes gently, safe enough to sit on. Below, the main street stretches downhill with its rows of lamp posts — most dark, a few still glowing. The night sky is full of stars. The ocean glimmers far below. A surveillance perch overlooking the town.",
+      "time_of_day_default": "nighttime, starry sky, mostly dark street below"
+    },
+    "Hillside Path": {
+      "visual_description": "A dirt path winding up a grassy hill outside the town. Tall wild grass on either side sways in a breeze. Moonlit — silver-blue light on the grass. The town glows faintly at the bottom of the hill. The path leads upward into darkness. Rocky outcroppings appear further up the hill near the cave. Isolated and wild compared to the tidy town.",
+      "time_of_day_default": "nighttime, moonlit, open and exposed"
+    },
+    "Grunio's Cave - Dark": {
+      "visual_description": "A small natural cave opening in a rocky hillside. From outside, just a dark mouth in the rock — uninviting, a black void. The cave interior is rough natural stone, gray-brown rock walls with uneven surfaces and small ledges. Before the lanterns are revealed, it looks like any small animal den — dark, cramped, empty.",
+      "time_of_day_default": "dark, unlit, just a hole in the hillside"
+    },
+    "Grunio's Cave - Lit": {
+      "visual_description": "THE CENTERPIECE LOCATION. The same small cave, but transformed by dozens of stolen lanterns. Lanterns of every shape and size — round paper lanterns, iron-framed glass lanterns, small brass oil lamps, tall post lanterns propped against walls. They hang from rocky outcroppings on hooks and ropes, sit on every ledge and shelf, cluster on the cave floor in groups. EVERY SINGLE ONE IS LIT. The cave is saturated with warm amber-gold light — every surface glows, shadows are banished, the rough stone walls look like burnished gold. The effect is magical, like being inside a jewel or a constellation. Warm, safe, beautiful. A hoard of light instead of treasure.",
+      "time_of_day_default": "warm amber-gold lantern glow filling every corner"
+    },
+    "Hillside - Final": {
+      "visual_description": "Wide establishing shot of the dark hillside at night. The town of Windfall glows faintly at the bottom of the hill — lanterns restored, warm and cozy again. On the hillside, two small warm points of light: one glowing from inside the cave mouth, one sitting on the ground just outside the entrance. The rest is dark grass, moonlight, stars. Peaceful, vast, quiet.",
+      "time_of_day_default": "nighttime, two warm lights on a dark hill"
+    }
+  },
+  "composition_rules": [
+    "Characters fill at least 40% of the frame in close-up and medium shots",
+    "Simple backgrounds — do not over-detail environments. Let lighting do the atmospheric work.",
+    "Eye-level or slightly low angle (child's perspective) for most shots",
+    "Close-ups for emotional moments: page 14 (Grunio eating alone), page 16 (cowering), page 17 (Link thinking), page 18 (sitting down)",
+    "Wide shots for establishing mood: page 1 (town glowing), page 13 (cave of lanterns), page 23 (two lights on hillside)",
+    "Single focal point per image — one clear action or emotion",
+    "Vary shot types across pages to maintain visual interest",
+    "LIGHTING IS COMPOSITION: lantern-light draws the eye. In cave scenes, lanterns frame and illuminate the characters. The brightest point in every image should be the emotional focal point.",
+    "Grunio should always appear SMALL in the frame — hunched, curled, taking up less space than he could. Link should appear open and grounded.",
+    "No text, watermarks, or UI elements in any image",
+    "The refrain pages (3, 7, 11, 22) echo visually — each asks 'Who takes the lanterns?' in a different emotional register"
+  ],
+  "reference_images": [
+    "toon_link/official/zww-link1.jpg",
+    "toon_link/official/zww-link2.jpg"
+  ]
+}

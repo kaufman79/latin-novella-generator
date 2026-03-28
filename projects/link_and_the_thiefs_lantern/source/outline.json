@@ -1,0 +1,214 @@
+{
+  "title_english": "Link and the Thief's Lantern",
+  "title_latin": null,
+  "target_pages": 23,
+  "characters": [
+    {
+      "name": "Toon Link",
+      "description": "Small boy hero with large expressive eyes, blonde hair, pointed ears, green tunic and cap, brown boots. No sword in this story — he carries a lantern instead.",
+      "source": "Toon Link from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    },
+    {
+      "name": "Grunio",
+      "description": "A very small, young Moblin — half the size of a normal Moblin. Scruffy blue-gray skin, big sad eyes, a snout that's more rounded and piglet-like than menacing. Wears a torn, oversized tunic that hangs past his knees. Thin and bony. Dirt on his face. He looks like a lost puppy, not a monster.",
+      "source": "Original character — a young Moblin from The Legend of Zelda: The Wind Waker universe",
+      "is_established": false
+    },
+    {
+      "name": "Windfall Townspeople",
+      "description": "Colorful Wind Waker villagers — round faces, simple features, bright clothing. A mix of the merchants, sailors, and residents of Windfall Island. Expressive and cartoony.",
+      "source": "Townspeople from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    }
+  ],
+  "locations": [
+    {
+      "name": "Windfall Island - Night",
+      "description": "Charming hillside village with stone paths, colorful houses, and lamp posts. Nighttime — dark blue sky, warm lantern-light from windows and street lamps. Cozy seaside town on a steep hill. Wind Waker cel-shaded style."
+    },
+    {
+      "name": "Windfall Island - Day",
+      "description": "Same hillside village in bright daylight. Cheerful, colorful houses with red and blue roofs, cobblestone paths, the ocean sparkling behind. Busy and lively."
+    },
+    {
+      "name": "Rooftop",
+      "description": "A red-tiled rooftop overlooking Windfall's main street. Night sky full of stars. The lamp posts along the street are visible below — some dark, some still lit."
+    },
+    {
+      "name": "Hillside Path",
+      "description": "A dirt path winding up the grassy hill outside Windfall Island town. Moonlit, with tall grass on either side. The town glows faintly below."
+    },
+    {
+      "name": "Grunio's Cave",
+      "description": "A small natural cave in the hillside outside town. When dark, it's just a black opening in the rock. When lit with stolen lanterns — it transforms into a warm, golden sanctuary. Dozens of lanterns of different shapes and sizes hang from rocky outcroppings, sit on ledges, cluster on the floor. The light is warm, amber, magical — like being inside a star."
+    },
+    {
+      "name": "Hillside - Final",
+      "description": "Wide shot of the dark hillside at night. Two warm points of light visible — one glowing from inside the cave entrance, one just outside it. The town glows faintly in the distance below. Peaceful, quiet, ambiguous."
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "english_text": "Windfall Island had many lanterns. They shone every night.",
+      "scene_description": "Wide establishing shot of Windfall Island at night, looking up the hillside village. Warm lantern-light glows from every lamp post along the winding stone paths. Windows glow. The town is cozy and beautiful, a jewel of light on the dark ocean. Wind Waker cel-shaded style, rich nighttime palette of deep blues and warm golds.",
+      "characters_present": [],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 2,
+      "english_text": "But one morning — three were gone!",
+      "scene_description": "Daytime. A townsperson stands in the street pointing at an empty lamp post. The iron bracket is there, but the lantern is missing. Two more empty posts visible further up the street. The townsperson's face shows confusion and annoyance. Bright, cheerful day — the missing lanterns are conspicuous.",
+      "characters_present": ["Windfall Townspeople"],
+      "location": "Windfall Island - Day"
+    },
+    {
+      "page_number": 3,
+      "english_text": "The next night — five more gone! Who takes the lanterns?",
+      "scene_description": "Nighttime street scene. Most of the lamp posts are now empty — dark iron brackets with no lanterns. Only a couple still glow. The street is shadowy and unfamiliar. A townsperson walks with a candle, looking nervous. The town that was so cozy on page 1 now feels exposed and uneasy.",
+      "characters_present": ["Windfall Townspeople"],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 4,
+      "english_text": "The people were angry. \"Who takes the lanterns?\" they said.",
+      "scene_description": "A group of townspeople gathered in the town square in daylight, faces red with anger. Some shake fists, some point in different directions. An old man pounds his fist on a barrel. A woman holds an empty lantern bracket. Their mouths are open — shouting. First appearance of the refrain.",
+      "characters_present": ["Windfall Townspeople"],
+      "location": "Windfall Island - Day"
+    },
+    {
+      "page_number": 5,
+      "english_text": "\"Find the thief!\" they told Link. \"Catch him!\"",
+      "scene_description": "The angry townspeople surround Link, pointing at him, pointing outward. Link stands in the middle, looking up at the adults towering over him. He looks small among them. His expression is serious, listening. One large man jabs a finger toward the dark hillside outside town.",
+      "characters_present": ["Toon Link", "Windfall Townspeople"],
+      "location": "Windfall Island - Day"
+    },
+    {
+      "page_number": 6,
+      "english_text": "Night came. Link climbed to a rooftop. He watched.",
+      "scene_description": "Link crouched on a red-tiled rooftop, silhouetted against a starry sky. Below him, the mostly-dark street stretches out — only two or three lanterns still glow on their posts. Link's eyes are wide and alert, scanning. His cap flutters in a light breeze. A stakeout pose — patient, watchful.",
+      "characters_present": ["Toon Link"],
+      "location": "Rooftop"
+    },
+    {
+      "page_number": 7,
+      "english_text": "He waited. Who takes the lanterns?",
+      "scene_description": "Same rooftop angle but zoomed out more. Link sits with his knees pulled up, waiting. The town below is very dark now — almost no lanterns left. Deep blue shadows. Silence implied by the stillness of the scene. A single remaining lantern glows on a post in the street below, like bait.",
+      "characters_present": ["Toon Link"],
+      "location": "Rooftop"
+    },
+    {
+      "page_number": 8,
+      "english_text": "Then — a small shadow moved. It grabbed a lantern. It ran!",
+      "scene_description": "Link's POV from the rooftop looking down. A small dark figure — too small to be an adult Moblin — reaches up and snatches the last glowing lantern from its post. The figure is a dark silhouette clutching the bright lantern, already turning to run. Motion lines. Link's hands grip the roof edge in the foreground, eyes wide.",
+      "characters_present": ["Toon Link", "Grunio"],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 9,
+      "english_text": "Link jumped down. He followed quietly.",
+      "scene_description": "Link dropping from the rooftop to the street, landing in a crouch. Ahead of him, the stolen lantern bobs through the dark street — the thief carrying it is just a small dark shape with the lantern's glow illuminating it from below. Link's expression is determined, focused. He moves like a cat.",
+      "characters_present": ["Toon Link", "Grunio"],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 10,
+      "english_text": "The thief ran out of town. Up the hill!",
+      "scene_description": "The small figure scrambles up the dirt path on the hillside, the stolen lantern swinging wildly and casting jumping shadows through the tall grass. Link follows at a distance, staying low. The town glows faintly below. The figure is heading toward the dark hillside — away from everything.",
+      "characters_present": ["Toon Link", "Grunio"],
+      "location": "Hillside Path"
+    },
+    {
+      "page_number": 11,
+      "english_text": "Who takes the lanterns? Moblins! Link expected a camp.",
+      "scene_description": "A thought bubble or imagined scene above Link's head as he climbs: a Moblin war camp with big fierce Moblins around a bonfire, spears stuck in the ground, snarling pig faces. This is what Link expects to find — danger, enemies, a fight. Below the thought bubble, Link's face is tense, bracing himself. His hand reaches for where his sword would be.",
+      "characters_present": ["Toon Link"],
+      "location": "Hillside Path"
+    },
+    {
+      "page_number": 12,
+      "english_text": "But there was no camp. Just a cave. Just one small Moblin.",
+      "scene_description": "Link stands at the cave entrance, looking in. His expression shifts from battle-ready to confused. Inside: not an army, not a camp — just a very small, scruffy young Moblin sitting alone on the cave floor. The contrast between expectation (page 11) and reality (this page) is the key beat. The Moblin is tiny, pathetic, alone.",
+      "characters_present": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 13,
+      "english_text": "The cave was full of lanterns. All lit. All glowing.",
+      "scene_description": "THE VISUAL CENTERPIECE. Full wide shot of the cave interior. Dozens of lanterns of every shape and size — hanging from rocky outcroppings, perched on ledges, clustered on the floor, dangling from crevices. Every single one is lit. The cave is FILLED with warm golden-amber light, every surface glowing, shadows banished entirely. It looks like the inside of a constellation, or a treasure hoard made of light instead of gold. Breathtaking. Magical. The most beautiful image in the book.",
+      "characters_present": ["Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 14,
+      "english_text": "The little Moblin sat in the middle. He was eating scraps. He was alone.",
+      "scene_description": "Close-up of Grunio sitting cross-legged on the cave floor in the center of all the lanterns. He gnaws on a fish bone or bread crust — scraps of food. His oversized torn tunic pools around him. His big eyes reflect the lantern-light. He is small, thin, dirty, and completely alone. But in this warm light, he looks almost content. Almost safe.",
+      "characters_present": ["Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 15,
+      "english_text": "Link stood in the cave entrance. The Moblin saw him.",
+      "scene_description": "Shot from inside the cave looking toward the entrance. Link's silhouette stands in the cave mouth, backlit by moonlight. Grunio looks up from his scraps, lantern-light on his face. His eyes go wide. The moment of discovery — frozen, tense. Two figures, one dark doorway, warm light between them.",
+      "characters_present": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 16,
+      "english_text": "The Moblin covered his face. He shook. He waited to be hit.",
+      "scene_description": "Grunio on the ground, curled into a ball, arms over his head, face hidden. His whole body trembles. He has made himself as small as possible. Some lanterns near him have been knocked over by his panicked flinch. This is a creature that has been hit before. It expects pain. Gut-punch emotional beat.",
+      "characters_present": ["Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 17,
+      "english_text": "Link did not move. He looked at the Moblin. He looked at the lanterns.",
+      "scene_description": "Link standing still, arms at his sides. His face is complicated — not angry, not smiling. Thinking. His eyes move between the cowering Moblin and the dozens of glowing lanterns. The warmth of the cave. The scraps of food. He is putting it together. This is the moment of prudential judgment — the pivot of the whole story.",
+      "characters_present": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 18,
+      "english_text": "Link sat down.",
+      "scene_description": "The simplest, most powerful image in the book. Link lowers himself to the cave floor, sitting cross-legged a few feet from the Moblin. That's it. No weapon drawn. No shouting. He just sits. Grunio still has his arms over his head but peeks out through his fingers with one eye. Lantern-light all around them. Three words of text. One enormous choice.",
+      "characters_present": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 19,
+      "english_text": "They sat together in the light. It was warm.",
+      "scene_description": "Link and Grunio sitting near each other on the cave floor, surrounded by the warm glow of all the lanterns. Grunio has uncurled — he sits up now, watching Link warily but no longer cowering. They don't look at each other directly. They just sit in the same warm space. Two small figures in a cave of light. Quiet. Safe.",
+      "characters_present": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 20,
+      "english_text": "Link stood up. He took half the lanterns. The Moblin watched but did not run.",
+      "scene_description": "Link carefully gathering lanterns — an armful of them, handles looped over his arms and hands. He is methodical, taking roughly half. Grunio watches from the floor, tense but not fleeing. He understands. Some lanterns stay. Some go back. The cave is dimmer now but still lit. This is justice — not punishment, not permission. Restitution with mercy.",
+      "characters_present": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 21,
+      "english_text": "Link carried the lanterns home. He hung them on their posts.",
+      "scene_description": "Link walking through the dark town streets, arms full of lanterns. He reaches up to hang one on an empty iron bracket. Behind him, several posts already glow again — the street coming back to life. Pre-dawn blue light mixes with warm lantern glow. Link works alone, quietly, without fanfare.",
+      "characters_present": ["Toon Link"],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 22,
+      "english_text": "\"Who takes the lanterns?\" asked the people. \"The thief is gone,\" said Link.",
+      "scene_description": "Morning. Townspeople gather around Link in the now-restored lantern-lit street. A woman asks the question — the refrain one last time. Link's face is calm and unreadable. He answers simply. The people look satisfied, relieved. They don't need to know more. Link tells a truth that is also a mercy: the thief they imagined — the dangerous enemy — is gone. What remains is just a frightened child in a cave.",
+      "characters_present": ["Toon Link", "Windfall Townspeople"],
+      "location": "Windfall Island - Day"
+    },
+    {
+      "page_number": 23,
+      "english_text": "Link took his own lantern. He walked up the hill. He left it by the cave.",
+      "scene_description": "Wide final shot. The dark hillside at night. In the distance below, Windfall's lanterns glow again — the town is restored. On the hillside, two small warm lights: one glowing from inside the cave mouth, one sitting just outside on the ground — Link's own lantern, left as a gift. Link is a small figure walking back down the hill toward town, his back to us. No explanation. No lesson stated. Just two lights on a dark hill, and a small boy walking home. Quiet. Ambiguous. Beautiful.",
+      "characters_present": ["Toon Link", "Grunio"],
+      "location": "Hillside - Final"
+    }
+  ]
+}

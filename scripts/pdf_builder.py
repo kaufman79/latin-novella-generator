@@ -38,6 +38,34 @@ def _get_primary_virtue(config: dict) -> str | None:
     return VIRTUE_DISPLAY.get(best, best.capitalize())
 
 
+def _build_glossary(translation: BookTranslation) -> list[tuple[str, str]]:
+    """Extract a simple glossary from the translation: unique Latin words paired with English context."""
+    import re
+    # Collect (latin_text, english_text) pairs
+    pairs = []
+    seen_latin = set()
+    for page in translation.pages:
+        latin = page.latin_text.strip()
+        english = page.english_text.strip()
+        if not latin:
+            continue
+        # Split into sentences (by . ! ?)
+        latin_sents = [s.strip() for s in re.split(r'[.!?]+', latin) if s.strip()]
+        english_sents = [s.strip() for s in re.split(r'[.!?]+', english) if s.strip()]
+        # Pair sentences 1:1 where possible
+        for i, lat_s in enumerate(latin_sents):
+            # Strip caps used for emphasis, quotes, ellipses
+            clean = re.sub(r'["""\'«»\-—…]', '', lat_s).strip()
+            if not clean or clean.upper() == clean and len(clean) <= 3:
+                continue
+            eng_s = english_sents[i] if i < len(english_sents) else english
+            key = clean.lower()
+            if key not in seen_latin:
+                seen_latin.add(key)
+                pairs.append((lat_s, eng_s))
+    return pairs
+
+
 def generate_html(title_latin: str, title_english: str, translation: BookTranslation, project_folder: str, config: dict = None) -> str:
     """Generate HTML for the book."""
     html_parts = []
@@ -180,6 +208,41 @@ def generate_html(title_latin: str, title_english: str, translation: BookTransla
         .virtue-dot.empty {
             background-color: transparent;
         }
+
+        .glossary-page {
+            page-break-after: always;
+            padding-top: 0.5in;
+        }
+
+        .glossary-page h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            text-align: center;
+            margin-bottom: 0.3in;
+            border-bottom: 1px solid #d5c9b1;
+            padding-bottom: 6px;
+        }
+
+        .glossary-entry {
+            margin: 6px 0;
+            padding: 4px 0;
+            border-bottom: 1px dotted #e0d9cc;
+        }
+
+        .glossary-latin {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-english {
+            font-size: 10pt;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-left: 15px;
+        }
     </style>
 </head>
 <body>
@@ -245,6 +308,29 @@ def generate_html(title_latin: str, title_english: str, translation: BookTransla
         <p class="latin-text">{page.latin_text}</p>
         <p class="english-text">{page.english_text}</p>
         <span class="page-number">{page.page_number}</span>
+    </div>
+""")
+
+    # Glossary page
+    glossary = _build_glossary(translation)
+    if glossary:
+        entries_html = []
+        for lat, eng in glossary:
+            entries_html.append(
+                f'<div class="glossary-entry">'
+                f'<span class="glossary-latin">{lat}</span><br>'
+                f'<span class="glossary-english">{eng}</span>'
+                f'</div>'
+            )
+        # Split into pages of ~18 entries
+        page_size = 18
+        for chunk_start in range(0, len(entries_html), page_size):
+            chunk = entries_html[chunk_start:chunk_start + page_size]
+            header = "Glossārium" if chunk_start == 0 else "Glossārium (cont.)"
+            html_parts.append(f"""
+    <div class="glossary-page">
+        <h2>{header}</h2>
+        {''.join(chunk)}
     </div>
 """)
 

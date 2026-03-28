@@ -1,0 +1,190 @@
+{
+  "title_latin": "Lincus et Lucerna Fūris",
+  "title_english": "Link and the Thief's Lantern",
+  "pages": [
+    {
+      "page_number": 1,
+      "latin_text": "Īnsula Windfall multās lucernās habēbat. Omnī nocte lūcēbant.",
+      "english_text": "Windfall Island had many lanterns. They shone every night.",
+      "image_prompt": "Wide establishing shot of Windfall Island at night, looking up the hillside village. Warm lantern-light glows from every lamp post along the winding stone paths. Windows glow. The town is cozy and beautiful, a jewel of light on the dark ocean. Wind Waker cel-shaded style, rich nighttime palette of deep blues and warm golds.",
+      "characters": [],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 2,
+      "latin_text": "Sed ūnō māne — trēs lucernae āberant!",
+      "english_text": "But one morning — three lanterns were gone!",
+      "image_prompt": "Daytime. A townsperson stands in the street pointing at an empty lamp post. The iron bracket is there, but the lantern is missing. Two more empty posts visible further up the street. The townsperson's face shows confusion and annoyance. Bright, cheerful day — the missing lanterns are conspicuous.",
+      "characters": ["Windfall Townspeople"],
+      "location": "Windfall Island - Day"
+    },
+    {
+      "page_number": 3,
+      "latin_text": "Proximā nocte — quīnque plūrēs āberant! Quis lucernās capit?",
+      "english_text": "The next night — five more gone! Who takes the lanterns?",
+      "image_prompt": "Nighttime street scene. Most of the lamp posts are now empty — dark iron brackets with no lanterns. Only a couple still glow. The street is shadowy and unfamiliar. A townsperson walks with a candle, looking nervous. The town that was so cozy on page 1 now feels exposed and uneasy.",
+      "characters": ["Windfall Townspeople"],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 4,
+      "latin_text": "Incolae īrātī erant. \"Quis lucernās capit?\" clāmāvērunt.",
+      "english_text": "The people were angry. \"Who takes the lanterns?\" they said.",
+      "image_prompt": "A group of townspeople gathered in the town square in daylight, faces red with anger. Some shake fists, some point in different directions. An old man pounds his fist on a barrel. A woman holds an empty lantern bracket. Their mouths are open — shouting. First appearance of the refrain.",
+      "characters": ["Windfall Townspeople"],
+      "location": "Windfall Island - Day"
+    },
+    {
+      "page_number": 5,
+      "latin_text": "\"Fūrem invēnī!\" Lincō dīxērunt. \"Eum cape!\"",
+      "english_text": "\"Find the thief!\" they told Link. \"Catch him!\"",
+      "image_prompt": "The angry townspeople surround Link, pointing at him, pointing outward. Link stands in the middle, looking up at the adults towering over him. He looks small among them. His expression is serious, listening. One large man jabs a finger toward the dark hillside outside town.",
+      "characters": ["Toon Link", "Windfall Townspeople"],
+      "location": "Windfall Island - Day"
+    },
+    {
+      "page_number": 6,
+      "latin_text": "Nox vēnit. Lincus tēctum ascendit. Spectāvit.",
+      "english_text": "Night came. Link climbed to a rooftop. He watched.",
+      "image_prompt": "Link crouched on a red-tiled rooftop, silhouetted against a starry sky. Below him, the mostly-dark street stretches out — only two or three lanterns still glow on their posts. Link's eyes are wide and alert, scanning. His cap flutters in a light breeze. A stakeout pose — patient, watchful.",
+      "characters": ["Toon Link"],
+      "location": "Rooftop"
+    },
+    {
+      "page_number": 7,
+      "latin_text": "Exspectāvit. Quis lucernās capit?",
+      "english_text": "He waited. Who takes the lanterns?",
+      "image_prompt": "Same rooftop angle but zoomed out more. Link sits with his knees pulled up, waiting. The town below is very dark now — almost no lanterns left. Deep blue shadows. Silence implied by the stillness of the scene. A single remaining lantern glows on a post in the street below, like bait.",
+      "characters": ["Toon Link"],
+      "location": "Rooftop"
+    },
+    {
+      "page_number": 8,
+      "latin_text": "Tum — parva umbra sē mōvit. Lucernam rapuit. Fūgit!",
+      "english_text": "Then — a small shadow moved. It grabbed a lantern. It ran!",
+      "image_prompt": "Link's POV from the rooftop looking down. A small dark figure — too small to be an adult Moblin — reaches up and snatches the last glowing lantern from its post. The figure is a dark silhouette clutching the bright lantern, already turning to run. Motion lines. Link's hands grip the roof edge in the foreground, eyes wide.",
+      "characters": ["Toon Link", "Grunio"],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 9,
+      "latin_text": "Lincus dēsiluit. Tacitē secūtus est.",
+      "english_text": "Link jumped down. He followed quietly.",
+      "image_prompt": "Link dropping from the rooftop to the street, landing in a crouch. Ahead of him, the stolen lantern bobs through the dark street — the thief carrying it is just a small dark shape with the lantern's glow illuminating it from below. Link's expression is determined, focused. He moves like a cat.",
+      "characters": ["Toon Link", "Grunio"],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 10,
+      "latin_text": "Fūr ex oppidō cucurrit. Collem ascendit!",
+      "english_text": "The thief ran out of town. Up the hill!",
+      "image_prompt": "The small figure scrambles up the dirt path on the hillside, the stolen lantern swinging wildly and casting jumping shadows through the tall grass. Link follows at a distance, staying low. The town glows faintly below. The figure is heading toward the dark hillside — away from everything.",
+      "characters": ["Toon Link", "Grunio"],
+      "location": "Hillside Path"
+    },
+    {
+      "page_number": 11,
+      "latin_text": "Quis lucernās capit? Moblīnī! Lincus castra exspectāvit.",
+      "english_text": "Who takes the lanterns? Moblins! Link expected a camp.",
+      "image_prompt": "A thought bubble or imagined scene above Link's head as he climbs: a Moblin war camp with big fierce Moblins around a bonfire, spears stuck in the ground, snarling pig faces. This is what Link expects to find — danger, enemies, a fight. Below the thought bubble, Link's face is tense, bracing himself. His hand reaches for where his sword would be.",
+      "characters": ["Toon Link"],
+      "location": "Hillside Path"
+    },
+    {
+      "page_number": 12,
+      "latin_text": "Sed castra nōn erant. Sōlum spelunca. Sōlum ūnus parvus Moblīnus.",
+      "english_text": "But there was no camp. Just a cave. Just one small Moblin.",
+      "image_prompt": "Link stands at the cave entrance, looking in. His expression shifts from battle-ready to confused. Inside: not an army, not a camp — just a very small, scruffy young Moblin sitting alone on the cave floor. The contrast between expectation (page 11) and reality (this page) is the key beat. The Moblin is tiny, pathetic, alone.",
+      "characters": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 13,
+      "latin_text": "Spelunca plēna lucernārum erat. Omnēs accēnsae. Omnēs lūcēbant.",
+      "english_text": "The cave was full of lanterns. All lit. All glowing.",
+      "image_prompt": "THE VISUAL CENTERPIECE. Full wide shot of the cave interior. Dozens of lanterns of every shape and size — hanging from rocky outcroppings, perched on ledges, clustered on the floor, dangling from crevices. Every single one is lit. The cave is FILLED with warm golden-amber light, every surface glowing, shadows banished entirely. It looks like the inside of a constellation, or a treasure hoard made of light instead of gold. Breathtaking. Magical. The most beautiful image in the book.",
+      "characters": ["Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 14,
+      "latin_text": "Parvus Moblīnus in mediō sēdēbat. Reliquiās edēbat. Sōlus erat.",
+      "english_text": "The little Moblin sat in the middle. He was eating scraps. He was alone.",
+      "image_prompt": "Close-up of Grunio sitting cross-legged on the cave floor in the center of all the lanterns. He gnaws on a fish bone or bread crust — scraps of food. His oversized torn tunic pools around him. His big eyes reflect the lantern-light. He is small, thin, dirty, and completely alone. But in this warm light, he looks almost content. Almost safe.",
+      "characters": ["Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 15,
+      "latin_text": "Lincus in ōstiō speluncae stetit. Moblīnus eum vīdit.",
+      "english_text": "Link stood in the cave entrance. The Moblin saw him.",
+      "image_prompt": "Shot from inside the cave looking toward the entrance. Link's silhouette stands in the cave mouth, backlit by moonlight. Grunio looks up from his scraps, lantern-light on his face. His eyes go wide. The moment of discovery — frozen, tense. Two figures, one dark doorway, warm light between them.",
+      "characters": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 16,
+      "latin_text": "Moblīnus faciem tēxit. Tremēbat. Ictum exspectābat.",
+      "english_text": "The Moblin covered his face. He shook. He waited to be hit.",
+      "image_prompt": "Grunio on the ground, curled into a ball, arms over his head, face hidden. His whole body trembles. He has made himself as small as possible. Some lanterns near him have been knocked over by his panicked flinch. This is a creature that has been hit before. It expects pain. Gut-punch emotional beat.",
+      "characters": ["Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 17,
+      "latin_text": "Lincus nōn sē mōvit. Moblīnum spectāvit. Lucernās spectāvit.",
+      "english_text": "Link did not move. He looked at the Moblin. He looked at the lanterns.",
+      "image_prompt": "Link standing still, arms at his sides. His face is complicated — not angry, not smiling. Thinking. His eyes move between the cowering Moblin and the dozens of glowing lanterns. The warmth of the cave. The scraps of food. He is putting it together. This is the moment of prudential judgment — the pivot of the whole story.",
+      "characters": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 18,
+      "latin_text": "Lincus sēdit.",
+      "english_text": "Link sat down.",
+      "image_prompt": "The simplest, most powerful image in the book. Link lowers himself to the cave floor, sitting cross-legged a few feet from the Moblin. That's it. No weapon drawn. No shouting. He just sits. Grunio still has his arms over his head but peeks out through his fingers with one eye. Lantern-light all around them. Three words of text. One enormous choice.",
+      "characters": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 19,
+      "latin_text": "Ūnā in lūce sēdērunt. Calidum erat.",
+      "english_text": "They sat together in the light. It was warm.",
+      "image_prompt": "Link and Grunio sitting near each other on the cave floor, surrounded by the warm glow of all the lanterns. Grunio has uncurled — he sits up now, watching Link warily but no longer cowering. They don't look at each other directly. They just sit in the same warm space. Two small figures in a cave of light. Quiet. Safe.",
+      "characters": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 20,
+      "latin_text": "Lincus surrēxit. Dīmidium lucernārum cēpit. Moblīnus spectāvit sed nōn fūgit.",
+      "english_text": "Link stood up. He took half the lanterns. The Moblin watched but did not run.",
+      "image_prompt": "Link carefully gathering lanterns — an armful of them, handles looped over his arms and hands. He is methodical, taking roughly half. Grunio watches from the floor, tense but not fleeing. He understands. Some lanterns stay. Some go back. The cave is dimmer now but still lit. This is justice — not punishment, not permission. Restitution with mercy.",
+      "characters": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave"
+    },
+    {
+      "page_number": 21,
+      "latin_text": "Lincus lucernās domum portāvit. In stīpitēs reposuit.",
+      "english_text": "Link carried the lanterns home. He hung them on their posts.",
+      "image_prompt": "Link walking through the dark town streets, arms full of lanterns. He reaches up to hang one on an empty iron bracket. Behind him, several posts already glow again — the street coming back to life. Pre-dawn blue light mixes with warm lantern glow. Link works alone, quietly, without fanfare.",
+      "characters": ["Toon Link"],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 22,
+      "latin_text": "\"Quis lucernās capit?\" rogāvērunt incolae. \"Fūr abiit,\" inquit Lincus.",
+      "english_text": "\"Who takes the lanterns?\" asked the people. \"The thief is gone,\" said Link.",
+      "image_prompt": "Morning. Townspeople gather around Link in the now-restored lantern-lit street. A woman asks the question — the refrain one last time. Link's face is calm and unreadable. He answers simply. The people look satisfied, relieved. They don't need to know more. Link tells a truth that is also a mercy: the thief they imagined — the dangerous enemy — is gone. What remains is just a frightened child in a cave.",
+      "characters": ["Toon Link", "Windfall Townspeople"],
+      "location": "Windfall Island - Day"
+    },
+    {
+      "page_number": 23,
+      "latin_text": "Lincus suam lucernam cēpit. Collem ascendit. Eam ad speluncam relīquit.",
+      "english_text": "Link took his own lantern. He walked up the hill. He left it by the cave.",
+      "image_prompt": "Wide final shot. The dark hillside at night. In the distance below, Windfall's lanterns glow again — the town is restored. On the hillside, two small warm lights: one glowing from inside the cave mouth, one sitting just outside on the ground — Link's own lantern, left as a gift. Link is a small figure walking back down the hill toward town, his back to us. No explanation. No lesson stated. Just two lights on a dark hill, and a small boy walking home. Quiet. Ambiguous. Beautiful.",
+      "characters": ["Toon Link", "Grunio"],
+      "location": "Hillside - Final"
+    }
+  ]
+}

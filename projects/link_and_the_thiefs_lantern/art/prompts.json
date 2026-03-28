@@ -1,0 +1,147 @@
+{
+  "pages": [
+    {
+      "page_number": 1,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Wide establishing shot looking up a charming hillside village at night. Winding cobblestone paths lined with iron lamp posts, every single one glowing with warm amber lantern-light. Colorful houses with red and blue tile roofs stacked up the hill, windows glowing warmly. Deep teal ocean at the edges, starry dark blue sky above. The town is a jewel of warm golden light against the dark sea. Cozy, beautiful, inviting. No characters — just the town in its full warmth. Square format, no text.",
+      "characters_in_scene": [],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 2,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Bright daytime street scene. A round-faced Wind Waker villager stands in the street pointing up at an empty iron lamp post bracket — the lantern is gone. Two more empty posts visible further up the cobblestone street. The villager's face shows confusion and annoyance, mouth open. Cheerful daylight with blue sky, colorful houses behind. The empty brackets are conspicuous against the bright day. Square format, no text.",
+      "characters_in_scene": ["Townspeople"],
+      "location": "Windfall Island - Day",
+      "reference_images": ["toon_link/official/zww-villagers.jpg"]
+    },
+    {
+      "page_number": 3,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Nighttime street scene on Windfall Island. Most lamp posts along the cobblestone street are empty — dark iron brackets with no lanterns. Only two or three still glow faintly. A nervous villager walks through the shadowy street holding a small candle, casting a weak circle of light. Deep blue shadows fill the spaces where lantern-light used to be. The same charming street from page 1 now feels dark and uneasy. Cold blue moonlight. Square format, no text.",
+      "characters_in_scene": ["Townspeople"],
+      "location": "Windfall Island - Night",
+      "reference_images": ["toon_link/official/zww-villagers.jpg"]
+    },
+    {
+      "page_number": 4,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Bright daytime town square. A group of angry Wind Waker villagers crowd together — faces red, mouths open, shouting. An old stout man pounds his fist on a wooden barrel. A woman holds up an empty iron lantern bracket. Others shake fists and point in different directions. Animated, expressive cartoon anger. Colorful clothing, round faces, big gestures. Square format, no text.",
+      "characters_in_scene": ["Townspeople"],
+      "location": "Windfall Island - Day",
+      "reference_images": ["toon_link/official/zww-villagers.jpg"]
+    },
+    {
+      "page_number": 5,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Daytime. Toon Link stands in the center of a crowd of angry adult villagers who tower over him. The villagers point down at Link and point outward toward the dark hillside beyond town. Link is small among them, looking up with a serious, listening expression. One large man jabs a finger toward the hills. The adults loom over the small boy. Square format, no text.",
+      "characters_in_scene": ["Toon Link", "Townspeople"],
+      "location": "Windfall Island - Day",
+      "reference_images": ["toon_link/official/zww-link1.jpg", "toon_link/official/zww-link2.jpg", "toon_link/official/zww-villagers.jpg"]
+    },
+    {
+      "page_number": 6,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Nighttime. Toon Link crouches on a red-tiled rooftop, silhouetted against a starry sky. Below him, the mostly-dark street stretches out — only two or three lanterns still glow on posts. Link's large cartoon eyes are wide and alert, scanning the street. His green cap flutters in a breeze. A stakeout pose — patient, watchful, tense. Cold blue moonlight on the rooftop. Square format, no text.",
+      "characters_in_scene": ["Toon Link"],
+      "location": "Rooftop"
+    },
+    {
+      "page_number": 7,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Nighttime. Wider shot of a red-tiled rooftop. Toon Link sits with knees pulled up to his chest, waiting. The town below is very dark — almost no lanterns left. Deep blue shadows dominate the streets. One single remaining lantern glows on a post far below, like bait in the darkness. Stillness and silence implied. Stars above, cold blue atmosphere. Link is small on the rooftop, patient. Square format, no text.",
+      "characters_in_scene": ["Toon Link"],
+      "location": "Rooftop"
+    },
+    {
+      "page_number": 8,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Nighttime. Link's POV from the rooftop looking down at the street. A small dark silhouette — much too small for an adult — reaches up and snatches the last glowing lantern from its iron post. The figure clutches the bright lantern and turns to run, the warm glow illuminating it from below. In the foreground, Link's hands grip the roof edge, his eyes wide with surprise. Motion lines around the small figure. Square format, no text.",
+      "characters_in_scene": ["Toon Link", "Grunio"],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 9,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Nighttime. Toon Link drops from the rooftop to the street, landing in a cat-like crouch. Ahead of him down the dark street, a stolen lantern bobs through the shadows — the small thief carrying it is just a dark shape with the lantern's warm glow illuminating it from below. Link's expression is determined and focused. Cold blue street, warm amber lantern ahead. Square format, no text.",
+      "characters_in_scene": ["Toon Link", "Grunio"],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 10,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Nighttime. A small figure scrambles up a dirt path on a grassy moonlit hillside, the stolen lantern swinging wildly and casting jumping orange shadows through the tall grass. Link follows at a distance, staying low in the grass. The town glows faintly at the bottom of the hill. The figure flees upward into darkness. Silver moonlight on the grass, warm amber from the swinging lantern. Square format, no text.",
+      "characters_in_scene": ["Toon Link", "Grunio"],
+      "location": "Hillside Path"
+    },
+    {
+      "page_number": 11,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Nighttime on the hillside. Split composition: the upper half shows an imagined thought bubble — a fierce Moblin war camp with big snarling pig-faced Moblins around a bonfire, spears stuck in the ground, menacing and dangerous. The lower half shows Toon Link climbing the hill, face tense and bracing, one hand reaching instinctively for where a sword would be. He expects a fight. Cold moonlight on Link, warm firelight in the imagined scene above. Square format, no text.",
+      "characters_in_scene": ["Toon Link"],
+      "location": "Hillside Path"
+    },
+    {
+      "page_number": 12,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Toon Link stands at a small cave entrance in the hillside, looking in. His expression shifts from battle-ready to confused, mouth slightly open. Inside the cave: not an army — just one very small, scruffy young Moblin sitting alone on the rocky floor. The small Moblin has purple-gray skin, big sad yellow eyes, a piglet-like snout, a torn oversized brown tunic. He is tiny, thin, pathetic, alone. Warm amber glow from within the cave, cold moonlight on Link from behind. The contrast between expectation and reality. Square format, no text.",
+      "characters_in_scene": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave - Dark"
+    },
+    {
+      "page_number": 13,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. THE VISUAL CENTERPIECE — the most beautiful image in the book. Full wide shot of a small cave interior completely filled with dozens of stolen lanterns. Lanterns of every shape and size: round paper lanterns, iron-framed glass lanterns, small brass oil lamps, tall post lanterns propped against walls. They hang from rocky outcroppings on hooks and ropes, perch on every ledge and shelf, cluster on the cave floor in glowing groups, dangle from crevices in the ceiling. EVERY SINGLE ONE IS LIT. The cave is saturated with warm amber-gold light — every rocky surface glows like burnished gold, shadows are completely banished. It looks like the inside of a constellation, a treasure hoard made of light instead of gold. In the center, a very small young Moblin with purple-gray skin and a torn oversized tunic sits on the floor, tiny among the radiance. Breathtaking, magical, warm. Square format, no text.",
+      "characters_in_scene": ["Grunio"],
+      "location": "Grunio's Cave - Lit"
+    },
+    {
+      "page_number": 14,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Close-up of a very small young Moblin sitting cross-legged on the cave floor surrounded by glowing lanterns. He has purple-gray skin, big round sad yellow eyes reflecting the amber lantern-light, a soft piglet-like snout, drooping pointed ears. His torn oversized brown tunic pools around him. He gnaws on a fish bone — scraps of food. He is thin, bony, dirty, completely alone. But in this warm golden light, he looks almost content. Almost safe. Intimate, tender close-up. Square format, no text.",
+      "characters_in_scene": ["Grunio"],
+      "location": "Grunio's Cave - Lit"
+    },
+    {
+      "page_number": 15,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Shot from inside the lantern-filled cave looking toward the entrance. Toon Link's silhouette stands in the cave mouth, backlit by cold blue-white moonlight. Inside the cave, the small young Moblin looks up from his scraps, lantern-light warm on his face, yellow eyes going wide with fear. The moment of discovery — frozen, tense. Two small figures, one dark doorway, warm amber light between them. Square format, no text.",
+      "characters_in_scene": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave - Lit"
+    },
+    {
+      "page_number": 16,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Close-up in the lantern-lit cave. The small young Moblin is curled into a tight ball on the ground, thin arms wrapped over his head, face completely hidden. His whole body trembles. He has made himself as small as possible. His torn tunic bunches around him. A couple of nearby lanterns have been knocked over by his panicked flinch. A creature that expects to be hit. Gut-punch vulnerability. Warm amber light surrounds a figure braced for pain. Square format, no text.",
+      "characters_in_scene": ["Grunio"],
+      "location": "Grunio's Cave - Lit"
+    },
+    {
+      "page_number": 17,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Inside the lantern-lit cave. Toon Link stands still, arms at his sides, looking down. His expression is complex — not angry, not smiling. Thinking. His large cartoon eyes are serious and soft. In the background, the cowering Moblin and the dozens of glowing lanterns. The warmth of the cave, the scraps of food on the floor. Link is putting it together. A moment of quiet judgment. Warm amber light on everything. Square format, no text.",
+      "characters_in_scene": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave - Lit"
+    },
+    {
+      "page_number": 18,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. The simplest, most powerful image. Inside the lantern-lit cave. Toon Link sits cross-legged on the cave floor, a few feet from the small Moblin. Just sitting. No weapon, no threat. Calm. The small Moblin still has his arms over his head but peeks out through his fingers with one wide yellow eye. Dozens of warm amber lanterns glow softly around them. Two small figures on a cave floor. Quiet, intimate, gentle. Square format, no text.",
+      "characters_in_scene": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave - Lit"
+    },
+    {
+      "page_number": 19,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Inside the lantern-lit cave. Toon Link and the small young Moblin sit near each other on the cave floor, both cross-legged. The Moblin has uncurled — he sits up now, thin shoulders still tense but no longer cowering. They don't look directly at each other. They just share the same warm space. Dozens of amber-gold lanterns glow all around them. Two small figures in a cave of light. Quiet. Safe. Warm. Square format, no text.",
+      "characters_in_scene": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave - Lit"
+    },
+    {
+      "page_number": 20,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Inside the cave. Toon Link carefully gathers lanterns — an armful of them, handles looped over his arms and hands. He is methodical, taking roughly half. The small Moblin watches from the floor, tense but not fleeing. His yellow eyes follow Link but he stays still. Some lanterns remain on shelves and floor — the cave is dimmer now but still warmly lit. Not punishment, not permission. Restitution. Square format, no text.",
+      "characters_in_scene": ["Toon Link", "Grunio"],
+      "location": "Grunio's Cave - Lit"
+    },
+    {
+      "page_number": 21,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Pre-dawn. Toon Link walks through the dark town streets carrying an armful of lanterns. He reaches up to hang one on an empty iron bracket on a lamp post. Behind him, several posts already glow again — the street coming back to life. Cool pre-dawn blue light mixes with warm amber lantern glow. Link works alone, quietly, without fanfare. The town is being restored. Square format, no text.",
+      "characters_in_scene": ["Toon Link"],
+      "location": "Windfall Island - Night"
+    },
+    {
+      "page_number": 22,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Bright morning daylight. Townspeople gather around Toon Link in the restored, lantern-hung street. A woman villager asks a question, hands raised. Link's face is calm and unreadable — a small quiet expression. The villagers look satisfied, relieved, smiling. The lamp posts behind them glow with restored lanterns. Link stands small and still among the animated adults. A truth that is also a mercy. Square format, no text.",
+      "characters_in_scene": ["Toon Link", "Townspeople"],
+      "location": "Windfall Island - Day",
+      "reference_images": ["toon_link/official/zww-link1.jpg", "toon_link/official/zww-link2.jpg", "toon_link/official/zww-villagers.jpg"]
+    },
+    {
+      "page_number": 23,
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Wide, peaceful final shot. A dark grassy hillside at night under a starry sky. At the bottom of the hill in the distance, Windfall Island's lanterns glow again — a warm cluster of light, the town restored. On the hillside, two small warm amber points of light: one glowing softly from inside a small cave mouth, one sitting on the ground just outside the entrance — a lantern left as a gift. A tiny figure of Toon Link walks back down the hill toward town, his back to the viewer. No explanation. Just two small lights on a dark hill, and a small boy walking home. Vast, quiet, beautiful. Square format, no text.",
+      "characters_in_scene": ["Toon Link", "Grunio"],
+      "location": "Hillside - Final"
+    }
+  ]
+}
