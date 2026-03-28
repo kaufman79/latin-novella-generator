@@ -1,11 +1,11 @@
 {
   "project_id": "link_and_the_thiefs_lantern",
   "title_english": "Link and the Thief's Lantern",
-  "title_latin": null,
+  "title_latin": "Lincus et Lucerna Fūris",
   "source_type": "original",
   "theme": "mystery",
   "target_pages": 23,
-  "status": "outlined",
+  "status": "images_generated",
   "virtue_ratings": {
     "prudentia": 4,
     "iustitia": 4,
