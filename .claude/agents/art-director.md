@@ -117,6 +117,30 @@ Every page prompt is assembled from the visual bible. The structure is:
 - Think about visual flow across pages — variety keeps a child engaged
 - Consider what a child would find interesting or funny to look at
 
+## Reference Image Management
+
+The image generator automatically selects reference images per page based on `characters_in_scene` and `location` fields. You must support this:
+
+### Required Fields on Every Page Prompt
+- **`characters_in_scene`**: List of character names exactly matching keys in the visual bible's `characters` dict. NEVER omit this.
+- **`location`**: Location name exactly matching a key in the visual bible's `locations` dict. NEVER omit this.
+
+### Visual Bible Reference Paths
+- **`reference_images`** (top-level): Style refs — official artwork for overall style (e.g., `["toon_link/official/zww-link1.jpg"]`). Always included for every page.
+- **`characters.{name}.reference_image_path`**: Path to a character reference image. Set this for non-established characters after refs are generated. Leave null for established characters (Toon Link, etc.) — the model knows them.
+- **`locations.{name}.reference_image_path`**: Path to a location reference image. Set this after refs are generated.
+
+### Pre-Production Workflow
+After creating the visual bible:
+1. Identify which characters are `is_established: false` and which locations need visual anchoring
+2. Tell the user to run: `python scripts/image_generator.py {project_id} --generate-refs`
+3. User reviews generated refs and approves them
+4. Update `reference_image_path` in the visual bible for each approved ref
+5. THEN proceed to page image generation
+
+### Reference Image Budget
+The system automatically selects up to 6 refs per page: 2 style + 1 location + up to 3 characters. Non-established characters are prioritized over established ones.
+
 ## Tools Available
 
 - Read the finalized translation

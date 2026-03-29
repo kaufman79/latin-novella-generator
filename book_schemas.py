@@ -90,6 +90,7 @@ class LocationVisual(BaseModel):
     """Location visual specification for image prompts."""
     visual_description: str
     time_of_day_default: str = "bright daylight"
+    reference_image_path: Optional[str] = None  # Path to location reference image
 
 
 class VisualBible(BaseModel):

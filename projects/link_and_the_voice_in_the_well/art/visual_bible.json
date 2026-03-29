@@ -20,33 +20,40 @@
       "is_established": true,
       "visual_description": "A very small Korok — a forest spirit the size of a large apple, small enough to fit in Link's cupped hands. Round wooden body with a bark-like texture. A leaf-face mask covers his face — round with two large eye holes that glow faintly green-gold. A single large leaf sprouts from the top of his head like a propeller. Stubby little wooden arms and legs. In the well scenes his leaf droops, wet and bedraggled. In sunlight his leaf stands straight up and can spin like a helicopter blade, allowing him to fly. His whole body emits a faint green-gold bioluminescence — barely visible in daylight, but a warm lantern-glow in darkness.",
       "expression_default": "timid, hopeful, small — his drooping or spinning leaf is his main expression indicator",
-      "height_reference": "Tiny. Fits in Link's two cupped hands. About the size of a large apple or a softball. When on Link's shoulder, he is a small bump on top of Link."
+      "height_reference": "Tiny. Fits in Link's two cupped hands. About the size of a large apple or a softball. When on Link's shoulder, he is a small bump on top of Link.",
+      "reference_image_path": "toon_link/characters/korok_ref.png"
     }
   },
   "locations": {
     "Outset Island - Day": {
       "visual_description": "A small, bright tropical island in the Wind Waker style. Green grassy hills, swaying palm trees, a few thatched-roof cottages, a tall wooden watchtower on the highest point. Bright blue ocean surrounds everything, sparkling in the sunlight. Sandy paths wind between the homes. Warm, safe, familiar — this is home. Bright saturated colors, cheerful and inviting.",
-      "time_of_day_default": "bright daylight, warm tropical sunshine"
+      "time_of_day_default": "bright daylight, warm tropical sunshine",
+      "reference_image_path": "art/references/outset_island_day_ref.png"
     },
     "The Well - Exterior": {
       "visual_description": "An old stone well at the edge of the island, half-hidden behind tall grass and a leaning palm tree. Round mossy stones stacked into a low circular wall, about waist-height on Link. No bucket, no rope, no mechanism — just an open hole. The inside is a perfect circle of absolute blackness, even in full daylight. Slightly overgrown with grass and moss. It looks forgotten, ancient, out of place on this cheerful island.",
-      "time_of_day_default": "bright daylight — the contrast between the sunny surroundings and the dark opening is key"
+      "time_of_day_default": "bright daylight — the contrast between the sunny surroundings and the dark opening is key",
+      "reference_image_path": "art/references/the_well_exterior_ref.png"
     },
     "Outset Island - Well Rim": {
       "visual_description": "The immediate area around the well. Bright green grass, blue sky. The well's mossy stone rim is the anchor of the composition. Link's growing pile of tied-together rope materials visible nearby on the grass. In the background, the island — cottages, palm trees, the watchtower. This is where the comedy plays out: a bright, cheerful setting for increasingly absurd problem-solving.",
-      "time_of_day_default": "bright daylight"
+      "time_of_day_default": "bright daylight",
+      "reference_image_path": "art/references/outset_island_well_rim_ref.png"
     },
     "The Well - Interior / Descent": {
       "visual_description": "Inside the well looking up or down. Wet mossy stone walls, close and claustrophobic — the well shaft is narrow, barely wider than Link's arm span. A circle of bright sky visible far above, shrinking as the descent continues. Wet surfaces catch faint reflected light. Green moss and dark slime on the stones. Water drips constantly. Deeply shadowed — the only significant light source is the sky circle above. The further down, the darker it gets. Cold, damp, tight, real.",
-      "time_of_day_default": "dark — lit only by the fading circle of sky above"
+      "time_of_day_default": "dark — lit only by the fading circle of sky above",
+      "reference_image_path": "art/references/the_well_interior_descent_ref.png"
     },
     "The Well - Bottom": {
       "visual_description": "The very bottom of the well. Shallow water on a rough stone floor. Almost no light reaches here — the sky above is a tiny pale dot. In near-total darkness, the only illumination is the faint green-gold glow of Foliolus. When Link arrives and holds the Korok, their two faces are lit in an intimate pool of warm green-gold light surrounded by absolute black. Wet stone, still water, silence.",
-      "time_of_day_default": "pitch dark — Korok's bioluminescence is the only light"
+      "time_of_day_default": "pitch dark — Korok's bioluminescence is the only light",
+      "reference_image_path": "art/references/the_well_bottom_ref.png"
     },
     "Outset Island - Sunlight": {
       "visual_description": "The island in full brilliant daylight — but experienced as if seeing it for the first time after darkness. Everything is vivid, oversaturated, almost blinding. Green grass practically glows. The ocean sparkles with white highlights. The sky is the bluest blue. This is not just 'daytime' — this is the overwhelming flood of light and color after the well's darkness. The well sits nearby, a quiet stone circle, no longer threatening.",
-      "time_of_day_default": "brilliant, flooding sunlight — almost overexposed compared to earlier island scenes"
+      "time_of_day_default": "brilliant, flooding sunlight — almost overexposed compared to earlier island scenes",
+      "reference_image_path": "art/references/outset_island_sunlight_ref.png"
     }
   },
   "composition_rules": [

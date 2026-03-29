@@ -50,7 +50,7 @@ For detailed rubrics, rating guidelines (with examples at each level 0-5), and p
 
 **Virtue badge on cover:** The PDF builder reads the highest-rated virtue from `config.json` and displays it as a badge on the front cover (e.g. "Fortitudo") in Latin with proper macrons, small-caps, and a decorative border.
 
-**Inside cover virtue display:** The PDF builder renders a dot chart on the inside cover page showing all 7 virtues with filled/empty dots (out of 5) under the heading "Virtutes."
+**Inside cover virtue display:** The PDF builder renders a dot chart on the inside cover page showing all 7 virtues with filled/empty dots (out of 5) under the heading "Virtūtēs."
 
 **Virtue coverage chart:** Run `python scripts/virtue_chart.py` to generate a bubble chart at `output/virtue_chart.png` showing ratings across all books, plus a text summary of coverage gaps. Use it to identify underrepresented virtues when planning new books.
 
@@ -91,12 +91,23 @@ The book creation pipeline has review gates between each stage. **All gates are 
 - Dictionary headword forms (nom. for nouns, 1st person for verbs), with principal parts abbreviation, gender, macrons
 - Alphabetical, 30-80 entries per book. Skip proper names and common function words (et, in, nōn, sed, est)
 - The PDF builder renders this as a two-column glossary page at the end of the book
-- **Every book must have a glossary** — generate it after the Latin is finalized
+- **Fallback**: If no `glossary.json` exists, the PDF builder auto-generates a page-by-page reading aid from the translation (3-column table: page number, Latin sentence, English sentence). A proper glossary.json is preferred.
 
 ### 4. Art Direction → `@art-director`
 - Creates Visual Bible and per-page image prompts
 - Output: `projects/{id}/art/visual_bible.json` and `projects/{id}/art/prompts.json`
 - **REVIEW GATE**: User approves art direction before image generation (this is where $$ gets spent)
+
+### 4b. Reference Image Pre-Production
+```bash
+python scripts/image_generator.py {project_id} --generate-refs
+```
+- Generates reference images for non-established characters and locations
+- Reads the visual bible, identifies what needs refs, generates establishing shots and character sheets
+- Output: `projects/{id}/art/references/*.png`
+- After generation, add `reference_image_path` to each character/location in `visual_bible.json`
+- The image generator automatically selects refs per page based on `characters_in_scene` and `location`
+- **REVIEW GATE**: User approves refs before full page generation
 
 ### 5. Image Generation
 ```bash
@@ -218,6 +229,7 @@ projects/{project_id}/          # One directory per book
 ├── source/outline.json         # English story outline
 ├── translation/
 │   ├── translation.json        # Latin text + English + image paths
+│   ├── glossary.json           # Word-by-word vocabulary list (optional — PDF auto-generates if missing)
 │   └── review.md               # Latin review notes
 ├── art/
 │   ├── visual_bible.json       # Style guide, character visuals, reference image paths
@@ -245,7 +257,10 @@ docs/                           # Project documentation
 ├── theological_virtues_deep_dive.md # Detailed rubrics for fides, spes, caritas
 ├── pd_adaptation_pipeline.md
 ├── pd_adaptation_priorities.md
-└── potter_books_research.md
+├── potter_books_research.md
+├── virtue_ratings_audit.md
+├── little_engine_plan.md
+└── little_engine_illustrations_research.md
 output/                         # Cross-project outputs
 └── virtue_chart.png            # Virtue coverage visualization
 ```
@@ -281,9 +296,15 @@ python scripts/project_manager.py status {project_id}
 - `projects/augustine_steals_the_pears/` — moral arc (temperantia), slightly more complex
 - `projects/locusts_and_dragon/` — action-heavy adventure, teamwork (fortitudo)
 - `projects/lion_witch_wardobe/` — adapted story, richest virtue content, most complex Latin
-- `projects/link_and_the_stolen_treasure/` — Toon Link adventure (in progress)
-- `projects/the_tale_of_peter_rabbit/` — PD adaptation of Beatrix Potter
+- `projects/link_and_the_stolen_treasure/` — Toon Link adventure
+- `projects/link_and_the_thiefs_lantern/` — Toon Link adventure (sequel)
 - `projects/the_enormous_turnip/` — original retelling of the folk tale
+- `projects/the_little_engine_that_could/` — PD adaptation
+- `projects/the_tale_of_peter_rabbit/` — PD adaptation of Beatrix Potter
+- `projects/the_tale_of_benjamin_bunny/` — PD adaptation of Beatrix Potter
+- `projects/the_tale_of_tom_kitten/` — PD adaptation of Beatrix Potter
+- `projects/the_tale_of_jemima_puddleduck/` — PD adaptation of Beatrix Potter
+- `projects/the_tale_of_two_bad_mice/` — PD adaptation of Beatrix Potter
 
 ### Published Latin picture books (in `existing_stories/`)
 - Candidus et dies horribilis, Iulus et pugna, Minimus et umbra

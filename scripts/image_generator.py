@@ -60,6 +60,90 @@ def get_gemini_client() -> genai.Client:
     return genai.Client(api_key=api_key)
 
 
+def _resolve_ref_path(path_str: str, ref_images_dir: Path, project_dir: Path | None = None) -> Path | None:
+    """Resolve a reference image path, trying multiple base directories."""
+    p = Path(path_str)
+    if p.exists():
+        return p
+    # Try relative to reference_images/
+    candidate = ref_images_dir / path_str
+    if candidate.exists():
+        return candidate
+    # Try relative to project dir
+    if project_dir:
+        candidate = project_dir / path_str
+        if candidate.exists():
+            return candidate
+    return None
+
+
+def _select_reference_images(
+    visual_bible: dict | None,
+    page_prompt: dict,
+    ref_images_dir: Path,
+    project_dir: Path | None = None,
+    max_refs: int = 6,
+) -> list[str]:
+    """
+    Automatically select reference images for a page based on scene content.
+
+    Priority: explicit override > style refs + location ref + character refs.
+    """
+    # Escape hatch: explicit per-page override
+    explicit = page_prompt.get("reference_images")
+    if explicit is not None:
+        resolved = []
+        for p in explicit:
+            rp = _resolve_ref_path(p, ref_images_dir, project_dir)
+            if rp:
+                resolved.append(str(rp))
+        return resolved
+
+    if not visual_bible:
+        return []
+
+    refs = []
+
+    # 1. Style refs (global defaults — official artwork)
+    for p in visual_bible.get("reference_images", []):
+        rp = _resolve_ref_path(p, ref_images_dir, project_dir)
+        if rp:
+            refs.append(str(rp))
+
+    # 2. Location ref
+    location = page_prompt.get("location")
+    if location and location in visual_bible.get("locations", {}):
+        loc_ref = visual_bible["locations"][location].get("reference_image_path")
+        if loc_ref:
+            rp = _resolve_ref_path(loc_ref, ref_images_dir, project_dir)
+            if rp and str(rp) not in refs:
+                refs.append(str(rp))
+
+    # 3. Character refs — prioritize non-established characters
+    characters = page_prompt.get("characters_in_scene", [])
+    char_entries = visual_bible.get("characters", {})
+    # Sort: non-established first (they need refs more)
+    sorted_chars = sorted(
+        characters,
+        key=lambda c: char_entries.get(c, {}).get("is_established", False),
+    )
+    for char_name in sorted_chars:
+        if len(refs) >= max_refs:
+            break
+        char = char_entries.get(char_name, {})
+        char_ref = char.get("reference_image_path")
+        if char_ref:
+            rp = _resolve_ref_path(char_ref, ref_images_dir, project_dir)
+            if rp and str(rp) not in refs:
+                refs.append(str(rp))
+
+    if len(refs) > max_refs:
+        print(f"    Warning: {len(refs)} refs exceed budget of {max_refs}, trimming")
+        refs = refs[:max_refs]
+
+    return refs
+
+
 def _load_reference_images(ref_paths: list[str]) -> list[types.Part]:
     """Load reference images as Gemini content parts."""
     parts = []
@@ -224,29 +308,15 @@ def generate_book_images(
 
     print(f"Generating {total} image(s) for '{project_id}' using Gemini ({GEMINI_IMAGE_MODEL})...")
 
-    # Load reference images from visual bible
     ref_images_dir = Path("reference_images")
-    default_refs = []
-    if visual_bible and "reference_images" in visual_bible:
-        for ref_path in visual_bible["reference_images"]:
-            full_path = Path(ref_path)
-            if not full_path.is_absolute():
-                full_path = ref_images_dir / ref_path
-            if full_path.exists():
-                default_refs.append(str(full_path))
-            else:
-                print(f"  Warning: reference image not found: {full_path}")
-
-    if default_refs:
-        print(f"  Using {len(default_refs)} reference image(s) for style consistency")
 
     for i, page_prompt in enumerate(page_prompts):
         page_num = page_prompt["page_number"]
         prompt = build_prompt_from_visual_bible(visual_bible, page_prompt)
         prompt = _sanitize_prompt(prompt)
 
-        # Use page-specific refs if provided, otherwise default refs
-        page_refs = page_prompt.get("reference_images", default_refs)
+        # Auto-select refs based on characters and location in scene
+        page_refs = _select_reference_images(visual_bible, page_prompt, ref_images_dir, project_dir)
 
         print(f"  Page {page_num} ({i+1}/{total})...")
 
@@ -318,14 +388,7 @@ def generate_book_images_batch(
     if pages:
         page_prompts = [p for p in page_prompts if p["page_number"] in pages]
 
-    # Load default reference images
     ref_images_dir = Path("reference_images")
-    default_refs = []
-    if visual_bible and "reference_images" in visual_bible:
-        for ref_path in visual_bible["reference_images"]:
-            full_path = ref_images_dir / ref_path
-            if full_path.exists():
-                default_refs.append(full_path)
 
     # Build JSONL requests
     jsonl_file = project_dir / "batch_requests.jsonl"
@@ -336,14 +399,14 @@ def generate_book_images_batch(
             page_num = page_prompt["page_number"]
             prompt = build_prompt_from_visual_bible(visual_bible, page_prompt)
             prompt = _sanitize_prompt(prompt)
-            page_refs = page_prompt.get("reference_images", [str(r) for r in default_refs])
+
+            # Auto-select refs based on characters and location in scene
+            page_refs = _select_reference_images(visual_bible, page_prompt, ref_images_dir, project_dir)
 
             # Build content parts
             parts = []
             for ref_path in page_refs:
                 ref = Path(ref_path)
-                if not ref.exists():
-                    ref = ref_images_dir / ref_path
                 if ref.exists():
                     mime = "image/png" if ref.suffix == ".png" else "image/jpeg"
                     b64 = base64.b64encode(ref.read_bytes()).decode()
@@ -443,6 +506,104 @@ def download_batch_results(project_id: str, batch_name: str) -> dict[int, str]:
     return image_paths
 
 
+def generate_reference_images(
+    project_id: str,
+    size: str = DEFAULT_IMAGE_RESOLUTION,
+) -> dict[str, str]:
+    """
+    Generate reference images for non-established characters and locations.
+
+    Reads the visual bible, identifies characters/locations that need refs,
+    generates them, and prints instructions to add paths to visual_bible.json.
+    """
+    import re
+
+    project_dir = Path("projects") / project_id
+    visual_bible_file = project_dir / "art" / "visual_bible.json"
+    ref_images_dir = Path("reference_images")
+
+    if not visual_bible_file.exists():
+        raise FileNotFoundError(f"Visual bible not found: {visual_bible_file}")
+
+    with open(visual_bible_file) as f:
+        visual_bible = json.load(f)
+
+    refs_dir = project_dir / "art" / "references"
+    refs_dir.mkdir(parents=True, exist_ok=True)
+
+    # Load style refs for consistency
+    style_refs = []
+    for p in visual_bible.get("reference_images", []):
+        rp = _resolve_ref_path(p, ref_images_dir, project_dir)
+        if rp:
+            style_refs.append(str(rp))
+
+    style_desc = visual_bible.get("style", {}).get("medium", "Cel-shaded illustration")
+    generated = {}
+
+    def _slug(name: str) -> str:
+        return re.sub(r'[^a-z0-9]+', '_', name.lower()).strip('_')
+
+    # Generate character refs
+    for char_name, char_data in visual_bible.get("characters", {}).items():
+        if char_data.get("is_established", False):
+            continue
+        if char_data.get("reference_image_path"):
+            rp = _resolve_ref_path(char_data["reference_image_path"], ref_images_dir, project_dir)
+            if rp:
+                print(f"  Character '{char_name}': ref already exists at {rp}")
+                continue
+
+        desc = char_data.get("visual_description", char_name)
+        prompt = f"{style_desc}. {desc}. Character reference sheet. Full body, front-facing neutral pose, simple solid-color background. Single character only. Square aspect ratio. No text in image."
+
+        print(f"  Generating character ref: {char_name}...")
+        try:
+            image = generate_image(prompt, resolution=size, reference_images=style_refs)
+            out_path = refs_dir / f"{_slug(char_name)}_ref.png"
+            image.save(out_path)
+            rel_path = f"art/references/{out_path.name}"
+            generated[char_name] = rel_path
+            print(f"    Saved: {out_path}")
+        except Exception as e:
+            print(f"    Error: {e}")
+
+    # Generate location refs
+    for loc_name, loc_data in visual_bible.get("locations", {}).items():
+        if loc_data.get("reference_image_path"):
+            rp = _resolve_ref_path(loc_data["reference_image_path"], ref_images_dir, project_dir)
+            if rp:
+                print(f"  Location '{loc_name}': ref already exists at {rp}")
+                continue
+
+        desc = loc_data.get("visual_description", loc_name)
+        prompt = f"{style_desc}. {desc}. Empty establishing shot of this location. No characters present. Wide shot showing the full environment. Square aspect ratio. No text in image."
+
+        print(f"  Generating location ref: {loc_name}...")
+        try:
+            image = generate_image(prompt, resolution=size, reference_images=style_refs)
+            out_path = refs_dir / f"{_slug(loc_name)}_ref.png"
+            image.save(out_path)
+            rel_path = f"art/references/{out_path.name}"
+            generated[loc_name] = rel_path
+            print(f"    Saved: {out_path}")
+        except Exception as e:
+            print(f"    Error: {e}")
+        time.sleep(REQUEST_DELAY)
+
+    # Print instructions
+    if generated:
+        print(f"\n{'='*60}")
+        print("Generated reference images. Add these to visual_bible.json:")
+        print(f"{'='*60}")
+        for name, path in generated.items():
+            print(f'  "{name}": set "reference_image_path": "{path}"')
+    else:
+        print("\nNo new reference images needed — all refs already exist.")
+
+    return generated
+
+
 def main():
     """CLI for image generation."""
     import argparse
@@ -455,10 +616,14 @@ def main():
     parser.add_argument("--batch", action="store_true", help="Use batch API (50%% cheaper, async)")
     parser.add_argument("--batch-status", metavar="JOB_NAME", help="Check batch job status")
     parser.add_argument("--batch-download", metavar="JOB_NAME", help="Download batch job results")
+    parser.add_argument("--generate-refs", action="store_true",
+                        help="Generate reference images for characters and locations")
 
     args = parser.parse_args()
 
-    if args.batch_status:
+    if args.generate_refs:
+        generate_reference_images(args.project_id, size=args.size)
+    elif args.batch_status:
         check_batch_status(args.batch_status)
     elif args.batch_download:
         download_batch_results(args.project_id, args.batch_download)
