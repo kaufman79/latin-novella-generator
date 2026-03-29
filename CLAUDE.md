@@ -184,12 +184,24 @@ Every image prompt is fully self-contained with identical style and character de
 - **Original characters** need extremely specific visual descriptions: exact colors, proportions, clothing, features.
 - **Lock down details** to prevent drift: specify exact colors ("purple-gray skin, beady yellow eyes"), not vague descriptions.
 
-**2. Reference images from official artwork:**
-The `visual_bible.json` can specify `reference_images` — file paths to artwork that gets sent alongside every prompt. These are loaded as image inputs to Gemini with a style-matching instruction prefix. This dramatically improves consistency, especially for established characters.
+**2. Reference images (auto-selected per page):**
+The image generator automatically selects up to 6 reference images per page based on the `characters_in_scene` and `location` fields in each page prompt:
 
-- Reference images are specified in `visual_bible.json` at the top level (applies to all pages) or per-page in `prompts.json` (overrides defaults).
-- The style instruction prefix is: "Using the exact art style from these reference images — the textured cel-shading, brush-stroke coloring, thick black outlines, and character proportions — generate a new scene:"
-- Paths can be absolute or relative to `reference_images/`.
+- **Budget**: 2 style refs + 1 location ref + up to 3 character refs (non-established prioritized)
+- **Style refs** (`visual_bible.json` top-level `reference_images`): sent with every page for overall style consistency
+- **Character refs** (`characters.{name}.reference_image_path`): sent when that character appears in a scene
+- **Location refs** (`locations.{name}.reference_image_path`): sent when the scene is at that location
+- **Per-page override**: a `reference_images` array on a page prompt bypasses auto-selection entirely
+- Paths can be absolute or relative to `reference_images/` or project dir
+
+**3. Reference image pre-production:**
+Before generating page images, generate and review character/location reference images:
+```bash
+python scripts/image_generator.py {project_id} --generate-refs
+```
+This reads the visual bible, generates refs for non-established characters (character sheets) and locations (establishing shots), saves them to `art/references/`, and prints instructions for adding paths to the visual bible. Review and approve refs before generating pages.
+
+**Design principle:** Each illustration must precisely depict the action described in that page's Latin text. The pictures do the heavy lifting for language comprehension — a child who doesn't fully understand the Latin should be able to follow the story through the illustrations alone. Tight image-text alignment is the primary comprehension mechanism.
 
 ---
 
@@ -234,7 +246,8 @@ projects/{project_id}/          # One directory per book
 ├── art/
 │   ├── visual_bible.json       # Style guide, character visuals, reference image paths
 │   ├── prompts.json            # Per-page self-contained image prompts
-│   └── image_manifest.json     # Page-to-image mapping (PD adaptations only)
+│   ├── image_manifest.json     # Page-to-image mapping (PD adaptations only)
+│   └── references/             # Generated character sheets and location refs
 ├── images/
 │   ├── cover.png               # Cover image (optional)
 │   └── page_*.png              # Generated/sourced page images
@@ -322,7 +335,7 @@ python scripts/project_manager.py status {project_id}
 - **Config**: `config.py` — constants (model names, default resolution, image formats)
 - **Scripts**:
   - `scripts/project_manager.py` — create, list, and check status of projects
-  - `scripts/image_generator.py` — generate images (sync or batch), check batch status, download results
+  - `scripts/image_generator.py` — generate images (sync or batch), generate reference images (`--generate-refs`), check batch status, download results
   - `scripts/pdf_builder.py` — assemble HTML + PDF from translation and images
   - `scripts/virtue_chart.py` — generate bubble chart of virtue coverage across all books
 - **Agents**: `.claude/agents/` — story-architect, latin-scribe, latin-censor, art-director
