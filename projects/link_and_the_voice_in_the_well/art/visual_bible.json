@@ -33,12 +33,12 @@
     "The Well - Exterior": {
       "visual_description": "An old stone well at the edge of the island, half-hidden behind tall grass and a leaning palm tree. Round mossy stones stacked into a low circular wall, about waist-height on Link. No bucket, no rope, no mechanism — just an open hole. The inside is a perfect circle of absolute blackness, even in full daylight. Slightly overgrown with grass and moss. It looks forgotten, ancient, out of place on this cheerful island.",
       "time_of_day_default": "bright daylight — the contrast between the sunny surroundings and the dark opening is key",
-      "reference_image_path": "art/references/the_well_exterior_ref.png"
+      "reference_image_path": "art/references/the_well_ref.png"
     },
     "Outset Island - Well Rim": {
       "visual_description": "The immediate area around the well. Bright green grass, blue sky. The well's mossy stone rim is the anchor of the composition. Link's growing pile of tied-together rope materials visible nearby on the grass. In the background, the island — cottages, palm trees, the watchtower. This is where the comedy plays out: a bright, cheerful setting for increasingly absurd problem-solving.",
       "time_of_day_default": "bright daylight",
-      "reference_image_path": "art/references/outset_island_well_rim_ref.png"
+      "reference_image_path": "art/references/the_well_ref.png"
     },
     "The Well - Interior / Descent": {
       "visual_description": "Inside the well looking up or down. Wet mossy stone walls, close and claustrophobic — the well shaft is narrow, barely wider than Link's arm span. A circle of bright sky visible far above, shrinking as the descent continues. Wet surfaces catch faint reflected light. Green moss and dark slime on the stones. Water drips constantly. Deeply shadowed — the only significant light source is the sky circle above. The further down, the darker it gets. Cold, damp, tight, real.",

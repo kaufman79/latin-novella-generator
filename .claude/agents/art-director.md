@@ -125,6 +125,11 @@ The image generator automatically selects reference images per page based on `ch
 - **`characters_in_scene`**: List of character names exactly matching keys in the visual bible's `characters` dict. NEVER omit this.
 - **`location`**: Location name exactly matching a key in the visual bible's `locations` dict. NEVER omit this.
 
+### Location Design Rules
+- **Locations are physical places, not camera angles.** If two scenes happen at the same stone well, they share ONE location entry — don't split into "Well Exterior" and "Well Rim". The text prompt handles framing (wide shot, close-up, looking down into it).
+- **One ref image per location** anchors the physical appearance (materials, colors, shape, surroundings). The prompt describes the camera angle and mood per page.
+- **Future:** We may add multi-angle ref sheets per location (like character sheets). For now, one establishing shot per place is sufficient.
+
 ### Visual Bible Reference Paths
 - **`reference_images`** (top-level): Style refs — official artwork for overall style (e.g., `["toon_link/official/zww-link1.jpg"]`). Always included for every page.
 - **`characters.{name}.reference_image_path`**: Path to a character reference image. Set this for non-established characters after refs are generated. Leave null for established characters (Toon Link, etc.) — the model knows them.
