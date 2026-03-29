@@ -4,8 +4,8 @@
   "pages": [
     {
       "page_number": 1,
-      "latin_text": "Lincus omnem sēmitam īnsulae sciēbat. Omne saxum. Omnem arborem.",
-      "english_text": "Link knew every path on the island. Every rock. Every tree.",
+      "latin_text": "Lincus omnem sēmitam īnsulae sciēbat. Omne saxum sciēbat. Omnem arborem sciēbat.",
+      "english_text": "Link knew every path on the island. He knew every rock. He knew every tree.",
       "image_prompt": "Wide establishing shot of Outset Island in bright daylight. Link walks along a familiar grassy path, one hand trailing through tall grass, completely at ease. The island stretches out behind him — cottages, the watchtower, palm trees, the sparkling ocean. He looks relaxed, confident, at home. This is his island and he knows it. Wind Waker cel-shaded style, bright saturated colors.",
       "characters": [
         "Toon Link"
@@ -26,8 +26,8 @@
     },
     {
       "page_number": 3,
-      "latin_text": "Dēspēxit. Obscūrum. Valdē obscūrum.",
-      "english_text": "He looked down into it. Dark. Very dark.",
+      "latin_text": "Dēspēxit. Erat obscūrum. Valdē obscūrum.",
+      "english_text": "He looked down into it. It was dark. Very dark.",
       "image_prompt": "Top-down shot looking over Link's shoulder into the well. His hands grip the mossy stone rim. Below: absolute blackness. The well is deep — the light from above only reaches a few feet down before the wet stone walls vanish into nothing. Link's face is lit from above, eyes wide, peering down. A single drop of water catches the light as it falls into the dark.",
       "characters": [
         "Toon Link"
@@ -37,8 +37,8 @@
     },
     {
       "page_number": 4,
-      "latin_text": "Tum — vōx. Parva. Longē īnfrā.",
-      "english_text": "Then — a voice. Small. Far below.",
+      "latin_text": "Tum vōcem audīvit. Parva erat. Longē īnfrā erat.",
+      "english_text": "Then he heard a voice. It was small. It was far below.",
       "image_prompt": "Same angle as page 3 but Link has jerked back from the rim, startled. His eyes are huge. From the dark hole, faint wavy lines suggest sound rising — a voice echoing up from below. The darkness seems deeper now, more alive. Link's hands still grip the stone but his body is leaning away. Something is down there.",
       "characters": [
         "Toon Link"
@@ -70,8 +70,8 @@
     },
     {
       "page_number": 7,
-      "latin_text": "Nimis brevis.",
-      "english_text": "Too short.",
+      "latin_text": "Fūnis nimis brevis erat.",
+      "english_text": "The rope was too short.",
       "image_prompt": "Link pulls the rope back up, dangling it over the well — the end hangs in midair, clearly not long enough. His face falls. Disappointment. The rope looked so promising on the ground but the well is deeper than he thought. A beat of simple visual comedy — the short rope and the deep, deep hole.",
       "characters": [
         "Toon Link"
@@ -125,8 +125,8 @@
     },
     {
       "page_number": 12,
-      "latin_text": "Deorsum, deorsum, deorsum. Nimis brevis!",
-      "english_text": "Down, down, down. Too short!",
+      "latin_text": "Deorsum, deorsum, deorsum. Nimis brevis erat!",
+      "english_text": "Down, down, down. It was too short!",
       "image_prompt": "The absurd patchwork rope — brown rope, green vine, leather belt, white clothesline with a dangling sock — hangs from the well rim into the darkness, and once again the end dangles in the void, not reaching the bottom. The visual is inherently funny: this ridiculous Frankenstein rope and it's STILL not enough. Link slumps against the well rim, arms hanging over the edge, defeated. A comedy-of-accumulation punchline.",
       "characters": [
         "Toon Link"
@@ -156,8 +156,8 @@
     },
     {
       "page_number": 15,
-      "latin_text": "Intrāvit. Deorsum. In tenebrās.",
-      "english_text": "He climbed in. Down. Into the dark.",
+      "latin_text": "Intrāvit. Deorsum iit. In tenebrās iit.",
+      "english_text": "He climbed in. He went down. He went into the dark.",
       "image_prompt": "Shot from inside the well looking up. Link's small silhouette against the bright circle of sky above, gripping the patchwork rope, feet braced against the wet stone wall. He is descending. The circle of light above him is his last connection to the safe world. Below him: nothing visible, just darkness. Water drips. The walls are close, green with moss. This should feel genuinely tense — a small boy climbing into a dark unknown place.",
       "characters": [
         "Toon Link"
@@ -167,8 +167,8 @@
     },
     {
       "page_number": 16,
-      "latin_text": "Saxum ūdum. Manūs frīgidae. Fūnis dēfēcit. Pede marginem invēnit.",
-      "english_text": "Wet stone. Cold hands. The rope ended. He found a ledge with his foot.",
+      "latin_text": "Saxum ūdum erat. Manūs frīgidae erant. Fūnis dēfēcit. Pede marginem invēnit.",
+      "english_text": "The stone was wet. His hands were cold. The rope ended. He found a ledge with his foot.",
       "image_prompt": "Close-up of Link on the well wall in near-darkness. Only faint light from far above. His hands grip the end of the patchwork rope — the sock on the clothesline is the last thing he's holding. Below the rope's end, his foot stretches down and finds a narrow stone ledge. His face is barely visible in the dim light — eyes wide, mouth tight, feeling his way blind. Every detail is tactile: wet stone, cold hands, the texture of rope. This is the hardest part — the rope has run out and he must go further.",
       "characters": [
         "Toon Link"
@@ -190,8 +190,8 @@
     },
     {
       "page_number": 18,
-      "latin_text": "Faciēs parva. Folium parvum. Foliolus!",
-      "english_text": "A tiny face. A little leaf. Foliolus!",
+      "latin_text": "Faciēs parva erat. Folium parvum habēbat. Foliolus erat!",
+      "english_text": "The face was tiny. It had a little leaf. It was Foliolus!",
       "image_prompt": "THE VISUAL CENTERPIECE. Link has reached the bottom and kneels in shallow water. In his cupped hands: Foliolus the Korok, revealed in full for the first time. The Korok is tiny — fits in two hands. Round wooden body, a leaf-face mask with eye holes that glow soft green-gold, a single large leaf drooping from the top of his head (wet, bedraggled). The Korok's faint bioluminescence lights both their faces in warm green-gold against the darkness. Link's expression is pure wonder — wide eyes, open mouth. Magical. Intimate. A tiny lantern of life at the bottom of the world.",
       "characters": [
         "Toon Link",
