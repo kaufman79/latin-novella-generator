@@ -10,6 +10,7 @@ Ongoing series of Latin picture books using characters and settings from The Leg
 | Tetra | Tetra | Tetrae | 1st fem. | |
 | Moblin (sg.) | Moblīnus | Moblīnī | 2nd masc. | Long ī in first syllable |
 | Moblins (pl.) | Moblīnī | Moblīnōrum | 2nd masc. pl. | |
+| Korok | Foliolus | Foliolī | 2nd masc. | Diminutive of folium ("little leaf") |
 
 - Use Latinized names in all Latin text. English text and image prompts still use the English names (the image gen API knows them that way).
 
@@ -44,3 +45,5 @@ These are supplementary to the official art. Generate new ones as needed for new
 ## Books in This Series
 
 1. **Link and the Stolen Treasure** (`projects/link_and_the_stolen_treasure/`) — Forsaken Fortress heist, fortitudo (perseverance through failure)
+2. **Link and the Thief's Lantern** (`projects/link_and_the_thiefs_lantern/`) — Windfall lantern thief, iustitia/misericordia (justice tempered by mercy)
+3. **Link and the Voice in the Well** (`projects/link_and_the_voice_in_the_well/`) — Outset Island well rescue, fides (trust through voice alone)

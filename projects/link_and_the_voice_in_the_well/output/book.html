@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Palatino', 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .title-page {
+            text-align: center;
+            page-break-after: always;
+            padding-top: 3in;
+        }
+
+        .title-page h1 {
+            font-size: 36pt;
+            margin-bottom: 0.5in;
+            color: #2c3e50;
+        }
+
+        .title-page .english {
+            font-size: 24pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page {
+            page-break-after: always;
+            text-align: center;
+        }
+
+        .story-page img {
+            max-width: 100%;
+            max-height: 7in;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 0.5in auto;
+        }
+
+        .story-page .latin-text {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0.3in 0;
+        }
+
+        .story-page .english-text {
+            font-size: 14pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page .page-number {
+            position: absolute;
+            bottom: 0.3in;
+            right: 0.3in;
+            font-size: 12pt;
+            color: #bdc3c7;
+        }
+
+        .virtue-badge {
+            display: inline-block;
+            border: 2px solid #8e7c5a;
+            border-radius: 20px;
+            padding: 4px 18px;
+            font-size: 13pt;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            color: #8e7c5a;
+            background-color: rgba(255, 255, 255, 0.75);
+            margin-top: 15px;
+        }
+
+        .inside-cover {
+            page-break-after: always;
+            padding-top: 2.5in;
+            text-align: center;
+        }
+
+        .inside-cover h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            margin-bottom: 0.4in;
+            border-bottom: 1px solid #d5c9b1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .virtue-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 8px 0;
+            font-size: 12pt;
+        }
+
+        .virtue-name {
+            width: 140px;
+            text-align: right;
+            padding-right: 15px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            color: #5a5a5a;
+        }
+
+        .virtue-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .virtue-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1.5px solid #8e7c5a;
+        }
+
+        .virtue-dot.filled {
+            background-color: #8e7c5a;
+        }
+
+        .virtue-dot.empty {
+            background-color: transparent;
+        }
+
+        .glossary-page {
+            page-break-after: always;
+            padding-top: 0.5in;
+        }
+
+        .glossary-page h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            text-align: center;
+            margin-bottom: 0.3in;
+            border-bottom: 1px solid #d5c9b1;
+            padding-bottom: 6px;
+        }
+
+        .glossary-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .glossary-table td {
+            padding: 4px 8px;
+            vertical-align: top;
+            font-size: 10pt;
+            line-height: 1.4;
+            border-bottom: 1px solid #f0ebe3;
+        }
+
+        .glossary-table td.glossary-page-num {
+            width: 30px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 9pt;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .glossary-table td.glossary-latin {
+            width: 48%;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-table td.glossary-english {
+            width: 48%;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        /* Legacy single-word glossary styles (for glossary.json overrides) */
+        .glossary-columns {
+            column-count: 2;
+            column-gap: 0.4in;
+            column-rule: 1px solid #e0d9cc;
+        }
+
+        .glossary-entry {
+            margin: 0;
+            padding: 3px 0;
+            break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .glossary-entry .glossary-latin {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-entry .glossary-english {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="story-page" style="position: relative;">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/cover.png" alt="Cover" style="max-height: 10in; width: 100%;">
+        <div style="position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); text-align: center; width: 90%; background-color: rgba(255, 255, 255, 0.65); padding: 20px; border-radius: 10px;">
+            <h1 style="font-size: 48pt; margin: 0; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Lincus et Vōx in Puteō</h1>
+            <p style="font-size: 28pt; margin: 10px 0 0 0; color: #7f8c8d; font-style: italic;">Link and the Voice in the Well</p>
+            <div class='virtue-badge'>Fidēs</div>
+        </div>
+    </div>
+
+
+    <div class="inside-cover">
+        <h2>Virtūtēs</h2>
+        <div class="virtue-row"><span class="virtue-name">Prudentia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Iūstitia</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fortitūdō</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Temperantia</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fidēs</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span></span></div><div class="virtue-row"><span class="virtue-name">Spēs</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Cāritās</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_01.png" alt="Page 1">
+        <p class="latin-text">Lincus omnem sēmitam īnsulae sciēbat. Omne saxum. Omnem arborem.</p>
+        <p class="english-text">Link knew every path on the island. Every rock. Every tree.</p>
+        <span class="page-number">1</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_02.png" alt="Page 2">
+        <p class="latin-text">Sed hunc puteum numquam vīderat.</p>
+        <p class="english-text">But he had never seen this well.</p>
+        <span class="page-number">2</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_03.png" alt="Page 3">
+        <p class="latin-text">Dēspēxit. Obscūrum. Valdē obscūrum.</p>
+        <p class="english-text">He looked down into it. Dark. Very dark.</p>
+        <span class="page-number">3</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_04.png" alt="Page 4">
+        <p class="latin-text">Tum — vōx. Parva. Longē īnfrā.</p>
+        <p class="english-text">Then — a voice. Small. Far below.</p>
+        <span class="page-number">4</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_05.png" alt="Page 5">
+        <p class="latin-text">"Adesne adhūc?" dīxit vōx. Lincus sē inclīnāvit. "Adsum!" clāmāvit.</p>
+        <p class="english-text">"Are you still there?" said the voice. Link leaned closer. "I'm here!" he called.</p>
+        <span class="page-number">5</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_06.png" alt="Page 6">
+        <p class="latin-text">Fūnem invēnit. Dēmīsit — deorsum, deorsum, deorsum.</p>
+        <p class="english-text">He found a rope. He lowered it down, down, down.</p>
+        <span class="page-number">6</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_07.png" alt="Page 7">
+        <p class="latin-text">Nimis brevis.</p>
+        <p class="english-text">Too short.</p>
+        <span class="page-number">7</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_08.png" alt="Page 8">
+        <p class="latin-text">Vītem longam invēnit. Fūnī alligāvit. Deorsum, deorsum, deorsum.</p>
+        <p class="english-text">He found a long vine. He tied it to the rope. Down, down, down.</p>
+        <span class="page-number">8</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_09.png" alt="Page 9">
+        <p class="latin-text">Adhūc nimis brevis. "Adesne adhūc?" dīxit vōx.</p>
+        <p class="english-text">Still too short. "Are you still there?" said the voice.</p>
+        <span class="page-number">9</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_10.png" alt="Page 10">
+        <p class="latin-text">"Adsum!" clāmāvit Lincus. Cingulum dētrāxit. Alligāvit.</p>
+        <p class="english-text">"I'm here!" Link called. He took off his belt. He tied it on.</p>
+        <span class="page-number">10</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_11.png" alt="Page 11">
+        <p class="latin-text">Nimis brevis! Līneam aviae cēpit. Alligāvit.</p>
+        <p class="english-text">Too short! He took Grandma's clothesline. He tied it on.</p>
+        <span class="page-number">11</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_12.png" alt="Page 12">
+        <p class="latin-text">Deorsum, deorsum, deorsum. Nimis brevis!</p>
+        <p class="english-text">Down, down, down. Too short!</p>
+        <span class="page-number">12</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_13.png" alt="Page 13">
+        <p class="latin-text">Vōx minor erat. "Adesne adhūc?"</p>
+        <p class="english-text">The voice was smaller now. "Are you still there?"</p>
+        <span class="page-number">13</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_14.png" alt="Page 14">
+        <p class="latin-text">"Adsum," dīxit Lincus. Forāmen obscūrum spectāvit. Fūnem rapuit.</p>
+        <p class="english-text">"I'm here," said Link. He looked at the dark hole. He grabbed the rope.</p>
+        <span class="page-number">14</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_15.png" alt="Page 15">
+        <p class="latin-text">Intrāvit. Deorsum. In tenebrās.</p>
+        <p class="english-text">He climbed in. Down. Into the dark.</p>
+        <span class="page-number">15</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_16.png" alt="Page 16">
+        <p class="latin-text">Saxum ūdum. Manūs frīgidae. Fūnis dēfēcit. Pede marginem invēnit.</p>
+        <p class="english-text">Wet stone. Cold hands. The rope ended. He found a ledge with his foot.</p>
+        <span class="page-number">16</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_17.png" alt="Page 17">
+        <p class="latin-text">Tum — duo oculī. In tenebrīs lūcēbant.</p>
+        <p class="english-text">Then — two eyes. Glowing in the dark.</p>
+        <span class="page-number">17</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_18.png" alt="Page 18">
+        <p class="latin-text">Faciēs parva. Folium parvum. Foliolus!</p>
+        <p class="english-text">A tiny face. A little leaf. Foliolus!</p>
+        <span class="page-number">18</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_19.png" alt="Page 19">
+        <p class="latin-text">Lincus Foliolum in umerōs posuit. Ascendit.</p>
+        <p class="english-text">Link put Foliolus on his shoulders. He climbed up.</p>
+        <span class="page-number">19</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_20.png" alt="Page 20">
+        <p class="latin-text">Sōl! Oculōs clausērunt. "Adesne adhūc?" dīxit Foliolus. "Adsum," dīxit Lincus.</p>
+        <p class="english-text">Sunlight! They blinked. "Are you still there?" said Foliolus. "I'm here," said Link.</p>
+        <span class="page-number">20</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_21.png" alt="Page 21">
+        <p class="latin-text">Foliolus sē excussit. Folium sē vertit. Sursum volāvit! Volāre poterat!</p>
+        <p class="english-text">Foliolus shook himself. His leaf spun. He floated up! He could fly!</p>
+        <span class="page-number">21</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/link_and_the_voice_in_the_well/images/page_22.png" alt="Page 22">
+        <p class="latin-text">Foliolus sēmen in caput Lincī dēmīsit. Tum abiit.</p>
+        <p class="english-text">Foliolus dropped a seed on Link's head. Then he was gone.</p>
+        <span class="page-number">22</span>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">abeō, abīre</span> — <span class="glossary-english">to go away, depart</span></div><div class="glossary-entry"><span class="glossary-latin">adhūc (adv.)</span> — <span class="glossary-english">still, yet</span></div><div class="glossary-entry"><span class="glossary-latin">adsum, adesse</span> — <span class="glossary-english">to be present, be here</span></div><div class="glossary-entry"><span class="glossary-latin">alligō, -āre</span> — <span class="glossary-english">to tie on, fasten</span></div><div class="glossary-entry"><span class="glossary-latin">arbor, arboris (f.)</span> — <span class="glossary-english">tree</span></div><div class="glossary-entry"><span class="glossary-latin">ascendō, -ere</span> — <span class="glossary-english">to climb up</span></div><div class="glossary-entry"><span class="glossary-latin">avia, -ae (f.)</span> — <span class="glossary-english">grandmother</span></div><div class="glossary-entry"><span class="glossary-latin">brevis, -e</span> — <span class="glossary-english">short</span></div><div class="glossary-entry"><span class="glossary-latin">capiō, -ere</span> — <span class="glossary-english">to take, seize</span></div><div class="glossary-entry"><span class="glossary-latin">caput, capitis (n.)</span> — <span class="glossary-english">head</span></div><div class="glossary-entry"><span class="glossary-latin">cingulum, -ī (n.)</span> — <span class="glossary-english">belt</span></div><div class="glossary-entry"><span class="glossary-latin">clāmō, -āre</span> — <span class="glossary-english">to shout, call out</span></div><div class="glossary-entry"><span class="glossary-latin">claudō, -ere</span> — <span class="glossary-english">to close, shut</span></div><div class="glossary-entry"><span class="glossary-latin">dēficiō, -ere</span> — <span class="glossary-english">to give out, run short</span></div><div class="glossary-entry"><span class="glossary-latin">dēmittō, -ere</span> — <span class="glossary-english">to lower, let down, drop</span></div><div class="glossary-entry"><span class="glossary-latin">deorsum (adv.)</span> — <span class="glossary-english">downward, down</span></div><div class="glossary-entry"><span class="glossary-latin">dēspiciō, -ere</span> — <span class="glossary-english">to look down into</span></div><div class="glossary-entry"><span class="glossary-latin">dīcō, -ere</span> — <span class="glossary-english">to say, speak</span></div><div class="glossary-entry"><span class="glossary-latin">excutiō, -ere</span> — <span class="glossary-english">to shake off</span></div><div class="glossary-entry"><span class="glossary-latin">faciēs, -ēī (f.)</span> — <span class="glossary-english">face</span></div><div class="glossary-entry"><span class="glossary-latin">folium, -ī (n.)</span> — <span class="glossary-english">leaf</span></div><div class="glossary-entry"><span class="glossary-latin">forāmen, forāminis (n.)</span> — <span class="glossary-english">hole, opening</span></div><div class="glossary-entry"><span class="glossary-latin">frīgidus, -a, -um</span> — <span class="glossary-english">cold</span></div><div class="glossary-entry"><span class="glossary-latin">fūnis, -is (m.)</span> — <span class="glossary-english">rope, cord</span></div><div class="glossary-entry"><span class="glossary-latin">inclīnō, -āre</span> — <span class="glossary-english">to lean, bend forward</span></div><div class="glossary-entry"><span class="glossary-latin">īnsula, -ae (f.)</span> — <span class="glossary-english">island</span></div><div class="glossary-entry"><span class="glossary-latin">intrō, -āre</span> — <span class="glossary-english">to enter, go in</span></div><div class="glossary-entry"><span class="glossary-latin">inveniō, -īre</span> — <span class="glossary-english">to find, discover</span></div><div class="glossary-entry"><span class="glossary-latin">līnea, -ae (f.)</span> — <span class="glossary-english">line, cord, clothesline</span></div><div class="glossary-entry"><span class="glossary-latin">longē (adv.)</span> — <span class="glossary-english">far, far away</span></div><div class="glossary-entry"><span class="glossary-latin">longus, -a, -um</span> — <span class="glossary-english">long</span></div><div class="glossary-entry"><span class="glossary-latin">lūceō, -ēre</span> — <span class="glossary-english">to shine, glow</span></div><div class="glossary-entry"><span class="glossary-latin">manus, -ūs (f.)</span> — <span class="glossary-english">hand</span></div><div class="glossary-entry"><span class="glossary-latin">margō, marginis (m.)</span> — <span class="glossary-english">edge, ledge</span></div><div class="glossary-entry"><span class="glossary-latin">minor, minus</span> — <span class="glossary-english">smaller, lesser</span></div><div class="glossary-entry"><span class="glossary-latin">nimis (adv.)</span> — <span class="glossary-english">too, too much</span></div><div class="glossary-entry"><span class="glossary-latin">numquam (adv.)</span> — <span class="glossary-english">never</span></div><div class="glossary-entry"><span class="glossary-latin">obscūrus, -a, -um</span> — <span class="glossary-english">dark, dim</span></div><div class="glossary-entry"><span class="glossary-latin">oculus, -ī (m.)</span> — <span class="glossary-english">eye</span></div><div class="glossary-entry"><span class="glossary-latin">omnis, -e</span> — <span class="glossary-english">every, all</span></div>
+        </div>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium (cont.)</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">parvus, -a, -um</span> — <span class="glossary-english">small, little</span></div><div class="glossary-entry"><span class="glossary-latin">pēs, pedis (m.)</span> — <span class="glossary-english">foot</span></div><div class="glossary-entry"><span class="glossary-latin">pōnō, -ere</span> — <span class="glossary-english">to put, place</span></div><div class="glossary-entry"><span class="glossary-latin">possum, posse</span> — <span class="glossary-english">to be able, can</span></div><div class="glossary-entry"><span class="glossary-latin">puteus, -ī (m.)</span> — <span class="glossary-english">well, pit</span></div><div class="glossary-entry"><span class="glossary-latin">rapiō, -ere</span> — <span class="glossary-english">to grab, snatch</span></div><div class="glossary-entry"><span class="glossary-latin">saxum, -ī (n.)</span> — <span class="glossary-english">rock, stone</span></div><div class="glossary-entry"><span class="glossary-latin">sciō, -īre</span> — <span class="glossary-english">to know</span></div><div class="glossary-entry"><span class="glossary-latin">sēmen, sēminis (n.)</span> — <span class="glossary-english">seed</span></div><div class="glossary-entry"><span class="glossary-latin">sēmita, -ae (f.)</span> — <span class="glossary-english">path, trail</span></div><div class="glossary-entry"><span class="glossary-latin">sōl, sōlis (m.)</span> — <span class="glossary-english">sun, sunlight</span></div><div class="glossary-entry"><span class="glossary-latin">spectō, -āre</span> — <span class="glossary-english">to look at, watch</span></div><div class="glossary-entry"><span class="glossary-latin">sursum (adv.)</span> — <span class="glossary-english">upward, up</span></div><div class="glossary-entry"><span class="glossary-latin">tenebrae, -ārum (f. pl.)</span> — <span class="glossary-english">darkness, shadows</span></div><div class="glossary-entry"><span class="glossary-latin">ūdus, -a, -um</span> — <span class="glossary-english">wet, damp</span></div><div class="glossary-entry"><span class="glossary-latin">umerus, -ī (m.)</span> — <span class="glossary-english">shoulder</span></div><div class="glossary-entry"><span class="glossary-latin">valdē (adv.)</span> — <span class="glossary-english">very, greatly</span></div><div class="glossary-entry"><span class="glossary-latin">vertō, -ere</span> — <span class="glossary-english">to turn, spin</span></div><div class="glossary-entry"><span class="glossary-latin">videō, -ēre</span> — <span class="glossary-english">to see</span></div><div class="glossary-entry"><span class="glossary-latin">vītis, -is (f.)</span> — <span class="glossary-english">vine</span></div><div class="glossary-entry"><span class="glossary-latin">volō, -āre</span> — <span class="glossary-english">to fly</span></div><div class="glossary-entry"><span class="glossary-latin">vōx, vōcis (f.)</span> — <span class="glossary-english">voice</span></div>
+        </div>
+    </div>
+
+
+</body>
+</html>

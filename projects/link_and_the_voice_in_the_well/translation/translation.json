@@ -1,0 +1,251 @@
+{
+  "title_latin": "Lincus et Vōx in Puteō",
+  "title_english": "Link and the Voice in the Well",
+  "pages": [
+    {
+      "page_number": 1,
+      "latin_text": "Lincus omnem sēmitam īnsulae sciēbat. Omne saxum. Omnem arborem.",
+      "english_text": "Link knew every path on the island. Every rock. Every tree.",
+      "image_prompt": "Wide establishing shot of Outset Island in bright daylight. Link walks along a familiar grassy path, one hand trailing through tall grass, completely at ease. The island stretches out behind him — cottages, the watchtower, palm trees, the sparkling ocean. He looks relaxed, confident, at home. This is his island and he knows it. Wind Waker cel-shaded style, bright saturated colors.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Outset Island - Day",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_01.png"
+    },
+    {
+      "page_number": 2,
+      "latin_text": "Sed hunc puteum numquam vīderat.",
+      "english_text": "But he had never seen this well.",
+      "image_prompt": "Link stopped mid-stride, head tilted, staring at something. In front of him: an old stone well, half-hidden in tall grass behind a leaning palm tree. Mossy, forgotten, the opening a perfect dark circle. Link's body language is pure curiosity — leaning forward, one foot still raised. The well looks like it has been here forever, but he has never noticed it. Warm daylight everywhere except inside that dark opening.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "The Well - Exterior",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_02.png"
+    },
+    {
+      "page_number": 3,
+      "latin_text": "Dēspēxit. Obscūrum. Valdē obscūrum.",
+      "english_text": "He looked down into it. Dark. Very dark.",
+      "image_prompt": "Top-down shot looking over Link's shoulder into the well. His hands grip the mossy stone rim. Below: absolute blackness. The well is deep — the light from above only reaches a few feet down before the wet stone walls vanish into nothing. Link's face is lit from above, eyes wide, peering down. A single drop of water catches the light as it falls into the dark.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "The Well - Exterior",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_03.png"
+    },
+    {
+      "page_number": 4,
+      "latin_text": "Tum — vōx. Parva. Longē īnfrā.",
+      "english_text": "Then — a voice. Small. Far below.",
+      "image_prompt": "Same angle as page 3 but Link has jerked back from the rim, startled. His eyes are huge. From the dark hole, faint wavy lines suggest sound rising — a voice echoing up from below. The darkness seems deeper now, more alive. Link's hands still grip the stone but his body is leaning away. Something is down there.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "The Well - Exterior",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_04.png"
+    },
+    {
+      "page_number": 5,
+      "latin_text": "\"Adesne adhūc?\" dīxit vōx. Lincus sē inclīnāvit. \"Adsum!\" clāmāvit.",
+      "english_text": "\"Are you still there?\" said the voice. Link leaned closer. \"I'm here!\" he called.",
+      "image_prompt": "Link leans over the well rim, cupping his hands around his mouth, shouting down into the dark. His face is determined, concerned. The dark opening of the well dominates the lower half of the image. Faint echo lines rise from the blackness. First appearance of the refrain. Link's whole posture is reaching toward the voice — he wants to help.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "The Well - Exterior",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_05.png"
+    },
+    {
+      "page_number": 6,
+      "latin_text": "Fūnem invēnit. Dēmīsit — deorsum, deorsum, deorsum.",
+      "english_text": "He found a rope. He lowered it down, down, down.",
+      "image_prompt": "Link at the well rim, feeding a coil of rope down into the darkness hand over hand. The rope disappears into the black opening. Link's face is focused, hopeful — this should work. A simple coil of brown rope, the kind you'd find near a dock on a tropical island. He braces one foot against the well's base.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Outset Island - Well Rim",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_06.png"
+    },
+    {
+      "page_number": 7,
+      "latin_text": "Nimis brevis.",
+      "english_text": "Too short.",
+      "image_prompt": "Link pulls the rope back up, dangling it over the well — the end hangs in midair, clearly not long enough. His face falls. Disappointment. The rope looked so promising on the ground but the well is deeper than he thought. A beat of simple visual comedy — the short rope and the deep, deep hole.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Outset Island - Well Rim",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_07.png"
+    },
+    {
+      "page_number": 8,
+      "latin_text": "Vītem longam invēnit. Fūnī alligāvit. Deorsum, deorsum, deorsum.",
+      "english_text": "He found a long vine. He tied it to the rope. Down, down, down.",
+      "image_prompt": "Link kneeling on the ground next to the well, tying a thick green vine to the end of the rope with a big knot. The vine is leafy and curly — clearly pulled from a nearby tree. His tongue sticks out with concentration as he ties the knot. The combined rope-and-vine is coiled beside him, longer now. Second attempt — he's resourceful.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Outset Island - Well Rim",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_08.png"
+    },
+    {
+      "page_number": 9,
+      "latin_text": "Adhūc nimis brevis. \"Adesne adhūc?\" dīxit vōx.",
+      "english_text": "Still too short. \"Are you still there?\" said the voice.",
+      "image_prompt": "Same framing as page 7 — Link pulling the rope-vine combo back up, the end dangling uselessly. Still not long enough. But this time, faint echo lines rise from the well — the voice calling again. Link's face shifts from frustration to something softer. The voice is still there. It's waiting for him. Second appearance of the refrain.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Outset Island - Well Rim",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_09.png"
+    },
+    {
+      "page_number": 10,
+      "latin_text": "\"Adsum!\" clāmāvit Lincus. Cingulum dētrāxit. Alligāvit.",
+      "english_text": "\"I'm here!\" Link called. He took off his belt. He tied it on.",
+      "image_prompt": "Link shouting down into the well with one hand cupped to his mouth while the other hand works at unbuckling his belt. His tunic is already loose without it. A small comedy beat — he's literally taking himself apart to make this rope longer. The rope-vine-belt chain lies coiled on the grass, getting longer and more absurd. His face is pure determination.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Outset Island - Well Rim",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_10.png"
+    },
+    {
+      "page_number": 11,
+      "latin_text": "Nimis brevis! Līneam aviae cēpit. Alligāvit.",
+      "english_text": "Too short! He took Grandma's clothesline. He tied it on.",
+      "image_prompt": "Link running back toward the well, arms full of a long clothesline with a few clothespins still clipped to it and a sock dangling from one end. Behind him, in the distance, a bare clothesline post with nothing on it — Grandma's laundry presumably dumped on the ground. Link looks slightly guilty but mostly determined. Comedy escalation — the pile of tied-together things next to the well is now ridiculous: rope, vine, belt, and now a clothesline with a sock.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Outset Island - Well Rim",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_11.png"
+    },
+    {
+      "page_number": 12,
+      "latin_text": "Deorsum, deorsum, deorsum. Nimis brevis!",
+      "english_text": "Down, down, down. Too short!",
+      "image_prompt": "The absurd patchwork rope — brown rope, green vine, leather belt, white clothesline with a dangling sock — hangs from the well rim into the darkness, and once again the end dangles in the void, not reaching the bottom. The visual is inherently funny: this ridiculous Frankenstein rope and it's STILL not enough. Link slumps against the well rim, arms hanging over the edge, defeated. A comedy-of-accumulation punchline.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Outset Island - Well Rim",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_12.png"
+    },
+    {
+      "page_number": 13,
+      "latin_text": "Vōx minor erat. \"Adesne adhūc?\"",
+      "english_text": "The voice was smaller now. \"Are you still there?\"",
+      "image_prompt": "Tight close-up of the dark well opening from above. The blackness is absolute. The faintest, thinnest wavy lines suggest a voice — but quieter than before, weaker, more scared. The voice is losing hope. No Link in this frame — just the dark hole and the dying echo. Third appearance of the refrain. The comedy is over. This is the turn.",
+      "characters": [],
+      "location": "The Well - Exterior",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_13.png"
+    },
+    {
+      "page_number": 14,
+      "latin_text": "\"Adsum,\" dīxit Lincus. Forāmen obscūrum spectāvit. Fūnem rapuit.",
+      "english_text": "\"I'm here,\" said Link. He looked at the dark hole. He grabbed the rope.",
+      "image_prompt": "Link standing at the well rim, the patchwork rope gripped in both hands. He stares down into the darkness. His face is not confident — it is scared but resolved. His jaw is set. His knuckles are white on the rope. He is not lowering it this time. He is going to hold onto it and go down himself. The moment before the leap. The pivot of the whole story — the decision to descend into what he cannot see.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "The Well - Exterior",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_14.png"
+    },
+    {
+      "page_number": 15,
+      "latin_text": "Intrāvit. Deorsum. In tenebrās.",
+      "english_text": "He climbed in. Down. Into the dark.",
+      "image_prompt": "Shot from inside the well looking up. Link's small silhouette against the bright circle of sky above, gripping the patchwork rope, feet braced against the wet stone wall. He is descending. The circle of light above him is his last connection to the safe world. Below him: nothing visible, just darkness. Water drips. The walls are close, green with moss. This should feel genuinely tense — a small boy climbing into a dark unknown place.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "The Well - Interior / Descent",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_15.png"
+    },
+    {
+      "page_number": 16,
+      "latin_text": "Saxum ūdum. Manūs frīgidae. Fūnis dēfēcit. Pede marginem invēnit.",
+      "english_text": "Wet stone. Cold hands. The rope ended. He found a ledge with his foot.",
+      "image_prompt": "Close-up of Link on the well wall in near-darkness. Only faint light from far above. His hands grip the end of the patchwork rope — the sock on the clothesline is the last thing he's holding. Below the rope's end, his foot stretches down and finds a narrow stone ledge. His face is barely visible in the dim light — eyes wide, mouth tight, feeling his way blind. Every detail is tactile: wet stone, cold hands, the texture of rope. This is the hardest part — the rope has run out and he must go further.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "The Well - Interior / Descent",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_16.png"
+    },
+    {
+      "page_number": 17,
+      "latin_text": "Tum — duo oculī. In tenebrīs lūcēbant.",
+      "english_text": "Then — two eyes. Glowing in the dark.",
+      "image_prompt": "Near-total darkness. Link is barely visible — just the outline of his face and hands against wet stone. But below him and slightly to one side: two small eyes glowing faintly green-gold in the blackness. Just the eyes, nothing else. They are small, round, and looking up at him. Not menacing — just present. A tiny light in total darkness. The visual should be striking: almost a black page with two small luminous dots.",
+      "characters": [
+        "Toon Link",
+        "Foliolus"
+      ],
+      "location": "The Well - Bottom",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_17.png"
+    },
+    {
+      "page_number": 18,
+      "latin_text": "Faciēs parva. Folium parvum. Foliolus!",
+      "english_text": "A tiny face. A little leaf. Foliolus!",
+      "image_prompt": "THE VISUAL CENTERPIECE. Link has reached the bottom and kneels in shallow water. In his cupped hands: Foliolus the Korok, revealed in full for the first time. The Korok is tiny — fits in two hands. Round wooden body, a leaf-face mask with eye holes that glow soft green-gold, a single large leaf drooping from the top of his head (wet, bedraggled). The Korok's faint bioluminescence lights both their faces in warm green-gold against the darkness. Link's expression is pure wonder — wide eyes, open mouth. Magical. Intimate. A tiny lantern of life at the bottom of the world.",
+      "characters": [
+        "Toon Link",
+        "Foliolus"
+      ],
+      "location": "The Well - Bottom",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_18.png"
+    },
+    {
+      "page_number": 19,
+      "latin_text": "Lincus Foliolum in umerōs posuit. Ascendit.",
+      "english_text": "Link put Foliolus on his shoulders. He climbed up.",
+      "image_prompt": "Link climbing back up the well wall, gripping ledges and the patchwork rope. On his shoulders sits Foliolus, clinging to Link's cap with tiny wooden hands. The Korok's leaf-face glows faintly, casting a small circle of green-gold light on the wet stones around them. The circle of sky above is getting closer, brighter. They are going up together. Link's face shows effort and determination. Foliolus peeks over Link's head, looking up toward the light.",
+      "characters": [
+        "Toon Link",
+        "Foliolus"
+      ],
+      "location": "The Well - Interior / Descent",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_19.png"
+    },
+    {
+      "page_number": 20,
+      "latin_text": "Sōl! Oculōs clausērunt. \"Adesne adhūc?\" dīxit Foliolus. \"Adsum,\" dīxit Lincus.",
+      "english_text": "Sunlight! They blinked. \"Are you still there?\" said Foliolus. \"I'm here,\" said Link.",
+      "image_prompt": "Link pulling himself over the well rim into brilliant, flooding sunlight. Both he and Foliolus squint and blink against the brightness — coming from total darkness into full daylight. The green grass, blue sky, and sparkling ocean are almost overwhelming after the dark well scenes. Everything is vivid, warm, alive. Foliolus still sits on Link's shoulder, one tiny hand shading his glowing eyes. Fourth and final appearance of the refrain — but now it is Foliolus asking, and the meaning has shifted. They can see each other at last.",
+      "characters": [
+        "Toon Link",
+        "Foliolus"
+      ],
+      "location": "Outset Island - Sunlight",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_20.png"
+    },
+    {
+      "page_number": 21,
+      "latin_text": "Foliolus sē excussit. Folium sē vertit. Sursum volāvit! Volāre poterat!",
+      "english_text": "Foliolus shook himself. His leaf spun. He floated up! He could fly!",
+      "image_prompt": "Foliolus lifts off Link's shoulder — his big leaf spinning like a helicopter blade, his whole tiny body rising into the air. He shakes off water droplets that catch the sunlight like tiny diamonds. He is FLYING. He could fly THE WHOLE TIME. Link stands below, arms still half-raised from the climb, mouth hanging open. His expression is pure comic disbelief — he just climbed into a dark well and back, and this little creature could FLY? The comedy punchline after all the tension. Foliolus looks delighted, leaf spinning, doing a little loop in the air.",
+      "characters": [
+        "Toon Link",
+        "Foliolus"
+      ],
+      "location": "Outset Island - Sunlight",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_21.png"
+    },
+    {
+      "page_number": 22,
+      "latin_text": "Foliolus sēmen in caput Lincī dēmīsit. Tum abiit.",
+      "english_text": "Foliolus dropped a seed on Link's head. Then he was gone.",
+      "image_prompt": "Final image. Link stands alone by the well in the sunshine, looking up at the empty sky where Foliolus has vanished. On top of Link's head, nestled in his blonde hair just in front of his cap: a single small seed. A perfect little acorn-like seed sitting on his head. Link's expression is bemused, one eyebrow raised, a half-smile forming — he doesn't quite know what just happened but something about it was good. The well sits quietly behind him, just an old stone well again. The island is bright and peaceful. One seed. One boy. End of story.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Outset Island - Sunlight",
+      "image_path": "projects/link_and_the_voice_in_the_well/images/page_22.png"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "title_english": "Link and the Voice in the Well",
+  "title_latin": null,
+  "target_pages": 22,
+  "characters": [
+    {
+      "name": "Toon Link",
+      "description": "Small boy hero with large expressive eyes, blonde hair, pointed ears, green tunic and cap, brown boots. Resourceful and brave, but still a kid.",
+      "source": "Toon Link from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    },
+    {
+      "name": "Foliolus",
+      "description": "A very small Korok — a forest spirit with a wooden body the size of a large apple. Round leaf-face mask with two eye holes that glow faintly green-gold in the dark. A single large leaf sprouts from the top of his head like a propeller. Stubby little arms and legs. When scared, his leaf droops. When happy, it stands straight up and spins.",
+      "source": "Korok from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    },
+    {
+      "name": "Grandma",
+      "description": "Link's grandmother — a small, hunched, kind old woman with white hair and a warm face. Wears a simple long dress and apron. Appears only briefly, off-screen implied when Link takes her clothesline.",
+      "source": "Link's Grandma from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    }
+  ],
+  "locations": [
+    {
+      "name": "Outset Island - Day",
+      "description": "A small, bright tropical island with green grass, palm trees, a few thatched-roof cottages, and a wooden watchtower. Blue ocean surrounds everything. Warm, safe, familiar. Wind Waker cel-shaded style."
+    },
+    {
+      "name": "The Well - Exterior",
+      "description": "An old stone well at the edge of Outset Island, half-hidden behind tall grass and a leaning palm tree. Round, mossy stones stacked into a low wall. No bucket, no rope. The opening is dark — completely black inside. Slightly overgrown, forgotten."
+    },
+    {
+      "name": "The Well - Interior / Descent",
+      "description": "Inside the well looking down (or up). Wet mossy stone walls, close and claustrophobic. A circle of sky visible far above. Deep shadows. Water drips. Faint green-gold light from below as Link gets closer to the bottom. Dark, damp, tight."
+    },
+    {
+      "name": "The Well - Bottom",
+      "description": "The very bottom of the well. Shallow water on the stone floor. Almost no light except two faintly glowing eyes and the soft luminescence of a Korok's leaf-face. When Link arrives with the Korok, there is a tiny pool of warm green-gold light in the darkness."
+    },
+    {
+      "name": "Outset Island - Well Rim",
+      "description": "The area immediately around the well. Link's pile of gathered rope/vine/belt/clothesline visible nearby. Bright daylight contrasts sharply with the dark hole. Green grass, blue sky."
+    },
+    {
+      "name": "Outset Island - Sunlight",
+      "description": "Bright, wide shot of the island in full daylight. Green grass, blue sky, sparkling ocean. Everything vivid and warm — the opposite of the dark well. The relief of being back in the light."
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "english_text": "Link knew every path on Outset Island. Every rock. Every tree.",
+      "scene_description": "Wide establishing shot of Outset Island in bright daylight. Link walks along a familiar grassy path, one hand trailing through tall grass, completely at ease. The island stretches out behind him — cottages, the watchtower, palm trees, the sparkling ocean. He looks relaxed, confident, at home. This is his island and he knows it. Wind Waker cel-shaded style, bright saturated colors.",
+      "characters_present": ["Toon Link"],
+      "location": "Outset Island - Day"
+    },
+    {
+      "page_number": 2,
+      "english_text": "But he had never seen this well.",
+      "scene_description": "Link stopped mid-stride, head tilted, staring at something. In front of him: an old stone well, half-hidden in tall grass behind a leaning palm tree. Mossy, forgotten, the opening a perfect dark circle. Link's body language is pure curiosity — leaning forward, one foot still raised. The well looks like it has been here forever, but he has never noticed it. Warm daylight everywhere except inside that dark opening.",
+      "characters_present": ["Toon Link"],
+      "location": "The Well - Exterior"
+    },
+    {
+      "page_number": 3,
+      "english_text": "He looked down into it. Dark. Very dark.",
+      "scene_description": "Top-down shot looking over Link's shoulder into the well. His hands grip the mossy stone rim. Below: absolute blackness. The well is deep — the light from above only reaches a few feet down before the wet stone walls vanish into nothing. Link's face is lit from above, eyes wide, peering down. A single drop of water catches the light as it falls into the dark.",
+      "characters_present": ["Toon Link"],
+      "location": "The Well - Exterior"
+    },
+    {
+      "page_number": 4,
+      "english_text": "Then — a voice. Small. Far below.",
+      "scene_description": "Same angle as page 3 but Link has jerked back from the rim, startled. His eyes are huge. From the dark hole, faint wavy lines suggest sound rising — a voice echoing up from below. The darkness seems deeper now, more alive. Link's hands still grip the stone but his body is leaning away. Something is down there.",
+      "characters_present": ["Toon Link"],
+      "location": "The Well - Exterior"
+    },
+    {
+      "page_number": 5,
+      "english_text": "\"Are you still there?\" said the voice. Link leaned closer. \"I'm here!\" he called.",
+      "scene_description": "Link leans over the well rim, cupping his hands around his mouth, shouting down into the dark. His face is determined, concerned. The dark opening of the well dominates the lower half of the image. Faint echo lines rise from the blackness. First appearance of the refrain. Link's whole posture is reaching toward the voice — he wants to help.",
+      "characters_present": ["Toon Link"],
+      "location": "The Well - Exterior"
+    },
+    {
+      "page_number": 6,
+      "english_text": "He found a rope. He lowered it down, down, down.",
+      "scene_description": "Link at the well rim, feeding a coil of rope down into the darkness hand over hand. The rope disappears into the black opening. Link's face is focused, hopeful — this should work. A simple coil of brown rope, the kind you'd find near a dock on a tropical island. He braces one foot against the well's base.",
+      "characters_present": ["Toon Link"],
+      "location": "Outset Island - Well Rim"
+    },
+    {
+      "page_number": 7,
+      "english_text": "Too short.",
+      "scene_description": "Link pulls the rope back up, dangling it over the well — the end hangs in midair, clearly not long enough. His face falls. Disappointment. The rope looked so promising on the ground but the well is deeper than he thought. A beat of simple visual comedy — the short rope and the deep, deep hole.",
+      "characters_present": ["Toon Link"],
+      "location": "Outset Island - Well Rim"
+    },
+    {
+      "page_number": 8,
+      "english_text": "He found a long vine. He tied it to the rope. Down, down, down.",
+      "scene_description": "Link kneeling on the ground next to the well, tying a thick green vine to the end of the rope with a big knot. The vine is leafy and curly — clearly pulled from a nearby tree. His tongue sticks out with concentration as he ties the knot. The combined rope-and-vine is coiled beside him, longer now. Second attempt — he's resourceful.",
+      "characters_present": ["Toon Link"],
+      "location": "Outset Island - Well Rim"
+    },
+    {
+      "page_number": 9,
+      "english_text": "Still too short. \"Are you still there?\" said the voice.",
+      "scene_description": "Same framing as page 7 — Link pulling the rope-vine combo back up, the end dangling uselessly. Still not long enough. But this time, faint echo lines rise from the well — the voice calling again. Link's face shifts from frustration to something softer. The voice is still there. It's waiting for him. Second appearance of the refrain.",
+      "characters_present": ["Toon Link"],
+      "location": "Outset Island - Well Rim"
+    },
+    {
+      "page_number": 10,
+      "english_text": "\"I'm here!\" Link called. He took off his belt. He tied it on.",
+      "scene_description": "Link shouting down into the well with one hand cupped to his mouth while the other hand works at unbuckling his belt. His tunic is already loose without it. A small comedy beat — he's literally taking himself apart to make this rope longer. The rope-vine-belt chain lies coiled on the grass, getting longer and more absurd. His face is pure determination.",
+      "characters_present": ["Toon Link"],
+      "location": "Outset Island - Well Rim"
+    },
+    {
+      "page_number": 11,
+      "english_text": "Too short! He took Grandma's clothesline. He tied it on.",
+      "scene_description": "Link running back toward the well, arms full of a long clothesline with a few clothespins still clipped to it and a sock dangling from one end. Behind him, in the distance, a bare clothesline post with nothing on it — Grandma's laundry presumably dumped on the ground. Link looks slightly guilty but mostly determined. Comedy escalation — the pile of tied-together things next to the well is now ridiculous: rope, vine, belt, and now a clothesline with a sock.",
+      "characters_present": ["Toon Link"],
+      "location": "Outset Island - Well Rim"
+    },
+    {
+      "page_number": 12,
+      "english_text": "Down, down, down. Too short!",
+      "scene_description": "The absurd patchwork rope — brown rope, green vine, leather belt, white clothesline with a dangling sock — hangs from the well rim into the darkness, and once again the end dangles in the void, not reaching the bottom. The visual is inherently funny: this ridiculous Frankenstein rope and it's STILL not enough. Link slumps against the well rim, arms hanging over the edge, defeated. A comedy-of-accumulation punchline.",
+      "characters_present": ["Toon Link"],
+      "location": "Outset Island - Well Rim"
+    },
+    {
+      "page_number": 13,
+      "english_text": "The voice was smaller now. \"Are you still there?\"",
+      "scene_description": "Tight close-up of the dark well opening from above. The blackness is absolute. The faintest, thinnest wavy lines suggest a voice — but quieter than before, weaker, more scared. The voice is losing hope. No Link in this frame — just the dark hole and the dying echo. Third appearance of the refrain. The comedy is over. This is the turn.",
+      "characters_present": [],
+      "location": "The Well - Exterior"
+    },
+    {
+      "page_number": 14,
+      "english_text": "\"I'm here,\" said Link. He looked at the dark hole. He grabbed the rope.",
+      "scene_description": "Link standing at the well rim, the patchwork rope gripped in both hands. He stares down into the darkness. His face is not confident — it is scared but resolved. His jaw is set. His knuckles are white on the rope. He is not lowering it this time. He is going to hold onto it and go down himself. The moment before the leap. The pivot of the whole story — the decision to descend into what he cannot see.",
+      "characters_present": ["Toon Link"],
+      "location": "The Well - Exterior"
+    },
+    {
+      "page_number": 15,
+      "english_text": "He climbed in. Down. Into the dark.",
+      "scene_description": "Shot from inside the well looking up. Link's small silhouette against the bright circle of sky above, gripping the patchwork rope, feet braced against the wet stone wall. He is descending. The circle of light above him is his last connection to the safe world. Below him: nothing visible, just darkness. Water drips. The walls are close, green with moss. This should feel genuinely tense — a small boy climbing into a dark unknown place.",
+      "characters_present": ["Toon Link"],
+      "location": "The Well - Interior / Descent"
+    },
+    {
+      "page_number": 16,
+      "english_text": "Wet stone. Cold hands. The rope ended. He found a ledge with his foot.",
+      "scene_description": "Close-up of Link on the well wall in near-darkness. Only faint light from far above. His hands grip the end of the patchwork rope — the sock on the clothesline is the last thing he's holding. Below the rope's end, his foot stretches down and finds a narrow stone ledge. His face is barely visible in the dim light — eyes wide, mouth tight, feeling his way blind. Every detail is tactile: wet stone, cold hands, the texture of rope. This is the hardest part — the rope has run out and he must go further.",
+      "characters_present": ["Toon Link"],
+      "location": "The Well - Interior / Descent"
+    },
+    {
+      "page_number": 17,
+      "english_text": "Then — two eyes. Glowing in the dark.",
+      "scene_description": "Near-total darkness. Link is barely visible — just the outline of his face and hands against wet stone. But below him and slightly to one side: two small eyes glowing faintly green-gold in the blackness. Just the eyes, nothing else. They are small, round, and looking up at him. Not menacing — just present. A tiny light in total darkness. The visual should be striking: almost a black page with two small luminous dots.",
+      "characters_present": ["Toon Link", "Foliolus"],
+      "location": "The Well - Bottom"
+    },
+    {
+      "page_number": 18,
+      "english_text": "A tiny face. A little leaf. Foliolus!",
+      "scene_description": "THE VISUAL CENTERPIECE. Link has reached the bottom and kneels in shallow water. In his cupped hands: Foliolus the Korok, revealed in full for the first time. The Korok is tiny — fits in two hands. Round wooden body, a leaf-face mask with eye holes that glow soft green-gold, a single large leaf drooping from the top of his head (wet, bedraggled). The Korok's faint bioluminescence lights both their faces in warm green-gold against the darkness. Link's expression is pure wonder — wide eyes, open mouth. Magical. Intimate. A tiny lantern of life at the bottom of the world.",
+      "characters_present": ["Toon Link", "Foliolus"],
+      "location": "The Well - Bottom"
+    },
+    {
+      "page_number": 19,
+      "english_text": "Link put Foliolus on his shoulders. He climbed up.",
+      "scene_description": "Link climbing back up the well wall, gripping ledges and the patchwork rope. On his shoulders sits Foliolus, clinging to Link's cap with tiny wooden hands. The Korok's leaf-face glows faintly, casting a small circle of green-gold light on the wet stones around them. The circle of sky above is getting closer, brighter. They are going up together. Link's face shows effort and determination. Foliolus peeks over Link's head, looking up toward the light.",
+      "characters_present": ["Toon Link", "Foliolus"],
+      "location": "The Well - Interior / Descent"
+    },
+    {
+      "page_number": 20,
+      "english_text": "Sunlight! They blinked. \"Are you still there?\" said Foliolus. \"I'm here,\" said Link.",
+      "scene_description": "Link pulling himself over the well rim into brilliant, flooding sunlight. Both he and Foliolus squint and blink against the brightness — coming from total darkness into full daylight. The green grass, blue sky, and sparkling ocean are almost overwhelming after the dark well scenes. Everything is vivid, warm, alive. Foliolus still sits on Link's shoulder, one tiny hand shading his glowing eyes. Fourth and final appearance of the refrain — but now it is Foliolus asking, and the meaning has shifted. They can see each other at last.",
+      "characters_present": ["Toon Link", "Foliolus"],
+      "location": "Outset Island - Sunlight"
+    },
+    {
+      "page_number": 21,
+      "english_text": "Foliolus shook himself. His leaf spun. He floated up! He could fly!",
+      "scene_description": "Foliolus lifts off Link's shoulder — his big leaf spinning like a helicopter blade, his whole tiny body rising into the air. He shakes off water droplets that catch the sunlight like tiny diamonds. He is FLYING. He could fly THE WHOLE TIME. Link stands below, arms still half-raised from the climb, mouth hanging open. His expression is pure comic disbelief — he just climbed into a dark well and back, and this little creature could FLY? The comedy punchline after all the tension. Foliolus looks delighted, leaf spinning, doing a little loop in the air.",
+      "characters_present": ["Toon Link", "Foliolus"],
+      "location": "Outset Island - Sunlight"
+    },
+    {
+      "page_number": 22,
+      "english_text": "Foliolus dropped a seed on Link's head. Then he was gone.",
+      "scene_description": "Final image. Link stands alone by the well in the sunshine, looking up at the empty sky where Foliolus has vanished. On top of Link's head, nestled in his blonde hair just in front of his cap: a single small seed. A perfect little acorn-like seed sitting on his head. Link's expression is bemused, one eyebrow raised, a half-smile forming — he doesn't quite know what just happened but something about it was good. The well sits quietly behind him, just an old stone well again. The island is bright and peaceful. One seed. One boy. End of story.",
+      "characters_present": ["Toon Link"],
+      "location": "Outset Island - Sunlight"
+    }
+  ]
+}

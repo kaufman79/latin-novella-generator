@@ -1,0 +1,71 @@
+{
+  "style": {
+    "medium": "Cel-shaded digital art in the style of The Legend of Zelda: The Wind Waker. Textured brush-stroke coloring with bold black outlines and flat color fills. Not smooth vector — slightly painterly cel-shading with visible texture.",
+    "palette": "Dual palette story with four phases. BRIGHT ISLAND (pages 1-5, 20-22): saturated tropical colors — vivid green grass, bright blue ocean and sky, warm golden sunlight, Link's green tunic pops against sandy paths and blue water. SUNNY COMEDY (pages 6-12): same bright palette but increasingly cluttered with the absurd patchwork rope — brown rope, green vine, tan leather belt, white clothesline. DARK WELL (pages 13-16): near-monochrome — deep blue-black darkness, cold wet gray-green stone, only faint light from the shrinking circle of sky above. The darkest pages in the book. KOROK GLOW (pages 17-19): pitch black except for soft green-gold bioluminescence from Foliolus — warm but eerie, intimate, magical. The return to sunlight on page 20 should feel like an explosion of color.",
+    "line_weight": "Bold black outlines on all characters and objects. Clean, crisp edges. Slightly thicker outlines on foreground characters to separate them from backgrounds. In dark well scenes, outlines fade to near-invisible — characters defined by silhouette and the Korok's glow rather than line work.",
+    "lighting": "Lighting drives the entire emotional arc. Pages 1-12: bright overhead tropical sunlight, warm and cheerful, strong shadows on the ground. The well opening is always a dark void punched into the bright scene. Pages 13-14: the turn — the bright world is still there but Link is focused on the darkness. Pages 15-16: almost no light — only the shrinking circle of sky far above, faint reflected light on wet stone. Page 17: near-total darkness with two green-gold points of light. Page 18: soft green-gold Korok glow illuminates Link's face from below — intimate, warm, magical. Pages 19-22: the climb back to light, then flooding brilliant sunlight. The contrast between the darkest pages (15-17) and the sunlight return (20) should be the biggest visual payoff in the book.",
+    "mood": "Comedy to tension to wonder to comedy. Pages 1-5: curiosity and concern — a mystery voice. Pages 6-12: escalating slapstick comedy — the rope gets more absurd with each attempt. Page 13: the turn — comedy drains away, replaced by genuine worry. Pages 14-16: tension and fear — a small boy descending into real darkness. Pages 17-18: magical wonder — the reveal. Pages 19-20: relief and warmth — the ascent and return to light. Pages 21-22: comic surprise and gentle farewell — he could FLY?!",
+    "technical": "Square aspect ratio. Child-friendly composition with characters filling at least 40% of the frame in close and medium shots. Single clear focal point per image. No text in image. No watermarks or UI elements."
+  },
+  "characters": {
+    "Toon Link": {
+      "source": "Toon Link from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "Toon Link from The Wind Waker. Small boy with a very large round head (chibi proportions, roughly 3 heads tall). Huge expressive cartoon eyes that are solid black with white highlights. Messy blonde hair poking out from under his cap. Long pointed elf ears. Wears a bright green tunic, a bright green long pointed cap, a brown leather belt with a gold buckle, and brown boots. Fair skin with rosy round cheeks. Small button nose. NO SWORD in this story — he is unarmed throughout. His belt disappears from page 10 onward (he uses it as part of the rope). His tunic hangs loose after that.",
+      "expression_default": "curious, determined, expressive — his huge eyes carry most of the emotion",
+      "height_reference": "Very short, child-sized, roughly 3 heads tall in chibi proportions."
+    },
+    "Foliolus": {
+      "source": "Korok from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "A very small Korok — a forest spirit the size of a large apple, small enough to fit in Link's cupped hands. Round wooden body with a bark-like texture. A leaf-face mask covers his face — round with two large eye holes that glow faintly green-gold. A single large leaf sprouts from the top of his head like a propeller. Stubby little wooden arms and legs. In the well scenes his leaf droops, wet and bedraggled. In sunlight his leaf stands straight up and can spin like a helicopter blade, allowing him to fly. His whole body emits a faint green-gold bioluminescence — barely visible in daylight, but a warm lantern-glow in darkness.",
+      "expression_default": "timid, hopeful, small — his drooping or spinning leaf is his main expression indicator",
+      "height_reference": "Tiny. Fits in Link's two cupped hands. About the size of a large apple or a softball. When on Link's shoulder, he is a small bump on top of Link."
+    }
+  },
+  "locations": {
+    "Outset Island - Day": {
+      "visual_description": "A small, bright tropical island in the Wind Waker style. Green grassy hills, swaying palm trees, a few thatched-roof cottages, a tall wooden watchtower on the highest point. Bright blue ocean surrounds everything, sparkling in the sunlight. Sandy paths wind between the homes. Warm, safe, familiar — this is home. Bright saturated colors, cheerful and inviting.",
+      "time_of_day_default": "bright daylight, warm tropical sunshine"
+    },
+    "The Well - Exterior": {
+      "visual_description": "An old stone well at the edge of the island, half-hidden behind tall grass and a leaning palm tree. Round mossy stones stacked into a low circular wall, about waist-height on Link. No bucket, no rope, no mechanism — just an open hole. The inside is a perfect circle of absolute blackness, even in full daylight. Slightly overgrown with grass and moss. It looks forgotten, ancient, out of place on this cheerful island.",
+      "time_of_day_default": "bright daylight — the contrast between the sunny surroundings and the dark opening is key"
+    },
+    "Outset Island - Well Rim": {
+      "visual_description": "The immediate area around the well. Bright green grass, blue sky. The well's mossy stone rim is the anchor of the composition. Link's growing pile of tied-together rope materials visible nearby on the grass. In the background, the island — cottages, palm trees, the watchtower. This is where the comedy plays out: a bright, cheerful setting for increasingly absurd problem-solving.",
+      "time_of_day_default": "bright daylight"
+    },
+    "The Well - Interior / Descent": {
+      "visual_description": "Inside the well looking up or down. Wet mossy stone walls, close and claustrophobic — the well shaft is narrow, barely wider than Link's arm span. A circle of bright sky visible far above, shrinking as the descent continues. Wet surfaces catch faint reflected light. Green moss and dark slime on the stones. Water drips constantly. Deeply shadowed — the only significant light source is the sky circle above. The further down, the darker it gets. Cold, damp, tight, real.",
+      "time_of_day_default": "dark — lit only by the fading circle of sky above"
+    },
+    "The Well - Bottom": {
+      "visual_description": "The very bottom of the well. Shallow water on a rough stone floor. Almost no light reaches here — the sky above is a tiny pale dot. In near-total darkness, the only illumination is the faint green-gold glow of Foliolus. When Link arrives and holds the Korok, their two faces are lit in an intimate pool of warm green-gold light surrounded by absolute black. Wet stone, still water, silence.",
+      "time_of_day_default": "pitch dark — Korok's bioluminescence is the only light"
+    },
+    "Outset Island - Sunlight": {
+      "visual_description": "The island in full brilliant daylight — but experienced as if seeing it for the first time after darkness. Everything is vivid, oversaturated, almost blinding. Green grass practically glows. The ocean sparkles with white highlights. The sky is the bluest blue. This is not just 'daytime' — this is the overwhelming flood of light and color after the well's darkness. The well sits nearby, a quiet stone circle, no longer threatening.",
+      "time_of_day_default": "brilliant, flooding sunlight — almost overexposed compared to earlier island scenes"
+    }
+  },
+  "composition_rules": [
+    "Characters fill at least 40% of the frame in close-up and medium shots",
+    "Simple backgrounds — let lighting and character expression carry the scene",
+    "Eye-level or slightly low angle (child's perspective) for most shots",
+    "The well opening is a recurring visual motif — a dark circle in a bright world. It should feel like a portal.",
+    "ROPE COMEDY (pages 6-12): frame the growing patchwork rope prominently. Each page should show the rope getting longer and more ridiculous. The comedy is visual accumulation.",
+    "DESCENT (pages 14-16): tight framing, close walls, shrinking sky circle. Claustrophobic. The world narrows.",
+    "KOROK REVEAL (page 17): almost entirely black. Two small glowing dots. Maximum negative space. Let the darkness do the work.",
+    "CENTERPIECE (page 18): intimate close-up, green-gold glow from below lighting both faces. The warmest, most magical image in the book.",
+    "SUNLIGHT RETURN (page 20): widest, brightest shot. Overwhelming light. Maximum contrast with the pages before it.",
+    "COMEDY PUNCHLINE (page 21): Foliolus flying while Link gapes — the visual joke lands on Link's expression",
+    "Foliolus should always appear TINY — smaller than Link's head, dwarfed by everything. His size is part of his vulnerability and his charm.",
+    "Vary shot types across pages to maintain visual interest",
+    "No text, watermarks, or UI elements in any image"
+  ],
+  "reference_images": [
+    "toon_link/official/zww-link1.jpg",
+    "toon_link/official/zww-link2.jpg"
+  ]
+}

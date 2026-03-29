@@ -1,0 +1,19 @@
+{
+  "project_id": "link_and_the_voice_in_the_well",
+  "title_english": "Link and the Voice in the Well",
+  "title_latin": "Lincus et Vōx in Puteō",
+  "source_type": "original",
+  "theme": "mystery",
+  "target_pages": 22,
+  "status": "images_generated",
+  "virtue_ratings": {
+    "prudentia": 2,
+    "iustitia": 0,
+    "fortitudo": 3,
+    "temperantia": 1,
+    "fides": 5,
+    "spes": 2,
+    "caritas": 2
+  },
+  "project_folder": "projects/link_and_the_voice_in_the_well"
+}
