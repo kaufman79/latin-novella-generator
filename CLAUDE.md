@@ -201,6 +201,8 @@ python scripts/image_generator.py {project_id} --generate-refs
 ```
 This reads the visual bible, generates refs for non-established characters (character sheets) and locations (establishing shots), saves them to `art/references/`, and prints instructions for adding paths to the visual bible. Review and approve refs before generating pages.
 
+**Expect 70/30 hit rate:** The first batch generation typically produces ~70% usable images. Budget for 1-2 rounds of selective regeneration for pages with issues (wrong proportions, duplicated objects, wrong angle). Archive old images before regenerating so good versions aren't lost.
+
 **Design principle:** Each illustration must precisely depict the action described in that page's Latin text. The pictures do the heavy lifting for language comprehension — a child who doesn't fully understand the Latin should be able to follow the story through the illustrations alone. Tight image-text alignment is the primary comprehension mechanism.
 
 ---

@@ -146,6 +146,23 @@ After creating the visual bible:
 ### Reference Image Budget
 The system automatically selects up to 6 refs per page: 2 style + 1 location + up to 3 characters. Non-established characters are prioritized over established ones.
 
+### Multi-Angle Character Reference Sheets
+For recurring characters, generate refs from multiple angles: **front, side, 3/4, and back views**. Store them in `reference_images/toon_link/characters/` with angle suffixes (e.g., `link_front.png`, `link_back.png`). The art director should specify which angle ref to use per page by setting `reference_images` overrides when the default front-facing ref is wrong for the scene.
+
+For established characters like Toon Link, check the `official/` directory — there are already multiple poses available (e.g., `zww-link1.jpg` is front-facing, `zww-link2.jpg` is action pose).
+
+### Prompt Consistency Rules
+
+These rules prevent common AI image generation artifacts:
+
+1. **Object deduplication**: The model sometimes reproduces the reference image AND generates it in the scene, creating duplicates. Every prompt that features a key location element MUST include an explicit count: "only one stone well", "a single cave entrance", "one pirate ship." Never leave object count ambiguous.
+
+2. **Scale anchoring**: The model has no spatial memory between pages. Every prompt where a character interacts with an object MUST specify their relative size: "Link stands at the well, the rim at his waist height", "the Moblin towers over Link, three times his height." Without this, proportions drift randomly page to page.
+
+3. **Ref-to-scene connection**: When a location ref exists, explicitly connect it to the scene composition: "the same stone well from the reference, now viewed from above as Link peers down." This tells the model the ref is showing WHAT the object looks like, not a separate object to add to the scene.
+
+4. **Angle-appropriate character refs**: When a scene shows a character from behind or in profile, use a matching-angle reference image rather than the default front-facing ref. Front-facing refs bias the model toward front-facing output regardless of what the prompt says.
+
 ## Tools Available
 
 - Read the finalized translation
