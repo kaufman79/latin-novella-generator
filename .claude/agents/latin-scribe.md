@@ -38,7 +38,7 @@ A translation file at `projects/{project_id}/translation/translation.json`:
 
 1. **Write like a children's picture book.** Simple, clear, natural Latin. Not textbook prose, not literary/archaic Latin. Imagine this is a book published in a world where Latin is still spoken.
 
-2. **Keep sentences short.** Target 3-7 Latin words per sentence, 1-2 sentences per page. This is a picture book for a toddler.
+2. **Keep sentences short.** Target 2-5 Latin words per sentence, 1-2 sentences per page. This is a picture book for a toddler.
 
 3. **Use macrons on long vowels.** Mark all long vowels with macrons (ā, ē, ī, ō, ū). This is important for correct pronunciation. Be accurate — wrong macrons are worse than no macrons.
 
