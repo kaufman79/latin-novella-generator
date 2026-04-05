@@ -17,18 +17,20 @@ These books are not just entertainment — they are forming a child's moral imag
 ### The Virtues
 
 **Cardinal Virtues (Aristotelian):**
-- **Prudentia** (Prudence / Practical Wisdom) — perceiving what a situation really is and determining the right response, then acting decisively on that judgment. Not caution or timidity — the prudent person sees reality clearly and commands action. The charioteer of the virtues (*auriga virtutum*).
-- **Iustitia** (Justice) — the settled disposition to recognize and render to each person what genuinely belongs to them: their rights, their due, their fair share. Relational by nature — it always faces outward toward other persons. The minimum of love.
-- **Fortitudo** (Fortitude / Courage) — the firm disposition to endure dangers and hardships for the sake of a genuine good, without being broken. The principal act is *sustinere* (endurance), not *aggredi* (attack) — holding firm over time, not the dramatic charge.
-- **Temperantia** (Temperance / Self-Governance) — the inner ordering of the self, so that desires and appetites serve one's genuine good rather than ruling one's life. Not denial of pleasure but right proportion — the temperate person is free; the intemperate person is enslaved.
+- **Prudentia** (Prudence) — practical wisdom, seeing reality clearly and acting decisively
+- **Iustitia** (Justice) — rendering to each person what is genuinely theirs
+- **Fortitudo** (Fortitude) — endurance through hardship for a genuine good
+- **Temperantia** (Temperance) — inner ordering so desires serve genuine good
 
 **Theological Virtues (Pauline/Scholastic):**
-- **Fides** (Faith / Trust) — entrusting yourself to another person based on their character; faithfulness and loyalty. Not blind credulity but relational trust that involves vulnerability — the decision to trust when you could choose not to.
-- **Spes** (Hope) — the confident, active pursuit of a genuine good that is difficult to reach, sustained through hardship and delay. Not optimism or wishful thinking — spes looks the difficulty in the face and moves forward anyway. Hope gives fortitudo its direction; fortitudo gives spes its backbone.
-- **Caritas** (Charity / Love) — actively willing and doing the genuine good of another person, even at cost to yourself. Not "being nice" or sentimentality — caritas is a choice sustained over time, expressed through sacrifice, mercy, patience, and joy in the other's flourishing.
+- **Fides** (Faith/Trust) — relational trust involving vulnerability
+- **Spes** (Hope) — confident pursuit of a difficult good through hardship
+- **Caritas** (Charity/Love) — willing the good of another at cost to yourself
 
 **Related Virtues:**
 - Humilitas, Patientia, Misericordia, Gratitudo, Pietas, Magnanimitas, Mansuetudo
+
+For detailed definitions, rubrics, and rating guidelines, see `docs/cardinal_virtues_deep_dive.md` and `docs/theological_virtues_deep_dive.md`.
 
 ### Story Evaluation Framework
 
@@ -203,6 +205,8 @@ This reads the visual bible, generates refs for non-established characters (char
 
 **Expect 70/30 hit rate:** The first batch generation typically produces ~70% usable images. Budget for 1-2 rounds of selective regeneration for pages with issues (wrong proportions, duplicated objects, wrong angle). Archive old images before regenerating so good versions aren't lost.
 
+For detailed research on consistency techniques, alternative approaches (Midjourney, LoRA), and test results, see `docs/image_consistency_research.md`.
+
 **Design principle:** Each illustration must precisely depict the action described in that page's Latin text. The pictures do the heavy lifting for language comprehension — a child who doesn't fully understand the Latin should be able to follow the story through the illustrations alone. Tight image-text alignment is the primary comprehension mechanism.
 
 ---
@@ -312,7 +316,8 @@ python scripts/project_manager.py status {project_id}
 - `projects/locusts_and_dragon/` — action-heavy adventure, teamwork (fortitudo)
 - `projects/lion_witch_wardobe/` — adapted story, richest virtue content, most complex Latin
 - `projects/link_and_the_stolen_treasure/` — Toon Link adventure
-- `projects/link_and_the_thiefs_lantern/` — Toon Link adventure (sequel)
+- `projects/link_and_the_thiefs_lantern/` — Toon Link adventure (iustitia)
+- `projects/link_and_the_voice_in_the_well/` — Toon Link adventure (fides)
 - `projects/the_enormous_turnip/` — original retelling of the folk tale
 - `projects/the_little_engine_that_could/` — PD adaptation
 - `projects/the_tale_of_peter_rabbit/` — PD adaptation of Beatrix Potter
