@@ -1,0 +1,10 @@
+{
+  "project_id": "tower_test",
+  "title_english": "Link Climbs the Tower",
+  "title_latin": null,
+  "source_type": "original",
+  "theme": "test",
+  "target_pages": 10,
+  "status": "test",
+  "project_folder": "projects/tower_test"
+}
