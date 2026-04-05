@@ -83,32 +83,37 @@ def _select_reference_images(
     ref_images_dir: Path,
     project_dir: Path | None = None,
     max_refs: int = 6,
-) -> list[str]:
+) -> list[tuple[str, str]]:
     """
     Automatically select reference images for a page based on scene content.
 
+    Returns list of (path, label) tuples. Labels help the model understand
+    each image's role (per Google's recommendation to explicitly label refs).
+
     Priority: explicit override > style refs + location ref + character refs.
     """
-    # Escape hatch: explicit per-page override
+    # Escape hatch: explicit per-page override (no labels — legacy compat)
     explicit = page_prompt.get("reference_images")
     if explicit is not None:
         resolved = []
         for p in explicit:
             rp = _resolve_ref_path(p, ref_images_dir, project_dir)
             if rp:
-                resolved.append(str(rp))
+                resolved.append((str(rp), "Reference image"))
         return resolved
 
     if not visual_bible:
         return []
 
     refs = []
+    seen_paths = set()
 
     # 1. Style refs (global defaults — official artwork)
-    for p in visual_bible.get("reference_images", []):
+    for i, p in enumerate(visual_bible.get("reference_images", [])):
         rp = _resolve_ref_path(p, ref_images_dir, project_dir)
-        if rp:
-            refs.append(str(rp))
+        if rp and str(rp) not in seen_paths:
+            refs.append((str(rp), f"Art style reference"))
+            seen_paths.add(str(rp))
 
     # 2. Location ref
     location = page_prompt.get("location")
@@ -116,13 +121,13 @@ def _select_reference_images(
         loc_ref = visual_bible["locations"][location].get("reference_image_path")
         if loc_ref:
             rp = _resolve_ref_path(loc_ref, ref_images_dir, project_dir)
-            if rp and str(rp) not in refs:
-                refs.append(str(rp))
+            if rp and str(rp) not in seen_paths:
+                refs.append((str(rp), f"Location reference — {location}"))
+                seen_paths.add(str(rp))
 
     # 3. Character refs — prioritize non-established characters
     characters = page_prompt.get("characters_in_scene", [])
     char_entries = visual_bible.get("characters", {})
-    # Sort: non-established first (they need refs more)
     sorted_chars = sorted(
         characters,
         key=lambda c: char_entries.get(c, {}).get("is_established", False),
@@ -134,8 +139,9 @@ def _select_reference_images(
         char_ref = char.get("reference_image_path")
         if char_ref:
             rp = _resolve_ref_path(char_ref, ref_images_dir, project_dir)
-            if rp and str(rp) not in refs:
-                refs.append(str(rp))
+            if rp and str(rp) not in seen_paths:
+                refs.append((str(rp), f"Character reference — {char_name}"))
+                seen_paths.add(str(rp))
 
     if len(refs) > max_refs:
         print(f"    Warning: {len(refs)} refs exceed budget of {max_refs}, trimming")
@@ -160,7 +166,7 @@ def _load_reference_images(ref_paths: list[str]) -> list[types.Part]:
 def generate_image(
     prompt: str,
     resolution: str = DEFAULT_IMAGE_RESOLUTION,
-    reference_images: list[str] | None = None,
+    reference_images: list[str] | list[tuple[str, str]] | None = None,
 ) -> Image.Image:
     """
     Generate an image using Google Gemini's image generation.
@@ -168,18 +174,39 @@ def generate_image(
     Args:
         prompt: Full self-contained image prompt (style + characters + scene)
         resolution: Image resolution for Gemini (default from config)
-        reference_images: Optional list of file paths to reference images for style/character consistency
+        reference_images: Either:
+            - list of (path, label) tuples from _select_reference_images()
+            - list of plain path strings (legacy compat — labeled generically)
 
     Returns:
         PIL Image object
     """
     client = get_gemini_client()
 
-    # Build content: reference images first, then prompt text
+    # Build content with labeled reference images (per Google's recommendation)
     if reference_images:
-        ref_parts = _load_reference_images(reference_images)
-        style_instruction = "Using the exact art style from these reference images — the textured cel-shading, brush-stroke coloring, thick black outlines, and character proportions — generate a new scene:\n\n"
-        contents = ref_parts + [style_instruction + prompt]
+        contents = []
+
+        # Normalize to (path, label) tuples
+        labeled_refs = []
+        for ref in reference_images:
+            if isinstance(ref, tuple):
+                labeled_refs.append(ref)
+            else:
+                labeled_refs.append((ref, "Reference image"))
+
+        # Build interleaved text-label + image structure
+        contents.append("## Reference Images\n")
+        for i, (ref_path, label) in enumerate(labeled_refs, 1):
+            path = Path(ref_path)
+            if not path.exists():
+                print(f"    Warning: reference image not found: {path}")
+                continue
+            mime = "image/png" if path.suffix == ".png" else "image/jpeg"
+            contents.append(f"\n**IMAGE {i} — {label}:**\n")
+            contents.append(types.Part.from_bytes(data=path.read_bytes(), mime_type=mime))
+
+        contents.append(f"\n\n## Scene to Generate\n\nUsing the art style, location, and character appearances from the labeled reference images above, generate this scene:\n\n{prompt}")
     else:
         contents = prompt
 
@@ -392,7 +419,6 @@ def generate_book_images_batch(
 
     # Build JSONL requests
     jsonl_file = project_dir / "batch_requests.jsonl"
-    style_instruction = "Using the exact art style from these reference images — the textured cel-shading, brush-stroke coloring, thick black outlines, and character proportions — generate a new scene:\n\n"
 
     with open(jsonl_file, "w") as f:
         for page_prompt in page_prompts:
@@ -400,19 +426,24 @@ def generate_book_images_batch(
             prompt = build_prompt_from_visual_bible(visual_bible, page_prompt)
             prompt = _sanitize_prompt(prompt)
 
-            # Auto-select refs based on characters and location in scene
+            # Auto-select labeled refs based on characters and location in scene
             page_refs = _select_reference_images(visual_bible, page_prompt, ref_images_dir, project_dir)
 
-            # Build content parts
+            # Build content parts with labeled markdown structure
             parts = []
-            for ref_path in page_refs:
-                ref = Path(ref_path)
-                if ref.exists():
-                    mime = "image/png" if ref.suffix == ".png" else "image/jpeg"
-                    b64 = base64.b64encode(ref.read_bytes()).decode()
-                    parts.append({"inlineData": {"mimeType": mime, "data": b64}})
+            if page_refs:
+                parts.append({"text": "## Reference Images\n"})
+                for i, (ref_path, label) in enumerate(page_refs, 1):
+                    ref = Path(ref_path)
+                    if ref.exists():
+                        mime = "image/png" if ref.suffix == ".png" else "image/jpeg"
+                        b64 = base64.b64encode(ref.read_bytes()).decode()
+                        parts.append({"text": f"\n**IMAGE {i} — {label}:**\n"})
+                        parts.append({"inlineData": {"mimeType": mime, "data": b64}})
 
-            parts.append({"text": style_instruction + prompt if parts else prompt})
+                parts.append({"text": f"\n\n## Scene to Generate\n\nUsing the art style, location, and character appearances from the labeled reference images above, generate this scene:\n\n{prompt}"})
+            else:
+                parts.append({"text": prompt})
 
             request = {
                 "key": f"page_{page_num:02d}",
