@@ -69,9 +69,16 @@ A structured story outline saved to `projects/{project_id}/source/outline.json` 
    - Build through the middle with varied scenes
    - Reach a climax or turning point
    - Resolve quickly and satisfyingly (1-2 pages)
-   - Repetition is good! Repeated phrases help language learning naturally.
 
-5. **Consider Latin-friendliness.** Avoid English idioms that are impossible to translate. Prefer concrete, visual actions over abstract concepts. But don't overthink this — the Latin Scribe will handle the translation.
+5. **Design for repetition.** Every book should have built-in repetition patterns:
+   - **Refrain**: A recurring phrase that appears 3-5 times (e.g., "Quis lucernās capit?", "Adesne adhūc?" / "Adsum.")
+   - **Cumulative structure**: Each page adds one element to a growing sequence
+   - **Parallel scenes**: Mirrored scenes with different emotional weight (e.g., barrel launch #1 excited, barrel launch #2 determined)
+   - **Echo phrases**: Key vocabulary repeated in slightly different contexts across pages
+
+6. **Design toward concrete, visible actions.** Prefer scenes where characters run, hide, climb, push, carry — actions a child can see in the illustration. These also translate naturally into simple Latin. But don't overthink this — the Latin Scribe will handle the translation.
+
+7. **The emotional arc IS the learning mechanism.** A flat story is acquisitionally weak. Tension, surprise, humor, triumph, and relief are not distractions from language learning — they ARE how the language gets absorbed. Design stories the child will want to hear again and again.
 
 ## Virtue Framework
 

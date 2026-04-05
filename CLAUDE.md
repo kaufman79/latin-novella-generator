@@ -62,8 +62,9 @@ For detailed rubrics, rating guidelines (with examples at each level 0-5), and p
 - **Show, don't tell.** Illustrations do most of the emotional heavy lifting. Every moral beat must be visible in the art.
 - **Give the hero one real choice.** The best stories hinge on a moment where the character chooses.
 - **Failure is valuable.** Characters who fail and try again teach more than effortless success.
-- **Repetition carries both language and values.** A repeated Latin phrase teaches vocabulary AND a virtue simultaneously.
+- **Repetition carries both language and values.** A repeated Latin phrase teaches vocabulary AND a virtue simultaneously. Every book should have at least one refrain.
 - **One book, one primary virtue.** Secondary virtues can appear, but one should be central.
+- **The emotional arc is the acquisition mechanism.** Tension, surprise, humor, triumph, and relief are how the language gets absorbed. A flat story is acquisitionally weak. Design stories the child will want to hear again and again.
 - **Respect the child's intelligence.** No moralizing, no "and so we learn that..." endings. Trust the story.
 
 ---
@@ -196,7 +197,14 @@ The image generator automatically selects up to 6 reference images per page base
 - **Per-page override**: a `reference_images` array on a page prompt bypasses auto-selection entirely
 - Paths can be absolute or relative to `reference_images/` or project dir
 
-**3. Reference image pre-production:**
+**3. Hybrid reference strategy (location ref + chaining):**
+For best consistency, combine location refs with page chaining:
+- **First page at a new setting**: Use location ref + style refs + character refs. Apply dedup/scale rules.
+- **Subsequent pages at the same setting**: Chain from the previous page (pass it as a ref) + style refs.
+- **When the setting changes**: Reset to the new location ref, stop chaining.
+See `docs/image_consistency_research.md` for the test results.
+
+**4. Reference image pre-production:**
 Before generating page images, generate and review character/location reference images:
 ```bash
 python scripts/image_generator.py {project_id} --generate-refs

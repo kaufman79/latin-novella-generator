@@ -107,33 +107,41 @@ Every page prompt is assembled from the visual bible. The structure is:
 ### For Illustrations That Support Language Learning
 - At this age level, pictures do heavy lifting for comprehension
 - Design scenes where the action is visually clear — a child should be able to follow the story through pictures alone
-- But don't be overly literal (not every verb needs a direct visual representation)
+- But don't be overly literal — not every verb needs a direct visual representation
 - Show emotions on characters' faces — this helps comprehension
 - Keep backgrounds simple so the action is the focus
+- One main action per page — each illustration should have one clear focal action
 
 ### Scene Composition
 - Vary shots: wide establishing shots, medium character shots, close-ups for emotional moments
-- Don't put too many characters in one frame (hard for AI to handle well)
+- Max 2-3 characters per frame (more confuses the AI and the reader)
 - Think about visual flow across pages — variety keeps a child engaged
 - Consider what a child would find interesting or funny to look at
 
 ## Reference Image Management
 
-The image generator automatically selects reference images per page based on `characters_in_scene` and `location` fields. You must support this:
+### Hybrid Reference Strategy (core approach)
+
+Image consistency comes from combining two complementary techniques:
+
+1. **First page at a new setting**: Use **location ref** + style refs + character refs. This anchors the canonical look of the place. Apply dedup/scale rules (see below) since the model may duplicate or resize objects from the ref.
+2. **Subsequent pages at the same setting**: **Chain from the previous page** (pass it as a ref) + style refs. This maintains scene-to-scene coherence — the well on page 6 looks like the well on page 5 because it's derived from it.
+3. **When the setting changes**: Reset to the new **location ref** (stop chaining). Apply dedup/scale rules again.
+
+This hybrid gets the best of both: canonical look from the location ref, scene-to-scene coherence from chaining. See `docs/image_consistency_research.md` for the test results that validated this approach.
 
 ### Required Fields on Every Page Prompt
 - **`characters_in_scene`**: List of character names exactly matching keys in the visual bible's `characters` dict. NEVER omit this.
 - **`location`**: Location name exactly matching a key in the visual bible's `locations` dict. NEVER omit this.
 
 ### Location Design Rules
-- **Locations are physical places, not camera angles.** If two scenes happen at the same stone well, they share ONE location entry — don't split into "Well Exterior" and "Well Rim". The text prompt handles framing (wide shot, close-up, looking down into it).
-- **One ref image per location** anchors the physical appearance (materials, colors, shape, surroundings). The prompt describes the camera angle and mood per page.
-- **Future:** We may add multi-angle ref sheets per location (like character sheets). For now, one establishing shot per place is sufficient.
+- **Locations are physical places, not camera angles.** If two scenes happen at the same stone well, they share ONE location entry. The text prompt handles framing.
+- **One ref image per location** anchors the physical appearance. The prompt describes the camera angle per page.
 
 ### Visual Bible Reference Paths
-- **`reference_images`** (top-level): Style refs — official artwork for overall style (e.g., `["toon_link/official/zww-link1.jpg"]`). Always included for every page.
-- **`characters.{name}.reference_image_path`**: Path to a character reference image. Set this for non-established characters after refs are generated. Leave null for established characters (Toon Link, etc.) — the model knows them.
-- **`locations.{name}.reference_image_path`**: Path to a location reference image. Set this after refs are generated.
+- **`reference_images`** (top-level): Style refs — always included for every page.
+- **`characters.{name}.reference_image_path`**: Character ref. Set for non-established characters. Leave null for established characters (the model knows them).
+- **`locations.{name}.reference_image_path`**: Location ref. Set after pre-production.
 
 ### Pre-Production Workflow
 After creating the visual bible:
@@ -144,24 +152,19 @@ After creating the visual bible:
 5. THEN proceed to page image generation
 
 ### Reference Image Budget
-The system automatically selects up to 6 refs per page: 2 style + 1 location + up to 3 characters. Non-established characters are prioritized over established ones.
+Up to 6 refs per page: 2 style + 1 location + up to 3 characters. Non-established characters are prioritized.
 
 ### Multi-Angle Character Reference Sheets
-For recurring characters, generate refs from multiple angles: **front, side, 3/4, and back views**. Store them in `reference_images/toon_link/characters/` with angle suffixes (e.g., `link_front.png`, `link_back.png`). The art director should specify which angle ref to use per page by setting `reference_images` overrides when the default front-facing ref is wrong for the scene.
+For scenes requiring non-standard angles, use a matching-angle ref rather than the default front-facing ref. Front-facing refs bias the model toward front-facing output. Check `official/` for existing poses (`zww-link1.jpg` = front, `zww-link2.jpg` = action).
 
-For established characters like Toon Link, check the `official/` directory — there are already multiple poses available (e.g., `zww-link1.jpg` is front-facing, `zww-link2.jpg` is action pose).
+### Prompt Consistency Rules (first page at each setting)
 
-### Prompt Consistency Rules
+These apply when starting a new setting with a location ref. Chained pages inherit context and don't need these.
 
-These rules prevent common AI image generation artifacts:
-
-1. **Object deduplication**: The model sometimes reproduces the reference image AND generates it in the scene, creating duplicates. Every prompt that features a key location element MUST include an explicit count: "only one stone well", "a single cave entrance", "one pirate ship." Never leave object count ambiguous.
-
-2. **Scale anchoring**: The model has no spatial memory between pages. Every prompt where a character interacts with an object MUST specify their relative size: "Link stands at the well, the rim at his waist height", "the Moblin towers over Link, three times his height." Without this, proportions drift randomly page to page.
-
-3. **Ref-to-scene connection**: When a location ref exists, explicitly connect it to the scene composition: "the same stone well from the reference, now viewed from above as Link peers down." This tells the model the ref is showing WHAT the object looks like, not a separate object to add to the scene.
-
-4. **Angle-appropriate character refs**: When a scene shows a character from behind or in profile, use a matching-angle reference image rather than the default front-facing ref. Front-facing refs bias the model toward front-facing output regardless of what the prompt says.
+1. **Deduplication**: State "only one [object]" — the model sometimes reproduces the ref AND generates it, creating doubles.
+2. **Scale anchoring**: Specify relative sizes — "the well rim comes up to Link's waist". Chained pages inherit scale.
+3. **Ref-to-scene connection**: "The same stone well from the reference image, now viewed from above." This tells the model the ref IS the object.
+4. **Angle-appropriate refs**: Use back-view ref for back-facing scenes, side-view for profile shots.
 
 ## Tools Available
 

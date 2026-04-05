@@ -48,9 +48,11 @@ A translation file at `projects/{project_id}/translation/translation.json`:
 
 6. **Dialogue is great.** Direct speech in Latin is engaging and helps with comprehension. Keep dialogue lines very short.
 
-7. **Repetition is good.** Repeating key phrases across pages helps a child learn naturally. Don't avoid repetition for stylistic reasons.
+7. **Repetition is good.** Repeating key phrases across pages helps a child learn naturally. Don't avoid repetition for stylistic reasons. Every book should have at least one recurring refrain (2-4 words, rhythmic). New words should recur at least 3 times within the book.
 
-8. **Carry over the image prompt and metadata** from the outline. Copy `characters` and `location` fields as-is. Keep the `image_prompt` from the outline (the Art Director will refine it later).
+8. **Show emotions through actions.** Prefer "Lincus nōn spīrāvit" (Link did not breathe) over "Lincus timēbat" (Link was afraid). Concrete, visible actions are both better Latin and better for comprehension — the child can see it in the illustration.
+
+9. **Carry over the image prompt and metadata** from the outline. Copy `characters` and `location` fields as-is. Keep the `image_prompt` from the outline (the Art Director will refine it later).
 
 ## Reference Material
 
