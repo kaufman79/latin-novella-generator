@@ -28,10 +28,10 @@
     "Aryll": {
       "source": "Aryll from The Legend of Zelda: The Wind Waker",
       "is_established": true,
-      "visual_description": "Link's little sister, about 6 years old. Small, round-cheeked, cheerful. Blonde hair in two short pigtails. Big round cheeks, bright expressive eyes, wide smile. Wears a pink summer dress with a red-orange skull motif on the front and a round sunhat-style headpiece in matching pink. Carries a red-rimmed brass telescope (given to Link on page 7). Sweet, bouncy, affectionate.",
+      "visual_description": "A small girl ~4-5 years old. Bright blonde hair in TWO small side pigtails with tassels. Wears a sleeveless BLUE sundress with a large ORANGE/RED HIBISCUS FLOWER on the front, brown leather bracelet, brown sandals. Fair skin, rosy cheeks, big dark cartoon eyes, pointed elf ears. Carries a small orange telescope.",
       "expression_default": "bright, bouncy, affectionate",
       "height_reference": "Smaller than Link — roughly comes up to his shoulder.",
-      "reference_image_path": "toon_link/official/zww-aryll.jpg"
+      "reference_image_path": "toon_link/characters/aryll_ref.png"
     },
     "Grandma": {
       "source": "Link's Grandma from The Legend of Zelda: The Wind Waker",

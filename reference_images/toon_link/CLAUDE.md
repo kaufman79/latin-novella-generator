@@ -49,6 +49,10 @@ The Wind Waker cel-shaded look: textured brush-stroke coloring (not smooth/clean
 
 - `characters/` — Generated character reference sheets in our illustration style
   - `link_island_outfit.png` — Link pre-tunic (Book 1 pages 1-5)
+  - `link_back_green.png` — Link green tunic, back view
+  - `link_side_green.png` — Link green tunic, side profile
+  - `link_looking_back.png` — Link green tunic, looking back over shoulder (for "respexit" / farewell scenes)
+  - `aryll_ref.png` — Aryll in canonical blue sundress with red hibiscus flower
   - `orca_ref.png` — old swordmaster with long white beard
   - `bokoblin_ref.png` — gray goblin enemy
   - `moblin_brown_ref.png` — brown pig-boar warrior

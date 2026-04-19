@@ -25,7 +25,7 @@
     },
     {
       "page_number": 3,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Interior of the cottage sleeping loft. Aryll (small girl, blonde pigtails, pink summer dress with red-orange skull motif, pink sunhat) has leapt onto the bed mid-bounce — pigtails flying, giant grin, both small hands shaking Toon Link by the shoulders. Link (blue shirt, orange shorts, no cap, messy blonde hair) jolts awake with huge scrunched-up eyes and an 'oh!' mouth of surprise. Pure cheerful morning chaos. Motion lines. Close-medium shot. Square 1:1, no text in image.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Interior of the cottage sleeping loft. Aryll (small girl, blonde pigtails, pink summer dress with red-orange skull motif, pink sunhat) has leapt onto the bed mid-bounce — pigtails flying, giant grin, both small hands shaking Toon Link by the shoulders. Link (blue shirt, orange shorts, no cap, messy blonde hair) jolts awake with huge scrunched-up eyes and an 'oh!' mouth of surprise. Pure cheerful morning chaos. Motion lines. Close-medium shot. Square 1:1, no text in image. Aryll is a small girl with blonde side pigtails, wearing her blue sleeveless sundress with a large red/orange hibiscus flower on the front, brown bracelet, brown sandals.",
       "characters_in_scene": [
         "Toon Link (Island Outfit)",
         "Aryll"
@@ -33,13 +33,13 @@
       "location": "Grandma's Cottage Interior",
       "reference_images": [
         "toon_link/characters/link_island_outfit.png",
-        "toon_link/official/zww-aryll.jpg",
+        "toon_link/characters/aryll_ref.png",
         "toon_link/official/zww-link1.jpg"
       ]
     },
     {
       "page_number": 4,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Interior of the cottage sleeping loft. Aryll (pink dress, pink sunhat, blonde pigtails) stands beside the bed with both arms thrown up in triumph, beaming ear to ear. Toon Link (blue shirt, orange shorts, messy blonde hair, no cap) sits up in bed rubbing one eye with a fist, a slow smile starting. A simple garland of leaves and small wildflowers hangs from a wooden beam behind them. Bright morning light fills the loft. Joyful. Medium shot. Square 1:1, no text in image.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Interior of the cottage sleeping loft. Aryll (pink dress, pink sunhat, blonde pigtails) stands beside the bed with both arms thrown up in triumph, beaming ear to ear. Toon Link (blue shirt, orange shorts, messy blonde hair, no cap) sits up in bed rubbing one eye with a fist, a slow smile starting. A simple garland of leaves and small wildflowers hangs from a wooden beam behind them. Bright morning light fills the loft. Joyful. Medium shot. Square 1:1, no text in image. Aryll is a small girl with blonde side pigtails, wearing her blue sleeveless sundress with a large red/orange hibiscus flower on the front, brown bracelet, brown sandals.",
       "characters_in_scene": [
         "Toon Link (Island Outfit)",
         "Aryll"
@@ -47,13 +47,13 @@
       "location": "Grandma's Cottage Interior",
       "reference_images": [
         "toon_link/characters/link_island_outfit.png",
-        "toon_link/official/zww-aryll.jpg",
+        "toon_link/characters/aryll_ref.png",
         "toon_link/official/zww-link1.jpg"
       ]
     },
     {
       "page_number": 5,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Main room of Grandma's cottage. Grandma (small, hunched, white hair tied back, deeply lined kind face, simple long dress and apron) stands by a low wooden table holding out with both hands a neatly folded bundle of bright green cloth topped with a pointed green cap; a pair of small brown boots sits on the table beside her. THE HERO'S TUNIC, clearly the gift, centered in the composition. Toon Link (blue shirt, orange shorts, no cap) stands before her staring at the green cloth with huge amazed eyes. Aryll peeks from behind Link, both hands pressed to her mouth in delight. Warm amber interior light. Medium shot, the folded green tunic visually central. Square 1:1, no text in image.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Main room of Grandma's cottage. Grandma (small, hunched, white hair tied back, deeply lined kind face, simple long dress and apron) stands by a low wooden table holding out with both hands a neatly folded bundle of bright green cloth topped with a pointed green cap; a pair of small brown boots sits on the table beside her. THE HERO'S TUNIC, clearly the gift, centered in the composition. Toon Link (blue shirt, orange shorts, no cap) stands before her staring at the green cloth with huge amazed eyes. Aryll peeks from behind Link, both hands pressed to her mouth in delight. Warm amber interior light. Medium shot, the folded green tunic visually central. Square 1:1, no text in image. Aryll is a small girl with blonde side pigtails, wearing her blue sleeveless sundress with a large red/orange hibiscus flower on the front, brown bracelet, brown sandals.",
       "characters_in_scene": [
         "Toon Link (Island Outfit)",
         "Aryll",
@@ -63,12 +63,12 @@
       "reference_images": [
         "toon_link/characters/link_island_outfit.png",
         "toon_link/official/zww-grandma.jpg",
-        "toon_link/official/zww-aryll.jpg"
+        "toon_link/characters/aryll_ref.png"
       ]
     },
     {
       "page_number": 6,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. THE TRANSFORMATION. Toon Link now stands in the center of the cottage wearing the full iconic green hero's outfit for the first time: bright green tunic, bright green long pointed cap, brown leather belt with gold buckle, brown boots. His arms are slightly spread, looking down at himself, a wide amazed grin spreading across his face. A warm golden shaft of light falls on him — he looks genuinely transformed. Aryll (pink dress, pigtails) jumps in the air beside him in pure delight, pigtails flying. Grandma watches from the side, one hand pressed over her heart, eyes soft. Medium shot, Link centered and glowing. Square 1:1, no text in image.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. THE TRANSFORMATION. Toon Link now stands in the center of the cottage wearing the full iconic green hero's outfit for the first time: bright green tunic, bright green long pointed cap, brown leather belt with gold buckle, brown boots. His arms are slightly spread, looking down at himself, a wide amazed grin spreading across his face. A warm golden shaft of light falls on him — he looks genuinely transformed. Aryll (pink dress, pigtails) jumps in the air beside him in pure delight, pigtails flying. Grandma watches from the side, one hand pressed over her heart, eyes soft. Medium shot, Link centered and glowing. Square 1:1, no text in image. Aryll is a small girl with blonde side pigtails, wearing her blue sleeveless sundress with a large red/orange hibiscus flower on the front, brown bracelet, brown sandals.",
       "characters_in_scene": [
         "Toon Link",
         "Aryll",
@@ -78,7 +78,7 @@
     },
     {
       "page_number": 7,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. On the wooden porch of the cottage, morning sun behind them. Aryll (pink dress, pigtails, sunhat) holds out with both small hands a prized red-rimmed brass telescope — clearly her treasure being given away. Her eyes shine, her smile is brave. Toon Link (green hero's tunic, green cap, brown belt, brown boots) kneels down to her height, reaching out with careful gentle hands, his mouth slightly open in awe. A tender sibling moment. Close-medium shot, the red telescope visually central between their hands. Square 1:1, no text in image.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. On the wooden porch of the cottage, morning sun behind them. Aryll (pink dress, pigtails, sunhat) holds out with both small hands a prized red-rimmed brass telescope — clearly her treasure being given away. Her eyes shine, her smile is brave. Toon Link (green hero's tunic, green cap, brown belt, brown boots) kneels down to her height, reaching out with careful gentle hands, his mouth slightly open in awe. A tender sibling moment. Close-medium shot, the red telescope visually central between their hands. Square 1:1, no text in image. Aryll is a small girl with blonde side pigtails, wearing her blue sleeveless sundress with a large red/orange hibiscus flower on the front, brown bracelet, brown sandals.",
       "characters_in_scene": [
         "Toon Link",
         "Aryll"
@@ -172,7 +172,7 @@
     },
     {
       "page_number": 15,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. The grassy cliff-top near the lookout tower. An enormous dark bird-shaped shadow sweeps across the bright green grass. Toon Link (green hero's tunic, green cap, small sword in hand) and Tetra (blue vest, white shirt, ponytail) are both looking up, faces caught in the shadow, expressions darkening with dread. In the middle distance, flying low over the cottages of the village, the huge dark Helmaroc King (black feathers, masked beak face, huge wingspan) banks and circles, hunting. On a separate cliff across from them, small and alone, stands Aryll (tiny pink dress, sunhat, pigtails) shading her eyes with one hand, looking up at the bird — the bird is turning toward her. Wide shot, dread gathering. Square 1:1, no text in image.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. The grassy cliff-top near the lookout tower. An enormous dark bird-shaped shadow sweeps across the bright green grass. Toon Link (green hero's tunic, green cap, small sword in hand) and Tetra (blue vest, white shirt, ponytail) are both looking up, faces caught in the shadow, expressions darkening with dread. In the middle distance, flying low over the cottages of the village, the huge dark Helmaroc King (black feathers, masked beak face, huge wingspan) banks and circles, hunting. On a separate cliff across from them, small and alone, stands Aryll (tiny pink dress, sunhat, pigtails) shading her eyes with one hand, looking up at the bird — the bird is turning toward her. Wide shot, dread gathering. Square 1:1, no text in image. Aryll is a small girl with blonde side pigtails, wearing her blue sleeveless sundress with a large red/orange hibiscus flower on the front, brown bracelet, brown sandals.",
       "characters_in_scene": [
         "Toon Link",
         "Tetra",
@@ -182,13 +182,13 @@
       "location": "Outset Island - Cliff Lookout",
       "reference_images": [
         "toon_link/official/zww-helnaroc-king.jpg",
-        "toon_link/official/zww-aryll.jpg",
+        "toon_link/characters/aryll_ref.png",
         "toon_link/official/zww-tetra.jpg"
       ]
     },
     {
       "page_number": 16,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. THE EMOTIONAL LOW POINT. The huge Helmaroc King (black feathers with red accents, masked beaked face, massive wingspan) has swooped in and clutched tiny Aryll (pink dress, pigtails) in its huge talons. She is being lifted into the sky, her pink sunhat flying loose, her small arms reaching back toward the island, her mouth wide open in a scream. Across the cliff-top, Toon Link (green hero's tunic, green cap) has dropped his small sword on the grass and is RUNNING toward her with both arms outstretched, face transformed with pure horror, mouth open in a shout. Tetra (blue vest, ponytail) stands behind him, frozen, face shocked. Everything is terror, motion, and too-late. Square 1:1, no text in image.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. THE EMOTIONAL LOW POINT. The huge Helmaroc King (black feathers with red accents, masked beaked face, massive wingspan) has swooped in and clutched tiny Aryll (pink dress, pigtails) in its huge talons. She is being lifted into the sky, her pink sunhat flying loose, her small arms reaching back toward the island, her mouth wide open in a scream. Across the cliff-top, Toon Link (green hero's tunic, green cap) has dropped his small sword on the grass and is RUNNING toward her with both arms outstretched, face transformed with pure horror, mouth open in a shout. Tetra (blue vest, ponytail) stands behind him, frozen, face shocked. Everything is terror, motion, and too-late. Square 1:1, no text in image. Aryll is a small girl with blonde side pigtails, wearing her blue sleeveless sundress with a large red/orange hibiscus flower on the front, brown bracelet, brown sandals.",
       "characters_in_scene": [
         "Toon Link",
         "Tetra",
@@ -198,7 +198,7 @@
       "location": "Outset Island - Cliff Lookout",
       "reference_images": [
         "toon_link/official/zww-helnaroc-king.jpg",
-        "toon_link/official/zww-aryll.jpg",
+        "toon_link/characters/aryll_ref.png",
         "toon_link/official/zww-link2.jpg"
       ]
     },
@@ -237,7 +237,7 @@
     },
     {
       "page_number": 20,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. FINAL IMAGE. The pirate ship under full sail cuts across deep blue open ocean, white sails full of wind, skull-and-crossbones flag streaming. Outset Island is already receding in the distance — small and green behind them, a shrinking silhouette. Toon Link (green hero's tunic, green cap, brown boots) stands at the back of the ship, both hands resting on the wooden rail, looking back at the shrinking island. On the distant tiny beach: Grandma, still standing alone where they left her, one hand raised in a small wave. Link's face: not crying anymore — set, older somehow. Sad but going. Wind in his green cap. Long slanting afternoon light. Wide bittersweet shot — one boy, a receding home, the beginning of a journey. Square 1:1, no text in image.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring. Warm dusk light, the horizon ahead glowing with sunset colors. Toon Link in his green hero's tunic stands at the back railing of Tetra's pirate ship as it sails AWAY from Outset Island. He is seen from BEHIND — his back, his green tunic, his sword scabbard visible — but his head is TURNED over his shoulder, looking BACK at the shrinking island behind the ship. His expression is wistful, bittersweet. On the shore in the distance, Grandma (Avia) stands small and alone, one hand raised. The ship's red sail and wake are visible. Composition emphasizes the separation — Link facing away from the viewer but looking back. Square 1:1. No text in image.",
       "characters_in_scene": [
         "Toon Link",
         "Tetra",
@@ -245,9 +245,9 @@
       ],
       "location": "Open Ocean",
       "reference_images": [
-        "toon_link/locations/pirate_ship_deck.png",
-        "toon_link/official/zww-link1.jpg",
-        "toon_link/official/zww-grandma.jpg"
+        "toon_link/characters/link_looking_back.png",
+        "toon_link/official/zww-grandma.jpg",
+        "toon_link/locations/pirate_ship_deck.png"
       ]
     }
   ]
