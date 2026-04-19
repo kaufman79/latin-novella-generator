@@ -1,0 +1,211 @@
+{
+  "title_english": "Link and the Birthday",
+  "title_latin": "Lincus et Diēs Nātālis",
+  "target_pages": 20,
+  "characters": [
+    {
+      "name": "Toon Link",
+      "description": "Small boy hero with large expressive eyes, blonde hair, pointed ears. At the start of the book he wears his ordinary Outset Island clothes: a blue shirt and orange shorts, bare feet or simple sandals — the outfit of a normal island kid. Mid-book he receives the green hero's tunic and cap (long green tunic, green pointed cap, brown boots, brown belt) as a birthday gift from his grandmother, and wears it for the rest of the story. Same boy, same face — only the clothes change.",
+      "source": "Toon Link from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    },
+    {
+      "name": "Aryll",
+      "description": "Link's little sister, about 6 years old. Small, cheerful, blonde pigtails, big round cheeks, bright eyes. Wears a pink summer dress with a red-orange skull motif and a round sunhat-type headpiece. Carries a red-rimmed telescope. Sweet, bouncy, affectionate — she adores her big brother.",
+      "source": "Aryll from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    },
+    {
+      "name": "Grandma",
+      "description": "Link's grandmother — a small, hunched, kind old woman with white hair and a warm, deeply lined face. Wears a simple long dress and apron. Moves slowly but carefully. Her love for the children shows in every gesture.",
+      "source": "Link's Grandma from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    },
+    {
+      "name": "Tetra",
+      "description": "A tough pirate girl about Link's age. Tan skin, messy dirty-blonde hair pulled back in a short ponytail, bright blue eyes with a sharp look. Wears a blue vest over a white shirt, rolled-up brown trousers, a red bandana at her waist, a gold bracelet. Scrappy, confident, brusque — not a girly-girl. Bossy but not cruel.",
+      "source": "Tetra from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    },
+    {
+      "name": "Great Bird",
+      "description": "An enormous, terrifying bird — the Helmaroc King. Huge wingspan, dark feathers, a fearsome beaked mask-face, sharp talons. Too big to be natural. When it flies overhead its shadow covers everything. Called 'Avis Magna' in the Latin — 'the great bird.' A looming menace, not a character we get to know.",
+      "source": "Helmaroc King from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    },
+    {
+      "name": "Monsters",
+      "description": "Small forest monsters (Bokoblins from Wind Waker). Short, hunched, purple-gray skin, beady yellow eyes, tusks, wearing ragged loincloths, carrying crude clubs or sticks. Ugly but more pathetic than terrifying — easy for Link to drive off with a sword. Called 'monstra' in the Latin.",
+      "source": "Bokoblins from The Legend of Zelda: The Wind Waker",
+      "is_established": true
+    }
+  ],
+  "locations": [
+    {
+      "name": "Outset Island - Morning",
+      "description": "A small, bright tropical island at dawn. Warm golden light on green grass, palm trees, thatched cottages on stilts, a wooden watchtower. Blue ocean surrounds everything. Safe, familiar, home. Wind Waker cel-shaded style."
+    },
+    {
+      "name": "Grandma's Cottage Interior",
+      "description": "The cozy inside of Link's grandmother's small cottage. Wooden walls, a low table, a small fireplace or hearth, a ladder up to the sleeping loft. Warm amber light from a window. A few simple wooden bowls, a broom in the corner, dried herbs hanging from beams. Lived-in and loving."
+    },
+    {
+      "name": "Outset Island - Cliff Lookout",
+      "description": "The high lookout point on Outset Island — a grassy cliff edge overlooking the wide blue ocean. A single twisted tree. The watchtower of the village visible behind. Wind moves the grass. Endless horizon of sea and sky. This is where you go to watch the world."
+    },
+    {
+      "name": "Outset Island - Forest",
+      "description": "A small dense patch of tropical forest on the island interior. Thick palm fronds, tangled vines, broken fallen logs, dappled green-gold sunlight filtering through the canopy. Shadows between the trees. Slightly wild, slightly dangerous — the opposite of the tidy village."
+    },
+    {
+      "name": "Outset Island - Beach",
+      "description": "The sandy beach of Outset Island. Pale warm sand, gentle waves lapping, a wooden dock. A small pirate ship anchored just offshore — sails furled, hull weathered, a skull-and-crossbones flag. Palm trees at the edge of the sand. Where the island meets the sea."
+    },
+    {
+      "name": "Open Ocean",
+      "description": "The wide open sea just off Outset Island. Deep blue water, sparkling sun on waves, a few wispy clouds. The pirate ship under sail. In the distance: the silhouette of Outset Island shrinking behind. Vast, uncertain, the unknown."
+    }
+  ],
+  "pages": [
+    {
+      "page_number": 1,
+      "english_text": "It was morning on Outset Island.",
+      "scene_description": "Wide establishing shot of Outset Island at dawn. Warm golden sunrise light floods across the green grass and the thatched cottages on stilts. The ocean sparkles. A few gulls drift above. The island looks completely peaceful — no humans visible yet. A quiet, safe, beautiful morning. Wind Waker cel-shaded style.",
+      "characters_present": [],
+      "location": "Outset Island - Morning"
+    },
+    {
+      "page_number": 2,
+      "english_text": "Link was sleeping.",
+      "scene_description": "Interior of Grandma's cottage — the small sleeping loft. Link is asleep on a simple bed, curled on his side, one hand tucked under his cheek. He wears his ordinary Outset clothes: BLUE SHIRT and ORANGE SHORTS. No green tunic yet. His hair is messy with sleep. Soft morning light slants through a small window. Everything is calm.",
+      "characters_present": ["Toon Link"],
+      "location": "Grandma's Cottage Interior"
+    },
+    {
+      "page_number": 3,
+      "english_text": "Aryll jumped on him. \"Brother! Brother!\"",
+      "scene_description": "Aryll has leapt onto Link's bed — mid-bounce, pigtails flying, pink dress twirling, giant grin on her face. She is shaking Link by the shoulders with both small hands. Link's eyes are scrunching open, his mouth an 'oh!' of surprise, hair everywhere. Pure cheerful chaos. She is tiny and bouncy and delighted. First appearance of the refrain 'Soror mea!' (from Link, affectionately groaning as she jumps on him). Note: Link still in blue shirt and orange shorts.",
+      "characters_present": ["Toon Link", "Aryll"],
+      "location": "Grandma's Cottage Interior"
+    },
+    {
+      "page_number": 4,
+      "english_text": "\"Today is your birthday!\"",
+      "scene_description": "Aryll now standing beside the bed, both arms thrown up in the air in triumph, beaming. Link sits up in bed, still rubbing one eye with a fist, beginning to smile. Hanging in the background on a beam: a simple garland of leaves and small wildflowers — Grandma and Aryll have clearly decorated the cottage while he slept. Morning light is brighter now. The joy of the day beginning. Link still in blue shirt and orange shorts.",
+      "characters_present": ["Toon Link", "Aryll"],
+      "location": "Grandma's Cottage Interior"
+    },
+    {
+      "page_number": 5,
+      "english_text": "Grandma smiled. She had a gift.",
+      "scene_description": "Grandma stands in the main room of the cottage by the low table, hunched and warm-faced, her white hair tied back. She holds out with both hands a neatly folded bundle of bright green cloth with a pointed green cap on top and small brown boots beside it on the table. THE HERO'S TUNIC, folded and offered. Her face is soft, nostalgic, proud. Link stands before her in his blue shirt and orange shorts, staring at the green cloth with huge eyes — amazed. Aryll peeks from behind him, hands clasped to her mouth. The gift is visually central.",
+      "characters_present": ["Toon Link", "Aryll", "Grandma"],
+      "location": "Grandma's Cottage Interior"
+    },
+    {
+      "page_number": 6,
+      "english_text": "Link put on the green clothes. He was like a hero.",
+      "scene_description": "THE TRANSFORMATION PAGE. Link now stands in the middle of the cottage wearing the full green hero's tunic, green pointed cap, brown belt, brown boots — exactly the iconic outfit. Arms slightly spread, looking down at himself, a grin spreading across his face. Aryll jumps in delight beside him, pigtails flying. Grandma watches from the side, one hand over her heart. The light on Link is warm and slightly golden — he looks transformed. From this page forward, Link wears the green tunic.",
+      "characters_present": ["Toon Link", "Aryll", "Grandma"],
+      "location": "Grandma's Cottage Interior"
+    },
+    {
+      "page_number": 7,
+      "english_text": "Aryll had a gift too. A telescope!",
+      "scene_description": "Aryll holds out with both hands her prized red-rimmed telescope — brass and red, clearly her own treasure she is giving away. Her eyes are bright and her smile is brave (she loves this telescope, she is giving it anyway). Link kneels down to her height, reaching out with careful hands, mouth open slightly — he knows this is her favorite thing. Tender sibling moment. Link in green tunic, outside the cottage now on the wooden porch with morning light behind them.",
+      "characters_present": ["Toon Link", "Aryll"],
+      "location": "Outset Island - Morning"
+    },
+    {
+      "page_number": 8,
+      "english_text": "Link climbed to the lookout. He looked at the sea.",
+      "scene_description": "Link stands at the high cliff lookout, the twisted tree behind him, the vast blue ocean stretching out below. He holds the red telescope up to one eye with both hands, leaning slightly forward. The wind catches his green cap. Behind and below him the village of Outset is visible in miniature. He looks tiny against the huge sky and sea — but happy, curious. A wide triumphant morning.",
+      "characters_present": ["Toon Link"],
+      "location": "Outset Island - Cliff Lookout"
+    },
+    {
+      "page_number": 9,
+      "english_text": "A great bird! It carried a girl!",
+      "scene_description": "Through-the-telescope view or split focus: the sky over the distant ocean, and in it an ENORMOUS dark bird — the Helmaroc King — wings spread, masked face, huge talons clutching a small struggling girl (Tetra, visible but small). The bird is terrifying and huge. Tiny in the foreground corner we see Link's shocked face, telescope still at his eye, mouth open in alarm. The peace has just cracked. Dark shape against bright sky.",
+      "characters_present": ["Toon Link", "Great Bird", "Tetra"],
+      "location": "Outset Island - Cliff Lookout"
+    },
+    {
+      "page_number": 10,
+      "english_text": "The bird dropped the girl. Into the forest!",
+      "scene_description": "Mid-air action shot. The huge dark bird is banking away with empty talons, wings beating. Tetra falls through the air, arms flailing, ponytail streaming, falling toward the canopy of the island forest below. Her mouth open in a yell. The forest trees rise up to catch her. Visible in the corner: the distant cliff where tiny Link still stands watching, telescope lowered now, body tensed. Drama and motion.",
+      "characters_present": ["Great Bird", "Tetra"],
+      "location": "Outset Island - Forest"
+    },
+    {
+      "page_number": 11,
+      "english_text": "Link seized a sword. He ran!",
+      "scene_description": "Link sprinting at full speed across the grass of Outset, a small sword gripped tight in his right hand, his green cap flying behind him, his face set with purpose — scared but going anyway. He is running AWAY from the village toward the forest at the island's edge. Behind him, we can just see Aryll on the porch of the cottage, one hand raised, watching him go. Motion lines, flying grass, full-speed determination. Link in green tunic.",
+      "characters_present": ["Toon Link", "Aryll"],
+      "location": "Outset Island - Morning"
+    },
+    {
+      "page_number": 12,
+      "english_text": "Tetra lay on the ground. Monsters came near!",
+      "scene_description": "Inside the forest, dappled green-gold light through the canopy. Tetra lies crumpled on a bed of leaves, one arm tucked under her, ponytail undone, eyes closed or barely open — dazed, not badly hurt. Creeping out from between the trees around her: three small Bokoblins — hunched, purple-gray, tusked, beady yellow eyes, each holding a crude stick or club. They are closing in on her. Menace and vulnerability.",
+      "characters_present": ["Tetra", "Monsters"],
+      "location": "Outset Island - Forest"
+    },
+    {
+      "page_number": 13,
+      "english_text": "Link burst in. \"Go away!\"",
+      "scene_description": "Link crashes into the forest clearing between Tetra and the monsters, sword raised, legs braced, face fierce. His green tunic is a flash of color against the dim forest. The Bokoblins are in mid-recoil, one falling backward, one raising a stick defensively, one turning to flee — surprised and cowardly. Tetra is in the background still down. Link is small but absolutely not afraid in this moment. Pure hero pose.",
+      "characters_present": ["Toon Link", "Tetra", "Monsters"],
+      "location": "Outset Island - Forest"
+    },
+    {
+      "page_number": 14,
+      "english_text": "The monsters ran off. Tetra stood up.",
+      "scene_description": "The Bokoblins are visible as small fleeing shapes disappearing between distant trees — backs turned, running away, tiny and defeated. In the foreground Tetra is pushing herself up from the leaves, one hand on the ground, the other brushing dirt off her face. She stares at Link — sharp-eyed, surprised, a little suspicious, definitely NOT swooning or grateful in a soft way. Link lowers his sword. A beat of tension as they see each other for the first time.",
+      "characters_present": ["Toon Link", "Tetra"],
+      "location": "Outset Island - Forest"
+    },
+    {
+      "page_number": 15,
+      "english_text": "Then — a shadow. The great bird returned!",
+      "scene_description": "Out of the forest now, on the cliff-top near the lookout. An enormous dark shadow sweeps across the grass. Link and Tetra are both looking up, faces caught in the shadow. And in the distance, flying low over the cottages of the village — the huge dark bird again, wings beating, circling, hunting. AND (critical): on the cliff lookout opposite them, small and alone, stands Aryll in her pink dress, shading her eyes with one hand, looking up at the bird. The bird is turning toward her.",
+      "characters_present": ["Toon Link", "Tetra", "Great Bird", "Aryll"],
+      "location": "Outset Island - Cliff Lookout"
+    },
+    {
+      "page_number": 16,
+      "english_text": "The bird grabbed Aryll! \"My sister!\"",
+      "scene_description": "THE EMOTIONAL LOW POINT. The huge bird has swooped in and clutched Aryll in its talons — she is being lifted into the air, her pink dress flailing, her sunhat flying off, her little arms reaching back toward the island. Her mouth is wide open in a scream — the word 'Lince!' could almost be visible in the air. Across from her, Link has dropped his sword and is RUNNING toward her with both arms outstretched, face transformed with horror, shouting — this is the second appearance of the refrain 'Soror mea!' and it is pure anguish. Tetra watches from behind, shocked. Everything is motion and terror.",
+      "characters_present": ["Toon Link", "Tetra", "Great Bird", "Aryll"],
+      "location": "Outset Island - Cliff Lookout"
+    },
+    {
+      "page_number": 17,
+      "english_text": "Link ran. But he could not reach her.",
+      "scene_description": "Link at the very edge of the cliff, skidding to a stop, one hand still reaching toward the sky — but the bird is already far away, a small dark shape carrying an even smaller pink shape out over the open ocean. Link's face is devastated — mouth open, eyes wide, arm falling. The wind tugs his cap. The ocean stretches out huge and empty between him and his sister. The smallness of him against the vastness of the sea. Tetra stands a few paces behind him, watching, her face unreadable.",
+      "characters_present": ["Toon Link", "Tetra"],
+      "location": "Outset Island - Cliff Lookout"
+    },
+    {
+      "page_number": 18,
+      "english_text": "\"Take me with you! My sister!\"",
+      "scene_description": "The beach now. Tetra stands on the wooden dock, half-turned, one foot already raised to step toward her pirate ship anchored offshore. Link has run after her and grabbed her sleeve with one hand — his other hand points out over the water in the direction the bird flew. His face is streaked with tears but his jaw is set — he is not just begging, he is demanding. Third and final appearance of the refrain 'Soror mea!' — now transformed from joy (p.3) through terror (p.16) to pure resolve. Tetra turns to look at him, her sharp eyes narrowing — considering.",
+      "characters_present": ["Toon Link", "Tetra"],
+      "location": "Outset Island - Beach"
+    },
+    {
+      "page_number": 19,
+      "english_text": "Tetra nodded. \"Come aboard.\"",
+      "scene_description": "Tetra stands on the deck of the pirate ship now, one hand on the rail, head tilted, and gives Link a single brusque nod — not warm, but not cruel. A businesslike yes. Link stands at the foot of the gangplank, small sword still in his hand, green tunic a little dirty, looking up at her. Grandma has appeared at the edge of the beach in the background — we can see her small figure with one hand pressed to her mouth, watching her grandson preparing to sail away. The wind is picking up. The ship's sails are being unfurled.",
+      "characters_present": ["Toon Link", "Tetra", "Grandma"],
+      "location": "Outset Island - Beach"
+    },
+    {
+      "page_number": 20,
+      "english_text": "The ship sailed away. Link looked back.",
+      "scene_description": "FINAL IMAGE. The pirate ship under full sail on the open ocean, cutting through blue water. Outset Island is already receding in the distance — small and green behind them. Link stands at the back of the ship, both hands on the rail, looking back at the shrinking island. On the distant beach, tiny but visible: Grandma, still standing where they left her, one hand raised in a small wave. Link's face is not crying now — it is set, older somehow. Sad but going. The wind in his green cap. One boy, one sister out there somewhere, one long journey beginning. END.",
+      "characters_present": ["Toon Link", "Tetra", "Grandma"],
+      "location": "Open Ocean"
+    }
+  ]
+}
