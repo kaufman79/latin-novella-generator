@@ -1,0 +1,124 @@
+{
+  "style": {
+    "medium": "Cel-shaded digital art in the style of The Legend of Zelda: The Wind Waker. Textured brush-stroke coloring with bold black outlines and flat color fills. Slightly painterly cel-shading with visible brushwork texture, not smooth vector.",
+    "palette": "Three emotional phases. MORNING JOY (pages 1-8): bright saturated tropical colors — vivid green grass, warm golden sunrise, bright blue ocean and sky, Link's blue-and-orange island clothes (pages 1-5) then green tunic (pages 6+) popping against the island. GATHERING DREAD (pages 9-17): same island palette but pierced by the dark silhouette of the Great Bird — cold shadow sweeping across bright grass, darker greens in the forest, a chill creeping into the warm day. BITTERSWEET DEPARTURE (pages 18-20): deep blue ocean, long sun, pirate ship sails against sky — the color warms but the mood is heavy. The final page balances wind-filled sails against a receding green island.",
+    "line_weight": "Bold black outlines on all characters and objects. Clean crisp edges. Slightly thicker outlines on foreground characters to separate them from backgrounds.",
+    "lighting": "Warm golden morning light for pages 1-8 — low sun, long soft shadows, a newly-dawned world. Dappled green-gold light filtering through tropical canopy in the forest scenes (10, 13, 14). Stark contrast of dark-bird-shadow against bright sunlit grass for the crisis pages (15-17). Page 20: long slanting afternoon light across open ocean, wind-caught sails.",
+    "mood": "Joyful wake-up to threat to resolve to bittersweet farewell. Pages 1-8: warmth, affection, a child's birthday. Pages 9-10: sudden crack in the peace. Pages 11-14: urgency and courage. Pages 15-17: terror and helplessness. Pages 18-20: resolve hardening into the beginning of a journey. The final image should carry both sadness and courage.",
+    "technical": "Square aspect ratio. Child-friendly composition with characters filling at least 40% of frame in close and medium shots. Single clear focal point per image. No text in image. No watermarks or UI elements."
+  },
+  "characters": {
+    "Toon Link (Island Outfit)": {
+      "source": "Toon Link from The Legend of Zelda: The Wind Waker, pre-birthday Outset Island clothes",
+      "is_established": true,
+      "visual_description": "Toon Link from The Wind Waker BEFORE receiving the hero's tunic. Small boy with a very large round head (chibi proportions, roughly 3 heads tall). Huge expressive solid-black cartoon eyes with white highlights. Messy blonde hair. Long pointed elf ears. Wears his ordinary Outset Island clothes: a BLUE SHIRT with a small red lobster embroidery on the chest, ORANGE shorts, bare feet or simple sandals. No cap, no sword, no belt. Fair skin with rosy round cheeks. Small button nose.",
+      "expression_default": "sleepy, curious, cheerful — huge eyes carry most of the emotion",
+      "height_reference": "Very short, child-sized, roughly 3 heads tall in chibi proportions.",
+      "reference_image_path": "toon_link/characters/link_island_outfit.png",
+      "usage_note": "Use only for pages 1-5 (before Grandma's gift)."
+    },
+    "Toon Link": {
+      "source": "Toon Link from The Legend of Zelda: The Wind Waker, wearing the green hero's tunic",
+      "is_established": true,
+      "visual_description": "Toon Link from The Wind Waker in his iconic green hero's tunic. Small boy with a very large round head (chibi proportions, roughly 3 heads tall). Huge expressive solid-black cartoon eyes with white highlights. Messy blonde hair poking out from under a bright green pointed cap. Long pointed elf ears. Wears a bright green tunic, bright green long pointed cap, brown leather belt with a gold buckle, brown boots. Fair skin with rosy round cheeks. Small button nose. Carries a small sword from page 12 onward.",
+      "expression_default": "determined, curious, expressive — huge eyes carry most of the emotion",
+      "height_reference": "Very short, child-sized, roughly 3 heads tall in chibi proportions.",
+      "usage_note": "Use for pages 6-20. No per-character ref needed — top-level style refs (zww-link1.jpg, zww-link2.jpg) anchor this look."
+    },
+    "Aryll": {
+      "source": "Aryll from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "Link's little sister, about 6 years old. Small, round-cheeked, cheerful. Blonde hair in two short pigtails. Big round cheeks, bright expressive eyes, wide smile. Wears a pink summer dress with a red-orange skull motif on the front and a round sunhat-style headpiece in matching pink. Carries a red-rimmed brass telescope (given to Link on page 7). Sweet, bouncy, affectionate.",
+      "expression_default": "bright, bouncy, affectionate",
+      "height_reference": "Smaller than Link — roughly comes up to his shoulder.",
+      "reference_image_path": "toon_link/official/zww-aryll.jpg"
+    },
+    "Grandma": {
+      "source": "Link's Grandma from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "Link's grandmother — a small, hunched, kind old woman with white hair tied back and a warm, deeply lined face. Wears a simple long dress and apron in muted earth tones. Moves slowly, carefully. Her love for the children shows in every gesture. Called 'Avia' in the Latin.",
+      "expression_default": "gentle, warm, nostalgic",
+      "height_reference": "Shorter than a typical adult — hunched. Slightly taller than Link.",
+      "reference_image_path": "toon_link/official/zww-grandma.jpg"
+    },
+    "Tetra": {
+      "source": "Tetra from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "A tough pirate girl about Link's age. Tan skin, messy dirty-blonde hair pulled back in a short ponytail. Bright blue eyes with a sharp, appraising look. Wears a blue vest over a white shirt, rolled-up brown trousers, a red bandana at her waist, a gold bracelet. Scrappy, confident, brusque. Not a girly-girl. Bossy but not cruel.",
+      "expression_default": "sharp, appraising, brusque",
+      "height_reference": "About the same height as Link, perhaps a touch taller.",
+      "reference_image_path": "toon_link/official/zww-tetra.jpg"
+    },
+    "Orca": {
+      "source": "Orca from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "An old wiry swordmaster. Long flowing white hair and a long white beard. Bare-chested, lean and sinewy despite his age. Wears loose purple pants tied with a red sash. Wields a long spear. Stern face with sharp eyes. Lives on Outset and teaches sword skills.",
+      "expression_default": "stern, focused, quietly kind",
+      "height_reference": "Adult height — noticeably taller than Link.",
+      "reference_image_path": "toon_link/characters/orca_ref.png"
+    },
+    "Great Bird": {
+      "source": "Helmaroc King from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "An enormous, terrifying bird — the Helmaroc King. Massive wingspan, dark feathers (black and deep red accents), a fearsome beaked mask-face with yellow eyes, huge sharp talons. Too big to be natural. When it flies overhead its shadow covers everything. Called 'Avis Magna' in the Latin. A looming menace, not a character we get to know.",
+      "expression_default": "menacing, predatory — masked face is unreadable",
+      "height_reference": "Immense — wingspan many times larger than Link. Terrifyingly oversized.",
+      "reference_image_path": "toon_link/official/zww-helnaroc-king.jpg"
+    },
+    "Bokoblin": {
+      "source": "Bokoblins from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "Small forest monsters. Short, hunched figures (shorter than Link), purple-gray skin, beady yellow eyes, small tusks, pointed ears. Wear ragged brown loincloths. Carry crude wooden clubs or sticks. Ugly but more pathetic than terrifying — easy for Link to drive off with a sword. Called 'monstra' (or 'Bocoblinī') in the Latin.",
+      "expression_default": "mean but cowardly",
+      "height_reference": "Shorter than Link, hunched.",
+      "reference_image_path": "toon_link/characters/bokoblin_ref.png"
+    }
+  },
+  "locations": {
+    "Outset Island - Morning": {
+      "visual_description": "A small, bright tropical island at dawn. Warm golden sunrise light floods across green grass, palm trees, and thatched cottages on stilts. A tall wooden watchtower rises at the highest point. Blue ocean surrounds everything, sparkling with morning light. Sandy paths wind between the homes. Safe, familiar, home. Wind Waker cel-shaded style.",
+      "time_of_day_default": "warm golden sunrise to bright morning",
+      "reference_image_path": "toon_link/locations/outset_island_ref.png"
+    },
+    "Grandma's Cottage Interior": {
+      "visual_description": "The cozy inside of Link's grandmother's small cottage. Wooden walls and beams. A low table, a small fireplace or hearth, a ladder leading up to a sleeping loft with a simple bed. Warm amber light slanting through a small window. A few simple wooden bowls on shelves, a broom in the corner, dried herbs hanging from the beams. Lived-in and loving. Small space, warm palette.",
+      "time_of_day_default": "warm morning light from a small window"
+    },
+    "Outset Island - Cliff Lookout": {
+      "visual_description": "The high lookout point on Outset Island — a grassy cliff edge overlooking the wide blue ocean. A single twisted tree stands at the edge. The wooden watchtower of the village is visible behind and below. Wind moves the grass. An endless horizon of sea and sky. This is where you go to watch the world.",
+      "time_of_day_default": "bright morning, wind and open sky",
+      "reference_image_path": "toon_link/locations/outset_island_ref.png"
+    },
+    "Outset Island - Forest": {
+      "visual_description": "A small dense patch of tropical forest on the island interior. Thick palm fronds, tangled vines, fallen logs, dappled green-gold sunlight filtering through the canopy. Shadows between the trees. Slightly wild, slightly dangerous — the opposite of the tidy village.",
+      "time_of_day_default": "dappled green-gold forest light, filtered sunlight"
+    },
+    "Outset Island - Beach": {
+      "visual_description": "The sandy beach of Outset Island. Pale warm sand, gentle waves lapping the shore, a wooden dock extending out. A small pirate ship anchored just offshore — sails furled or unfurling, hull weathered, skull-and-crossbones flag flying. Palm trees at the edge of the sand. Where the island meets the sea.",
+      "time_of_day_default": "bright afternoon light on sand and water",
+      "reference_image_path": "toon_link/locations/outset_island_ref.png"
+    },
+    "Open Ocean": {
+      "visual_description": "The wide open sea just off Outset Island. Deep blue water with sparkling highlights, a few wispy clouds in a big sky. The pirate ship under full sail. In the distance: the silhouette of Outset Island shrinking behind the ship. Vast, uncertain, the unknown.",
+      "time_of_day_default": "bright afternoon on open water",
+      "reference_image_path": "toon_link/locations/pirate_ship_deck.png"
+    }
+  },
+  "composition_rules": [
+    "Characters fill at least 40% of the frame in close-up and medium shots",
+    "Simple backgrounds — let lighting and character expression carry the scene",
+    "Eye-level or slightly low angle (child's perspective) for most shots",
+    "OUTFIT CONTINUITY: Link wears blue shirt and orange shorts on pages 1-5. From page 6 onward he wears the full green hero's tunic, green cap, brown belt, brown boots. This is a visual transformation — do not blur the line.",
+    "REFRAIN ANCHOR ('Soror mea!'): the emotional arc should read on Link's face across pages 3 (groaning affection), 16 (horror), and 18 (resolve). Same phrase, three different faces.",
+    "GREAT BIRD as silhouette-and-shadow menace: always oversized, always dark, always casting shadow across bright sunlit ground. Never a cute bird — always a terror.",
+    "VIOLENCE: Page 14 shows Bokoblins being driven off — motion blur, tumbling backward, puff of smoke. No impact, no blood, no wounds. Family-friendly defeat.",
+    "EMOTIONAL LOW POINT (page 16-17): maximum distance between Link and Aryll. Her tiny pink shape against the huge dark bird against the huge empty sky. The smallness of the hero against the vastness of the problem.",
+    "FAREWELL (page 20): bittersweet — ship going, island receding, Grandma a small distant figure. Link's face is set, not crying. The beginning of a journey.",
+    "Vary shot types across pages (wide, medium, close-up) to maintain visual interest",
+    "No text, watermarks, or UI elements in any image"
+  ],
+  "reference_images": [
+    "toon_link/official/zww-link1.jpg",
+    "toon_link/official/zww-link2.jpg"
+  ]
+}

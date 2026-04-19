@@ -1,0 +1,250 @@
+{
+  "title_latin": "Lincus et Diēs Nātālis",
+  "title_english": "Link and the Birthday",
+  "pages": [
+    {
+      "page_number": 1,
+      "latin_text": "Māne erat in insulā.",
+      "english_text": "It was morning on Outset Island.",
+      "image_prompt": "Wide establishing shot of Outset Island at dawn. Warm golden sunrise light floods across the green grass and the thatched cottages on stilts. The ocean sparkles. A few gulls drift above. The island looks completely peaceful — no humans visible yet. A quiet, safe, beautiful morning. Wind Waker cel-shaded style.",
+      "characters": [],
+      "location": "Outset Island - Morning",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_01.png"
+    },
+    {
+      "page_number": 2,
+      "latin_text": "Lincus dormiēbat.",
+      "english_text": "Link was sleeping.",
+      "image_prompt": "Interior of Grandma's cottage — the small sleeping loft. Link is asleep on a simple bed, curled on his side, one hand tucked under his cheek. He wears his ordinary Outset clothes: BLUE SHIRT and ORANGE SHORTS. No green tunic yet. His hair is messy with sleep. Soft morning light slants through a small window. Everything is calm.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Grandma's Cottage Interior",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_02.png"
+    },
+    {
+      "page_number": 3,
+      "latin_text": "Arulla īnsiluit. \"Frāter! Frāter!\" Lincus gemuit: \"Soror mea!\"",
+      "english_text": "Aryll jumped on him. \"Brother! Brother!\" Link groaned: \"My sister!\"",
+      "image_prompt": "Aryll has leapt onto Link's bed — mid-bounce, pigtails flying, pink dress twirling, giant grin on her face. She is shaking Link by the shoulders with both small hands. Link's eyes are scrunching open, his mouth an 'oh!' of surprise, hair everywhere. Pure cheerful chaos. She is tiny and bouncy and delighted. First appearance of the refrain 'Soror mea!' (from Link, affectionately groaning as she jumps on him). Note: Link still in blue shirt and orange shorts.",
+      "characters": [
+        "Toon Link",
+        "Aryll"
+      ],
+      "location": "Grandma's Cottage Interior",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_03.png"
+    },
+    {
+      "page_number": 4,
+      "latin_text": "\"Hodiē diēs nātālis tuus est!\"",
+      "english_text": "\"Today is your birthday!\"",
+      "image_prompt": "Aryll now standing beside the bed, both arms thrown up in the air in triumph, beaming. Link sits up in bed, still rubbing one eye with a fist, beginning to smile. Hanging in the background on a beam: a simple garland of leaves and small wildflowers — Grandma and Aryll have clearly decorated the cottage while he slept. Morning light is brighter now. The joy of the day beginning. Link still in blue shirt and orange shorts.",
+      "characters": [
+        "Toon Link",
+        "Aryll"
+      ],
+      "location": "Grandma's Cottage Interior",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_04.png"
+    },
+    {
+      "page_number": 5,
+      "latin_text": "Avia rīsit. Dōnum habēbat.",
+      "english_text": "Grandma smiled. She had a gift.",
+      "image_prompt": "Grandma stands in the main room of the cottage by the low table, hunched and warm-faced, her white hair tied back. She holds out with both hands a neatly folded bundle of bright green cloth with a pointed green cap on top and small brown boots beside it on the table. THE HERO'S TUNIC, folded and offered. Her face is soft, nostalgic, proud. Link stands before her in his blue shirt and orange shorts, staring at the green cloth with huge eyes — amazed. Aryll peeks from behind him, hands clasped to her mouth. The gift is visually central.",
+      "characters": [
+        "Toon Link",
+        "Aryll",
+        "Grandma"
+      ],
+      "location": "Grandma's Cottage Interior",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_05.png"
+    },
+    {
+      "page_number": 6,
+      "latin_text": "Lincus vestēs viridēs induit. Hērōs erat!",
+      "english_text": "Link put on the green clothes. He was a hero!",
+      "image_prompt": "THE TRANSFORMATION PAGE. Link now stands in the middle of the cottage wearing the full green hero's tunic, green pointed cap, brown belt, brown boots — exactly the iconic outfit. Arms slightly spread, looking down at himself, a grin spreading across his face. Aryll jumps in delight beside him, pigtails flying. Grandma watches from the side, one hand over her heart. The light on Link is warm and slightly golden — he looks transformed. From this page forward, Link wears the green tunic.",
+      "characters": [
+        "Toon Link",
+        "Aryll",
+        "Grandma"
+      ],
+      "location": "Grandma's Cottage Interior",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_06.png"
+    },
+    {
+      "page_number": 7,
+      "latin_text": "Arulla quoque dōnum habēbat. Perspicillum!",
+      "english_text": "Aryll had a gift too. A telescope!",
+      "image_prompt": "Aryll holds out with both hands her prized red-rimmed telescope — brass and red, clearly her own treasure she is giving away. Her eyes are bright and her smile is brave (she loves this telescope, she is giving it anyway). Link kneels down to her height, reaching out with careful hands, mouth open slightly — he knows this is her favorite thing. Tender sibling moment. Link in green tunic, outside the cottage now on the wooden porch with morning light behind them.",
+      "characters": [
+        "Toon Link",
+        "Aryll"
+      ],
+      "location": "Outset Island - Morning",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_07.png"
+    },
+    {
+      "page_number": 8,
+      "latin_text": "Lincus ad speculam ascendit. Mare spectāvit.",
+      "english_text": "Link climbed to the lookout. He looked at the sea.",
+      "image_prompt": "Link stands at the high cliff lookout, the twisted tree behind him, the vast blue ocean stretching out below. He holds the red telescope up to one eye with both hands, leaning slightly forward. The wind catches his green cap. Behind and below him the village of Outset is visible in miniature. He looks tiny against the huge sky and sea — but happy, curious. A wide triumphant morning.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Outset Island - Cliff Lookout",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_08.png"
+    },
+    {
+      "page_number": 9,
+      "latin_text": "Ecce! Avis magna! Puellam portābat!",
+      "english_text": "Look! A great bird! It was carrying a girl!",
+      "image_prompt": "Through-the-telescope view or split focus: the sky over the distant ocean, and in it an ENORMOUS dark bird — the Helmaroc King — wings spread, masked face, huge talons clutching a small struggling girl (Tetra, visible but small). The bird is terrifying and huge. Tiny in the foreground corner we see Link's shocked face, telescope still at his eye, mouth open in alarm. The peace has just cracked. Dark shape against bright sky.",
+      "characters": [
+        "Toon Link",
+        "Great Bird",
+        "Tetra"
+      ],
+      "location": "Outset Island - Cliff Lookout",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_09.png"
+    },
+    {
+      "page_number": 10,
+      "latin_text": "Avis puellam dēmīsit. In silvam!",
+      "english_text": "The bird dropped the girl. Into the forest!",
+      "image_prompt": "Mid-air action shot. The huge dark bird is banking away with empty talons, wings beating. Tetra falls through the air, arms flailing, ponytail streaming, falling toward the canopy of the island forest below. Her mouth open in a yell. The forest trees rise up to catch her. Visible in the corner: the distant cliff where tiny Link still stands watching, telescope lowered now, body tensed. Drama and motion.",
+      "characters": [
+        "Great Bird",
+        "Tetra"
+      ],
+      "location": "Outset Island - Forest",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_10.png"
+    },
+    {
+      "page_number": 11,
+      "latin_text": "Lincus ad Orcam cucurrit. \"Gladium postulō!\"",
+      "english_text": "Link ran to Orca. \"I need a sword!\"",
+      "image_prompt": "Link bursts into Orca's house. Orca, the old swordmaster with long white hair and beard, stands holding his spear. Link points toward the forest desperately, asking for a sword. Orca's eyes narrow with understanding. Indoor scene, wooden walls.",
+      "characters": [
+        "Toon Link",
+        "Orca"
+      ],
+      "location": "Outset Island - Morning",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_11.png"
+    },
+    {
+      "page_number": 12,
+      "latin_text": "Orca gladium dedit. Lincus in silvam cucurrit.",
+      "english_text": "Orca gave him a sword. Link ran into the forest.",
+      "image_prompt": "Orca hands Link a small sword with a solemn expression. Link accepts it with both hands, determined. Outside Orca's doorway, Link now dashes toward the forest holding the sword.",
+      "characters": [
+        "Toon Link",
+        "Orca"
+      ],
+      "location": "Outset Island - Forest",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_12.png"
+    },
+    {
+      "page_number": 13,
+      "latin_text": "Tetra humī iacēbat. Bocoblinī appropinquāvērunt!",
+      "english_text": "Tetra lay on the ground. Bokoblins came near!",
+      "image_prompt": "In the forest clearing. Tetra lies unconscious on the forest floor. Two small gray Bokoblin monsters creep toward her with weapons raised. Dark tangled forest around them.",
+      "characters": [
+        "Tetra",
+        "Bokoblin"
+      ],
+      "location": "Outset Island - Forest",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_13.png"
+    },
+    {
+      "page_number": 14,
+      "latin_text": "Lincus impetum fēcit. Monstra vīcit!",
+      "english_text": "Link attacked. He defeated the monsters!",
+      "image_prompt": "Link in his green hero tunic charges into the clearing, sword raised, attacking. Motion lines show the sword's arc. The Bokoblins are shown falling backward or vanishing in a puff as the sword swings past — NOT the moment of impact, NOT blood. Dynamic action but family-friendly.",
+      "characters": [
+        "Toon Link",
+        "Bokoblin"
+      ],
+      "location": "Outset Island - Forest",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_14.png"
+    },
+    {
+      "page_number": 15,
+      "latin_text": "Tum — umbra. Avis rediit!",
+      "english_text": "Then — a shadow. The bird returned!",
+      "image_prompt": "Out of the forest now, on the cliff-top near the lookout. An enormous dark shadow sweeps across the grass. Link and Tetra are both looking up, faces caught in the shadow. And in the distance, flying low over the cottages of the village — the huge dark bird again, wings beating, circling, hunting. AND (critical): on the cliff lookout opposite them, small and alone, stands Aryll in her pink dress, shading her eyes with one hand, looking up at the bird. The bird is turning toward her.",
+      "characters": [
+        "Toon Link",
+        "Tetra",
+        "Great Bird",
+        "Aryll"
+      ],
+      "location": "Outset Island - Cliff Lookout",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_15.png"
+    },
+    {
+      "page_number": 16,
+      "latin_text": "Avis Arullam rapuit! \"Soror mea!\"",
+      "english_text": "The bird grabbed Aryll! \"My sister!\"",
+      "image_prompt": "THE EMOTIONAL LOW POINT. The huge bird has swooped in and clutched Aryll in its talons — she is being lifted into the air, her pink dress flailing, her sunhat flying off, her little arms reaching back toward the island. Her mouth is wide open in a scream — the word 'Lince!' could almost be visible in the air. Across from her, Link has dropped his sword and is RUNNING toward her with both arms outstretched, face transformed with horror, shouting — this is the second appearance of the refrain 'Soror mea!' and it is pure anguish. Tetra watches from behind, shocked. Everything is motion and terror.",
+      "characters": [
+        "Toon Link",
+        "Tetra",
+        "Great Bird",
+        "Aryll"
+      ],
+      "location": "Outset Island - Cliff Lookout",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_16.png"
+    },
+    {
+      "page_number": 17,
+      "latin_text": "Lincus cucurrit. Sed eam nōn tetigit.",
+      "english_text": "Link ran. But he could not reach her.",
+      "image_prompt": "Link at the very edge of the cliff, skidding to a stop, one hand still reaching toward the sky — but the bird is already far away, a small dark shape carrying an even smaller pink shape out over the open ocean. Link's face is devastated — mouth open, eyes wide, arm falling. The wind tugs his cap. The ocean stretches out huge and empty between him and his sister. The smallness of him against the vastness of the sea. Tetra stands a few paces behind him, watching, her face unreadable.",
+      "characters": [
+        "Toon Link",
+        "Tetra"
+      ],
+      "location": "Outset Island - Cliff Lookout",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_17.png"
+    },
+    {
+      "page_number": 18,
+      "latin_text": "\"Dūc mē tēcum, Tetra. Sorōrem meam servāre dēbeō.\"",
+      "english_text": "\"Take me with you, Tetra. I need to rescue my sister.\"",
+      "image_prompt": "The beach now. Tetra stands on the wooden dock, half-turned, one foot already raised to step toward her pirate ship anchored offshore. Link has run after her and grabbed her sleeve with one hand — his other hand points out over the water in the direction the bird flew. His face is streaked with tears but his jaw is set — he is not just begging, he is demanding. Third and final appearance of the refrain 'Soror mea!' — now transformed from joy (p.3) through terror (p.16) to pure resolve. Tetra turns to look at him, her sharp eyes narrowing — considering.",
+      "characters": [
+        "Toon Link",
+        "Tetra"
+      ],
+      "location": "Outset Island - Beach",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_18.png"
+    },
+    {
+      "page_number": 19,
+      "latin_text": "Tetra adnuit. \"Ascende nāvem.\"",
+      "english_text": "Tetra nodded. \"Come aboard.\"",
+      "image_prompt": "Tetra stands on the deck of the pirate ship now, one hand on the rail, head tilted, and gives Link a single brusque nod — not warm, but not cruel. A businesslike yes. Link stands at the foot of the gangplank, small sword still in his hand, green tunic a little dirty, looking up at her. Grandma has appeared at the edge of the beach in the background — we can see her small figure with one hand pressed to her mouth, watching her grandson preparing to sail away. The wind is picking up. The ship's sails are being unfurled.",
+      "characters": [
+        "Toon Link",
+        "Tetra",
+        "Grandma"
+      ],
+      "location": "Outset Island - Beach",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_19.png"
+    },
+    {
+      "page_number": 20,
+      "latin_text": "Nāvis ēnāvigāvit. Lincus respexit.",
+      "english_text": "The ship sailed away. Link looked back.",
+      "image_prompt": "FINAL IMAGE. The pirate ship under full sail on the open ocean, cutting through blue water. Outset Island is already receding in the distance — small and green behind them. Link stands at the back of the ship, both hands on the rail, looking back at the shrinking island. On the distant beach, tiny but visible: Grandma, still standing where they left her, one hand raised in a small wave. Link's face is not crying now — it is set, older somehow. Sad but going. The wind in his green cap. One boy, one sister out there somewhere, one long journey beginning. END.",
+      "characters": [
+        "Toon Link",
+        "Tetra",
+        "Grandma"
+      ],
+      "location": "Open Ocean",
+      "image_path": "projects/lincus_et_dies_natalis/images/page_20.png"
+    }
+  ]
+}

@@ -2,6 +2,8 @@
 
 Ongoing series of Latin picture books using characters and settings from The Legend of Zelda: The Wind Waker.
 
+**Cross-Zelda shared conventions** (Lincus, Zelda, Ganondorf, Moblīnus, Hyrule, Master Sword, Triforce, etc.) live in [`../zelda/CLAUDE.md`](../zelda/CLAUDE.md). Add new shared-across-Zelda names there. Wind-Waker-specific names (Tetra, Aryll, Helmaroc King, Bokoblin, Korok/Foliolus, Outset Island, Forsaken Fortress, etc.) stay below.
+
 ## Latinized Names
 
 | English | Latin (nom.) | Genitive | Declension | Notes |
@@ -47,16 +49,24 @@ The Wind Waker cel-shaded look: textured brush-stroke coloring (not smooth/clean
 
 - `characters/` — Generated character reference sheets in our illustration style
   - `link_island_outfit.png` — Link pre-tunic (Book 1 pages 1-5)
+  - `orca_ref.png` — old swordmaster with long white beard
   - `bokoblin_ref.png` — gray goblin enemy
   - `moblin_brown_ref.png` — brown pig-boar warrior
   - `moblin_blue_ref.png` — blue Moblin variant
   - `korok_ref.png` — Foliolus (Korok leaf-face spirit)
   - `grunio_ref.png` — original character from Thief's Lantern
+  - `poe_ref.png` — single Poe ghost
+  - `poes_group_ref.png` — four colored Poes
+  - `gohma_ref.png` — Dragon Roost boss (armored centipede)
+  - `magtail_ref.png` — dragon-insect enemy
 - `locations/` — Location reference images in our illustration style
   - `outset_island_ref.png` — Outset Island village/hillside
   - `forsaken_fortress_ref.png` — the skull-shaped fortress
   - `fortress_courtyard.png` — interior courtyard
   - `pirate_ship_deck.png` — Tetra's ship deck
+  - `dragon_roost_island_ref.png` — Dragon Roost Island exterior
+  - `dragon_roost_village_ref.png` — Rito village entrance
+  - `dragon_roost_cavern_ref.png` — cavern interior with lava
 
 These are supplementary to the official art. Generate new ones as needed for new books.
 

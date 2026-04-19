@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Palatino', 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .title-page {
+            text-align: center;
+            page-break-after: always;
+            padding-top: 3in;
+        }
+
+        .title-page h1 {
+            font-size: 36pt;
+            margin-bottom: 0.5in;
+            color: #2c3e50;
+        }
+
+        .title-page .english {
+            font-size: 24pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page {
+            page-break-after: always;
+            text-align: center;
+        }
+
+        .story-page img {
+            max-width: 100%;
+            max-height: 7in;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 0.5in auto;
+        }
+
+        .story-page .latin-text {
+            font-size: 20pt;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0.3in 0;
+        }
+
+        .story-page .english-text {
+            font-size: 14pt;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .story-page .page-number {
+            position: absolute;
+            bottom: 0.3in;
+            right: 0.3in;
+            font-size: 12pt;
+            color: #bdc3c7;
+        }
+
+        .virtue-badge {
+            display: inline-block;
+            border: 2px solid #8e7c5a;
+            border-radius: 20px;
+            padding: 4px 18px;
+            font-size: 13pt;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            color: #8e7c5a;
+            background-color: rgba(255, 255, 255, 0.75);
+            margin-top: 15px;
+        }
+
+        .inside-cover {
+            page-break-after: always;
+            padding-top: 2.5in;
+            text-align: center;
+        }
+
+        .inside-cover h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            margin-bottom: 0.4in;
+            border-bottom: 1px solid #d5c9b1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .virtue-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 8px 0;
+            font-size: 12pt;
+        }
+
+        .virtue-name {
+            width: 140px;
+            text-align: right;
+            padding-right: 15px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+            color: #5a5a5a;
+        }
+
+        .virtue-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .virtue-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1.5px solid #8e7c5a;
+        }
+
+        .virtue-dot.filled {
+            background-color: #8e7c5a;
+        }
+
+        .virtue-dot.empty {
+            background-color: transparent;
+        }
+
+        .glossary-page {
+            page-break-after: always;
+            padding-top: 0.5in;
+        }
+
+        .glossary-page h2 {
+            font-size: 16pt;
+            font-variant: small-caps;
+            letter-spacing: 3px;
+            color: #8e7c5a;
+            text-align: center;
+            margin-bottom: 0.3in;
+            border-bottom: 1px solid #d5c9b1;
+            padding-bottom: 6px;
+        }
+
+        .glossary-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .glossary-table td {
+            padding: 4px 8px;
+            vertical-align: top;
+            font-size: 10pt;
+            line-height: 1.4;
+            border-bottom: 1px solid #f0ebe3;
+        }
+
+        .glossary-table td.glossary-page-num {
+            width: 30px;
+            text-align: right;
+            color: #bdc3c7;
+            font-size: 9pt;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        .glossary-table td.glossary-latin {
+            width: 48%;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-table td.glossary-english {
+            width: 48%;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        /* Legacy single-word glossary styles (for glossary.json overrides) */
+        .glossary-columns {
+            column-count: 2;
+            column-gap: 0.4in;
+            column-rule: 1px solid #e0d9cc;
+        }
+
+        .glossary-entry {
+            margin: 0;
+            padding: 3px 0;
+            break-inside: avoid;
+            font-size: 10pt;
+            line-height: 1.4;
+        }
+
+        .glossary-entry .glossary-latin {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .glossary-entry .glossary-english {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="story-page" style="position: relative;">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/cover.png" alt="Cover" style="max-height: 10in; width: 100%;">
+        <div style="position: absolute; bottom: 10%; left: 50%; transform: translateX(-50%); text-align: center; width: 90%; background-color: rgba(255, 255, 255, 0.65); padding: 20px; border-radius: 10px;">
+            <h1 style="font-size: 48pt; margin: 0; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">Lincus et Diēs Nātālis</h1>
+            <p style="font-size: 28pt; margin: 10px 0 0 0; color: #7f8c8d; font-style: italic;">Link and the Birthday</p>
+            <div class='virtue-badge'>Cāritās</div>
+        </div>
+    </div>
+
+
+    <div class="inside-cover">
+        <h2>Virtūtēs</h2>
+        <div class="virtue-row"><span class="virtue-name">Prudentia</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Iūstitia</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fortitūdō</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Temperantia</span><span class="virtue-dots"><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Fidēs</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Spēs</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span><span class="virtue-dot empty"></span></span></div><div class="virtue-row"><span class="virtue-name">Cāritās</span><span class="virtue-dots"><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span><span class="virtue-dot filled"></span></span></div>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_01.png" alt="Page 1">
+        <p class="latin-text">Māne erat in insulā.</p>
+        <p class="english-text">It was morning on Outset Island.</p>
+        <span class="page-number">1</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_02.png" alt="Page 2">
+        <p class="latin-text">Lincus dormiēbat.</p>
+        <p class="english-text">Link was sleeping.</p>
+        <span class="page-number">2</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_03.png" alt="Page 3">
+        <p class="latin-text">Arulla īnsiluit. "Frāter! Frāter!" Lincus gemuit: "Soror mea!"</p>
+        <p class="english-text">Aryll jumped on him. "Brother! Brother!" Link groaned: "My sister!"</p>
+        <span class="page-number">3</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_04.png" alt="Page 4">
+        <p class="latin-text">"Hodiē diēs nātālis tuus est!"</p>
+        <p class="english-text">"Today is your birthday!"</p>
+        <span class="page-number">4</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_05.png" alt="Page 5">
+        <p class="latin-text">Avia rīsit. Dōnum habēbat.</p>
+        <p class="english-text">Grandma smiled. She had a gift.</p>
+        <span class="page-number">5</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_06.png" alt="Page 6">
+        <p class="latin-text">Lincus vestēs viridēs induit. Hērōs erat!</p>
+        <p class="english-text">Link put on the green clothes. He was a hero!</p>
+        <span class="page-number">6</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_07.png" alt="Page 7">
+        <p class="latin-text">Arulla quoque dōnum habēbat. Perspicillum!</p>
+        <p class="english-text">Aryll had a gift too. A telescope!</p>
+        <span class="page-number">7</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_08.png" alt="Page 8">
+        <p class="latin-text">Lincus ad speculam ascendit. Mare spectāvit.</p>
+        <p class="english-text">Link climbed to the lookout. He looked at the sea.</p>
+        <span class="page-number">8</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_09.png" alt="Page 9">
+        <p class="latin-text">Ecce! Avis magna! Puellam portābat!</p>
+        <p class="english-text">Look! A great bird! It was carrying a girl!</p>
+        <span class="page-number">9</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_10.png" alt="Page 10">
+        <p class="latin-text">Avis puellam dēmīsit. In silvam!</p>
+        <p class="english-text">The bird dropped the girl. Into the forest!</p>
+        <span class="page-number">10</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_11.png" alt="Page 11">
+        <p class="latin-text">Lincus ad Orcam cucurrit. "Gladium postulō!"</p>
+        <p class="english-text">Link ran to Orca. "I need a sword!"</p>
+        <span class="page-number">11</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_12.png" alt="Page 12">
+        <p class="latin-text">Orca gladium dedit. Lincus in silvam cucurrit.</p>
+        <p class="english-text">Orca gave him a sword. Link ran into the forest.</p>
+        <span class="page-number">12</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_13.png" alt="Page 13">
+        <p class="latin-text">Tetra humī iacēbat. Bocoblinī appropinquāvērunt!</p>
+        <p class="english-text">Tetra lay on the ground. Bokoblins came near!</p>
+        <span class="page-number">13</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_14.png" alt="Page 14">
+        <p class="latin-text">Lincus impetum fēcit. Monstra vīcit!</p>
+        <p class="english-text">Link attacked. He defeated the monsters!</p>
+        <span class="page-number">14</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_15.png" alt="Page 15">
+        <p class="latin-text">Tum — umbra. Avis rediit!</p>
+        <p class="english-text">Then — a shadow. The bird returned!</p>
+        <span class="page-number">15</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_16.png" alt="Page 16">
+        <p class="latin-text">Avis Arullam rapuit! "Soror mea!"</p>
+        <p class="english-text">The bird grabbed Aryll! "My sister!"</p>
+        <span class="page-number">16</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_17.png" alt="Page 17">
+        <p class="latin-text">Lincus cucurrit. Sed eam nōn tetigit.</p>
+        <p class="english-text">Link ran. But he could not reach her.</p>
+        <span class="page-number">17</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_18.png" alt="Page 18">
+        <p class="latin-text">"Dūc mē tēcum, Tetra. Sorōrem meam servāre dēbeō."</p>
+        <p class="english-text">"Take me with you, Tetra. I need to rescue my sister."</p>
+        <span class="page-number">18</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_19.png" alt="Page 19">
+        <p class="latin-text">Tetra adnuit. "Ascende nāvem."</p>
+        <p class="english-text">Tetra nodded. "Come aboard."</p>
+        <span class="page-number">19</span>
+    </div>
+
+
+    <div class="story-page">
+        <img src="file:///Users/ryan/programming_projects/Latin_book_system/projects/lincus_et_dies_natalis/images/page_20.png" alt="Page 20">
+        <p class="latin-text">Nāvis ēnāvigāvit. Lincus respexit.</p>
+        <p class="english-text">The ship sailed away. Link looked back.</p>
+        <span class="page-number">20</span>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">abeō, abīre</span> — <span class="glossary-english">to go away</span></div><div class="glossary-entry"><span class="glossary-latin">adnuō, -ere</span> — <span class="glossary-english">to nod</span></div><div class="glossary-entry"><span class="glossary-latin">appropinquō, -āre</span> — <span class="glossary-english">to approach, come near</span></div><div class="glossary-entry"><span class="glossary-latin">ascendō, -ere</span> — <span class="glossary-english">to climb, go up, board</span></div><div class="glossary-entry"><span class="glossary-latin">avia, -ae (f.)</span> — <span class="glossary-english">grandmother</span></div><div class="glossary-entry"><span class="glossary-latin">avis, -is (f.)</span> — <span class="glossary-english">bird</span></div><div class="glossary-entry"><span class="glossary-latin">currō, -ere, cucurrī</span> — <span class="glossary-english">to run</span></div><div class="glossary-entry"><span class="glossary-latin">dēmittō, -ere, dēmīsī</span> — <span class="glossary-english">to drop, let down</span></div><div class="glossary-entry"><span class="glossary-latin">diēs, diēī (m.)</span> — <span class="glossary-english">day</span></div><div class="glossary-entry"><span class="glossary-latin">dōnum, -ī (n.)</span> — <span class="glossary-english">gift</span></div><div class="glossary-entry"><span class="glossary-latin">dormiō, -īre</span> — <span class="glossary-english">to sleep</span></div><div class="glossary-entry"><span class="glossary-latin">dūcō, -ere</span> — <span class="glossary-english">to lead, take</span></div><div class="glossary-entry"><span class="glossary-latin">ecce</span> — <span class="glossary-english">behold! look!</span></div><div class="glossary-entry"><span class="glossary-latin">ēnāvigō, -āre</span> — <span class="glossary-english">to sail away</span></div><div class="glossary-entry"><span class="glossary-latin">frāter, frātris (m.)</span> — <span class="glossary-english">brother</span></div><div class="glossary-entry"><span class="glossary-latin">fugiō, -ere, fūgī</span> — <span class="glossary-english">to flee, run away</span></div><div class="glossary-entry"><span class="glossary-latin">gemō, -ere, gemuī</span> — <span class="glossary-english">to groan</span></div><div class="glossary-entry"><span class="glossary-latin">gladius, -ī (m.)</span> — <span class="glossary-english">sword</span></div><div class="glossary-entry"><span class="glossary-latin">habeō, -ēre</span> — <span class="glossary-english">to have</span></div><div class="glossary-entry"><span class="glossary-latin">hērōs, hērōis (m.)</span> — <span class="glossary-english">hero</span></div><div class="glossary-entry"><span class="glossary-latin">hodiē</span> — <span class="glossary-english">today</span></div><div class="glossary-entry"><span class="glossary-latin">humī</span> — <span class="glossary-english">on the ground</span></div><div class="glossary-entry"><span class="glossary-latin">iaceō, -ēre</span> — <span class="glossary-english">to lie, be lying down</span></div><div class="glossary-entry"><span class="glossary-latin">induō, -ere, induī</span> — <span class="glossary-english">to put on (clothes)</span></div><div class="glossary-entry"><span class="glossary-latin">īnsiliō, -īre</span> — <span class="glossary-english">to jump onto</span></div><div class="glossary-entry"><span class="glossary-latin">insula, -ae (f.)</span> — <span class="glossary-english">island</span></div><div class="glossary-entry"><span class="glossary-latin">irrumpō, -ere, irrūpī</span> — <span class="glossary-english">to burst in</span></div><div class="glossary-entry"><span class="glossary-latin">magnus, -a, -um</span> — <span class="glossary-english">great, big</span></div><div class="glossary-entry"><span class="glossary-latin">māne</span> — <span class="glossary-english">in the morning</span></div><div class="glossary-entry"><span class="glossary-latin">mare, maris (n.)</span> — <span class="glossary-english">sea</span></div><div class="glossary-entry"><span class="glossary-latin">mēcum / tēcum</span> — <span class="glossary-english">with me / with you</span></div><div class="glossary-entry"><span class="glossary-latin">monstrum, -ī (n.)</span> — <span class="glossary-english">monster</span></div><div class="glossary-entry"><span class="glossary-latin">nātālis, -e</span> — <span class="glossary-english">of birth; diēs nātālis = birthday</span></div><div class="glossary-entry"><span class="glossary-latin">nāvis, -is (f.)</span> — <span class="glossary-english">ship</span></div><div class="glossary-entry"><span class="glossary-latin">perspicillum, -ī (n.)</span> — <span class="glossary-english">telescope, spyglass</span></div><div class="glossary-entry"><span class="glossary-latin">portō, -āre</span> — <span class="glossary-english">to carry</span></div><div class="glossary-entry"><span class="glossary-latin">puella, -ae (f.)</span> — <span class="glossary-english">girl</span></div><div class="glossary-entry"><span class="glossary-latin">quoque</span> — <span class="glossary-english">also, too</span></div><div class="glossary-entry"><span class="glossary-latin">rapiō, -ere, rapuī</span> — <span class="glossary-english">to seize, snatch, grab</span></div><div class="glossary-entry"><span class="glossary-latin">redeō, redīre, rediī</span> — <span class="glossary-english">to return, come back</span></div>
+        </div>
+    </div>
+
+
+    <div class="glossary-page">
+        <h2>Glossārium (cont.)</h2>
+        <div class="glossary-columns">
+            <div class="glossary-entry"><span class="glossary-latin">respiciō, -ere, respexī</span> — <span class="glossary-english">to look back</span></div><div class="glossary-entry"><span class="glossary-latin">rīdeō, -ēre, rīsī</span> — <span class="glossary-english">to smile, laugh</span></div><div class="glossary-entry"><span class="glossary-latin">silva, -ae (f.)</span> — <span class="glossary-english">forest, wood</span></div><div class="glossary-entry"><span class="glossary-latin">soror, sorōris (f.)</span> — <span class="glossary-english">sister</span></div><div class="glossary-entry"><span class="glossary-latin">spectō, -āre</span> — <span class="glossary-english">to look at, watch</span></div><div class="glossary-entry"><span class="glossary-latin">specula, -ae (f.)</span> — <span class="glossary-english">lookout, watchtower</span></div><div class="glossary-entry"><span class="glossary-latin">subitō</span> — <span class="glossary-english">suddenly</span></div><div class="glossary-entry"><span class="glossary-latin">surgō, -ere, surrēxī</span> — <span class="glossary-english">to stand up, rise</span></div><div class="glossary-entry"><span class="glossary-latin">tangō, -ere, tetigī</span> — <span class="glossary-english">to touch, reach</span></div><div class="glossary-entry"><span class="glossary-latin">tum</span> — <span class="glossary-english">then, at that time</span></div><div class="glossary-entry"><span class="glossary-latin">tuus, -a, -um</span> — <span class="glossary-english">your</span></div><div class="glossary-entry"><span class="glossary-latin">umbra, -ae (f.)</span> — <span class="glossary-english">shadow</span></div><div class="glossary-entry"><span class="glossary-latin">vestis, -is (f.)</span> — <span class="glossary-english">clothing, garment</span></div><div class="glossary-entry"><span class="glossary-latin">viridis, -e</span> — <span class="glossary-english">green</span></div>
+        </div>
+    </div>
+
+
+</body>
+</html>

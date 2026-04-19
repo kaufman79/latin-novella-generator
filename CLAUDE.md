@@ -231,6 +231,9 @@ Ongoing series of Wind Waker-themed Latin adventure books. See `reference_images
 - Always pass 2 official Link artworks as reference images for consistency
 - Generated character sheets and location references in `characters/` and `locations/` subdirectories
 
+### Ocarina of Time Series
+Ongoing series of Latin adventure books adapting arcs from OoT (adult Link era). See `reference_images/zelda_oot/CLAUDE.md` for Latinized names and aesthetic guidance, and `reference_images/zelda_oot/CANON_NOTES.md` for per-arc game canon. Distinct from Toon Link: different Link, painterly (not cel-shaded) style, more epic tone. Shared convention: **Lincus, Lincī** for Link across both series.
+
 ### Public Domain Adaptations
 See `docs/public_domain_story_ideas.md` for a curated list of candidates with links to free illustrations. Key advantage: many have public domain illustrations (Potter, Brooke, Winter, Gag, Caldecott) on Project Gutenberg, saving image generation costs entirely. See also `docs/pd_adaptation_pipeline.md` and `docs/pd_adaptation_priorities.md`.
 
