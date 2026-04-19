@@ -1,0 +1,19 @@
+{
+  "project_id": "lincus_et_arx_relicta",
+  "title_english": "Link and the Forsaken Fortress",
+  "title_latin": "Lincus et Arx Relicta",
+  "source_type": "original",
+  "theme": "Wind Waker series — Book 2",
+  "target_pages": 24,
+  "status": "images_generated",
+  "virtue_ratings": {
+    "prudentia": 1,
+    "iustitia": 0,
+    "fortitudo": 5,
+    "temperantia": 2,
+    "fides": 3,
+    "spes": 3,
+    "caritas": 2
+  },
+  "project_folder": "projects/lincus_et_arx_relicta"
+}

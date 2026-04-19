@@ -1,0 +1,290 @@
+{
+  "title_latin": "Lincus et Arx Relicta",
+  "title_english": "Link and the Forsaken Fortress",
+  "pages": [
+    {
+      "page_number": 1,
+      "latin_text": "Nox erat. Nāvis per mare obscūrum nāvigāvit.",
+      "english_text": "It was night. The ship sailed on the dark sea.",
+      "image_prompt": "Wide establishing shot. Tetra's pirate ship sails across a moonlit black ocean. Tattered red sails silhouetted. The Forsaken Fortress is a dark, jagged silhouette on the horizon ahead, lit by tiny red searchlights sweeping through the storm. The ship is small against the huge sea. Cel-shaded Wind Waker style, dramatic blue and black palette with one warm yellow moon.",
+      "characters": [],
+      "location": "Pirate Ship - Night",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_01.png"
+    },
+    {
+      "page_number": 2,
+      "latin_text": "Lincus arcem obscūram spectāvit. Soror eius intus erat.",
+      "english_text": "Link looked at the dark fortress. His sister was inside.",
+      "image_prompt": "Link stands alone at the prow of the ship in his green hero's tunic, both small hands gripping the wooden rail. His face is set in serious, slightly fearful determination as he stares at the dark fortress in the distance. A wisp of his blonde hair sticks out from under his green cap in the wind. The fortress looms ahead, with one red searchlight beam sweeping past. Quiet, weighted moment. The viewer feels his nerves.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Pirate Ship - Night",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_02.png"
+    },
+    {
+      "page_number": 3,
+      "latin_text": "Tetra ad eum vēnit. \"Audī! Cōnsilium habēmus.\"",
+      "english_text": "Tetra came to him. \"Listen. We have a plan.\"",
+      "image_prompt": "Tetra walks up beside Link on the deck, hands on her hips, head tilted in her usual brusque way. She is talking, mouth open mid-sentence. Behind her, the pirate crew is gathered around an enormous wooden barrel-cannon mounted at the prow — Gonzo cranking the firing mechanism, Niko struggling with a rope, Mako adjusting goggles. Link turns from the rail to listen, looking small next to Tetra but attentive. Lantern light on their faces.",
+      "characters": [
+        "Toon Link",
+        "Tetra",
+        "Pirates"
+      ],
+      "location": "Pirate Ship - Night",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_03.png"
+    },
+    {
+      "page_number": 4,
+      "latin_text": "\"Ascende in dolium! Tē super mūrum iaciēmus!\"",
+      "english_text": "\"Climb in the barrel. We will throw you over the wall!\"",
+      "image_prompt": "Close on the giant wooden barrel-cannon at the prow. The lid is open. Tetra stands beside it pointing inside with one decisive finger, eyebrows raised. Link stares into the barrel with huge round eyes, mouth a flat line of 'are you serious.' Niko grins encouragingly behind him with a thumbs-up. Gonzo waits at the cannon's firing crank, ready. The dark fortress in the distance behind them, getting closer.",
+      "characters": [
+        "Toon Link",
+        "Tetra",
+        "Pirates"
+      ],
+      "location": "Pirate Ship - Night",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_04.png"
+    },
+    {
+      "page_number": 5,
+      "latin_text": "Lincus ascendit. Pīrātae tormentum ēmīsērunt.",
+      "english_text": "Link climbed in. The pirates fired the cannon.",
+      "image_prompt": "Mid-action. The barrel-cannon explodes with a comic puff of smoke at the prow of the ship. The barrel is just leaving the cannon, flying out into the night sky. Inside it, Link's wide eyes and panicked face are visible through a knot-hole, hair flattened by the force, cap pressed down. The pirates on deck below cheer with arms raised — Niko falling over backward from the recoil. Stars and moon above. The fortress wall ahead.",
+      "characters": [
+        "Toon Link",
+        "Pirates"
+      ],
+      "location": "Pirate Ship - Night",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_05.png"
+    },
+    {
+      "page_number": 6,
+      "latin_text": "Dolium per āera volāvit. Lincus sē arctē tenuit!",
+      "english_text": "The barrel flew through the air. Link clung tight!",
+      "image_prompt": "Mid-flight tracking shot. The barrel arcs through the night sky, Link curled inside with both arms wrapped around his knees, eyes scrunched shut, mouth a tight line of terror. Wind streaks past. The Forsaken Fortress wall looms huge ahead, black stone, with one red searchlight sweeping below. Stars wheel around the barrel. Funny and dramatic at once.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Open Sky and Sea",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_06.png"
+    },
+    {
+      "page_number": 7,
+      "latin_text": "Dolium in arce cecidit. Lincus cautē prōspexit.",
+      "english_text": "The barrel landed inside the fortress. Link peeked out.",
+      "image_prompt": "The barrel has crash-landed among other identical wooden barrels stacked in a corner of the fortress courtyard. Link's wide eyes and the top of his green cap peer out cautiously over the rim. Stone walls rise around him with flickering wall torches. A Moblin patrol is visible in the middle distance, walking the other way with a lantern, oblivious. Tense, quiet beat.",
+      "characters": [
+        "Toon Link",
+        "Moblins"
+      ],
+      "location": "Fortress Courtyard",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_07.png"
+    },
+    {
+      "page_number": 8,
+      "latin_text": "Lūx rubra per terram cucurrit. Lincus sē cēlāvit!",
+      "english_text": "A red light moved across the floor. Link hid!",
+      "image_prompt": "Dramatic shot of a bright red searchlight beam sweeping across the stone floor of the courtyard. Link has just ducked back down inside his barrel — only the very top of his cap is visible above the rim. The red beam passes inches from the barrel. A Moblin stands on the watchtower above, scanning. High-contrast: red light on dark stone.",
+      "characters": [
+        "Toon Link",
+        "Moblins"
+      ],
+      "location": "Fortress Courtyard",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_08.png"
+    },
+    {
+      "page_number": 9,
+      "latin_text": "Lincus praeter Moblīnum dormientem rēpsit.",
+      "english_text": "Link crept past a sleeping Moblin.",
+      "image_prompt": "A big brown Moblin is slumped against a wall, snoring with mouth open and lantern dangling from one limp hand, spear leaning beside him. Link tiptoes past on exaggerated tiptoes, both arms held out for balance, holding his breath, eyes huge and locked on the Moblin's face. Comic-tense moment. Torchlight flickers. He is so small next to the Moblin.",
+      "characters": [
+        "Toon Link",
+        "Moblins"
+      ],
+      "location": "Fortress Courtyard",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_09.png"
+    },
+    {
+      "page_number": 10,
+      "latin_text": "Per scālās ascendit. Sūrsum et sūrsum.",
+      "english_text": "Up the stairs he climbed. Up and up.",
+      "image_prompt": "Link climbing a stone spiral staircase inside the fortress tower, viewed from below looking up the spiral. The staircase winds up and up into shadow, with narrow torches at intervals. Link is small in the frame, climbing carefully, one hand brushing the wall, sword in the other hand. A sense of height and effort. Dim warm torchlight against cold stone.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Fortress Tower Interior",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_10.png"
+    },
+    {
+      "page_number": 11,
+      "latin_text": "Vōcēs audīvit. Vōcēs flentēs.",
+      "english_text": "He heard voices. Crying voices.",
+      "image_prompt": "Link pauses on the staircase, head tilted, one ear toward a wooden door at a landing above. His face shifts — his eyes widen with recognition. Visible through cracks in the door: a faint warm glow and the suggestion of small figures behind iron bars. The viewer should feel a quiet flutter of hope through him. Dim torchlight. Stillness.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Fortress Tower Interior",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_11.png"
+    },
+    {
+      "page_number": 12,
+      "latin_text": "Arullam post cancellōs vīdit. \"Lince!\"",
+      "english_text": "He saw Aryll behind the bars. \"Link!\"",
+      "image_prompt": "EMOTIONAL PEAK 1. View through a cell of thick iron bars. Behind the bars sit three small girls on stone, all with long pointed ears — in the center is ARYLL in her dirty pink dress. She has just looked up and seen Link. Her face transforms: eyes wide, mouth open in an astonished gasp, hands flying up to her cheeks. She is calling out 'Lince!' — her brother's name. On the near side of the bars, Link stands frozen with both hands gripping the iron, his face awash with relief and emotion, blonde hair haloed by torchlight. The bars between them are cruel.",
+      "characters": [
+        "Toon Link",
+        "Aryll"
+      ],
+      "location": "Fortress Tower Interior",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_12.png"
+    },
+    {
+      "page_number": 13,
+      "latin_text": "Lincus cancellōs prehendit. Tōtīs vīribus trāxit.",
+      "english_text": "Link grabbed the bars. He pulled with all his strength.",
+      "image_prompt": "Link braces both feet against the stone wall and pulls at the iron bars with both small hands, every muscle straining, teeth clenched, face red with effort. The bars do not move. Aryll watches from inside the cell, hands clasped to her mouth, eyes wide and worried. The other two girls watch too. He is trying so hard. Visible heroic struggle — and visible failure. The bars are too strong.",
+      "characters": [
+        "Toon Link",
+        "Aryll"
+      ],
+      "location": "Fortress Tower Interior",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_13.png"
+    },
+    {
+      "page_number": 14,
+      "latin_text": "Subitō — umbra magna cecidit!",
+      "english_text": "Suddenly — a great shadow fell on him!",
+      "image_prompt": "EMOTIONAL PEAK 2. The angle pulls back — a huge dark shadow has fallen across Link and the bars. Link freezes, hands still on the bars, head turning to look up over his shoulder, his face just beginning to register horror. Above him, framed in a great open arch at the top of the staircase, is the silhouette of the HELMAROC KING — enormous, white-feathered, the red-and-gold iron mask catching torchlight, talons spread, wings filling the entire archway. Aryll inside the cell SHRIEKS, hands over her mouth.",
+      "characters": [
+        "Toon Link",
+        "Aryll",
+        "Helmaroc King"
+      ],
+      "location": "Fortress Tower Interior",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_14.png"
+    },
+    {
+      "page_number": 15,
+      "latin_text": "Avis Magna Lincum unguibus rapuit!",
+      "english_text": "The Great Bird grabbed Link in its talons!",
+      "image_prompt": "The Helmaroc King has lunged forward and snatched Link up in one massive talon. Link is held struggling, both arms pinned at his sides, his small sword falling away from his hand to clatter on the stone. His face is twisted in pain and fury, mouth open in a yell. The bird's masked head is huge in the frame, one cold eye visible through the iron mask. Behind, Aryll screams from the cell, reaching one tiny arm through the bars after her brother.",
+      "characters": [
+        "Toon Link",
+        "Aryll",
+        "Helmaroc King"
+      ],
+      "location": "Fortress Tower Interior",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_15.png"
+    },
+    {
+      "page_number": 16,
+      "latin_text": "Avis sūrsum volāvit. Lincum trāns mare portāvit.",
+      "english_text": "The bird flew up. It carried Link far over the sea.",
+      "image_prompt": "Wide shot. The Helmaroc King has burst out through the top of the fortress and is climbing into the storming night sky, Link tiny and limp in one talon. The fortress falls away below, becoming small. The vast dark ocean stretches in every direction, the moon racing behind ragged clouds. Wind whips. Link is a little dot of green against an enormous wild sky. Helpless scale.",
+      "characters": [
+        "Toon Link",
+        "Helmaroc King"
+      ],
+      "location": "Open Sky and Sea",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_16.png"
+    },
+    {
+      "page_number": 17,
+      "latin_text": "Tum avis eum dēmīsit. Lincus in mare cecidit.",
+      "english_text": "Then the bird threw him down. Link fell into the sea.",
+      "image_prompt": "EMOTIONAL PEAK 3. The Helmaroc King has opened its talon. Link is falling — mid-air, arms and legs splayed, cap lost, hair streaming, mouth open in a silent scream. Below him, the dark churning ocean rises up. The bird wheels away above with empty talons. Above, a single distant moon. Link is utterly alone in the air, falling. The cruel scale of the sky.",
+      "characters": [
+        "Toon Link",
+        "Helmaroc King"
+      ],
+      "location": "Open Sky and Sea",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_17.png"
+    },
+    {
+      "page_number": 18,
+      "latin_text": "Lentē in aquam frīgidam dēscendit.",
+      "english_text": "Down he sank in the cold dark water.",
+      "image_prompt": "EMOTIONAL PEAK 4. Underwater shot. Link is sinking gently, eyes closed, body limp, arms drifting slightly, green tunic billowing softly. Bubbles trail upward from him. Above, far above, the surface of the water is a rippling pale glow with one tiny moon. Cold green-blue light surrounds him. Quiet, eerie, devastating. He is small and lost in the dim deep. NOT DROWNED — just sinking, unconscious. Silence.",
+      "characters": [
+        "Toon Link"
+      ],
+      "location": "Underwater",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_18.png"
+    },
+    {
+      "page_number": 19,
+      "latin_text": "In lītore expergēfactus est. Aurōra rosea erat.",
+      "english_text": "He woke up on a quiet beach. The dawn was pink.",
+      "image_prompt": "Soft pale dawn. Link lies on his side on the wet sand of a small beach, eyes just opening, a tiny trickle of seawater at his cheek, hair plastered down. Around him: gentle pink-gold sunrise light, the calm sea lapping behind him, white sand, distant colorful Windfall houses on a hillside in the background. And beside him on the sand, pulled up out of the water: a small red wooden sailboat with a carved red lion figurehead. He has not yet seen the boat. The color palette has completely changed: warm, soft, hopeful in tone but the boy looks broken.",
+      "characters": [
+        "Toon Link",
+        "King of Red Lions"
+      ],
+      "location": "Windfall Beach - Dawn",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_19.png"
+    },
+    {
+      "page_number": 20,
+      "latin_text": "Parva nāvis locūta est! \"Rēx Rubrōrum Leōnum sum.\"",
+      "english_text": "The little boat spoke! \"I am the King of Red Lions.\"",
+      "image_prompt": "EMOTIONAL PEAK 5 — the wonder beat. Link has sat up partway on the sand, propping himself on one arm, his face frozen in pure astonishment — mouth slightly open, eyes huge and round. Across from him, the carved red-lion figurehead on the prow of the small red boat has turned its wooden head slightly toward him and OPENED ITS WOODEN MOUTH — it is speaking. The figurehead's eyes are gentle and ancient. Soft golden dawn light catches the carved wood. The strangest, most wondrous moment in the book. He is hearing a boat talk.",
+      "characters": [
+        "Toon Link",
+        "King of Red Lions"
+      ],
+      "location": "Windfall Beach - Dawn",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_20.png"
+    },
+    {
+      "page_number": 21,
+      "latin_text": "\"Soror mea in arce est! Redīre dēbeō!\"",
+      "english_text": "\"My sister is in the fortress! I must go back!\"",
+      "image_prompt": "Link has scrambled up onto his knees on the sand and reaches one hand out toward the boat, the other arm gesturing back toward the open sea — in the direction the fortress lies. His small face is desperate, pleading, exhausted. He is begging the talking boat to take him back to save Aryll. The wooden lion figurehead on the boat watches him calmly, gently, sadly.",
+      "characters": [
+        "Toon Link",
+        "King of Red Lions"
+      ],
+      "location": "Windfall Beach - Dawn",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_21.png"
+    },
+    {
+      "page_number": 22,
+      "latin_text": "Rēx eum spectāvit. \"Nōndum.\"",
+      "english_text": "The King looked at him. \"Not yet.\"",
+      "image_prompt": "FIRST 'NŌNDUM' BEAT. Calm, weighted close-up of the carved red-lion figurehead. Its wooden mouth is shaped around the single word. Its eyes look gently at Link. The viewer feels both the kindness and the finality of the word. In the lower edge of the frame, a sliver of Link's face: stricken, eyes wide and beginning to glisten. The light is soft pink-gold. Quiet authority.",
+      "characters": [
+        "Toon Link",
+        "King of Red Lions"
+      ],
+      "location": "Windfall Beach - Dawn",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_22.png"
+    },
+    {
+      "page_number": 23,
+      "latin_text": "Lincus sēdit. Caput dēmīsit. Vīctus erat.",
+      "english_text": "Link sat down. He hung his head. He had failed.",
+      "image_prompt": "EMOTIONAL LOW POINT (the failure). Link sits cross-legged on the wet sand with shoulders slumped forward, head bowed, hands limp in his lap. His green cap is gone, his blonde hair is messy and damp, his face is hidden by his hair. A single tear visible on his cheek. The little red boat sits patiently a few feet away on the sand, watching him. The dawn light is soft and gentle around them. He is a small green shape on a vast pale beach. Crushed, but not abandoned.",
+      "characters": [
+        "Toon Link",
+        "King of Red Lions"
+      ],
+      "location": "Windfall Beach - Dawn",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_23.png"
+    },
+    {
+      "page_number": 24,
+      "latin_text": "Nāvis lentē ēnāvigāvit. \"Nōndum. Sed iterum temptābimus.\"",
+      "english_text": "The boat sailed slowly out to sea. \"Not yet. But we will try again.\"",
+      "image_prompt": "EMOTIONAL PEAK 6 — the renewed resolve. The little red boat is now afloat in the calm dawn sea, its single white sail raised and full of soft morning wind. Link sits in the boat at the stern, knees drawn up but head finally lifted, looking out forward over the bow toward the open horizon — not back at the fortress. His face is not happy, but it is steady. The carved red-lion figurehead at the prow leads the way, its mouth shaped around the words. A wide, hopeful sky of pink and gold. They are tiny on a huge calm ocean, sailing away into the rising sun. The story does not end — it begins again.",
+      "characters": [
+        "Toon Link",
+        "King of Red Lions"
+      ],
+      "location": "Windfall Beach - Dawn",
+      "image_path": "projects/lincus_et_arx_relicta/images/page_24.png"
+    }
+  ]
+}

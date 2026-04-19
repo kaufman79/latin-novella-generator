@@ -1,0 +1,148 @@
+{
+  "style": {
+    "medium": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring with visible brush-stroke quality (not smooth vector), bright saturated colors, chibi character proportions.",
+    "palette": "Five emotional phases. (1) COLD DETERMINATION (pages 1-6): deep midnight blue ocean and sky, black silhouettes, tiny warm pinpoints of red searchlight and yellow lantern light, one cold yellow moon. (2) TENSE STEALTH (pages 7-13): cold purple-grey fortress stone, flickering warm orange torchlight pools against dark, sweeping red searchlight beams, dim warm interior glow on Aryll's cell. (3) FAILURE / DEFEAT (pages 14-18): same cold stone pierced by the dark mass of the bird; then huge empty storming sky with one wheeling moon, dark churning ocean, Link's tiny green shape against vast desaturated blue-black; then quiet underwater green-blue dimness. (4) WONDER / NEW REALITY (pages 19-22): a complete palette reset — soft pale pink-gold dawn, white sand, calm pale-blue sea, warm wood tones of the little red boat. (5) QUIET RESOLVE (pages 23-24): same dawn palette, slightly warmer and clearer — pinks deepen into golds, the sky widens toward the rising sun.",
+    "line_weight": "Bold black outlines on all characters and objects. Slightly thicker outlines on foreground figures to separate them from dark fortress backgrounds. Crisp clean edges.",
+    "lighting": "Pages 1-6: moonlight only, with single warm accents (lantern, searchlight, cannon flash). Pages 7-13: pools of warm torchlight against cold blue-grey stone, dramatic chiaroscuro, red searchlight as a hostile light source. Pages 14-15: shadow-of-the-bird falling across torchlit interior. Pages 16-18: stark high-altitude moonlight on storm clouds, then green-blue underwater half-light. Pages 19-24: low pink-gold dawn light raking across wet sand, soft long shadows, hopeful warmth replacing cold.",
+    "mood": "Determined to tense to terrified to crushed to wonder to quiet resolve. The arc is a fall and a small rising. Pages 1-6 are stealth-mission cold. Pages 7-13 are held-breath stealth. Pages 14-18 are catastrophe — the hero loses. Pages 19-22 are strange peace and wonder. Pages 23-24 are not triumph but quiet steadiness — the journey only begins.",
+    "technical": "Square 1:1 aspect ratio. Child-friendly composition. Single clear focal point per image. No text in image. No watermarks or UI elements. Never any blood or graphic violence — peril is shown through scale, shadow, and expression."
+  },
+  "characters": {
+    "Toon Link": {
+      "source": "Toon Link from The Legend of Zelda: The Wind Waker, wearing the green hero's tunic",
+      "is_established": true,
+      "visual_description": "Toon Link from The Wind Waker in his iconic green hero's tunic. Small boy with a very large round head (chibi proportions, roughly 3 heads tall). Huge expressive solid-black cartoon eyes with white highlights. Messy blonde hair poking out from under a bright green pointed cap. Long pointed elf ears. Bright green tunic, bright green long pointed cap, brown leather belt with a gold buckle, brown boots. Carries a small sword and round shield on his back. Fair skin with rosy cheeks. Small button nose.",
+      "expression_default": "in this story: nervous determination, then awe, then terror, then crushed defeat, then quiet resolve",
+      "height_reference": "Very short, child-sized, roughly 3 heads tall in chibi proportions.",
+      "usage_note": "Default ref for Link is the top-level zww-link1.jpg + zww-link2.jpg. For specific shots use alternate refs (see below)."
+    },
+    "Toon Link (Back View)": {
+      "source": "Toon Link from The Legend of Zelda: The Wind Waker, seen from behind",
+      "is_established": true,
+      "visual_description": "Same Toon Link in green tunic and green pointed cap, viewed from BEHIND — back of green tunic, sword and round shield strapped across his back, brown belt visible at the waist, back of green cap.",
+      "expression_default": "n/a (back view)",
+      "height_reference": "Same as Toon Link.",
+      "reference_image_path": "toon_link/characters/link_back_green.png",
+      "usage_note": "Use only for explicit back-view shots."
+    },
+    "Toon Link (Looking Back)": {
+      "source": "Toon Link from The Legend of Zelda: The Wind Waker, looking back over his shoulder",
+      "is_established": true,
+      "visual_description": "Same Toon Link in green tunic and green pointed cap, head turned back over the shoulder so the face is in three-quarter view — for farewell or 'respexit' beats. Eyes carry the moment.",
+      "expression_default": "wistful, weighted",
+      "height_reference": "Same as Toon Link.",
+      "reference_image_path": "toon_link/characters/link_looking_back.png",
+      "usage_note": "Use for over-the-shoulder farewell or respexit shots."
+    },
+    "Tetra": {
+      "source": "Tetra from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "A tough pirate girl about Link's age. Tan skin, messy dirty-blonde hair pulled back in a short wind-shaped ponytail. Bright blue eyes with a sharp, appraising look. Wears a blue vest over a white shirt, rolled-up brown trousers, a red bandana at her waist, a gold bracelet. Brusque, confident, bossy. Captain of the pirate crew.",
+      "expression_default": "sharp, brusque, in-charge",
+      "height_reference": "About the same height as Link, perhaps a touch taller.",
+      "reference_image_path": "toon_link/official/zww-tetra.jpg"
+    },
+    "Aryll": {
+      "source": "Aryll from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "Link's little sister, a small girl about 4-5 years old. Bright blonde hair in two small side pigtails with tassels. In this book she is a captive — wears her sleeveless BLUE sundress with a large RED HIBISCUS FLOWER on the front (slightly dirty and torn from her ordeal), brown leather bracelet, brown sandals. Fair skin, big round dark cartoon eyes, pointed elf ears, rosy cheeks. Frightened but recognizes her brother instantly.",
+      "expression_default": "frightened, then astonished recognition, then terror for her brother",
+      "height_reference": "Smaller than Link — comes up to his shoulder.",
+      "reference_image_path": "toon_link/characters/aryll_ref.png"
+    },
+    "Pirates": {
+      "source": "Tetra's Pirate Crew from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "Tetra's pirate crew — a scruffy comic ensemble. Gonzo: huge, muscular, dark-skinned, purple bandana, big black mustache. Niko: short and pudgy, orange bandana, anxious face. Mako: small, skinny, round glasses. Senza: bearded sailor. Nudge: big and burly. Zuko: tall, lanky, hook-shaped lookout hat. They appear together as a comic group on the pirate ship deck.",
+      "expression_default": "rowdy, comic, enthusiastic",
+      "height_reference": "Adult size, varied — Gonzo huge, Niko short.",
+      "reference_image_path": "toon_link/official/zww-pirates.jpg"
+    },
+    "Moblin (Brown)": {
+      "source": "Brown Moblin from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "Large pig-boar monster guard. Brown fur covering a thick muscular body, big upturned tusks, a flat snout, small dull eyes, pointed ears. Wears simple leather armor and a loincloth, carries a long spear and a hanging lantern. Bumbling and goofy more than scary, but big enough to be a real threat to a small boy.",
+      "expression_default": "dim, slow, bored on patrol",
+      "height_reference": "Much taller and broader than Link — Link comes up to its waist.",
+      "reference_image_path": "toon_link/characters/moblin_brown_ref.png"
+    },
+    "Moblin (Blue)": {
+      "source": "Blue Moblin variant from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "Same pig-boar build as the brown Moblin but with blue-grey skin/fur instead of brown. Same simple armor, spear, and lantern. Similar bumbling goofiness.",
+      "expression_default": "dim, slow, bored on patrol",
+      "height_reference": "Much taller and broader than Link.",
+      "reference_image_path": "toon_link/characters/moblin_blue_ref.png"
+    },
+    "Helmaroc King": {
+      "source": "Helmaroc King from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "An enormous, terrifying bird — the master of the fortress. Massive wingspan covered in white feathers, body too big to be natural, a fearsome RED-AND-GOLD IRON MASK covering its head and beak (with sharp metal points and one cold yellow eye visible through it), huge sharp talons. When it appears, its shadow covers everything. Called 'Avis Magna' in the Latin. A looming menace, never cute.",
+      "expression_default": "menacing, predatory — masked face is unreadable",
+      "height_reference": "Immense — wingspan many times larger than Link. Talons alone are larger than Link's torso.",
+      "reference_image_path": "toon_link/official/zww-helnaroc-king.jpg"
+    },
+    "King of Red Lions": {
+      "source": "King of Red Lions from The Legend of Zelda: The Wind Waker",
+      "is_established": true,
+      "visual_description": "A small wooden sailboat with a CARVED RED LION-DRAGON FIGUREHEAD at the prow. Red hull with gold trim, single white sail. The figurehead has a noble carved lion-dragon face with gentle, kingly eyes and a wooden mouth that moves when it speaks. Looks like an ordinary little boat at first — until the figurehead speaks. Solemn, ancient, kind. Called 'Rēx Rubrōrum Leōnum' (or just 'Rēx' / 'Nāvis') in the Latin.",
+      "expression_default": "calm, ancient, gently authoritative",
+      "height_reference": "Small sailboat — about the size of a rowboat. The figurehead is about Link's head-size.",
+      "reference_image_path": "toon_link/locations/king_of_red_lions_empty.png"
+    }
+  },
+  "locations": {
+    "Pirate Ship - Night": {
+      "visual_description": "Tetra's pirate ship at night, sailing on a dark sea. Tattered red sails black against a deep blue moonlit sky. A few swinging lanterns on the cluttered wooden deck — crates, barrels, ropes. A giant wooden barrel-cannon mounted at the prow. The Forsaken Fortress visible as a dark jagged silhouette on the horizon, lit by tiny sweeping red searchlights. One cold yellow moon. Cel-shaded Wind Waker style, dramatic blue-black palette.",
+      "time_of_day_default": "moonlit night",
+      "reference_image_path": "toon_link/locations/pirate_ship_deck.png"
+    },
+    "Forsaken Fortress Exterior": {
+      "visual_description": "A colossal ruined stone fortress rising from rough black seas at night. The silhouette is vaguely SKULL-SHAPED at the top — broken battlements like jagged teeth, two dark window-eyes, a great central tower. Dark purple-grey stone, cold blue water, tiny red searchlight beams sweeping out from watchtowers, torch-orange accents. Storming sky behind it. Ominous but cartoony Wind Waker style.",
+      "time_of_day_default": "stormy night",
+      "reference_image_path": "toon_link/locations/forsaken_fortress_ref.png"
+    },
+    "Fortress Courtyard": {
+      "visual_description": "Stone interior courtyard of the fortress. Cold purple-grey flagstone floor and walls. Wooden barrels and crates stacked against the walls. Wall-mounted iron torches with flickering warm orange flames. Big iron-banded wooden doors. A spinning red searchlight from a watchtower above sweeps across the floor in slow arcs. Patrolling Moblins with lanterns. High contrast warm-vs-cold lighting.",
+      "time_of_day_default": "night, torchlit interior with sweeping red searchlight",
+      "reference_image_path": "toon_link/locations/fortress_courtyard.png"
+    },
+    "Fortress Tower Interior": {
+      "visual_description": "Inside the great tower of the fortress. Stone spiral staircase rising up, dim wall-mounted torches at intervals, rough flagstone walls. Heavy wooden doors with iron hinges. Narrow windows looking out at the storming sea. Iron-barred prison cells with thick rusty bars. Cold and damp purple-grey stone, with pools of warm orange torchlight. A dim warm interior glow comes from the cells themselves.",
+      "time_of_day_default": "night, dim torchlight"
+    },
+    "Fortress Tower Top - Open Arch": {
+      "visual_description": "The top of the fortress tower — an open archway exposing a section of jagged stone parapet to the storming night sky. Wind whips, dark clouds race across a moon. The sea is visible far below. Broken stone battlements. The kind of place where a giant bird would land.",
+      "time_of_day_default": "stormy night, wind and moonlight"
+    },
+    "Open Sky and Sea": {
+      "visual_description": "The vast empty night sky and ocean beyond the fortress. Dark storm clouds, racing wind, a small distant moon. The dark sea churning far below. Open emptiness — no land, no anchor. A place of falling. Desaturated blues and blacks with one cold moon.",
+      "time_of_day_default": "stormy night"
+    },
+    "Underwater": {
+      "visual_description": "Beneath the dark surface of the ocean. Cold green-blue dimness, soft shafts of moonlight cutting down through the water, slow streams of bubbles rising. Quiet, suspended, sinking. The world above is only a wavering pale glow with a tiny moon. Eerie silence.",
+      "time_of_day_default": "underwater night"
+    },
+    "Windfall Beach - Dawn": {
+      "visual_description": "A small sandy beach at dawn on Windfall Island. Pale pink-gold sunrise light on white wet sand. Gentle small waves lapping the shore. A wooden dock further down the beach. The colorful Windfall houses visible in the distance on a hillside (red rooftops, white walls). Calm, quiet, the morning after a storm. Soft warm palette — pink, gold, pale blue.",
+      "time_of_day_default": "soft pink-gold dawn"
+    }
+  },
+  "composition_rules": [
+    "Characters fill at least 40% of the frame in close and medium shots.",
+    "Vary shot types across pages: wide establishing (1, 6, 16), medium action (5, 7, 9, 13, 15, 19, 23), close-up emotional (12, 17, 20, 22).",
+    "EMOTIONAL PHASES: pages 1-6 cold determination (deep blue/black with warm pinpoints); pages 7-13 tense stealth (cold stone pierced by warm torchlight and hostile red searchlight); pages 14-18 failure/defeat (shadow of bird, then vast empty sky, then underwater); pages 19-22 wonder (soft pink-gold dawn replaces all cold tones); pages 23-24 quiet resolve (dawn deepens, horizon opens).",
+    "SCALE OF DEFEAT: pages 16-18 use Link's smallness against the vastness of sky and sea as the emotional engine. Tiny green dot against immense dark space.",
+    "GREAT BIRD as silhouette-and-shadow menace: always oversized, always dark mass, always casting shadow across whatever lies beneath. Its iron mask catches light. Family-friendly: peril shown by scale and shadow, never by graphic violence.",
+    "VIOLENCE: page 15's grab is dramatic but not graphic — talons close around Link's torso, his sword falls away, no impact, no blood. Page 17's fall shows Link mid-air against empty sky — no impact, just falling. Page 18 is sinking, not drowning — eyes closed, peaceful, body intact.",
+    "AT THE BARS (page 12): the iron bars are between Link and Aryll — composition uses them as cruel separation. Both faces visible through the bars from Link's side.",
+    "TALKING BOAT REVEAL (pages 20, 22): the carved wooden lion figurehead's mouth must visibly be open and shaped around speech. The eyes look at Link. Show that the wood itself is the speaker — gentle, ancient, kingly.",
+    "ENDING (page 24): Link's head is FINALLY LIFTED after being hung in shame on page 23. Same boat, same dawn — but he is looking forward, not back. He sits in the boat, the boat sails out toward the rising sun.",
+    "OUTFIT: Link wears the full green hero's tunic, green pointed cap, brown belt, brown boots throughout. He carries a small sword on his back (drops it page 15, gone after).",
+    "No text, watermarks, or UI elements in any image."
+  ],
+  "reference_images": [
+    "toon_link/official/zww-link1.jpg",
+    "toon_link/official/zww-link2.jpg"
+  ]
+}

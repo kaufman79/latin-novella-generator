@@ -519,15 +519,35 @@ def download_batch_results(project_id: str, batch_name: str) -> dict[int, str]:
         page_num = int(key.replace("page_", ""))
 
         if "response" in parsed and parsed["response"]:
-            for part in parsed["response"]["candidates"][0]["content"]["parts"]:
-                if part.get("inlineData"):
-                    data = base64.b64decode(part["inlineData"]["data"])
-                    img = Image.open(BytesIO(data))
-                    image_path = images_dir / f"page_{page_num:02d}.png"
-                    img.save(image_path)
-                    image_paths[page_num] = str(image_path)
-                    print(f"  Saved page {page_num}: {image_path}")
-                    break
+            try:
+                candidates = parsed["response"].get("candidates", [])
+                if not candidates:
+                    finish_reason = parsed["response"].get("promptFeedback", {}).get("blockReason", "no candidates")
+                    print(f"  Page {page_num}: no output ({finish_reason})")
+                    image_paths[page_num] = None
+                    continue
+                content = candidates[0].get("content", {})
+                parts = content.get("parts", [])
+                if not parts:
+                    finish_reason = candidates[0].get("finishReason", "empty parts")
+                    print(f"  Page {page_num}: blocked or empty ({finish_reason})")
+                    image_paths[page_num] = None
+                    continue
+                for part in parts:
+                    if part.get("inlineData"):
+                        data = base64.b64decode(part["inlineData"]["data"])
+                        img = Image.open(BytesIO(data))
+                        image_path = images_dir / f"page_{page_num:02d}.png"
+                        img.save(image_path)
+                        image_paths[page_num] = str(image_path)
+                        print(f"  Saved page {page_num}: {image_path}")
+                        break
+                else:
+                    print(f"  Page {page_num}: no image in response")
+                    image_paths[page_num] = None
+            except Exception as e:
+                print(f"  Page {page_num}: error parsing response — {e}")
+                image_paths[page_num] = None
         elif "error" in parsed:
             print(f"  Page {page_num} error: {parsed['error']}")
             image_paths[page_num] = None
