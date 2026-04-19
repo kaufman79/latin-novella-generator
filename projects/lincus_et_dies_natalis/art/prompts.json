@@ -14,7 +14,9 @@
     {
       "page_number": 2,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Interior of a small wooden cottage sleeping loft. Toon Link (in his pre-tunic outfit: blue shirt with a small red lobster embroidery, orange shorts, no cap, messy blonde hair) sleeps curled on his side on a simple bed, one hand tucked under his cheek. Soft warm morning light slants through a small round window, dust motes in the beam. Calm, still, quiet. Medium shot. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link (Island Outfit)"],
+      "characters_in_scene": [
+        "Toon Link (Island Outfit)"
+      ],
       "location": "Grandma's Cottage Interior",
       "reference_images": [
         "toon_link/characters/link_island_outfit.png",
@@ -24,7 +26,10 @@
     {
       "page_number": 3,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Interior of the cottage sleeping loft. Aryll (small girl, blonde pigtails, pink summer dress with red-orange skull motif, pink sunhat) has leapt onto the bed mid-bounce — pigtails flying, giant grin, both small hands shaking Toon Link by the shoulders. Link (blue shirt, orange shorts, no cap, messy blonde hair) jolts awake with huge scrunched-up eyes and an 'oh!' mouth of surprise. Pure cheerful morning chaos. Motion lines. Close-medium shot. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link (Island Outfit)", "Aryll"],
+      "characters_in_scene": [
+        "Toon Link (Island Outfit)",
+        "Aryll"
+      ],
       "location": "Grandma's Cottage Interior",
       "reference_images": [
         "toon_link/characters/link_island_outfit.png",
@@ -35,7 +40,10 @@
     {
       "page_number": 4,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Interior of the cottage sleeping loft. Aryll (pink dress, pink sunhat, blonde pigtails) stands beside the bed with both arms thrown up in triumph, beaming ear to ear. Toon Link (blue shirt, orange shorts, messy blonde hair, no cap) sits up in bed rubbing one eye with a fist, a slow smile starting. A simple garland of leaves and small wildflowers hangs from a wooden beam behind them. Bright morning light fills the loft. Joyful. Medium shot. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link (Island Outfit)", "Aryll"],
+      "characters_in_scene": [
+        "Toon Link (Island Outfit)",
+        "Aryll"
+      ],
       "location": "Grandma's Cottage Interior",
       "reference_images": [
         "toon_link/characters/link_island_outfit.png",
@@ -46,7 +54,11 @@
     {
       "page_number": 5,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Main room of Grandma's cottage. Grandma (small, hunched, white hair tied back, deeply lined kind face, simple long dress and apron) stands by a low wooden table holding out with both hands a neatly folded bundle of bright green cloth topped with a pointed green cap; a pair of small brown boots sits on the table beside her. THE HERO'S TUNIC, clearly the gift, centered in the composition. Toon Link (blue shirt, orange shorts, no cap) stands before her staring at the green cloth with huge amazed eyes. Aryll peeks from behind Link, both hands pressed to her mouth in delight. Warm amber interior light. Medium shot, the folded green tunic visually central. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link (Island Outfit)", "Aryll", "Grandma"],
+      "characters_in_scene": [
+        "Toon Link (Island Outfit)",
+        "Aryll",
+        "Grandma"
+      ],
       "location": "Grandma's Cottage Interior",
       "reference_images": [
         "toon_link/characters/link_island_outfit.png",
@@ -57,37 +69,56 @@
     {
       "page_number": 6,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. THE TRANSFORMATION. Toon Link now stands in the center of the cottage wearing the full iconic green hero's outfit for the first time: bright green tunic, bright green long pointed cap, brown leather belt with gold buckle, brown boots. His arms are slightly spread, looking down at himself, a wide amazed grin spreading across his face. A warm golden shaft of light falls on him — he looks genuinely transformed. Aryll (pink dress, pigtails) jumps in the air beside him in pure delight, pigtails flying. Grandma watches from the side, one hand pressed over her heart, eyes soft. Medium shot, Link centered and glowing. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link", "Aryll", "Grandma"],
+      "characters_in_scene": [
+        "Toon Link",
+        "Aryll",
+        "Grandma"
+      ],
       "location": "Grandma's Cottage Interior"
     },
     {
       "page_number": 7,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. On the wooden porch of the cottage, morning sun behind them. Aryll (pink dress, pigtails, sunhat) holds out with both small hands a prized red-rimmed brass telescope — clearly her treasure being given away. Her eyes shine, her smile is brave. Toon Link (green hero's tunic, green cap, brown belt, brown boots) kneels down to her height, reaching out with careful gentle hands, his mouth slightly open in awe. A tender sibling moment. Close-medium shot, the red telescope visually central between their hands. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link", "Aryll"],
+      "characters_in_scene": [
+        "Toon Link",
+        "Aryll"
+      ],
       "location": "Outset Island - Morning"
     },
     {
       "page_number": 8,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. The high cliff lookout on Outset Island. A single twisted tree at the edge. Toon Link (green hero's tunic, green cap, brown belt, brown boots), small against a vast blue ocean horizon, holds the red-rimmed telescope to one eye with both hands, leaning slightly forward. Wind catches his cap. The village of Outset is visible in miniature far below him. Triumphant morning wide shot. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link"],
+      "characters_in_scene": [
+        "Toon Link"
+      ],
       "location": "Outset Island - Cliff Lookout"
     },
     {
       "page_number": 9,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Split focus composition. Dominating the frame: over the distant ocean, an ENORMOUS dark bird — the Helmaroc King (huge wingspan, black feathers with red accents, fearsome beaked mask-face with yellow eyes, sharp talons) — wings spread wide. Clutched in its huge talons: a small struggling girl, Tetra (blue vest, white shirt, short blonde ponytail). In the foreground lower corner: Toon Link's shocked face (green cap, huge eyes blown wide), the red telescope still at one eye, mouth open in alarm. Dark menacing silhouette against bright blue sky. The peace has just cracked. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link", "Great Bird", "Tetra"],
+      "characters_in_scene": [
+        "Toon Link",
+        "Great Bird",
+        "Tetra"
+      ],
       "location": "Outset Island - Cliff Lookout"
     },
     {
       "page_number": 10,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Mid-air action shot above the tropical forest canopy. The huge dark Helmaroc King bird banks away with now-empty talons, wings beating. Tetra (blue vest, white shirt, brown trousers, short blonde ponytail) tumbles through the air toward the forest below, arms flailing, ponytail streaming, mouth open in a yell. The dense palm canopy rises up to catch her. Tiny in the corner: the distant cliff where Toon Link stands watching, telescope lowered, body tensed. Drama, motion, falling. Square 1:1, no text in image.",
-      "characters_in_scene": ["Great Bird", "Tetra"],
+      "characters_in_scene": [
+        "Great Bird",
+        "Tetra"
+      ],
       "location": "Outset Island - Forest"
     },
     {
       "page_number": 11,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Interior of Orca's wooden house. Toon Link (green hero's tunic, green cap, brown boots) has just burst through the doorway, one arm outflung pointing desperately toward the forest outside, face urgent. Orca (old wiry swordmaster, long flowing white hair and long white beard, bare-chested, lean and sinewy, purple pants with red sash) stands holding his long spear upright, eyes narrowed in sudden understanding. Wooden interior, morning light through the open door. Medium shot. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link", "Orca"],
+      "characters_in_scene": [
+        "Toon Link",
+        "Orca"
+      ],
       "location": "Grandma's Cottage Interior",
       "reference_images": [
         "toon_link/characters/orca_ref.png",
@@ -98,7 +129,10 @@
     {
       "page_number": 12,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Outside Orca's doorway in the bright morning sun. Orca (long white hair and beard, bare-chested, purple pants with red sash, holding his spear) has just passed a small sword to Toon Link, both of them clasping it together for a moment — Orca's expression solemn, Link (green hero's tunic, green cap, brown boots) gripping the sword hilt with both determined hands. Dappled morning light, palm trees edge of frame. In the background, a path leads toward the dense forest. Medium shot, the sword visually central between them. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link", "Orca"],
+      "characters_in_scene": [
+        "Toon Link",
+        "Orca"
+      ],
       "location": "Outset Island - Forest",
       "reference_images": [
         "toon_link/characters/orca_ref.png",
@@ -109,7 +143,10 @@
     {
       "page_number": 13,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. A forest clearing, dappled green-gold sunlight through tangled palm fronds. Tetra (blue vest, white shirt, brown trousers, short blonde ponytail, red bandana at waist) lies unconscious on the leafy forest floor. Two small Bokoblin monsters (short hunched figures, purple-gray skin, beady yellow eyes, small tusks, ragged brown loincloths) creep toward her from the shadows, crude wooden clubs raised. Menacing but not gory — more creepy than violent. Medium shot, tension. Square 1:1, no text in image.",
-      "characters_in_scene": ["Tetra", "Bokoblin"],
+      "characters_in_scene": [
+        "Tetra",
+        "Bokoblin"
+      ],
       "location": "Outset Island - Forest",
       "reference_images": [
         "toon_link/characters/bokoblin_ref.png",
@@ -119,19 +156,29 @@
     },
     {
       "page_number": 14,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. The forest clearing. Toon Link (green hero's tunic, green cap, brown boots) charges in from one side, small sword raised, face fierce and determined, body leaning forward in a run. Motion lines trail behind the sword's arc. Two Bokoblins (short, purple-gray, beady yellow eyes, loincloths) are shown tumbling backward away from him, one already beginning to vanish into a small puff of dark smoke — NO impact, NO contact, NO blood, NO wounds. Dynamic family-friendly combat. Tetra still lies on the ground behind. Dappled forest light. Medium action shot. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link", "Bokoblin"],
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. The forest clearing. Toon Link (green hero's tunic, green cap, brown boots) charges in from one side, small sword raised, face fierce and determined, body leaning forward in a run. Motion lines trail behind the sword's arc. Two Bokoblins (short, purple-gray, beady yellow eyes, loincloths) are shown tumbling backward away from him, one already beginning to vanish into a small puff of dark smoke — NO impact, NO contact, NO blood, NO wounds. Dynamic family-friendly combat. Tetra lies unconscious on the ground behind Link — tan skin, blonde hair in a messy bun, blue vest with gold trim, white pants, red sash at her waist. She is NOT wearing a pirate hat (she is a young pirate girl but not dressed as a captain here). Dappled forest light. Medium action shot. Square 1:1, no text in image.",
+      "characters_in_scene": [
+        "Toon Link",
+        "Tetra",
+        "Bokoblin"
+      ],
       "location": "Outset Island - Forest",
       "reference_images": [
-        "toon_link/characters/bokoblin_ref.png",
+        "toon_link/official/zww-link1.jpg",
         "toon_link/official/zww-link2.jpg",
-        "toon_link/official/zww-link1.jpg"
+        "toon_link/official/zww-tetra.jpg",
+        "toon_link/characters/bokoblin_ref.png"
       ]
     },
     {
       "page_number": 15,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. The grassy cliff-top near the lookout tower. An enormous dark bird-shaped shadow sweeps across the bright green grass. Toon Link (green hero's tunic, green cap, small sword in hand) and Tetra (blue vest, white shirt, ponytail) are both looking up, faces caught in the shadow, expressions darkening with dread. In the middle distance, flying low over the cottages of the village, the huge dark Helmaroc King (black feathers, masked beak face, huge wingspan) banks and circles, hunting. On a separate cliff across from them, small and alone, stands Aryll (tiny pink dress, sunhat, pigtails) shading her eyes with one hand, looking up at the bird — the bird is turning toward her. Wide shot, dread gathering. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link", "Tetra", "Great Bird", "Aryll"],
+      "characters_in_scene": [
+        "Toon Link",
+        "Tetra",
+        "Great Bird",
+        "Aryll"
+      ],
       "location": "Outset Island - Cliff Lookout",
       "reference_images": [
         "toon_link/official/zww-helnaroc-king.jpg",
@@ -142,7 +189,12 @@
     {
       "page_number": 16,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. THE EMOTIONAL LOW POINT. The huge Helmaroc King (black feathers with red accents, masked beaked face, massive wingspan) has swooped in and clutched tiny Aryll (pink dress, pigtails) in its huge talons. She is being lifted into the sky, her pink sunhat flying loose, her small arms reaching back toward the island, her mouth wide open in a scream. Across the cliff-top, Toon Link (green hero's tunic, green cap) has dropped his small sword on the grass and is RUNNING toward her with both arms outstretched, face transformed with pure horror, mouth open in a shout. Tetra (blue vest, ponytail) stands behind him, frozen, face shocked. Everything is terror, motion, and too-late. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link", "Tetra", "Great Bird", "Aryll"],
+      "characters_in_scene": [
+        "Toon Link",
+        "Tetra",
+        "Great Bird",
+        "Aryll"
+      ],
       "location": "Outset Island - Cliff Lookout",
       "reference_images": [
         "toon_link/official/zww-helnaroc-king.jpg",
@@ -153,19 +205,29 @@
     {
       "page_number": 17,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. The very edge of the cliff. Toon Link (green hero's tunic, green cap, brown boots) has skidded to a stop at the brink, one hand still reaching upward toward the sky, the other arm falling slack — but the bird is already far away, shrunk to a small dark shape carrying an even smaller pink speck out over the vast empty ocean. Link's face is devastated: mouth open, huge eyes wide and wet, arm dropping. Wind tugs his cap. The ocean stretches enormous and empty between him and his sister. Tetra stands a few paces behind him, watching silently, face unreadable. The smallness of one boy against a vast unreachable horizon. Wide emotional shot. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link", "Tetra"],
+      "characters_in_scene": [
+        "Toon Link",
+        "Tetra"
+      ],
       "location": "Outset Island - Cliff Lookout"
     },
     {
       "page_number": 18,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. The wooden dock at the beach. Tetra (blue vest over white shirt, brown trousers, red bandana, short blonde ponytail) is half-turned, one foot raised to step toward her pirate ship anchored just offshore. Toon Link (green hero's tunic, green cap, brown boots, small sword on his back) has caught her sleeve with one hand — his other hand points out over the water in the direction the bird flew. His face: tear-streaked cheeks but jaw set hard, huge eyes fierce with resolve — demanding, not begging. Tetra turns her head to look at him, sharp blue eyes narrowing, considering. Afternoon sun, pirate ship in background. Close-medium shot, emotional. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link", "Tetra"],
+      "characters_in_scene": [
+        "Toon Link",
+        "Tetra"
+      ],
       "location": "Outset Island - Beach"
     },
     {
       "page_number": 19,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. The beach and dock. Tetra (blue vest, white shirt, brown trousers, red bandana, ponytail) stands on the deck of the weathered pirate ship, one hand on the rail, head tilted, giving a single brusque businesslike nod. Toon Link (green hero's tunic, green cap, brown boots, small sword in hand, tunic a little dirty) stands at the foot of the gangplank below, looking up at her. In the background on the beach edge, small but visible: Grandma (hunched, white hair, long dress and apron), one hand pressed to her mouth, watching her grandson prepare to sail away. The ship's sails are being unfurled above. Wind picking up. Medium shot. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link", "Tetra", "Grandma"],
+      "characters_in_scene": [
+        "Toon Link",
+        "Tetra",
+        "Grandma"
+      ],
       "location": "Outset Island - Beach",
       "reference_images": [
         "toon_link/official/zww-tetra.jpg",
@@ -176,7 +238,11 @@
     {
       "page_number": 20,
       "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. FINAL IMAGE. The pirate ship under full sail cuts across deep blue open ocean, white sails full of wind, skull-and-crossbones flag streaming. Outset Island is already receding in the distance — small and green behind them, a shrinking silhouette. Toon Link (green hero's tunic, green cap, brown boots) stands at the back of the ship, both hands resting on the wooden rail, looking back at the shrinking island. On the distant tiny beach: Grandma, still standing alone where they left her, one hand raised in a small wave. Link's face: not crying anymore — set, older somehow. Sad but going. Wind in his green cap. Long slanting afternoon light. Wide bittersweet shot — one boy, a receding home, the beginning of a journey. Square 1:1, no text in image.",
-      "characters_in_scene": ["Toon Link", "Tetra", "Grandma"],
+      "characters_in_scene": [
+        "Toon Link",
+        "Tetra",
+        "Grandma"
+      ],
       "location": "Open Ocean",
       "reference_images": [
         "toon_link/locations/pirate_ship_deck.png",
