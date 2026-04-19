@@ -63,6 +63,7 @@ The Wind Waker cel-shaded look: textured brush-stroke coloring (not smooth/clean
   - `poes_group_ref.png` — four colored Poes
   - `gohma_ref.png` — Dragon Roost boss (armored centipede)
   - `magtail_ref.png` — dragon-insect enemy
+  - `darknut_ref.png` — armored knight with giant sword
 - `locations/` — Location reference images in our illustration style
   - `outset_island_ref.png` — Outset Island village/hillside
   - `forsaken_fortress_ref.png` — the skull-shaped fortress
@@ -71,6 +72,8 @@ The Wind Waker cel-shaded look: textured brush-stroke coloring (not smooth/clean
   - `dragon_roost_island_ref.png` — Dragon Roost Island exterior
   - `dragon_roost_village_ref.png` — Rito village entrance
   - `dragon_roost_cavern_ref.png` — cavern interior with lava
+  - `king_of_red_lions_sailing.png` — Link aboard the red dragon boat with sail raised
+  - `king_of_red_lions_empty.png` — the dragon boat alone (establishing/empty)
 
 These are supplementary to the official art. Generate new ones as needed for new books.
 
