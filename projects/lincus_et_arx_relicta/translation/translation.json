@@ -73,8 +73,8 @@
     },
     {
       "page_number": 7,
-      "latin_text": "Dolium in arce cecidit. Lincus cautē prōspexit.",
-      "english_text": "The barrel landed inside the fortress. Link peeked out.",
+      "latin_text": "Dolium in mūrum cecidit. Gladius cecidit!",
+      "english_text": "The barrel hit the wall. The sword fell!",
       "image_prompt": "The barrel has crash-landed among other identical wooden barrels stacked in a corner of the fortress courtyard. Link's wide eyes and the top of his green cap peer out cautiously over the rim. Stone walls rise around him with flickering wall torches. A Moblin patrol is visible in the middle distance, walking the other way with a lantern, oblivious. Tense, quiet beat.",
       "characters": [
         "Toon Link",
@@ -85,8 +85,8 @@
     },
     {
       "page_number": 8,
-      "latin_text": "Lūx clāra per terram cucurrit. Lincus sē cēlāvit!",
-      "english_text": "A bright light moved across the floor. Link hid!",
+      "latin_text": "Lūx clāra praeteriit. Lincus sē cēlāvit!",
+      "english_text": "A bright light passed by. Link hid!",
       "image_prompt": "Dramatic shot of a bright red searchlight beam sweeping across the stone floor of the courtyard. Link has just ducked back down inside his barrel — only the very top of his cap is visible above the rim. The red beam passes inches from the barrel. A Moblin stands on the watchtower above, scanning. High-contrast: red light on dark stone.",
       "characters": [
         "Toon Link",
@@ -276,8 +276,8 @@
     },
     {
       "page_number": 24,
-      "latin_text": "Nāvis lentē ēnāvigāvit. \"Nōndum. Sed iterum temptābimus.\"",
-      "english_text": "The boat sailed slowly out to sea. \"Not yet. But we will try again.\"",
+      "latin_text": "Lincus iuxtā nāvem sēdit. \"Nōndum. Sed iterum temptābimus.\"",
+      "english_text": "Link sat beside the boat. \"Not yet. But we will try again.\"",
       "image_prompt": "EMOTIONAL PEAK 6 — the renewed resolve. The little red boat is now afloat in the calm dawn sea, its single white sail raised and full of soft morning wind. Link sits in the boat at the stern, knees drawn up but head finally lifted, looking out forward over the bow toward the open horizon — not back at the fortress. His face is not happy, but it is steady. The carved red-lion figurehead at the prow leads the way, its mouth shaped around the words. A wide, hopeful sky of pink and gold. They are tiny on a huge calm ocean, sailing away into the rising sun. The story does not end — it begins again.",
       "characters": [
         "Toon Link",

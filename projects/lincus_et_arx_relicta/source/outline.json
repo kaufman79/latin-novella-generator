@@ -5,7 +5,7 @@
   "characters": [
     {
       "name": "Toon Link",
-      "description": "Small boy hero with large expressive eyes, blonde hair, pointed ears. Wears the green hero's tunic and pointed cap, brown belt, brown boots. Carries a small sword. Brave but visibly out of his depth in this story \u2014 his expressions carry the emotional weight: nervous determination, then awe, then terror, then crushed defeat, then quiet resolve.",
+      "description": "Small boy hero with large expressive eyes, blonde hair, pointed ears. Wears the green hero's tunic and pointed cap, brown belt, brown boots. Carries a small sword. Brave but visibly out of his depth in this story — his expressions carry the emotional weight: nervous determination, then awe, then terror, then crushed defeat, then quiet resolve.",
       "source": "Toon Link from The Legend of Zelda: The Wind Waker",
       "is_established": true
     },
@@ -17,13 +17,13 @@
     },
     {
       "name": "Aryll",
-      "description": "Link's little sister, about 6 years old. Blonde pigtails, big round cheeks, bright eyes. In this book she is a captive \u2014 wears the same pink summer dress as before but it is a bit dirty and torn from her ordeal. Frightened but spots her brother instantly.",
+      "description": "Link's little sister, about 6 years old. Blonde pigtails, big round cheeks, bright eyes. In this book she is a captive — wears the same pink summer dress as before but it is a bit dirty and torn from her ordeal. Frightened but spots her brother instantly.",
       "source": "Aryll from The Legend of Zelda: The Wind Waker",
       "is_established": true
     },
     {
       "name": "Pirates",
-      "description": "Tetra's pirate crew \u2014 a scruffy comic ensemble. Gonzo: huge, muscular, dark-skinned, purple bandana, big mustache. Niko: pudgy, short, orange bandana, anxious face. Mako: small, skinny, round glasses. Senza: bearded. Nudge: big and burly. Zuko: tall, lanky, hook-hat lookout. They appear together as a group on the pirate ship.",
+      "description": "Tetra's pirate crew — a scruffy comic ensemble. Gonzo: huge, muscular, dark-skinned, purple bandana, big mustache. Niko: pudgy, short, orange bandana, anxious face. Mako: small, skinny, round glasses. Senza: bearded. Nudge: big and burly. Zuko: tall, lanky, hook-hat lookout. They appear together as a group on the pirate ship.",
       "source": "Tetra's Pirate Crew from The Legend of Zelda: The Wind Waker",
       "is_established": true
     },
@@ -35,7 +35,7 @@
     },
     {
       "name": "Helmaroc King",
-      "description": "An enormous, terrifying bird \u2014 the master of the fortress. Huge wingspan, white feathers, a fearsome red-and-gold iron mask covering its head and beak. Sharp talons. Too big to be natural. Called 'Avis Magna' in the Latin \u2014 'the Great Bird.' A looming menace, the same monster that took Aryll in Book 1.",
+      "description": "An enormous, terrifying bird — the master of the fortress. Huge wingspan, white feathers, a fearsome red-and-gold iron mask covering its head and beak. Sharp talons. Too big to be natural. Called 'Avis Magna' in the Latin — 'the Great Bird.' A looming menace, the same monster that took Aryll in Book 1.",
       "source": "Helmaroc King from The Legend of Zelda: The Wind Waker",
       "is_established": true
     },
@@ -84,7 +84,7 @@
     {
       "page_number": 1,
       "english_text": "It was night. The ship sailed on the dark sea.",
-      "scene_description": "Wide establishing shot. Tetra's pirate ship sails across a moonlit black ocean. Tattered red sails silhouetted. The Forsaken Fortress is a dark, jagged silhouette on the horizon ahead, lit by tiny red searchlights sweeping through the storm. The ship is small against the huge sea. Cel-shaded Wind Waker style, dramatic blue and black palette with one warm yellow moon.",
+      "scene_description": "Wide cinematic night shot. Tetra's pirate ship sails across the dark moonlit ocean. Tetra is visible at the wheel/helm at the back of the ship, steering. Pirates working the lines. The Forsaken Fortress (with its tall central tower with crooked horizontal yardarms hung with iron anchors, smaller crow's-nest watchtower at top, low stone walls with glowing yellow windows, golden searchlight beams) looms small on the horizon. Cold blue palette with warm lanterns on the ship.",
       "characters_present": [],
       "location": "Pirate Ship - Night"
     },
@@ -100,7 +100,7 @@
     {
       "page_number": 3,
       "english_text": "Tetra came to him. \"Listen. We have a plan.\"",
-      "scene_description": "Tetra walks up beside Link on the deck, hands on her hips, head tilted in her usual brusque way. She is talking, mouth open mid-sentence. Behind her, the pirate crew is gathered around an enormous wooden barrel-cannon mounted at the prow \u2014 Gonzo cranking the firing mechanism, Niko struggling with a rope, Mako adjusting goggles. Link turns from the rail to listen, looking small next to Tetra but attentive. Lantern light on their faces.",
+      "scene_description": "Tetra walks up beside Link on the deck, hands on her hips, head tilted in her usual brusque way. She is talking, mouth open mid-sentence. Behind her, the pirate crew is gathered around an enormous wooden barrel-cannon mounted at the prow — Gonzo cranking the firing mechanism, Niko struggling with a rope, Mako adjusting goggles. Link turns from the rail to listen, looking small next to Tetra but attentive. Lantern light on their faces.",
       "characters_present": [
         "Toon Link",
         "Tetra",
@@ -122,7 +122,7 @@
     {
       "page_number": 5,
       "english_text": "Link climbed in. The pirates fired the cannon.",
-      "scene_description": "Mid-action. The barrel-cannon explodes with a comic puff of smoke at the prow of the ship. The barrel is just leaving the cannon, flying out into the night sky. Inside it, Link's wide eyes and panicked face are visible through a knot-hole, hair flattened by the force, cap pressed down. The pirates on deck below cheer with arms raised \u2014 Niko falling over backward from the recoil. Stars and moon above. The fortress wall ahead.",
+      "scene_description": "Mid-action. The barrel-cannon explodes with a comic puff of smoke at the prow of the ship. The barrel is just leaving the cannon, flying out into the night sky. Inside it, Link's wide eyes and panicked face are visible through a knot-hole, hair flattened by the force, cap pressed down. The pirates on deck below cheer with arms raised — Niko falling over backward from the recoil. Stars and moon above. The fortress wall ahead.",
       "characters_present": [
         "Toon Link",
         "Pirates"
@@ -140,8 +140,8 @@
     },
     {
       "page_number": 7,
-      "english_text": "The barrel landed inside the fortress. Link peeked out.",
-      "scene_description": "The barrel has crash-landed among other identical wooden barrels stacked in a corner of the fortress courtyard. Link's wide eyes and the top of his green cap peer out cautiously over the rim. Stone walls rise around him with flickering wall torches. A Moblin patrol is visible in the middle distance, walking the other way with a lantern, oblivious. Tense, quiet beat.",
+      "english_text": "The barrel hit the wall. Link's sword fell.",
+      "scene_description": "The wooden barrel has crashed against the outer wall of the Forsaken Fortress. The barrel splinters. Link tumbles onto a stone landing inside the flooded fortress base. His small sword bounces away from him on the stones — he reaches for it but it's already falling out of view. The impact has separated him from his weapon. Cold dark stone, water lapping at the base of the walls.",
       "characters_present": [
         "Toon Link",
         "Moblins"
@@ -150,8 +150,8 @@
     },
     {
       "page_number": 8,
-      "english_text": "A red light moved across the floor. Link hid!",
-      "scene_description": "Dramatic shot of a bright red searchlight beam sweeping across the stone floor of the courtyard. Link has just ducked back down inside his barrel \u2014 only the very top of his cap is visible above the rim. The red beam passes inches from the barrel. A Moblin stands on the watchtower above, scanning. High-contrast: red light on dark stone.",
+      "english_text": "A bright searchlight swept by. Link hid!",
+      "scene_description": "A bright pale-yellow searchlight beam sweeps across the stone fortress courtyard. Link ducks down behind a wooden barrel — just his eyes visible, huge with fear. A Moblin patrols nearby holding up its lantern. White-yellow spotlight from the searchlight tower above. Dark wet stone.",
       "characters_present": [
         "Toon Link",
         "Moblins"
@@ -180,7 +180,7 @@
     {
       "page_number": 11,
       "english_text": "He heard voices. Crying voices.",
-      "scene_description": "Link pauses on the staircase, head tilted, one ear toward a wooden door at a landing above. His face shifts \u2014 his eyes widen with recognition. Visible through cracks in the door: a faint warm glow and the suggestion of small figures behind iron bars. The viewer should feel a quiet flutter of hope through him. Dim torchlight. Stillness.",
+      "scene_description": "Link pauses on the staircase, head tilted, one ear toward a wooden door at a landing above. His face shifts — his eyes widen with recognition. Visible through cracks in the door: a faint warm glow and the suggestion of small figures behind iron bars. The viewer should feel a quiet flutter of hope through him. Dim torchlight. Stillness.",
       "characters_present": [
         "Toon Link"
       ],
@@ -189,7 +189,7 @@
     {
       "page_number": 12,
       "english_text": "He saw Aryll behind the bars. \"Lince!\"",
-      "scene_description": "EMOTIONAL PEAK 1. View through a cell of thick iron bars. Behind the bars sit three small girls on stone, all with long pointed ears \u2014 in the center is ARYLL in her dirty pink dress. She has just looked up and seen Link. Her face transforms: eyes wide, mouth open in an astonished gasp, hands flying up to her cheeks. She is calling out 'Lince!' \u2014 her brother's name. On the near side of the bars, Link stands frozen with both hands gripping the iron, his face awash with relief and emotion, blonde hair haloed by torchlight. The bars between them are cruel.",
+      "scene_description": "EMOTIONAL PEAK 1. View through a cell of thick iron bars. Behind the bars sit three small girls on stone, all with long pointed ears — in the center is ARYLL in her dirty pink dress. She has just looked up and seen Link. Her face transforms: eyes wide, mouth open in an astonished gasp, hands flying up to her cheeks. She is calling out 'Lince!' — her brother's name. On the near side of the bars, Link stands frozen with both hands gripping the iron, his face awash with relief and emotion, blonde hair haloed by torchlight. The bars between them are cruel.",
       "characters_present": [
         "Toon Link",
         "Aryll"
@@ -199,7 +199,7 @@
     {
       "page_number": 13,
       "english_text": "Link grabbed the bars. He pulled with all his strength.",
-      "scene_description": "Link braces both feet against the stone wall and pulls at the iron bars with both small hands, every muscle straining, teeth clenched, face red with effort. The bars do not move. Aryll watches from inside the cell, hands clasped to her mouth, eyes wide and worried. The other two girls watch too. He is trying so hard. Visible heroic struggle \u2014 and visible failure. The bars are too strong.",
+      "scene_description": "Link braces both feet against the stone wall and pulls at the iron bars with both small hands, every muscle straining, teeth clenched, face red with effort. The bars do not move. Aryll watches from inside the cell, hands clasped to her mouth, eyes wide and worried. The other two girls watch too. He is trying so hard. Visible heroic struggle — and visible failure. The bars are too strong.",
       "characters_present": [
         "Toon Link",
         "Aryll"
@@ -208,8 +208,8 @@
     },
     {
       "page_number": 14,
-      "english_text": "Suddenly \u2014 a great shadow fell on him!",
-      "scene_description": "EMOTIONAL PEAK 2. The angle pulls back \u2014 a huge dark shadow has fallen across Link and the bars. Link freezes, hands still on the bars, head turning to look up over his shoulder, his face just beginning to register horror. Above him, framed in a great open arch at the top of the staircase, is the silhouette of the HELMAROC KING \u2014 enormous, white-feathered, the red-and-gold iron mask catching torchlight, talons spread, wings filling the entire archway. Aryll inside the cell SHRIEKS, hands over her mouth.",
+      "english_text": "Suddenly — a great shadow fell on him!",
+      "scene_description": "EMOTIONAL PEAK 2. The angle pulls back — a huge dark shadow has fallen across Link and the bars. Link freezes, hands still on the bars, head turning to look up over his shoulder, his face just beginning to register horror. Above him, framed in a great open arch at the top of the staircase, is the silhouette of the HELMAROC KING — enormous, white-feathered, the red-and-gold iron mask catching torchlight, talons spread, wings filling the entire archway. Aryll inside the cell SHRIEKS, hands over her mouth.",
       "characters_present": [
         "Toon Link",
         "Aryll",
@@ -241,7 +241,7 @@
     {
       "page_number": 17,
       "english_text": "Then the bird threw him down. Link fell into the sea.",
-      "scene_description": "EMOTIONAL PEAK 3. The Helmaroc King has opened its talon. Link is falling \u2014 mid-air, arms and legs splayed, cap lost, hair streaming, mouth open in a silent scream. Below him, the dark churning ocean rises up. The bird wheels away above with empty talons. Above, a single distant moon. Link is utterly alone in the air, falling. The cruel scale of the sky.",
+      "scene_description": "EMOTIONAL PEAK 3. The Helmaroc King has opened its talon. Link is falling — mid-air, arms and legs splayed, cap lost, hair streaming, mouth open in a silent scream. Below him, the dark churning ocean rises up. The bird wheels away above with empty talons. Above, a single distant moon. Link is utterly alone in the air, falling. The cruel scale of the sky.",
       "characters_present": [
         "Toon Link",
         "Helmaroc King"
@@ -251,7 +251,7 @@
     {
       "page_number": 18,
       "english_text": "Down he sank in the cold dark water.",
-      "scene_description": "EMOTIONAL PEAK 4. Underwater shot. Link is sinking gently, eyes closed, body limp, arms drifting slightly, green tunic billowing softly. Bubbles trail upward from him. Above, far above, the surface of the water is a rippling pale glow with one tiny moon. Cold green-blue light surrounds him. Quiet, eerie, devastating. He is small and lost in the dim deep. NOT DROWNED \u2014 just sinking, unconscious. Silence.",
+      "scene_description": "EMOTIONAL PEAK 4. Underwater shot. Link is sinking gently, eyes closed, body limp, arms drifting slightly, green tunic billowing softly. Bubbles trail upward from him. Above, far above, the surface of the water is a rippling pale glow with one tiny moon. Cold green-blue light surrounds him. Quiet, eerie, devastating. He is small and lost in the dim deep. NOT DROWNED — just sinking, unconscious. Silence.",
       "characters_present": [
         "Toon Link"
       ],
@@ -270,7 +270,7 @@
     {
       "page_number": 20,
       "english_text": "The little boat spoke! \"I am the King of Red Lions.\"",
-      "scene_description": "EMOTIONAL PEAK 5 \u2014 the wonder beat. Link has sat up partway on the sand, propping himself on one arm, his face frozen in pure astonishment \u2014 mouth slightly open, eyes huge and round. Across from him, the carved red-lion figurehead on the prow of the small red boat has turned its wooden head slightly toward him and OPENED ITS WOODEN MOUTH \u2014 it is speaking. The figurehead's eyes are gentle and ancient. Soft golden dawn light catches the carved wood. The strangest, most wondrous moment in the book. He is hearing a boat talk.",
+      "scene_description": "EMOTIONAL PEAK 5 — the wonder beat. Link has sat up partway on the sand, propping himself on one arm, his face frozen in pure astonishment — mouth slightly open, eyes huge and round. Across from him, the carved red-lion figurehead on the prow of the small red boat has turned its wooden head slightly toward him and OPENED ITS WOODEN MOUTH — it is speaking. The figurehead's eyes are gentle and ancient. Soft golden dawn light catches the carved wood. The strangest, most wondrous moment in the book. He is hearing a boat talk.",
       "characters_present": [
         "Toon Link",
         "King of Red Lions"
@@ -280,7 +280,7 @@
     {
       "page_number": 21,
       "english_text": "\"My sister is in the fortress! I must go back!\"",
-      "scene_description": "Link has scrambled up onto his knees on the sand and reaches one hand out toward the boat, the other arm gesturing back toward the open sea \u2014 in the direction the fortress lies. His small face is desperate, pleading, exhausted. He is begging the talking boat to take him back to save Aryll. The wooden lion figurehead on the boat watches him calmly, gently, sadly.",
+      "scene_description": "Link has scrambled up onto his knees on the sand and reaches one hand out toward the boat, the other arm gesturing back toward the open sea — in the direction the fortress lies. His small face is desperate, pleading, exhausted. He is begging the talking boat to take him back to save Aryll. The wooden lion figurehead on the boat watches him calmly, gently, sadly.",
       "characters_present": [
         "Toon Link",
         "King of Red Lions"
@@ -290,7 +290,7 @@
     {
       "page_number": 22,
       "english_text": "The King looked at him. \"Not yet.\"",
-      "scene_description": "FIRST 'N\u014cNDUM' BEAT. Calm, weighted close-up of the carved red-lion figurehead. Its wooden mouth is shaped around the single word. Its eyes look gently at Link. The viewer feels both the kindness and the finality of the word. In the lower edge of the frame, a sliver of Link's face: stricken, eyes wide and beginning to glisten. The light is soft pink-gold. Quiet authority.",
+      "scene_description": "FIRST 'NŌNDUM' BEAT. Calm, weighted close-up of the carved red-lion figurehead. Its wooden mouth is shaped around the single word. Its eyes look gently at Link. The viewer feels both the kindness and the finality of the word. In the lower edge of the frame, a sliver of Link's face: stricken, eyes wide and beginning to glisten. The light is soft pink-gold. Quiet authority.",
       "characters_present": [
         "Toon Link",
         "King of Red Lions"
@@ -309,8 +309,8 @@
     },
     {
       "page_number": 24,
-      "english_text": "The boat sailed slowly out to sea. \"Not yet. But we will try again.\"",
-      "scene_description": "EMOTIONAL PEAK 6 \u2014 the renewed resolve. The little red boat is now afloat in the calm dawn sea, its single white sail raised and full of soft morning wind. Link sits in the boat at the stern, knees drawn up but head finally lifted, looking out forward over the bow toward the open horizon \u2014 not back at the fortress. His face is not happy, but it is steady. The carved red-lion figurehead at the prow leads the way, its mouth shaped around the words. A wide, hopeful sky of pink and gold. They are tiny on a huge calm ocean, sailing away into the rising sun. The story does not end \u2014 it begins again.",
+      "english_text": "Link sat by the boat. \"Not yet. But we will try again.\"",
+      "scene_description": "QUIET RESOLVE. Link sits in the warm sand beside the King of Red Lions on the dawn beach. His head is finally lifted, looking out at the sea — not down anymore. The boat (no sail yet — the mast is bare) floats just at the water's edge beside him. Soft golden dawn light. Calm water, soft pink-gold sky. Hope returning. Not triumphant — endurance. The boat is a steady presence. They have not left yet — this is the moment of decision.",
       "characters_present": [
         "Toon Link",
         "King of Red Lions"

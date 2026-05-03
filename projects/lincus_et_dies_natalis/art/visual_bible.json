@@ -102,6 +102,16 @@
       "visual_description": "The wide open sea just off Outset Island. Deep blue water with sparkling highlights, a few wispy clouds in a big sky. The pirate ship under full sail. In the distance: the silhouette of Outset Island shrinking behind the ship. Vast, uncertain, the unknown.",
       "time_of_day_default": "bright afternoon on open water",
       "reference_image_path": "toon_link/locations/pirate_ship_deck.png"
+    },
+    "Outset Island - Aryll's Lookout": {
+      "visual_description": "A tall, narrow wooden watchtower on the eastern beach of Outset Island. Vertical wooden ladder up one side, small platform with railing at the top. Wood is weathered. Stands on stilts in the sand. Seagulls circle. Ocean directly behind, palm trees nearby. Where Link sleeps and where Aryll keeps watch.",
+      "time_of_day_default": "morning",
+      "reference_image_path": "toon_link/locations/outset_island_ref.png"
+    },
+    "Outset Island - Suspension Bridge": {
+      "visual_description": "A long narrow wooden plank-and-rope suspension bridge spanning a deep chasm between two cliffs on Outset Island. Frayed ropes, planks of varying lengths, drops to surf-pounded rocks below. Wind catches the bridge. Connects the eastern village cliff to the western Forest of Fairies cliff.",
+      "time_of_day_default": "midday",
+      "reference_image_path": "toon_link/locations/outset_island_ref.png"
     }
   },
   "composition_rules": [

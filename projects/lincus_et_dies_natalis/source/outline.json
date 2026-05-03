@@ -52,6 +52,14 @@
       "description": "A small, bright tropical island at dawn. Warm golden light on green grass, palm trees, thatched cottages on stilts, a wooden watchtower. Blue ocean surrounds everything. Safe, familiar, home. Wind Waker cel-shaded style."
     },
     {
+      "name": "Outset Island - Aryll's Lookout",
+      "description": "A tall, narrow wooden watchtower on the eastern beach of Outset Island, with a vertical ladder running up one side and a small platform with railing at the top. The structure stands on stilts in the sand. Seagulls circle around it. Ocean visible directly behind, palm trees nearby. Link likes to sleep up here at night."
+    },
+    {
+      "name": "Outset Island - Suspension Bridge",
+      "description": "A long narrow wooden plank-and-rope suspension bridge spanning a deep chasm between the eastern village cliff and the western Forest of Fairies cliff. Frayed ropes, planks of varying lengths, drops to surf-pounded rocks below. Wind catches the bridge."
+    },
+    {
       "name": "Grandma's Cottage Interior",
       "description": "The cozy inside of Link's grandmother's small cottage. Wooden walls, a low table, a small fireplace or hearth, a ladder up to the sleeping loft. Warm amber light from a window. A few simple wooden bowls, a broom in the corner, dried herbs hanging from beams. Lived-in and loving."
     },
@@ -82,32 +90,32 @@
     },
     {
       "page_number": 2,
-      "english_text": "Link was sleeping.",
-      "scene_description": "Interior of Grandma's cottage — the small sleeping loft. Link is asleep on a simple bed, curled on his side, one hand tucked under his cheek. He wears his ordinary Outset clothes: BLUE SHIRT and ORANGE SHORTS. No green tunic yet. His hair is messy with sleep. Soft morning light slants through a small window. Everything is calm.",
+      "english_text": "Link was asleep on the lookout.",
+      "scene_description": "Top of Aryll's Lookout — a wooden watchtower platform on the eastern beach of Outset Island. Link is curled up asleep on the wooden platform, head on his arm, wearing his blue Outset Island shirt with red lobster embroidery and orange shorts. Bare feet. Sleeping peacefully under the open sky. Soft dawn light, gulls drifting above, ocean stretching out behind him. He fell asleep up here last night.",
       "characters_present": [
         "Toon Link"
       ],
-      "location": "Grandma's Cottage Interior"
+      "location": "Outset Island - Aryll's Lookout"
     },
     {
       "page_number": 3,
-      "english_text": "Aryll jumped on him. \"Brother! Brother!\"",
-      "scene_description": "Aryll has leapt onto Link's bed — mid-bounce, pigtails flying, pink dress twirling, giant grin on her face. She is shaking Link by the shoulders with both small hands. Link's eyes are scrunching open, his mouth an 'oh!' of surprise, hair everywhere. Pure cheerful chaos. She is tiny and bouncy and delighted. First appearance of the refrain 'Soror mea!' (from Link, affectionately groaning as she jumps on him). Note: Link still in blue shirt and orange shorts.",
+      "english_text": "Aryll climbed up. \"Brother! Brother!\"",
+      "scene_description": "Aryll has just climbed up the wooden ladder of the watchtower and is poking her head over the platform edge, both hands on the platform, pigtails bouncing. She is grinning hugely, calling Link to wake up. Link starts awake, sitting up, eyes wide. Bright morning sky behind them, ocean below. Link still in his blue Outset shirt and orange shorts. First appearance of refrain 'Soror mea!' as Link's affectionate groan.",
       "characters_present": [
         "Toon Link",
         "Aryll"
       ],
-      "location": "Grandma's Cottage Interior"
+      "location": "Outset Island - Aryll's Lookout"
     },
     {
       "page_number": 4,
       "english_text": "\"Today is your birthday!\"",
-      "scene_description": "Aryll now standing beside the bed, both arms thrown up in the air in triumph, beaming. Link sits up in bed, still rubbing one eye with a fist, beginning to smile. Hanging in the background on a beam: a simple garland of leaves and small wildflowers — Grandma and Aryll have clearly decorated the cottage while he slept. Morning light is brighter now. The joy of the day beginning. Link still in blue shirt and orange shorts.",
+      "scene_description": "Both Link and Aryll now sit on top of the watchtower platform together. Aryll has thrown her arms around Link's shoulders, beaming. Link's still rubbing the sleep from one eye but a smile is spreading. Sun coming up over the ocean horizon behind them, soft golden rays. Link still in blue shirt and orange shorts.",
       "characters_present": [
         "Toon Link",
         "Aryll"
       ],
-      "location": "Grandma's Cottage Interior"
+      "location": "Outset Island - Aryll's Lookout"
     },
     {
       "page_number": 5,
@@ -133,22 +141,23 @@
     },
     {
       "page_number": 7,
-      "english_text": "Aryll had a gift too. A telescope!",
-      "scene_description": "Aryll holds out with both hands her prized red-rimmed telescope — brass and red, clearly her own treasure she is giving away. Her eyes are bright and her smile is brave (she loves this telescope, she is giving it anyway). Link kneels down to her height, reaching out with careful hands, mouth open slightly — he knows this is her favorite thing. Tender sibling moment. Link in green tunic, outside the cottage now on the wooden porch with morning light behind them.",
+      "english_text": "Aryll waited at the lookout. She had a gift!",
+      "scene_description": "Link, now in his green hero tunic and cap, climbs back up the ladder of the watchtower. Aryll waits at the top, holding out with both hands her treasured red telescope. Her smile is bright but a little brave — she loves this telescope, she's giving it anyway. The morning light is full now. Tender sibling moment.",
       "characters_present": [
         "Toon Link",
         "Aryll"
       ],
-      "location": "Outset Island - Morning"
+      "location": "Outset Island - Aryll's Lookout"
     },
     {
       "page_number": 8,
-      "english_text": "Link climbed to the lookout. He looked at the sea.",
-      "scene_description": "Link stands at the high cliff lookout, the twisted tree behind him, the vast blue ocean stretching out below. He holds the red telescope up to one eye with both hands, leaning slightly forward. The wind catches his green cap. Behind and below him the village of Outset is visible in miniature. He looks tiny against the huge sky and sea — but happy, curious. A wide triumphant morning.",
+      "english_text": "Link looked through the telescope. He saw the sea.",
+      "scene_description": "On top of the watchtower, Link holds Aryll's red telescope up to one eye with both hands, leaning forward. Aryll stands beside him, also looking out. Wind catches Link's green cap. The vast blue ocean spreads out below them, the morning sun sparkling on the waves. Excitement, possibility.",
       "characters_present": [
-        "Toon Link"
+        "Toon Link",
+        "Aryll"
       ],
-      "location": "Outset Island - Cliff Lookout"
+      "location": "Outset Island - Aryll's Lookout"
     },
     {
       "page_number": 9,
@@ -213,37 +222,37 @@
     },
     {
       "page_number": 15,
-      "english_text": "Then — a shadow. The great bird returned!",
-      "scene_description": "Out of the forest now, on the cliff-top near the lookout. An enormous dark shadow sweeps across the grass. Link and Tetra are both looking up, faces caught in the shadow. And in the distance, flying low over the cottages of the village — the huge dark bird again, wings beating, circling, hunting. AND (critical): on the cliff lookout opposite them, small and alone, stands Aryll in her pink dress, shading her eyes with one hand, looking up at the bird. The bird is turning toward her.",
+      "english_text": "Aryll waited at the bridge. Then — a great shadow!",
+      "scene_description": "On the wooden suspension bridge between the village cliff and the Forest of Fairies cliff. Link and Tetra are walking back across the bridge from the forest. On the village side at the end of the bridge, Aryll stands waving happily at her brother — pink dress, pigtails, big smile. But suddenly an enormous DARK SHADOW falls across the bridge — Link and Tetra look up in alarm. The huge silhouette of the Helmaroc King swoops in from above the cliffs.",
       "characters_present": [
         "Toon Link",
         "Tetra",
         "Great Bird",
         "Aryll"
       ],
-      "location": "Outset Island - Cliff Lookout"
+      "location": "Outset Island - Suspension Bridge"
     },
     {
       "page_number": 16,
       "english_text": "The bird grabbed Aryll! \"My sister!\"",
-      "scene_description": "THE EMOTIONAL LOW POINT. The huge bird has swooped in and clutched Aryll in its talons — she is being lifted into the air, her pink dress flailing, her sunhat flying off, her little arms reaching back toward the island. Her mouth is wide open in a scream — the word 'Lince!' could almost be visible in the air. Across from her, Link has dropped his sword and is RUNNING toward her with both arms outstretched, face transformed with horror, shouting — this is the second appearance of the refrain 'Soror mea!' and it is pure anguish. Tetra watches from behind, shocked. Everything is motion and terror.",
+      "scene_description": "EMOTIONAL LOW POINT. The huge dark Helmaroc King has swooped down over the bridge area and clutched Aryll in its talons — she is being lifted into the air over the chasm, her pink dress flailing, sunhat flying off, little arms reaching back. Her mouth wide open in a scream. Link stands at the village end of the bridge, has dropped his sword, both arms outstretched toward her, face transformed with horror. Second appearance of refrain 'Soror mea!' — anguish. Tetra runs onto the bridge behind Link.",
       "characters_present": [
         "Toon Link",
         "Tetra",
         "Great Bird",
         "Aryll"
       ],
-      "location": "Outset Island - Cliff Lookout"
+      "location": "Outset Island - Suspension Bridge"
     },
     {
       "page_number": 17,
       "english_text": "Link ran. But he could not reach her.",
-      "scene_description": "Link at the very edge of the cliff, skidding to a stop, one hand still reaching toward the sky — but the bird is already far away, a small dark shape carrying an even smaller pink shape out over the open ocean. Link's face is devastated — mouth open, eyes wide, arm falling. The wind tugs his cap. The ocean stretches out huge and empty between him and his sister. The smallness of him against the vastness of the sea. Tetra stands a few paces behind him, watching, her face unreadable.",
+      "scene_description": "Link sprints to the very edge of the cliff at the end of the suspension bridge, almost tumbling off — Tetra catches his arm just in time, holding him back from the drop. Link's other hand still reaches toward the sky. The bird is already a small dark shape carrying tiny pink Aryll out over the open ocean. Link's face devastated. The smallness of him against the vastness of the sea.",
       "characters_present": [
         "Toon Link",
         "Tetra"
       ],
-      "location": "Outset Island - Cliff Lookout"
+      "location": "Outset Island - Suspension Bridge"
     },
     {
       "page_number": 18,

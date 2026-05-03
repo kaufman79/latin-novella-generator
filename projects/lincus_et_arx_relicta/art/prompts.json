@@ -2,21 +2,27 @@
   "pages": [
     {
       "page_number": 1,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Wide cinematic night shot. Tetra's pirate ship sails across the dark moonlit ocean. The skull-shaped Forsaken Fortress looms on the horizon with searchlight beams sweeping the sky. Small against the vast night. Cold blue palette with warm lanterns on the ship. Square 1:1, no text in image.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Wide cinematic night shot. Tetra's pirate ship sails across the dark moonlit ocean. Tetra is visible at the wheel/helm at the back of the ship, both hands on the wheel, steering. The pirate crew works the lines. the Forsaken Fortress (a tall central stone tower with crooked horizontal yardarms extending outward like a dead tree, with multiple iron anchors hanging from chains off these branches; a smaller crow's-nest watchtower at the very top of the spire; lower stone walls around the base with small square glowing yellow windows; multiple golden searchlight beams projecting outward from openings in the walls) looms small on the horizon, its golden searchlights sweeping the sky. Cold blue palette with warm lanterns on the ship. Square 1:1, no text in image.",
       "characters_in_scene": [],
-      "location": "Pirate Ship - Night"
+      "location": "Pirate Ship - Night",
+      "reference_images": [
+        "toon_link/locations/forsaken_fortress_ref.png"
+      ]
     },
     {
       "page_number": 2,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Medium shot. Toon Link stands at the pirate ship's railing, looking intently across the dark water at the menacing skull-shaped fortress. His face is serious, determined — but a flicker of nervousness shows. Night sky, moonlight glinting on waves. Square 1:1, no text.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Medium shot. Toon Link stands at the railing of Tetra's pirate ship — clearly on the wooden deck, with the ship's mast, red sails, and rigging visible behind him, lanterns hanging from lines. He looks intently across the dark water at the Forsaken Fortress (a tall central stone tower with crooked horizontal yardarms extending outward like a dead tree, with multiple iron anchors hanging from chains off these branches; a smaller crow's-nest watchtower at the very top of the spire; lower stone walls around the base with small square glowing yellow windows; multiple golden searchlight beams projecting outward from openings in the walls) in the distance. His face is determined but a flicker of nervousness shows. Night sky, moonlight on waves. Square 1:1, no text.",
       "characters_in_scene": [
         "Toon Link"
       ],
-      "location": "Pirate Ship - Night"
+      "location": "Pirate Ship - Night",
+      "reference_images": [
+        "toon_link/locations/forsaken_fortress_ref.png"
+      ]
     },
     {
       "page_number": 3,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. On the pirate ship deck at night. Tetra approaches Link, hand raised as if explaining. The pirate crew (Gonzo, Niko, Mako — tough-looking pirates with bandanas) stand behind her listening. Link turns to face her. Lantern light. Square 1:1, no text.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. On the pirate ship deck at night. Tetra approaches Link, hand raised as if explaining. The pirate crew (Gonzo — huge bald pirate, Niko — gangly with blue hat, others with bandanas) stand behind her listening. Link turns to face her. Lantern light. Square 1:1, no text.",
       "characters_in_scene": [
         "Toon Link",
         "Tetra",
@@ -26,7 +32,7 @@
     },
     {
       "page_number": 4,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Tetra points at a huge wooden barrel sitting near a large cannon on the deck. The pirates grin. Link looks surprised but determined. Dramatic gesture from Tetra. Night on the pirate ship. Square 1:1, no text.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. On the bow (front) of the pirate ship — there is a large WOODEN CATAPULT mounted on a raised platform at the very front of the ship, with a long catapult arm and a wooden bucket at its end. Tetra points at the catapult bucket. The pirates grin. Link looks surprised but determined. Night on the ship. Square 1:1, no text.",
       "characters_in_scene": [
         "Toon Link",
         "Tetra",
@@ -36,7 +42,7 @@
     },
     {
       "page_number": 5,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Dynamic action shot. Link curls up inside the big wooden barrel, only his big eyes and green cap peeking out the top. The pirates stand at the cannon, one with a lit match. Night. Square 1:1, no text.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Dynamic action shot. The catapult on the bow of the pirate ship — Link is curled up inside a sealed wooden barrel that has been loaded into the catapult bucket. Only his big eyes peek out a small hole in the barrel. The pirates work the catapult arm winding back. Tetra aims, one hand on the release. Night. Square 1:1, no text.",
       "characters_in_scene": [
         "Toon Link",
         "Pirates"
@@ -45,15 +51,18 @@
     },
     {
       "page_number": 6,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. Iconic moment. A wooden barrel arcs through the starry night sky high above the ocean, a trail of sparks behind it. Inside the barrel, Link clings tight, eyes wide with wonder and fear. The moon is huge behind him. Small silhouette of the fortress below. Square 1:1, no text.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. ICONIC MOMENT. A wooden barrel (sealed shut, with Link inside) arcs through the starry night sky high above the ocean, a trail of motion lines behind it. The barrel is flying TOWARD the Forsaken Fortress (a tall central stone tower with crooked horizontal yardarms extending outward like a dead tree, with multiple iron anchors hanging from chains off these branches; a smaller crow's-nest watchtower at the very top of the spire; lower stone walls around the base with small square glowing yellow windows; multiple golden searchlight beams projecting outward from openings in the walls) which fills the lower half of the image — the barrel is visibly heading toward the wall of the fortress. Big moon behind. Square 1:1, no text.",
       "characters_in_scene": [
         "Toon Link"
       ],
-      "location": "Open Sky and Sea"
+      "location": "Open Sky and Sea",
+      "reference_images": [
+        "toon_link/locations/forsaken_fortress_ref.png"
+      ]
     },
     {
       "page_number": 7,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. The wooden barrel has crash-landed in the fortress courtyard among other barrels. Link's big curious eyes peek over the rim. In the middle distance, a Moblin patrols with a lantern, facing away. Stone walls, torches, cool blue and warm orange palette. Square 1:1, no text.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. The wooden barrel has crashed against a stone wall — splinters of broken wood. Link tumbles onto a stone landing inside the flooded fortress base. His small sword has bounced loose from him and is falling away — he reaches toward it but it's already out of reach. Cold dark stone, water lapping at the base of the walls. Wind Waker dramatic. Square 1:1, no text.",
       "characters_in_scene": [
         "Toon Link",
         "Moblin (Brown)"
@@ -62,7 +71,7 @@
     },
     {
       "page_number": 8,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. A bright white searchlight beam sweeps across the stone courtyard floor. Link ducks down inside his barrel — just his eyes visible, huge with fear. Another Moblin stands nearby holding up its lantern. Dramatic spotlight contrast. Square 1:1, no text.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. A bright pale-yellow searchlight beam (the WHITE-YELLOW spotlight color from the actual game, NOT red) sweeps across the stone fortress courtyard floor. Link in his green tunic ducks down behind a wooden barrel — just his eyes visible, huge with fear. A Moblin (large brown pig-boar warrior with helmet and spear) patrols nearby holding up its lantern. Yellow-white spotlight from the searchlight tower above. Dark wet stone. Square 1:1, no text.",
       "characters_in_scene": [
         "Toon Link",
         "Moblin (Brown)"
@@ -205,7 +214,7 @@
     },
     {
       "page_number": 24,
-      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. QUIET RESOLVE. Wide final shot. Link sits at the prow of the small red boat with the golden dragon head, sailing slowly out into the open sea as the dawn sun rises ahead of them. Link faces forward now — his head finally lifted. His back to the viewer. Calm water, soft golden light, hope returning. Not triumphant — endurance. Square 1:1, no text.",
+      "prompt": "Cel-shaded illustration in the style of The Legend of Zelda: The Wind Waker. Bold black outlines, textured cel-shaded coloring, bright saturated colors. QUIET RESOLVE. Link in green tunic sits in the warm sand on a beach at dawn, looking out at the calm sea. The King of Red Lions (small red wooden boat with golden dragon-head prow, NO sail raised — bare mast in the middle) floats just at the water's edge beside him. Soft golden dawn light, soft pink-gold sky, calm water. Hope returning. Not triumphant — endurance. They have NOT left the beach yet — this is the moment of decision. Square 1:1, no text.",
       "characters_in_scene": [
         "Toon Link",
         "King of Red Lions"
