@@ -167,6 +167,7 @@ def generate_image(
     prompt: str,
     resolution: str = DEFAULT_IMAGE_RESOLUTION,
     reference_images: list[str] | list[tuple[str, str]] | None = None,
+    grounding: bool = False,
 ) -> Image.Image:
     """
     Generate an image using Google Gemini's image generation.
@@ -177,6 +178,8 @@ def generate_image(
         reference_images: Either:
             - list of (path, label) tuples from _select_reference_images()
             - list of plain path strings (legacy compat — labeled generically)
+        grounding: If True, enable Google Search grounding so the model can
+            look up real-world visual references at generation time
 
     Returns:
         PIL Image object
@@ -210,16 +213,20 @@ def generate_image(
     else:
         contents = prompt
 
+    config_kwargs = {
+        "response_modalities": ["IMAGE", "TEXT"],
+        "image_config": types.ImageConfig(
+            image_size=resolution,
+            aspect_ratio="1:1",
+        ),
+    }
+    if grounding:
+        config_kwargs["tools"] = [types.Tool(google_search=types.GoogleSearch())]
+
     response = client.models.generate_content(
         model=GEMINI_IMAGE_MODEL,
         contents=contents,
-        config=types.GenerateContentConfig(
-            response_modalities=["IMAGE", "TEXT"],
-            image_config=types.ImageConfig(
-                image_size=resolution,
-                aspect_ratio="1:1",
-            ),
-        ),
+        config=types.GenerateContentConfig(**config_kwargs),
     )
 
     # Extract image from response
@@ -277,6 +284,7 @@ def generate_book_images(
     pages: Optional[list[int]] = None,
     size: str = DEFAULT_IMAGE_RESOLUTION,
     quality: str = DEFAULT_IMAGE_QUALITY,
+    grounding: bool = False,
 ) -> dict[int, str]:
     """
     Generate images for a book project.
@@ -286,6 +294,7 @@ def generate_book_images(
         pages: Optional list of specific page numbers to generate (None = all)
         size: Image resolution (passed to Gemini as image_size)
         quality: Image quality (kept for CLI compatibility)
+        grounding: If True, use Google Search grounding for visual lookup
 
     Returns:
         Dict mapping page numbers to saved image paths
@@ -334,6 +343,8 @@ def generate_book_images(
     total = len(page_prompts)
 
     print(f"Generating {total} image(s) for '{project_id}' using Gemini ({GEMINI_IMAGE_MODEL})...")
+    if grounding:
+        print("  Google Search grounding enabled — model will look up real-world references at generation time")
 
     ref_images_dir = Path("reference_images")
 
@@ -348,7 +359,7 @@ def generate_book_images(
         print(f"  Page {page_num} ({i+1}/{total})...")
 
         try:
-            image = generate_image(prompt, resolution=size, reference_images=page_refs)
+            image = generate_image(prompt, resolution=size, reference_images=page_refs, grounding=grounding)
 
             image_path = images_dir / f"page_{page_num:02d}.png"
             image.save(image_path)
@@ -388,9 +399,13 @@ def generate_book_images_batch(
     project_id: str,
     pages: Optional[list[int]] = None,
     size: str = DEFAULT_IMAGE_RESOLUTION,
+    grounding: bool = False,
 ) -> str:
     """
     Submit a batch job for all book images (50% cheaper, async).
+
+    Args:
+        grounding: If True, enable Google Search grounding per page
 
     Returns the batch job name for polling.
     """
@@ -445,14 +460,17 @@ def generate_book_images_batch(
             else:
                 parts.append({"text": prompt})
 
+            request_body = {
+                "contents": [{"parts": parts}],
+                "generation_config": {
+                    "responseModalities": ["TEXT", "IMAGE"],
+                },
+            }
+            if grounding:
+                request_body["tools"] = [{"googleSearch": {}}]
             request = {
                 "key": f"page_{page_num:02d}",
-                "request": {
-                    "contents": [{"parts": parts}],
-                    "generation_config": {
-                        "responseModalities": ["TEXT", "IMAGE"],
-                    },
-                },
+                "request": request_body,
             }
             f.write(json.dumps(request) + "\n")
 
@@ -669,6 +687,8 @@ def main():
     parser.add_argument("--batch-download", metavar="JOB_NAME", help="Download batch job results")
     parser.add_argument("--generate-refs", action="store_true",
                         help="Generate reference images for characters and locations")
+    parser.add_argument("--grounding", action="store_true",
+                        help="Enable Google Search grounding (model looks up real-world refs at generation time)")
 
     args = parser.parse_args()
 
@@ -683,12 +703,14 @@ def main():
             project_id=args.project_id,
             pages=args.pages,
             size=args.size,
+            grounding=args.grounding,
         )
     else:
         generate_book_images(
             project_id=args.project_id,
             pages=args.pages,
             size=args.size,
+            grounding=args.grounding,
         )
 
 
