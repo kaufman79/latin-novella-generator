@@ -120,15 +120,16 @@ Every page prompt is assembled from the visual bible. The structure is:
 
 ## Reference Image Management
 
-### Hybrid Reference Strategy (core approach)
+### Reference Strategy (core approach)
 
-Image consistency comes from combining two complementary techniques:
+Each page receives auto-selected reference images based on its `characters_in_scene` and `location` fields. The `_select_reference_images()` function picks:
+- Style refs (always — from visual bible top-level `reference_images`)
+- Location ref (if the scene's location has `reference_image_path` set)
+- Character refs (for each character in the scene with a ref path, prioritizing non-established characters)
 
-1. **First page at a new setting**: Use **location ref** + style refs + character refs. This anchors the canonical look of the place. Apply dedup/scale rules (see below) since the model may duplicate or resize objects from the ref.
-2. **Subsequent pages at the same setting**: **Chain from the previous page** (pass it as a ref) + style refs. This maintains scene-to-scene coherence — the well on page 6 looks like the well on page 5 because it's derived from it.
-3. **When the setting changes**: Reset to the new **location ref** (stop chaining). Apply dedup/scale rules again.
+For IP-based books (Toon Link, OoT), also enable `--grounding` so the model performs a live web image search and pulls canonical references at generation time. This is the single biggest lever for accuracy when generating recognizable IP locations and creatures.
 
-This hybrid gets the best of both: canonical look from the location ref, scene-to-scene coherence from chaining. See `docs/image_consistency_research.md` for the test results that validated this approach.
+> Chained per-page references (each page using the previous page's image as a ref) was tested in `image_generator_interactive.py` — chaining helps for consecutive same-setting scenes but accumulates drift over a full book. Not used in production. See `docs/image_consistency_research.md` for the test results.
 
 ### Required Fields on Every Page Prompt
 - **`characters_in_scene`**: List of character names exactly matching keys in the visual bible's `characters` dict. NEVER omit this.
@@ -153,6 +154,12 @@ After creating the visual bible:
 
 ### Reference Image Budget
 Up to 6 refs per page: 2 style + 1 location + up to 3 characters. Non-established characters are prioritized.
+
+### Google Search Grounding
+The image generator supports a `--grounding` flag that enables `Tool(google_search=GoogleSearch())`. The model performs a live web image search at generation time and uses those results as visual references.
+- **Recommend grounding** when the book uses established IP (Toon Link, OoT, etc.) — significantly improves canonical accuracy for locations and creatures the model might not render correctly from training alone
+- **Skip grounding** for books with original characters (no benefit, possible noise from unrelated web images)
+- The art director should note in the project setup whether grounding is recommended
 
 ### Multi-Angle Character Reference Sheets
 For scenes requiring non-standard angles, use a matching-angle ref rather than the default front-facing ref. Front-facing refs bias the model toward front-facing output. Check `official/` for existing poses (`zww-link1.jpg` = front, `zww-link2.jpg` = action).

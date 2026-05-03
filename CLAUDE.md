@@ -131,6 +131,10 @@ python scripts/image_generator.py {project_id} --batch-download {JOB_NAME}
 
 # Custom resolution (default: 512)
 python scripts/image_generator.py {project_id} --size 1024
+
+# Google Search grounding (recommended for IP-based books like Toon Link)
+# Model looks up real-world visual references at generation time
+python scripts/image_generator.py {project_id} --batch --grounding
 ```
 - Generates images using Gemini API
 - Automatically skips pages with existing public domain images (reads `art/image_manifest.json`)
@@ -155,7 +159,7 @@ DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib python scripts/pdf_builder.py {proj
 - **Macrons on long vowels.** Mark all long vowels. Wrong macrons are worse than missing ones — if unsure, leave unmarked.
 - **Minor latinity compromises are OK.** Natural readability over perfection.
 - **Modern concepts.** Paraphrase or borrow. Reference Latin picture books in `existing_stories/` handle modern vocabulary well.
-- **Sentences: 3-7 words.** This is a picture book for a toddler.
+- **Sentences: 2-5 words.** This is a picture book for a toddler whose Latin comprehension is roughly at a 1-year-old level. Keep sentences short.
 - **Repetition is good.** Repeated phrases help language learning naturally.
 
 ---
@@ -197,14 +201,18 @@ The image generator automatically selects up to 6 reference images per page base
 - **Per-page override**: a `reference_images` array on a page prompt bypasses auto-selection entirely
 - Paths can be absolute or relative to `reference_images/` or project dir
 
-**3. Hybrid reference strategy (location ref + chaining):**
-For best consistency, combine location refs with page chaining:
-- **First page at a new setting**: Use location ref + style refs + character refs. Apply dedup/scale rules.
-- **Subsequent pages at the same setting**: Chain from the previous page (pass it as a ref) + style refs.
-- **When the setting changes**: Reset to the new location ref, stop chaining.
-See `docs/image_consistency_research.md` for the test results.
+**3. Google Search grounding (`--grounding` flag):**
+Pass `--grounding` to enable `Tool(google_search=GoogleSearch())` on every generation. The model performs a live web image search for the prompt's subject and uses those results as visual reference at generation time. This dramatically improves canonical accuracy for IP-based content (Wind Waker locations, characters, etc.).
 
-**4. Reference image pre-production:**
+- **Use for**: Toon Link series, OoT series, any book using established characters/locations the model should look up
+- **Skip for**: original-character books (Augustine, Dada) where we don't want web images bleeding in
+- **Cost**: Same as without grounding (free upgrade)
+- **Available in both sync and batch modes**
+
+**4. Game asset → illustration style conversion (`_to_process/`):**
+For Toon Link series, drop game screenshots into `reference_images/toon_link/_to_process/`. Then run them through Gemini with `official/zww-link1.jpg` as a style ref to translate the game's actual design into our illustration style. Save to `characters/` or `locations/` and delete the source. See `reference_images/toon_link/CLAUDE.md` for details.
+
+**5. Reference image pre-production:**
 Before generating page images, generate and review character/location reference images:
 ```bash
 python scripts/image_generator.py {project_id} --generate-refs
