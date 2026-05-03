@@ -36,7 +36,7 @@ Ongoing series of Latin picture books using characters and settings from The Leg
 - **Aspect ratio**: Square (1:1) for all pages
 - **Resolution**: 512px (cheapest tier, fine for picture books)
 - **Batch API**: Use `--batch` flag for 50% discount when generating full books
-- **Grounding**: Always pass `--grounding` for Wind Waker books. Enables `Tool(google_search=GoogleSearch())` so the model looks up canonical Wind Waker imagery at generation time. No extra cost. Significantly improves accuracy for the Forsaken Fortress, Helmaroc King, Dragon Roost, etc.
+- **Grounding**: Always pass `--grounding` for Wind Waker books. Enables both Google web search AND **Google image search** so the model retrieves canonical Wind Waker imagery (actual image bytes) at generation time. No extra cost. Significantly improves accuracy for the Forsaken Fortress, Helmaroc King, Dragon Roost, etc. — the model can now match what these things actually look like in the game rather than guess from training memory.
 
 ## Art Style
 

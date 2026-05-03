@@ -221,7 +221,15 @@ def generate_image(
         ),
     }
     if grounding:
-        config_kwargs["tools"] = [types.Tool(google_search=types.GoogleSearch())]
+        # Enable both web search (text/context) and image search (actual visual references).
+        # Image search is the key one for image generation — it returns image bytes the
+        # model can use as live visual reference at generation time.
+        config_kwargs["tools"] = [types.Tool(google_search=types.GoogleSearch(
+            search_types=types.SearchTypes(
+                web_search=types.WebSearch(),
+                image_search=types.ImageSearch(),
+            )
+        ))]
 
     response = client.models.generate_content(
         model=GEMINI_IMAGE_MODEL,
@@ -467,7 +475,16 @@ def generate_book_images_batch(
                 },
             }
             if grounding:
-                request_body["tools"] = [{"googleSearch": {}}]
+                # Both web + image search — image search is the critical one for
+                # image generation (returns image bytes for live visual reference)
+                request_body["tools"] = [{
+                    "googleSearch": {
+                        "searchTypes": {
+                            "webSearch": {},
+                            "imageSearch": {},
+                        }
+                    }
+                }]
             request = {
                 "key": f"page_{page_num:02d}",
                 "request": request_body,

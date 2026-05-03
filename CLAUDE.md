@@ -202,12 +202,13 @@ The image generator automatically selects up to 6 reference images per page base
 - Paths can be absolute or relative to `reference_images/` or project dir
 
 **3. Google Search grounding (`--grounding` flag):**
-Pass `--grounding` to enable `Tool(google_search=GoogleSearch())` on every generation. The model performs a live web image search for the prompt's subject and uses those results as visual reference at generation time. This dramatically improves canonical accuracy for IP-based content (Wind Waker locations, characters, etc.).
+Pass `--grounding` to enable both **web search** (text context) and **image search** (actual image bytes as visual reference) on every generation. Image search is the key one for image generation — it returns canonical reference images the model uses live during generation. This dramatically improves accuracy for IP-based content (Wind Waker locations, characters, etc.).
 
 - **Use for**: Toon Link series, OoT series, any book using established characters/locations the model should look up
 - **Skip for**: original-character books (Augustine, Dada) where we don't want web images bleeding in
 - **Cost**: Same as without grounding (free upgrade)
 - **Available in both sync and batch modes**
+- **Implementation**: enables `SearchTypes(web_search=WebSearch(), image_search=ImageSearch())` — the `image_search` option is what actually pulls in visual references; `web_search` adds textual context about the subject
 
 **4. Game asset → illustration style conversion (`_to_process/`):**
 For Toon Link series, drop game screenshots into `reference_images/toon_link/_to_process/`. Then run them through Gemini with `official/zww-link1.jpg` as a style ref to translate the game's actual design into our illustration style. Save to `characters/` or `locations/` and delete the source. See `reference_images/toon_link/CLAUDE.md` for details.
